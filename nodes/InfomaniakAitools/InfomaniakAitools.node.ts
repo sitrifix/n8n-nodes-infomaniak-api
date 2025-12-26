@@ -103,48 +103,12 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalQueryCollectionName": null,
       "bodyFields": [
         {
-          "name": "guidance_scale",
-          "field": "body_guidance_scale"
-        },
-        {
           "name": "images",
           "field": "body_images"
         },
         {
-          "name": "n",
-          "field": "body_n"
-        },
-        {
-          "name": "negative_prompt",
-          "field": "body_negative_prompt"
-        },
-        {
           "name": "prompt",
           "field": "body_prompt"
-        },
-        {
-          "name": "quality",
-          "field": "body_quality"
-        },
-        {
-          "name": "response_format",
-          "field": "body_response_format"
-        },
-        {
-          "name": "size",
-          "field": "body_size"
-        },
-        {
-          "name": "style",
-          "field": "body_style"
-        },
-        {
-          "name": "style_strength_ratio",
-          "field": "body_style_strength_ratio"
-        },
-        {
-          "name": "sync",
-          "field": "body_sync"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -195,64 +159,12 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalQueryCollectionName": null,
       "bodyFields": [
         {
-          "name": "frequency_penalty",
-          "field": "body_frequency_penalty"
-        },
-        {
-          "name": "logit_bias",
-          "field": "body_logit_bias"
-        },
-        {
-          "name": "logprobs",
-          "field": "body_logprobs"
-        },
-        {
-          "name": "max_tokens",
-          "field": "body_max_tokens"
-        },
-        {
           "name": "messages",
           "field": "body_messages"
         },
         {
           "name": "model",
           "field": "body_model"
-        },
-        {
-          "name": "n",
-          "field": "body_n"
-        },
-        {
-          "name": "presence_penalty",
-          "field": "body_presence_penalty"
-        },
-        {
-          "name": "profile_type",
-          "field": "body_profile_type"
-        },
-        {
-          "name": "seed",
-          "field": "body_seed"
-        },
-        {
-          "name": "stop",
-          "field": "body_stop"
-        },
-        {
-          "name": "stream",
-          "field": "body_stream"
-        },
-        {
-          "name": "temperature",
-          "field": "body_temperature"
-        },
-        {
-          "name": "top_logprobs",
-          "field": "body_top_logprobs"
-        },
-        {
-          "name": "top_p",
-          "field": "body_top_p"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -272,60 +184,12 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalQueryCollectionName": null,
       "bodyFields": [
         {
-          "name": "append_punctuations",
-          "field": "body_append_punctuations"
-        },
-        {
-          "name": "chunk_length",
-          "field": "body_chunk_length"
-        },
-        {
           "name": "file",
           "field": "body_file"
         },
         {
-          "name": "highlight_words",
-          "field": "body_highlight_words"
-        },
-        {
-          "name": "language",
-          "field": "body_language"
-        },
-        {
-          "name": "max_line_count",
-          "field": "body_max_line_count"
-        },
-        {
-          "name": "max_line_width",
-          "field": "body_max_line_width"
-        },
-        {
-          "name": "max_words_per_line",
-          "field": "body_max_words_per_line"
-        },
-        {
           "name": "model",
           "field": "body_model"
-        },
-        {
-          "name": "no_speech_threshold",
-          "field": "body_no_speech_threshold"
-        },
-        {
-          "name": "prepend_punctuations",
-          "field": "body_prepend_punctuations"
-        },
-        {
-          "name": "prompt",
-          "field": "body_prompt"
-        },
-        {
-          "name": "response_format",
-          "field": "body_response_format"
-        },
-        {
-          "name": "timestamp_granularities",
-          "field": "body_timestamp_granularities"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -349,36 +213,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
           "field": "body_model"
         },
         {
-          "name": "n",
-          "field": "body_n"
-        },
-        {
-          "name": "negative_prompt",
-          "field": "body_negative_prompt"
-        },
-        {
           "name": "prompt",
           "field": "body_prompt"
-        },
-        {
-          "name": "quality",
-          "field": "body_quality"
-        },
-        {
-          "name": "response_format",
-          "field": "body_response_format"
-        },
-        {
-          "name": "size",
-          "field": "body_size"
-        },
-        {
-          "name": "style",
-          "field": "body_style"
-        },
-        {
-          "name": "sync",
-          "field": "body_sync"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -398,24 +234,12 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalQueryCollectionName": null,
       "bodyFields": [
         {
-          "name": "encoding_format",
-          "field": "body_encoding_format"
-        },
-        {
           "name": "input",
           "field": "body_input"
         },
         {
-          "name": "mode",
-          "field": "body_mode"
-        },
-        {
           "name": "model",
           "field": "body_model"
-        },
-        {
-          "name": "task_description",
-          "field": "body_task_description"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -437,84 +261,12 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalQueryCollectionName": null,
       "bodyFields": [
         {
-          "name": "logit_bias",
-          "field": "body_logit_bias"
-        },
-        {
-          "name": "logprobs",
-          "field": "body_logprobs"
-        },
-        {
-          "name": "max_completion_tokens",
-          "field": "body_max_completion_tokens"
-        },
-        {
           "name": "messages",
           "field": "body_messages"
         },
         {
           "name": "model",
           "field": "body_model"
-        },
-        {
-          "name": "n",
-          "field": "body_n"
-        },
-        {
-          "name": "parallel_tool_calls",
-          "field": "body_parallel_tool_calls"
-        },
-        {
-          "name": "presence_penalty",
-          "field": "body_presence_penalty"
-        },
-        {
-          "name": "reasoning_effort",
-          "field": "body_reasoning_effort"
-        },
-        {
-          "name": "response_format",
-          "field": "body_response_format"
-        },
-        {
-          "name": "seed",
-          "field": "body_seed"
-        },
-        {
-          "name": "stop",
-          "field": "body_stop"
-        },
-        {
-          "name": "stream",
-          "field": "body_stream"
-        },
-        {
-          "name": "stream_options",
-          "field": "body_stream_options"
-        },
-        {
-          "name": "temperature",
-          "field": "body_temperature"
-        },
-        {
-          "name": "tool_choice",
-          "field": "body_tool_choice"
-        },
-        {
-          "name": "tools",
-          "field": "body_tools"
-        },
-        {
-          "name": "top_logprobs",
-          "field": "body_top_logprobs"
-        },
-        {
-          "name": "top_p",
-          "field": "body_top_p"
-        },
-        {
-          "name": "user",
-          "field": "body_user"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -549,14 +301,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "queryParams": [],
       "optionalQueryCollectionName": null,
       "bodyFields": [
-        {
-          "name": "dimensions",
-          "field": "body_dimensions"
-        },
-        {
-          "name": "encoding_format",
-          "field": "body_encoding_format"
-        },
         {
           "name": "input",
           "field": "body_input"

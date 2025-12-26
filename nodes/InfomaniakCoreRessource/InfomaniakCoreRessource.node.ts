@@ -331,80 +331,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalQueryCollectionName": "queryParameters",
       "bodyFields": [
         {
-          "name": "birth_at",
-          "field": "body_birth_at"
-        },
-        {
-          "name": "country_id",
-          "field": "body_country_id"
-        },
-        {
-          "name": "current_account_id",
-          "field": "body_current_account_id"
-        },
-        {
-          "name": "current_password",
-          "field": "body_current_password"
-        },
-        {
           "name": "email",
           "field": "body_email"
-        },
-        {
-          "name": "firstname",
-          "field": "body_firstname"
-        },
-        {
-          "name": "keep_session_ids",
-          "field": "body_keep_session_ids"
-        },
-        {
-          "name": "language_id",
-          "field": "body_language_id"
-        },
-        {
-          "name": "lastname",
-          "field": "body_lastname"
-        },
-        {
-          "name": "locale",
-          "field": "body_locale"
-        },
-        {
-          "name": "password",
-          "field": "body_password"
-        },
-        {
-          "name": "reminder_email",
-          "field": "body_reminder_email"
-        },
-        {
-          "name": "reminder_phone",
-          "field": "body_reminder_phone"
-        },
-        {
-          "name": "successful_connexion_notification",
-          "field": "body_successful_connexion_notification"
-        },
-        {
-          "name": "timezone",
-          "field": "body_timezone"
-        },
-        {
-          "name": "timezone_id",
-          "field": "body_timezone_id"
-        },
-        {
-          "name": "unsuccessful_connexion_limit",
-          "field": "body_unsuccessful_connexion_limit"
-        },
-        {
-          "name": "unsuccessful_connexion_notification",
-          "field": "body_unsuccessful_connexion_notification"
-        },
-        {
-          "name": "unsuccessful_connexion_rate_limit",
-          "field": "body_unsuccessful_connexion_rate_limit"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -638,28 +566,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
           "field": "body_locale"
         },
         {
-          "name": "notifications",
-          "field": "body_notifications"
-        },
-        {
-          "name": "permissions",
-          "field": "body_permissions"
-        },
-        {
           "name": "role_type",
           "field": "body_role_type"
-        },
-        {
-          "name": "silent",
-          "field": "body_silent"
-        },
-        {
-          "name": "strict",
-          "field": "body_strict"
-        },
-        {
-          "name": "teams",
-          "field": "body_teams"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -863,36 +771,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "has_billing",
-          "field": "body_has_billing"
-        },
-        {
-          "name": "has_billing_mailing",
-          "field": "body_has_billing_mailing"
-        },
-        {
-          "name": "has_mailing",
-          "field": "body_has_mailing"
-        },
-        {
-          "name": "language_id",
-          "field": "body_language_id"
-        },
-        {
-          "name": "permissions",
-          "field": "body_permissions"
-        },
-        {
-          "name": "role_type",
-          "field": "body_role_type"
-        },
-        {
-          "name": "team_ids",
-          "field": "body_team_ids"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -1038,16 +917,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "right",
-          "field": "body_right"
-        },
-        {
-          "name": "role",
-          "field": "body_role"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -1136,10 +1006,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         {
           "name": "mailbox_name",
           "field": "body_mailbox_name"
-        },
-        {
-          "name": "password",
-          "field": "body_password"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -1262,18 +1128,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         {
           "name": "ksuite_access",
           "field": "body_ksuite_access"
-        },
-        {
-          "name": "mailbox_name",
-          "field": "body_mailbox_name"
-        },
-        {
-          "name": "mailbox_permissions",
-          "field": "body_mailbox_permissions"
-        },
-        {
-          "name": "mailbox_signature_model_id",
-          "field": "body_mailbox_signature_model_id"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -1333,14 +1187,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         {
           "name": "name",
           "field": "body_name"
-        },
-        {
-          "name": "owned_by_id",
-          "field": "body_owned_by_id"
-        },
-        {
-          "name": "permissions",
-          "field": "body_permissions"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -1382,20 +1228,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "name",
-          "field": "body_name"
-        },
-        {
-          "name": "owned_by_id",
-          "field": "body_owned_by_id"
-        },
-        {
-          "name": "permissions",
-          "field": "body_permissions"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -1515,10 +1348,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         {
           "name": "password",
           "field": "body_password"
-        },
-        {
-          "name": "is_primary",
-          "field": "body_is_primary"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",

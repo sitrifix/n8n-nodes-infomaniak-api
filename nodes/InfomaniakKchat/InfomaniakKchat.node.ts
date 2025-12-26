@@ -38,14 +38,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         {
           "name": "username",
           "field": "body_username"
-        },
-        {
-          "name": "display_name",
-          "field": "body_display_name"
-        },
-        {
-          "name": "description",
-          "field": "body_description"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -83,14 +75,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         {
           "name": "username",
           "field": "body_username"
-        },
-        {
-          "name": "display_name",
-          "field": "body_display_name"
-        },
-        {
-          "name": "description",
-          "field": "body_description"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -162,14 +146,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
           "field": "body_display_name"
         },
         {
-          "name": "purpose",
-          "field": "body_purpose"
-        },
-        {
-          "name": "header",
-          "field": "body_header"
-        },
-        {
           "name": "type",
           "field": "body_type"
         }
@@ -210,54 +186,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         {
           "name": "term",
           "field": "body_term"
-        },
-        {
-          "name": "not_associated_to_group",
-          "field": "body_not_associated_to_group"
-        },
-        {
-          "name": "exclude_default_channels",
-          "field": "body_exclude_default_channels"
-        },
-        {
-          "name": "team_ids",
-          "field": "body_team_ids"
-        },
-        {
-          "name": "group_constrained",
-          "field": "body_group_constrained"
-        },
-        {
-          "name": "exclude_group_constrained",
-          "field": "body_exclude_group_constrained"
-        },
-        {
-          "name": "public",
-          "field": "body_public"
-        },
-        {
-          "name": "private",
-          "field": "body_private"
-        },
-        {
-          "name": "deleted",
-          "field": "body_deleted"
-        },
-        {
-          "name": "page",
-          "field": "body_page"
-        },
-        {
-          "name": "per_page",
-          "field": "body_per_page"
-        },
-        {
-          "name": "exclude_policy_constrained",
-          "field": "body_exclude_policy_constrained"
-        },
-        {
-          "name": "include_search_by_id",
-          "field": "body_include_search_by_id"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -327,22 +255,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         {
           "name": "id",
           "field": "body_id"
-        },
-        {
-          "name": "name",
-          "field": "body_name"
-        },
-        {
-          "name": "display_name",
-          "field": "body_display_name"
-        },
-        {
-          "name": "purpose",
-          "field": "body_purpose"
-        },
-        {
-          "name": "header",
-          "field": "body_header"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -376,24 +288,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "name",
-          "field": "body_name"
-        },
-        {
-          "name": "display_name",
-          "field": "body_display_name"
-        },
-        {
-          "name": "purpose",
-          "field": "body_purpose"
-        },
-        {
-          "name": "header",
-          "field": "body_header"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -450,10 +345,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         {
           "name": "team_id",
           "field": "body_team_id"
-        },
-        {
-          "name": "force",
-          "field": "body_force"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -691,20 +582,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "user_id",
-          "field": "body_user_id"
-        },
-        {
-          "name": "user_ids",
-          "field": "body_user_ids"
-        },
-        {
-          "name": "post_root_id",
-          "field": "body_post_root_id"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -834,24 +712,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "email",
-          "field": "body_email"
-        },
-        {
-          "name": "push",
-          "field": "body_push"
-        },
-        {
-          "name": "desktop",
-          "field": "body_desktop"
-        },
-        {
-          "name": "mark_unread",
-          "field": "body_mark_unread"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -871,10 +732,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         {
           "name": "channel_id",
           "field": "body_channel_id"
-        },
-        {
-          "name": "prev_channel_id",
-          "field": "body_prev_channel_id"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -1005,16 +862,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "name",
-          "field": "body_name"
-        },
-        {
-          "name": "roles",
-          "field": "body_roles"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -1054,28 +902,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "id",
-          "field": "body_id"
-        },
-        {
-          "name": "user_id",
-          "field": "body_user_id"
-        },
-        {
-          "name": "team_id",
-          "field": "body_team_id"
-        },
-        {
-          "name": "display_name",
-          "field": "body_display_name"
-        },
-        {
-          "name": "type",
-          "field": "body_type"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -1183,32 +1010,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "id",
-          "field": "body_id"
-        },
-        {
-          "name": "user_id",
-          "field": "body_user_id"
-        },
-        {
-          "name": "team_id",
-          "field": "body_team_id"
-        },
-        {
-          "name": "display_name",
-          "field": "body_display_name"
-        },
-        {
-          "name": "type",
-          "field": "body_type"
-        },
-        {
-          "name": "channel_ids",
-          "field": "body_channel_ids"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -1342,76 +1144,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "id",
-          "field": "body_id"
-        },
-        {
-          "name": "token",
-          "field": "body_token"
-        },
-        {
-          "name": "create_at",
-          "field": "body_create_at"
-        },
-        {
-          "name": "update_at",
-          "field": "body_update_at"
-        },
-        {
-          "name": "delete_at",
-          "field": "body_delete_at"
-        },
-        {
-          "name": "creator_id",
-          "field": "body_creator_id"
-        },
-        {
-          "name": "team_id",
-          "field": "body_team_id"
-        },
-        {
-          "name": "trigger",
-          "field": "body_trigger"
-        },
-        {
-          "name": "method",
-          "field": "body_method"
-        },
-        {
-          "name": "username",
-          "field": "body_username"
-        },
-        {
-          "name": "icon_url",
-          "field": "body_icon_url"
-        },
-        {
-          "name": "auto_complete",
-          "field": "body_auto_complete"
-        },
-        {
-          "name": "auto_complete_desc",
-          "field": "body_auto_complete_desc"
-        },
-        {
-          "name": "auto_complete_hint",
-          "field": "body_auto_complete_hint"
-        },
-        {
-          "name": "display_name",
-          "field": "body_display_name"
-        },
-        {
-          "name": "description",
-          "field": "body_description"
-        },
-        {
-          "name": "url",
-          "field": "body_url"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -1575,10 +1308,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         {
           "name": "term",
           "field": "body_term"
-        },
-        {
-          "name": "prefix_only",
-          "field": "body_prefix_only"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -1935,18 +1664,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         {
           "name": "message",
           "field": "body_message"
-        },
-        {
-          "name": "root_id",
-          "field": "body_root_id"
-        },
-        {
-          "name": "file_ids",
-          "field": "body_file_ids"
-        },
-        {
-          "name": "props",
-          "field": "body_props"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -2036,20 +1753,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "is_pinned",
-          "field": "body_is_pinned"
-        },
-        {
-          "name": "message",
-          "field": "body_message"
-        },
-        {
-          "name": "file_ids",
-          "field": "body_file_ids"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -2157,22 +1861,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         {
           "name": "is_or_search",
           "field": "body_is_or_search"
-        },
-        {
-          "name": "time_zone_offset",
-          "field": "body_time_zone_offset"
-        },
-        {
-          "name": "include_deleted_channels",
-          "field": "body_include_deleted_channels"
-        },
-        {
-          "name": "page",
-          "field": "body_page"
-        },
-        {
-          "name": "per_page",
-          "field": "body_per_page"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -2369,24 +2057,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "pathParams": [],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "user_id",
-          "field": "body_user_id"
-        },
-        {
-          "name": "post_id",
-          "field": "body_post_id"
-        },
-        {
-          "name": "emoji_name",
-          "field": "body_emoji_name"
-        },
-        {
-          "name": "create_at",
-          "field": "body_create_at"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -2524,10 +2195,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         {
           "name": "status",
           "field": "body_status"
-        },
-        {
-          "name": "dnd_end_time",
-          "field": "body_dnd_end_time"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -2564,14 +2231,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         {
           "name": "text",
           "field": "body_text"
-        },
-        {
-          "name": "duration",
-          "field": "body_duration"
-        },
-        {
-          "name": "expires_at",
-          "field": "body_expires_at"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -2875,10 +2534,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         {
           "name": "channels",
           "field": "body_channels"
-        },
-        {
-          "name": "message",
-          "field": "body_message"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -2904,22 +2559,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         {
           "name": "is_or_search",
           "field": "body_is_or_search"
-        },
-        {
-          "name": "time_zone_offset",
-          "field": "body_time_zone_offset"
-        },
-        {
-          "name": "include_deleted_channels",
-          "field": "body_include_deleted_channels"
-        },
-        {
-          "name": "page",
-          "field": "body_page"
-        },
-        {
-          "name": "per_page",
-          "field": "body_per_page"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -3152,42 +2791,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         {
           "name": "term",
           "field": "body_term"
-        },
-        {
-          "name": "team_id",
-          "field": "body_team_id"
-        },
-        {
-          "name": "not_in_team_id",
-          "field": "body_not_in_team_id"
-        },
-        {
-          "name": "in_channel_id",
-          "field": "body_in_channel_id"
-        },
-        {
-          "name": "not_in_channel_id",
-          "field": "body_not_in_channel_id"
-        },
-        {
-          "name": "in_group_id",
-          "field": "body_in_group_id"
-        },
-        {
-          "name": "group_constrained",
-          "field": "body_group_constrained"
-        },
-        {
-          "name": "allow_inactive",
-          "field": "body_allow_inactive"
-        },
-        {
-          "name": "without_team",
-          "field": "body_without_team"
-        },
-        {
-          "name": "limit",
-          "field": "body_limit"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -3237,44 +2840,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "email",
-          "field": "body_email"
-        },
-        {
-          "name": "username",
-          "field": "body_username"
-        },
-        {
-          "name": "first_name",
-          "field": "body_first_name"
-        },
-        {
-          "name": "last_name",
-          "field": "body_last_name"
-        },
-        {
-          "name": "nickname",
-          "field": "body_nickname"
-        },
-        {
-          "name": "locale",
-          "field": "body_locale"
-        },
-        {
-          "name": "position",
-          "field": "body_position"
-        },
-        {
-          "name": "props",
-          "field": "body_props"
-        },
-        {
-          "name": "notify_props",
-          "field": "body_notify_props"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -3379,10 +2945,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         {
           "name": "channel_id",
           "field": "body_channel_id"
-        },
-        {
-          "name": "parent_id",
-          "field": "body_parent_id"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -3428,26 +2990,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         {
           "name": "channel_id",
           "field": "body_channel_id"
-        },
-        {
-          "name": "user_id",
-          "field": "body_user_id"
-        },
-        {
-          "name": "display_name",
-          "field": "body_display_name"
-        },
-        {
-          "name": "description",
-          "field": "body_description"
-        },
-        {
-          "name": "username",
-          "field": "body_username"
-        },
-        {
-          "name": "icon_url",
-          "field": "body_icon_url"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -3497,14 +3039,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         {
           "name": "description",
           "field": "body_description"
-        },
-        {
-          "name": "username",
-          "field": "body_username"
-        },
-        {
-          "name": "icon_url",
-          "field": "body_icon_url"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -3550,18 +3084,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
           "field": "body_team_id"
         },
         {
-          "name": "channel_id",
-          "field": "body_channel_id"
-        },
-        {
-          "name": "creator_id",
-          "field": "body_creator_id"
-        },
-        {
-          "name": "description",
-          "field": "body_description"
-        },
-        {
           "name": "display_name",
           "field": "body_display_name"
         },
@@ -3570,16 +3092,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
           "field": "body_trigger_words"
         },
         {
-          "name": "trigger_when",
-          "field": "body_trigger_when"
-        },
-        {
           "name": "callback_urls",
           "field": "body_callback_urls"
-        },
-        {
-          "name": "content_type",
-          "field": "body_content_type"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",

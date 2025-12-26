@@ -49,14 +49,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
           "field": "body_title"
         },
         {
-          "name": "description",
-          "field": "body_description"
-        },
-        {
-          "name": "attendees",
-          "field": "body_attendees"
-        },
-        {
           "name": "options",
           "field": "body_options"
         }

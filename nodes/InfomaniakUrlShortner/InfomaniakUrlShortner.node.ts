@@ -23,24 +23,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "pathParams": [],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "order_by",
-          "field": "body_order_by"
-        },
-        {
-          "name": "order_direction",
-          "field": "body_order_direction"
-        },
-        {
-          "name": "search",
-          "field": "body_search"
-        },
-        {
-          "name": "per_page",
-          "field": "body_per_page"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -55,10 +38,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         {
           "name": "url",
           "field": "body_url"
-        },
-        {
-          "name": "expiration_date",
-          "field": "body_expiration_date"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -71,24 +50,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "pathParams": [],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "order_by",
-          "field": "body_order_by"
-        },
-        {
-          "name": "order_direction",
-          "field": "body_order_direction"
-        },
-        {
-          "name": "search",
-          "field": "body_search"
-        },
-        {
-          "name": "per_page",
-          "field": "body_per_page"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -103,10 +65,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         {
           "name": "url",
           "field": "body_url"
-        },
-        {
-          "name": "expiration_date",
-          "field": "body_expiration_date"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",

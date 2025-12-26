@@ -72,48 +72,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "fade_time",
-          "field": "body_fade_time"
-        },
-        {
-          "name": "fade_type",
-          "field": "body_fade_type"
-        },
-        {
-          "name": "is_hybrid",
-          "field": "body_is_hybrid"
-        },
-        {
-          "name": "is_live_priority",
-          "field": "body_is_live_priority"
-        },
-        {
-          "name": "is_normalized_song",
-          "field": "body_is_normalized_song"
-        },
-        {
-          "name": "time_before_same_song",
-          "field": "body_time_before_same_song"
-        },
-        {
-          "name": "vod_default_folder_id",
-          "field": "body_vod_default_folder_id"
-        },
-        {
-          "name": "vod_fill_mixtape_id",
-          "field": "body_vod_fill_mixtape_id"
-        },
-        {
-          "name": "vod_fill_mixtape_type",
-          "field": "body_vod_fill_mixtape_type"
-        },
-        {
-          "name": "vod_id",
-          "field": "body_vod_id"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -173,48 +132,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "fade_time",
-          "field": "body_fade_time"
-        },
-        {
-          "name": "fade_type",
-          "field": "body_fade_type"
-        },
-        {
-          "name": "is_hybrid",
-          "field": "body_is_hybrid"
-        },
-        {
-          "name": "is_live_priority",
-          "field": "body_is_live_priority"
-        },
-        {
-          "name": "is_normalized_song",
-          "field": "body_is_normalized_song"
-        },
-        {
-          "name": "time_before_same_song",
-          "field": "body_time_before_same_song"
-        },
-        {
-          "name": "vod_default_folder_id",
-          "field": "body_vod_default_folder_id"
-        },
-        {
-          "name": "vod_fill_mixtape_id",
-          "field": "body_vod_fill_mixtape_id"
-        },
-        {
-          "name": "vod_fill_mixtape_type",
-          "field": "body_vod_fill_mixtape_type"
-        },
-        {
-          "name": "vod_id",
-          "field": "body_vod_id"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -307,24 +225,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalQueryCollectionName": null,
       "bodyFields": [
         {
-          "name": "color",
-          "field": "body_color"
-        },
-        {
           "name": "end",
           "field": "body_end"
-        },
-        {
-          "name": "has_perfect_timing",
-          "field": "body_has_perfect_timing"
-        },
-        {
-          "name": "is_random",
-          "field": "body_is_random"
-        },
-        {
-          "name": "rrule",
-          "field": "body_rrule"
         },
         {
           "name": "start",
@@ -345,10 +247,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         {
           "name": "type",
           "field": "body_type"
-        },
-        {
-          "name": "type_target",
-          "field": "body_type_target"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -398,60 +296,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "color",
-          "field": "body_color"
-        },
-        {
-          "name": "end",
-          "field": "body_end"
-        },
-        {
-          "name": "has_perfect_timing",
-          "field": "body_has_perfect_timing"
-        },
-        {
-          "name": "is_random",
-          "field": "body_is_random"
-        },
-        {
-          "name": "recurrence_id",
-          "field": "body_recurrence_id"
-        },
-        {
-          "name": "rrule",
-          "field": "body_rrule"
-        },
-        {
-          "name": "scope",
-          "field": "body_scope"
-        },
-        {
-          "name": "start",
-          "field": "body_start"
-        },
-        {
-          "name": "timezone_end",
-          "field": "body_timezone_end"
-        },
-        {
-          "name": "timezone_start",
-          "field": "body_timezone_start"
-        },
-        {
-          "name": "title",
-          "field": "body_title"
-        },
-        {
-          "name": "type",
-          "field": "body_type"
-        },
-        {
-          "name": "type_target",
-          "field": "body_type_target"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -526,24 +371,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalQueryCollectionName": null,
       "bodyFields": [
         {
-          "name": "color",
-          "field": "body_color"
-        },
-        {
           "name": "end",
           "field": "body_end"
-        },
-        {
-          "name": "has_perfect_timing",
-          "field": "body_has_perfect_timing"
-        },
-        {
-          "name": "is_random",
-          "field": "body_is_random"
-        },
-        {
-          "name": "rrule",
-          "field": "body_rrule"
         },
         {
           "name": "start",
@@ -564,10 +393,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         {
           "name": "type",
           "field": "body_type"
-        },
-        {
-          "name": "type_target",
-          "field": "body_type_target"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -617,60 +442,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "color",
-          "field": "body_color"
-        },
-        {
-          "name": "end",
-          "field": "body_end"
-        },
-        {
-          "name": "has_perfect_timing",
-          "field": "body_has_perfect_timing"
-        },
-        {
-          "name": "is_random",
-          "field": "body_is_random"
-        },
-        {
-          "name": "recurrence_id",
-          "field": "body_recurrence_id"
-        },
-        {
-          "name": "rrule",
-          "field": "body_rrule"
-        },
-        {
-          "name": "scope",
-          "field": "body_scope"
-        },
-        {
-          "name": "start",
-          "field": "body_start"
-        },
-        {
-          "name": "timezone_end",
-          "field": "body_timezone_end"
-        },
-        {
-          "name": "timezone_start",
-          "field": "body_timezone_start"
-        },
-        {
-          "name": "title",
-          "field": "body_title"
-        },
-        {
-          "name": "type",
-          "field": "body_type"
-        },
-        {
-          "name": "type_target",
-          "field": "body_type_target"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -738,16 +510,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalQueryCollectionName": null,
       "bodyFields": [
         {
-          "name": "file",
-          "field": "body_file"
-        },
-        {
           "name": "name",
           "field": "body_name"
-        },
-        {
-          "name": "url",
-          "field": "body_url"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -797,40 +561,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "albums",
-          "field": "body_albums"
-        },
-        {
-          "name": "artists",
-          "field": "body_artists"
-        },
-        {
-          "name": "cover",
-          "field": "body_cover"
-        },
-        {
-          "name": "genres",
-          "field": "body_genres"
-        },
-        {
-          "name": "name",
-          "field": "body_name"
-        },
-        {
-          "name": "tags",
-          "field": "body_tags"
-        },
-        {
-          "name": "title",
-          "field": "body_title"
-        },
-        {
-          "name": "year",
-          "field": "body_year"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -896,16 +627,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalQueryCollectionName": null,
       "bodyFields": [
         {
-          "name": "file",
-          "field": "body_file"
-        },
-        {
           "name": "name",
           "field": "body_name"
-        },
-        {
-          "name": "url",
-          "field": "body_url"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -955,40 +678,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "albums",
-          "field": "body_albums"
-        },
-        {
-          "name": "artists",
-          "field": "body_artists"
-        },
-        {
-          "name": "cover",
-          "field": "body_cover"
-        },
-        {
-          "name": "genres",
-          "field": "body_genres"
-        },
-        {
-          "name": "name",
-          "field": "body_name"
-        },
-        {
-          "name": "tags",
-          "field": "body_tags"
-        },
-        {
-          "name": "title",
-          "field": "body_title"
-        },
-        {
-          "name": "year",
-          "field": "body_year"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -1150,12 +840,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "force",
-          "field": "body_force"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -1241,12 +926,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "force",
-          "field": "body_force"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -1463,10 +1143,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         {
           "name": "criteria",
           "field": "body_criteria"
-        },
-        {
-          "name": "name",
-          "field": "body_name"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -1617,10 +1293,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         {
           "name": "criteria",
           "field": "body_criteria"
-        },
-        {
-          "name": "name",
-          "field": "body_name"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -1830,48 +1502,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "bitrates",
-          "field": "body_bitrates"
-        },
-        {
-          "name": "buffer_size",
-          "field": "body_buffer_size"
-        },
-        {
-          "name": "country_list",
-          "field": "body_country_list"
-        },
-        {
-          "name": "domains",
-          "field": "body_domains"
-        },
-        {
-          "name": "hash_key",
-          "field": "body_hash_key"
-        },
-        {
-          "name": "ip_exclude_list",
-          "field": "body_ip_exclude_list"
-        },
-        {
-          "name": "ip_include_list",
-          "field": "body_ip_include_list"
-        },
-        {
-          "name": "is_allow_country",
-          "field": "body_is_allow_country"
-        },
-        {
-          "name": "is_hash_restriction",
-          "field": "body_is_hash_restriction"
-        },
-        {
-          "name": "source_id",
-          "field": "body_source_id"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -1936,48 +1567,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "bitrates",
-          "field": "body_bitrates"
-        },
-        {
-          "name": "buffer_size",
-          "field": "body_buffer_size"
-        },
-        {
-          "name": "country_list",
-          "field": "body_country_list"
-        },
-        {
-          "name": "domains",
-          "field": "body_domains"
-        },
-        {
-          "name": "hash_key",
-          "field": "body_hash_key"
-        },
-        {
-          "name": "ip_exclude_list",
-          "field": "body_ip_exclude_list"
-        },
-        {
-          "name": "ip_include_list",
-          "field": "body_ip_include_list"
-        },
-        {
-          "name": "is_allow_country",
-          "field": "body_is_allow_country"
-        },
-        {
-          "name": "is_hash_restriction",
-          "field": "body_is_hash_restriction"
-        },
-        {
-          "name": "source_id",
-          "field": "body_source_id"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -2022,12 +1612,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "buffer_size",
-          "field": "body_buffer_size"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -2047,12 +1632,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "buffer_size",
-          "field": "body_buffer_size"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     }
@@ -2304,60 +1884,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "end_hour",
-          "field": "body_end_hour"
-        },
-        {
-          "name": "is_enabled",
-          "field": "body_is_enabled"
-        },
-        {
-          "name": "is_friday",
-          "field": "body_is_friday"
-        },
-        {
-          "name": "is_mail",
-          "field": "body_is_mail"
-        },
-        {
-          "name": "is_monday",
-          "field": "body_is_monday"
-        },
-        {
-          "name": "is_saturday",
-          "field": "body_is_saturday"
-        },
-        {
-          "name": "is_sms",
-          "field": "body_is_sms"
-        },
-        {
-          "name": "is_sunday",
-          "field": "body_is_sunday"
-        },
-        {
-          "name": "is_thursday",
-          "field": "body_is_thursday"
-        },
-        {
-          "name": "is_tuesday",
-          "field": "body_is_tuesday"
-        },
-        {
-          "name": "is_wednesday",
-          "field": "body_is_wednesday"
-        },
-        {
-          "name": "start_hour",
-          "field": "body_start_hour"
-        },
-        {
-          "name": "users",
-          "field": "body_users"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -2393,60 +1920,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "end_hour",
-          "field": "body_end_hour"
-        },
-        {
-          "name": "is_enabled",
-          "field": "body_is_enabled"
-        },
-        {
-          "name": "is_friday",
-          "field": "body_is_friday"
-        },
-        {
-          "name": "is_mail",
-          "field": "body_is_mail"
-        },
-        {
-          "name": "is_monday",
-          "field": "body_is_monday"
-        },
-        {
-          "name": "is_saturday",
-          "field": "body_is_saturday"
-        },
-        {
-          "name": "is_sms",
-          "field": "body_is_sms"
-        },
-        {
-          "name": "is_sunday",
-          "field": "body_is_sunday"
-        },
-        {
-          "name": "is_thursday",
-          "field": "body_is_thursday"
-        },
-        {
-          "name": "is_tuesday",
-          "field": "body_is_tuesday"
-        },
-        {
-          "name": "is_wednesday",
-          "field": "body_is_wednesday"
-        },
-        {
-          "name": "start_hour",
-          "field": "body_start_hour"
-        },
-        {
-          "name": "users",
-          "field": "body_users"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -2486,60 +1960,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "end_hour",
-          "field": "body_end_hour"
-        },
-        {
-          "name": "is_enabled",
-          "field": "body_is_enabled"
-        },
-        {
-          "name": "is_friday",
-          "field": "body_is_friday"
-        },
-        {
-          "name": "is_mail",
-          "field": "body_is_mail"
-        },
-        {
-          "name": "is_monday",
-          "field": "body_is_monday"
-        },
-        {
-          "name": "is_saturday",
-          "field": "body_is_saturday"
-        },
-        {
-          "name": "is_sms",
-          "field": "body_is_sms"
-        },
-        {
-          "name": "is_sunday",
-          "field": "body_is_sunday"
-        },
-        {
-          "name": "is_thursday",
-          "field": "body_is_thursday"
-        },
-        {
-          "name": "is_tuesday",
-          "field": "body_is_tuesday"
-        },
-        {
-          "name": "is_wednesday",
-          "field": "body_is_wednesday"
-        },
-        {
-          "name": "start_hour",
-          "field": "body_start_hour"
-        },
-        {
-          "name": "users",
-          "field": "body_users"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -2575,60 +1996,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "end_hour",
-          "field": "body_end_hour"
-        },
-        {
-          "name": "is_enabled",
-          "field": "body_is_enabled"
-        },
-        {
-          "name": "is_friday",
-          "field": "body_is_friday"
-        },
-        {
-          "name": "is_mail",
-          "field": "body_is_mail"
-        },
-        {
-          "name": "is_monday",
-          "field": "body_is_monday"
-        },
-        {
-          "name": "is_saturday",
-          "field": "body_is_saturday"
-        },
-        {
-          "name": "is_sms",
-          "field": "body_is_sms"
-        },
-        {
-          "name": "is_sunday",
-          "field": "body_is_sunday"
-        },
-        {
-          "name": "is_thursday",
-          "field": "body_is_thursday"
-        },
-        {
-          "name": "is_tuesday",
-          "field": "body_is_tuesday"
-        },
-        {
-          "name": "is_wednesday",
-          "field": "body_is_wednesday"
-        },
-        {
-          "name": "start_hour",
-          "field": "body_start_hour"
-        },
-        {
-          "name": "users",
-          "field": "body_users"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     }
@@ -2764,140 +2132,20 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalQueryCollectionName": null,
       "bodyFields": [
         {
-          "name": "background_color",
-          "field": "body_background_color"
-        },
-        {
-          "name": "button_color",
-          "field": "body_button_color"
-        },
-        {
           "name": "display_name",
           "field": "body_display_name"
-        },
-        {
-          "name": "domains",
-          "field": "body_domains"
-        },
-        {
-          "name": "facebook_link",
-          "field": "body_facebook_link"
-        },
-        {
-          "name": "height",
-          "field": "body_height"
-        },
-        {
-          "name": "history_display",
-          "field": "body_history_display"
-        },
-        {
-          "name": "history_hold",
-          "field": "body_history_hold"
-        },
-        {
-          "name": "is_auto_start",
-          "field": "body_is_auto_start"
-        },
-        {
-          "name": "is_cover",
-          "field": "body_is_cover"
-        },
-        {
-          "name": "is_direct_control",
-          "field": "body_is_direct_control"
-        },
-        {
-          "name": "is_embed",
-          "field": "body_is_embed"
-        },
-        {
-          "name": "is_facebook_embed",
-          "field": "body_is_facebook_embed"
-        },
-        {
-          "name": "is_history_clickable",
-          "field": "body_is_history_clickable"
-        },
-        {
-          "name": "is_history_time_display",
-          "field": "body_is_history_time_display"
-        },
-        {
-          "name": "is_hls_buffered",
-          "field": "body_is_hls_buffered"
-        },
-        {
-          "name": "is_listeners",
-          "field": "body_is_listeners"
-        },
-        {
-          "name": "is_listeners_hold",
-          "field": "body_is_listeners_hold"
-        },
-        {
-          "name": "is_logo",
-          "field": "body_is_logo"
-        },
-        {
-          "name": "is_metadata_display",
-          "field": "body_is_metadata_display"
-        },
-        {
-          "name": "is_spectrum",
-          "field": "body_is_spectrum"
-        },
-        {
-          "name": "is_station_thumbnail",
-          "field": "body_is_station_thumbnail"
-        },
-        {
-          "name": "is_twitter_embed",
-          "field": "body_is_twitter_embed"
-        },
-        {
-          "name": "language",
-          "field": "body_language"
-        },
-        {
-          "name": "listeners_hold",
-          "field": "body_listeners_hold"
         },
         {
           "name": "name",
           "field": "body_name"
         },
         {
-          "name": "secondary_color",
-          "field": "body_secondary_color"
-        },
-        {
           "name": "stations",
           "field": "body_stations"
         },
         {
-          "name": "twitter_account",
-          "field": "body_twitter_account"
-        },
-        {
-          "name": "twitter_backlink",
-          "field": "body_twitter_backlink"
-        },
-        {
-          "name": "twitter_hashtag",
-          "field": "body_twitter_hashtag"
-        },
-        {
           "name": "type",
           "field": "body_type"
-        },
-        {
-          "name": "volume",
-          "field": "body_volume"
-        },
-        {
-          "name": "width",
-          "field": "body_width"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -2939,144 +2187,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "background_color",
-          "field": "body_background_color"
-        },
-        {
-          "name": "button_color",
-          "field": "body_button_color"
-        },
-        {
-          "name": "display_name",
-          "field": "body_display_name"
-        },
-        {
-          "name": "domains",
-          "field": "body_domains"
-        },
-        {
-          "name": "facebook_link",
-          "field": "body_facebook_link"
-        },
-        {
-          "name": "height",
-          "field": "body_height"
-        },
-        {
-          "name": "history_display",
-          "field": "body_history_display"
-        },
-        {
-          "name": "history_hold",
-          "field": "body_history_hold"
-        },
-        {
-          "name": "is_auto_start",
-          "field": "body_is_auto_start"
-        },
-        {
-          "name": "is_cover",
-          "field": "body_is_cover"
-        },
-        {
-          "name": "is_direct_control",
-          "field": "body_is_direct_control"
-        },
-        {
-          "name": "is_embed",
-          "field": "body_is_embed"
-        },
-        {
-          "name": "is_facebook_embed",
-          "field": "body_is_facebook_embed"
-        },
-        {
-          "name": "is_history_clickable",
-          "field": "body_is_history_clickable"
-        },
-        {
-          "name": "is_history_time_display",
-          "field": "body_is_history_time_display"
-        },
-        {
-          "name": "is_hls_buffered",
-          "field": "body_is_hls_buffered"
-        },
-        {
-          "name": "is_listeners",
-          "field": "body_is_listeners"
-        },
-        {
-          "name": "is_listeners_hold",
-          "field": "body_is_listeners_hold"
-        },
-        {
-          "name": "is_logo",
-          "field": "body_is_logo"
-        },
-        {
-          "name": "is_metadata_display",
-          "field": "body_is_metadata_display"
-        },
-        {
-          "name": "is_spectrum",
-          "field": "body_is_spectrum"
-        },
-        {
-          "name": "is_station_thumbnail",
-          "field": "body_is_station_thumbnail"
-        },
-        {
-          "name": "is_twitter_embed",
-          "field": "body_is_twitter_embed"
-        },
-        {
-          "name": "language",
-          "field": "body_language"
-        },
-        {
-          "name": "listeners_hold",
-          "field": "body_listeners_hold"
-        },
-        {
-          "name": "name",
-          "field": "body_name"
-        },
-        {
-          "name": "secondary_color",
-          "field": "body_secondary_color"
-        },
-        {
-          "name": "stations",
-          "field": "body_stations"
-        },
-        {
-          "name": "twitter_account",
-          "field": "body_twitter_account"
-        },
-        {
-          "name": "twitter_backlink",
-          "field": "body_twitter_backlink"
-        },
-        {
-          "name": "twitter_hashtag",
-          "field": "body_twitter_hashtag"
-        },
-        {
-          "name": "type",
-          "field": "body_type"
-        },
-        {
-          "name": "volume",
-          "field": "body_volume"
-        },
-        {
-          "name": "width",
-          "field": "body_width"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -3182,140 +2293,20 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalQueryCollectionName": null,
       "bodyFields": [
         {
-          "name": "background_color",
-          "field": "body_background_color"
-        },
-        {
-          "name": "button_color",
-          "field": "body_button_color"
-        },
-        {
           "name": "display_name",
           "field": "body_display_name"
-        },
-        {
-          "name": "domains",
-          "field": "body_domains"
-        },
-        {
-          "name": "facebook_link",
-          "field": "body_facebook_link"
-        },
-        {
-          "name": "height",
-          "field": "body_height"
-        },
-        {
-          "name": "history_display",
-          "field": "body_history_display"
-        },
-        {
-          "name": "history_hold",
-          "field": "body_history_hold"
-        },
-        {
-          "name": "is_auto_start",
-          "field": "body_is_auto_start"
-        },
-        {
-          "name": "is_cover",
-          "field": "body_is_cover"
-        },
-        {
-          "name": "is_direct_control",
-          "field": "body_is_direct_control"
-        },
-        {
-          "name": "is_embed",
-          "field": "body_is_embed"
-        },
-        {
-          "name": "is_facebook_embed",
-          "field": "body_is_facebook_embed"
-        },
-        {
-          "name": "is_history_clickable",
-          "field": "body_is_history_clickable"
-        },
-        {
-          "name": "is_history_time_display",
-          "field": "body_is_history_time_display"
-        },
-        {
-          "name": "is_hls_buffered",
-          "field": "body_is_hls_buffered"
-        },
-        {
-          "name": "is_listeners",
-          "field": "body_is_listeners"
-        },
-        {
-          "name": "is_listeners_hold",
-          "field": "body_is_listeners_hold"
-        },
-        {
-          "name": "is_logo",
-          "field": "body_is_logo"
-        },
-        {
-          "name": "is_metadata_display",
-          "field": "body_is_metadata_display"
-        },
-        {
-          "name": "is_spectrum",
-          "field": "body_is_spectrum"
-        },
-        {
-          "name": "is_station_thumbnail",
-          "field": "body_is_station_thumbnail"
-        },
-        {
-          "name": "is_twitter_embed",
-          "field": "body_is_twitter_embed"
-        },
-        {
-          "name": "language",
-          "field": "body_language"
-        },
-        {
-          "name": "listeners_hold",
-          "field": "body_listeners_hold"
         },
         {
           "name": "name",
           "field": "body_name"
         },
         {
-          "name": "secondary_color",
-          "field": "body_secondary_color"
-        },
-        {
           "name": "stations",
           "field": "body_stations"
         },
         {
-          "name": "twitter_account",
-          "field": "body_twitter_account"
-        },
-        {
-          "name": "twitter_backlink",
-          "field": "body_twitter_backlink"
-        },
-        {
-          "name": "twitter_hashtag",
-          "field": "body_twitter_hashtag"
-        },
-        {
           "name": "type",
           "field": "body_type"
-        },
-        {
-          "name": "volume",
-          "field": "body_volume"
-        },
-        {
-          "name": "width",
-          "field": "body_width"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -3357,144 +2348,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "background_color",
-          "field": "body_background_color"
-        },
-        {
-          "name": "button_color",
-          "field": "body_button_color"
-        },
-        {
-          "name": "display_name",
-          "field": "body_display_name"
-        },
-        {
-          "name": "domains",
-          "field": "body_domains"
-        },
-        {
-          "name": "facebook_link",
-          "field": "body_facebook_link"
-        },
-        {
-          "name": "height",
-          "field": "body_height"
-        },
-        {
-          "name": "history_display",
-          "field": "body_history_display"
-        },
-        {
-          "name": "history_hold",
-          "field": "body_history_hold"
-        },
-        {
-          "name": "is_auto_start",
-          "field": "body_is_auto_start"
-        },
-        {
-          "name": "is_cover",
-          "field": "body_is_cover"
-        },
-        {
-          "name": "is_direct_control",
-          "field": "body_is_direct_control"
-        },
-        {
-          "name": "is_embed",
-          "field": "body_is_embed"
-        },
-        {
-          "name": "is_facebook_embed",
-          "field": "body_is_facebook_embed"
-        },
-        {
-          "name": "is_history_clickable",
-          "field": "body_is_history_clickable"
-        },
-        {
-          "name": "is_history_time_display",
-          "field": "body_is_history_time_display"
-        },
-        {
-          "name": "is_hls_buffered",
-          "field": "body_is_hls_buffered"
-        },
-        {
-          "name": "is_listeners",
-          "field": "body_is_listeners"
-        },
-        {
-          "name": "is_listeners_hold",
-          "field": "body_is_listeners_hold"
-        },
-        {
-          "name": "is_logo",
-          "field": "body_is_logo"
-        },
-        {
-          "name": "is_metadata_display",
-          "field": "body_is_metadata_display"
-        },
-        {
-          "name": "is_spectrum",
-          "field": "body_is_spectrum"
-        },
-        {
-          "name": "is_station_thumbnail",
-          "field": "body_is_station_thumbnail"
-        },
-        {
-          "name": "is_twitter_embed",
-          "field": "body_is_twitter_embed"
-        },
-        {
-          "name": "language",
-          "field": "body_language"
-        },
-        {
-          "name": "listeners_hold",
-          "field": "body_listeners_hold"
-        },
-        {
-          "name": "name",
-          "field": "body_name"
-        },
-        {
-          "name": "secondary_color",
-          "field": "body_secondary_color"
-        },
-        {
-          "name": "stations",
-          "field": "body_stations"
-        },
-        {
-          "name": "twitter_account",
-          "field": "body_twitter_account"
-        },
-        {
-          "name": "twitter_backlink",
-          "field": "body_twitter_backlink"
-        },
-        {
-          "name": "twitter_hashtag",
-          "field": "body_twitter_hashtag"
-        },
-        {
-          "name": "type",
-          "field": "body_type"
-        },
-        {
-          "name": "volume",
-          "field": "body_volume"
-        },
-        {
-          "name": "width",
-          "field": "body_width"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -3870,12 +2724,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "customer_name",
-          "field": "body_customer_name"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -3955,12 +2804,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "customer_name",
-          "field": "body_customer_name"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -4008,28 +2852,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "country_list",
-          "field": "body_country_list"
-        },
-        {
-          "name": "ip_exclude_list",
-          "field": "body_ip_exclude_list"
-        },
-        {
-          "name": "ip_include_list",
-          "field": "body_ip_include_list"
-        },
-        {
-          "name": "is_allow_country",
-          "field": "body_is_allow_country"
-        },
-        {
-          "name": "is_hash_restriction",
-          "field": "body_is_hash_restriction"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -4045,28 +2868,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "country_list",
-          "field": "body_country_list"
-        },
-        {
-          "name": "ip_exclude_list",
-          "field": "body_ip_exclude_list"
-        },
-        {
-          "name": "ip_include_list",
-          "field": "body_ip_include_list"
-        },
-        {
-          "name": "is_allow_country",
-          "field": "body_is_allow_country"
-        },
-        {
-          "name": "is_hash_restriction",
-          "field": "body_is_hash_restriction"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     }
@@ -4162,24 +2964,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalQueryCollectionName": null,
       "bodyFields": [
         {
-          "name": "is_daily_restart",
-          "field": "body_is_daily_restart"
-        },
-        {
-          "name": "is_send_logs",
-          "field": "body_is_send_logs"
-        },
-        {
           "name": "name",
           "field": "body_name"
-        },
-        {
-          "name": "time_daily_restart",
-          "field": "body_time_daily_restart"
-        },
-        {
-          "name": "timezone_daily_restart",
-          "field": "body_timezone_daily_restart"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -4221,60 +3007,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "deactivate_acpm",
-          "field": "body_deactivate_acpm"
-        },
-        {
-          "name": "deactivate_indes",
-          "field": "body_deactivate_indes"
-        },
-        {
-          "name": "deactivate_mediapulse",
-          "field": "body_deactivate_mediapulse"
-        },
-        {
-          "name": "is_daily_restart",
-          "field": "body_is_daily_restart"
-        },
-        {
-          "name": "is_enabled",
-          "field": "body_is_enabled"
-        },
-        {
-          "name": "is_send_logs",
-          "field": "body_is_send_logs"
-        },
-        {
-          "name": "log_login",
-          "field": "body_log_login"
-        },
-        {
-          "name": "log_password",
-          "field": "body_log_password"
-        },
-        {
-          "name": "log_path",
-          "field": "body_log_path"
-        },
-        {
-          "name": "log_server",
-          "field": "body_log_server"
-        },
-        {
-          "name": "name",
-          "field": "body_name"
-        },
-        {
-          "name": "time_daily_restart",
-          "field": "body_time_daily_restart"
-        },
-        {
-          "name": "timezone_daily_restart",
-          "field": "body_timezone_daily_restart"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -4333,24 +3066,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalQueryCollectionName": null,
       "bodyFields": [
         {
-          "name": "is_daily_restart",
-          "field": "body_is_daily_restart"
-        },
-        {
-          "name": "is_send_logs",
-          "field": "body_is_send_logs"
-        },
-        {
           "name": "name",
           "field": "body_name"
-        },
-        {
-          "name": "time_daily_restart",
-          "field": "body_time_daily_restart"
-        },
-        {
-          "name": "timezone_daily_restart",
-          "field": "body_timezone_daily_restart"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -4392,60 +3109,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "deactivate_acpm",
-          "field": "body_deactivate_acpm"
-        },
-        {
-          "name": "deactivate_indes",
-          "field": "body_deactivate_indes"
-        },
-        {
-          "name": "deactivate_mediapulse",
-          "field": "body_deactivate_mediapulse"
-        },
-        {
-          "name": "is_daily_restart",
-          "field": "body_is_daily_restart"
-        },
-        {
-          "name": "is_enabled",
-          "field": "body_is_enabled"
-        },
-        {
-          "name": "is_send_logs",
-          "field": "body_is_send_logs"
-        },
-        {
-          "name": "log_login",
-          "field": "body_log_login"
-        },
-        {
-          "name": "log_password",
-          "field": "body_log_password"
-        },
-        {
-          "name": "log_path",
-          "field": "body_log_path"
-        },
-        {
-          "name": "log_server",
-          "field": "body_log_server"
-        },
-        {
-          "name": "name",
-          "field": "body_name"
-        },
-        {
-          "name": "time_daily_restart",
-          "field": "body_time_daily_restart"
-        },
-        {
-          "name": "timezone_daily_restart",
-          "field": "body_timezone_daily_restart"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -7832,68 +6496,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
           "field": "body_codec"
         },
         {
-          "name": "country_list",
-          "field": "body_country_list"
-        },
-        {
-          "name": "fallback_is_active_relay",
-          "field": "body_fallback_is_active_relay"
-        },
-        {
-          "name": "fallback_relay_mountpoint",
-          "field": "body_fallback_relay_mountpoint"
-        },
-        {
-          "name": "fallback_relay_port",
-          "field": "body_fallback_relay_port"
-        },
-        {
-          "name": "fallback_relay_server",
-          "field": "body_fallback_relay_server"
-        },
-        {
-          "name": "hash_key",
-          "field": "body_hash_key"
-        },
-        {
-          "name": "ip_exclude_list",
-          "field": "body_ip_exclude_list"
-        },
-        {
-          "name": "ip_include_list",
-          "field": "body_ip_include_list"
-        },
-        {
-          "name": "is_active_relay",
-          "field": "body_is_active_relay"
-        },
-        {
-          "name": "is_allow_country",
-          "field": "body_is_allow_country"
-        },
-        {
-          "name": "is_fallback",
-          "field": "body_is_fallback"
-        },
-        {
-          "name": "is_hash_restriction",
-          "field": "body_is_hash_restriction"
-        },
-        {
           "name": "mountpoint",
           "field": "body_mountpoint"
-        },
-        {
-          "name": "relay_mountpoint",
-          "field": "body_relay_mountpoint"
-        },
-        {
-          "name": "relay_port",
-          "field": "body_relay_port"
-        },
-        {
-          "name": "relay_server",
-          "field": "body_relay_server"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -7943,84 +6547,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "bitrate",
-          "field": "body_bitrate"
-        },
-        {
-          "name": "codec",
-          "field": "body_codec"
-        },
-        {
-          "name": "country_list",
-          "field": "body_country_list"
-        },
-        {
-          "name": "fallback_is_active_relay",
-          "field": "body_fallback_is_active_relay"
-        },
-        {
-          "name": "fallback_relay_mountpoint",
-          "field": "body_fallback_relay_mountpoint"
-        },
-        {
-          "name": "fallback_relay_port",
-          "field": "body_fallback_relay_port"
-        },
-        {
-          "name": "fallback_relay_server",
-          "field": "body_fallback_relay_server"
-        },
-        {
-          "name": "hash_key",
-          "field": "body_hash_key"
-        },
-        {
-          "name": "ip_exclude_list",
-          "field": "body_ip_exclude_list"
-        },
-        {
-          "name": "ip_include_list",
-          "field": "body_ip_include_list"
-        },
-        {
-          "name": "is_active_relay",
-          "field": "body_is_active_relay"
-        },
-        {
-          "name": "is_allow_country",
-          "field": "body_is_allow_country"
-        },
-        {
-          "name": "is_fallback",
-          "field": "body_is_fallback"
-        },
-        {
-          "name": "is_hash_restriction",
-          "field": "body_is_hash_restriction"
-        },
-        {
-          "name": "mountpoint",
-          "field": "body_mountpoint"
-        },
-        {
-          "name": "password",
-          "field": "body_password"
-        },
-        {
-          "name": "relay_mountpoint",
-          "field": "body_relay_mountpoint"
-        },
-        {
-          "name": "relay_port",
-          "field": "body_relay_port"
-        },
-        {
-          "name": "relay_server",
-          "field": "body_relay_server"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -8248,68 +6775,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
           "field": "body_codec"
         },
         {
-          "name": "country_list",
-          "field": "body_country_list"
-        },
-        {
-          "name": "fallback_is_active_relay",
-          "field": "body_fallback_is_active_relay"
-        },
-        {
-          "name": "fallback_relay_mountpoint",
-          "field": "body_fallback_relay_mountpoint"
-        },
-        {
-          "name": "fallback_relay_port",
-          "field": "body_fallback_relay_port"
-        },
-        {
-          "name": "fallback_relay_server",
-          "field": "body_fallback_relay_server"
-        },
-        {
-          "name": "hash_key",
-          "field": "body_hash_key"
-        },
-        {
-          "name": "ip_exclude_list",
-          "field": "body_ip_exclude_list"
-        },
-        {
-          "name": "ip_include_list",
-          "field": "body_ip_include_list"
-        },
-        {
-          "name": "is_active_relay",
-          "field": "body_is_active_relay"
-        },
-        {
-          "name": "is_allow_country",
-          "field": "body_is_allow_country"
-        },
-        {
-          "name": "is_fallback",
-          "field": "body_is_fallback"
-        },
-        {
-          "name": "is_hash_restriction",
-          "field": "body_is_hash_restriction"
-        },
-        {
           "name": "mountpoint",
           "field": "body_mountpoint"
-        },
-        {
-          "name": "relay_mountpoint",
-          "field": "body_relay_mountpoint"
-        },
-        {
-          "name": "relay_port",
-          "field": "body_relay_port"
-        },
-        {
-          "name": "relay_server",
-          "field": "body_relay_server"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -8359,84 +6826,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "bitrate",
-          "field": "body_bitrate"
-        },
-        {
-          "name": "codec",
-          "field": "body_codec"
-        },
-        {
-          "name": "country_list",
-          "field": "body_country_list"
-        },
-        {
-          "name": "fallback_is_active_relay",
-          "field": "body_fallback_is_active_relay"
-        },
-        {
-          "name": "fallback_relay_mountpoint",
-          "field": "body_fallback_relay_mountpoint"
-        },
-        {
-          "name": "fallback_relay_port",
-          "field": "body_fallback_relay_port"
-        },
-        {
-          "name": "fallback_relay_server",
-          "field": "body_fallback_relay_server"
-        },
-        {
-          "name": "hash_key",
-          "field": "body_hash_key"
-        },
-        {
-          "name": "ip_exclude_list",
-          "field": "body_ip_exclude_list"
-        },
-        {
-          "name": "ip_include_list",
-          "field": "body_ip_include_list"
-        },
-        {
-          "name": "is_active_relay",
-          "field": "body_is_active_relay"
-        },
-        {
-          "name": "is_allow_country",
-          "field": "body_is_allow_country"
-        },
-        {
-          "name": "is_fallback",
-          "field": "body_is_fallback"
-        },
-        {
-          "name": "is_hash_restriction",
-          "field": "body_is_hash_restriction"
-        },
-        {
-          "name": "mountpoint",
-          "field": "body_mountpoint"
-        },
-        {
-          "name": "password",
-          "field": "body_password"
-        },
-        {
-          "name": "relay_mountpoint",
-          "field": "body_relay_mountpoint"
-        },
-        {
-          "name": "relay_port",
-          "field": "body_relay_port"
-        },
-        {
-          "name": "relay_server",
-          "field": "body_relay_server"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },

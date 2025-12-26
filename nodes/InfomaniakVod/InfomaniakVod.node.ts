@@ -89,12 +89,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         }
       ],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "file",
-          "field": "body_file"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -126,12 +121,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "targets",
-          "field": "body_targets"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -151,10 +141,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         {
           "name": "destination",
           "field": "body_destination"
-        },
-        {
-          "name": "targets",
-          "field": "body_targets"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -176,10 +162,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         {
           "name": "destination",
           "field": "body_destination"
-        },
-        {
-          "name": "targets",
-          "field": "body_targets"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -317,12 +299,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "targets",
-          "field": "body_targets"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -362,16 +339,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "type",
-          "field": "body_type"
-        },
-        {
-          "name": "$ref",
-          "field": "body__ref"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -1146,92 +1114,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "id",
-          "field": "body_id"
-        },
-        {
-          "name": "name",
-          "field": "body_name"
-        },
-        {
-          "name": "description",
-          "field": "body_description"
-        },
-        {
-          "name": "validated",
-          "field": "body_validated"
-        },
-        {
-          "name": "published",
-          "field": "body_published"
-        },
-        {
-          "name": "auto_validate",
-          "field": "body_auto_validate"
-        },
-        {
-          "name": "auto_publish",
-          "field": "body_auto_publish"
-        },
-        {
-          "name": "restricted",
-          "field": "body_restricted"
-        },
-        {
-          "name": "key",
-          "field": "body_key"
-        },
-        {
-          "name": "allowed_ip",
-          "field": "body_allowed_ip"
-        },
-        {
-          "name": "disallowed_ip",
-          "field": "body_disallowed_ip"
-        },
-        {
-          "name": "allowed_country",
-          "field": "body_allowed_country"
-        },
-        {
-          "name": "disallowed_country",
-          "field": "body_disallowed_country"
-        },
-        {
-          "name": "discarded",
-          "field": "body_discarded"
-        },
-        {
-          "name": "created_at",
-          "field": "body_created_at"
-        },
-        {
-          "name": "updated_at",
-          "field": "body_updated_at"
-        },
-        {
-          "name": "discarded_at",
-          "field": "body_discarded_at"
-        },
-        {
-          "name": "deleted_at",
-          "field": "body_deleted_at"
-        },
-        {
-          "name": "image",
-          "field": "body_image"
-        },
-        {
-          "name": "media_count",
-          "field": "body_media_count"
-        },
-        {
-          "name": "media_duration",
-          "field": "body_media_duration"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -1251,92 +1134,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "id",
-          "field": "body_id"
-        },
-        {
-          "name": "name",
-          "field": "body_name"
-        },
-        {
-          "name": "description",
-          "field": "body_description"
-        },
-        {
-          "name": "validated",
-          "field": "body_validated"
-        },
-        {
-          "name": "published",
-          "field": "body_published"
-        },
-        {
-          "name": "auto_validate",
-          "field": "body_auto_validate"
-        },
-        {
-          "name": "auto_publish",
-          "field": "body_auto_publish"
-        },
-        {
-          "name": "restricted",
-          "field": "body_restricted"
-        },
-        {
-          "name": "key",
-          "field": "body_key"
-        },
-        {
-          "name": "allowed_ip",
-          "field": "body_allowed_ip"
-        },
-        {
-          "name": "disallowed_ip",
-          "field": "body_disallowed_ip"
-        },
-        {
-          "name": "allowed_country",
-          "field": "body_allowed_country"
-        },
-        {
-          "name": "disallowed_country",
-          "field": "body_disallowed_country"
-        },
-        {
-          "name": "discarded",
-          "field": "body_discarded"
-        },
-        {
-          "name": "created_at",
-          "field": "body_created_at"
-        },
-        {
-          "name": "updated_at",
-          "field": "body_updated_at"
-        },
-        {
-          "name": "discarded_at",
-          "field": "body_discarded_at"
-        },
-        {
-          "name": "deleted_at",
-          "field": "body_deleted_at"
-        },
-        {
-          "name": "image",
-          "field": "body_image"
-        },
-        {
-          "name": "media_count",
-          "field": "body_media_count"
-        },
-        {
-          "name": "media_duration",
-          "field": "body_media_duration"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -1545,68 +1343,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "id",
-          "field": "body_id"
-        },
-        {
-          "name": "name",
-          "field": "body_name"
-        },
-        {
-          "name": "description",
-          "field": "body_description"
-        },
-        {
-          "name": "validated",
-          "field": "body_validated"
-        },
-        {
-          "name": "published",
-          "field": "body_published"
-        },
-        {
-          "name": "streams",
-          "field": "body_streams"
-        },
-        {
-          "name": "shot_boundaries",
-          "field": "body_shot_boundaries"
-        },
-        {
-          "name": "key_restricted",
-          "field": "body_key_restricted"
-        },
-        {
-          "name": "ip_restricted",
-          "field": "body_ip_restricted"
-        },
-        {
-          "name": "country_restricted",
-          "field": "body_country_restricted"
-        },
-        {
-          "name": "state",
-          "field": "body_state"
-        },
-        {
-          "name": "created_at",
-          "field": "body_created_at"
-        },
-        {
-          "name": "updated_at",
-          "field": "body_updated_at"
-        },
-        {
-          "name": "folder",
-          "field": "body_folder"
-        },
-        {
-          "name": "upload",
-          "field": "body_upload"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -1666,40 +1403,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "id",
-          "field": "body_id"
-        },
-        {
-          "name": "timestamp",
-          "field": "body_timestamp"
-        },
-        {
-          "name": "description",
-          "field": "body_description"
-        },
-        {
-          "name": "published",
-          "field": "body_published"
-        },
-        {
-          "name": "created_at",
-          "field": "body_created_at"
-        },
-        {
-          "name": "updated_at",
-          "field": "body_updated_at"
-        },
-        {
-          "name": "deleted_at",
-          "field": "body_deleted_at"
-        },
-        {
-          "name": "index",
-          "field": "body_index"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -1792,40 +1496,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "id",
-          "field": "body_id"
-        },
-        {
-          "name": "timestamp",
-          "field": "body_timestamp"
-        },
-        {
-          "name": "description",
-          "field": "body_description"
-        },
-        {
-          "name": "published",
-          "field": "body_published"
-        },
-        {
-          "name": "created_at",
-          "field": "body_created_at"
-        },
-        {
-          "name": "updated_at",
-          "field": "body_updated_at"
-        },
-        {
-          "name": "deleted_at",
-          "field": "body_deleted_at"
-        },
-        {
-          "name": "index",
-          "field": "body_index"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -1889,12 +1560,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": "queryParameters",
-      "bodyFields": [
-        {
-          "name": "$ref",
-          "field": "body__ref"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -2027,16 +1693,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "type",
-          "field": "body_type"
-        },
-        {
-          "name": "$ref",
-          "field": "body__ref"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -2397,20 +2054,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "target",
-          "field": "body_target"
-        },
-        {
-          "name": "player",
-          "field": "body_player"
-        },
-        {
-          "name": "encoding",
-          "field": "body_encoding"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -2495,12 +2139,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "$ref",
-          "field": "body__ref"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -3124,22 +2763,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         {
           "name": "folder",
           "field": "body_folder"
-        },
-        {
-          "name": "url",
-          "field": "body_url"
-        },
-        {
-          "name": "file",
-          "field": "body_file"
-        },
-        {
-          "name": "name",
-          "field": "body_name"
-        },
-        {
-          "name": "size",
-          "field": "body_size"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -4050,22 +3673,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
           "field": "body_category"
         },
         {
-          "name": "href",
-          "field": "body_href"
-        },
-        {
-          "name": "offset",
-          "field": "body_offset"
-        },
-        {
-          "name": "skip_after",
-          "field": "body_skip_after"
-        },
-        {
-          "name": "tracking_url",
-          "field": "body_tracking_url"
-        },
-        {
           "name": "type",
           "field": "body_type"
         },
@@ -4130,22 +3737,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         {
           "name": "category",
           "field": "body_category"
-        },
-        {
-          "name": "href",
-          "field": "body_href"
-        },
-        {
-          "name": "offset",
-          "field": "body_offset"
-        },
-        {
-          "name": "skip_after",
-          "field": "body_skip_after"
-        },
-        {
-          "name": "tracking_url",
-          "field": "body_tracking_url"
         },
         {
           "name": "type",
@@ -4239,44 +3830,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "active",
-          "field": "body_active"
-        },
-        {
-          "name": "auth",
-          "field": "body_auth"
-        },
-        {
-          "name": "basic_password",
-          "field": "body_basic_password"
-        },
-        {
-          "name": "basic_username",
-          "field": "body_basic_username"
-        },
-        {
-          "name": "bearer_token",
-          "field": "body_bearer_token"
-        },
-        {
-          "name": "event_list",
-          "field": "body_event_list"
-        },
-        {
-          "name": "name",
-          "field": "body_name"
-        },
-        {
-          "name": "response",
-          "field": "body_response"
-        },
-        {
-          "name": "url",
-          "field": "body_url"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -4308,44 +3862,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "active",
-          "field": "body_active"
-        },
-        {
-          "name": "auth",
-          "field": "body_auth"
-        },
-        {
-          "name": "basic_password",
-          "field": "body_basic_password"
-        },
-        {
-          "name": "basic_username",
-          "field": "body_basic_username"
-        },
-        {
-          "name": "bearer_token",
-          "field": "body_bearer_token"
-        },
-        {
-          "name": "event_list",
-          "field": "body_event_list"
-        },
-        {
-          "name": "name",
-          "field": "body_name"
-        },
-        {
-          "name": "response",
-          "field": "body_response"
-        },
-        {
-          "name": "url",
-          "field": "body_url"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -4537,48 +4054,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "audio_channel",
-          "field": "body_audio_channel"
-        },
-        {
-          "name": "audio_codec",
-          "field": "body_audio_codec"
-        },
-        {
-          "name": "container",
-          "field": "body_container"
-        },
-        {
-          "name": "copy",
-          "field": "body_copy"
-        },
-        {
-          "name": "folder",
-          "field": "body_folder"
-        },
-        {
-          "name": "name",
-          "field": "body_name"
-        },
-        {
-          "name": "streams",
-          "field": "body_streams"
-        },
-        {
-          "name": "video_aspect",
-          "field": "body_video_aspect"
-        },
-        {
-          "name": "video_codec",
-          "field": "body_video_codec"
-        },
-        {
-          "name": "video_fps",
-          "field": "body_video_fps"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -4631,12 +4107,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "name",
-          "field": "body_name"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -4866,10 +4337,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         {
           "name": "destination",
           "field": "body_destination"
-        },
-        {
-          "name": "files",
-          "field": "body_files"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -4923,104 +4390,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalQueryCollectionName": null,
       "bodyFields": [
         {
-          "name": "allowed_country",
-          "field": "body_allowed_country"
-        },
-        {
-          "name": "allowed_domains",
-          "field": "body_allowed_domains"
-        },
-        {
-          "name": "allowed_ip",
-          "field": "body_allowed_ip"
-        },
-        {
-          "name": "auto_generate_description",
-          "field": "body_auto_generate_description"
-        },
-        {
-          "name": "auto_generate_subtitle",
-          "field": "body_auto_generate_subtitle"
-        },
-        {
-          "name": "auto_generate_title",
-          "field": "body_auto_generate_title"
-        },
-        {
-          "name": "auto_publish",
-          "field": "body_auto_publish"
-        },
-        {
-          "name": "auto_translate_languages",
-          "field": "body_auto_translate_languages"
-        },
-        {
-          "name": "auto_validate",
-          "field": "body_auto_validate"
-        },
-        {
-          "name": "configuration",
-          "field": "body_configuration"
-        },
-        {
-          "name": "description",
-          "field": "body_description"
-        },
-        {
-          "name": "disallowed_country",
-          "field": "body_disallowed_country"
-        },
-        {
-          "name": "disallowed_domains",
-          "field": "body_disallowed_domains"
-        },
-        {
-          "name": "disallowed_ip",
-          "field": "body_disallowed_ip"
-        },
-        {
-          "name": "encodings",
-          "field": "body_encodings"
-        },
-        {
-          "name": "inherits_encodings",
-          "field": "body_inherits_encodings"
-        },
-        {
-          "name": "inherits_labels",
-          "field": "body_inherits_labels"
-        },
-        {
-          "name": "inherits_media_processing",
-          "field": "body_inherits_media_processing"
-        },
-        {
-          "name": "inherits_restrictions",
-          "field": "body_inherits_restrictions"
-        },
-        {
-          "name": "key_restricted",
-          "field": "body_key_restricted"
-        },
-        {
           "name": "name",
           "field": "body_name"
-        },
-        {
-          "name": "parent",
-          "field": "body_parent"
-        },
-        {
-          "name": "password",
-          "field": "body_password"
-        },
-        {
-          "name": "player",
-          "field": "body_player"
-        },
-        {
-          "name": "replace_on_upload",
-          "field": "body_replace_on_upload"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -5054,100 +4425,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "allowed_country",
-          "field": "body_allowed_country"
-        },
-        {
-          "name": "allowed_domains",
-          "field": "body_allowed_domains"
-        },
-        {
-          "name": "allowed_ip",
-          "field": "body_allowed_ip"
-        },
-        {
-          "name": "auto_generate_description",
-          "field": "body_auto_generate_description"
-        },
-        {
-          "name": "auto_generate_subtitle",
-          "field": "body_auto_generate_subtitle"
-        },
-        {
-          "name": "auto_generate_title",
-          "field": "body_auto_generate_title"
-        },
-        {
-          "name": "auto_publish",
-          "field": "body_auto_publish"
-        },
-        {
-          "name": "auto_translate_languages",
-          "field": "body_auto_translate_languages"
-        },
-        {
-          "name": "auto_validate",
-          "field": "body_auto_validate"
-        },
-        {
-          "name": "configuration",
-          "field": "body_configuration"
-        },
-        {
-          "name": "description",
-          "field": "body_description"
-        },
-        {
-          "name": "disallowed_country",
-          "field": "body_disallowed_country"
-        },
-        {
-          "name": "disallowed_domains",
-          "field": "body_disallowed_domains"
-        },
-        {
-          "name": "disallowed_ip",
-          "field": "body_disallowed_ip"
-        },
-        {
-          "name": "encodings",
-          "field": "body_encodings"
-        },
-        {
-          "name": "inherits_encodings",
-          "field": "body_inherits_encodings"
-        },
-        {
-          "name": "inherits_labels",
-          "field": "body_inherits_labels"
-        },
-        {
-          "name": "inherits_media_processing",
-          "field": "body_inherits_media_processing"
-        },
-        {
-          "name": "inherits_restrictions",
-          "field": "body_inherits_restrictions"
-        },
-        {
-          "name": "key_restricted",
-          "field": "body_key_restricted"
-        },
-        {
-          "name": "password",
-          "field": "body_password"
-        },
-        {
-          "name": "player",
-          "field": "body_player"
-        },
-        {
-          "name": "replace_on_upload",
-          "field": "body_replace_on_upload"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -5179,12 +4457,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "encodings",
-          "field": "body_encodings"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -5200,12 +4473,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "encodings",
-          "field": "body_encodings"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -5368,32 +4636,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalQueryCollectionName": null,
       "bodyFields": [
         {
-          "name": "active",
-          "field": "body_active"
-        },
-        {
-          "name": "description",
-          "field": "body_description"
-        },
-        {
-          "name": "home_folder",
-          "field": "body_home_folder"
-        },
-        {
-          "name": "msg_login",
-          "field": "body_msg_login"
-        },
-        {
-          "name": "msg_quit",
-          "field": "body_msg_quit"
-        },
-        {
           "name": "password",
           "field": "body_password"
-        },
-        {
-          "name": "prefix",
-          "field": "body_prefix"
         },
         {
           "name": "username",
@@ -5431,40 +4675,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "active",
-          "field": "body_active"
-        },
-        {
-          "name": "description",
-          "field": "body_description"
-        },
-        {
-          "name": "home_folder",
-          "field": "body_home_folder"
-        },
-        {
-          "name": "msg_login",
-          "field": "body_msg_login"
-        },
-        {
-          "name": "msg_quit",
-          "field": "body_msg_quit"
-        },
-        {
-          "name": "password",
-          "field": "body_password"
-        },
-        {
-          "name": "prefix",
-          "field": "body_prefix"
-        },
-        {
-          "name": "username",
-          "field": "body_username"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -5623,20 +4834,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "folders",
-          "field": "body_folders"
-        },
-        {
-          "name": "labels",
-          "field": "body_labels"
-        },
-        {
-          "name": "media",
-          "field": "body_media"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -5689,16 +4887,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "name",
-          "field": "body_name"
-        },
-        {
-          "name": "options",
-          "field": "body_options"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -5761,12 +4950,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "linked_services",
-          "field": "body_linked_services"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     }
@@ -5804,34 +4988,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         {
           "name": "file",
           "field": "body_file"
-        },
-        {
-          "name": "height",
-          "field": "body_height"
-        },
-        {
-          "name": "margin_x",
-          "field": "body_margin_x"
-        },
-        {
-          "name": "margin_y",
-          "field": "body_margin_y"
-        },
-        {
-          "name": "mode",
-          "field": "body_mode"
-        },
-        {
-          "name": "position",
-          "field": "body_position"
-        },
-        {
-          "name": "size",
-          "field": "body_size"
-        },
-        {
-          "name": "width",
-          "field": "body_width"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -5881,36 +5037,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "height",
-          "field": "body_height"
-        },
-        {
-          "name": "margin_x",
-          "field": "body_margin_x"
-        },
-        {
-          "name": "margin_y",
-          "field": "body_margin_y"
-        },
-        {
-          "name": "mode",
-          "field": "body_mode"
-        },
-        {
-          "name": "position",
-          "field": "body_position"
-        },
-        {
-          "name": "size",
-          "field": "body_size"
-        },
-        {
-          "name": "width",
-          "field": "body_width"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -5992,40 +5119,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "configuration",
-          "field": "body_configuration"
-        },
-        {
-          "name": "description",
-          "field": "body_description"
-        },
-        {
-          "name": "destination",
-          "field": "body_destination"
-        },
-        {
-          "name": "language",
-          "field": "body_language"
-        },
-        {
-          "name": "name",
-          "field": "body_name"
-        },
-        {
-          "name": "password",
-          "field": "body_password"
-        },
-        {
-          "name": "published",
-          "field": "body_published"
-        },
-        {
-          "name": "validated",
-          "field": "body_validated"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -6057,28 +5151,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "album",
-          "field": "body_album"
-        },
-        {
-          "name": "artist",
-          "field": "body_artist"
-        },
-        {
-          "name": "genre",
-          "field": "body_genre"
-        },
-        {
-          "name": "title",
-          "field": "body_title"
-        },
-        {
-          "name": "year",
-          "field": "body_year"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -6115,32 +5188,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "comment",
-          "field": "body_comment"
-        },
-        {
-          "name": "encoding",
-          "field": "body_encoding"
-        },
-        {
-          "name": "player",
-          "field": "body_player"
-        },
-        {
-          "name": "player_settings",
-          "field": "body_player_settings"
-        },
-        {
-          "name": "timestamp",
-          "field": "body_timestamp"
-        },
-        {
-          "name": "validity",
-          "field": "body_validity"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -6172,12 +5220,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "media",
-          "field": "body_media"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -6253,20 +5296,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "folders",
-          "field": "body_folders"
-        },
-        {
-          "name": "media",
-          "field": "body_media"
-        },
-        {
-          "name": "metadata",
-          "field": "body_metadata"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -6303,16 +5333,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "name",
-          "field": "body_name"
-        },
-        {
-          "name": "options",
-          "field": "body_options"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -6364,28 +5385,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalQueryCollectionName": null,
       "bodyFields": [
         {
-          "name": "color",
-          "field": "body_color"
-        },
-        {
-          "name": "criteria",
-          "field": "body_criteria"
-        },
-        {
-          "name": "description",
-          "field": "body_description"
-        },
-        {
           "name": "name",
           "field": "body_name"
-        },
-        {
-          "name": "order",
-          "field": "body_order"
-        },
-        {
-          "name": "validity",
-          "field": "body_validity"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -6440,32 +5441,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "color",
-          "field": "body_color"
-        },
-        {
-          "name": "criteria",
-          "field": "body_criteria"
-        },
-        {
-          "name": "description",
-          "field": "body_description"
-        },
-        {
-          "name": "name",
-          "field": "body_name"
-        },
-        {
-          "name": "order",
-          "field": "body_order"
-        },
-        {
-          "name": "validity",
-          "field": "body_validity"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -6513,20 +5489,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "deep",
-          "field": "body_deep"
-        },
-        {
-          "name": "folders",
-          "field": "body_folders"
-        },
-        {
-          "name": "media",
-          "field": "body_media"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -6603,280 +5566,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalQueryCollectionName": null,
       "bodyFields": [
         {
-          "name": "ads_category",
-          "field": "body_ads_category"
-        },
-        {
-          "name": "airplay",
-          "field": "body_airplay"
-        },
-        {
-          "name": "audio_volume",
-          "field": "body_audio_volume"
-        },
-        {
-          "name": "auto_hide_controls",
-          "field": "body_auto_hide_controls"
-        },
-        {
-          "name": "auto_start",
-          "field": "body_auto_start"
-        },
-        {
-          "name": "chromecast",
-          "field": "body_chromecast"
-        },
-        {
-          "name": "control_active_color",
-          "field": "body_control_active_color"
-        },
-        {
-          "name": "control_color",
-          "field": "body_control_color"
-        },
-        {
-          "name": "controlbar_color",
-          "field": "body_controlbar_color"
-        },
-        {
-          "name": "default",
-          "field": "body_default"
-        },
-        {
-          "name": "default_speed",
-          "field": "body_default_speed"
-        },
-        {
-          "name": "description",
-          "field": "body_description"
-        },
-        {
-          "name": "enable_embed_code",
-          "field": "body_enable_embed_code"
-        },
-        {
-          "name": "enable_facebook",
-          "field": "body_enable_facebook"
-        },
-        {
-          "name": "enable_linkedin",
-          "field": "body_enable_linkedin"
-        },
-        {
-          "name": "enable_twitter",
-          "field": "body_enable_twitter"
-        },
-        {
-          "name": "enable_whatsapp",
-          "field": "body_enable_whatsapp"
-        },
-        {
-          "name": "encoding_change_enabled",
-          "field": "body_encoding_change_enabled"
-        },
-        {
-          "name": "encoding_limit",
-          "field": "body_encoding_limit"
-        },
-        {
-          "name": "facebook_back_link",
-          "field": "body_facebook_back_link"
-        },
-        {
-          "name": "force_media_ratio",
-          "field": "body_force_media_ratio"
-        },
-        {
-          "name": "force_subtitles_activated",
-          "field": "body_force_subtitles_activated"
-        },
-        {
-          "name": "force_subtitles_type",
-          "field": "body_force_subtitles_type"
-        },
-        {
-          "name": "geoip_image",
-          "field": "body_geoip_image"
-        },
-        {
-          "name": "has_logo",
-          "field": "body_has_logo"
-        },
-        {
-          "name": "height",
-          "field": "body_height"
-        },
-        {
-          "name": "interrupt_image",
-          "field": "body_interrupt_image"
-        },
-        {
-          "name": "is360",
-          "field": "body_is360"
-        },
-        {
-          "name": "is_default",
-          "field": "body_is_default"
-        },
-        {
-          "name": "logo_anchor",
-          "field": "body_logo_anchor"
-        },
-        {
-          "name": "logo_image",
-          "field": "body_logo_image"
-        },
-        {
-          "name": "logo_margin_horizontal",
-          "field": "body_logo_margin_horizontal"
-        },
-        {
-          "name": "logo_margin_vertical",
-          "field": "body_logo_margin_vertical"
-        },
-        {
-          "name": "logo_percentage",
-          "field": "body_logo_percentage"
-        },
-        {
-          "name": "media_thumbnail_anchor",
-          "field": "body_media_thumbnail_anchor"
-        },
-        {
           "name": "name",
           "field": "body_name"
-        },
-        {
-          "name": "player_end_screen_type",
-          "field": "body_player_end_screen_type"
-        },
-        {
-          "name": "preferred_playback_strategy",
-          "field": "body_preferred_playback_strategy"
-        },
-        {
-          "name": "preferred_playback_strategy_activated",
-          "field": "body_preferred_playback_strategy_activated"
-        },
-        {
-          "name": "preload_image",
-          "field": "body_preload_image"
-        },
-        {
-          "name": "restrict_image",
-          "field": "body_restrict_image"
-        },
-        {
-          "name": "show_audio",
-          "field": "body_show_audio"
-        },
-        {
-          "name": "show_controls",
-          "field": "body_show_controls"
-        },
-        {
-          "name": "show_default_logo",
-          "field": "body_show_default_logo"
-        },
-        {
-          "name": "show_download",
-          "field": "body_show_download"
-        },
-        {
-          "name": "show_duration",
-          "field": "body_show_duration"
-        },
-        {
-          "name": "show_fullscreen",
-          "field": "body_show_fullscreen"
-        },
-        {
-          "name": "show_loop",
-          "field": "body_show_loop"
-        },
-        {
-          "name": "show_media_info",
-          "field": "body_show_media_info"
-        },
-        {
-          "name": "show_media_thumbnail",
-          "field": "body_show_media_thumbnail"
-        },
-        {
-          "name": "show_progression",
-          "field": "body_show_progression"
-        },
-        {
-          "name": "show_related",
-          "field": "body_show_related"
-        },
-        {
-          "name": "show_replay",
-          "field": "body_show_replay"
-        },
-        {
-          "name": "show_speed",
-          "field": "body_show_speed"
-        },
-        {
-          "name": "show_suggestions",
-          "field": "body_show_suggestions"
-        },
-        {
-          "name": "show_viewers",
-          "field": "body_show_viewers"
-        },
-        {
-          "name": "show_viewers_after",
-          "field": "body_show_viewers_after"
-        },
-        {
-          "name": "show_viewers_only_after",
-          "field": "body_show_viewers_only_after"
-        },
-        {
-          "name": "skip_intro_activated",
-          "field": "body_skip_intro_activated"
-        },
-        {
-          "name": "skip_intro_to",
-          "field": "body_skip_intro_to"
-        },
-        {
-          "name": "suggestions",
-          "field": "body_suggestions"
-        },
-        {
-          "name": "theme",
-          "field": "body_theme"
-        },
-        {
-          "name": "theme_activated",
-          "field": "body_theme_activated"
-        },
-        {
-          "name": "time_before_hide_cb",
-          "field": "body_time_before_hide_cb"
-        },
-        {
-          "name": "time_skip_mode",
-          "field": "body_time_skip_mode"
-        },
-        {
-          "name": "twitter_back_link",
-          "field": "body_twitter_back_link"
-        },
-        {
-          "name": "twitter_related",
-          "field": "body_twitter_related"
-        },
-        {
-          "name": "twitter_via",
-          "field": "body_twitter_via"
-        },
-        {
-          "name": "width",
-          "field": "body_width"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -6931,284 +5622,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "ads_category",
-          "field": "body_ads_category"
-        },
-        {
-          "name": "airplay",
-          "field": "body_airplay"
-        },
-        {
-          "name": "audio_volume",
-          "field": "body_audio_volume"
-        },
-        {
-          "name": "auto_hide_controls",
-          "field": "body_auto_hide_controls"
-        },
-        {
-          "name": "auto_start",
-          "field": "body_auto_start"
-        },
-        {
-          "name": "chromecast",
-          "field": "body_chromecast"
-        },
-        {
-          "name": "control_active_color",
-          "field": "body_control_active_color"
-        },
-        {
-          "name": "control_color",
-          "field": "body_control_color"
-        },
-        {
-          "name": "controlbar_color",
-          "field": "body_controlbar_color"
-        },
-        {
-          "name": "default",
-          "field": "body_default"
-        },
-        {
-          "name": "default_speed",
-          "field": "body_default_speed"
-        },
-        {
-          "name": "description",
-          "field": "body_description"
-        },
-        {
-          "name": "enable_embed_code",
-          "field": "body_enable_embed_code"
-        },
-        {
-          "name": "enable_facebook",
-          "field": "body_enable_facebook"
-        },
-        {
-          "name": "enable_linkedin",
-          "field": "body_enable_linkedin"
-        },
-        {
-          "name": "enable_twitter",
-          "field": "body_enable_twitter"
-        },
-        {
-          "name": "enable_whatsapp",
-          "field": "body_enable_whatsapp"
-        },
-        {
-          "name": "encoding_change_enabled",
-          "field": "body_encoding_change_enabled"
-        },
-        {
-          "name": "encoding_limit",
-          "field": "body_encoding_limit"
-        },
-        {
-          "name": "facebook_back_link",
-          "field": "body_facebook_back_link"
-        },
-        {
-          "name": "force_media_ratio",
-          "field": "body_force_media_ratio"
-        },
-        {
-          "name": "force_subtitles_activated",
-          "field": "body_force_subtitles_activated"
-        },
-        {
-          "name": "force_subtitles_type",
-          "field": "body_force_subtitles_type"
-        },
-        {
-          "name": "geoip_image",
-          "field": "body_geoip_image"
-        },
-        {
-          "name": "has_logo",
-          "field": "body_has_logo"
-        },
-        {
-          "name": "height",
-          "field": "body_height"
-        },
-        {
-          "name": "interrupt_image",
-          "field": "body_interrupt_image"
-        },
-        {
-          "name": "is360",
-          "field": "body_is360"
-        },
-        {
-          "name": "is_default",
-          "field": "body_is_default"
-        },
-        {
-          "name": "logo_anchor",
-          "field": "body_logo_anchor"
-        },
-        {
-          "name": "logo_image",
-          "field": "body_logo_image"
-        },
-        {
-          "name": "logo_margin_horizontal",
-          "field": "body_logo_margin_horizontal"
-        },
-        {
-          "name": "logo_margin_vertical",
-          "field": "body_logo_margin_vertical"
-        },
-        {
-          "name": "logo_percentage",
-          "field": "body_logo_percentage"
-        },
-        {
-          "name": "media_thumbnail_anchor",
-          "field": "body_media_thumbnail_anchor"
-        },
-        {
-          "name": "name",
-          "field": "body_name"
-        },
-        {
-          "name": "player_end_screen_type",
-          "field": "body_player_end_screen_type"
-        },
-        {
-          "name": "preferred_playback_strategy",
-          "field": "body_preferred_playback_strategy"
-        },
-        {
-          "name": "preferred_playback_strategy_activated",
-          "field": "body_preferred_playback_strategy_activated"
-        },
-        {
-          "name": "preload_image",
-          "field": "body_preload_image"
-        },
-        {
-          "name": "restrict_image",
-          "field": "body_restrict_image"
-        },
-        {
-          "name": "show_audio",
-          "field": "body_show_audio"
-        },
-        {
-          "name": "show_controls",
-          "field": "body_show_controls"
-        },
-        {
-          "name": "show_default_logo",
-          "field": "body_show_default_logo"
-        },
-        {
-          "name": "show_download",
-          "field": "body_show_download"
-        },
-        {
-          "name": "show_duration",
-          "field": "body_show_duration"
-        },
-        {
-          "name": "show_fullscreen",
-          "field": "body_show_fullscreen"
-        },
-        {
-          "name": "show_loop",
-          "field": "body_show_loop"
-        },
-        {
-          "name": "show_media_info",
-          "field": "body_show_media_info"
-        },
-        {
-          "name": "show_media_thumbnail",
-          "field": "body_show_media_thumbnail"
-        },
-        {
-          "name": "show_progression",
-          "field": "body_show_progression"
-        },
-        {
-          "name": "show_related",
-          "field": "body_show_related"
-        },
-        {
-          "name": "show_replay",
-          "field": "body_show_replay"
-        },
-        {
-          "name": "show_speed",
-          "field": "body_show_speed"
-        },
-        {
-          "name": "show_suggestions",
-          "field": "body_show_suggestions"
-        },
-        {
-          "name": "show_viewers",
-          "field": "body_show_viewers"
-        },
-        {
-          "name": "show_viewers_after",
-          "field": "body_show_viewers_after"
-        },
-        {
-          "name": "show_viewers_only_after",
-          "field": "body_show_viewers_only_after"
-        },
-        {
-          "name": "skip_intro_activated",
-          "field": "body_skip_intro_activated"
-        },
-        {
-          "name": "skip_intro_to",
-          "field": "body_skip_intro_to"
-        },
-        {
-          "name": "suggestions",
-          "field": "body_suggestions"
-        },
-        {
-          "name": "theme",
-          "field": "body_theme"
-        },
-        {
-          "name": "theme_activated",
-          "field": "body_theme_activated"
-        },
-        {
-          "name": "time_before_hide_cb",
-          "field": "body_time_before_hide_cb"
-        },
-        {
-          "name": "time_skip_mode",
-          "field": "body_time_skip_mode"
-        },
-        {
-          "name": "twitter_back_link",
-          "field": "body_twitter_back_link"
-        },
-        {
-          "name": "twitter_related",
-          "field": "body_twitter_related"
-        },
-        {
-          "name": "twitter_via",
-          "field": "body_twitter_via"
-        },
-        {
-          "name": "width",
-          "field": "body_width"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -7620,32 +6034,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "comment",
-          "field": "body_comment"
-        },
-        {
-          "name": "encoding",
-          "field": "body_encoding"
-        },
-        {
-          "name": "player",
-          "field": "body_player"
-        },
-        {
-          "name": "player_settings",
-          "field": "body_player_settings"
-        },
-        {
-          "name": "timestamp",
-          "field": "body_timestamp"
-        },
-        {
-          "name": "validity",
-          "field": "body_validity"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -8029,28 +6418,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalQueryCollectionName": null,
       "bodyFields": [
         {
-          "name": "default",
-          "field": "body_default"
-        },
-        {
-          "name": "file",
-          "field": "body_file"
-        },
-        {
           "name": "language",
           "field": "body_language"
-        },
-        {
-          "name": "lines",
-          "field": "body_lines"
-        },
-        {
-          "name": "name",
-          "field": "body_name"
-        },
-        {
-          "name": "published",
-          "field": "body_published"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -8105,24 +6474,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "default",
-          "field": "body_default"
-        },
-        {
-          "name": "lines",
-          "field": "body_lines"
-        },
-        {
-          "name": "name",
-          "field": "body_name"
-        },
-        {
-          "name": "published",
-          "field": "body_published"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -8206,36 +6558,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "description",
-          "field": "body_description"
-        },
-        {
-          "name": "duration",
-          "field": "body_duration"
-        },
-        {
-          "name": "file",
-          "field": "body_file"
-        },
-        {
-          "name": "from",
-          "field": "body_from"
-        },
-        {
-          "name": "media",
-          "field": "body_media"
-        },
-        {
-          "name": "name",
-          "field": "body_name"
-        },
-        {
-          "name": "url",
-          "field": "body_url"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     }

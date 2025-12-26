@@ -88,10 +88,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalQueryCollectionName": null,
       "bodyFields": [
         {
-          "name": "backup_schedule",
-          "field": "body_backup_schedule"
-        },
-        {
           "name": "name",
           "field": "body_name"
         },
@@ -159,16 +155,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "name",
-          "field": "body_name"
-        },
-        {
-          "name": "pack_id",
-          "field": "body_pack_id"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -192,12 +179,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "keep_backup_files",
-          "field": "body_keep_backup_files"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -355,14 +337,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalQueryCollectionName": null,
       "bodyFields": [
         {
-          "name": "is_pitr_enabled",
-          "field": "body_is_pitr_enabled"
-        },
-        {
-          "name": "retention",
-          "field": "body_retention"
-        },
-        {
           "name": "scheduled_at",
           "field": "body_scheduled_at"
         }
@@ -423,14 +397,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "queryParams": [],
       "optionalQueryCollectionName": null,
       "bodyFields": [
-        {
-          "name": "is_pitr_enabled",
-          "field": "body_is_pitr_enabled"
-        },
-        {
-          "name": "retention",
-          "field": "body_retention"
-        },
         {
           "name": "scheduled_at",
           "field": "body_scheduled_at"
@@ -524,180 +490,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "auto_increment_increment",
-          "field": "body_auto_increment_increment"
-        },
-        {
-          "name": "auto_increment_offset",
-          "field": "body_auto_increment_offset"
-        },
-        {
-          "name": "character_set_server",
-          "field": "body_character_set_server"
-        },
-        {
-          "name": "connect_timeout",
-          "field": "body_connect_timeout"
-        },
-        {
-          "name": "group_concat_max_len",
-          "field": "body_group_concat_max_len"
-        },
-        {
-          "name": "information_schema_stats_expiry",
-          "field": "body_information_schema_stats_expiry"
-        },
-        {
-          "name": "innodb_change_buffer_max_size",
-          "field": "body_innodb_change_buffer_max_size"
-        },
-        {
-          "name": "innodb_flush_neighbors",
-          "field": "body_innodb_flush_neighbors"
-        },
-        {
-          "name": "innodb_ft_max_token_size",
-          "field": "body_innodb_ft_max_token_size"
-        },
-        {
-          "name": "innodb_ft_min_token_size",
-          "field": "body_innodb_ft_min_token_size"
-        },
-        {
-          "name": "innodb_ft_server_stopword_table",
-          "field": "body_innodb_ft_server_stopword_table"
-        },
-        {
-          "name": "innodb_lock_wait_timeout",
-          "field": "body_innodb_lock_wait_timeout"
-        },
-        {
-          "name": "innodb_log_buffer_size",
-          "field": "body_innodb_log_buffer_size"
-        },
-        {
-          "name": "innodb_online_alter_log_max_size",
-          "field": "body_innodb_online_alter_log_max_size"
-        },
-        {
-          "name": "innodb_print_all_deadlocks",
-          "field": "body_innodb_print_all_deadlocks"
-        },
-        {
-          "name": "innodb_read_io_threads",
-          "field": "body_innodb_read_io_threads"
-        },
-        {
-          "name": "innodb_rollback_on_timeout",
-          "field": "body_innodb_rollback_on_timeout"
-        },
-        {
-          "name": "innodb_stats_persistent_sample_pages",
-          "field": "body_innodb_stats_persistent_sample_pages"
-        },
-        {
-          "name": "innodb_thread_concurrency",
-          "field": "body_innodb_thread_concurrency"
-        },
-        {
-          "name": "innodb_write_io_threads",
-          "field": "body_innodb_write_io_threads"
-        },
-        {
-          "name": "interactive_timeout",
-          "field": "body_interactive_timeout"
-        },
-        {
-          "name": "lock_wait_timeout",
-          "field": "body_lock_wait_timeout"
-        },
-        {
-          "name": "log_bin_trust_function_creators",
-          "field": "body_log_bin_trust_function_creators"
-        },
-        {
-          "name": "long_query_time",
-          "field": "body_long_query_time"
-        },
-        {
-          "name": "max_allowed_packet",
-          "field": "body_max_allowed_packet"
-        },
-        {
-          "name": "max_connections",
-          "field": "body_max_connections"
-        },
-        {
-          "name": "max_digest_length",
-          "field": "body_max_digest_length"
-        },
-        {
-          "name": "max_heap_table_size",
-          "field": "body_max_heap_table_size"
-        },
-        {
-          "name": "max_prepared_stmt_count",
-          "field": "body_max_prepared_stmt_count"
-        },
-        {
-          "name": "min_examined_row_limit",
-          "field": "body_min_examined_row_limit"
-        },
-        {
-          "name": "net_buffer_length",
-          "field": "body_net_buffer_length"
-        },
-        {
-          "name": "net_read_timeout",
-          "field": "body_net_read_timeout"
-        },
-        {
-          "name": "net_write_timeout",
-          "field": "body_net_write_timeout"
-        },
-        {
-          "name": "performance_schema_max_digest_length",
-          "field": "body_performance_schema_max_digest_length"
-        },
-        {
-          "name": "require_secure_transport",
-          "field": "body_require_secure_transport"
-        },
-        {
-          "name": "sort_buffer_size",
-          "field": "body_sort_buffer_size"
-        },
-        {
-          "name": "sql_mode",
-          "field": "body_sql_mode"
-        },
-        {
-          "name": "table_definition_cache",
-          "field": "body_table_definition_cache"
-        },
-        {
-          "name": "table_open_cache",
-          "field": "body_table_open_cache"
-        },
-        {
-          "name": "table_open_cache_instances",
-          "field": "body_table_open_cache_instances"
-        },
-        {
-          "name": "thread_stack",
-          "field": "body_thread_stack"
-        },
-        {
-          "name": "transaction_isolation",
-          "field": "body_transaction_isolation"
-        },
-        {
-          "name": "wait_timeout",
-          "field": "body_wait_timeout"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -817,12 +610,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "ip_filters",
-          "field": "body_ip_filters"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -900,20 +688,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "backup_id",
-          "field": "body_backup_id"
-        },
-        {
-          "name": "new_service",
-          "field": "body_new_service"
-        },
-        {
-          "name": "pitr_restore_date",
-          "field": "body_pitr_restore_date"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     }
@@ -1036,16 +811,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "kubernetes_version",
-          "field": "body_kubernetes_version"
-        },
-        {
-          "name": "name",
-          "field": "body_name"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -1117,12 +883,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "apiserver_params",
-          "field": "body_apiserver_params"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -1378,20 +1139,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalQueryCollectionName": null,
       "bodyFields": [
         {
-          "name": "availability_zone",
-          "field": "body_availability_zone"
-        },
-        {
           "name": "flavor",
           "field": "body_flavor"
-        },
-        {
-          "name": "labels",
-          "field": "body_labels"
-        },
-        {
-          "name": "maximum_instances",
-          "field": "body_maximum_instances"
         },
         {
           "name": "minimum_instances",
@@ -1400,10 +1149,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         {
           "name": "name",
           "field": "body_name"
-        },
-        {
-          "name": "prefix",
-          "field": "body_prefix"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -1461,24 +1206,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "labels",
-          "field": "body_labels"
-        },
-        {
-          "name": "maximum_instances",
-          "field": "body_maximum_instances"
-        },
-        {
-          "name": "minimum_instances",
-          "field": "body_minimum_instances"
-        },
-        {
-          "name": "name",
-          "field": "body_name"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -1572,20 +1300,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "bill_reference",
-          "field": "body_bill_reference"
-        },
-        {
-          "name": "customer_name",
-          "field": "body_customer_name"
-        },
-        {
-          "name": "description",
-          "field": "body_description"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     }
@@ -1623,14 +1338,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         {
           "name": "project_name",
           "field": "body_project_name"
-        },
-        {
-          "name": "user_description",
-          "field": "body_user_description"
-        },
-        {
-          "name": "user_email",
-          "field": "body_user_email"
         },
         {
           "name": "user_password",
@@ -1723,10 +1430,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
           "field": "body_project_name"
         },
         {
-          "name": "user_description",
-          "field": "body_user_description"
-        },
-        {
           "name": "user_email",
           "field": "body_user_email"
         }
@@ -1773,10 +1476,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "queryParams": [],
       "optionalQueryCollectionName": null,
       "bodyFields": [
-        {
-          "name": "description",
-          "field": "body_description"
-        },
         {
           "name": "password",
           "field": "body_password"
@@ -1829,20 +1528,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "description",
-          "field": "body_description"
-        },
-        {
-          "name": "email",
-          "field": "body_email"
-        },
-        {
-          "name": "password",
-          "field": "body_password"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -1944,10 +1630,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalQueryCollectionName": null,
       "bodyFields": [
         {
-          "name": "description",
-          "field": "body_description"
-        },
-        {
           "name": "email",
           "field": "body_email"
         }
@@ -1976,10 +1658,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "queryParams": [],
       "optionalQueryCollectionName": null,
       "bodyFields": [
-        {
-          "name": "description",
-          "field": "body_description"
-        },
         {
           "name": "email",
           "field": "body_email"

@@ -347,8 +347,8 @@ const buildNode = (fileName, spec) => {
 						const type = mapSchemaType(spec, resolvedProp);
 						const options = type === 'options' ? mapSchemaToOptions(spec, resolvedProp) : undefined;
 						const isRequired = requiredProps.includes(propName);
-						bodyFields.push({ name: propName, field: toFieldName('body', propName) });
 						if (isRequired) {
+							bodyFields.push({ name: propName, field: toFieldName('body', propName) });
 							properties.push(buildField({
 								name: toFieldName('body', propName),
 								displayName: toFieldDisplayName(propName),

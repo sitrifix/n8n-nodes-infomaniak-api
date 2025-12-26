@@ -28,20 +28,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "bill_reference",
-          "field": "body_bill_reference"
-        },
-        {
-          "name": "customer_name",
-          "field": "body_customer_name"
-        },
-        {
-          "name": "description",
-          "field": "body_description"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -193,40 +180,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": "queryParameters",
-      "bodyFields": [
-        {
-          "name": "actions",
-          "field": "body_actions"
-        },
-        {
-          "name": "depth",
-          "field": "body_depth"
-        },
-        {
-          "name": "files",
-          "field": "body_files"
-        },
-        {
-          "name": "from",
-          "field": "body_from"
-        },
-        {
-          "name": "terms",
-          "field": "body_terms"
-        },
-        {
-          "name": "until",
-          "field": "body_until"
-        },
-        {
-          "name": "user_id",
-          "field": "body_user_id"
-        },
-        {
-          "name": "users",
-          "field": "body_users"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -407,14 +361,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalQueryCollectionName": "queryParameters",
       "bodyFields": [
         {
-          "name": "color",
-          "field": "body_color"
-        },
-        {
-          "name": "for_all_user",
-          "field": "body_for_all_user"
-        },
-        {
           "name": "name",
           "field": "body_name"
         }
@@ -452,16 +398,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "cancel_id",
-          "field": "body_cancel_id"
-        },
-        {
-          "name": "cancel_ids",
-          "field": "body_cancel_ids"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     }
@@ -499,20 +436,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "except_file_ids",
-          "field": "body_except_file_ids"
-        },
-        {
-          "name": "file_ids",
-          "field": "body_file_ids"
-        },
-        {
-          "name": "parent_id",
-          "field": "body_parent_id"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     }
@@ -548,10 +472,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalQueryCollectionName": null,
       "bodyFields": [
         {
-          "name": "color",
-          "field": "body_color"
-        },
-        {
           "name": "name",
           "field": "body_name"
         }
@@ -575,16 +495,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "color",
-          "field": "body_color"
-        },
-        {
-          "name": "name",
-          "field": "body_name"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -785,36 +696,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "can_create_category",
-          "field": "body_can_create_category"
-        },
-        {
-          "name": "can_delete_category",
-          "field": "body_can_delete_category"
-        },
-        {
-          "name": "can_edit_category",
-          "field": "body_can_edit_category"
-        },
-        {
-          "name": "can_put_category_on_file",
-          "field": "body_can_put_category_on_file"
-        },
-        {
-          "name": "can_read_category_on_file",
-          "field": "body_can_read_category_on_file"
-        },
-        {
-          "name": "team_id",
-          "field": "body_team_id"
-        },
-        {
-          "name": "user_id",
-          "field": "body_user_id"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     }
@@ -856,28 +738,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "alias",
-          "field": "body_alias"
-        },
-        {
-          "name": "email_when_finished",
-          "field": "body_email_when_finished"
-        },
-        {
-          "name": "limit_file_size",
-          "field": "body_limit_file_size"
-        },
-        {
-          "name": "password",
-          "field": "body_password"
-        },
-        {
-          "name": "valid_until",
-          "field": "body_valid_until"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -897,28 +758,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "alias",
-          "field": "body_alias"
-        },
-        {
-          "name": "email_when_finished",
-          "field": "body_email_when_finished"
-        },
-        {
-          "name": "limit_file_size",
-          "field": "body_limit_file_size"
-        },
-        {
-          "name": "password",
-          "field": "body_password"
-        },
-        {
-          "name": "valid_until",
-          "field": "body_valid_until"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -958,20 +798,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "emails",
-          "field": "body_emails"
-        },
-        {
-          "name": "message",
-          "field": "body_message"
-        },
-        {
-          "name": "user_ids",
-          "field": "body_user_ids"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -1007,10 +834,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         {
           "name": "name",
           "field": "body_name"
-        },
-        {
-          "name": "parent_directory_id",
-          "field": "body_parent_directory_id"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -1068,18 +891,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
           "field": "body_destination_folder_id"
         },
         {
-          "name": "except_file_ids",
-          "field": "body_except_file_ids"
-        },
-        {
-          "name": "file_ids",
-          "field": "body_file_ids"
-        },
-        {
-          "name": "password",
-          "field": "body_password"
-        },
-        {
           "name": "sharelink_uuid",
           "field": "body_sharelink_uuid"
         },
@@ -1111,10 +922,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         {
           "name": "directory_id",
           "field": "body_directory_id"
-        },
-        {
-          "name": "source_path",
-          "field": "body_source_path"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -1152,10 +959,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         {
           "name": "password",
           "field": "body_password"
-        },
-        {
-          "name": "source_path",
-          "field": "body_source_path"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -1175,32 +978,12 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalQueryCollectionName": null,
       "bodyFields": [
         {
-          "name": "access_token_id",
-          "field": "body_access_token_id"
-        },
-        {
           "name": "application",
           "field": "body_application"
         },
         {
-          "name": "application_drive_id",
-          "field": "body_application_drive_id"
-        },
-        {
-          "name": "auth_code",
-          "field": "body_auth_code"
-        },
-        {
           "name": "directory_id",
           "field": "body_directory_id"
-        },
-        {
-          "name": "skip_shared_files",
-          "field": "body_skip_shared_files"
-        },
-        {
-          "name": "source_path",
-          "field": "body_source_path"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -1619,20 +1402,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalQueryCollectionName": "queryParameters",
       "bodyFields": [
         {
-          "name": "color",
-          "field": "body_color"
-        },
-        {
           "name": "name",
           "field": "body_name"
-        },
-        {
-          "name": "only_for_me",
-          "field": "body_only_for_me"
-        },
-        {
-          "name": "relative_path",
-          "field": "body_relative_path"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -1687,12 +1458,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": "queryParameters",
-      "bodyFields": [
-        {
-          "name": "name",
-          "field": "body_name"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -1712,12 +1478,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": "queryParameters",
-      "bodyFields": [
-        {
-          "name": "name",
-          "field": "body_name"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -1761,16 +1522,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "conflict",
-          "field": "body_conflict"
-        },
-        {
-          "name": "name",
-          "field": "body_name"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -1823,10 +1575,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalQueryCollectionName": null,
       "bodyFields": [
         {
-          "name": "mode",
-          "field": "body_mode"
-        },
-        {
           "name": "type",
           "field": "body_type"
         }
@@ -1872,24 +1620,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalQueryCollectionName": "queryParameters",
       "bodyFields": [
         {
-          "name": "emails",
-          "field": "body_emails"
-        },
-        {
-          "name": "message",
-          "field": "body_message"
-        },
-        {
           "name": "right",
           "field": "body_right"
-        },
-        {
-          "name": "team_ids",
-          "field": "body_team_ids"
-        },
-        {
-          "name": "user_ids",
-          "field": "body_user_ids"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -1933,20 +1665,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalQueryCollectionName": null,
       "bodyFields": [
         {
-          "name": "emails",
-          "field": "body_emails"
-        },
-        {
           "name": "right",
           "field": "body_right"
-        },
-        {
-          "name": "team_ids",
-          "field": "body_team_ids"
-        },
-        {
-          "name": "user_ids",
-          "field": "body_user_ids"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -1996,10 +1716,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
           "field": "body_emails"
         },
         {
-          "name": "message",
-          "field": "body_message"
-        },
-        {
           "name": "right",
           "field": "body_right"
         }
@@ -2023,16 +1739,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "emails",
-          "field": "body_emails"
-        },
-        {
-          "name": "user_ids",
-          "field": "body_user_ids"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     }
@@ -2114,12 +1821,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": "queryParameters",
-      "bodyFields": [
-        {
-          "name": "message",
-          "field": "body_message"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     }
@@ -2163,16 +1865,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalQueryCollectionName": "queryParameters",
       "bodyFields": [
         {
-          "name": "message",
-          "field": "body_message"
-        },
-        {
           "name": "right",
           "field": "body_right"
-        },
-        {
-          "name": "team_ids",
-          "field": "body_team_ids"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -2270,10 +1964,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "queryParams": [],
       "optionalQueryCollectionName": "queryParameters",
       "bodyFields": [
-        {
-          "name": "message",
-          "field": "body_message"
-        },
         {
           "name": "right",
           "field": "body_right"
@@ -2479,16 +2169,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": "queryParameters",
-      "bodyFields": [
-        {
-          "name": "body",
-          "field": "body_body"
-        },
-        {
-          "name": "is_resolved",
-          "field": "body_is_resolved"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -2578,20 +2259,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "directory_id",
-          "field": "body_directory_id"
-        },
-        {
-          "name": "directory_path",
-          "field": "body_directory_path"
-        },
-        {
-          "name": "file_name",
-          "field": "body_file_name"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -2673,34 +2341,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalQueryCollectionName": "queryParameters",
       "bodyFields": [
         {
-          "name": "conflict",
-          "field": "body_conflict"
-        },
-        {
-          "name": "created_at",
-          "field": "body_created_at"
-        },
-        {
-          "name": "directory_id",
-          "field": "body_directory_id"
-        },
-        {
-          "name": "directory_path",
-          "field": "body_directory_path"
-        },
-        {
-          "name": "file_id",
-          "field": "body_file_id"
-        },
-        {
-          "name": "file_name",
-          "field": "body_file_name"
-        },
-        {
-          "name": "last_modified_at",
-          "field": "body_last_modified_at"
-        },
-        {
           "name": "total_chunks",
           "field": "body_total_chunks"
         },
@@ -2778,20 +2418,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": "queryParameters",
-      "bodyFields": [
-        {
-          "name": "created_at",
-          "field": "body_created_at"
-        },
-        {
-          "name": "last_modified_at",
-          "field": "body_last_modified_at"
-        },
-        {
-          "name": "total_chunk_hash",
-          "field": "body_total_chunk_hash"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -3032,12 +2659,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": "queryParameters",
-      "bodyFields": [
-        {
-          "name": "name",
-          "field": "body_name"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -3109,12 +2731,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": "queryParameters",
-      "bodyFields": [
-        {
-          "name": "name",
-          "field": "body_name"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     }
@@ -3250,20 +2867,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "except_file_ids",
-          "field": "body_except_file_ids"
-        },
-        {
-          "name": "file_ids",
-          "field": "body_file_ids"
-        },
-        {
-          "name": "parent_id",
-          "field": "body_parent_id"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -3331,40 +2935,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalQueryCollectionName": "queryParameters",
       "bodyFields": [
         {
-          "name": "can_comment",
-          "field": "body_can_comment"
-        },
-        {
-          "name": "can_download",
-          "field": "body_can_download"
-        },
-        {
-          "name": "can_edit",
-          "field": "body_can_edit"
-        },
-        {
-          "name": "can_request_access",
-          "field": "body_can_request_access"
-        },
-        {
-          "name": "can_see_info",
-          "field": "body_can_see_info"
-        },
-        {
-          "name": "can_see_stats",
-          "field": "body_can_see_stats"
-        },
-        {
-          "name": "password",
-          "field": "body_password"
-        },
-        {
           "name": "right",
           "field": "body_right"
-        },
-        {
-          "name": "valid_until",
-          "field": "body_valid_until"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -3386,44 +2958,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "can_comment",
-          "field": "body_can_comment"
-        },
-        {
-          "name": "can_download",
-          "field": "body_can_download"
-        },
-        {
-          "name": "can_edit",
-          "field": "body_can_edit"
-        },
-        {
-          "name": "can_request_access",
-          "field": "body_can_request_access"
-        },
-        {
-          "name": "can_see_info",
-          "field": "body_can_see_info"
-        },
-        {
-          "name": "can_see_stats",
-          "field": "body_can_see_stats"
-        },
-        {
-          "name": "password",
-          "field": "body_password"
-        },
-        {
-          "name": "right",
-          "field": "body_right"
-        },
-        {
-          "name": "valid_until",
-          "field": "body_valid_until"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -3463,20 +2998,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "emails",
-          "field": "body_emails"
-        },
-        {
-          "name": "message",
-          "field": "body_message"
-        },
-        {
-          "name": "user_ids",
-          "field": "body_user_ids"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -3745,28 +3267,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "email",
-          "field": "body_email"
-        },
-        {
-          "name": "message",
-          "field": "body_message"
-        },
-        {
-          "name": "name",
-          "field": "body_name"
-        },
-        {
-          "name": "right",
-          "field": "body_right"
-        },
-        {
-          "name": "role",
-          "field": "body_role"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -3840,20 +3341,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "has_approved",
-          "field": "body_has_approved"
-        },
-        {
-          "name": "has_approved_ai_categories",
-          "field": "body_has_approved_ai_categories"
-        },
-        {
-          "name": "has_approved_content_search",
-          "field": "body_has_approved_content_search"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -3877,10 +3365,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         {
           "name": "bgColor",
           "field": "body_bgColor"
-        },
-        {
-          "name": "images",
-          "field": "body_images"
         },
         {
           "name": "txtColor",
@@ -3923,24 +3407,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "form",
-          "field": "body_form"
-        },
-        {
-          "name": "presentation",
-          "field": "body_presentation"
-        },
-        {
-          "name": "spreadsheet",
-          "field": "body_spreadsheet"
-        },
-        {
-          "name": "text",
-          "field": "body_text"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -3956,24 +3423,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "color",
-          "field": "body_color"
-        },
-        {
-          "name": "default_page",
-          "field": "body_default_page"
-        },
-        {
-          "name": "hide",
-          "field": "body_hide"
-        },
-        {
-          "name": "ui",
-          "field": "body_ui"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     }
@@ -4243,48 +3693,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalQueryCollectionName": "queryParameters",
       "bodyFields": [
         {
-          "name": "emails",
-          "field": "body_emails"
-        },
-        {
-          "name": "file_id",
-          "field": "body_file_id"
-        },
-        {
-          "name": "lang",
-          "field": "body_lang"
-        },
-        {
-          "name": "message",
-          "field": "body_message"
-        },
-        {
-          "name": "name",
-          "field": "body_name"
-        },
-        {
-          "name": "right",
-          "field": "body_right"
-        },
-        {
           "name": "role",
           "field": "body_role"
-        },
-        {
-          "name": "send_email",
-          "field": "body_send_email"
-        },
-        {
-          "name": "team_ids",
-          "field": "body_team_ids"
-        },
-        {
-          "name": "type",
-          "field": "body_type"
-        },
-        {
-          "name": "user_ids",
-          "field": "body_user_ids"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -4326,16 +3736,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "name",
-          "field": "body_name"
-        },
-        {
-          "name": "role",
-          "field": "body_role"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -4355,12 +3756,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "notify",
-          "field": "body_notify"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -4499,36 +3895,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "pathParams": [],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "date_format",
-          "field": "body_date_format"
-        },
-        {
-          "name": "default_drive",
-          "field": "body_default_drive"
-        },
-        {
-          "name": "density",
-          "field": "body_density"
-        },
-        {
-          "name": "list",
-          "field": "body_list"
-        },
-        {
-          "name": "sort_recent_file",
-          "field": "body_sort_recent_file"
-        },
-        {
-          "name": "tutorials",
-          "field": "body_tutorials"
-        },
-        {
-          "name": "use_shortcut",
-          "field": "body_use_shortcut"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     }

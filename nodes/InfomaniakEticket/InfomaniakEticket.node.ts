@@ -123,12 +123,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "pathParams": [],
       "queryParams": [],
       "optionalQueryCollectionName": "queryParameters",
-      "bodyFields": [
-        {
-          "name": "answers",
-          "field": "body_answers"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -150,12 +145,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "pathParams": [],
       "queryParams": [],
       "optionalQueryCollectionName": "queryParameters",
-      "bodyFields": [
-        {
-          "name": "answers",
-          "field": "body_answers"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     }
@@ -168,12 +158,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "pathParams": [],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "tickets",
-          "field": "body_tickets"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     }

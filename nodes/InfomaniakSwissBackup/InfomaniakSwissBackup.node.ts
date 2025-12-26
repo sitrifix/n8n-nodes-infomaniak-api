@@ -176,16 +176,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         }
       ],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "periodicity",
-          "field": "body_periodicity"
-        },
-        {
-          "name": "storage_reserved_acronis",
-          "field": "body_storage_reserved_acronis"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -237,28 +228,12 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalQueryCollectionName": null,
       "bodyFields": [
         {
-          "name": "connection_type",
-          "field": "body_connection_type"
-        },
-        {
           "name": "customer_name",
           "field": "body_customer_name"
         },
         {
           "name": "email",
           "field": "body_email"
-        },
-        {
-          "name": "firstname",
-          "field": "body_firstname"
-        },
-        {
-          "name": "lang",
-          "field": "body_lang"
-        },
-        {
-          "name": "lastname",
-          "field": "body_lastname"
         },
         {
           "name": "size",
@@ -348,32 +323,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "activate_notifications",
-          "field": "body_activate_notifications"
-        },
-        {
-          "name": "customer_name",
-          "field": "body_customer_name"
-        },
-        {
-          "name": "email",
-          "field": "body_email"
-        },
-        {
-          "name": "lang",
-          "field": "body_lang"
-        },
-        {
-          "name": "send_mail",
-          "field": "body_send_mail"
-        },
-        {
-          "name": "size",
-          "field": "body_size"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },

@@ -64,10 +64,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalQueryCollectionName": null,
       "bodyFields": [
         {
-          "name": "content_html",
-          "field": "body_content_html"
-        },
-        {
           "name": "email_from_addr",
           "field": "body_email_from_addr"
         },
@@ -76,44 +72,12 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
           "field": "body_email_from_name"
         },
         {
-          "name": "force_sended",
-          "field": "body_force_sended"
-        },
-        {
           "name": "lang",
           "field": "body_lang"
         },
         {
-          "name": "preheader",
-          "field": "body_preheader"
-        },
-        {
-          "name": "recipients",
-          "field": "body_recipients"
-        },
-        {
           "name": "subject",
           "field": "body_subject"
-        },
-        {
-          "name": "template_id",
-          "field": "body_template_id"
-        },
-        {
-          "name": "tracking_link",
-          "field": "body_tracking_link"
-        },
-        {
-          "name": "tracking_opening",
-          "field": "body_tracking_opening"
-        },
-        {
-          "name": "tracking_utm",
-          "field": "body_tracking_utm"
-        },
-        {
-          "name": "unsub_link",
-          "field": "body_unsub_link"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -131,12 +95,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": "queryParameters",
-      "bodyFields": [
-        {
-          "name": "select",
-          "field": "body_select"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -156,12 +115,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": "queryParameters",
-      "bodyFields": [
-        {
-          "name": "*",
-          "field": "body__"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -181,60 +135,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "content_html",
-          "field": "body_content_html"
-        },
-        {
-          "name": "email_from_addr",
-          "field": "body_email_from_addr"
-        },
-        {
-          "name": "email_from_name",
-          "field": "body_email_from_name"
-        },
-        {
-          "name": "force_sended",
-          "field": "body_force_sended"
-        },
-        {
-          "name": "lang",
-          "field": "body_lang"
-        },
-        {
-          "name": "preheader",
-          "field": "body_preheader"
-        },
-        {
-          "name": "recipients",
-          "field": "body_recipients"
-        },
-        {
-          "name": "subject",
-          "field": "body_subject"
-        },
-        {
-          "name": "template_id",
-          "field": "body_template_id"
-        },
-        {
-          "name": "tracking_link",
-          "field": "body_tracking_link"
-        },
-        {
-          "name": "tracking_opening",
-          "field": "body_tracking_opening"
-        },
-        {
-          "name": "tracking_utm",
-          "field": "body_tracking_utm"
-        },
-        {
-          "name": "unsub_link",
-          "field": "body_unsub_link"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -254,12 +155,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "*",
-          "field": "body__"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -364,12 +260,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "*",
-          "field": "body__"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -414,12 +305,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "*",
-          "field": "body__"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -439,12 +325,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "started_at",
-          "field": "body_started_at"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     }
@@ -604,10 +485,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
           "field": "body_name"
         },
         {
-          "name": "slug",
-          "field": "body_slug"
-        },
-        {
           "name": "type",
           "field": "body_type"
         }
@@ -628,10 +505,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "queryParams": [],
       "optionalQueryCollectionName": null,
       "bodyFields": [
-        {
-          "name": "filter",
-          "field": "body_filter"
-        },
         {
           "name": "select",
           "field": "body_select"
@@ -737,10 +610,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "queryParams": [],
       "optionalQueryCollectionName": null,
       "bodyFields": [
-        {
-          "name": "filter",
-          "field": "body_filter"
-        },
         {
           "name": "select",
           "field": "body_select"
@@ -963,10 +832,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalQueryCollectionName": "queryParameters",
       "bodyFields": [
         {
-          "name": "filter",
-          "field": "body_filter"
-        },
-        {
           "name": "select",
           "field": "body_select"
         }
@@ -1010,16 +875,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "data",
-          "field": "body_data"
-        },
-        {
-          "name": "name",
-          "field": "body_name"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -1097,18 +953,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         {
           "name": "email",
           "field": "body_email"
-        },
-        {
-          "name": "fields",
-          "field": "body_fields"
-        },
-        {
-          "name": "groups",
-          "field": "body_groups"
-        },
-        {
-          "name": "status",
-          "field": "body_status"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -1127,14 +971,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "queryParams": [],
       "optionalQueryCollectionName": null,
       "bodyFields": [
-        {
-          "name": "filter",
-          "field": "body_filter"
-        },
-        {
-          "name": "segment",
-          "field": "body_segment"
-        },
         {
           "name": "select",
           "field": "body_select"
@@ -1195,20 +1031,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": "queryParameters",
-      "bodyFields": [
-        {
-          "name": "fields",
-          "field": "body_fields"
-        },
-        {
-          "name": "groups",
-          "field": "body_groups"
-        },
-        {
-          "name": "status",
-          "field": "body_status"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -1244,16 +1067,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": "queryParameters",
-      "bodyFields": [
-        {
-          "name": "filter",
-          "field": "body_filter"
-        },
-        {
-          "name": "segment",
-          "field": "body_segment"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -1270,14 +1084,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "queryParams": [],
       "optionalQueryCollectionName": null,
       "bodyFields": [
-        {
-          "name": "filter",
-          "field": "body_filter"
-        },
-        {
-          "name": "segment",
-          "field": "body_segment"
-        },
         {
           "name": "select",
           "field": "body_select"
@@ -1300,32 +1106,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalQueryCollectionName": null,
       "bodyFields": [
         {
-          "name": "csv_enclosure",
-          "field": "body_csv_enclosure"
-        },
-        {
-          "name": "csv_separator",
-          "field": "body_csv_separator"
-        },
-        {
           "name": "fields",
           "field": "body_fields"
-        },
-        {
-          "name": "groups",
-          "field": "body_groups"
-        },
-        {
-          "name": "ipd_uuid",
-          "field": "body_ipd_uuid"
-        },
-        {
-          "name": "replace_fields",
-          "field": "body_replace_fields"
-        },
-        {
-          "name": "upload_id",
-          "field": "body_upload_id"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -1343,16 +1125,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "content",
-          "field": "body_content"
-        },
-        {
-          "name": "file",
-          "field": "body_file"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -1390,14 +1163,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalQueryCollectionName": null,
       "bodyFields": [
         {
-          "name": "filter",
-          "field": "body_filter"
-        },
-        {
-          "name": "segment",
-          "field": "body_segment"
-        },
-        {
           "name": "select",
           "field": "body_select"
         }
@@ -1418,18 +1183,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "queryParams": [],
       "optionalQueryCollectionName": null,
       "bodyFields": [
-        {
-          "name": "filter",
-          "field": "body_filter"
-        },
-        {
-          "name": "groups",
-          "field": "body_groups"
-        },
-        {
-          "name": "segment",
-          "field": "body_segment"
-        },
         {
           "name": "select",
           "field": "body_select"
@@ -1452,16 +1205,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalQueryCollectionName": null,
       "bodyFields": [
         {
-          "name": "filter",
-          "field": "body_filter"
-        },
-        {
           "name": "group_id",
           "field": "body_group_id"
-        },
-        {
-          "name": "segment",
-          "field": "body_segment"
         },
         {
           "name": "select",
@@ -1529,12 +1274,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "*",
-          "field": "body__"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -1554,12 +1294,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "*",
-          "field": "body__"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     }
@@ -1593,84 +1328,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "button",
-          "field": "body_button"
-        },
-        {
-          "name": "confirmation_url",
-          "field": "body_confirmation_url"
-        },
-        {
-          "name": "design",
-          "field": "body_design"
-        },
-        {
-          "name": "email_from_addr",
-          "field": "body_email_from_addr"
-        },
-        {
-          "name": "email_from_name",
-          "field": "body_email_from_name"
-        },
-        {
-          "name": "email_title",
-          "field": "body_email_title"
-        },
-        {
-          "name": "fields",
-          "field": "body_fields"
-        },
-        {
-          "name": "groups",
-          "field": "body_groups"
-        },
-        {
-          "name": "msg_ok",
-          "field": "body_msg_ok"
-        },
-        {
-          "name": "name",
-          "field": "body_name"
-        },
-        {
-          "name": "notify",
-          "field": "body_notify"
-        },
-        {
-          "name": "notify_address",
-          "field": "body_notify_address"
-        },
-        {
-          "name": "notify_lang",
-          "field": "body_notify_lang"
-        },
-        {
-          "name": "placeholder",
-          "field": "body_placeholder"
-        },
-        {
-          "name": "rgpd",
-          "field": "body_rgpd"
-        },
-        {
-          "name": "rgpd_msg",
-          "field": "body_rgpd_msg"
-        },
-        {
-          "name": "subtitle",
-          "field": "body_subtitle"
-        },
-        {
-          "name": "title",
-          "field": "body_title"
-        },
-        {
-          "name": "validation_url",
-          "field": "body_validation_url"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -1687,10 +1345,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "queryParams": [],
       "optionalQueryCollectionName": null,
       "bodyFields": [
-        {
-          "name": "filter",
-          "field": "body_filter"
-        },
         {
           "name": "select",
           "field": "body_select"
@@ -1751,84 +1405,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       ],
       "queryParams": [],
       "optionalQueryCollectionName": "queryParameters",
-      "bodyFields": [
-        {
-          "name": "button",
-          "field": "body_button"
-        },
-        {
-          "name": "confirmation_url",
-          "field": "body_confirmation_url"
-        },
-        {
-          "name": "design",
-          "field": "body_design"
-        },
-        {
-          "name": "email_from_addr",
-          "field": "body_email_from_addr"
-        },
-        {
-          "name": "email_from_name",
-          "field": "body_email_from_name"
-        },
-        {
-          "name": "email_title",
-          "field": "body_email_title"
-        },
-        {
-          "name": "fields",
-          "field": "body_fields"
-        },
-        {
-          "name": "groups",
-          "field": "body_groups"
-        },
-        {
-          "name": "msg_ok",
-          "field": "body_msg_ok"
-        },
-        {
-          "name": "name",
-          "field": "body_name"
-        },
-        {
-          "name": "notify",
-          "field": "body_notify"
-        },
-        {
-          "name": "notify_address",
-          "field": "body_notify_address"
-        },
-        {
-          "name": "notify_lang",
-          "field": "body_notify_lang"
-        },
-        {
-          "name": "placeholder",
-          "field": "body_placeholder"
-        },
-        {
-          "name": "rgpd",
-          "field": "body_rgpd"
-        },
-        {
-          "name": "rgpd_msg",
-          "field": "body_rgpd_msg"
-        },
-        {
-          "name": "subtitle",
-          "field": "body_subtitle"
-        },
-        {
-          "name": "title",
-          "field": "body_title"
-        },
-        {
-          "name": "validation_url",
-          "field": "body_validation_url"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },

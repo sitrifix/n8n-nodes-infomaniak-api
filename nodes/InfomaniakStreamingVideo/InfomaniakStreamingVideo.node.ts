@@ -85,10 +85,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         {
           "name": "name",
           "field": "body_name"
-        },
-        {
-          "name": "remember_to_config",
-          "field": "body_remember_to_config"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -185,20 +181,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalQueryCollectionName": null,
       "bodyFields": [
         {
-          "name": "access_country",
-          "field": "body_access_country"
-        },
-        {
           "name": "authorize_country",
           "field": "body_authorize_country"
-        },
-        {
-          "name": "date",
-          "field": "body_date"
-        },
-        {
-          "name": "dvr_window",
-          "field": "body_dvr_window"
         },
         {
           "name": "fragment_duration",
@@ -207,26 +191,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         {
           "name": "name",
           "field": "body_name"
-        },
-        {
-          "name": "record",
-          "field": "body_record"
-        },
-        {
-          "name": "record_name",
-          "field": "body_record_name"
-        },
-        {
-          "name": "repeat_interval",
-          "field": "body_repeat_interval"
-        },
-        {
-          "name": "repeat_until",
-          "field": "body_repeat_until"
-        },
-        {
-          "name": "simulcasts",
-          "field": "body_simulcasts"
         },
         {
           "name": "start_at",
@@ -241,20 +205,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
           "field": "body_stop_live"
         },
         {
-          "name": "storage_machine_id",
-          "field": "body_storage_machine_id"
-        },
-        {
           "name": "timezone",
           "field": "body_timezone"
-        },
-        {
-          "name": "weekdays_only",
-          "field": "body_weekdays_only"
-        },
-        {
-          "name": "weekends_only",
-          "field": "body_weekends_only"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -308,20 +260,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalQueryCollectionName": null,
       "bodyFields": [
         {
-          "name": "access_country",
-          "field": "body_access_country"
-        },
-        {
           "name": "authorize_country",
           "field": "body_authorize_country"
-        },
-        {
-          "name": "date",
-          "field": "body_date"
-        },
-        {
-          "name": "dvr_window",
-          "field": "body_dvr_window"
         },
         {
           "name": "fragment_duration",
@@ -330,26 +270,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         {
           "name": "name",
           "field": "body_name"
-        },
-        {
-          "name": "record",
-          "field": "body_record"
-        },
-        {
-          "name": "record_name",
-          "field": "body_record_name"
-        },
-        {
-          "name": "repeat_interval",
-          "field": "body_repeat_interval"
-        },
-        {
-          "name": "repeat_until",
-          "field": "body_repeat_until"
-        },
-        {
-          "name": "simulcasts",
-          "field": "body_simulcasts"
         },
         {
           "name": "start_at",
@@ -364,24 +284,12 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
           "field": "body_stop_live"
         },
         {
-          "name": "storage_machine_id",
-          "field": "body_storage_machine_id"
-        },
-        {
           "name": "timezone",
           "field": "body_timezone"
         },
         {
           "name": "type",
           "field": "body_type"
-        },
-        {
-          "name": "weekdays_only",
-          "field": "body_weekdays_only"
-        },
-        {
-          "name": "weekends_only",
-          "field": "body_weekends_only"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -408,16 +316,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         }
       ],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "date",
-          "field": "body_date"
-        },
-        {
-          "name": "type",
-          "field": "body_type"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     }
@@ -609,12 +508,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         }
       ],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "instant",
-          "field": "body_instant"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     }
@@ -679,12 +573,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         }
       ],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "auto_record",
-          "field": "body_auto_record"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     }
@@ -713,24 +602,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
           "field": "body_auto_stop"
         },
         {
-          "name": "diffusion_at",
-          "field": "body_diffusion_at"
-        },
-        {
-          "name": "diffusion_ends_at",
-          "field": "body_diffusion_ends_at"
-        },
-        {
-          "name": "file_path",
-          "field": "body_file_path"
-        },
-        {
           "name": "fragment_duration",
           "field": "body_fragment_duration"
-        },
-        {
-          "name": "fragment_number",
-          "field": "body_fragment_number"
         },
         {
           "name": "name",
@@ -836,52 +709,12 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
           "field": "body_auto_fragment_duration"
         },
         {
-          "name": "auto_record_name",
-          "field": "body_auto_record_name"
-        },
-        {
           "name": "default",
           "field": "body_default"
         },
         {
-          "name": "host",
-          "field": "body_host"
-        },
-        {
-          "name": "login",
-          "field": "body_login"
-        },
-        {
-          "name": "name",
-          "field": "body_name"
-        },
-        {
-          "name": "pass",
-          "field": "body_pass"
-        },
-        {
-          "name": "path",
-          "field": "body_path"
-        },
-        {
-          "name": "port",
-          "field": "body_port"
-        },
-        {
           "name": "protocol",
           "field": "body_protocol"
-        },
-        {
-          "name": "url_http",
-          "field": "body_url_http"
-        },
-        {
-          "name": "use_path",
-          "field": "body_use_path"
-        },
-        {
-          "name": "void_id",
-          "field": "body_void_id"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -1023,16 +856,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         }
       ],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "enabled",
-          "field": "body_enabled"
-        },
-        {
-          "name": "record_window_duration",
-          "field": "body_record_window_duration"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     }
@@ -1077,44 +901,12 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
           "field": "body_align"
         },
         {
-          "name": "enabled",
-          "field": "body_enabled"
-        },
-        {
-          "name": "follow_update",
-          "field": "body_follow_update"
-        },
-        {
-          "name": "height",
-          "field": "body_height"
-        },
-        {
           "name": "horizontal_offset",
           "field": "body_horizontal_offset"
         },
         {
-          "name": "image_path",
-          "field": "body_image_path"
-        },
-        {
-          "name": "opacity_percentage",
-          "field": "body_opacity_percentage"
-        },
-        {
-          "name": "size_percentage",
-          "field": "body_size_percentage"
-        },
-        {
           "name": "vertical_offset",
           "field": "body_vertical_offset"
-        },
-        {
-          "name": "width",
-          "field": "body_width"
-        },
-        {
-          "name": "z_index",
-          "field": "body_z_index"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -1267,10 +1059,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalQueryCollectionName": null,
       "bodyFields": [
         {
-          "name": "additional_config",
-          "field": "body_additional_config"
-        },
-        {
           "name": "application_instance",
           "field": "body_application_instance"
         },
@@ -1279,24 +1067,12 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
           "field": "body_application_name"
         },
         {
-          "name": "dest_stream",
-          "field": "body_dest_stream"
-        },
-        {
           "name": "enabled",
           "field": "body_enabled"
         },
         {
-          "name": "host",
-          "field": "body_host"
-        },
-        {
           "name": "name",
           "field": "body_name"
-        },
-        {
-          "name": "port",
-          "field": "body_port"
         }
       ],
       "optionalBodyCollectionName": "bodyParameters",
@@ -1435,10 +1211,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
           "field": "body_ads_enabled"
         },
         {
-          "name": "ads_url",
-          "field": "body_ads_url"
-        },
-        {
           "name": "allow_full_screen",
           "field": "body_allow_full_screen"
         },
@@ -1475,30 +1247,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
           "field": "body_countdown"
         },
         {
-          "name": "countdown_days",
-          "field": "body_countdown_days"
-        },
-        {
-          "name": "countdown_hours",
-          "field": "body_countdown_hours"
-        },
-        {
-          "name": "countdown_minutes",
-          "field": "body_countdown_minutes"
-        },
-        {
-          "name": "countdown_seconds",
-          "field": "body_countdown_seconds"
-        },
-        {
-          "name": "countdown_txt",
-          "field": "body_countdown_txt"
-        },
-        {
-          "name": "description",
-          "field": "body_description"
-        },
-        {
           "name": "enable_embed_code",
           "field": "body_enable_embed_code"
         },
@@ -1515,64 +1263,24 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
           "field": "body_extract_preload_img"
         },
         {
-          "name": "facebook_back_link",
-          "field": "body_facebook_back_link"
-        },
-        {
           "name": "facebook_player_embed",
           "field": "body_facebook_player_embed"
-        },
-        {
-          "name": "geo_ip_img",
-          "field": "body_geo_ip_img"
         },
         {
           "name": "height",
           "field": "body_height"
         },
         {
-          "name": "interrupt_img",
-          "field": "body_interrupt_img"
-        },
-        {
           "name": "is360",
           "field": "body_is360"
-        },
-        {
-          "name": "logo_anchor",
-          "field": "body_logo_anchor"
-        },
-        {
-          "name": "logo_img",
-          "field": "body_logo_img"
-        },
-        {
-          "name": "logo_margin_left",
-          "field": "body_logo_margin_left"
-        },
-        {
-          "name": "logo_margin_top",
-          "field": "body_logo_margin_top"
-        },
-        {
-          "name": "logo_percentage",
-          "field": "body_logo_percentage"
         },
         {
           "name": "name",
           "field": "body_name"
         },
         {
-          "name": "preload_img",
-          "field": "body_preload_img"
-        },
-        {
           "name": "ratio",
           "field": "body_ratio"
-        },
-        {
-          "name": "restrict_img",
-          "field": "body_restrict_img"
         },
         {
           "name": "show_controls",
@@ -1583,16 +1291,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
           "field": "body_show_controls_during_ads"
         },
         {
-          "name": "show_logo",
-          "field": "body_show_logo"
-        },
-        {
           "name": "show_viewers",
           "field": "body_show_viewers"
-        },
-        {
-          "name": "show_viewers_after",
-          "field": "body_show_viewers_after"
         },
         {
           "name": "show_viewers_only_after",
@@ -1607,28 +1307,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
           "field": "body_sound_percentage"
         },
         {
-          "name": "stereo_projection360",
-          "field": "body_stereo_projection360"
-        },
-        {
           "name": "time_before_hide_cb",
           "field": "body_time_before_hide_cb"
-        },
-        {
-          "name": "title",
-          "field": "body_title"
-        },
-        {
-          "name": "twitter_back_link",
-          "field": "body_twitter_back_link"
-        },
-        {
-          "name": "twitter_related",
-          "field": "body_twitter_related"
-        },
-        {
-          "name": "twitter_via",
-          "field": "body_twitter_via"
         },
         {
           "name": "use_geo_ip_img",
@@ -1736,10 +1416,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
           "field": "body_ads_enabled"
         },
         {
-          "name": "ads_url",
-          "field": "body_ads_url"
-        },
-        {
           "name": "allow_full_screen",
           "field": "body_allow_full_screen"
         },
@@ -1776,30 +1452,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
           "field": "body_countdown"
         },
         {
-          "name": "countdown_days",
-          "field": "body_countdown_days"
-        },
-        {
-          "name": "countdown_hours",
-          "field": "body_countdown_hours"
-        },
-        {
-          "name": "countdown_minutes",
-          "field": "body_countdown_minutes"
-        },
-        {
-          "name": "countdown_seconds",
-          "field": "body_countdown_seconds"
-        },
-        {
-          "name": "countdown_txt",
-          "field": "body_countdown_txt"
-        },
-        {
-          "name": "description",
-          "field": "body_description"
-        },
-        {
           "name": "enable_embed_code",
           "field": "body_enable_embed_code"
         },
@@ -1816,64 +1468,24 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
           "field": "body_extract_preload_img"
         },
         {
-          "name": "facebook_back_link",
-          "field": "body_facebook_back_link"
-        },
-        {
           "name": "facebook_player_embed",
           "field": "body_facebook_player_embed"
-        },
-        {
-          "name": "geo_ip_img",
-          "field": "body_geo_ip_img"
         },
         {
           "name": "height",
           "field": "body_height"
         },
         {
-          "name": "interrupt_img",
-          "field": "body_interrupt_img"
-        },
-        {
           "name": "is360",
           "field": "body_is360"
-        },
-        {
-          "name": "logo_anchor",
-          "field": "body_logo_anchor"
-        },
-        {
-          "name": "logo_img",
-          "field": "body_logo_img"
-        },
-        {
-          "name": "logo_margin_left",
-          "field": "body_logo_margin_left"
-        },
-        {
-          "name": "logo_margin_top",
-          "field": "body_logo_margin_top"
-        },
-        {
-          "name": "logo_percentage",
-          "field": "body_logo_percentage"
         },
         {
           "name": "name",
           "field": "body_name"
         },
         {
-          "name": "preload_img",
-          "field": "body_preload_img"
-        },
-        {
           "name": "ratio",
           "field": "body_ratio"
-        },
-        {
-          "name": "restrict_img",
-          "field": "body_restrict_img"
         },
         {
           "name": "show_controls",
@@ -1884,16 +1496,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
           "field": "body_show_controls_during_ads"
         },
         {
-          "name": "show_logo",
-          "field": "body_show_logo"
-        },
-        {
           "name": "show_viewers",
           "field": "body_show_viewers"
-        },
-        {
-          "name": "show_viewers_after",
-          "field": "body_show_viewers_after"
         },
         {
           "name": "show_viewers_only_after",
@@ -1908,28 +1512,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
           "field": "body_sound_percentage"
         },
         {
-          "name": "stereo_projection360",
-          "field": "body_stereo_projection360"
-        },
-        {
           "name": "time_before_hide_cb",
           "field": "body_time_before_hide_cb"
-        },
-        {
-          "name": "title",
-          "field": "body_title"
-        },
-        {
-          "name": "twitter_back_link",
-          "field": "body_twitter_back_link"
-        },
-        {
-          "name": "twitter_related",
-          "field": "body_twitter_related"
-        },
-        {
-          "name": "twitter_via",
-          "field": "body_twitter_via"
         },
         {
           "name": "use_geo_ip_img",
@@ -2025,10 +1609,6 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalQueryCollectionName": "queryParameters",
       "bodyFields": [
         {
-          "name": "is_periodic",
-          "field": "body_is_periodic"
-        },
-        {
           "name": "offset",
           "field": "body_offset"
         },
@@ -2123,24 +1703,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         }
       ],
       "optionalQueryCollectionName": "queryParameters",
-      "bodyFields": [
-        {
-          "name": "is_periodic",
-          "field": "body_is_periodic"
-        },
-        {
-          "name": "offset",
-          "field": "body_offset"
-        },
-        {
-          "name": "type",
-          "field": "body_type"
-        },
-        {
-          "name": "url",
-          "field": "body_url"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -2305,32 +1868,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         }
       ],
       "optionalQueryCollectionName": null,
-      "bodyFields": [
-        {
-          "name": "access_country",
-          "field": "body_access_country"
-        },
-        {
-          "name": "allow_domain",
-          "field": "body_allow_domain"
-        },
-        {
-          "name": "authorize_country",
-          "field": "body_authorize_country"
-        },
-        {
-          "name": "exception_ip",
-          "field": "body_exception_ip"
-        },
-        {
-          "name": "forbidden_ip",
-          "field": "body_forbidden_ip"
-        },
-        {
-          "name": "shared_key",
-          "field": "body_shared_key"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
@@ -3255,12 +2793,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
         }
       ],
       "optionalQueryCollectionName": "queryParameters",
-      "bodyFields": [
-        {
-          "name": "allowed_excess",
-          "field": "body_allowed_excess"
-        }
-      ],
+      "bodyFields": [],
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     }
