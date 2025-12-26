@@ -1,0 +1,68 @@
+{
+  "name": "n8n-nodes-infomaniak",
+  "version": "0.1.0",
+  "description": "n8n community node for the Infomaniak API",
+  "license": "MIT",
+  "homepage": "",
+  "keywords": [
+    "n8n-community-node-package",
+    "infomaniak"
+  ],
+  "author": {
+    "name": "Sitrifix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/n8n-nodes-infomaniak.git"
+  },
+  "scripts": {
+    "generate:nodes": "node scripts/generate-nodes.js",
+    "build": "node scripts/generate-nodes.js && n8n-node build && node scripts/copy-api.js",
+    "build:watch": "tsc --watch",
+    "dev": "n8n-node dev",
+    "lint": "n8n-node lint",
+    "lint:fix": "n8n-node lint --fix",
+    "release": "n8n-node release",
+    "prepublishOnly": "n8n-node prerelease",
+    "test": "vitest run"
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "strict": true,
+    "credentials": [
+      "dist/credentials/InfomaniakApiKeyApi.credentials.js",
+      "dist/credentials/InfomaniakOAuth2Api.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/InfomaniakEticket/InfomaniakEticket.node.js",
+      "dist/nodes/InfomaniakKMeet/InfomaniakKMeet.node.js",
+      "dist/nodes/InfomaniakNewsletter/InfomaniakNewsletter.node.js",
+      "dist/nodes/InfomaniakAitools/InfomaniakAitools.node.js",
+      "dist/nodes/InfomaniakCoreRessource/InfomaniakCoreRessource.node.js",
+      "dist/nodes/InfomaniakKchat/InfomaniakKchat.node.js",
+      "dist/nodes/InfomaniakKdrive/InfomaniakKdrive.node.js",
+      "dist/nodes/InfomaniakMail/InfomaniakMail.node.js",
+      "dist/nodes/InfomaniakPublicCloud/InfomaniakPublicCloud.node.js",
+      "dist/nodes/InfomaniakStreamingRadio/InfomaniakStreamingRadio.node.js",
+      "dist/nodes/InfomaniakStreamingVideo/InfomaniakStreamingVideo.node.js",
+      "dist/nodes/InfomaniakSwissBackup/InfomaniakSwissBackup.node.js",
+      "dist/nodes/InfomaniakUrlShortner/InfomaniakUrlShortner.node.js",
+      "dist/nodes/InfomaniakVod/InfomaniakVod.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@n8n/node-cli": "*",
+    "@types/node": "22.13.1",
+    "eslint": "9.32.0",
+    "prettier": "3.6.2",
+    "release-it": "^19.0.4",
+    "typescript": "5.9.2",
+    "vitest": "2.1.9"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "name": "List Infomaniak Mail Hostings",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "c1a2b3c4-0001-4000-8000-000000000001",
+      "name": "Manual Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "authentication": "apiKey",
+        "product": "infomaniak_api_mail.json",
+        "operation": "GET /1/mail_hostings",
+        "pathParameters": {},
+        "queryParameters": {
+          "limit": 50
+        },
+        "bodyParameters": {},
+        "returnAll": false,
+        "limit": 50,
+        "splitIntoItems": true,
+        "returnFullResponse": false
+      },
+      "id": "c1a2b3c4-0001-4000-8000-000000000002",
+      "name": "Infomaniak",
+      "type": "n8n-nodes-infomaniak.infomaniak",
+      "typeVersion": 2,
+      "position": [520, 300]
+    }
+  ],
+  "connections": {
+    "Manual Trigger": {
+      "main": [
+        [
+          {
+            "node": "Infomaniak",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {}
+}
