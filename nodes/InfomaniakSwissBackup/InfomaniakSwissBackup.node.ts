@@ -16,7 +16,7 @@ type OperationDefinition = {
 
 const operations: Record<string, Record<string, OperationDefinition>> = {
   "Administrator": {
-    "POST /1/swiss_backups/{swiss_backup_id}/admin": {
+    "Create Administrator": {
       "method": "POST",
       "path": "/1/swiss_backups/{swiss_backup_id}/admin",
       "pagination": "none",
@@ -37,7 +37,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/swiss_backups/{swiss_backup_id}/admin": {
+    "Update Administrator": {
       "method": "PUT",
       "path": "/1/swiss_backups/{swiss_backup_id}/admin",
       "pagination": "none",
@@ -60,7 +60,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Billing": {
-    "GET /1/swiss_backups/pricing": {
+    "List Prices And Discounts": {
       "method": "GET",
       "path": "/1/swiss_backups/pricing",
       "pagination": "none",
@@ -71,7 +71,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/swiss_backups/calculate": {
+    "Calculate The Price": {
       "method": "GET",
       "path": "/1/swiss_backups/calculate",
       "pagination": "none",
@@ -89,7 +89,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Passwords": {
-    "POST /1/swiss_backups/{swiss_backup_id}/admin/request_password": {
+    "Request Administrator Password": {
       "method": "POST",
       "path": "/1/swiss_backups/{swiss_backup_id}/admin/request_password",
       "pagination": "none",
@@ -105,7 +105,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/swiss_backups/{swiss_backup_id}/slots/{slot_id}/request_password": {
+    "Request Slot Password": {
       "method": "POST",
       "path": "/1/swiss_backups/{swiss_backup_id}/slots/{slot_id}/request_password",
       "pagination": "none",
@@ -126,8 +126,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "bodyFieldName": null
     }
   },
-  "Product management": {
-    "GET /1/swiss_backups": {
+  "Product Management": {
+    "List All Swiss Backups": {
       "method": "GET",
       "path": "/1/swiss_backups",
       "pagination": "limit-skip",
@@ -143,7 +143,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/swiss_backups/{swiss_backup_id}": {
+    "Swiss Backup Information": {
       "method": "GET",
       "path": "/1/swiss_backups/{swiss_backup_id}",
       "pagination": "none",
@@ -159,7 +159,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/swiss_backups/{swiss_backup_id}": {
+    "Update A Swiss Backup": {
       "method": "PUT",
       "path": "/1/swiss_backups/{swiss_backup_id}",
       "pagination": "none",
@@ -189,7 +189,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /1/swiss_backups/{swiss_backup_id}/acronis_informations": {
+    "Acronis Information": {
       "method": "GET",
       "path": "/1/swiss_backups/{swiss_backup_id}/acronis_informations",
       "pagination": "none",
@@ -207,7 +207,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Slots": {
-    "GET /1/swiss_backups/{swiss_backup_id}/slots": {
+    "List All Slots": {
       "method": "GET",
       "path": "/1/swiss_backups/{swiss_backup_id}/slots",
       "pagination": "none",
@@ -223,7 +223,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/swiss_backups/{swiss_backup_id}/slots": {
+    "Create": {
       "method": "POST",
       "path": "/1/swiss_backups/{swiss_backup_id}/slots",
       "pagination": "none",
@@ -272,7 +272,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "POST /1/swiss_backups/{swiss_backup_id}/slots/{slot_id}/disable": {
+    "Disable": {
       "method": "POST",
       "path": "/1/swiss_backups/{swiss_backup_id}/slots/{slot_id}/disable",
       "pagination": "none",
@@ -292,7 +292,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/swiss_backups/{swiss_backup_id}/slots/{slot_id}/enable": {
+    "Enable": {
       "method": "POST",
       "path": "/1/swiss_backups/{swiss_backup_id}/slots/{slot_id}/enable",
       "pagination": "none",
@@ -312,7 +312,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/swiss_backups/{swiss_backup_id}/slots/{slot_id}": {
+    "Slot Information": {
       "method": "GET",
       "path": "/1/swiss_backups/{swiss_backup_id}/slots/{slot_id}",
       "pagination": "none",
@@ -332,7 +332,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/swiss_backups/{swiss_backup_id}/slots/{slot_id}": {
+    "Update": {
       "method": "PUT",
       "path": "/1/swiss_backups/{swiss_backup_id}/slots/{slot_id}",
       "pagination": "none",
@@ -377,7 +377,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/swiss_backups/{swiss_backup_id}/slots/{slot_id}": {
+    "Delete": {
       "method": "DELETE",
       "path": "/1/swiss_backups/{swiss_backup_id}/slots/{slot_id}",
       "pagination": "none",
@@ -397,7 +397,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/swiss_backups/{swiss_backup_id}/slots/{slot_id}/rclone": {
+    "RClone Details": {
       "method": "GET",
       "path": "/1/swiss_backups/{swiss_backup_id}/slots/{slot_id}/rclone",
       "pagination": "none",
@@ -499,7 +499,7 @@ export class InfomaniakSwissBackup implements INodeType {
         },
         {
           "name": "Product Management",
-          "value": "Product management"
+          "value": "Product Management"
         },
         {
           "name": "Slots",
@@ -524,14 +524,14 @@ export class InfomaniakSwissBackup implements INodeType {
       "options": [
         {
           "name": "Create Administrator",
-          "value": "POST /1/swiss_backups/{swiss_backup_id}/admin"
+          "value": "Create Administrator"
         },
         {
           "name": "Update Administrator",
-          "value": "PUT /1/swiss_backups/{swiss_backup_id}/admin"
+          "value": "Update Administrator"
         }
       ],
-      "default": "POST /1/swiss_backups/{swiss_backup_id}/admin",
+      "default": "Create Administrator",
       "noDataExpression": true
     },
     {
@@ -545,7 +545,7 @@ export class InfomaniakSwissBackup implements INodeType {
             "Administrator"
           ],
           "operation": [
-            "POST /1/swiss_backups/{swiss_backup_id}/admin"
+            "Create Administrator"
           ]
         }
       },
@@ -562,7 +562,7 @@ export class InfomaniakSwissBackup implements INodeType {
             "Administrator"
           ],
           "operation": [
-            "POST /1/swiss_backups/{swiss_backup_id}/admin"
+            "Create Administrator"
           ]
         }
       },
@@ -580,7 +580,7 @@ export class InfomaniakSwissBackup implements INodeType {
             "Administrator"
           ],
           "operation": [
-            "PUT /1/swiss_backups/{swiss_backup_id}/admin"
+            "Update Administrator"
           ]
         }
       },
@@ -597,7 +597,7 @@ export class InfomaniakSwissBackup implements INodeType {
             "Administrator"
           ],
           "operation": [
-            "PUT /1/swiss_backups/{swiss_backup_id}/admin"
+            "Update Administrator"
           ]
         }
       },
@@ -618,14 +618,14 @@ export class InfomaniakSwissBackup implements INodeType {
       "options": [
         {
           "name": "List Prices And Discounts",
-          "value": "GET /1/swiss_backups/pricing"
+          "value": "List Prices And Discounts"
         },
         {
           "name": "Calculate The Price",
-          "value": "GET /1/swiss_backups/calculate"
+          "value": "Calculate The Price"
         }
       ],
-      "default": "GET /1/swiss_backups/pricing",
+      "default": "List Prices And Discounts",
       "noDataExpression": true
     },
     {
@@ -640,7 +640,7 @@ export class InfomaniakSwissBackup implements INodeType {
             "Billing"
           ],
           "operation": [
-            "GET /1/swiss_backups/pricing"
+            "List Prices And Discounts"
           ]
         }
       },
@@ -683,7 +683,7 @@ export class InfomaniakSwissBackup implements INodeType {
             "Billing"
           ],
           "operation": [
-            "GET /1/swiss_backups/calculate"
+            "Calculate The Price"
           ]
         }
       },
@@ -701,7 +701,7 @@ export class InfomaniakSwissBackup implements INodeType {
             "Billing"
           ],
           "operation": [
-            "GET /1/swiss_backups/calculate"
+            "Calculate The Price"
           ]
         }
       },
@@ -770,14 +770,14 @@ export class InfomaniakSwissBackup implements INodeType {
       "options": [
         {
           "name": "Request Administrator Password",
-          "value": "POST /1/swiss_backups/{swiss_backup_id}/admin/request_password"
+          "value": "Request Administrator Password"
         },
         {
           "name": "Request Slot Password",
-          "value": "POST /1/swiss_backups/{swiss_backup_id}/slots/{slot_id}/request_password"
+          "value": "Request Slot Password"
         }
       ],
-      "default": "POST /1/swiss_backups/{swiss_backup_id}/admin/request_password",
+      "default": "Request Administrator Password",
       "noDataExpression": true
     },
     {
@@ -791,7 +791,7 @@ export class InfomaniakSwissBackup implements INodeType {
             "Passwords"
           ],
           "operation": [
-            "POST /1/swiss_backups/{swiss_backup_id}/admin/request_password"
+            "Request Administrator Password"
           ]
         }
       },
@@ -809,7 +809,7 @@ export class InfomaniakSwissBackup implements INodeType {
             "Passwords"
           ],
           "operation": [
-            "POST /1/swiss_backups/{swiss_backup_id}/slots/{slot_id}/request_password"
+            "Request Slot Password"
           ]
         }
       },
@@ -827,7 +827,7 @@ export class InfomaniakSwissBackup implements INodeType {
             "Passwords"
           ],
           "operation": [
-            "POST /1/swiss_backups/{swiss_backup_id}/slots/{slot_id}/request_password"
+            "Request Slot Password"
           ]
         }
       },
@@ -841,29 +841,29 @@ export class InfomaniakSwissBackup implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Product management"
+            "Product Management"
           ]
         }
       },
       "options": [
         {
           "name": "List All Swiss Backups",
-          "value": "GET /1/swiss_backups"
+          "value": "List All Swiss Backups"
         },
         {
           "name": "Swiss Backup Information",
-          "value": "GET /1/swiss_backups/{swiss_backup_id}"
+          "value": "Swiss Backup Information"
         },
         {
           "name": "Update A Swiss Backup",
-          "value": "PUT /1/swiss_backups/{swiss_backup_id}"
+          "value": "Update A Swiss Backup"
         },
         {
           "name": "Acronis Information",
-          "value": "GET /1/swiss_backups/{swiss_backup_id}/acronis_informations"
+          "value": "Acronis Information"
         }
       ],
-      "default": "GET /1/swiss_backups",
+      "default": "List All Swiss Backups",
       "noDataExpression": true
     },
     {
@@ -874,10 +874,10 @@ export class InfomaniakSwissBackup implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Product management"
+            "Product Management"
           ],
           "operation": [
-            "GET /1/swiss_backups"
+            "List All Swiss Backups"
           ]
         }
       },
@@ -893,10 +893,10 @@ export class InfomaniakSwissBackup implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Product management"
+            "Product Management"
           ],
           "operation": [
-            "GET /1/swiss_backups"
+            "List All Swiss Backups"
           ]
         }
       },
@@ -983,10 +983,10 @@ export class InfomaniakSwissBackup implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Product management"
+            "Product Management"
           ],
           "operation": [
-            "GET /1/swiss_backups/{swiss_backup_id}"
+            "Swiss Backup Information"
           ]
         }
       },
@@ -1001,10 +1001,10 @@ export class InfomaniakSwissBackup implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Product management"
+            "Product Management"
           ],
           "operation": [
-            "PUT /1/swiss_backups/{swiss_backup_id}"
+            "Update A Swiss Backup"
           ]
         }
       },
@@ -1019,10 +1019,10 @@ export class InfomaniakSwissBackup implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Product management"
+            "Product Management"
           ],
           "operation": [
-            "PUT /1/swiss_backups/{swiss_backup_id}"
+            "Update A Swiss Backup"
           ]
         }
       },
@@ -1038,10 +1038,10 @@ export class InfomaniakSwissBackup implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Product management"
+            "Product Management"
           ],
           "operation": [
-            "PUT /1/swiss_backups/{swiss_backup_id}"
+            "Update A Swiss Backup"
           ]
         }
       },
@@ -1088,10 +1088,10 @@ export class InfomaniakSwissBackup implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Product management"
+            "Product Management"
           ],
           "operation": [
-            "GET /1/swiss_backups/{swiss_backup_id}/acronis_informations"
+            "Acronis Information"
           ]
         }
       },
@@ -1112,38 +1112,38 @@ export class InfomaniakSwissBackup implements INodeType {
       "options": [
         {
           "name": "List All Slots",
-          "value": "GET /1/swiss_backups/{swiss_backup_id}/slots"
+          "value": "List All Slots"
         },
         {
           "name": "Create",
-          "value": "POST /1/swiss_backups/{swiss_backup_id}/slots"
+          "value": "Create"
         },
         {
           "name": "Disable",
-          "value": "POST /1/swiss_backups/{swiss_backup_id}/slots/{slot_id}/disable"
+          "value": "Disable"
         },
         {
           "name": "Enable",
-          "value": "POST /1/swiss_backups/{swiss_backup_id}/slots/{slot_id}/enable"
+          "value": "Enable"
         },
         {
           "name": "Slot Information",
-          "value": "GET /1/swiss_backups/{swiss_backup_id}/slots/{slot_id}"
+          "value": "Slot Information"
         },
         {
           "name": "Update",
-          "value": "PUT /1/swiss_backups/{swiss_backup_id}/slots/{slot_id}"
+          "value": "Update"
         },
         {
           "name": "Delete",
-          "value": "DELETE /1/swiss_backups/{swiss_backup_id}/slots/{slot_id}"
+          "value": "Delete"
         },
         {
           "name": "RClone Details",
-          "value": "GET /1/swiss_backups/{swiss_backup_id}/slots/{slot_id}/rclone"
+          "value": "RClone Details"
         }
       ],
-      "default": "GET /1/swiss_backups/{swiss_backup_id}/slots",
+      "default": "List All Slots",
       "noDataExpression": true
     },
     {
@@ -1157,7 +1157,7 @@ export class InfomaniakSwissBackup implements INodeType {
             "Slots"
           ],
           "operation": [
-            "GET /1/swiss_backups/{swiss_backup_id}/slots"
+            "List All Slots"
           ]
         }
       },
@@ -1175,7 +1175,7 @@ export class InfomaniakSwissBackup implements INodeType {
             "Slots"
           ],
           "operation": [
-            "POST /1/swiss_backups/{swiss_backup_id}/slots"
+            "Create"
           ]
         }
       },
@@ -1193,7 +1193,7 @@ export class InfomaniakSwissBackup implements INodeType {
             "Slots"
           ],
           "operation": [
-            "POST /1/swiss_backups/{swiss_backup_id}/slots"
+            "Create"
           ]
         }
       },
@@ -1211,7 +1211,7 @@ export class InfomaniakSwissBackup implements INodeType {
             "Slots"
           ],
           "operation": [
-            "POST /1/swiss_backups/{swiss_backup_id}/slots"
+            "Create"
           ]
         }
       },
@@ -1229,7 +1229,7 @@ export class InfomaniakSwissBackup implements INodeType {
             "Slots"
           ],
           "operation": [
-            "POST /1/swiss_backups/{swiss_backup_id}/slots"
+            "Create"
           ]
         }
       },
@@ -1247,7 +1247,7 @@ export class InfomaniakSwissBackup implements INodeType {
             "Slots"
           ],
           "operation": [
-            "POST /1/swiss_backups/{swiss_backup_id}/slots"
+            "Create"
           ]
         }
       },
@@ -1308,7 +1308,7 @@ export class InfomaniakSwissBackup implements INodeType {
             "Slots"
           ],
           "operation": [
-            "POST /1/swiss_backups/{swiss_backup_id}/slots"
+            "Create"
           ]
         }
       },
@@ -1366,7 +1366,7 @@ export class InfomaniakSwissBackup implements INodeType {
             "Slots"
           ],
           "operation": [
-            "POST /1/swiss_backups/{swiss_backup_id}/slots/{slot_id}/disable"
+            "Disable"
           ]
         }
       },
@@ -1384,7 +1384,7 @@ export class InfomaniakSwissBackup implements INodeType {
             "Slots"
           ],
           "operation": [
-            "POST /1/swiss_backups/{swiss_backup_id}/slots/{slot_id}/disable"
+            "Disable"
           ]
         }
       },
@@ -1402,7 +1402,7 @@ export class InfomaniakSwissBackup implements INodeType {
             "Slots"
           ],
           "operation": [
-            "POST /1/swiss_backups/{swiss_backup_id}/slots/{slot_id}/enable"
+            "Enable"
           ]
         }
       },
@@ -1420,7 +1420,7 @@ export class InfomaniakSwissBackup implements INodeType {
             "Slots"
           ],
           "operation": [
-            "POST /1/swiss_backups/{swiss_backup_id}/slots/{slot_id}/enable"
+            "Enable"
           ]
         }
       },
@@ -1438,7 +1438,7 @@ export class InfomaniakSwissBackup implements INodeType {
             "Slots"
           ],
           "operation": [
-            "GET /1/swiss_backups/{swiss_backup_id}/slots/{slot_id}"
+            "Slot Information"
           ]
         }
       },
@@ -1456,7 +1456,7 @@ export class InfomaniakSwissBackup implements INodeType {
             "Slots"
           ],
           "operation": [
-            "GET /1/swiss_backups/{swiss_backup_id}/slots/{slot_id}"
+            "Slot Information"
           ]
         }
       },
@@ -1474,7 +1474,7 @@ export class InfomaniakSwissBackup implements INodeType {
             "Slots"
           ],
           "operation": [
-            "PUT /1/swiss_backups/{swiss_backup_id}/slots/{slot_id}"
+            "Update"
           ]
         }
       },
@@ -1492,7 +1492,7 @@ export class InfomaniakSwissBackup implements INodeType {
             "Slots"
           ],
           "operation": [
-            "PUT /1/swiss_backups/{swiss_backup_id}/slots/{slot_id}"
+            "Update"
           ]
         }
       },
@@ -1511,7 +1511,7 @@ export class InfomaniakSwissBackup implements INodeType {
             "Slots"
           ],
           "operation": [
-            "PUT /1/swiss_backups/{swiss_backup_id}/slots/{slot_id}"
+            "Update"
           ]
         }
       },
@@ -1570,7 +1570,7 @@ export class InfomaniakSwissBackup implements INodeType {
             "Slots"
           ],
           "operation": [
-            "DELETE /1/swiss_backups/{swiss_backup_id}/slots/{slot_id}"
+            "Delete"
           ]
         }
       },
@@ -1588,7 +1588,7 @@ export class InfomaniakSwissBackup implements INodeType {
             "Slots"
           ],
           "operation": [
-            "DELETE /1/swiss_backups/{swiss_backup_id}/slots/{slot_id}"
+            "Delete"
           ]
         }
       },
@@ -1606,7 +1606,7 @@ export class InfomaniakSwissBackup implements INodeType {
             "Slots"
           ],
           "operation": [
-            "GET /1/swiss_backups/{swiss_backup_id}/slots/{slot_id}/rclone"
+            "RClone Details"
           ]
         }
       },
@@ -1624,7 +1624,7 @@ export class InfomaniakSwissBackup implements INodeType {
             "Slots"
           ],
           "operation": [
-            "GET /1/swiss_backups/{swiss_backup_id}/slots/{slot_id}/rclone"
+            "RClone Details"
           ]
         }
       },
@@ -1639,10 +1639,10 @@ export class InfomaniakSwissBackup implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Product management"
+            "Product Management"
           ],
           "operation": [
-            "GET /1/swiss_backups"
+            "List All Swiss Backups"
           ]
         }
       }
@@ -1659,10 +1659,10 @@ export class InfomaniakSwissBackup implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Product management"
+            "Product Management"
           ],
           "operation": [
-            "GET /1/swiss_backups"
+            "List All Swiss Backups"
           ],
           "returnAll": [
             false

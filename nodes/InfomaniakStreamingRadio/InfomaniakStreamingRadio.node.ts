@@ -15,8 +15,8 @@ type OperationDefinition = {
 };
 
 const operations: Record<string, Record<string, OperationDefinition>> = {
-  "AutoDJ": {
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj": {
+  "Auto DJ": {
+    "Get Auto DJ": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/autodj",
       "pagination": "none",
@@ -36,7 +36,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/radios/{radio_product_id}/stations/{station_id}/autodj": {
+    "Store Auto DJ": {
       "method": "POST",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/autodj",
       "pagination": "none",
@@ -56,7 +56,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/radios/{radio_product_id}/stations/{station_id}/autodj": {
+    "Update Auto DJ": {
       "method": "PUT",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/autodj",
       "pagination": "none",
@@ -117,7 +117,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/autodj": {
+    "Get Auto DJ (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/autodj",
       "pagination": "none",
@@ -137,7 +137,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/radios/{radio_product_id}/stations/{station_id}/autodj": {
+    "Store Auto DJ (2)": {
       "method": "POST",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/autodj",
       "pagination": "none",
@@ -157,7 +157,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /2/radios/{radio_product_id}/stations/{station_id}/autodj": {
+    "Update Auto DJ (2)": {
       "method": "PUT",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/autodj",
       "pagination": "none",
@@ -218,7 +218,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "POST /1/radios/{radio_product_id}/stations/{station_id}/autodj/restart": {
+    "Restart": {
       "method": "POST",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/autodj/restart",
       "pagination": "none",
@@ -238,7 +238,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/radios/{radio_product_id}/stations/{station_id}/autodj/restart": {
+    "Restart (2)": {
       "method": "POST",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/autodj/restart",
       "pagination": "none",
@@ -259,8 +259,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "bodyFieldName": null
     }
   },
-  "AutoDJ > Events": {
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj/events": {
+  "Auto DJ > Events": {
+    "This Endpoint Allows You To List Auto DJ Events.": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/autodj/events",
       "pagination": "none",
@@ -289,7 +289,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/radios/{radio_product_id}/stations/{station_id}/autodj/events": {
+    "Store Auto DJ Event": {
       "method": "POST",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/autodj/events",
       "pagination": "none",
@@ -354,7 +354,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj/events/{event_id}": {
+    "Get Auto DJ Event": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/autodj/events/{event_id}",
       "pagination": "none",
@@ -378,7 +378,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/radios/{radio_product_id}/stations/{station_id}/autodj/events/{event_id}": {
+    "Update Auto DJ Event": {
       "method": "PUT",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/autodj/events/{event_id}",
       "pagination": "none",
@@ -455,7 +455,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/radios/{radio_product_id}/stations/{station_id}/autodj/events/{event_id}": {
+    "Delete Auto DJ Event": {
       "method": "DELETE",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/autodj/events/{event_id}",
       "pagination": "none",
@@ -479,7 +479,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/autodj/events": {
+    "This Endpoint Allows You To List Auto DJ Events. (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/autodj/events",
       "pagination": "none",
@@ -508,7 +508,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/radios/{radio_product_id}/stations/{station_id}/autodj/events": {
+    "Store Auto DJ Event (2)": {
       "method": "POST",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/autodj/events",
       "pagination": "none",
@@ -573,7 +573,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/autodj/events/{event_id}": {
+    "Get Auto DJ Event (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/autodj/events/{event_id}",
       "pagination": "none",
@@ -597,7 +597,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /2/radios/{radio_product_id}/stations/{station_id}/autodj/events/{event_id}": {
+    "Update Auto DJ Event (2)": {
       "method": "PUT",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/autodj/events/{event_id}",
       "pagination": "none",
@@ -674,7 +674,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /2/radios/{radio_product_id}/stations/{station_id}/autodj/events/{event_id}": {
+    "Delete Auto DJ Event (2)": {
       "method": "DELETE",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/autodj/events/{event_id}",
       "pagination": "none",
@@ -699,8 +699,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "bodyFieldName": null
     }
   },
-  "AutoDJ > Media": {
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj/medias": {
+  "Auto DJ > Media": {
+    "This Endpoint Allows You To List Auto DJ Media.": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/autodj/medias",
       "pagination": "none",
@@ -720,7 +720,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/radios/{radio_product_id}/stations/{station_id}/autodj/medias": {
+    "Store Auto DJ Media": {
       "method": "POST",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/autodj/medias",
       "pagination": "none",
@@ -753,7 +753,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj/medias/{media_id}": {
+    "Get Auto DJ Media": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/autodj/medias/{media_id}",
       "pagination": "none",
@@ -777,7 +777,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/radios/{radio_product_id}/stations/{station_id}/autodj/medias/{media_id}": {
+    "Update Auto DJ Media": {
       "method": "PUT",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/autodj/medias/{media_id}",
       "pagination": "none",
@@ -834,7 +834,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/radios/{radio_product_id}/stations/{station_id}/autodj/medias/{media_id}": {
+    "Delete Auto DJ Media": {
       "method": "DELETE",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/autodj/medias/{media_id}",
       "pagination": "none",
@@ -858,7 +858,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/autodj/medias": {
+    "This Endpoint Allows You To List Auto DJ Media. (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/autodj/medias",
       "pagination": "none",
@@ -878,7 +878,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/radios/{radio_product_id}/stations/{station_id}/autodj/medias": {
+    "Store Auto DJ Media (2)": {
       "method": "POST",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/autodj/medias",
       "pagination": "none",
@@ -911,7 +911,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/autodj/medias/{media_id}": {
+    "Get Auto DJ Media (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/autodj/medias/{media_id}",
       "pagination": "none",
@@ -935,7 +935,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /2/radios/{radio_product_id}/stations/{station_id}/autodj/medias/{media_id}": {
+    "Update Auto DJ Media (2)": {
       "method": "PUT",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/autodj/medias/{media_id}",
       "pagination": "none",
@@ -992,7 +992,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /2/radios/{radio_product_id}/stations/{station_id}/autodj/medias/{media_id}": {
+    "Delete Auto DJ Media (2)": {
       "method": "DELETE",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/autodj/medias/{media_id}",
       "pagination": "none",
@@ -1017,8 +1017,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "bodyFieldName": null
     }
   },
-  "AutoDJ > Playing playlist": {
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist": {
+  "Auto DJ > Playing Playlist": {
+    "Get Playing Playlist": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist",
       "pagination": "none",
@@ -1047,7 +1047,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias": {
+    "Get Playing Playlist (2)": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias",
       "pagination": "none",
@@ -1076,7 +1076,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist": {
+    "Get Playing Playlist (3)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist",
       "pagination": "none",
@@ -1105,7 +1105,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias": {
+    "Get Playing Playlist (4)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias",
       "pagination": "none",
@@ -1134,7 +1134,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/generate": {
+    "Generate Playlist": {
       "method": "POST",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/generate",
       "pagination": "none",
@@ -1159,7 +1159,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "POST /1/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias/insert": {
+    "Insert Media After": {
       "method": "POST",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias/insert",
       "pagination": "none",
@@ -1192,7 +1192,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias/{playing_media_id}/move": {
+    "Move Media After": {
       "method": "POST",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias/{playing_media_id}/move",
       "pagination": "none",
@@ -1225,7 +1225,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/generate": {
+    "Generate Playlist (2)": {
       "method": "POST",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/generate",
       "pagination": "none",
@@ -1250,7 +1250,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "POST /2/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias/insert": {
+    "Insert Media After (2)": {
       "method": "POST",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias/insert",
       "pagination": "none",
@@ -1283,7 +1283,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias/{playing_media_id}/move": {
+    "Move Media After (2)": {
       "method": "POST",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias/{playing_media_id}/move",
       "pagination": "none",
@@ -1316,7 +1316,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias/{playing_media_id}": {
+    "Remove Media": {
       "method": "DELETE",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias/{playing_media_id}",
       "pagination": "none",
@@ -1340,7 +1340,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /2/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias/{playing_media_id}": {
+    "Remove Media (2)": {
       "method": "DELETE",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias/{playing_media_id}",
       "pagination": "none",
@@ -1365,8 +1365,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "bodyFieldName": null
     }
   },
-  "AutoDJ > Playlist": {
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj/playlists": {
+  "Auto DJ > Playlist": {
+    "This Endpoint Allows You To List Auto DJ Playlist.": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/autodj/playlists",
       "pagination": "none",
@@ -1386,7 +1386,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/radios/{radio_product_id}/stations/{station_id}/autodj/playlists": {
+    "Store Auto DJ Playlist": {
       "method": "POST",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/autodj/playlists",
       "pagination": "none",
@@ -1415,7 +1415,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}": {
+    "Get Auto DJ Playlist": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}",
       "pagination": "none",
@@ -1439,7 +1439,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}": {
+    "Update Auto DJ Playlist": {
       "method": "PUT",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}",
       "pagination": "none",
@@ -1472,7 +1472,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}": {
+    "Delete Auto DJ Playlist": {
       "method": "DELETE",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}",
       "pagination": "none",
@@ -1496,7 +1496,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}/medias": {
+    "This Endpoint Allows You To List Auto DJ Medias In Playlist.": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}/medias",
       "pagination": "none",
@@ -1520,7 +1520,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/autodj/playlists": {
+    "This Endpoint Allows You To List Auto DJ Playlist. (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/autodj/playlists",
       "pagination": "none",
@@ -1540,7 +1540,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/radios/{radio_product_id}/stations/{station_id}/autodj/playlists": {
+    "Store Auto DJ Playlist (2)": {
       "method": "POST",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/autodj/playlists",
       "pagination": "none",
@@ -1569,7 +1569,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}": {
+    "Get Auto DJ Playlist (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}",
       "pagination": "none",
@@ -1593,7 +1593,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /2/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}": {
+    "Update Auto DJ Playlist (2)": {
       "method": "PUT",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}",
       "pagination": "none",
@@ -1626,7 +1626,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /2/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}": {
+    "Delete Auto DJ Playlist (2)": {
       "method": "DELETE",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}",
       "pagination": "none",
@@ -1650,7 +1650,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}/medias": {
+    "This Endpoint Allows You To List Auto DJ Medias In Playlist. (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}/medias",
       "pagination": "none",
@@ -1674,7 +1674,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}/attach_media": {
+    "Update Auto DJ Playlist (3)": {
       "method": "PUT",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}/attach_media",
       "pagination": "none",
@@ -1703,7 +1703,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /2/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}/attach_media": {
+    "Update Auto DJ Playlist (4)": {
       "method": "PUT",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}/attach_media",
       "pagination": "none",
@@ -1734,7 +1734,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Encoder Events": {
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/encoder_events": {
+    "List Encoder Events": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/encoder_events",
       "pagination": "page-per-page",
@@ -1763,7 +1763,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/encoder_events": {
+    "List Encoder Events (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/encoder_events",
       "pagination": "page-per-page",
@@ -1794,7 +1794,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Hls Stream": {
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream": {
+    "Get Hls Stream": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/hls_stream",
       "pagination": "limit-skip",
@@ -1814,7 +1814,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/radios/{radio_product_id}/stations/{station_id}/hls_stream": {
+    "Update Hls Stream": {
       "method": "PUT",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/hls_stream",
       "pagination": "none",
@@ -1875,7 +1875,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/radios/{radio_product_id}/stations/{station_id}/hls_stream": {
+    "Delete Hls Stream": {
       "method": "DELETE",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/hls_stream",
       "pagination": "none",
@@ -1900,7 +1900,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream": {
+    "Get Hls Stream (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/hls_stream",
       "pagination": "limit-skip",
@@ -1920,7 +1920,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /2/radios/{radio_product_id}/stations/{station_id}/hls_stream": {
+    "Update Hls Stream (2)": {
       "method": "PUT",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/hls_stream",
       "pagination": "none",
@@ -1981,7 +1981,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /2/radios/{radio_product_id}/stations/{station_id}/hls_stream": {
+    "Delete Hls Stream (2)": {
       "method": "DELETE",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/hls_stream",
       "pagination": "none",
@@ -2006,7 +2006,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/add": {
+    "Add Hls Stream": {
       "method": "POST",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/hls_stream/add",
       "pagination": "none",
@@ -2031,7 +2031,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "POST /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/add": {
+    "Add Hls Stream (2)": {
       "method": "POST",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/hls_stream/add",
       "pagination": "none",
@@ -2058,7 +2058,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Mediapulse": {
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/mediapulse/export_log": {
+    "Export Log As Mediapulse": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/mediapulse/export_log",
       "pagination": "none",
@@ -2083,7 +2083,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/mediapulse/export_log/available": {
+    "Check If Mediapulse Log File Is Already Present In Storage": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/mediapulse/export_log/available",
       "pagination": "none",
@@ -2108,7 +2108,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/mediapulse/report": {
+    "Generate A Report For Export Mediapulse Log On A Station": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/mediapulse/report",
       "pagination": "page-per-page",
@@ -2137,7 +2137,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/mediapulse/report": {
+    "Generate A Report For Export Mediapulse Log With Stations In Product": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/mediapulse/report",
       "pagination": "page-per-page",
@@ -2162,7 +2162,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/mediapulse/export_log": {
+    "Export Log As Mediapulse (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/mediapulse/export_log",
       "pagination": "none",
@@ -2187,7 +2187,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/mediapulse/export_log/available": {
+    "Check If Mediapulse Log File Is Already Present In Storage (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/mediapulse/export_log/available",
       "pagination": "none",
@@ -2212,7 +2212,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/mediapulse/report": {
+    "Generate A Report For Export Mediapulse Log On A Station (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/mediapulse/report",
       "pagination": "page-per-page",
@@ -2241,7 +2241,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/mediapulse/report": {
+    "Generate A Report For Export Mediapulse Log With Stations In Product (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/mediapulse/report",
       "pagination": "page-per-page",
@@ -2268,7 +2268,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Notifications": {
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/notification": {
+    "Get Notification": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/notification",
       "pagination": "none",
@@ -2288,7 +2288,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/radios/{radio_product_id}/stations/{station_id}/notification": {
+    "Update Notification": {
       "method": "PUT",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/notification",
       "pagination": "none",
@@ -2361,7 +2361,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/notification": {
+    "Get Notification (2)": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/notification",
       "pagination": "none",
@@ -2381,7 +2381,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/radios/{radio_product_id}/notification": {
+    "Update Notification Radio Product": {
       "method": "PUT",
       "path": "/1/radios/{radio_product_id}/notification",
       "pagination": "none",
@@ -2450,7 +2450,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/notification": {
+    "Get Notification (3)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/notification",
       "pagination": "none",
@@ -2470,7 +2470,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /2/radios/{radio_product_id}/stations/{station_id}/notification": {
+    "Update Notification (2)": {
       "method": "PUT",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/notification",
       "pagination": "none",
@@ -2543,7 +2543,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/notification": {
+    "Get Notification (4)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/notification",
       "pagination": "none",
@@ -2563,7 +2563,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /2/radios/{radio_product_id}/notification": {
+    "Update Notification Radio Product (2)": {
       "method": "PUT",
       "path": "/2/radios/{radio_product_id}/notification",
       "pagination": "none",
@@ -2634,7 +2634,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Options": {
-    "GET /1/radios/options": {
+    "List Options": {
       "method": "GET",
       "path": "/1/radios/options",
       "pagination": "limit-skip",
@@ -2645,7 +2645,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/options": {
+    "List Options (2)": {
       "method": "GET",
       "path": "/2/radios/options",
       "pagination": "limit-skip",
@@ -2658,7 +2658,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Packs": {
-    "GET /1/radios/packs": {
+    "List Packs": {
       "method": "GET",
       "path": "/1/radios/packs",
       "pagination": "limit-skip",
@@ -2669,7 +2669,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/packs": {
+    "List Packs (2)": {
       "method": "GET",
       "path": "/2/radios/packs",
       "pagination": "limit-skip",
@@ -2682,7 +2682,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Players": {
-    "GET /1/radios/players/{player_uuid}/config": {
+    "Get Player Config": {
       "method": "GET",
       "path": "/1/radios/players/{player_uuid}/config",
       "pagination": "none",
@@ -2698,7 +2698,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/radios/players/{player_uuid}/config": {
+    "Get Player Config (2)": {
       "method": "POST",
       "path": "/1/radios/players/{player_uuid}/config",
       "pagination": "none",
@@ -2714,7 +2714,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/players": {
+    "List Station Players": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/players",
       "pagination": "limit-skip",
@@ -2734,7 +2734,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/players": {
+    "List Product Players": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/players",
       "pagination": "limit-skip",
@@ -2750,7 +2750,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/radios/{radio_product_id}/players": {
+    "Store Player": {
       "method": "POST",
       "path": "/1/radios/{radio_product_id}/players",
       "pagination": "none",
@@ -2903,7 +2903,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/players/{player_id}": {
+    "Get Player": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/players/{player_id}",
       "pagination": "none",
@@ -2923,7 +2923,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/radios/{radio_product_id}/players/{player_id}": {
+    "Update Player": {
       "method": "PUT",
       "path": "/1/radios/{radio_product_id}/players/{player_id}",
       "pagination": "none",
@@ -3080,7 +3080,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/radios/{radio_product_id}/players/{player_id}": {
+    "Delete Player": {
       "method": "DELETE",
       "path": "/1/radios/{radio_product_id}/players/{player_id}",
       "pagination": "none",
@@ -3100,7 +3100,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/players/{player_uuid}/config": {
+    "Get Player Config (3)": {
       "method": "GET",
       "path": "/2/radios/players/{player_uuid}/config",
       "pagination": "none",
@@ -3116,7 +3116,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/radios/players/{player_uuid}/config": {
+    "Get Player Config (4)": {
       "method": "POST",
       "path": "/2/radios/players/{player_uuid}/config",
       "pagination": "none",
@@ -3132,7 +3132,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/players": {
+    "List Station Players (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/players",
       "pagination": "limit-skip",
@@ -3152,7 +3152,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/players": {
+    "List Product Players (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/players",
       "pagination": "limit-skip",
@@ -3168,7 +3168,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/radios/{radio_product_id}/players": {
+    "Store Player (2)": {
       "method": "POST",
       "path": "/2/radios/{radio_product_id}/players",
       "pagination": "none",
@@ -3321,7 +3321,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/players/{player_id}": {
+    "Get Player (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/players/{player_id}",
       "pagination": "none",
@@ -3341,7 +3341,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /2/radios/{radio_product_id}/players/{player_id}": {
+    "Update Player (2)": {
       "method": "PUT",
       "path": "/2/radios/{radio_product_id}/players/{player_id}",
       "pagination": "none",
@@ -3498,7 +3498,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /2/radios/{radio_product_id}/players/{player_id}": {
+    "Delete Player (2)": {
       "method": "DELETE",
       "path": "/2/radios/{radio_product_id}/players/{player_id}",
       "pagination": "none",
@@ -3518,7 +3518,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/radios/players/ip-access": {
+    "Check IP Access To Mountpoint": {
       "method": "POST",
       "path": "/1/radios/players/ip-access",
       "pagination": "none",
@@ -3534,7 +3534,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/radios/players/{player_uuid}/domain-access": {
+    "Check Domain Access For Player": {
       "method": "POST",
       "path": "/1/radios/players/{player_uuid}/domain-access",
       "pagination": "none",
@@ -3555,7 +3555,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/radios/{radio_product_id}/players/{player_id}/duplicate": {
+    "Duplicate Player": {
       "method": "POST",
       "path": "/1/radios/{radio_product_id}/players/{player_id}/duplicate",
       "pagination": "none",
@@ -3580,7 +3580,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/radios/{radio_product_id}/players/{player_id}/reset": {
+    "Reset Player": {
       "method": "POST",
       "path": "/1/radios/{radio_product_id}/players/{player_id}/reset",
       "pagination": "none",
@@ -3600,7 +3600,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/radios/{radio_product_id}/players/{player_id}/thumbnail": {
+    "Update Thumbnail": {
       "method": "POST",
       "path": "/1/radios/{radio_product_id}/players/{player_id}/thumbnail",
       "pagination": "none",
@@ -3629,7 +3629,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/radios/{radio_product_id}/players/{player_id}/thumbnail": {
+    "Delete Thumbnail": {
       "method": "DELETE",
       "path": "/1/radios/{radio_product_id}/players/{player_id}/thumbnail",
       "pagination": "none",
@@ -3654,7 +3654,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/radios/players/ip-access": {
+    "Check IP Access To Mountpoint (2)": {
       "method": "POST",
       "path": "/2/radios/players/ip-access",
       "pagination": "none",
@@ -3670,7 +3670,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/radios/players/{player_uuid}/domain-access": {
+    "Check Domain Access For Player (2)": {
       "method": "POST",
       "path": "/2/radios/players/{player_uuid}/domain-access",
       "pagination": "none",
@@ -3691,7 +3691,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/radios/{radio_product_id}/players/{player_id}/duplicate": {
+    "Duplicate Player (2)": {
       "method": "POST",
       "path": "/2/radios/{radio_product_id}/players/{player_id}/duplicate",
       "pagination": "none",
@@ -3716,7 +3716,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/radios/{radio_product_id}/players/{player_id}/reset": {
+    "Reset Player (2)": {
       "method": "POST",
       "path": "/2/radios/{radio_product_id}/players/{player_id}/reset",
       "pagination": "none",
@@ -3736,7 +3736,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/radios/{radio_product_id}/players/{player_id}/thumbnail": {
+    "Update Thumbnail (2)": {
       "method": "POST",
       "path": "/2/radios/{radio_product_id}/players/{player_id}/thumbnail",
       "pagination": "none",
@@ -3765,7 +3765,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /2/radios/{radio_product_id}/players/{player_id}/thumbnail": {
+    "Delete Thumbnail (2)": {
       "method": "DELETE",
       "path": "/2/radios/{radio_product_id}/players/{player_id}/thumbnail",
       "pagination": "none",
@@ -3792,7 +3792,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Radio Product Options": {
-    "GET /1/radios/{radio_product_id}/options": {
+    "List Radio Product Options": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/options",
       "pagination": "none",
@@ -3808,7 +3808,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/options": {
+    "List Radio Product Options (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/options",
       "pagination": "none",
@@ -3826,7 +3826,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Radio Products": {
-    "GET /1/radios": {
+    "List Products": {
       "method": "GET",
       "path": "/1/radios",
       "pagination": "limit-skip",
@@ -3842,7 +3842,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}": {
+    "Get Product": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}",
       "pagination": "none",
@@ -3858,7 +3858,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/radios/{radio_product_id}": {
+    "Update Product": {
       "method": "PUT",
       "path": "/1/radios/{radio_product_id}",
       "pagination": "none",
@@ -3879,7 +3879,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/users": {
+    "List Users": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/users",
       "pagination": "none",
@@ -3895,7 +3895,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/conflict_restrictions": {
+    "Get The List Of Stream In Conflict With An Update Of Restrictions": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/conflict_restrictions",
       "pagination": "none",
@@ -3911,7 +3911,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios": {
+    "List Products (2)": {
       "method": "GET",
       "path": "/2/radios",
       "pagination": "limit-skip",
@@ -3927,7 +3927,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}": {
+    "Get Product (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}",
       "pagination": "none",
@@ -3943,7 +3943,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /2/radios/{radio_product_id}": {
+    "Update Product (2)": {
       "method": "PUT",
       "path": "/2/radios/{radio_product_id}",
       "pagination": "none",
@@ -3964,7 +3964,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/users": {
+    "List Users (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/users",
       "pagination": "none",
@@ -3980,7 +3980,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/conflict_restrictions": {
+    "Get The List Of Stream In Conflict With An Update Of Restrictions (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/conflict_restrictions",
       "pagination": "none",
@@ -3996,7 +3996,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/radios/{radio_product_id}/restrictions": {
+    "Set The Restrictions To All Streams In Product": {
       "method": "POST",
       "path": "/1/radios/{radio_product_id}/restrictions",
       "pagination": "none",
@@ -4033,7 +4033,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "POST /2/radios/{radio_product_id}/restrictions": {
+    "Set The Restrictions To All Streams In Product (2)": {
       "method": "POST",
       "path": "/2/radios/{radio_product_id}/restrictions",
       "pagination": "none",
@@ -4072,7 +4072,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Server Events": {
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/server_events": {
+    "List Server Events": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/server_events",
       "pagination": "page-per-page",
@@ -4101,7 +4101,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/server_events": {
+    "List Server Events (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/server_events",
       "pagination": "page-per-page",
@@ -4132,7 +4132,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Stations": {
-    "GET /1/radios/{radio_product_id}/stations": {
+    "List Stations": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations",
       "pagination": "limit-skip",
@@ -4148,7 +4148,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/radios/{radio_product_id}/stations": {
+    "Store Station": {
       "method": "POST",
       "path": "/1/radios/{radio_product_id}/stations",
       "pagination": "none",
@@ -4185,7 +4185,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stations/{station_id}": {
+    "Get Station": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}",
       "pagination": "none",
@@ -4205,7 +4205,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/radios/{radio_product_id}/stations/{station_id}": {
+    "Update Station": {
       "method": "PUT",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}",
       "pagination": "none",
@@ -4278,7 +4278,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/radios/{radio_product_id}/stations/{station_id}": {
+    "Delete Station": {
       "method": "DELETE",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}",
       "pagination": "none",
@@ -4303,7 +4303,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations": {
+    "List Stations (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations",
       "pagination": "limit-skip",
@@ -4319,7 +4319,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/radios/{radio_product_id}/stations": {
+    "Store Station (2)": {
       "method": "POST",
       "path": "/2/radios/{radio_product_id}/stations",
       "pagination": "none",
@@ -4356,7 +4356,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}": {
+    "Get Station (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}",
       "pagination": "none",
@@ -4376,7 +4376,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /2/radios/{radio_product_id}/stations/{station_id}": {
+    "Update Station (2)": {
       "method": "PUT",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}",
       "pagination": "none",
@@ -4449,7 +4449,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /2/radios/{radio_product_id}/stations/{station_id}": {
+    "Delete Station (2)": {
       "method": "DELETE",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}",
       "pagination": "none",
@@ -4474,7 +4474,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/radios/{radio_product_id}/stations/{station_id}/thumbnail": {
+    "Update Station Thumbnail": {
       "method": "POST",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/thumbnail",
       "pagination": "none",
@@ -4499,7 +4499,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/radios/{radio_product_id}/stations/{station_id}/thumbnail": {
+    "Delete Station Thumbnail": {
       "method": "DELETE",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/thumbnail",
       "pagination": "none",
@@ -4519,7 +4519,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/radios/{radio_product_id}/stations/{station_id}/reset_general_parameters": {
+    "Reset General Parameters": {
       "method": "POST",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/reset_general_parameters",
       "pagination": "none",
@@ -4539,7 +4539,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/radios/{radio_product_id}/stations/{station_id}/send_logs": {
+    "Send Logs": {
       "method": "POST",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/send_logs",
       "pagination": "none",
@@ -4572,7 +4572,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/radios/{radio_product_id}/stations/{station_id}/toggle_direct_live": {
+    "Toggle Direct Live": {
       "method": "POST",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/toggle_direct_live",
       "pagination": "none",
@@ -4592,7 +4592,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/radios/{radio_product_id}/stations/{station_id}/thumbnail": {
+    "Update Station Thumbnail (2)": {
       "method": "POST",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/thumbnail",
       "pagination": "none",
@@ -4617,7 +4617,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /2/radios/{radio_product_id}/stations/{station_id}/thumbnail": {
+    "Delete Station Thumbnail (2)": {
       "method": "DELETE",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/thumbnail",
       "pagination": "none",
@@ -4637,7 +4637,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/radios/{radio_product_id}/stations/{station_id}/reset_general_parameters": {
+    "Reset General Parameters (2)": {
       "method": "POST",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/reset_general_parameters",
       "pagination": "none",
@@ -4657,7 +4657,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/radios/{radio_product_id}/stations/{station_id}/send_logs": {
+    "Send Logs (2)": {
       "method": "POST",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/send_logs",
       "pagination": "none",
@@ -4690,7 +4690,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/radios/{radio_product_id}/stations/{station_id}/toggle_direct_live": {
+    "Toggle Direct Live (2)": {
       "method": "POST",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/toggle_direct_live",
       "pagination": "none",
@@ -4711,8 +4711,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "bodyFieldName": null
     }
   },
-  "Stats > HlsStream": {
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/listeners": {
+  "Stats > Hls Stream": {
+    "Get Listeners": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/listeners",
       "pagination": "none",
@@ -4741,7 +4741,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/listeners_per_minute": {
+    "Get Listeners By Minute": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/listeners_per_minute",
       "pagination": "none",
@@ -4770,7 +4770,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/countries": {
+    "Get Countries": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/countries",
       "pagination": "none",
@@ -4799,7 +4799,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/countries_continent": {
+    "Get Countries By Continent": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/countries_continent",
       "pagination": "none",
@@ -4828,7 +4828,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/consumption": {
+    "Get Consumption": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/consumption",
       "pagination": "none",
@@ -4857,7 +4857,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/total_consumption": {
+    "Get Total Consumption": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/total_consumption",
       "pagination": "none",
@@ -4886,7 +4886,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/players": {
+    "Get Players": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/players",
       "pagination": "none",
@@ -4915,7 +4915,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/total_players": {
+    "Get Total Players": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/total_players",
       "pagination": "none",
@@ -4944,7 +4944,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/export_csv": {
+    "Export Stats": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/export_csv",
       "pagination": "none",
@@ -4977,7 +4977,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/listeners": {
+    "Get Listeners (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/listeners",
       "pagination": "none",
@@ -5006,7 +5006,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/listeners_per_minute": {
+    "Get Listeners By Minute (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/listeners_per_minute",
       "pagination": "none",
@@ -5035,7 +5035,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/countries": {
+    "Get Countries (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/countries",
       "pagination": "none",
@@ -5064,7 +5064,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/countries_continent": {
+    "Get Countries By Continent (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/countries_continent",
       "pagination": "none",
@@ -5093,7 +5093,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/consumption": {
+    "Get Consumption (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/consumption",
       "pagination": "none",
@@ -5122,7 +5122,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/total_consumption": {
+    "Get Total Consumption (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/total_consumption",
       "pagination": "none",
@@ -5151,7 +5151,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/players": {
+    "Get Players (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/players",
       "pagination": "none",
@@ -5180,7 +5180,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/total_players": {
+    "Get Total Players (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/total_players",
       "pagination": "none",
@@ -5209,7 +5209,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/export_csv": {
+    "Export Stats (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/export_csv",
       "pagination": "none",
@@ -5244,7 +5244,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Stats > Radio Products": {
-    "GET /1/radios/{radio_product_id}/stats/listeners": {
+    "Get Listeners": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stats/listeners",
       "pagination": "none",
@@ -5269,7 +5269,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stats/listeners_per_minute": {
+    "Get Listeners Per Minute": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stats/listeners_per_minute",
       "pagination": "none",
@@ -5294,7 +5294,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stats/listeners_per_minute_grouped": {
+    "Get Listeners Per Minute Per Station": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stats/listeners_per_minute_grouped",
       "pagination": "none",
@@ -5319,7 +5319,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stats/countries": {
+    "Get Countries": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stats/countries",
       "pagination": "none",
@@ -5344,7 +5344,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stats/countries_continent": {
+    "Get Countries By Continent": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stats/countries_continent",
       "pagination": "none",
@@ -5369,7 +5369,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stats/station_listeners": {
+    "Get Listeners By Station": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stats/station_listeners",
       "pagination": "none",
@@ -5394,7 +5394,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stats/consumption": {
+    "Get Consumption": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stats/consumption",
       "pagination": "none",
@@ -5419,7 +5419,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stats/total_consumption": {
+    "Get Total Consumption": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stats/total_consumption",
       "pagination": "none",
@@ -5444,7 +5444,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stats/station_consumption": {
+    "Get Consumption By Station": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stats/station_consumption",
       "pagination": "none",
@@ -5469,7 +5469,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stats/players": {
+    "Get Players": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stats/players",
       "pagination": "none",
@@ -5494,7 +5494,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stats/total_players": {
+    "Get Total Players": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stats/total_players",
       "pagination": "none",
@@ -5519,7 +5519,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stats/stats_by_station": {
+    "Get Stats By Stations": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stats/stats_by_station",
       "pagination": "none",
@@ -5548,7 +5548,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stats/export_csv": {
+    "Export Stats": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stats/export_csv",
       "pagination": "none",
@@ -5577,7 +5577,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stats/export_csv_by_station": {
+    "Export Stats By Station": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stats/export_csv_by_station",
       "pagination": "none",
@@ -5606,7 +5606,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stats/listeners": {
+    "Get Listeners (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stats/listeners",
       "pagination": "none",
@@ -5631,7 +5631,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stats/listeners_per_minute": {
+    "Get Listeners Per Minute (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stats/listeners_per_minute",
       "pagination": "none",
@@ -5656,7 +5656,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stats/listeners_per_minute_grouped": {
+    "Get Listeners Per Minute Per Station (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stats/listeners_per_minute_grouped",
       "pagination": "none",
@@ -5681,7 +5681,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stats/countries": {
+    "Get Countries (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stats/countries",
       "pagination": "none",
@@ -5706,7 +5706,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stats/countries_continent": {
+    "Get Countries By Continent (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stats/countries_continent",
       "pagination": "none",
@@ -5731,7 +5731,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stats/station_listeners": {
+    "Get Listeners By Station (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stats/station_listeners",
       "pagination": "none",
@@ -5756,7 +5756,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stats/consumption": {
+    "Get Consumption (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stats/consumption",
       "pagination": "none",
@@ -5781,7 +5781,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stats/total_consumption": {
+    "Get Total Consumption (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stats/total_consumption",
       "pagination": "none",
@@ -5806,7 +5806,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stats/station_consumption": {
+    "Get Consumption By Station (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stats/station_consumption",
       "pagination": "none",
@@ -5831,7 +5831,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stats/players": {
+    "Get Players (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stats/players",
       "pagination": "none",
@@ -5856,7 +5856,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stats/total_players": {
+    "Get Total Players (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stats/total_players",
       "pagination": "none",
@@ -5881,7 +5881,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stats/stats_by_station": {
+    "Get Stats By Stations (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stats/stats_by_station",
       "pagination": "none",
@@ -5910,7 +5910,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stats/export_csv": {
+    "Export Stats (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stats/export_csv",
       "pagination": "none",
@@ -5939,7 +5939,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stats/export_csv_by_station": {
+    "Export Stats By Station (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stats/export_csv_by_station",
       "pagination": "none",
@@ -5970,7 +5970,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Stats > Stations": {
-    "GET /1/radios/stats/status": {
+    "Get Status": {
       "method": "GET",
       "path": "/1/radios/stats/status",
       "pagination": "none",
@@ -5981,7 +5981,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/stats/listeners": {
+    "Get Instant Listeners": {
       "method": "GET",
       "path": "/1/radios/stats/listeners",
       "pagination": "none",
@@ -5992,7 +5992,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/stats/sum-listeners": {
+    "Get Stats Listeners": {
       "method": "GET",
       "path": "/1/radios/stats/sum-listeners",
       "pagination": "none",
@@ -6003,7 +6003,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/stats/sum-listeners-on-product": {
+    "Get Stats Listeners (2)": {
       "method": "GET",
       "path": "/1/radios/stats/sum-listeners-on-product",
       "pagination": "none",
@@ -6014,7 +6014,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/stats/mediastats": {
+    "Get Mediastats": {
       "method": "GET",
       "path": "/1/radios/stats/mediastats",
       "pagination": "none",
@@ -6025,7 +6025,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/stats/metadata": {
+    "Set Metadata To Station": {
       "method": "GET",
       "path": "/1/radios/stats/metadata",
       "pagination": "none",
@@ -6036,7 +6036,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/radio/diag/status.php": {
+    "Get Status (2)": {
       "method": "GET",
       "path": "/1/radios/radio/diag/status.php",
       "pagination": "none",
@@ -6047,7 +6047,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/updatemetadata.php": {
+    "Set Metadata To Station (2)": {
       "method": "GET",
       "path": "/1/radios/updatemetadata.php",
       "pagination": "none",
@@ -6058,7 +6058,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/mediastats.php": {
+    "Get Mediastats (2)": {
       "method": "GET",
       "path": "/1/radios/mediastats.php",
       "pagination": "none",
@@ -6069,7 +6069,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/listclients.xml": {
+    "Get Mediastats (3)": {
       "method": "GET",
       "path": "/1/radios/listclients.xml",
       "pagination": "none",
@@ -6080,7 +6080,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/admin/stats.xml": {
+    "Get Stats Listeners (3)": {
       "method": "GET",
       "path": "/1/radios/admin/stats.xml",
       "pagination": "none",
@@ -6091,7 +6091,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/admin/stats": {
+    "Get Stats Listeners (4)": {
       "method": "GET",
       "path": "/1/radios/admin/stats",
       "pagination": "none",
@@ -6102,7 +6102,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/admin/stats_group.xml": {
+    "Get Stats Listeners (5)": {
       "method": "GET",
       "path": "/1/radios/admin/stats_group.xml",
       "pagination": "none",
@@ -6113,7 +6113,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/listeners": {
+    "Get Listeners": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/stats/listeners",
       "pagination": "none",
@@ -6142,7 +6142,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/listeners_per_minute": {
+    "Get Listeners Per Minute": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/stats/listeners_per_minute",
       "pagination": "none",
@@ -6171,7 +6171,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/listeners_per_minute_grouped": {
+    "Get Listeners Per Minute Per Stream": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/stats/listeners_per_minute_grouped",
       "pagination": "none",
@@ -6200,7 +6200,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/countries": {
+    "Get Countries": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/stats/countries",
       "pagination": "none",
@@ -6229,7 +6229,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/countries_continent": {
+    "Get Countries By Continent": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/stats/countries_continent",
       "pagination": "none",
@@ -6258,7 +6258,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/stream_listeners": {
+    "Get Listeners By Stream": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/stats/stream_listeners",
       "pagination": "none",
@@ -6287,7 +6287,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/consumption": {
+    "Get Consumption": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/stats/consumption",
       "pagination": "none",
@@ -6316,7 +6316,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/total_consumption": {
+    "Get Total Consumption": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/stats/total_consumption",
       "pagination": "none",
@@ -6345,7 +6345,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/stream_consumption": {
+    "Get Consumption By Stream": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/stats/stream_consumption",
       "pagination": "none",
@@ -6374,7 +6374,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/players": {
+    "Get Players": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/stats/players",
       "pagination": "none",
@@ -6403,7 +6403,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/total_players": {
+    "Get Total Players": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/stats/total_players",
       "pagination": "none",
@@ -6432,7 +6432,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/stats_by_stream": {
+    "Get Stats By Streams": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/stats/stats_by_stream",
       "pagination": "none",
@@ -6465,7 +6465,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/export_csv": {
+    "Export Stats": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/stats/export_csv",
       "pagination": "none",
@@ -6498,7 +6498,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/export_csv_by_stream": {
+    "Export Stats By Stream": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/stats/export_csv_by_stream",
       "pagination": "none",
@@ -6531,7 +6531,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/links": {
+    "List Stats Links": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/stats/links",
       "pagination": "none",
@@ -6551,7 +6551,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/stats/status": {
+    "Get Status (3)": {
       "method": "GET",
       "path": "/2/radios/stats/status",
       "pagination": "none",
@@ -6562,7 +6562,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/stats/listeners": {
+    "Get Instant Listeners (2)": {
       "method": "GET",
       "path": "/2/radios/stats/listeners",
       "pagination": "none",
@@ -6573,7 +6573,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/stats/sum-listeners": {
+    "Get Stats Listeners (6)": {
       "method": "GET",
       "path": "/2/radios/stats/sum-listeners",
       "pagination": "none",
@@ -6584,7 +6584,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/stats/sum-listeners-on-product": {
+    "Get Stats Listeners (7)": {
       "method": "GET",
       "path": "/2/radios/stats/sum-listeners-on-product",
       "pagination": "none",
@@ -6595,7 +6595,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/stats/mediastats": {
+    "Get Mediastats (4)": {
       "method": "GET",
       "path": "/2/radios/stats/mediastats",
       "pagination": "none",
@@ -6606,7 +6606,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/stats/metadata": {
+    "Set Metadata To Station (3)": {
       "method": "GET",
       "path": "/2/radios/stats/metadata",
       "pagination": "none",
@@ -6617,7 +6617,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/radio/diag/status.php": {
+    "Get Status (4)": {
       "method": "GET",
       "path": "/2/radios/radio/diag/status.php",
       "pagination": "none",
@@ -6628,7 +6628,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/updatemetadata.php": {
+    "Set Metadata To Station (4)": {
       "method": "GET",
       "path": "/2/radios/updatemetadata.php",
       "pagination": "none",
@@ -6639,7 +6639,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/mediastats.php": {
+    "Get Mediastats (5)": {
       "method": "GET",
       "path": "/2/radios/mediastats.php",
       "pagination": "none",
@@ -6650,7 +6650,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/listclients.xml": {
+    "Get Mediastats (6)": {
       "method": "GET",
       "path": "/2/radios/listclients.xml",
       "pagination": "none",
@@ -6661,7 +6661,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/admin/stats.xml": {
+    "Get Stats Listeners (8)": {
       "method": "GET",
       "path": "/2/radios/admin/stats.xml",
       "pagination": "none",
@@ -6672,7 +6672,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/admin/stats": {
+    "Get Stats Listeners (9)": {
       "method": "GET",
       "path": "/2/radios/admin/stats",
       "pagination": "none",
@@ -6683,7 +6683,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/admin/stats_group.xml": {
+    "Get Stats Listeners (10)": {
       "method": "GET",
       "path": "/2/radios/admin/stats_group.xml",
       "pagination": "none",
@@ -6694,7 +6694,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/listeners": {
+    "Get Listeners (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/stats/listeners",
       "pagination": "none",
@@ -6723,7 +6723,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/listeners_per_minute": {
+    "Get Listeners Per Minute (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/stats/listeners_per_minute",
       "pagination": "none",
@@ -6752,7 +6752,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/listeners_per_minute_grouped": {
+    "Get Listeners Per Minute Per Stream (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/stats/listeners_per_minute_grouped",
       "pagination": "none",
@@ -6781,7 +6781,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/countries": {
+    "Get Countries (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/stats/countries",
       "pagination": "none",
@@ -6810,7 +6810,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/countries_continent": {
+    "Get Countries By Continent (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/stats/countries_continent",
       "pagination": "none",
@@ -6839,7 +6839,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/stream_listeners": {
+    "Get Listeners By Stream (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/stats/stream_listeners",
       "pagination": "none",
@@ -6868,7 +6868,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/consumption": {
+    "Get Consumption (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/stats/consumption",
       "pagination": "none",
@@ -6897,7 +6897,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/total_consumption": {
+    "Get Total Consumption (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/stats/total_consumption",
       "pagination": "none",
@@ -6926,7 +6926,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/stream_consumption": {
+    "Get Consumption By Stream (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/stats/stream_consumption",
       "pagination": "none",
@@ -6955,7 +6955,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/players": {
+    "Get Players (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/stats/players",
       "pagination": "none",
@@ -6984,7 +6984,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/total_players": {
+    "Get Total Players (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/stats/total_players",
       "pagination": "none",
@@ -7013,7 +7013,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/stats_by_stream": {
+    "Get Stats By Streams (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/stats/stats_by_stream",
       "pagination": "none",
@@ -7046,7 +7046,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/export_csv": {
+    "Export Stats (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/stats/export_csv",
       "pagination": "none",
@@ -7079,7 +7079,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/export_csv_by_stream": {
+    "Export Stats By Stream (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/stats/export_csv_by_stream",
       "pagination": "none",
@@ -7112,7 +7112,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/links": {
+    "List Stats Links (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/stats/links",
       "pagination": "none",
@@ -7134,7 +7134,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Stats > Streams": {
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/listeners": {
+    "Get Listeners": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/listeners",
       "pagination": "none",
@@ -7167,7 +7167,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/listeners_per_minute": {
+    "Get Listeners By Minute": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/listeners_per_minute",
       "pagination": "none",
@@ -7200,7 +7200,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/countries": {
+    "Get Countries": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/countries",
       "pagination": "none",
@@ -7233,7 +7233,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/countries_continent": {
+    "Get Countries By Continent": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/countries_continent",
       "pagination": "none",
@@ -7266,7 +7266,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/consumption": {
+    "Get Consumption": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/consumption",
       "pagination": "none",
@@ -7299,7 +7299,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/total_consumption": {
+    "Get Total Consumption": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/total_consumption",
       "pagination": "none",
@@ -7332,7 +7332,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/players": {
+    "Get Players": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/players",
       "pagination": "none",
@@ -7365,7 +7365,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/total_players": {
+    "Get Total Players": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/total_players",
       "pagination": "none",
@@ -7398,7 +7398,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/export_csv": {
+    "Export Stats": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/export_csv",
       "pagination": "none",
@@ -7435,7 +7435,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/listeners": {
+    "Get Listeners (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/listeners",
       "pagination": "none",
@@ -7468,7 +7468,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/listeners_per_minute": {
+    "Get Listeners By Minute (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/listeners_per_minute",
       "pagination": "none",
@@ -7501,7 +7501,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/countries": {
+    "Get Countries (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/countries",
       "pagination": "none",
@@ -7534,7 +7534,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/countries_continent": {
+    "Get Countries By Continent (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/countries_continent",
       "pagination": "none",
@@ -7567,7 +7567,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/consumption": {
+    "Get Consumption (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/consumption",
       "pagination": "none",
@@ -7600,7 +7600,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/total_consumption": {
+    "Get Total Consumption (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/total_consumption",
       "pagination": "none",
@@ -7633,7 +7633,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/players": {
+    "Get Players (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/players",
       "pagination": "none",
@@ -7666,7 +7666,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/total_players": {
+    "Get Total Players (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/total_players",
       "pagination": "none",
@@ -7699,7 +7699,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/export_csv": {
+    "Export Stats (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/export_csv",
       "pagination": "none",
@@ -7738,7 +7738,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Streams": {
-    "GET /1/radios/streams/{stream_uuid}/playlist": {
+    "Get Playlist With Stream URL": {
       "method": "GET",
       "path": "/1/radios/streams/{stream_uuid}/playlist",
       "pagination": "none",
@@ -7754,7 +7754,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/streams/{stream_uuid}/introduction-file": {
+    "Get Introduction File": {
       "method": "GET",
       "path": "/1/radios/streams/{stream_uuid}/introduction-file",
       "pagination": "none",
@@ -7770,7 +7770,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/playlist/{any}": {
+    "Get Playlist With Legacy Parameters": {
       "method": "GET",
       "path": "/1/radios/playlist/{any}",
       "pagination": "none",
@@ -7786,7 +7786,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/streams": {
+    "List Streams": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/streams",
       "pagination": "limit-skip",
@@ -7806,7 +7806,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/radios/{radio_product_id}/stations/{station_id}/streams": {
+    "Store Stream": {
       "method": "POST",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/streams",
       "pagination": "limit-skip",
@@ -7899,7 +7899,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}": {
+    "Get Stream": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}",
       "pagination": "none",
@@ -7923,7 +7923,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}": {
+    "Update Stream": {
       "method": "PUT",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}",
       "pagination": "none",
@@ -8024,7 +8024,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}": {
+    "Delete Stream": {
       "method": "DELETE",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}",
       "pagination": "none",
@@ -8053,7 +8053,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/actual-bitrate": {
+    "Get Actual Bitrate": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/actual-bitrate",
       "pagination": "none",
@@ -8077,7 +8077,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/introduction-file": {
+    "Get Introduction File (2)": {
       "method": "GET",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/introduction-file",
       "pagination": "none",
@@ -8101,7 +8101,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/introduction-file": {
+    "Update Introduction File": {
       "method": "POST",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/introduction-file",
       "pagination": "none",
@@ -8130,7 +8130,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/introduction-file": {
+    "Delete Introduction File": {
       "method": "DELETE",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/introduction-file",
       "pagination": "none",
@@ -8154,7 +8154,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/streams/{stream_uuid}/playlist": {
+    "Get Playlist With Stream URL (2)": {
       "method": "GET",
       "path": "/2/radios/streams/{stream_uuid}/playlist",
       "pagination": "none",
@@ -8170,7 +8170,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/streams/{stream_uuid}/introduction-file": {
+    "Get Introduction File (3)": {
       "method": "GET",
       "path": "/2/radios/streams/{stream_uuid}/introduction-file",
       "pagination": "none",
@@ -8186,7 +8186,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/playlist/{any}": {
+    "Get Playlist With Legacy Parameters (2)": {
       "method": "GET",
       "path": "/2/radios/playlist/{any}",
       "pagination": "none",
@@ -8202,7 +8202,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/streams": {
+    "List Streams (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/streams",
       "pagination": "limit-skip",
@@ -8222,7 +8222,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/radios/{radio_product_id}/stations/{station_id}/streams": {
+    "Store Stream (2)": {
       "method": "POST",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/streams",
       "pagination": "limit-skip",
@@ -8315,7 +8315,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}": {
+    "Get Stream (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}",
       "pagination": "none",
@@ -8339,7 +8339,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}": {
+    "Update Stream (2)": {
       "method": "PUT",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}",
       "pagination": "none",
@@ -8440,7 +8440,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}": {
+    "Delete Stream (2)": {
       "method": "DELETE",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}",
       "pagination": "none",
@@ -8469,7 +8469,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/actual-bitrate": {
+    "Get Actual Bitrate (2)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/actual-bitrate",
       "pagination": "none",
@@ -8493,7 +8493,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/introduction-file": {
+    "Get Introduction File (4)": {
       "method": "GET",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/introduction-file",
       "pagination": "none",
@@ -8517,7 +8517,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/introduction-file": {
+    "Update Introduction File (2)": {
       "method": "POST",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/introduction-file",
       "pagination": "none",
@@ -8546,7 +8546,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/introduction-file": {
+    "Delete Introduction File (2)": {
       "method": "DELETE",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/introduction-file",
       "pagination": "none",
@@ -8570,7 +8570,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/radios/streams/available-mountpoint": {
+    "Mountpoint Is Available": {
       "method": "POST",
       "path": "/1/radios/streams/available-mountpoint",
       "pagination": "none",
@@ -8586,7 +8586,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/add-fallback": {
+    "Add Fallback Stream": {
       "method": "POST",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/add-fallback",
       "pagination": "none",
@@ -8610,7 +8610,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/remove-fallback": {
+    "Remove Fallback Stream": {
       "method": "POST",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/remove-fallback",
       "pagination": "none",
@@ -8634,7 +8634,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/radios/streams/available-mountpoint": {
+    "Mountpoint Is Available (2)": {
       "method": "POST",
       "path": "/2/radios/streams/available-mountpoint",
       "pagination": "none",
@@ -8650,7 +8650,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/add-fallback": {
+    "Add Fallback Stream (2)": {
       "method": "POST",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/add-fallback",
       "pagination": "none",
@@ -8674,7 +8674,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/remove-fallback": {
+    "Remove Fallback Stream (2)": {
       "method": "POST",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/remove-fallback",
       "pagination": "none",
@@ -8698,7 +8698,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/unbind": {
+    "Delete Stream And Unbind": {
       "method": "DELETE",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/unbind",
       "pagination": "none",
@@ -8731,7 +8731,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/unbind": {
+    "Delete Stream And Unbind (2)": {
       "method": "DELETE",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/unbind",
       "pagination": "none",
@@ -8766,7 +8766,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Transcodings": {
-    "POST /1/radios/{radio_product_id}/stations/{station_id}/transcoding/add": {
+    "Add Transcoded Stream": {
       "method": "POST",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/transcoding/add",
       "pagination": "none",
@@ -8795,7 +8795,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/radios/{radio_product_id}/stations/{station_id}/transcoding/{stream_id}/unbind": {
+    "Unbind Transcoded Stream": {
       "method": "POST",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/transcoding/{stream_id}/unbind",
       "pagination": "none",
@@ -8819,7 +8819,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/radios/{radio_product_id}/stations/{station_id}/transcoding/add": {
+    "Add Transcoded Stream (2)": {
       "method": "POST",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/transcoding/add",
       "pagination": "none",
@@ -8848,7 +8848,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/radios/{radio_product_id}/stations/{station_id}/transcoding/{stream_id}/unbind": {
+    "Unbind Transcoded Stream (2)": {
       "method": "POST",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/transcoding/{stream_id}/unbind",
       "pagination": "none",
@@ -8872,7 +8872,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/radios/{radio_product_id}/stations/{station_id}/transcoding": {
+    "Delete Transcoding": {
       "method": "DELETE",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/transcoding",
       "pagination": "none",
@@ -8892,7 +8892,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/radios/{radio_product_id}/stations/{station_id}/transcoding/{stream_id}": {
+    "Remove Transcoded Stream": {
       "method": "DELETE",
       "path": "/1/radios/{radio_product_id}/stations/{station_id}/transcoding/{stream_id}",
       "pagination": "none",
@@ -8916,7 +8916,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /2/radios/{radio_product_id}/stations/{station_id}/transcoding": {
+    "Delete Transcoding (2)": {
       "method": "DELETE",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/transcoding",
       "pagination": "none",
@@ -8936,7 +8936,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /2/radios/{radio_product_id}/stations/{station_id}/transcoding/{stream_id}": {
+    "Remove Transcoded Stream (2)": {
       "method": "DELETE",
       "path": "/2/radios/{radio_product_id}/stations/{station_id}/transcoding/{stream_id}",
       "pagination": "none",
@@ -9030,23 +9030,23 @@ export class InfomaniakStreamingRadio implements INodeType {
       "options": [
         {
           "name": "Auto DJ",
-          "value": "AutoDJ"
+          "value": "Auto DJ"
         },
         {
           "name": "Auto DJ > Events",
-          "value": "AutoDJ > Events"
+          "value": "Auto DJ > Events"
         },
         {
           "name": "Auto DJ > Media",
-          "value": "AutoDJ > Media"
+          "value": "Auto DJ > Media"
         },
         {
           "name": "Auto DJ > Playing Playlist",
-          "value": "AutoDJ > Playing playlist"
+          "value": "Auto DJ > Playing Playlist"
         },
         {
           "name": "Auto DJ > Playlist",
-          "value": "AutoDJ > Playlist"
+          "value": "Auto DJ > Playlist"
         },
         {
           "name": "Encoder Events",
@@ -9094,7 +9094,7 @@ export class InfomaniakStreamingRadio implements INodeType {
         },
         {
           "name": "Stats > Hls Stream",
-          "value": "Stats > HlsStream"
+          "value": "Stats > Hls Stream"
         },
         {
           "name": "Stats > Radio Products",
@@ -9117,7 +9117,7 @@ export class InfomaniakStreamingRadio implements INodeType {
           "value": "Transcodings"
         }
       ],
-      "default": "AutoDJ",
+      "default": "Auto DJ",
       "required": true,
       "noDataExpression": true
     },
@@ -9128,45 +9128,45 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ"
+            "Auto DJ"
           ]
         }
       },
       "options": [
         {
           "name": "Get Auto DJ",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj"
+          "value": "Get Auto DJ"
         },
         {
           "name": "Store Auto DJ",
-          "value": "POST /1/radios/{radio_product_id}/stations/{station_id}/autodj"
+          "value": "Store Auto DJ"
         },
         {
           "name": "Update Auto DJ",
-          "value": "PUT /1/radios/{radio_product_id}/stations/{station_id}/autodj"
+          "value": "Update Auto DJ"
         },
         {
           "name": "Get Auto DJ",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/autodj"
+          "value": "Get Auto DJ (2)"
         },
         {
           "name": "Store Auto DJ",
-          "value": "POST /2/radios/{radio_product_id}/stations/{station_id}/autodj"
+          "value": "Store Auto DJ (2)"
         },
         {
           "name": "Update Auto DJ",
-          "value": "PUT /2/radios/{radio_product_id}/stations/{station_id}/autodj"
+          "value": "Update Auto DJ (2)"
         },
         {
           "name": "Restart",
-          "value": "POST /1/radios/{radio_product_id}/stations/{station_id}/autodj/restart"
+          "value": "Restart"
         },
         {
           "name": "Restart",
-          "value": "POST /2/radios/{radio_product_id}/stations/{station_id}/autodj/restart"
+          "value": "Restart (2)"
         }
       ],
-      "default": "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj",
+      "default": "Get Auto DJ",
       "noDataExpression": true
     },
     {
@@ -9177,10 +9177,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ"
+            "Auto DJ"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj"
+            "Get Auto DJ"
           ]
         }
       },
@@ -9195,10 +9195,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ"
+            "Auto DJ"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj"
+            "Get Auto DJ"
           ]
         }
       },
@@ -9213,10 +9213,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ"
+            "Auto DJ"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/autodj"
+            "Store Auto DJ"
           ]
         }
       },
@@ -9231,10 +9231,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ"
+            "Auto DJ"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/autodj"
+            "Store Auto DJ"
           ]
         }
       },
@@ -9249,10 +9249,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ"
+            "Auto DJ"
           ],
           "operation": [
-            "PUT /1/radios/{radio_product_id}/stations/{station_id}/autodj"
+            "Update Auto DJ"
           ]
         }
       },
@@ -9267,10 +9267,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ"
+            "Auto DJ"
           ],
           "operation": [
-            "PUT /1/radios/{radio_product_id}/stations/{station_id}/autodj"
+            "Update Auto DJ"
           ]
         }
       },
@@ -9286,10 +9286,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ"
+            "Auto DJ"
           ],
           "operation": [
-            "PUT /1/radios/{radio_product_id}/stations/{station_id}/autodj"
+            "Update Auto DJ"
           ]
         }
       },
@@ -9408,10 +9408,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ"
+            "Auto DJ"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/autodj"
+            "Get Auto DJ (2)"
           ]
         }
       },
@@ -9426,10 +9426,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ"
+            "Auto DJ"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/autodj"
+            "Get Auto DJ (2)"
           ]
         }
       },
@@ -9444,10 +9444,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ"
+            "Auto DJ"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/autodj"
+            "Store Auto DJ (2)"
           ]
         }
       },
@@ -9462,10 +9462,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ"
+            "Auto DJ"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/autodj"
+            "Store Auto DJ (2)"
           ]
         }
       },
@@ -9480,10 +9480,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ"
+            "Auto DJ"
           ],
           "operation": [
-            "PUT /2/radios/{radio_product_id}/stations/{station_id}/autodj"
+            "Update Auto DJ (2)"
           ]
         }
       },
@@ -9498,10 +9498,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ"
+            "Auto DJ"
           ],
           "operation": [
-            "PUT /2/radios/{radio_product_id}/stations/{station_id}/autodj"
+            "Update Auto DJ (2)"
           ]
         }
       },
@@ -9517,10 +9517,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ"
+            "Auto DJ"
           ],
           "operation": [
-            "PUT /2/radios/{radio_product_id}/stations/{station_id}/autodj"
+            "Update Auto DJ (2)"
           ]
         }
       },
@@ -9639,10 +9639,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ"
+            "Auto DJ"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/autodj/restart"
+            "Restart"
           ]
         }
       },
@@ -9657,10 +9657,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ"
+            "Auto DJ"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/autodj/restart"
+            "Restart"
           ]
         }
       },
@@ -9675,10 +9675,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ"
+            "Auto DJ"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/autodj/restart"
+            "Restart (2)"
           ]
         }
       },
@@ -9693,10 +9693,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ"
+            "Auto DJ"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/autodj/restart"
+            "Restart (2)"
           ]
         }
       },
@@ -9710,53 +9710,53 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Events"
+            "Auto DJ > Events"
           ]
         }
       },
       "options": [
         {
           "name": "This Endpoint Allows You To List Auto DJ Events.",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj/events"
+          "value": "This Endpoint Allows You To List Auto DJ Events."
         },
         {
           "name": "Store Auto DJ Event",
-          "value": "POST /1/radios/{radio_product_id}/stations/{station_id}/autodj/events"
+          "value": "Store Auto DJ Event"
         },
         {
           "name": "Get Auto DJ Event",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj/events/{event_id}"
+          "value": "Get Auto DJ Event"
         },
         {
           "name": "Update Auto DJ Event",
-          "value": "PUT /1/radios/{radio_product_id}/stations/{station_id}/autodj/events/{event_id}"
+          "value": "Update Auto DJ Event"
         },
         {
           "name": "Delete Auto DJ Event",
-          "value": "DELETE /1/radios/{radio_product_id}/stations/{station_id}/autodj/events/{event_id}"
+          "value": "Delete Auto DJ Event"
         },
         {
           "name": "This Endpoint Allows You To List Auto DJ Events.",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/autodj/events"
+          "value": "This Endpoint Allows You To List Auto DJ Events. (2)"
         },
         {
           "name": "Store Auto DJ Event",
-          "value": "POST /2/radios/{radio_product_id}/stations/{station_id}/autodj/events"
+          "value": "Store Auto DJ Event (2)"
         },
         {
           "name": "Get Auto DJ Event",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/autodj/events/{event_id}"
+          "value": "Get Auto DJ Event (2)"
         },
         {
           "name": "Update Auto DJ Event",
-          "value": "PUT /2/radios/{radio_product_id}/stations/{station_id}/autodj/events/{event_id}"
+          "value": "Update Auto DJ Event (2)"
         },
         {
           "name": "Delete Auto DJ Event",
-          "value": "DELETE /2/radios/{radio_product_id}/stations/{station_id}/autodj/events/{event_id}"
+          "value": "Delete Auto DJ Event (2)"
         }
       ],
-      "default": "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj/events",
+      "default": "This Endpoint Allows You To List Auto DJ Events.",
       "noDataExpression": true
     },
     {
@@ -9767,10 +9767,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Events"
+            "Auto DJ > Events"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj/events"
+            "This Endpoint Allows You To List Auto DJ Events."
           ]
         }
       },
@@ -9785,10 +9785,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Events"
+            "Auto DJ > Events"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj/events"
+            "This Endpoint Allows You To List Auto DJ Events."
           ]
         }
       },
@@ -9803,10 +9803,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Events"
+            "Auto DJ > Events"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj/events"
+            "This Endpoint Allows You To List Auto DJ Events."
           ]
         }
       },
@@ -9820,10 +9820,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Events"
+            "Auto DJ > Events"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj/events"
+            "This Endpoint Allows You To List Auto DJ Events."
           ]
         }
       },
@@ -9837,10 +9837,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Events"
+            "Auto DJ > Events"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/autodj/events"
+            "Store Auto DJ Event"
           ]
         }
       },
@@ -9855,10 +9855,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Events"
+            "Auto DJ > Events"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/autodj/events"
+            "Store Auto DJ Event"
           ]
         }
       },
@@ -9873,10 +9873,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Events"
+            "Auto DJ > Events"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/autodj/events"
+            "Store Auto DJ Event"
           ]
         }
       },
@@ -9891,10 +9891,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Events"
+            "Auto DJ > Events"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/autodj/events"
+            "Store Auto DJ Event"
           ]
         }
       },
@@ -9909,10 +9909,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Events"
+            "Auto DJ > Events"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/autodj/events"
+            "Store Auto DJ Event"
           ]
         }
       },
@@ -11605,10 +11605,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Events"
+            "Auto DJ > Events"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/autodj/events"
+            "Store Auto DJ Event"
           ]
         }
       },
@@ -13301,10 +13301,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Events"
+            "Auto DJ > Events"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/autodj/events"
+            "Store Auto DJ Event"
           ]
         }
       },
@@ -13319,10 +13319,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Events"
+            "Auto DJ > Events"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/autodj/events"
+            "Store Auto DJ Event"
           ]
         }
       },
@@ -13360,10 +13360,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Events"
+            "Auto DJ > Events"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/autodj/events"
+            "Store Auto DJ Event"
           ]
         }
       },
@@ -13413,10 +13413,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Events"
+            "Auto DJ > Events"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj/events/{event_id}"
+            "Get Auto DJ Event"
           ]
         }
       },
@@ -13431,10 +13431,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Events"
+            "Auto DJ > Events"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj/events/{event_id}"
+            "Get Auto DJ Event"
           ]
         }
       },
@@ -13449,10 +13449,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Events"
+            "Auto DJ > Events"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj/events/{event_id}"
+            "Get Auto DJ Event"
           ]
         }
       },
@@ -13467,10 +13467,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Events"
+            "Auto DJ > Events"
           ],
           "operation": [
-            "PUT /1/radios/{radio_product_id}/stations/{station_id}/autodj/events/{event_id}"
+            "Update Auto DJ Event"
           ]
         }
       },
@@ -13485,10 +13485,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Events"
+            "Auto DJ > Events"
           ],
           "operation": [
-            "PUT /1/radios/{radio_product_id}/stations/{station_id}/autodj/events/{event_id}"
+            "Update Auto DJ Event"
           ]
         }
       },
@@ -13503,10 +13503,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Events"
+            "Auto DJ > Events"
           ],
           "operation": [
-            "PUT /1/radios/{radio_product_id}/stations/{station_id}/autodj/events/{event_id}"
+            "Update Auto DJ Event"
           ]
         }
       },
@@ -13522,10 +13522,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Events"
+            "Auto DJ > Events"
           ],
           "operation": [
-            "PUT /1/radios/{radio_product_id}/stations/{station_id}/autodj/events/{event_id}"
+            "Update Auto DJ Event"
           ]
         }
       },
@@ -17019,10 +17019,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Events"
+            "Auto DJ > Events"
           ],
           "operation": [
-            "DELETE /1/radios/{radio_product_id}/stations/{station_id}/autodj/events/{event_id}"
+            "Delete Auto DJ Event"
           ]
         }
       },
@@ -17037,10 +17037,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Events"
+            "Auto DJ > Events"
           ],
           "operation": [
-            "DELETE /1/radios/{radio_product_id}/stations/{station_id}/autodj/events/{event_id}"
+            "Delete Auto DJ Event"
           ]
         }
       },
@@ -17055,10 +17055,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Events"
+            "Auto DJ > Events"
           ],
           "operation": [
-            "DELETE /1/radios/{radio_product_id}/stations/{station_id}/autodj/events/{event_id}"
+            "Delete Auto DJ Event"
           ]
         }
       },
@@ -17074,10 +17074,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Events"
+            "Auto DJ > Events"
           ],
           "operation": [
-            "DELETE /1/radios/{radio_product_id}/stations/{station_id}/autodj/events/{event_id}"
+            "Delete Auto DJ Event"
           ]
         }
       },
@@ -17114,10 +17114,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Events"
+            "Auto DJ > Events"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/autodj/events"
+            "This Endpoint Allows You To List Auto DJ Events. (2)"
           ]
         }
       },
@@ -17132,10 +17132,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Events"
+            "Auto DJ > Events"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/autodj/events"
+            "This Endpoint Allows You To List Auto DJ Events. (2)"
           ]
         }
       },
@@ -17150,10 +17150,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Events"
+            "Auto DJ > Events"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/autodj/events"
+            "This Endpoint Allows You To List Auto DJ Events. (2)"
           ]
         }
       },
@@ -17167,10 +17167,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Events"
+            "Auto DJ > Events"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/autodj/events"
+            "This Endpoint Allows You To List Auto DJ Events. (2)"
           ]
         }
       },
@@ -17184,10 +17184,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Events"
+            "Auto DJ > Events"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/autodj/events"
+            "Store Auto DJ Event (2)"
           ]
         }
       },
@@ -17202,10 +17202,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Events"
+            "Auto DJ > Events"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/autodj/events"
+            "Store Auto DJ Event (2)"
           ]
         }
       },
@@ -17220,10 +17220,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Events"
+            "Auto DJ > Events"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/autodj/events"
+            "Store Auto DJ Event (2)"
           ]
         }
       },
@@ -17238,10 +17238,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Events"
+            "Auto DJ > Events"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/autodj/events"
+            "Store Auto DJ Event (2)"
           ]
         }
       },
@@ -17256,10 +17256,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Events"
+            "Auto DJ > Events"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/autodj/events"
+            "Store Auto DJ Event (2)"
           ]
         }
       },
@@ -18952,10 +18952,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Events"
+            "Auto DJ > Events"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/autodj/events"
+            "Store Auto DJ Event (2)"
           ]
         }
       },
@@ -20648,10 +20648,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Events"
+            "Auto DJ > Events"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/autodj/events"
+            "Store Auto DJ Event (2)"
           ]
         }
       },
@@ -20666,10 +20666,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Events"
+            "Auto DJ > Events"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/autodj/events"
+            "Store Auto DJ Event (2)"
           ]
         }
       },
@@ -20707,10 +20707,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Events"
+            "Auto DJ > Events"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/autodj/events"
+            "Store Auto DJ Event (2)"
           ]
         }
       },
@@ -20760,10 +20760,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Events"
+            "Auto DJ > Events"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/autodj/events/{event_id}"
+            "Get Auto DJ Event (2)"
           ]
         }
       },
@@ -20778,10 +20778,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Events"
+            "Auto DJ > Events"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/autodj/events/{event_id}"
+            "Get Auto DJ Event (2)"
           ]
         }
       },
@@ -20796,10 +20796,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Events"
+            "Auto DJ > Events"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/autodj/events/{event_id}"
+            "Get Auto DJ Event (2)"
           ]
         }
       },
@@ -20814,10 +20814,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Events"
+            "Auto DJ > Events"
           ],
           "operation": [
-            "PUT /2/radios/{radio_product_id}/stations/{station_id}/autodj/events/{event_id}"
+            "Update Auto DJ Event (2)"
           ]
         }
       },
@@ -20832,10 +20832,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Events"
+            "Auto DJ > Events"
           ],
           "operation": [
-            "PUT /2/radios/{radio_product_id}/stations/{station_id}/autodj/events/{event_id}"
+            "Update Auto DJ Event (2)"
           ]
         }
       },
@@ -20850,10 +20850,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Events"
+            "Auto DJ > Events"
           ],
           "operation": [
-            "PUT /2/radios/{radio_product_id}/stations/{station_id}/autodj/events/{event_id}"
+            "Update Auto DJ Event (2)"
           ]
         }
       },
@@ -20869,10 +20869,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Events"
+            "Auto DJ > Events"
           ],
           "operation": [
-            "PUT /2/radios/{radio_product_id}/stations/{station_id}/autodj/events/{event_id}"
+            "Update Auto DJ Event (2)"
           ]
         }
       },
@@ -24366,10 +24366,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Events"
+            "Auto DJ > Events"
           ],
           "operation": [
-            "DELETE /2/radios/{radio_product_id}/stations/{station_id}/autodj/events/{event_id}"
+            "Delete Auto DJ Event (2)"
           ]
         }
       },
@@ -24384,10 +24384,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Events"
+            "Auto DJ > Events"
           ],
           "operation": [
-            "DELETE /2/radios/{radio_product_id}/stations/{station_id}/autodj/events/{event_id}"
+            "Delete Auto DJ Event (2)"
           ]
         }
       },
@@ -24402,10 +24402,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Events"
+            "Auto DJ > Events"
           ],
           "operation": [
-            "DELETE /2/radios/{radio_product_id}/stations/{station_id}/autodj/events/{event_id}"
+            "Delete Auto DJ Event (2)"
           ]
         }
       },
@@ -24421,10 +24421,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Events"
+            "Auto DJ > Events"
           ],
           "operation": [
-            "DELETE /2/radios/{radio_product_id}/stations/{station_id}/autodj/events/{event_id}"
+            "Delete Auto DJ Event (2)"
           ]
         }
       },
@@ -24460,53 +24460,53 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Media"
+            "Auto DJ > Media"
           ]
         }
       },
       "options": [
         {
           "name": "This Endpoint Allows You To List Auto DJ Media.",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj/medias"
+          "value": "This Endpoint Allows You To List Auto DJ Media."
         },
         {
           "name": "Store Auto DJ Media",
-          "value": "POST /1/radios/{radio_product_id}/stations/{station_id}/autodj/medias"
+          "value": "Store Auto DJ Media"
         },
         {
           "name": "Get Auto DJ Media",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj/medias/{media_id}"
+          "value": "Get Auto DJ Media"
         },
         {
           "name": "Update Auto DJ Media",
-          "value": "PUT /1/radios/{radio_product_id}/stations/{station_id}/autodj/medias/{media_id}"
+          "value": "Update Auto DJ Media"
         },
         {
           "name": "Delete Auto DJ Media",
-          "value": "DELETE /1/radios/{radio_product_id}/stations/{station_id}/autodj/medias/{media_id}"
+          "value": "Delete Auto DJ Media"
         },
         {
           "name": "This Endpoint Allows You To List Auto DJ Media.",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/autodj/medias"
+          "value": "This Endpoint Allows You To List Auto DJ Media. (2)"
         },
         {
           "name": "Store Auto DJ Media",
-          "value": "POST /2/radios/{radio_product_id}/stations/{station_id}/autodj/medias"
+          "value": "Store Auto DJ Media (2)"
         },
         {
           "name": "Get Auto DJ Media",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/autodj/medias/{media_id}"
+          "value": "Get Auto DJ Media (2)"
         },
         {
           "name": "Update Auto DJ Media",
-          "value": "PUT /2/radios/{radio_product_id}/stations/{station_id}/autodj/medias/{media_id}"
+          "value": "Update Auto DJ Media (2)"
         },
         {
           "name": "Delete Auto DJ Media",
-          "value": "DELETE /2/radios/{radio_product_id}/stations/{station_id}/autodj/medias/{media_id}"
+          "value": "Delete Auto DJ Media (2)"
         }
       ],
-      "default": "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj/medias",
+      "default": "This Endpoint Allows You To List Auto DJ Media.",
       "noDataExpression": true
     },
     {
@@ -24517,10 +24517,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Media"
+            "Auto DJ > Media"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj/medias"
+            "This Endpoint Allows You To List Auto DJ Media."
           ]
         }
       },
@@ -24535,10 +24535,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Media"
+            "Auto DJ > Media"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj/medias"
+            "This Endpoint Allows You To List Auto DJ Media."
           ]
         }
       },
@@ -24553,10 +24553,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Media"
+            "Auto DJ > Media"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/autodj/medias"
+            "Store Auto DJ Media"
           ]
         }
       },
@@ -24571,10 +24571,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Media"
+            "Auto DJ > Media"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/autodj/medias"
+            "Store Auto DJ Media"
           ]
         }
       },
@@ -24589,10 +24589,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Media"
+            "Auto DJ > Media"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/autodj/medias"
+            "Store Auto DJ Media"
           ]
         }
       },
@@ -24608,10 +24608,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Media"
+            "Auto DJ > Media"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/autodj/medias"
+            "Store Auto DJ Media"
           ]
         }
       },
@@ -24640,10 +24640,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Media"
+            "Auto DJ > Media"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj/medias/{media_id}"
+            "Get Auto DJ Media"
           ]
         }
       },
@@ -24658,10 +24658,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Media"
+            "Auto DJ > Media"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj/medias/{media_id}"
+            "Get Auto DJ Media"
           ]
         }
       },
@@ -24676,10 +24676,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Media"
+            "Auto DJ > Media"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj/medias/{media_id}"
+            "Get Auto DJ Media"
           ]
         }
       },
@@ -24694,10 +24694,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Media"
+            "Auto DJ > Media"
           ],
           "operation": [
-            "PUT /1/radios/{radio_product_id}/stations/{station_id}/autodj/medias/{media_id}"
+            "Update Auto DJ Media"
           ]
         }
       },
@@ -24712,10 +24712,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Media"
+            "Auto DJ > Media"
           ],
           "operation": [
-            "PUT /1/radios/{radio_product_id}/stations/{station_id}/autodj/medias/{media_id}"
+            "Update Auto DJ Media"
           ]
         }
       },
@@ -24730,10 +24730,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Media"
+            "Auto DJ > Media"
           ],
           "operation": [
-            "PUT /1/radios/{radio_product_id}/stations/{station_id}/autodj/medias/{media_id}"
+            "Update Auto DJ Media"
           ]
         }
       },
@@ -24749,10 +24749,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Media"
+            "Auto DJ > Media"
           ],
           "operation": [
-            "PUT /1/radios/{radio_product_id}/stations/{station_id}/autodj/medias/{media_id}"
+            "Update Auto DJ Media"
           ]
         }
       },
@@ -24823,10 +24823,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Media"
+            "Auto DJ > Media"
           ],
           "operation": [
-            "DELETE /1/radios/{radio_product_id}/stations/{station_id}/autodj/medias/{media_id}"
+            "Delete Auto DJ Media"
           ]
         }
       },
@@ -24841,10 +24841,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Media"
+            "Auto DJ > Media"
           ],
           "operation": [
-            "DELETE /1/radios/{radio_product_id}/stations/{station_id}/autodj/medias/{media_id}"
+            "Delete Auto DJ Media"
           ]
         }
       },
@@ -24859,10 +24859,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Media"
+            "Auto DJ > Media"
           ],
           "operation": [
-            "DELETE /1/radios/{radio_product_id}/stations/{station_id}/autodj/medias/{media_id}"
+            "Delete Auto DJ Media"
           ]
         }
       },
@@ -24877,10 +24877,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Media"
+            "Auto DJ > Media"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/autodj/medias"
+            "This Endpoint Allows You To List Auto DJ Media. (2)"
           ]
         }
       },
@@ -24895,10 +24895,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Media"
+            "Auto DJ > Media"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/autodj/medias"
+            "This Endpoint Allows You To List Auto DJ Media. (2)"
           ]
         }
       },
@@ -24913,10 +24913,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Media"
+            "Auto DJ > Media"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/autodj/medias"
+            "Store Auto DJ Media (2)"
           ]
         }
       },
@@ -24931,10 +24931,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Media"
+            "Auto DJ > Media"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/autodj/medias"
+            "Store Auto DJ Media (2)"
           ]
         }
       },
@@ -24949,10 +24949,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Media"
+            "Auto DJ > Media"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/autodj/medias"
+            "Store Auto DJ Media (2)"
           ]
         }
       },
@@ -24968,10 +24968,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Media"
+            "Auto DJ > Media"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/autodj/medias"
+            "Store Auto DJ Media (2)"
           ]
         }
       },
@@ -25000,10 +25000,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Media"
+            "Auto DJ > Media"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/autodj/medias/{media_id}"
+            "Get Auto DJ Media (2)"
           ]
         }
       },
@@ -25018,10 +25018,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Media"
+            "Auto DJ > Media"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/autodj/medias/{media_id}"
+            "Get Auto DJ Media (2)"
           ]
         }
       },
@@ -25036,10 +25036,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Media"
+            "Auto DJ > Media"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/autodj/medias/{media_id}"
+            "Get Auto DJ Media (2)"
           ]
         }
       },
@@ -25054,10 +25054,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Media"
+            "Auto DJ > Media"
           ],
           "operation": [
-            "PUT /2/radios/{radio_product_id}/stations/{station_id}/autodj/medias/{media_id}"
+            "Update Auto DJ Media (2)"
           ]
         }
       },
@@ -25072,10 +25072,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Media"
+            "Auto DJ > Media"
           ],
           "operation": [
-            "PUT /2/radios/{radio_product_id}/stations/{station_id}/autodj/medias/{media_id}"
+            "Update Auto DJ Media (2)"
           ]
         }
       },
@@ -25090,10 +25090,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Media"
+            "Auto DJ > Media"
           ],
           "operation": [
-            "PUT /2/radios/{radio_product_id}/stations/{station_id}/autodj/medias/{media_id}"
+            "Update Auto DJ Media (2)"
           ]
         }
       },
@@ -25109,10 +25109,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Media"
+            "Auto DJ > Media"
           ],
           "operation": [
-            "PUT /2/radios/{radio_product_id}/stations/{station_id}/autodj/medias/{media_id}"
+            "Update Auto DJ Media (2)"
           ]
         }
       },
@@ -25183,10 +25183,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Media"
+            "Auto DJ > Media"
           ],
           "operation": [
-            "DELETE /2/radios/{radio_product_id}/stations/{station_id}/autodj/medias/{media_id}"
+            "Delete Auto DJ Media (2)"
           ]
         }
       },
@@ -25201,10 +25201,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Media"
+            "Auto DJ > Media"
           ],
           "operation": [
-            "DELETE /2/radios/{radio_product_id}/stations/{station_id}/autodj/medias/{media_id}"
+            "Delete Auto DJ Media (2)"
           ]
         }
       },
@@ -25219,10 +25219,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Media"
+            "Auto DJ > Media"
           ],
           "operation": [
-            "DELETE /2/radios/{radio_product_id}/stations/{station_id}/autodj/medias/{media_id}"
+            "Delete Auto DJ Media (2)"
           ]
         }
       },
@@ -25236,61 +25236,61 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playing playlist"
+            "Auto DJ > Playing Playlist"
           ]
         }
       },
       "options": [
         {
           "name": "Get Playing Playlist",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist"
+          "value": "Get Playing Playlist"
         },
         {
           "name": "Get Playing Playlist",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias"
+          "value": "Get Playing Playlist (2)"
         },
         {
           "name": "Get Playing Playlist",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist"
+          "value": "Get Playing Playlist (3)"
         },
         {
           "name": "Get Playing Playlist",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias"
+          "value": "Get Playing Playlist (4)"
         },
         {
           "name": "Generate Playlist",
-          "value": "POST /1/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/generate"
+          "value": "Generate Playlist"
         },
         {
           "name": "Insert Media After",
-          "value": "POST /1/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias/insert"
+          "value": "Insert Media After"
         },
         {
           "name": "Move Media After",
-          "value": "POST /1/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias/{playing_media_id}/move"
+          "value": "Move Media After"
         },
         {
           "name": "Generate Playlist",
-          "value": "POST /2/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/generate"
+          "value": "Generate Playlist (2)"
         },
         {
           "name": "Insert Media After",
-          "value": "POST /2/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias/insert"
+          "value": "Insert Media After (2)"
         },
         {
           "name": "Move Media After",
-          "value": "POST /2/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias/{playing_media_id}/move"
+          "value": "Move Media After (2)"
         },
         {
           "name": "Remove Media",
-          "value": "DELETE /1/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias/{playing_media_id}"
+          "value": "Remove Media"
         },
         {
           "name": "Remove Media",
-          "value": "DELETE /2/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias/{playing_media_id}"
+          "value": "Remove Media (2)"
         }
       ],
-      "default": "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist",
+      "default": "Get Playing Playlist",
       "noDataExpression": true
     },
     {
@@ -25301,10 +25301,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playing playlist"
+            "Auto DJ > Playing Playlist"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist"
+            "Get Playing Playlist"
           ]
         }
       },
@@ -25319,10 +25319,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playing playlist"
+            "Auto DJ > Playing Playlist"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist"
+            "Get Playing Playlist"
           ]
         }
       },
@@ -25337,10 +25337,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playing playlist"
+            "Auto DJ > Playing Playlist"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist"
+            "Get Playing Playlist"
           ]
         }
       },
@@ -25354,10 +25354,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playing playlist"
+            "Auto DJ > Playing Playlist"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist"
+            "Get Playing Playlist"
           ]
         }
       },
@@ -25371,10 +25371,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playing playlist"
+            "Auto DJ > Playing Playlist"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias"
+            "Get Playing Playlist (2)"
           ]
         }
       },
@@ -25389,10 +25389,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playing playlist"
+            "Auto DJ > Playing Playlist"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias"
+            "Get Playing Playlist (2)"
           ]
         }
       },
@@ -25407,10 +25407,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playing playlist"
+            "Auto DJ > Playing Playlist"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias"
+            "Get Playing Playlist (2)"
           ]
         }
       },
@@ -25424,10 +25424,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playing playlist"
+            "Auto DJ > Playing Playlist"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias"
+            "Get Playing Playlist (2)"
           ]
         }
       },
@@ -25441,10 +25441,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playing playlist"
+            "Auto DJ > Playing Playlist"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist"
+            "Get Playing Playlist (3)"
           ]
         }
       },
@@ -25459,10 +25459,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playing playlist"
+            "Auto DJ > Playing Playlist"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist"
+            "Get Playing Playlist (3)"
           ]
         }
       },
@@ -25477,10 +25477,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playing playlist"
+            "Auto DJ > Playing Playlist"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist"
+            "Get Playing Playlist (3)"
           ]
         }
       },
@@ -25494,10 +25494,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playing playlist"
+            "Auto DJ > Playing Playlist"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist"
+            "Get Playing Playlist (3)"
           ]
         }
       },
@@ -25511,10 +25511,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playing playlist"
+            "Auto DJ > Playing Playlist"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias"
+            "Get Playing Playlist (4)"
           ]
         }
       },
@@ -25529,10 +25529,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playing playlist"
+            "Auto DJ > Playing Playlist"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias"
+            "Get Playing Playlist (4)"
           ]
         }
       },
@@ -25547,10 +25547,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playing playlist"
+            "Auto DJ > Playing Playlist"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias"
+            "Get Playing Playlist (4)"
           ]
         }
       },
@@ -25564,10 +25564,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playing playlist"
+            "Auto DJ > Playing Playlist"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias"
+            "Get Playing Playlist (4)"
           ]
         }
       },
@@ -25581,10 +25581,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playing playlist"
+            "Auto DJ > Playing Playlist"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/generate"
+            "Generate Playlist"
           ]
         }
       },
@@ -25599,10 +25599,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playing playlist"
+            "Auto DJ > Playing Playlist"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/generate"
+            "Generate Playlist"
           ]
         }
       },
@@ -25618,10 +25618,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playing playlist"
+            "Auto DJ > Playing Playlist"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/generate"
+            "Generate Playlist"
           ]
         }
       },
@@ -25643,10 +25643,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playing playlist"
+            "Auto DJ > Playing Playlist"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias/insert"
+            "Insert Media After"
           ]
         }
       },
@@ -25661,10 +25661,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playing playlist"
+            "Auto DJ > Playing Playlist"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias/insert"
+            "Insert Media After"
           ]
         }
       },
@@ -25679,10 +25679,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playing playlist"
+            "Auto DJ > Playing Playlist"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias/insert"
+            "Insert Media After"
           ]
         }
       },
@@ -25697,10 +25697,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playing playlist"
+            "Auto DJ > Playing Playlist"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias/insert"
+            "Insert Media After"
           ]
         }
       },
@@ -25715,10 +25715,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playing playlist"
+            "Auto DJ > Playing Playlist"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias/insert"
+            "Insert Media After"
           ]
         }
       },
@@ -25743,10 +25743,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playing playlist"
+            "Auto DJ > Playing Playlist"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias/{playing_media_id}/move"
+            "Move Media After"
           ]
         }
       },
@@ -25761,10 +25761,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playing playlist"
+            "Auto DJ > Playing Playlist"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias/{playing_media_id}/move"
+            "Move Media After"
           ]
         }
       },
@@ -25779,10 +25779,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playing playlist"
+            "Auto DJ > Playing Playlist"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias/{playing_media_id}/move"
+            "Move Media After"
           ]
         }
       },
@@ -25796,10 +25796,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playing playlist"
+            "Auto DJ > Playing Playlist"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias/{playing_media_id}/move"
+            "Move Media After"
           ]
         }
       },
@@ -25814,10 +25814,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playing playlist"
+            "Auto DJ > Playing Playlist"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias/{playing_media_id}/move"
+            "Move Media After"
           ]
         }
       },
@@ -25842,10 +25842,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playing playlist"
+            "Auto DJ > Playing Playlist"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/generate"
+            "Generate Playlist (2)"
           ]
         }
       },
@@ -25860,10 +25860,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playing playlist"
+            "Auto DJ > Playing Playlist"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/generate"
+            "Generate Playlist (2)"
           ]
         }
       },
@@ -25879,10 +25879,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playing playlist"
+            "Auto DJ > Playing Playlist"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/generate"
+            "Generate Playlist (2)"
           ]
         }
       },
@@ -25904,10 +25904,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playing playlist"
+            "Auto DJ > Playing Playlist"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias/insert"
+            "Insert Media After (2)"
           ]
         }
       },
@@ -25922,10 +25922,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playing playlist"
+            "Auto DJ > Playing Playlist"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias/insert"
+            "Insert Media After (2)"
           ]
         }
       },
@@ -25940,10 +25940,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playing playlist"
+            "Auto DJ > Playing Playlist"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias/insert"
+            "Insert Media After (2)"
           ]
         }
       },
@@ -25958,10 +25958,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playing playlist"
+            "Auto DJ > Playing Playlist"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias/insert"
+            "Insert Media After (2)"
           ]
         }
       },
@@ -25976,10 +25976,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playing playlist"
+            "Auto DJ > Playing Playlist"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias/insert"
+            "Insert Media After (2)"
           ]
         }
       },
@@ -26004,10 +26004,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playing playlist"
+            "Auto DJ > Playing Playlist"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias/{playing_media_id}/move"
+            "Move Media After (2)"
           ]
         }
       },
@@ -26022,10 +26022,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playing playlist"
+            "Auto DJ > Playing Playlist"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias/{playing_media_id}/move"
+            "Move Media After (2)"
           ]
         }
       },
@@ -26040,10 +26040,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playing playlist"
+            "Auto DJ > Playing Playlist"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias/{playing_media_id}/move"
+            "Move Media After (2)"
           ]
         }
       },
@@ -26057,10 +26057,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playing playlist"
+            "Auto DJ > Playing Playlist"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias/{playing_media_id}/move"
+            "Move Media After (2)"
           ]
         }
       },
@@ -26075,10 +26075,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playing playlist"
+            "Auto DJ > Playing Playlist"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias/{playing_media_id}/move"
+            "Move Media After (2)"
           ]
         }
       },
@@ -26103,10 +26103,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playing playlist"
+            "Auto DJ > Playing Playlist"
           ],
           "operation": [
-            "DELETE /1/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias/{playing_media_id}"
+            "Remove Media"
           ]
         }
       },
@@ -26121,10 +26121,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playing playlist"
+            "Auto DJ > Playing Playlist"
           ],
           "operation": [
-            "DELETE /1/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias/{playing_media_id}"
+            "Remove Media"
           ]
         }
       },
@@ -26139,10 +26139,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playing playlist"
+            "Auto DJ > Playing Playlist"
           ],
           "operation": [
-            "DELETE /1/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias/{playing_media_id}"
+            "Remove Media"
           ]
         }
       },
@@ -26156,10 +26156,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playing playlist"
+            "Auto DJ > Playing Playlist"
           ],
           "operation": [
-            "DELETE /2/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias/{playing_media_id}"
+            "Remove Media (2)"
           ]
         }
       },
@@ -26174,10 +26174,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playing playlist"
+            "Auto DJ > Playing Playlist"
           ],
           "operation": [
-            "DELETE /2/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias/{playing_media_id}"
+            "Remove Media (2)"
           ]
         }
       },
@@ -26192,10 +26192,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playing playlist"
+            "Auto DJ > Playing Playlist"
           ],
           "operation": [
-            "DELETE /2/radios/{radio_product_id}/stations/{station_id}/autodj/playing_playlist/medias/{playing_media_id}"
+            "Remove Media (2)"
           ]
         }
       },
@@ -26208,69 +26208,69 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playlist"
+            "Auto DJ > Playlist"
           ]
         }
       },
       "options": [
         {
           "name": "This Endpoint Allows You To List Auto DJ Playlist.",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj/playlists"
+          "value": "This Endpoint Allows You To List Auto DJ Playlist."
         },
         {
           "name": "Store Auto DJ Playlist",
-          "value": "POST /1/radios/{radio_product_id}/stations/{station_id}/autodj/playlists"
+          "value": "Store Auto DJ Playlist"
         },
         {
           "name": "Get Auto DJ Playlist",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}"
+          "value": "Get Auto DJ Playlist"
         },
         {
           "name": "Update Auto DJ Playlist",
-          "value": "PUT /1/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}"
+          "value": "Update Auto DJ Playlist"
         },
         {
           "name": "Delete Auto DJ Playlist",
-          "value": "DELETE /1/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}"
+          "value": "Delete Auto DJ Playlist"
         },
         {
           "name": "This Endpoint Allows You To List Auto DJ Medias In Playlist.",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}/medias"
+          "value": "This Endpoint Allows You To List Auto DJ Medias In Playlist."
         },
         {
           "name": "This Endpoint Allows You To List Auto DJ Playlist.",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/autodj/playlists"
+          "value": "This Endpoint Allows You To List Auto DJ Playlist. (2)"
         },
         {
           "name": "Store Auto DJ Playlist",
-          "value": "POST /2/radios/{radio_product_id}/stations/{station_id}/autodj/playlists"
+          "value": "Store Auto DJ Playlist (2)"
         },
         {
           "name": "Get Auto DJ Playlist",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}"
+          "value": "Get Auto DJ Playlist (2)"
         },
         {
           "name": "Update Auto DJ Playlist",
-          "value": "PUT /2/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}"
+          "value": "Update Auto DJ Playlist (2)"
         },
         {
           "name": "Delete Auto DJ Playlist",
-          "value": "DELETE /2/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}"
+          "value": "Delete Auto DJ Playlist (2)"
         },
         {
           "name": "This Endpoint Allows You To List Auto DJ Medias In Playlist.",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}/medias"
+          "value": "This Endpoint Allows You To List Auto DJ Medias In Playlist. (2)"
         },
         {
           "name": "Update Auto DJ Playlist",
-          "value": "PUT /1/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}/attach_media"
+          "value": "Update Auto DJ Playlist (3)"
         },
         {
           "name": "Update Auto DJ Playlist",
-          "value": "PUT /2/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}/attach_media"
+          "value": "Update Auto DJ Playlist (4)"
         }
       ],
-      "default": "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj/playlists",
+      "default": "This Endpoint Allows You To List Auto DJ Playlist.",
       "noDataExpression": true
     },
     {
@@ -26281,10 +26281,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playlist"
+            "Auto DJ > Playlist"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj/playlists"
+            "This Endpoint Allows You To List Auto DJ Playlist."
           ]
         }
       },
@@ -26299,10 +26299,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playlist"
+            "Auto DJ > Playlist"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj/playlists"
+            "This Endpoint Allows You To List Auto DJ Playlist."
           ]
         }
       },
@@ -26317,10 +26317,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playlist"
+            "Auto DJ > Playlist"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/autodj/playlists"
+            "Store Auto DJ Playlist"
           ]
         }
       },
@@ -26335,10 +26335,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playlist"
+            "Auto DJ > Playlist"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/autodj/playlists"
+            "Store Auto DJ Playlist"
           ]
         }
       },
@@ -26353,10 +26353,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playlist"
+            "Auto DJ > Playlist"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/autodj/playlists"
+            "Store Auto DJ Playlist"
           ]
         }
       },
@@ -26370,10 +26370,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playlist"
+            "Auto DJ > Playlist"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/autodj/playlists"
+            "Store Auto DJ Playlist"
           ]
         }
       },
@@ -26388,10 +26388,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playlist"
+            "Auto DJ > Playlist"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}"
+            "Get Auto DJ Playlist"
           ]
         }
       },
@@ -26406,10 +26406,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playlist"
+            "Auto DJ > Playlist"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}"
+            "Get Auto DJ Playlist"
           ]
         }
       },
@@ -26424,10 +26424,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playlist"
+            "Auto DJ > Playlist"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}"
+            "Get Auto DJ Playlist"
           ]
         }
       },
@@ -26442,10 +26442,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playlist"
+            "Auto DJ > Playlist"
           ],
           "operation": [
-            "PUT /1/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}"
+            "Update Auto DJ Playlist"
           ]
         }
       },
@@ -26460,10 +26460,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playlist"
+            "Auto DJ > Playlist"
           ],
           "operation": [
-            "PUT /1/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}"
+            "Update Auto DJ Playlist"
           ]
         }
       },
@@ -26478,10 +26478,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playlist"
+            "Auto DJ > Playlist"
           ],
           "operation": [
-            "PUT /1/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}"
+            "Update Auto DJ Playlist"
           ]
         }
       },
@@ -26496,10 +26496,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playlist"
+            "Auto DJ > Playlist"
           ],
           "operation": [
-            "PUT /1/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}"
+            "Update Auto DJ Playlist"
           ]
         }
       },
@@ -26514,10 +26514,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playlist"
+            "Auto DJ > Playlist"
           ],
           "operation": [
-            "PUT /1/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}"
+            "Update Auto DJ Playlist"
           ]
         }
       },
@@ -26539,10 +26539,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playlist"
+            "Auto DJ > Playlist"
           ],
           "operation": [
-            "DELETE /1/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}"
+            "Delete Auto DJ Playlist"
           ]
         }
       },
@@ -26557,10 +26557,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playlist"
+            "Auto DJ > Playlist"
           ],
           "operation": [
-            "DELETE /1/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}"
+            "Delete Auto DJ Playlist"
           ]
         }
       },
@@ -26575,10 +26575,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playlist"
+            "Auto DJ > Playlist"
           ],
           "operation": [
-            "DELETE /1/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}"
+            "Delete Auto DJ Playlist"
           ]
         }
       },
@@ -26593,10 +26593,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playlist"
+            "Auto DJ > Playlist"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}/medias"
+            "This Endpoint Allows You To List Auto DJ Medias In Playlist."
           ]
         }
       },
@@ -26611,10 +26611,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playlist"
+            "Auto DJ > Playlist"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}/medias"
+            "This Endpoint Allows You To List Auto DJ Medias In Playlist."
           ]
         }
       },
@@ -26629,10 +26629,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playlist"
+            "Auto DJ > Playlist"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}/medias"
+            "This Endpoint Allows You To List Auto DJ Medias In Playlist."
           ]
         }
       },
@@ -26647,10 +26647,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playlist"
+            "Auto DJ > Playlist"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/autodj/playlists"
+            "This Endpoint Allows You To List Auto DJ Playlist. (2)"
           ]
         }
       },
@@ -26665,10 +26665,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playlist"
+            "Auto DJ > Playlist"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/autodj/playlists"
+            "This Endpoint Allows You To List Auto DJ Playlist. (2)"
           ]
         }
       },
@@ -26683,10 +26683,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playlist"
+            "Auto DJ > Playlist"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/autodj/playlists"
+            "Store Auto DJ Playlist (2)"
           ]
         }
       },
@@ -26701,10 +26701,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playlist"
+            "Auto DJ > Playlist"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/autodj/playlists"
+            "Store Auto DJ Playlist (2)"
           ]
         }
       },
@@ -26719,10 +26719,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playlist"
+            "Auto DJ > Playlist"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/autodj/playlists"
+            "Store Auto DJ Playlist (2)"
           ]
         }
       },
@@ -26736,10 +26736,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playlist"
+            "Auto DJ > Playlist"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/autodj/playlists"
+            "Store Auto DJ Playlist (2)"
           ]
         }
       },
@@ -26754,10 +26754,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playlist"
+            "Auto DJ > Playlist"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}"
+            "Get Auto DJ Playlist (2)"
           ]
         }
       },
@@ -26772,10 +26772,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playlist"
+            "Auto DJ > Playlist"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}"
+            "Get Auto DJ Playlist (2)"
           ]
         }
       },
@@ -26790,10 +26790,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playlist"
+            "Auto DJ > Playlist"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}"
+            "Get Auto DJ Playlist (2)"
           ]
         }
       },
@@ -26808,10 +26808,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playlist"
+            "Auto DJ > Playlist"
           ],
           "operation": [
-            "PUT /2/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}"
+            "Update Auto DJ Playlist (2)"
           ]
         }
       },
@@ -26826,10 +26826,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playlist"
+            "Auto DJ > Playlist"
           ],
           "operation": [
-            "PUT /2/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}"
+            "Update Auto DJ Playlist (2)"
           ]
         }
       },
@@ -26844,10 +26844,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playlist"
+            "Auto DJ > Playlist"
           ],
           "operation": [
-            "PUT /2/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}"
+            "Update Auto DJ Playlist (2)"
           ]
         }
       },
@@ -26862,10 +26862,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playlist"
+            "Auto DJ > Playlist"
           ],
           "operation": [
-            "PUT /2/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}"
+            "Update Auto DJ Playlist (2)"
           ]
         }
       },
@@ -26880,10 +26880,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playlist"
+            "Auto DJ > Playlist"
           ],
           "operation": [
-            "PUT /2/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}"
+            "Update Auto DJ Playlist (2)"
           ]
         }
       },
@@ -26905,10 +26905,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playlist"
+            "Auto DJ > Playlist"
           ],
           "operation": [
-            "DELETE /2/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}"
+            "Delete Auto DJ Playlist (2)"
           ]
         }
       },
@@ -26923,10 +26923,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playlist"
+            "Auto DJ > Playlist"
           ],
           "operation": [
-            "DELETE /2/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}"
+            "Delete Auto DJ Playlist (2)"
           ]
         }
       },
@@ -26941,10 +26941,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playlist"
+            "Auto DJ > Playlist"
           ],
           "operation": [
-            "DELETE /2/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}"
+            "Delete Auto DJ Playlist (2)"
           ]
         }
       },
@@ -26959,10 +26959,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playlist"
+            "Auto DJ > Playlist"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}/medias"
+            "This Endpoint Allows You To List Auto DJ Medias In Playlist. (2)"
           ]
         }
       },
@@ -26977,10 +26977,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playlist"
+            "Auto DJ > Playlist"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}/medias"
+            "This Endpoint Allows You To List Auto DJ Medias In Playlist. (2)"
           ]
         }
       },
@@ -26995,10 +26995,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playlist"
+            "Auto DJ > Playlist"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}/medias"
+            "This Endpoint Allows You To List Auto DJ Medias In Playlist. (2)"
           ]
         }
       },
@@ -27013,10 +27013,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playlist"
+            "Auto DJ > Playlist"
           ],
           "operation": [
-            "PUT /1/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}/attach_media"
+            "Update Auto DJ Playlist (3)"
           ]
         }
       },
@@ -27031,10 +27031,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playlist"
+            "Auto DJ > Playlist"
           ],
           "operation": [
-            "PUT /1/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}/attach_media"
+            "Update Auto DJ Playlist (3)"
           ]
         }
       },
@@ -27049,10 +27049,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playlist"
+            "Auto DJ > Playlist"
           ],
           "operation": [
-            "PUT /1/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}/attach_media"
+            "Update Auto DJ Playlist (3)"
           ]
         }
       },
@@ -27067,10 +27067,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playlist"
+            "Auto DJ > Playlist"
           ],
           "operation": [
-            "PUT /1/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}/attach_media"
+            "Update Auto DJ Playlist (3)"
           ]
         }
       },
@@ -27085,10 +27085,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playlist"
+            "Auto DJ > Playlist"
           ],
           "operation": [
-            "PUT /2/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}/attach_media"
+            "Update Auto DJ Playlist (4)"
           ]
         }
       },
@@ -27103,10 +27103,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playlist"
+            "Auto DJ > Playlist"
           ],
           "operation": [
-            "PUT /2/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}/attach_media"
+            "Update Auto DJ Playlist (4)"
           ]
         }
       },
@@ -27121,10 +27121,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playlist"
+            "Auto DJ > Playlist"
           ],
           "operation": [
-            "PUT /2/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}/attach_media"
+            "Update Auto DJ Playlist (4)"
           ]
         }
       },
@@ -27139,10 +27139,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "AutoDJ > Playlist"
+            "Auto DJ > Playlist"
           ],
           "operation": [
-            "PUT /2/radios/{radio_product_id}/stations/{station_id}/autodj/playlists/{playlist_id}/attach_media"
+            "Update Auto DJ Playlist (4)"
           ]
         }
       },
@@ -27163,14 +27163,14 @@ export class InfomaniakStreamingRadio implements INodeType {
       "options": [
         {
           "name": "List Encoder Events",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/encoder_events"
+          "value": "List Encoder Events"
         },
         {
           "name": "List Encoder Events",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/encoder_events"
+          "value": "List Encoder Events (2)"
         }
       ],
-      "default": "GET /1/radios/{radio_product_id}/stations/{station_id}/encoder_events",
+      "default": "List Encoder Events",
       "noDataExpression": true
     },
     {
@@ -27184,7 +27184,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Encoder Events"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/encoder_events"
+            "List Encoder Events"
           ]
         }
       },
@@ -27202,7 +27202,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Encoder Events"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/encoder_events"
+            "List Encoder Events"
           ]
         }
       },
@@ -27220,7 +27220,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Encoder Events"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/encoder_events"
+            "List Encoder Events"
           ]
         }
       },
@@ -27237,7 +27237,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Encoder Events"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/encoder_events"
+            "List Encoder Events"
           ]
         }
       },
@@ -27255,7 +27255,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Encoder Events"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/encoder_events"
+            "List Encoder Events"
           ]
         }
       },
@@ -27300,7 +27300,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Encoder Events"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/encoder_events"
+            "List Encoder Events (2)"
           ]
         }
       },
@@ -27318,7 +27318,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Encoder Events"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/encoder_events"
+            "List Encoder Events (2)"
           ]
         }
       },
@@ -27336,7 +27336,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Encoder Events"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/encoder_events"
+            "List Encoder Events (2)"
           ]
         }
       },
@@ -27353,7 +27353,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Encoder Events"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/encoder_events"
+            "List Encoder Events (2)"
           ]
         }
       },
@@ -27371,7 +27371,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Encoder Events"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/encoder_events"
+            "List Encoder Events (2)"
           ]
         }
       },
@@ -27419,38 +27419,38 @@ export class InfomaniakStreamingRadio implements INodeType {
       "options": [
         {
           "name": "Get Hls Stream",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream"
+          "value": "Get Hls Stream"
         },
         {
           "name": "Update Hls Stream",
-          "value": "PUT /1/radios/{radio_product_id}/stations/{station_id}/hls_stream"
+          "value": "Update Hls Stream"
         },
         {
           "name": "Delete Hls Stream",
-          "value": "DELETE /1/radios/{radio_product_id}/stations/{station_id}/hls_stream"
+          "value": "Delete Hls Stream"
         },
         {
           "name": "Get Hls Stream",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream"
+          "value": "Get Hls Stream (2)"
         },
         {
           "name": "Update Hls Stream",
-          "value": "PUT /2/radios/{radio_product_id}/stations/{station_id}/hls_stream"
+          "value": "Update Hls Stream (2)"
         },
         {
           "name": "Delete Hls Stream",
-          "value": "DELETE /2/radios/{radio_product_id}/stations/{station_id}/hls_stream"
+          "value": "Delete Hls Stream (2)"
         },
         {
           "name": "Add Hls Stream",
-          "value": "POST /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/add"
+          "value": "Add Hls Stream"
         },
         {
           "name": "Add Hls Stream",
-          "value": "POST /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/add"
+          "value": "Add Hls Stream (2)"
         }
       ],
-      "default": "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream",
+      "default": "Get Hls Stream",
       "noDataExpression": true
     },
     {
@@ -27464,7 +27464,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Hls Stream"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream"
+            "Get Hls Stream"
           ]
         }
       },
@@ -27482,7 +27482,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Hls Stream"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream"
+            "Get Hls Stream"
           ]
         }
       },
@@ -27501,7 +27501,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Hls Stream"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream"
+            "Get Hls Stream"
           ]
         }
       },
@@ -27591,7 +27591,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Hls Stream"
           ],
           "operation": [
-            "PUT /1/radios/{radio_product_id}/stations/{station_id}/hls_stream"
+            "Update Hls Stream"
           ]
         }
       },
@@ -27609,7 +27609,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Hls Stream"
           ],
           "operation": [
-            "PUT /1/radios/{radio_product_id}/stations/{station_id}/hls_stream"
+            "Update Hls Stream"
           ]
         }
       },
@@ -27628,7 +27628,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Hls Stream"
           ],
           "operation": [
-            "PUT /1/radios/{radio_product_id}/stations/{station_id}/hls_stream"
+            "Update Hls Stream"
           ]
         }
       },
@@ -27716,7 +27716,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Hls Stream"
           ],
           "operation": [
-            "DELETE /1/radios/{radio_product_id}/stations/{station_id}/hls_stream"
+            "Delete Hls Stream"
           ]
         }
       },
@@ -27734,7 +27734,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Hls Stream"
           ],
           "operation": [
-            "DELETE /1/radios/{radio_product_id}/stations/{station_id}/hls_stream"
+            "Delete Hls Stream"
           ]
         }
       },
@@ -27752,7 +27752,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Hls Stream"
           ],
           "operation": [
-            "DELETE /1/radios/{radio_product_id}/stations/{station_id}/hls_stream"
+            "Delete Hls Stream"
           ]
         }
       },
@@ -27769,7 +27769,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Hls Stream"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream"
+            "Get Hls Stream (2)"
           ]
         }
       },
@@ -27787,7 +27787,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Hls Stream"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream"
+            "Get Hls Stream (2)"
           ]
         }
       },
@@ -27806,7 +27806,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Hls Stream"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream"
+            "Get Hls Stream (2)"
           ]
         }
       },
@@ -27896,7 +27896,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Hls Stream"
           ],
           "operation": [
-            "PUT /2/radios/{radio_product_id}/stations/{station_id}/hls_stream"
+            "Update Hls Stream (2)"
           ]
         }
       },
@@ -27914,7 +27914,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Hls Stream"
           ],
           "operation": [
-            "PUT /2/radios/{radio_product_id}/stations/{station_id}/hls_stream"
+            "Update Hls Stream (2)"
           ]
         }
       },
@@ -27933,7 +27933,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Hls Stream"
           ],
           "operation": [
-            "PUT /2/radios/{radio_product_id}/stations/{station_id}/hls_stream"
+            "Update Hls Stream (2)"
           ]
         }
       },
@@ -28021,7 +28021,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Hls Stream"
           ],
           "operation": [
-            "DELETE /2/radios/{radio_product_id}/stations/{station_id}/hls_stream"
+            "Delete Hls Stream (2)"
           ]
         }
       },
@@ -28039,7 +28039,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Hls Stream"
           ],
           "operation": [
-            "DELETE /2/radios/{radio_product_id}/stations/{station_id}/hls_stream"
+            "Delete Hls Stream (2)"
           ]
         }
       },
@@ -28057,7 +28057,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Hls Stream"
           ],
           "operation": [
-            "DELETE /2/radios/{radio_product_id}/stations/{station_id}/hls_stream"
+            "Delete Hls Stream (2)"
           ]
         }
       },
@@ -28074,7 +28074,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Hls Stream"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/add"
+            "Add Hls Stream"
           ]
         }
       },
@@ -28092,7 +28092,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Hls Stream"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/add"
+            "Add Hls Stream"
           ]
         }
       },
@@ -28111,7 +28111,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Hls Stream"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/add"
+            "Add Hls Stream"
           ]
         }
       },
@@ -28136,7 +28136,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Hls Stream"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/add"
+            "Add Hls Stream (2)"
           ]
         }
       },
@@ -28154,7 +28154,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Hls Stream"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/add"
+            "Add Hls Stream (2)"
           ]
         }
       },
@@ -28173,7 +28173,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Hls Stream"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/add"
+            "Add Hls Stream (2)"
           ]
         }
       },
@@ -28201,38 +28201,38 @@ export class InfomaniakStreamingRadio implements INodeType {
       "options": [
         {
           "name": "Export Log As Mediapulse",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/mediapulse/export_log"
+          "value": "Export Log As Mediapulse"
         },
         {
           "name": "Check If Mediapulse Log File Is Already Present In Storage",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/mediapulse/export_log/available"
+          "value": "Check If Mediapulse Log File Is Already Present In Storage"
         },
         {
           "name": "Generate A Report For Export Mediapulse Log On A Station",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/mediapulse/report"
+          "value": "Generate A Report For Export Mediapulse Log On A Station"
         },
         {
           "name": "Generate A Report For Export Mediapulse Log With Stations In Product",
-          "value": "GET /1/radios/{radio_product_id}/mediapulse/report"
+          "value": "Generate A Report For Export Mediapulse Log With Stations In Product"
         },
         {
           "name": "Export Log As Mediapulse",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/mediapulse/export_log"
+          "value": "Export Log As Mediapulse (2)"
         },
         {
           "name": "Check If Mediapulse Log File Is Already Present In Storage",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/mediapulse/export_log/available"
+          "value": "Check If Mediapulse Log File Is Already Present In Storage (2)"
         },
         {
           "name": "Generate A Report For Export Mediapulse Log On A Station",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/mediapulse/report"
+          "value": "Generate A Report For Export Mediapulse Log On A Station (2)"
         },
         {
           "name": "Generate A Report For Export Mediapulse Log With Stations In Product",
-          "value": "GET /2/radios/{radio_product_id}/mediapulse/report"
+          "value": "Generate A Report For Export Mediapulse Log With Stations In Product (2)"
         }
       ],
-      "default": "GET /1/radios/{radio_product_id}/stations/{station_id}/mediapulse/export_log",
+      "default": "Export Log As Mediapulse",
       "noDataExpression": true
     },
     {
@@ -28246,7 +28246,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Mediapulse"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/mediapulse/export_log"
+            "Export Log As Mediapulse"
           ]
         }
       },
@@ -28263,7 +28263,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Mediapulse"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/mediapulse/export_log"
+            "Export Log As Mediapulse"
           ]
         }
       },
@@ -28280,7 +28280,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Mediapulse"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/mediapulse/export_log"
+            "Export Log As Mediapulse"
           ]
         }
       },
@@ -28297,7 +28297,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Mediapulse"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/mediapulse/export_log/available"
+            "Check If Mediapulse Log File Is Already Present In Storage"
           ]
         }
       },
@@ -28314,7 +28314,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Mediapulse"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/mediapulse/export_log/available"
+            "Check If Mediapulse Log File Is Already Present In Storage"
           ]
         }
       },
@@ -28331,7 +28331,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Mediapulse"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/mediapulse/export_log/available"
+            "Check If Mediapulse Log File Is Already Present In Storage"
           ]
         }
       },
@@ -28348,7 +28348,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Mediapulse"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/mediapulse/report"
+            "Generate A Report For Export Mediapulse Log On A Station"
           ]
         }
       },
@@ -28365,7 +28365,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Mediapulse"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/mediapulse/report"
+            "Generate A Report For Export Mediapulse Log On A Station"
           ]
         }
       },
@@ -28382,7 +28382,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Mediapulse"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/mediapulse/report"
+            "Generate A Report For Export Mediapulse Log On A Station"
           ]
         }
       },
@@ -28399,7 +28399,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Mediapulse"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/mediapulse/report"
+            "Generate A Report For Export Mediapulse Log On A Station"
           ]
         }
       },
@@ -28417,7 +28417,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Mediapulse"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/mediapulse/report"
+            "Generate A Report For Export Mediapulse Log On A Station"
           ]
         }
       },
@@ -28447,7 +28447,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Mediapulse"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/mediapulse/report"
+            "Generate A Report For Export Mediapulse Log With Stations In Product"
           ]
         }
       },
@@ -28464,7 +28464,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Mediapulse"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/mediapulse/report"
+            "Generate A Report For Export Mediapulse Log With Stations In Product"
           ]
         }
       },
@@ -28481,7 +28481,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Mediapulse"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/mediapulse/report"
+            "Generate A Report For Export Mediapulse Log With Stations In Product"
           ]
         }
       },
@@ -28499,7 +28499,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Mediapulse"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/mediapulse/report"
+            "Generate A Report For Export Mediapulse Log With Stations In Product"
           ]
         }
       },
@@ -28535,7 +28535,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Mediapulse"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/mediapulse/export_log"
+            "Export Log As Mediapulse (2)"
           ]
         }
       },
@@ -28552,7 +28552,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Mediapulse"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/mediapulse/export_log"
+            "Export Log As Mediapulse (2)"
           ]
         }
       },
@@ -28569,7 +28569,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Mediapulse"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/mediapulse/export_log"
+            "Export Log As Mediapulse (2)"
           ]
         }
       },
@@ -28586,7 +28586,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Mediapulse"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/mediapulse/export_log/available"
+            "Check If Mediapulse Log File Is Already Present In Storage (2)"
           ]
         }
       },
@@ -28603,7 +28603,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Mediapulse"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/mediapulse/export_log/available"
+            "Check If Mediapulse Log File Is Already Present In Storage (2)"
           ]
         }
       },
@@ -28620,7 +28620,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Mediapulse"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/mediapulse/export_log/available"
+            "Check If Mediapulse Log File Is Already Present In Storage (2)"
           ]
         }
       },
@@ -28637,7 +28637,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Mediapulse"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/mediapulse/report"
+            "Generate A Report For Export Mediapulse Log On A Station (2)"
           ]
         }
       },
@@ -28654,7 +28654,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Mediapulse"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/mediapulse/report"
+            "Generate A Report For Export Mediapulse Log On A Station (2)"
           ]
         }
       },
@@ -28671,7 +28671,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Mediapulse"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/mediapulse/report"
+            "Generate A Report For Export Mediapulse Log On A Station (2)"
           ]
         }
       },
@@ -28688,7 +28688,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Mediapulse"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/mediapulse/report"
+            "Generate A Report For Export Mediapulse Log On A Station (2)"
           ]
         }
       },
@@ -28706,7 +28706,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Mediapulse"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/mediapulse/report"
+            "Generate A Report For Export Mediapulse Log On A Station (2)"
           ]
         }
       },
@@ -28736,7 +28736,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Mediapulse"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/mediapulse/report"
+            "Generate A Report For Export Mediapulse Log With Stations In Product (2)"
           ]
         }
       },
@@ -28753,7 +28753,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Mediapulse"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/mediapulse/report"
+            "Generate A Report For Export Mediapulse Log With Stations In Product (2)"
           ]
         }
       },
@@ -28770,7 +28770,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Mediapulse"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/mediapulse/report"
+            "Generate A Report For Export Mediapulse Log With Stations In Product (2)"
           ]
         }
       },
@@ -28788,7 +28788,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Mediapulse"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/mediapulse/report"
+            "Generate A Report For Export Mediapulse Log With Stations In Product (2)"
           ]
         }
       },
@@ -28827,38 +28827,38 @@ export class InfomaniakStreamingRadio implements INodeType {
       "options": [
         {
           "name": "Get Notification",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/notification"
+          "value": "Get Notification"
         },
         {
           "name": "Update Notification",
-          "value": "PUT /1/radios/{radio_product_id}/stations/{station_id}/notification"
+          "value": "Update Notification"
         },
         {
           "name": "Get Notification",
-          "value": "GET /1/radios/{radio_product_id}/notification"
+          "value": "Get Notification (2)"
         },
         {
           "name": "Update Notification Radio Product",
-          "value": "PUT /1/radios/{radio_product_id}/notification"
+          "value": "Update Notification Radio Product"
         },
         {
           "name": "Get Notification",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/notification"
+          "value": "Get Notification (3)"
         },
         {
           "name": "Update Notification",
-          "value": "PUT /2/radios/{radio_product_id}/stations/{station_id}/notification"
+          "value": "Update Notification (2)"
         },
         {
           "name": "Get Notification",
-          "value": "GET /2/radios/{radio_product_id}/notification"
+          "value": "Get Notification (4)"
         },
         {
           "name": "Update Notification Radio Product",
-          "value": "PUT /2/radios/{radio_product_id}/notification"
+          "value": "Update Notification Radio Product (2)"
         }
       ],
-      "default": "GET /1/radios/{radio_product_id}/stations/{station_id}/notification",
+      "default": "Get Notification",
       "noDataExpression": true
     },
     {
@@ -28872,7 +28872,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Notifications"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/notification"
+            "Get Notification"
           ]
         }
       },
@@ -28890,7 +28890,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Notifications"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/notification"
+            "Get Notification"
           ]
         }
       },
@@ -28908,7 +28908,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Notifications"
           ],
           "operation": [
-            "PUT /1/radios/{radio_product_id}/stations/{station_id}/notification"
+            "Update Notification"
           ]
         }
       },
@@ -28926,7 +28926,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Notifications"
           ],
           "operation": [
-            "PUT /1/radios/{radio_product_id}/stations/{station_id}/notification"
+            "Update Notification"
           ]
         }
       },
@@ -28945,7 +28945,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Notifications"
           ],
           "operation": [
-            "PUT /1/radios/{radio_product_id}/stations/{station_id}/notification"
+            "Update Notification"
           ]
         }
       },
@@ -29054,7 +29054,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Notifications"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/notification"
+            "Get Notification (2)"
           ]
         }
       },
@@ -29072,7 +29072,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Notifications"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/notification"
+            "Get Notification (2)"
           ]
         }
       },
@@ -29090,7 +29090,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Notifications"
           ],
           "operation": [
-            "PUT /1/radios/{radio_product_id}/notification"
+            "Update Notification Radio Product"
           ]
         }
       },
@@ -29109,7 +29109,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Notifications"
           ],
           "operation": [
-            "PUT /1/radios/{radio_product_id}/notification"
+            "Update Notification Radio Product"
           ]
         }
       },
@@ -29218,7 +29218,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Notifications"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/notification"
+            "Get Notification (3)"
           ]
         }
       },
@@ -29236,7 +29236,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Notifications"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/notification"
+            "Get Notification (3)"
           ]
         }
       },
@@ -29254,7 +29254,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Notifications"
           ],
           "operation": [
-            "PUT /2/radios/{radio_product_id}/stations/{station_id}/notification"
+            "Update Notification (2)"
           ]
         }
       },
@@ -29272,7 +29272,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Notifications"
           ],
           "operation": [
-            "PUT /2/radios/{radio_product_id}/stations/{station_id}/notification"
+            "Update Notification (2)"
           ]
         }
       },
@@ -29291,7 +29291,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Notifications"
           ],
           "operation": [
-            "PUT /2/radios/{radio_product_id}/stations/{station_id}/notification"
+            "Update Notification (2)"
           ]
         }
       },
@@ -29400,7 +29400,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Notifications"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/notification"
+            "Get Notification (4)"
           ]
         }
       },
@@ -29418,7 +29418,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Notifications"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/notification"
+            "Get Notification (4)"
           ]
         }
       },
@@ -29436,7 +29436,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Notifications"
           ],
           "operation": [
-            "PUT /2/radios/{radio_product_id}/notification"
+            "Update Notification Radio Product (2)"
           ]
         }
       },
@@ -29455,7 +29455,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Notifications"
           ],
           "operation": [
-            "PUT /2/radios/{radio_product_id}/notification"
+            "Update Notification Radio Product (2)"
           ]
         }
       },
@@ -29567,14 +29567,14 @@ export class InfomaniakStreamingRadio implements INodeType {
       "options": [
         {
           "name": "List Options",
-          "value": "GET /1/radios/options"
+          "value": "List Options"
         },
         {
           "name": "List Options",
-          "value": "GET /2/radios/options"
+          "value": "List Options (2)"
         }
       ],
-      "default": "GET /1/radios/options",
+      "default": "List Options",
       "noDataExpression": true
     },
     {
@@ -29589,7 +29589,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Options"
           ],
           "operation": [
-            "GET /1/radios/options"
+            "List Options"
           ]
         }
       },
@@ -29680,7 +29680,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Options"
           ],
           "operation": [
-            "GET /2/radios/options"
+            "List Options (2)"
           ]
         }
       },
@@ -29773,14 +29773,14 @@ export class InfomaniakStreamingRadio implements INodeType {
       "options": [
         {
           "name": "List Packs",
-          "value": "GET /1/radios/packs"
+          "value": "List Packs"
         },
         {
           "name": "List Packs",
-          "value": "GET /2/radios/packs"
+          "value": "List Packs (2)"
         }
       ],
-      "default": "GET /1/radios/packs",
+      "default": "List Packs",
       "noDataExpression": true
     },
     {
@@ -29795,7 +29795,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Packs"
           ],
           "operation": [
-            "GET /1/radios/packs"
+            "List Packs"
           ]
         }
       },
@@ -29893,7 +29893,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Packs"
           ],
           "operation": [
-            "GET /2/radios/packs"
+            "List Packs (2)"
           ]
         }
       },
@@ -29993,118 +29993,118 @@ export class InfomaniakStreamingRadio implements INodeType {
       "options": [
         {
           "name": "Get Player Config",
-          "value": "GET /1/radios/players/{player_uuid}/config"
+          "value": "Get Player Config"
         },
         {
           "name": "Get Player Config",
-          "value": "POST /1/radios/players/{player_uuid}/config"
+          "value": "Get Player Config (2)"
         },
         {
           "name": "List Station Players",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/players"
+          "value": "List Station Players"
         },
         {
           "name": "List Product Players",
-          "value": "GET /1/radios/{radio_product_id}/players"
+          "value": "List Product Players"
         },
         {
           "name": "Store Player",
-          "value": "POST /1/radios/{radio_product_id}/players"
+          "value": "Store Player"
         },
         {
           "name": "Get Player",
-          "value": "GET /1/radios/{radio_product_id}/players/{player_id}"
+          "value": "Get Player"
         },
         {
           "name": "Update Player",
-          "value": "PUT /1/radios/{radio_product_id}/players/{player_id}"
+          "value": "Update Player"
         },
         {
           "name": "Delete Player",
-          "value": "DELETE /1/radios/{radio_product_id}/players/{player_id}"
+          "value": "Delete Player"
         },
         {
           "name": "Get Player Config",
-          "value": "GET /2/radios/players/{player_uuid}/config"
+          "value": "Get Player Config (3)"
         },
         {
           "name": "Get Player Config",
-          "value": "POST /2/radios/players/{player_uuid}/config"
+          "value": "Get Player Config (4)"
         },
         {
           "name": "List Station Players",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/players"
+          "value": "List Station Players (2)"
         },
         {
           "name": "List Product Players",
-          "value": "GET /2/radios/{radio_product_id}/players"
+          "value": "List Product Players (2)"
         },
         {
           "name": "Store Player",
-          "value": "POST /2/radios/{radio_product_id}/players"
+          "value": "Store Player (2)"
         },
         {
           "name": "Get Player",
-          "value": "GET /2/radios/{radio_product_id}/players/{player_id}"
+          "value": "Get Player (2)"
         },
         {
           "name": "Update Player",
-          "value": "PUT /2/radios/{radio_product_id}/players/{player_id}"
+          "value": "Update Player (2)"
         },
         {
           "name": "Delete Player",
-          "value": "DELETE /2/radios/{radio_product_id}/players/{player_id}"
+          "value": "Delete Player (2)"
         },
         {
           "name": "Check IP Access To Mountpoint",
-          "value": "POST /1/radios/players/ip-access"
+          "value": "Check IP Access To Mountpoint"
         },
         {
           "name": "Check Domain Access For Player",
-          "value": "POST /1/radios/players/{player_uuid}/domain-access"
+          "value": "Check Domain Access For Player"
         },
         {
           "name": "Duplicate Player",
-          "value": "POST /1/radios/{radio_product_id}/players/{player_id}/duplicate"
+          "value": "Duplicate Player"
         },
         {
           "name": "Reset Player",
-          "value": "POST /1/radios/{radio_product_id}/players/{player_id}/reset"
+          "value": "Reset Player"
         },
         {
           "name": "Update Thumbnail",
-          "value": "POST /1/radios/{radio_product_id}/players/{player_id}/thumbnail"
+          "value": "Update Thumbnail"
         },
         {
           "name": "Delete Thumbnail",
-          "value": "DELETE /1/radios/{radio_product_id}/players/{player_id}/thumbnail"
+          "value": "Delete Thumbnail"
         },
         {
           "name": "Check IP Access To Mountpoint",
-          "value": "POST /2/radios/players/ip-access"
+          "value": "Check IP Access To Mountpoint (2)"
         },
         {
           "name": "Check Domain Access For Player",
-          "value": "POST /2/radios/players/{player_uuid}/domain-access"
+          "value": "Check Domain Access For Player (2)"
         },
         {
           "name": "Duplicate Player",
-          "value": "POST /2/radios/{radio_product_id}/players/{player_id}/duplicate"
+          "value": "Duplicate Player (2)"
         },
         {
           "name": "Reset Player",
-          "value": "POST /2/radios/{radio_product_id}/players/{player_id}/reset"
+          "value": "Reset Player (2)"
         },
         {
           "name": "Update Thumbnail",
-          "value": "POST /2/radios/{radio_product_id}/players/{player_id}/thumbnail"
+          "value": "Update Thumbnail (2)"
         },
         {
           "name": "Delete Thumbnail",
-          "value": "DELETE /2/radios/{radio_product_id}/players/{player_id}/thumbnail"
+          "value": "Delete Thumbnail (2)"
         }
       ],
-      "default": "GET /1/radios/players/{player_uuid}/config",
+      "default": "Get Player Config",
       "noDataExpression": true
     },
     {
@@ -30118,7 +30118,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "GET /1/radios/players/{player_uuid}/config"
+            "Get Player Config"
           ]
         }
       },
@@ -30136,7 +30136,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/radios/players/{player_uuid}/config"
+            "Get Player Config (2)"
           ]
         }
       },
@@ -30154,7 +30154,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/players"
+            "List Station Players"
           ]
         }
       },
@@ -30172,7 +30172,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/players"
+            "List Station Players"
           ]
         }
       },
@@ -30191,7 +30191,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/players"
+            "List Station Players"
           ]
         }
       },
@@ -30281,7 +30281,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/players"
+            "List Product Players"
           ]
         }
       },
@@ -30300,7 +30300,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/players"
+            "List Product Players"
           ]
         }
       },
@@ -30397,7 +30397,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/players"
+            "Store Player"
           ]
         }
       },
@@ -30415,7 +30415,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/players"
+            "Store Player"
           ]
         }
       },
@@ -30433,7 +30433,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/players"
+            "Store Player"
           ]
         }
       },
@@ -30451,7 +30451,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/players"
+            "Store Player"
           ]
         }
       },
@@ -30469,7 +30469,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/players"
+            "Store Player"
           ]
         }
       },
@@ -30510,7 +30510,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/players"
+            "Store Player"
           ]
         }
       },
@@ -30778,7 +30778,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/players/{player_id}"
+            "Get Player"
           ]
         }
       },
@@ -30796,7 +30796,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/players/{player_id}"
+            "Get Player"
           ]
         }
       },
@@ -30814,7 +30814,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "PUT /1/radios/{radio_product_id}/players/{player_id}"
+            "Update Player"
           ]
         }
       },
@@ -30832,7 +30832,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "PUT /1/radios/{radio_product_id}/players/{player_id}"
+            "Update Player"
           ]
         }
       },
@@ -30851,7 +30851,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "PUT /1/radios/{radio_product_id}/players/{player_id}"
+            "Update Player"
           ]
         }
       },
@@ -31169,7 +31169,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "DELETE /1/radios/{radio_product_id}/players/{player_id}"
+            "Delete Player"
           ]
         }
       },
@@ -31187,7 +31187,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "DELETE /1/radios/{radio_product_id}/players/{player_id}"
+            "Delete Player"
           ]
         }
       },
@@ -31205,7 +31205,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "GET /2/radios/players/{player_uuid}/config"
+            "Get Player Config (3)"
           ]
         }
       },
@@ -31223,7 +31223,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /2/radios/players/{player_uuid}/config"
+            "Get Player Config (4)"
           ]
         }
       },
@@ -31241,7 +31241,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/players"
+            "List Station Players (2)"
           ]
         }
       },
@@ -31259,7 +31259,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/players"
+            "List Station Players (2)"
           ]
         }
       },
@@ -31278,7 +31278,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/players"
+            "List Station Players (2)"
           ]
         }
       },
@@ -31368,7 +31368,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/players"
+            "List Product Players (2)"
           ]
         }
       },
@@ -31387,7 +31387,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/players"
+            "List Product Players (2)"
           ]
         }
       },
@@ -31484,7 +31484,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/players"
+            "Store Player (2)"
           ]
         }
       },
@@ -31502,7 +31502,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/players"
+            "Store Player (2)"
           ]
         }
       },
@@ -31520,7 +31520,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/players"
+            "Store Player (2)"
           ]
         }
       },
@@ -31538,7 +31538,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/players"
+            "Store Player (2)"
           ]
         }
       },
@@ -31556,7 +31556,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/players"
+            "Store Player (2)"
           ]
         }
       },
@@ -31597,7 +31597,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/players"
+            "Store Player (2)"
           ]
         }
       },
@@ -31865,7 +31865,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/players/{player_id}"
+            "Get Player (2)"
           ]
         }
       },
@@ -31883,7 +31883,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/players/{player_id}"
+            "Get Player (2)"
           ]
         }
       },
@@ -31901,7 +31901,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "PUT /2/radios/{radio_product_id}/players/{player_id}"
+            "Update Player (2)"
           ]
         }
       },
@@ -31919,7 +31919,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "PUT /2/radios/{radio_product_id}/players/{player_id}"
+            "Update Player (2)"
           ]
         }
       },
@@ -31938,7 +31938,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "PUT /2/radios/{radio_product_id}/players/{player_id}"
+            "Update Player (2)"
           ]
         }
       },
@@ -32256,7 +32256,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "DELETE /2/radios/{radio_product_id}/players/{player_id}"
+            "Delete Player (2)"
           ]
         }
       },
@@ -32274,7 +32274,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "DELETE /2/radios/{radio_product_id}/players/{player_id}"
+            "Delete Player (2)"
           ]
         }
       },
@@ -32292,7 +32292,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/radios/players/ip-access"
+            "Check IP Access To Mountpoint"
           ]
         }
       },
@@ -32310,7 +32310,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/radios/players/{player_uuid}/domain-access"
+            "Check Domain Access For Player"
           ]
         }
       },
@@ -32328,7 +32328,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/radios/players/{player_uuid}/domain-access"
+            "Check Domain Access For Player"
           ]
         }
       },
@@ -32346,7 +32346,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/players/{player_id}/duplicate"
+            "Duplicate Player"
           ]
         }
       },
@@ -32364,7 +32364,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/players/{player_id}/duplicate"
+            "Duplicate Player"
           ]
         }
       },
@@ -32382,7 +32382,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/players/{player_id}/duplicate"
+            "Duplicate Player"
           ]
         }
       },
@@ -32400,7 +32400,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/players/{player_id}/reset"
+            "Reset Player"
           ]
         }
       },
@@ -32418,7 +32418,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/players/{player_id}/reset"
+            "Reset Player"
           ]
         }
       },
@@ -32436,7 +32436,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/players/{player_id}/thumbnail"
+            "Update Thumbnail"
           ]
         }
       },
@@ -32454,7 +32454,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/players/{player_id}/thumbnail"
+            "Update Thumbnail"
           ]
         }
       },
@@ -32472,7 +32472,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/players/{player_id}/thumbnail"
+            "Update Thumbnail"
           ]
         }
       },
@@ -32490,7 +32490,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/players/{player_id}/thumbnail"
+            "Update Thumbnail"
           ]
         }
       },
@@ -32526,7 +32526,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "DELETE /1/radios/{radio_product_id}/players/{player_id}/thumbnail"
+            "Delete Thumbnail"
           ]
         }
       },
@@ -32544,7 +32544,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "DELETE /1/radios/{radio_product_id}/players/{player_id}/thumbnail"
+            "Delete Thumbnail"
           ]
         }
       },
@@ -32562,7 +32562,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "DELETE /1/radios/{radio_product_id}/players/{player_id}/thumbnail"
+            "Delete Thumbnail"
           ]
         }
       },
@@ -32597,7 +32597,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /2/radios/players/ip-access"
+            "Check IP Access To Mountpoint (2)"
           ]
         }
       },
@@ -32615,7 +32615,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /2/radios/players/{player_uuid}/domain-access"
+            "Check Domain Access For Player (2)"
           ]
         }
       },
@@ -32633,7 +32633,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /2/radios/players/{player_uuid}/domain-access"
+            "Check Domain Access For Player (2)"
           ]
         }
       },
@@ -32651,7 +32651,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/players/{player_id}/duplicate"
+            "Duplicate Player (2)"
           ]
         }
       },
@@ -32669,7 +32669,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/players/{player_id}/duplicate"
+            "Duplicate Player (2)"
           ]
         }
       },
@@ -32687,7 +32687,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/players/{player_id}/duplicate"
+            "Duplicate Player (2)"
           ]
         }
       },
@@ -32705,7 +32705,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/players/{player_id}/reset"
+            "Reset Player (2)"
           ]
         }
       },
@@ -32723,7 +32723,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/players/{player_id}/reset"
+            "Reset Player (2)"
           ]
         }
       },
@@ -32741,7 +32741,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/players/{player_id}/thumbnail"
+            "Update Thumbnail (2)"
           ]
         }
       },
@@ -32759,7 +32759,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/players/{player_id}/thumbnail"
+            "Update Thumbnail (2)"
           ]
         }
       },
@@ -32777,7 +32777,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/players/{player_id}/thumbnail"
+            "Update Thumbnail (2)"
           ]
         }
       },
@@ -32795,7 +32795,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/players/{player_id}/thumbnail"
+            "Update Thumbnail (2)"
           ]
         }
       },
@@ -32831,7 +32831,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "DELETE /2/radios/{radio_product_id}/players/{player_id}/thumbnail"
+            "Delete Thumbnail (2)"
           ]
         }
       },
@@ -32849,7 +32849,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "DELETE /2/radios/{radio_product_id}/players/{player_id}/thumbnail"
+            "Delete Thumbnail (2)"
           ]
         }
       },
@@ -32867,7 +32867,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Players"
           ],
           "operation": [
-            "DELETE /2/radios/{radio_product_id}/players/{player_id}/thumbnail"
+            "Delete Thumbnail (2)"
           ]
         }
       },
@@ -32905,14 +32905,14 @@ export class InfomaniakStreamingRadio implements INodeType {
       "options": [
         {
           "name": "List Radio Product Options",
-          "value": "GET /1/radios/{radio_product_id}/options"
+          "value": "List Radio Product Options"
         },
         {
           "name": "List Radio Product Options",
-          "value": "GET /2/radios/{radio_product_id}/options"
+          "value": "List Radio Product Options (2)"
         }
       ],
-      "default": "GET /1/radios/{radio_product_id}/options",
+      "default": "List Radio Product Options",
       "noDataExpression": true
     },
     {
@@ -32926,7 +32926,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Radio Product Options"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/options"
+            "List Radio Product Options"
           ]
         }
       },
@@ -32944,7 +32944,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Radio Product Options"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/options"
+            "List Radio Product Options (2)"
           ]
         }
       },
@@ -32965,54 +32965,54 @@ export class InfomaniakStreamingRadio implements INodeType {
       "options": [
         {
           "name": "List Products",
-          "value": "GET /1/radios"
+          "value": "List Products"
         },
         {
           "name": "Get Product",
-          "value": "GET /1/radios/{radio_product_id}"
+          "value": "Get Product"
         },
         {
           "name": "Update Product",
-          "value": "PUT /1/radios/{radio_product_id}"
+          "value": "Update Product"
         },
         {
           "name": "List Users",
-          "value": "GET /1/radios/{radio_product_id}/users"
+          "value": "List Users"
         },
         {
           "name": "Get The List Of Stream In Conflict With An Update Of Restrictions",
-          "value": "GET /1/radios/{radio_product_id}/conflict_restrictions"
+          "value": "Get The List Of Stream In Conflict With An Update Of Restrictions"
         },
         {
           "name": "List Products",
-          "value": "GET /2/radios"
+          "value": "List Products (2)"
         },
         {
           "name": "Get Product",
-          "value": "GET /2/radios/{radio_product_id}"
+          "value": "Get Product (2)"
         },
         {
           "name": "Update Product",
-          "value": "PUT /2/radios/{radio_product_id}"
+          "value": "Update Product (2)"
         },
         {
           "name": "List Users",
-          "value": "GET /2/radios/{radio_product_id}/users"
+          "value": "List Users (2)"
         },
         {
           "name": "Get The List Of Stream In Conflict With An Update Of Restrictions",
-          "value": "GET /2/radios/{radio_product_id}/conflict_restrictions"
+          "value": "Get The List Of Stream In Conflict With An Update Of Restrictions (2)"
         },
         {
           "name": "Set The Restrictions To All Streams In Product",
-          "value": "POST /1/radios/{radio_product_id}/restrictions"
+          "value": "Set The Restrictions To All Streams In Product"
         },
         {
           "name": "Set The Restrictions To All Streams In Product",
-          "value": "POST /2/radios/{radio_product_id}/restrictions"
+          "value": "Set The Restrictions To All Streams In Product (2)"
         }
       ],
-      "default": "GET /1/radios",
+      "default": "List Products",
       "noDataExpression": true
     },
     {
@@ -33026,7 +33026,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Radio Products"
           ],
           "operation": [
-            "GET /1/radios"
+            "List Products"
           ]
         }
       },
@@ -33045,7 +33045,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Radio Products"
           ],
           "operation": [
-            "GET /1/radios"
+            "List Products"
           ]
         }
       },
@@ -33142,7 +33142,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}"
+            "Get Product"
           ]
         }
       },
@@ -33160,7 +33160,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Radio Products"
           ],
           "operation": [
-            "PUT /1/radios/{radio_product_id}"
+            "Update Product"
           ]
         }
       },
@@ -33179,7 +33179,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Radio Products"
           ],
           "operation": [
-            "PUT /1/radios/{radio_product_id}"
+            "Update Product"
           ]
         }
       },
@@ -33204,7 +33204,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/users"
+            "List Users"
           ]
         }
       },
@@ -33222,7 +33222,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/conflict_restrictions"
+            "Get The List Of Stream In Conflict With An Update Of Restrictions"
           ]
         }
       },
@@ -33240,7 +33240,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/conflict_restrictions"
+            "Get The List Of Stream In Conflict With An Update Of Restrictions"
           ]
         }
       },
@@ -33288,7 +33288,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Radio Products"
           ],
           "operation": [
-            "GET /2/radios"
+            "List Products (2)"
           ]
         }
       },
@@ -33307,7 +33307,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Radio Products"
           ],
           "operation": [
-            "GET /2/radios"
+            "List Products (2)"
           ]
         }
       },
@@ -33404,7 +33404,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}"
+            "Get Product (2)"
           ]
         }
       },
@@ -33422,7 +33422,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Radio Products"
           ],
           "operation": [
-            "PUT /2/radios/{radio_product_id}"
+            "Update Product (2)"
           ]
         }
       },
@@ -33441,7 +33441,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Radio Products"
           ],
           "operation": [
-            "PUT /2/radios/{radio_product_id}"
+            "Update Product (2)"
           ]
         }
       },
@@ -33466,7 +33466,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/users"
+            "List Users (2)"
           ]
         }
       },
@@ -33484,7 +33484,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/conflict_restrictions"
+            "Get The List Of Stream In Conflict With An Update Of Restrictions (2)"
           ]
         }
       },
@@ -33502,7 +33502,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/conflict_restrictions"
+            "Get The List Of Stream In Conflict With An Update Of Restrictions (2)"
           ]
         }
       },
@@ -33550,7 +33550,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Radio Products"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/restrictions"
+            "Set The Restrictions To All Streams In Product"
           ]
         }
       },
@@ -33568,7 +33568,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Radio Products"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/restrictions"
+            "Set The Restrictions To All Streams In Product"
           ]
         }
       },
@@ -33621,7 +33621,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Radio Products"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/restrictions"
+            "Set The Restrictions To All Streams In Product (2)"
           ]
         }
       },
@@ -33639,7 +33639,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Radio Products"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/restrictions"
+            "Set The Restrictions To All Streams In Product (2)"
           ]
         }
       },
@@ -33695,14 +33695,14 @@ export class InfomaniakStreamingRadio implements INodeType {
       "options": [
         {
           "name": "List Server Events",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/server_events"
+          "value": "List Server Events"
         },
         {
           "name": "List Server Events",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/server_events"
+          "value": "List Server Events (2)"
         }
       ],
-      "default": "GET /1/radios/{radio_product_id}/stations/{station_id}/server_events",
+      "default": "List Server Events",
       "noDataExpression": true
     },
     {
@@ -33716,7 +33716,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Server Events"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/server_events"
+            "List Server Events"
           ]
         }
       },
@@ -33734,7 +33734,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Server Events"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/server_events"
+            "List Server Events"
           ]
         }
       },
@@ -33752,7 +33752,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Server Events"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/server_events"
+            "List Server Events"
           ]
         }
       },
@@ -33769,7 +33769,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Server Events"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/server_events"
+            "List Server Events"
           ]
         }
       },
@@ -33787,7 +33787,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Server Events"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/server_events"
+            "List Server Events"
           ]
         }
       },
@@ -33832,7 +33832,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Server Events"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/server_events"
+            "List Server Events (2)"
           ]
         }
       },
@@ -33850,7 +33850,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Server Events"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/server_events"
+            "List Server Events (2)"
           ]
         }
       },
@@ -33868,7 +33868,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Server Events"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/server_events"
+            "List Server Events (2)"
           ]
         }
       },
@@ -33885,7 +33885,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Server Events"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/server_events"
+            "List Server Events (2)"
           ]
         }
       },
@@ -33903,7 +33903,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Server Events"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/server_events"
+            "List Server Events (2)"
           ]
         }
       },
@@ -33951,86 +33951,86 @@ export class InfomaniakStreamingRadio implements INodeType {
       "options": [
         {
           "name": "List Stations",
-          "value": "GET /1/radios/{radio_product_id}/stations"
+          "value": "List Stations"
         },
         {
           "name": "Store Station",
-          "value": "POST /1/radios/{radio_product_id}/stations"
+          "value": "Store Station"
         },
         {
           "name": "Get Station",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}"
+          "value": "Get Station"
         },
         {
           "name": "Update Station",
-          "value": "PUT /1/radios/{radio_product_id}/stations/{station_id}"
+          "value": "Update Station"
         },
         {
           "name": "Delete Station",
-          "value": "DELETE /1/radios/{radio_product_id}/stations/{station_id}"
+          "value": "Delete Station"
         },
         {
           "name": "List Stations",
-          "value": "GET /2/radios/{radio_product_id}/stations"
+          "value": "List Stations (2)"
         },
         {
           "name": "Store Station",
-          "value": "POST /2/radios/{radio_product_id}/stations"
+          "value": "Store Station (2)"
         },
         {
           "name": "Get Station",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}"
+          "value": "Get Station (2)"
         },
         {
           "name": "Update Station",
-          "value": "PUT /2/radios/{radio_product_id}/stations/{station_id}"
+          "value": "Update Station (2)"
         },
         {
           "name": "Delete Station",
-          "value": "DELETE /2/radios/{radio_product_id}/stations/{station_id}"
+          "value": "Delete Station (2)"
         },
         {
           "name": "Update Station Thumbnail",
-          "value": "POST /1/radios/{radio_product_id}/stations/{station_id}/thumbnail"
+          "value": "Update Station Thumbnail"
         },
         {
           "name": "Delete Station Thumbnail",
-          "value": "DELETE /1/radios/{radio_product_id}/stations/{station_id}/thumbnail"
+          "value": "Delete Station Thumbnail"
         },
         {
           "name": "Reset General Parameters",
-          "value": "POST /1/radios/{radio_product_id}/stations/{station_id}/reset_general_parameters"
+          "value": "Reset General Parameters"
         },
         {
           "name": "Send Logs",
-          "value": "POST /1/radios/{radio_product_id}/stations/{station_id}/send_logs"
+          "value": "Send Logs"
         },
         {
           "name": "Toggle Direct Live",
-          "value": "POST /1/radios/{radio_product_id}/stations/{station_id}/toggle_direct_live"
+          "value": "Toggle Direct Live"
         },
         {
           "name": "Update Station Thumbnail",
-          "value": "POST /2/radios/{radio_product_id}/stations/{station_id}/thumbnail"
+          "value": "Update Station Thumbnail (2)"
         },
         {
           "name": "Delete Station Thumbnail",
-          "value": "DELETE /2/radios/{radio_product_id}/stations/{station_id}/thumbnail"
+          "value": "Delete Station Thumbnail (2)"
         },
         {
           "name": "Reset General Parameters",
-          "value": "POST /2/radios/{radio_product_id}/stations/{station_id}/reset_general_parameters"
+          "value": "Reset General Parameters (2)"
         },
         {
           "name": "Send Logs",
-          "value": "POST /2/radios/{radio_product_id}/stations/{station_id}/send_logs"
+          "value": "Send Logs (2)"
         },
         {
           "name": "Toggle Direct Live",
-          "value": "POST /2/radios/{radio_product_id}/stations/{station_id}/toggle_direct_live"
+          "value": "Toggle Direct Live (2)"
         }
       ],
-      "default": "GET /1/radios/{radio_product_id}/stations",
+      "default": "List Stations",
       "noDataExpression": true
     },
     {
@@ -34044,7 +34044,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations"
+            "List Stations"
           ]
         }
       },
@@ -34063,7 +34063,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations"
+            "List Stations"
           ]
         }
       },
@@ -34160,7 +34160,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations"
+            "Store Station"
           ]
         }
       },
@@ -34178,7 +34178,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations"
+            "Store Station"
           ]
         }
       },
@@ -34197,7 +34197,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations"
+            "Store Station"
           ]
         }
       },
@@ -35921,7 +35921,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}"
+            "Get Station"
           ]
         }
       },
@@ -35939,7 +35939,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}"
+            "Get Station"
           ]
         }
       },
@@ -35958,7 +35958,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}"
+            "Get Station"
           ]
         }
       },
@@ -35983,7 +35983,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "PUT /1/radios/{radio_product_id}/stations/{station_id}"
+            "Update Station"
           ]
         }
       },
@@ -36001,7 +36001,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "PUT /1/radios/{radio_product_id}/stations/{station_id}"
+            "Update Station"
           ]
         }
       },
@@ -36020,7 +36020,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "PUT /1/radios/{radio_product_id}/stations/{station_id}"
+            "Update Station"
           ]
         }
       },
@@ -37807,7 +37807,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "DELETE /1/radios/{radio_product_id}/stations/{station_id}"
+            "Delete Station"
           ]
         }
       },
@@ -37825,7 +37825,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "DELETE /1/radios/{radio_product_id}/stations/{station_id}"
+            "Delete Station"
           ]
         }
       },
@@ -37843,7 +37843,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "DELETE /1/radios/{radio_product_id}/stations/{station_id}"
+            "Delete Station"
           ]
         }
       },
@@ -37860,7 +37860,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations"
+            "List Stations (2)"
           ]
         }
       },
@@ -37879,7 +37879,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations"
+            "List Stations (2)"
           ]
         }
       },
@@ -37976,7 +37976,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations"
+            "Store Station (2)"
           ]
         }
       },
@@ -37994,7 +37994,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations"
+            "Store Station (2)"
           ]
         }
       },
@@ -38013,7 +38013,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations"
+            "Store Station (2)"
           ]
         }
       },
@@ -39737,7 +39737,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}"
+            "Get Station (2)"
           ]
         }
       },
@@ -39755,7 +39755,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}"
+            "Get Station (2)"
           ]
         }
       },
@@ -39774,7 +39774,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}"
+            "Get Station (2)"
           ]
         }
       },
@@ -39799,7 +39799,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "PUT /2/radios/{radio_product_id}/stations/{station_id}"
+            "Update Station (2)"
           ]
         }
       },
@@ -39817,7 +39817,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "PUT /2/radios/{radio_product_id}/stations/{station_id}"
+            "Update Station (2)"
           ]
         }
       },
@@ -39836,7 +39836,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "PUT /2/radios/{radio_product_id}/stations/{station_id}"
+            "Update Station (2)"
           ]
         }
       },
@@ -41623,7 +41623,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "DELETE /2/radios/{radio_product_id}/stations/{station_id}"
+            "Delete Station (2)"
           ]
         }
       },
@@ -41641,7 +41641,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "DELETE /2/radios/{radio_product_id}/stations/{station_id}"
+            "Delete Station (2)"
           ]
         }
       },
@@ -41659,7 +41659,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "DELETE /2/radios/{radio_product_id}/stations/{station_id}"
+            "Delete Station (2)"
           ]
         }
       },
@@ -41676,7 +41676,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/thumbnail"
+            "Update Station Thumbnail"
           ]
         }
       },
@@ -41694,7 +41694,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/thumbnail"
+            "Update Station Thumbnail"
           ]
         }
       },
@@ -41712,7 +41712,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/thumbnail"
+            "Update Station Thumbnail"
           ]
         }
       },
@@ -41730,7 +41730,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "DELETE /1/radios/{radio_product_id}/stations/{station_id}/thumbnail"
+            "Delete Station Thumbnail"
           ]
         }
       },
@@ -41748,7 +41748,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "DELETE /1/radios/{radio_product_id}/stations/{station_id}/thumbnail"
+            "Delete Station Thumbnail"
           ]
         }
       },
@@ -41766,7 +41766,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/reset_general_parameters"
+            "Reset General Parameters"
           ]
         }
       },
@@ -41784,7 +41784,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/reset_general_parameters"
+            "Reset General Parameters"
           ]
         }
       },
@@ -41802,7 +41802,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/send_logs"
+            "Send Logs"
           ]
         }
       },
@@ -41819,7 +41819,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/send_logs"
+            "Send Logs"
           ]
         }
       },
@@ -41836,7 +41836,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/send_logs"
+            "Send Logs"
           ]
         }
       },
@@ -41854,7 +41854,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/send_logs"
+            "Send Logs"
           ]
         }
       },
@@ -41872,7 +41872,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/send_logs"
+            "Send Logs"
           ]
         }
       },
@@ -41890,7 +41890,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/toggle_direct_live"
+            "Toggle Direct Live"
           ]
         }
       },
@@ -41908,7 +41908,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/toggle_direct_live"
+            "Toggle Direct Live"
           ]
         }
       },
@@ -41926,7 +41926,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/thumbnail"
+            "Update Station Thumbnail (2)"
           ]
         }
       },
@@ -41944,7 +41944,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/thumbnail"
+            "Update Station Thumbnail (2)"
           ]
         }
       },
@@ -41962,7 +41962,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/thumbnail"
+            "Update Station Thumbnail (2)"
           ]
         }
       },
@@ -41980,7 +41980,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "DELETE /2/radios/{radio_product_id}/stations/{station_id}/thumbnail"
+            "Delete Station Thumbnail (2)"
           ]
         }
       },
@@ -41998,7 +41998,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "DELETE /2/radios/{radio_product_id}/stations/{station_id}/thumbnail"
+            "Delete Station Thumbnail (2)"
           ]
         }
       },
@@ -42016,7 +42016,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/reset_general_parameters"
+            "Reset General Parameters (2)"
           ]
         }
       },
@@ -42034,7 +42034,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/reset_general_parameters"
+            "Reset General Parameters (2)"
           ]
         }
       },
@@ -42052,7 +42052,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/send_logs"
+            "Send Logs (2)"
           ]
         }
       },
@@ -42069,7 +42069,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/send_logs"
+            "Send Logs (2)"
           ]
         }
       },
@@ -42086,7 +42086,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/send_logs"
+            "Send Logs (2)"
           ]
         }
       },
@@ -42104,7 +42104,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/send_logs"
+            "Send Logs (2)"
           ]
         }
       },
@@ -42122,7 +42122,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/send_logs"
+            "Send Logs (2)"
           ]
         }
       },
@@ -42140,7 +42140,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/toggle_direct_live"
+            "Toggle Direct Live (2)"
           ]
         }
       },
@@ -42158,7 +42158,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stations"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/toggle_direct_live"
+            "Toggle Direct Live (2)"
           ]
         }
       },
@@ -42172,85 +42172,85 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ]
         }
       },
       "options": [
         {
           "name": "Get Listeners",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/listeners"
+          "value": "Get Listeners"
         },
         {
           "name": "Get Listeners By Minute",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/listeners_per_minute"
+          "value": "Get Listeners By Minute"
         },
         {
           "name": "Get Countries",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/countries"
+          "value": "Get Countries"
         },
         {
           "name": "Get Countries By Continent",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/countries_continent"
+          "value": "Get Countries By Continent"
         },
         {
           "name": "Get Consumption",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/consumption"
+          "value": "Get Consumption"
         },
         {
           "name": "Get Total Consumption",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/total_consumption"
+          "value": "Get Total Consumption"
         },
         {
           "name": "Get Players",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/players"
+          "value": "Get Players"
         },
         {
           "name": "Get Total Players",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/total_players"
+          "value": "Get Total Players"
         },
         {
           "name": "Export Stats",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/export_csv"
+          "value": "Export Stats"
         },
         {
           "name": "Get Listeners",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/listeners"
+          "value": "Get Listeners (2)"
         },
         {
           "name": "Get Listeners By Minute",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/listeners_per_minute"
+          "value": "Get Listeners By Minute (2)"
         },
         {
           "name": "Get Countries",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/countries"
+          "value": "Get Countries (2)"
         },
         {
           "name": "Get Countries By Continent",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/countries_continent"
+          "value": "Get Countries By Continent (2)"
         },
         {
           "name": "Get Consumption",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/consumption"
+          "value": "Get Consumption (2)"
         },
         {
           "name": "Get Total Consumption",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/total_consumption"
+          "value": "Get Total Consumption (2)"
         },
         {
           "name": "Get Players",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/players"
+          "value": "Get Players (2)"
         },
         {
           "name": "Get Total Players",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/total_players"
+          "value": "Get Total Players (2)"
         },
         {
           "name": "Export Stats",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/export_csv"
+          "value": "Export Stats (2)"
         }
       ],
-      "default": "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/listeners",
+      "default": "Get Listeners",
       "noDataExpression": true
     },
     {
@@ -42261,10 +42261,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/listeners"
+            "Get Listeners"
           ]
         }
       },
@@ -42279,10 +42279,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/listeners"
+            "Get Listeners"
           ]
         }
       },
@@ -42297,10 +42297,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/listeners"
+            "Get Listeners"
           ]
         }
       },
@@ -42314,10 +42314,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/listeners"
+            "Get Listeners"
           ]
         }
       },
@@ -42331,10 +42331,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/listeners_per_minute"
+            "Get Listeners By Minute"
           ]
         }
       },
@@ -42349,10 +42349,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/listeners_per_minute"
+            "Get Listeners By Minute"
           ]
         }
       },
@@ -42367,10 +42367,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/listeners_per_minute"
+            "Get Listeners By Minute"
           ]
         }
       },
@@ -42384,10 +42384,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/listeners_per_minute"
+            "Get Listeners By Minute"
           ]
         }
       },
@@ -42401,10 +42401,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/countries"
+            "Get Countries"
           ]
         }
       },
@@ -42419,10 +42419,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/countries"
+            "Get Countries"
           ]
         }
       },
@@ -42437,10 +42437,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/countries"
+            "Get Countries"
           ]
         }
       },
@@ -42454,10 +42454,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/countries"
+            "Get Countries"
           ]
         }
       },
@@ -42471,10 +42471,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/countries_continent"
+            "Get Countries By Continent"
           ]
         }
       },
@@ -42489,10 +42489,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/countries_continent"
+            "Get Countries By Continent"
           ]
         }
       },
@@ -42507,10 +42507,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/countries_continent"
+            "Get Countries By Continent"
           ]
         }
       },
@@ -42524,10 +42524,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/countries_continent"
+            "Get Countries By Continent"
           ]
         }
       },
@@ -42541,10 +42541,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/consumption"
+            "Get Consumption"
           ]
         }
       },
@@ -42559,10 +42559,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/consumption"
+            "Get Consumption"
           ]
         }
       },
@@ -42577,10 +42577,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/consumption"
+            "Get Consumption"
           ]
         }
       },
@@ -42594,10 +42594,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/consumption"
+            "Get Consumption"
           ]
         }
       },
@@ -42611,10 +42611,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/total_consumption"
+            "Get Total Consumption"
           ]
         }
       },
@@ -42629,10 +42629,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/total_consumption"
+            "Get Total Consumption"
           ]
         }
       },
@@ -42647,10 +42647,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/total_consumption"
+            "Get Total Consumption"
           ]
         }
       },
@@ -42664,10 +42664,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/total_consumption"
+            "Get Total Consumption"
           ]
         }
       },
@@ -42681,10 +42681,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/players"
+            "Get Players"
           ]
         }
       },
@@ -42699,10 +42699,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/players"
+            "Get Players"
           ]
         }
       },
@@ -42717,10 +42717,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/players"
+            "Get Players"
           ]
         }
       },
@@ -42734,10 +42734,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/players"
+            "Get Players"
           ]
         }
       },
@@ -42751,10 +42751,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/total_players"
+            "Get Total Players"
           ]
         }
       },
@@ -42769,10 +42769,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/total_players"
+            "Get Total Players"
           ]
         }
       },
@@ -42787,10 +42787,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/total_players"
+            "Get Total Players"
           ]
         }
       },
@@ -42804,10 +42804,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/total_players"
+            "Get Total Players"
           ]
         }
       },
@@ -42821,10 +42821,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/export_csv"
+            "Export Stats"
           ]
         }
       },
@@ -42839,10 +42839,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/export_csv"
+            "Export Stats"
           ]
         }
       },
@@ -42857,10 +42857,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/export_csv"
+            "Export Stats"
           ]
         }
       },
@@ -42896,10 +42896,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/export_csv"
+            "Export Stats"
           ]
         }
       },
@@ -42913,10 +42913,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/export_csv"
+            "Export Stats"
           ]
         }
       },
@@ -42931,10 +42931,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/export_csv"
+            "Export Stats"
           ]
         }
       },
@@ -44633,10 +44633,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/listeners"
+            "Get Listeners (2)"
           ]
         }
       },
@@ -44651,10 +44651,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/listeners"
+            "Get Listeners (2)"
           ]
         }
       },
@@ -44669,10 +44669,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/listeners"
+            "Get Listeners (2)"
           ]
         }
       },
@@ -44686,10 +44686,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/listeners"
+            "Get Listeners (2)"
           ]
         }
       },
@@ -44703,10 +44703,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/listeners_per_minute"
+            "Get Listeners By Minute (2)"
           ]
         }
       },
@@ -44721,10 +44721,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/listeners_per_minute"
+            "Get Listeners By Minute (2)"
           ]
         }
       },
@@ -44739,10 +44739,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/listeners_per_minute"
+            "Get Listeners By Minute (2)"
           ]
         }
       },
@@ -44756,10 +44756,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/listeners_per_minute"
+            "Get Listeners By Minute (2)"
           ]
         }
       },
@@ -44773,10 +44773,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/countries"
+            "Get Countries (2)"
           ]
         }
       },
@@ -44791,10 +44791,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/countries"
+            "Get Countries (2)"
           ]
         }
       },
@@ -44809,10 +44809,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/countries"
+            "Get Countries (2)"
           ]
         }
       },
@@ -44826,10 +44826,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/countries"
+            "Get Countries (2)"
           ]
         }
       },
@@ -44843,10 +44843,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/countries_continent"
+            "Get Countries By Continent (2)"
           ]
         }
       },
@@ -44861,10 +44861,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/countries_continent"
+            "Get Countries By Continent (2)"
           ]
         }
       },
@@ -44879,10 +44879,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/countries_continent"
+            "Get Countries By Continent (2)"
           ]
         }
       },
@@ -44896,10 +44896,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/countries_continent"
+            "Get Countries By Continent (2)"
           ]
         }
       },
@@ -44913,10 +44913,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/consumption"
+            "Get Consumption (2)"
           ]
         }
       },
@@ -44931,10 +44931,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/consumption"
+            "Get Consumption (2)"
           ]
         }
       },
@@ -44949,10 +44949,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/consumption"
+            "Get Consumption (2)"
           ]
         }
       },
@@ -44966,10 +44966,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/consumption"
+            "Get Consumption (2)"
           ]
         }
       },
@@ -44983,10 +44983,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/total_consumption"
+            "Get Total Consumption (2)"
           ]
         }
       },
@@ -45001,10 +45001,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/total_consumption"
+            "Get Total Consumption (2)"
           ]
         }
       },
@@ -45019,10 +45019,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/total_consumption"
+            "Get Total Consumption (2)"
           ]
         }
       },
@@ -45036,10 +45036,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/total_consumption"
+            "Get Total Consumption (2)"
           ]
         }
       },
@@ -45053,10 +45053,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/players"
+            "Get Players (2)"
           ]
         }
       },
@@ -45071,10 +45071,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/players"
+            "Get Players (2)"
           ]
         }
       },
@@ -45089,10 +45089,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/players"
+            "Get Players (2)"
           ]
         }
       },
@@ -45106,10 +45106,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/players"
+            "Get Players (2)"
           ]
         }
       },
@@ -45123,10 +45123,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/total_players"
+            "Get Total Players (2)"
           ]
         }
       },
@@ -45141,10 +45141,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/total_players"
+            "Get Total Players (2)"
           ]
         }
       },
@@ -45159,10 +45159,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/total_players"
+            "Get Total Players (2)"
           ]
         }
       },
@@ -45176,10 +45176,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/total_players"
+            "Get Total Players (2)"
           ]
         }
       },
@@ -45193,10 +45193,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/export_csv"
+            "Export Stats (2)"
           ]
         }
       },
@@ -45211,10 +45211,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/export_csv"
+            "Export Stats (2)"
           ]
         }
       },
@@ -45229,10 +45229,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/export_csv"
+            "Export Stats (2)"
           ]
         }
       },
@@ -45268,10 +45268,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/export_csv"
+            "Export Stats (2)"
           ]
         }
       },
@@ -45285,10 +45285,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/export_csv"
+            "Export Stats (2)"
           ]
         }
       },
@@ -45303,10 +45303,10 @@ export class InfomaniakStreamingRadio implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > HlsStream"
+            "Stats > Hls Stream"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream/stats/export_csv"
+            "Export Stats (2)"
           ]
         }
       },
@@ -47011,118 +47011,118 @@ export class InfomaniakStreamingRadio implements INodeType {
       "options": [
         {
           "name": "Get Listeners",
-          "value": "GET /1/radios/{radio_product_id}/stats/listeners"
+          "value": "Get Listeners"
         },
         {
           "name": "Get Listeners Per Minute",
-          "value": "GET /1/radios/{radio_product_id}/stats/listeners_per_minute"
+          "value": "Get Listeners Per Minute"
         },
         {
           "name": "Get Listeners Per Minute Per Station",
-          "value": "GET /1/radios/{radio_product_id}/stats/listeners_per_minute_grouped"
+          "value": "Get Listeners Per Minute Per Station"
         },
         {
           "name": "Get Countries",
-          "value": "GET /1/radios/{radio_product_id}/stats/countries"
+          "value": "Get Countries"
         },
         {
           "name": "Get Countries By Continent",
-          "value": "GET /1/radios/{radio_product_id}/stats/countries_continent"
+          "value": "Get Countries By Continent"
         },
         {
           "name": "Get Listeners By Station",
-          "value": "GET /1/radios/{radio_product_id}/stats/station_listeners"
+          "value": "Get Listeners By Station"
         },
         {
           "name": "Get Consumption",
-          "value": "GET /1/radios/{radio_product_id}/stats/consumption"
+          "value": "Get Consumption"
         },
         {
           "name": "Get Total Consumption",
-          "value": "GET /1/radios/{radio_product_id}/stats/total_consumption"
+          "value": "Get Total Consumption"
         },
         {
           "name": "Get Consumption By Station",
-          "value": "GET /1/radios/{radio_product_id}/stats/station_consumption"
+          "value": "Get Consumption By Station"
         },
         {
           "name": "Get Players",
-          "value": "GET /1/radios/{radio_product_id}/stats/players"
+          "value": "Get Players"
         },
         {
           "name": "Get Total Players",
-          "value": "GET /1/radios/{radio_product_id}/stats/total_players"
+          "value": "Get Total Players"
         },
         {
           "name": "Get Stats By Stations",
-          "value": "GET /1/radios/{radio_product_id}/stats/stats_by_station"
+          "value": "Get Stats By Stations"
         },
         {
           "name": "Export Stats",
-          "value": "GET /1/radios/{radio_product_id}/stats/export_csv"
+          "value": "Export Stats"
         },
         {
           "name": "Export Stats By Station",
-          "value": "GET /1/radios/{radio_product_id}/stats/export_csv_by_station"
+          "value": "Export Stats By Station"
         },
         {
           "name": "Get Listeners",
-          "value": "GET /2/radios/{radio_product_id}/stats/listeners"
+          "value": "Get Listeners (2)"
         },
         {
           "name": "Get Listeners Per Minute",
-          "value": "GET /2/radios/{radio_product_id}/stats/listeners_per_minute"
+          "value": "Get Listeners Per Minute (2)"
         },
         {
           "name": "Get Listeners Per Minute Per Station",
-          "value": "GET /2/radios/{radio_product_id}/stats/listeners_per_minute_grouped"
+          "value": "Get Listeners Per Minute Per Station (2)"
         },
         {
           "name": "Get Countries",
-          "value": "GET /2/radios/{radio_product_id}/stats/countries"
+          "value": "Get Countries (2)"
         },
         {
           "name": "Get Countries By Continent",
-          "value": "GET /2/radios/{radio_product_id}/stats/countries_continent"
+          "value": "Get Countries By Continent (2)"
         },
         {
           "name": "Get Listeners By Station",
-          "value": "GET /2/radios/{radio_product_id}/stats/station_listeners"
+          "value": "Get Listeners By Station (2)"
         },
         {
           "name": "Get Consumption",
-          "value": "GET /2/radios/{radio_product_id}/stats/consumption"
+          "value": "Get Consumption (2)"
         },
         {
           "name": "Get Total Consumption",
-          "value": "GET /2/radios/{radio_product_id}/stats/total_consumption"
+          "value": "Get Total Consumption (2)"
         },
         {
           "name": "Get Consumption By Station",
-          "value": "GET /2/radios/{radio_product_id}/stats/station_consumption"
+          "value": "Get Consumption By Station (2)"
         },
         {
           "name": "Get Players",
-          "value": "GET /2/radios/{radio_product_id}/stats/players"
+          "value": "Get Players (2)"
         },
         {
           "name": "Get Total Players",
-          "value": "GET /2/radios/{radio_product_id}/stats/total_players"
+          "value": "Get Total Players (2)"
         },
         {
           "name": "Get Stats By Stations",
-          "value": "GET /2/radios/{radio_product_id}/stats/stats_by_station"
+          "value": "Get Stats By Stations (2)"
         },
         {
           "name": "Export Stats",
-          "value": "GET /2/radios/{radio_product_id}/stats/export_csv"
+          "value": "Export Stats (2)"
         },
         {
           "name": "Export Stats By Station",
-          "value": "GET /2/radios/{radio_product_id}/stats/export_csv_by_station"
+          "value": "Export Stats By Station (2)"
         }
       ],
-      "default": "GET /1/radios/{radio_product_id}/stats/listeners",
+      "default": "Get Listeners",
       "noDataExpression": true
     },
     {
@@ -47136,7 +47136,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/listeners"
+            "Get Listeners"
           ]
         }
       },
@@ -47154,7 +47154,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/listeners"
+            "Get Listeners"
           ]
         }
       },
@@ -47171,7 +47171,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/listeners"
+            "Get Listeners"
           ]
         }
       },
@@ -47189,7 +47189,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/listeners"
+            "Get Listeners"
           ]
         }
       },
@@ -47213,7 +47213,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/listeners_per_minute"
+            "Get Listeners Per Minute"
           ]
         }
       },
@@ -47231,7 +47231,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/listeners_per_minute"
+            "Get Listeners Per Minute"
           ]
         }
       },
@@ -47248,7 +47248,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/listeners_per_minute"
+            "Get Listeners Per Minute"
           ]
         }
       },
@@ -47266,7 +47266,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/listeners_per_minute"
+            "Get Listeners Per Minute"
           ]
         }
       },
@@ -47290,7 +47290,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/listeners_per_minute_grouped"
+            "Get Listeners Per Minute Per Station"
           ]
         }
       },
@@ -47308,7 +47308,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/listeners_per_minute_grouped"
+            "Get Listeners Per Minute Per Station"
           ]
         }
       },
@@ -47325,7 +47325,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/listeners_per_minute_grouped"
+            "Get Listeners Per Minute Per Station"
           ]
         }
       },
@@ -47343,7 +47343,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/listeners_per_minute_grouped"
+            "Get Listeners Per Minute Per Station"
           ]
         }
       },
@@ -47367,7 +47367,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/countries"
+            "Get Countries"
           ]
         }
       },
@@ -47385,7 +47385,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/countries"
+            "Get Countries"
           ]
         }
       },
@@ -47402,7 +47402,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/countries"
+            "Get Countries"
           ]
         }
       },
@@ -47420,7 +47420,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/countries"
+            "Get Countries"
           ]
         }
       },
@@ -47444,7 +47444,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/countries_continent"
+            "Get Countries By Continent"
           ]
         }
       },
@@ -47462,7 +47462,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/countries_continent"
+            "Get Countries By Continent"
           ]
         }
       },
@@ -47479,7 +47479,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/countries_continent"
+            "Get Countries By Continent"
           ]
         }
       },
@@ -47497,7 +47497,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/countries_continent"
+            "Get Countries By Continent"
           ]
         }
       },
@@ -47521,7 +47521,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/station_listeners"
+            "Get Listeners By Station"
           ]
         }
       },
@@ -47539,7 +47539,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/station_listeners"
+            "Get Listeners By Station"
           ]
         }
       },
@@ -47556,7 +47556,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/station_listeners"
+            "Get Listeners By Station"
           ]
         }
       },
@@ -47574,7 +47574,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/station_listeners"
+            "Get Listeners By Station"
           ]
         }
       },
@@ -47604,7 +47604,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/consumption"
+            "Get Consumption"
           ]
         }
       },
@@ -47622,7 +47622,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/consumption"
+            "Get Consumption"
           ]
         }
       },
@@ -47639,7 +47639,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/consumption"
+            "Get Consumption"
           ]
         }
       },
@@ -47657,7 +47657,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/consumption"
+            "Get Consumption"
           ]
         }
       },
@@ -47681,7 +47681,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/total_consumption"
+            "Get Total Consumption"
           ]
         }
       },
@@ -47699,7 +47699,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/total_consumption"
+            "Get Total Consumption"
           ]
         }
       },
@@ -47716,7 +47716,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/total_consumption"
+            "Get Total Consumption"
           ]
         }
       },
@@ -47734,7 +47734,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/total_consumption"
+            "Get Total Consumption"
           ]
         }
       },
@@ -47758,7 +47758,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/station_consumption"
+            "Get Consumption By Station"
           ]
         }
       },
@@ -47776,7 +47776,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/station_consumption"
+            "Get Consumption By Station"
           ]
         }
       },
@@ -47793,7 +47793,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/station_consumption"
+            "Get Consumption By Station"
           ]
         }
       },
@@ -47811,7 +47811,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/station_consumption"
+            "Get Consumption By Station"
           ]
         }
       },
@@ -47835,7 +47835,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/players"
+            "Get Players"
           ]
         }
       },
@@ -47853,7 +47853,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/players"
+            "Get Players"
           ]
         }
       },
@@ -47870,7 +47870,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/players"
+            "Get Players"
           ]
         }
       },
@@ -47888,7 +47888,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/players"
+            "Get Players"
           ]
         }
       },
@@ -47912,7 +47912,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/total_players"
+            "Get Total Players"
           ]
         }
       },
@@ -47930,7 +47930,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/total_players"
+            "Get Total Players"
           ]
         }
       },
@@ -47947,7 +47947,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/total_players"
+            "Get Total Players"
           ]
         }
       },
@@ -47965,7 +47965,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/total_players"
+            "Get Total Players"
           ]
         }
       },
@@ -47989,7 +47989,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/stats_by_station"
+            "Get Stats By Stations"
           ]
         }
       },
@@ -48007,7 +48007,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/stats_by_station"
+            "Get Stats By Stations"
           ]
         }
       },
@@ -48042,7 +48042,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/stats_by_station"
+            "Get Stats By Stations"
           ]
         }
       },
@@ -48059,7 +48059,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/stats_by_station"
+            "Get Stats By Stations"
           ]
         }
       },
@@ -48077,7 +48077,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/stats_by_station"
+            "Get Stats By Stations"
           ]
         }
       },
@@ -48101,7 +48101,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/export_csv"
+            "Export Stats"
           ]
         }
       },
@@ -48119,7 +48119,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/export_csv"
+            "Export Stats"
           ]
         }
       },
@@ -48162,7 +48162,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/export_csv"
+            "Export Stats"
           ]
         }
       },
@@ -48179,7 +48179,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/export_csv"
+            "Export Stats"
           ]
         }
       },
@@ -48197,7 +48197,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/export_csv"
+            "Export Stats"
           ]
         }
       },
@@ -49905,7 +49905,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/export_csv_by_station"
+            "Export Stats By Station"
           ]
         }
       },
@@ -49923,7 +49923,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/export_csv_by_station"
+            "Export Stats By Station"
           ]
         }
       },
@@ -49962,7 +49962,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/export_csv_by_station"
+            "Export Stats By Station"
           ]
         }
       },
@@ -49979,7 +49979,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/export_csv_by_station"
+            "Export Stats By Station"
           ]
         }
       },
@@ -49997,7 +49997,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stats/export_csv_by_station"
+            "Export Stats By Station"
           ]
         }
       },
@@ -51705,7 +51705,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/listeners"
+            "Get Listeners (2)"
           ]
         }
       },
@@ -51723,7 +51723,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/listeners"
+            "Get Listeners (2)"
           ]
         }
       },
@@ -51740,7 +51740,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/listeners"
+            "Get Listeners (2)"
           ]
         }
       },
@@ -51758,7 +51758,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/listeners"
+            "Get Listeners (2)"
           ]
         }
       },
@@ -51782,7 +51782,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/listeners_per_minute"
+            "Get Listeners Per Minute (2)"
           ]
         }
       },
@@ -51800,7 +51800,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/listeners_per_minute"
+            "Get Listeners Per Minute (2)"
           ]
         }
       },
@@ -51817,7 +51817,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/listeners_per_minute"
+            "Get Listeners Per Minute (2)"
           ]
         }
       },
@@ -51835,7 +51835,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/listeners_per_minute"
+            "Get Listeners Per Minute (2)"
           ]
         }
       },
@@ -51859,7 +51859,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/listeners_per_minute_grouped"
+            "Get Listeners Per Minute Per Station (2)"
           ]
         }
       },
@@ -51877,7 +51877,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/listeners_per_minute_grouped"
+            "Get Listeners Per Minute Per Station (2)"
           ]
         }
       },
@@ -51894,7 +51894,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/listeners_per_minute_grouped"
+            "Get Listeners Per Minute Per Station (2)"
           ]
         }
       },
@@ -51912,7 +51912,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/listeners_per_minute_grouped"
+            "Get Listeners Per Minute Per Station (2)"
           ]
         }
       },
@@ -51936,7 +51936,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/countries"
+            "Get Countries (2)"
           ]
         }
       },
@@ -51954,7 +51954,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/countries"
+            "Get Countries (2)"
           ]
         }
       },
@@ -51971,7 +51971,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/countries"
+            "Get Countries (2)"
           ]
         }
       },
@@ -51989,7 +51989,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/countries"
+            "Get Countries (2)"
           ]
         }
       },
@@ -52013,7 +52013,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/countries_continent"
+            "Get Countries By Continent (2)"
           ]
         }
       },
@@ -52031,7 +52031,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/countries_continent"
+            "Get Countries By Continent (2)"
           ]
         }
       },
@@ -52048,7 +52048,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/countries_continent"
+            "Get Countries By Continent (2)"
           ]
         }
       },
@@ -52066,7 +52066,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/countries_continent"
+            "Get Countries By Continent (2)"
           ]
         }
       },
@@ -52090,7 +52090,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/station_listeners"
+            "Get Listeners By Station (2)"
           ]
         }
       },
@@ -52108,7 +52108,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/station_listeners"
+            "Get Listeners By Station (2)"
           ]
         }
       },
@@ -52125,7 +52125,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/station_listeners"
+            "Get Listeners By Station (2)"
           ]
         }
       },
@@ -52143,7 +52143,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/station_listeners"
+            "Get Listeners By Station (2)"
           ]
         }
       },
@@ -52173,7 +52173,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/consumption"
+            "Get Consumption (2)"
           ]
         }
       },
@@ -52191,7 +52191,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/consumption"
+            "Get Consumption (2)"
           ]
         }
       },
@@ -52208,7 +52208,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/consumption"
+            "Get Consumption (2)"
           ]
         }
       },
@@ -52226,7 +52226,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/consumption"
+            "Get Consumption (2)"
           ]
         }
       },
@@ -52250,7 +52250,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/total_consumption"
+            "Get Total Consumption (2)"
           ]
         }
       },
@@ -52268,7 +52268,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/total_consumption"
+            "Get Total Consumption (2)"
           ]
         }
       },
@@ -52285,7 +52285,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/total_consumption"
+            "Get Total Consumption (2)"
           ]
         }
       },
@@ -52303,7 +52303,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/total_consumption"
+            "Get Total Consumption (2)"
           ]
         }
       },
@@ -52327,7 +52327,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/station_consumption"
+            "Get Consumption By Station (2)"
           ]
         }
       },
@@ -52345,7 +52345,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/station_consumption"
+            "Get Consumption By Station (2)"
           ]
         }
       },
@@ -52362,7 +52362,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/station_consumption"
+            "Get Consumption By Station (2)"
           ]
         }
       },
@@ -52380,7 +52380,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/station_consumption"
+            "Get Consumption By Station (2)"
           ]
         }
       },
@@ -52404,7 +52404,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/players"
+            "Get Players (2)"
           ]
         }
       },
@@ -52422,7 +52422,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/players"
+            "Get Players (2)"
           ]
         }
       },
@@ -52439,7 +52439,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/players"
+            "Get Players (2)"
           ]
         }
       },
@@ -52457,7 +52457,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/players"
+            "Get Players (2)"
           ]
         }
       },
@@ -52481,7 +52481,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/total_players"
+            "Get Total Players (2)"
           ]
         }
       },
@@ -52499,7 +52499,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/total_players"
+            "Get Total Players (2)"
           ]
         }
       },
@@ -52516,7 +52516,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/total_players"
+            "Get Total Players (2)"
           ]
         }
       },
@@ -52534,7 +52534,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/total_players"
+            "Get Total Players (2)"
           ]
         }
       },
@@ -52558,7 +52558,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/stats_by_station"
+            "Get Stats By Stations (2)"
           ]
         }
       },
@@ -52576,7 +52576,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/stats_by_station"
+            "Get Stats By Stations (2)"
           ]
         }
       },
@@ -52611,7 +52611,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/stats_by_station"
+            "Get Stats By Stations (2)"
           ]
         }
       },
@@ -52628,7 +52628,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/stats_by_station"
+            "Get Stats By Stations (2)"
           ]
         }
       },
@@ -52646,7 +52646,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/stats_by_station"
+            "Get Stats By Stations (2)"
           ]
         }
       },
@@ -52670,7 +52670,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/export_csv"
+            "Export Stats (2)"
           ]
         }
       },
@@ -52688,7 +52688,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/export_csv"
+            "Export Stats (2)"
           ]
         }
       },
@@ -52731,7 +52731,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/export_csv"
+            "Export Stats (2)"
           ]
         }
       },
@@ -52748,7 +52748,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/export_csv"
+            "Export Stats (2)"
           ]
         }
       },
@@ -52766,7 +52766,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/export_csv"
+            "Export Stats (2)"
           ]
         }
       },
@@ -54474,7 +54474,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/export_csv_by_station"
+            "Export Stats By Station (2)"
           ]
         }
       },
@@ -54492,7 +54492,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/export_csv_by_station"
+            "Export Stats By Station (2)"
           ]
         }
       },
@@ -54531,7 +54531,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/export_csv_by_station"
+            "Export Stats By Station (2)"
           ]
         }
       },
@@ -54548,7 +54548,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/export_csv_by_station"
+            "Export Stats By Station (2)"
           ]
         }
       },
@@ -54566,7 +54566,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Radio Products"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stats/export_csv_by_station"
+            "Export Stats By Station (2)"
           ]
         }
       },
@@ -56277,230 +56277,230 @@ export class InfomaniakStreamingRadio implements INodeType {
       "options": [
         {
           "name": "Get Status",
-          "value": "GET /1/radios/stats/status"
+          "value": "Get Status"
         },
         {
           "name": "Get Instant Listeners",
-          "value": "GET /1/radios/stats/listeners"
+          "value": "Get Instant Listeners"
         },
         {
           "name": "Get Stats Listeners",
-          "value": "GET /1/radios/stats/sum-listeners"
+          "value": "Get Stats Listeners"
         },
         {
           "name": "Get Stats Listeners",
-          "value": "GET /1/radios/stats/sum-listeners-on-product"
+          "value": "Get Stats Listeners (2)"
         },
         {
           "name": "Get Mediastats",
-          "value": "GET /1/radios/stats/mediastats"
+          "value": "Get Mediastats"
         },
         {
           "name": "Set Metadata To Station",
-          "value": "GET /1/radios/stats/metadata"
+          "value": "Set Metadata To Station"
         },
         {
           "name": "Get Status",
-          "value": "GET /1/radios/radio/diag/status.php"
+          "value": "Get Status (2)"
         },
         {
           "name": "Set Metadata To Station",
-          "value": "GET /1/radios/updatemetadata.php"
+          "value": "Set Metadata To Station (2)"
         },
         {
           "name": "Get Mediastats",
-          "value": "GET /1/radios/mediastats.php"
+          "value": "Get Mediastats (2)"
         },
         {
           "name": "Get Mediastats",
-          "value": "GET /1/radios/listclients.xml"
+          "value": "Get Mediastats (3)"
         },
         {
           "name": "Get Stats Listeners",
-          "value": "GET /1/radios/admin/stats.xml"
+          "value": "Get Stats Listeners (3)"
         },
         {
           "name": "Get Stats Listeners",
-          "value": "GET /1/radios/admin/stats"
+          "value": "Get Stats Listeners (4)"
         },
         {
           "name": "Get Stats Listeners",
-          "value": "GET /1/radios/admin/stats_group.xml"
+          "value": "Get Stats Listeners (5)"
         },
         {
           "name": "Get Listeners",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/listeners"
+          "value": "Get Listeners"
         },
         {
           "name": "Get Listeners Per Minute",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/listeners_per_minute"
+          "value": "Get Listeners Per Minute"
         },
         {
           "name": "Get Listeners Per Minute Per Stream",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/listeners_per_minute_grouped"
+          "value": "Get Listeners Per Minute Per Stream"
         },
         {
           "name": "Get Countries",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/countries"
+          "value": "Get Countries"
         },
         {
           "name": "Get Countries By Continent",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/countries_continent"
+          "value": "Get Countries By Continent"
         },
         {
           "name": "Get Listeners By Stream",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/stream_listeners"
+          "value": "Get Listeners By Stream"
         },
         {
           "name": "Get Consumption",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/consumption"
+          "value": "Get Consumption"
         },
         {
           "name": "Get Total Consumption",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/total_consumption"
+          "value": "Get Total Consumption"
         },
         {
           "name": "Get Consumption By Stream",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/stream_consumption"
+          "value": "Get Consumption By Stream"
         },
         {
           "name": "Get Players",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/players"
+          "value": "Get Players"
         },
         {
           "name": "Get Total Players",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/total_players"
+          "value": "Get Total Players"
         },
         {
           "name": "Get Stats By Streams",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/stats_by_stream"
+          "value": "Get Stats By Streams"
         },
         {
           "name": "Export Stats",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/export_csv"
+          "value": "Export Stats"
         },
         {
           "name": "Export Stats By Stream",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/export_csv_by_stream"
+          "value": "Export Stats By Stream"
         },
         {
           "name": "List Stats Links",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/links"
+          "value": "List Stats Links"
         },
         {
           "name": "Get Status",
-          "value": "GET /2/radios/stats/status"
+          "value": "Get Status (3)"
         },
         {
           "name": "Get Instant Listeners",
-          "value": "GET /2/radios/stats/listeners"
+          "value": "Get Instant Listeners (2)"
         },
         {
           "name": "Get Stats Listeners",
-          "value": "GET /2/radios/stats/sum-listeners"
+          "value": "Get Stats Listeners (6)"
         },
         {
           "name": "Get Stats Listeners",
-          "value": "GET /2/radios/stats/sum-listeners-on-product"
+          "value": "Get Stats Listeners (7)"
         },
         {
           "name": "Get Mediastats",
-          "value": "GET /2/radios/stats/mediastats"
+          "value": "Get Mediastats (4)"
         },
         {
           "name": "Set Metadata To Station",
-          "value": "GET /2/radios/stats/metadata"
+          "value": "Set Metadata To Station (3)"
         },
         {
           "name": "Get Status",
-          "value": "GET /2/radios/radio/diag/status.php"
+          "value": "Get Status (4)"
         },
         {
           "name": "Set Metadata To Station",
-          "value": "GET /2/radios/updatemetadata.php"
+          "value": "Set Metadata To Station (4)"
         },
         {
           "name": "Get Mediastats",
-          "value": "GET /2/radios/mediastats.php"
+          "value": "Get Mediastats (5)"
         },
         {
           "name": "Get Mediastats",
-          "value": "GET /2/radios/listclients.xml"
+          "value": "Get Mediastats (6)"
         },
         {
           "name": "Get Stats Listeners",
-          "value": "GET /2/radios/admin/stats.xml"
+          "value": "Get Stats Listeners (8)"
         },
         {
           "name": "Get Stats Listeners",
-          "value": "GET /2/radios/admin/stats"
+          "value": "Get Stats Listeners (9)"
         },
         {
           "name": "Get Stats Listeners",
-          "value": "GET /2/radios/admin/stats_group.xml"
+          "value": "Get Stats Listeners (10)"
         },
         {
           "name": "Get Listeners",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/listeners"
+          "value": "Get Listeners (2)"
         },
         {
           "name": "Get Listeners Per Minute",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/listeners_per_minute"
+          "value": "Get Listeners Per Minute (2)"
         },
         {
           "name": "Get Listeners Per Minute Per Stream",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/listeners_per_minute_grouped"
+          "value": "Get Listeners Per Minute Per Stream (2)"
         },
         {
           "name": "Get Countries",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/countries"
+          "value": "Get Countries (2)"
         },
         {
           "name": "Get Countries By Continent",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/countries_continent"
+          "value": "Get Countries By Continent (2)"
         },
         {
           "name": "Get Listeners By Stream",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/stream_listeners"
+          "value": "Get Listeners By Stream (2)"
         },
         {
           "name": "Get Consumption",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/consumption"
+          "value": "Get Consumption (2)"
         },
         {
           "name": "Get Total Consumption",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/total_consumption"
+          "value": "Get Total Consumption (2)"
         },
         {
           "name": "Get Consumption By Stream",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/stream_consumption"
+          "value": "Get Consumption By Stream (2)"
         },
         {
           "name": "Get Players",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/players"
+          "value": "Get Players (2)"
         },
         {
           "name": "Get Total Players",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/total_players"
+          "value": "Get Total Players (2)"
         },
         {
           "name": "Get Stats By Streams",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/stats_by_stream"
+          "value": "Get Stats By Streams (2)"
         },
         {
           "name": "Export Stats",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/export_csv"
+          "value": "Export Stats (2)"
         },
         {
           "name": "Export Stats By Stream",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/export_csv_by_stream"
+          "value": "Export Stats By Stream (2)"
         },
         {
           "name": "List Stats Links",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/links"
+          "value": "List Stats Links (2)"
         }
       ],
-      "default": "GET /1/radios/stats/status",
+      "default": "Get Status",
       "noDataExpression": true
     },
     {
@@ -56515,7 +56515,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/stats/metadata"
+            "Set Metadata To Station"
           ]
         }
       },
@@ -56546,7 +56546,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/updatemetadata.php"
+            "Set Metadata To Station (2)"
           ]
         }
       },
@@ -56576,7 +56576,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/listeners"
+            "Get Listeners"
           ]
         }
       },
@@ -56594,7 +56594,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/listeners"
+            "Get Listeners"
           ]
         }
       },
@@ -56612,7 +56612,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/listeners"
+            "Get Listeners"
           ]
         }
       },
@@ -56629,7 +56629,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/listeners"
+            "Get Listeners"
           ]
         }
       },
@@ -56647,7 +56647,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/listeners"
+            "Get Listeners"
           ]
         }
       },
@@ -56677,7 +56677,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/listeners_per_minute"
+            "Get Listeners Per Minute"
           ]
         }
       },
@@ -56695,7 +56695,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/listeners_per_minute"
+            "Get Listeners Per Minute"
           ]
         }
       },
@@ -56713,7 +56713,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/listeners_per_minute"
+            "Get Listeners Per Minute"
           ]
         }
       },
@@ -56730,7 +56730,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/listeners_per_minute"
+            "Get Listeners Per Minute"
           ]
         }
       },
@@ -56748,7 +56748,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/listeners_per_minute"
+            "Get Listeners Per Minute"
           ]
         }
       },
@@ -56772,7 +56772,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/listeners_per_minute_grouped"
+            "Get Listeners Per Minute Per Stream"
           ]
         }
       },
@@ -56790,7 +56790,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/listeners_per_minute_grouped"
+            "Get Listeners Per Minute Per Stream"
           ]
         }
       },
@@ -56808,7 +56808,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/listeners_per_minute_grouped"
+            "Get Listeners Per Minute Per Stream"
           ]
         }
       },
@@ -56825,7 +56825,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/listeners_per_minute_grouped"
+            "Get Listeners Per Minute Per Stream"
           ]
         }
       },
@@ -56843,7 +56843,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/listeners_per_minute_grouped"
+            "Get Listeners Per Minute Per Stream"
           ]
         }
       },
@@ -56867,7 +56867,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/countries"
+            "Get Countries"
           ]
         }
       },
@@ -56885,7 +56885,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/countries"
+            "Get Countries"
           ]
         }
       },
@@ -56903,7 +56903,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/countries"
+            "Get Countries"
           ]
         }
       },
@@ -56920,7 +56920,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/countries"
+            "Get Countries"
           ]
         }
       },
@@ -56938,7 +56938,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/countries"
+            "Get Countries"
           ]
         }
       },
@@ -56968,7 +56968,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/countries_continent"
+            "Get Countries By Continent"
           ]
         }
       },
@@ -56986,7 +56986,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/countries_continent"
+            "Get Countries By Continent"
           ]
         }
       },
@@ -57004,7 +57004,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/countries_continent"
+            "Get Countries By Continent"
           ]
         }
       },
@@ -57021,7 +57021,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/countries_continent"
+            "Get Countries By Continent"
           ]
         }
       },
@@ -57039,7 +57039,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/countries_continent"
+            "Get Countries By Continent"
           ]
         }
       },
@@ -57069,7 +57069,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/stream_listeners"
+            "Get Listeners By Stream"
           ]
         }
       },
@@ -57087,7 +57087,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/stream_listeners"
+            "Get Listeners By Stream"
           ]
         }
       },
@@ -57105,7 +57105,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/stream_listeners"
+            "Get Listeners By Stream"
           ]
         }
       },
@@ -57122,7 +57122,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/stream_listeners"
+            "Get Listeners By Stream"
           ]
         }
       },
@@ -57140,7 +57140,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/stream_listeners"
+            "Get Listeners By Stream"
           ]
         }
       },
@@ -57176,7 +57176,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/consumption"
+            "Get Consumption"
           ]
         }
       },
@@ -57194,7 +57194,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/consumption"
+            "Get Consumption"
           ]
         }
       },
@@ -57212,7 +57212,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/consumption"
+            "Get Consumption"
           ]
         }
       },
@@ -57229,7 +57229,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/consumption"
+            "Get Consumption"
           ]
         }
       },
@@ -57247,7 +57247,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/consumption"
+            "Get Consumption"
           ]
         }
       },
@@ -57277,7 +57277,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/total_consumption"
+            "Get Total Consumption"
           ]
         }
       },
@@ -57295,7 +57295,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/total_consumption"
+            "Get Total Consumption"
           ]
         }
       },
@@ -57313,7 +57313,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/total_consumption"
+            "Get Total Consumption"
           ]
         }
       },
@@ -57330,7 +57330,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/total_consumption"
+            "Get Total Consumption"
           ]
         }
       },
@@ -57348,7 +57348,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/total_consumption"
+            "Get Total Consumption"
           ]
         }
       },
@@ -57378,7 +57378,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/stream_consumption"
+            "Get Consumption By Stream"
           ]
         }
       },
@@ -57396,7 +57396,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/stream_consumption"
+            "Get Consumption By Stream"
           ]
         }
       },
@@ -57414,7 +57414,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/stream_consumption"
+            "Get Consumption By Stream"
           ]
         }
       },
@@ -57431,7 +57431,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/stream_consumption"
+            "Get Consumption By Stream"
           ]
         }
       },
@@ -57449,7 +57449,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/stream_consumption"
+            "Get Consumption By Stream"
           ]
         }
       },
@@ -57479,7 +57479,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/players"
+            "Get Players"
           ]
         }
       },
@@ -57497,7 +57497,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/players"
+            "Get Players"
           ]
         }
       },
@@ -57515,7 +57515,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/players"
+            "Get Players"
           ]
         }
       },
@@ -57532,7 +57532,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/players"
+            "Get Players"
           ]
         }
       },
@@ -57550,7 +57550,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/players"
+            "Get Players"
           ]
         }
       },
@@ -57580,7 +57580,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/total_players"
+            "Get Total Players"
           ]
         }
       },
@@ -57598,7 +57598,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/total_players"
+            "Get Total Players"
           ]
         }
       },
@@ -57616,7 +57616,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/total_players"
+            "Get Total Players"
           ]
         }
       },
@@ -57633,7 +57633,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/total_players"
+            "Get Total Players"
           ]
         }
       },
@@ -57651,7 +57651,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/total_players"
+            "Get Total Players"
           ]
         }
       },
@@ -57681,7 +57681,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/stats_by_stream"
+            "Get Stats By Streams"
           ]
         }
       },
@@ -57699,7 +57699,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/stats_by_stream"
+            "Get Stats By Streams"
           ]
         }
       },
@@ -57716,7 +57716,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/stats_by_stream"
+            "Get Stats By Streams"
           ]
         }
       },
@@ -57751,7 +57751,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/stats_by_stream"
+            "Get Stats By Streams"
           ]
         }
       },
@@ -57768,7 +57768,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/stats_by_stream"
+            "Get Stats By Streams"
           ]
         }
       },
@@ -57786,7 +57786,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/stats_by_stream"
+            "Get Stats By Streams"
           ]
         }
       },
@@ -57816,7 +57816,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/export_csv"
+            "Export Stats"
           ]
         }
       },
@@ -57834,7 +57834,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/export_csv"
+            "Export Stats"
           ]
         }
       },
@@ -57852,7 +57852,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/export_csv"
+            "Export Stats"
           ]
         }
       },
@@ -57895,7 +57895,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/export_csv"
+            "Export Stats"
           ]
         }
       },
@@ -57912,7 +57912,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/export_csv"
+            "Export Stats"
           ]
         }
       },
@@ -57930,7 +57930,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/export_csv"
+            "Export Stats"
           ]
         }
       },
@@ -57960,7 +57960,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/export_csv_by_stream"
+            "Export Stats By Stream"
           ]
         }
       },
@@ -57978,7 +57978,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/export_csv_by_stream"
+            "Export Stats By Stream"
           ]
         }
       },
@@ -57996,7 +57996,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/export_csv_by_stream"
+            "Export Stats By Stream"
           ]
         }
       },
@@ -58035,7 +58035,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/export_csv_by_stream"
+            "Export Stats By Stream"
           ]
         }
       },
@@ -58052,7 +58052,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/export_csv_by_stream"
+            "Export Stats By Stream"
           ]
         }
       },
@@ -58070,7 +58070,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/export_csv_by_stream"
+            "Export Stats By Stream"
           ]
         }
       },
@@ -58100,7 +58100,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/links"
+            "List Stats Links"
           ]
         }
       },
@@ -58118,7 +58118,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/stats/links"
+            "List Stats Links"
           ]
         }
       },
@@ -58137,7 +58137,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/stats/metadata"
+            "Set Metadata To Station (3)"
           ]
         }
       },
@@ -58168,7 +58168,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/updatemetadata.php"
+            "Set Metadata To Station (4)"
           ]
         }
       },
@@ -58198,7 +58198,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/listeners"
+            "Get Listeners (2)"
           ]
         }
       },
@@ -58216,7 +58216,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/listeners"
+            "Get Listeners (2)"
           ]
         }
       },
@@ -58234,7 +58234,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/listeners"
+            "Get Listeners (2)"
           ]
         }
       },
@@ -58251,7 +58251,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/listeners"
+            "Get Listeners (2)"
           ]
         }
       },
@@ -58269,7 +58269,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/listeners"
+            "Get Listeners (2)"
           ]
         }
       },
@@ -58299,7 +58299,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/listeners_per_minute"
+            "Get Listeners Per Minute (2)"
           ]
         }
       },
@@ -58317,7 +58317,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/listeners_per_minute"
+            "Get Listeners Per Minute (2)"
           ]
         }
       },
@@ -58335,7 +58335,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/listeners_per_minute"
+            "Get Listeners Per Minute (2)"
           ]
         }
       },
@@ -58352,7 +58352,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/listeners_per_minute"
+            "Get Listeners Per Minute (2)"
           ]
         }
       },
@@ -58370,7 +58370,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/listeners_per_minute"
+            "Get Listeners Per Minute (2)"
           ]
         }
       },
@@ -58394,7 +58394,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/listeners_per_minute_grouped"
+            "Get Listeners Per Minute Per Stream (2)"
           ]
         }
       },
@@ -58412,7 +58412,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/listeners_per_minute_grouped"
+            "Get Listeners Per Minute Per Stream (2)"
           ]
         }
       },
@@ -58430,7 +58430,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/listeners_per_minute_grouped"
+            "Get Listeners Per Minute Per Stream (2)"
           ]
         }
       },
@@ -58447,7 +58447,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/listeners_per_minute_grouped"
+            "Get Listeners Per Minute Per Stream (2)"
           ]
         }
       },
@@ -58465,7 +58465,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/listeners_per_minute_grouped"
+            "Get Listeners Per Minute Per Stream (2)"
           ]
         }
       },
@@ -58489,7 +58489,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/countries"
+            "Get Countries (2)"
           ]
         }
       },
@@ -58507,7 +58507,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/countries"
+            "Get Countries (2)"
           ]
         }
       },
@@ -58525,7 +58525,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/countries"
+            "Get Countries (2)"
           ]
         }
       },
@@ -58542,7 +58542,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/countries"
+            "Get Countries (2)"
           ]
         }
       },
@@ -58560,7 +58560,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/countries"
+            "Get Countries (2)"
           ]
         }
       },
@@ -58590,7 +58590,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/countries_continent"
+            "Get Countries By Continent (2)"
           ]
         }
       },
@@ -58608,7 +58608,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/countries_continent"
+            "Get Countries By Continent (2)"
           ]
         }
       },
@@ -58626,7 +58626,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/countries_continent"
+            "Get Countries By Continent (2)"
           ]
         }
       },
@@ -58643,7 +58643,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/countries_continent"
+            "Get Countries By Continent (2)"
           ]
         }
       },
@@ -58661,7 +58661,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/countries_continent"
+            "Get Countries By Continent (2)"
           ]
         }
       },
@@ -58691,7 +58691,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/stream_listeners"
+            "Get Listeners By Stream (2)"
           ]
         }
       },
@@ -58709,7 +58709,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/stream_listeners"
+            "Get Listeners By Stream (2)"
           ]
         }
       },
@@ -58727,7 +58727,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/stream_listeners"
+            "Get Listeners By Stream (2)"
           ]
         }
       },
@@ -58744,7 +58744,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/stream_listeners"
+            "Get Listeners By Stream (2)"
           ]
         }
       },
@@ -58762,7 +58762,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/stream_listeners"
+            "Get Listeners By Stream (2)"
           ]
         }
       },
@@ -58798,7 +58798,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/consumption"
+            "Get Consumption (2)"
           ]
         }
       },
@@ -58816,7 +58816,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/consumption"
+            "Get Consumption (2)"
           ]
         }
       },
@@ -58834,7 +58834,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/consumption"
+            "Get Consumption (2)"
           ]
         }
       },
@@ -58851,7 +58851,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/consumption"
+            "Get Consumption (2)"
           ]
         }
       },
@@ -58869,7 +58869,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/consumption"
+            "Get Consumption (2)"
           ]
         }
       },
@@ -58899,7 +58899,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/total_consumption"
+            "Get Total Consumption (2)"
           ]
         }
       },
@@ -58917,7 +58917,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/total_consumption"
+            "Get Total Consumption (2)"
           ]
         }
       },
@@ -58935,7 +58935,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/total_consumption"
+            "Get Total Consumption (2)"
           ]
         }
       },
@@ -58952,7 +58952,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/total_consumption"
+            "Get Total Consumption (2)"
           ]
         }
       },
@@ -58970,7 +58970,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/total_consumption"
+            "Get Total Consumption (2)"
           ]
         }
       },
@@ -59000,7 +59000,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/stream_consumption"
+            "Get Consumption By Stream (2)"
           ]
         }
       },
@@ -59018,7 +59018,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/stream_consumption"
+            "Get Consumption By Stream (2)"
           ]
         }
       },
@@ -59036,7 +59036,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/stream_consumption"
+            "Get Consumption By Stream (2)"
           ]
         }
       },
@@ -59053,7 +59053,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/stream_consumption"
+            "Get Consumption By Stream (2)"
           ]
         }
       },
@@ -59071,7 +59071,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/stream_consumption"
+            "Get Consumption By Stream (2)"
           ]
         }
       },
@@ -59101,7 +59101,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/players"
+            "Get Players (2)"
           ]
         }
       },
@@ -59119,7 +59119,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/players"
+            "Get Players (2)"
           ]
         }
       },
@@ -59137,7 +59137,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/players"
+            "Get Players (2)"
           ]
         }
       },
@@ -59154,7 +59154,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/players"
+            "Get Players (2)"
           ]
         }
       },
@@ -59172,7 +59172,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/players"
+            "Get Players (2)"
           ]
         }
       },
@@ -59202,7 +59202,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/total_players"
+            "Get Total Players (2)"
           ]
         }
       },
@@ -59220,7 +59220,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/total_players"
+            "Get Total Players (2)"
           ]
         }
       },
@@ -59238,7 +59238,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/total_players"
+            "Get Total Players (2)"
           ]
         }
       },
@@ -59255,7 +59255,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/total_players"
+            "Get Total Players (2)"
           ]
         }
       },
@@ -59273,7 +59273,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/total_players"
+            "Get Total Players (2)"
           ]
         }
       },
@@ -59303,7 +59303,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/stats_by_stream"
+            "Get Stats By Streams (2)"
           ]
         }
       },
@@ -59321,7 +59321,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/stats_by_stream"
+            "Get Stats By Streams (2)"
           ]
         }
       },
@@ -59338,7 +59338,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/stats_by_stream"
+            "Get Stats By Streams (2)"
           ]
         }
       },
@@ -59373,7 +59373,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/stats_by_stream"
+            "Get Stats By Streams (2)"
           ]
         }
       },
@@ -59390,7 +59390,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/stats_by_stream"
+            "Get Stats By Streams (2)"
           ]
         }
       },
@@ -59408,7 +59408,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/stats_by_stream"
+            "Get Stats By Streams (2)"
           ]
         }
       },
@@ -59438,7 +59438,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/export_csv"
+            "Export Stats (2)"
           ]
         }
       },
@@ -59456,7 +59456,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/export_csv"
+            "Export Stats (2)"
           ]
         }
       },
@@ -59474,7 +59474,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/export_csv"
+            "Export Stats (2)"
           ]
         }
       },
@@ -59517,7 +59517,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/export_csv"
+            "Export Stats (2)"
           ]
         }
       },
@@ -59534,7 +59534,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/export_csv"
+            "Export Stats (2)"
           ]
         }
       },
@@ -59552,7 +59552,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/export_csv"
+            "Export Stats (2)"
           ]
         }
       },
@@ -59582,7 +59582,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/export_csv_by_stream"
+            "Export Stats By Stream (2)"
           ]
         }
       },
@@ -59600,7 +59600,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/export_csv_by_stream"
+            "Export Stats By Stream (2)"
           ]
         }
       },
@@ -59618,7 +59618,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/export_csv_by_stream"
+            "Export Stats By Stream (2)"
           ]
         }
       },
@@ -59657,7 +59657,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/export_csv_by_stream"
+            "Export Stats By Stream (2)"
           ]
         }
       },
@@ -59674,7 +59674,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/export_csv_by_stream"
+            "Export Stats By Stream (2)"
           ]
         }
       },
@@ -59692,7 +59692,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/export_csv_by_stream"
+            "Export Stats By Stream (2)"
           ]
         }
       },
@@ -59722,7 +59722,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/links"
+            "List Stats Links (2)"
           ]
         }
       },
@@ -59740,7 +59740,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Stations"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/stats/links"
+            "List Stats Links (2)"
           ]
         }
       },
@@ -59761,78 +59761,78 @@ export class InfomaniakStreamingRadio implements INodeType {
       "options": [
         {
           "name": "Get Listeners",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/listeners"
+          "value": "Get Listeners"
         },
         {
           "name": "Get Listeners By Minute",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/listeners_per_minute"
+          "value": "Get Listeners By Minute"
         },
         {
           "name": "Get Countries",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/countries"
+          "value": "Get Countries"
         },
         {
           "name": "Get Countries By Continent",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/countries_continent"
+          "value": "Get Countries By Continent"
         },
         {
           "name": "Get Consumption",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/consumption"
+          "value": "Get Consumption"
         },
         {
           "name": "Get Total Consumption",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/total_consumption"
+          "value": "Get Total Consumption"
         },
         {
           "name": "Get Players",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/players"
+          "value": "Get Players"
         },
         {
           "name": "Get Total Players",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/total_players"
+          "value": "Get Total Players"
         },
         {
           "name": "Export Stats",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/export_csv"
+          "value": "Export Stats"
         },
         {
           "name": "Get Listeners",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/listeners"
+          "value": "Get Listeners (2)"
         },
         {
           "name": "Get Listeners By Minute",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/listeners_per_minute"
+          "value": "Get Listeners By Minute (2)"
         },
         {
           "name": "Get Countries",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/countries"
+          "value": "Get Countries (2)"
         },
         {
           "name": "Get Countries By Continent",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/countries_continent"
+          "value": "Get Countries By Continent (2)"
         },
         {
           "name": "Get Consumption",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/consumption"
+          "value": "Get Consumption (2)"
         },
         {
           "name": "Get Total Consumption",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/total_consumption"
+          "value": "Get Total Consumption (2)"
         },
         {
           "name": "Get Players",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/players"
+          "value": "Get Players (2)"
         },
         {
           "name": "Get Total Players",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/total_players"
+          "value": "Get Total Players (2)"
         },
         {
           "name": "Export Stats",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/export_csv"
+          "value": "Export Stats (2)"
         }
       ],
-      "default": "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/listeners",
+      "default": "Get Listeners",
       "noDataExpression": true
     },
     {
@@ -59846,7 +59846,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/listeners"
+            "Get Listeners"
           ]
         }
       },
@@ -59864,7 +59864,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/listeners"
+            "Get Listeners"
           ]
         }
       },
@@ -59882,7 +59882,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/listeners"
+            "Get Listeners"
           ]
         }
       },
@@ -59900,7 +59900,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/listeners"
+            "Get Listeners"
           ]
         }
       },
@@ -59917,7 +59917,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/listeners"
+            "Get Listeners"
           ]
         }
       },
@@ -59934,7 +59934,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/listeners_per_minute"
+            "Get Listeners By Minute"
           ]
         }
       },
@@ -59952,7 +59952,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/listeners_per_minute"
+            "Get Listeners By Minute"
           ]
         }
       },
@@ -59970,7 +59970,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/listeners_per_minute"
+            "Get Listeners By Minute"
           ]
         }
       },
@@ -59988,7 +59988,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/listeners_per_minute"
+            "Get Listeners By Minute"
           ]
         }
       },
@@ -60005,7 +60005,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/listeners_per_minute"
+            "Get Listeners By Minute"
           ]
         }
       },
@@ -60022,7 +60022,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/countries"
+            "Get Countries"
           ]
         }
       },
@@ -60040,7 +60040,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/countries"
+            "Get Countries"
           ]
         }
       },
@@ -60058,7 +60058,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/countries"
+            "Get Countries"
           ]
         }
       },
@@ -60076,7 +60076,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/countries"
+            "Get Countries"
           ]
         }
       },
@@ -60093,7 +60093,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/countries"
+            "Get Countries"
           ]
         }
       },
@@ -60110,7 +60110,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/countries_continent"
+            "Get Countries By Continent"
           ]
         }
       },
@@ -60128,7 +60128,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/countries_continent"
+            "Get Countries By Continent"
           ]
         }
       },
@@ -60146,7 +60146,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/countries_continent"
+            "Get Countries By Continent"
           ]
         }
       },
@@ -60164,7 +60164,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/countries_continent"
+            "Get Countries By Continent"
           ]
         }
       },
@@ -60181,7 +60181,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/countries_continent"
+            "Get Countries By Continent"
           ]
         }
       },
@@ -60198,7 +60198,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/consumption"
+            "Get Consumption"
           ]
         }
       },
@@ -60216,7 +60216,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/consumption"
+            "Get Consumption"
           ]
         }
       },
@@ -60234,7 +60234,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/consumption"
+            "Get Consumption"
           ]
         }
       },
@@ -60252,7 +60252,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/consumption"
+            "Get Consumption"
           ]
         }
       },
@@ -60269,7 +60269,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/consumption"
+            "Get Consumption"
           ]
         }
       },
@@ -60286,7 +60286,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/total_consumption"
+            "Get Total Consumption"
           ]
         }
       },
@@ -60304,7 +60304,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/total_consumption"
+            "Get Total Consumption"
           ]
         }
       },
@@ -60322,7 +60322,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/total_consumption"
+            "Get Total Consumption"
           ]
         }
       },
@@ -60340,7 +60340,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/total_consumption"
+            "Get Total Consumption"
           ]
         }
       },
@@ -60357,7 +60357,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/total_consumption"
+            "Get Total Consumption"
           ]
         }
       },
@@ -60374,7 +60374,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/players"
+            "Get Players"
           ]
         }
       },
@@ -60392,7 +60392,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/players"
+            "Get Players"
           ]
         }
       },
@@ -60410,7 +60410,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/players"
+            "Get Players"
           ]
         }
       },
@@ -60428,7 +60428,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/players"
+            "Get Players"
           ]
         }
       },
@@ -60445,7 +60445,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/players"
+            "Get Players"
           ]
         }
       },
@@ -60462,7 +60462,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/total_players"
+            "Get Total Players"
           ]
         }
       },
@@ -60480,7 +60480,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/total_players"
+            "Get Total Players"
           ]
         }
       },
@@ -60498,7 +60498,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/total_players"
+            "Get Total Players"
           ]
         }
       },
@@ -60516,7 +60516,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/total_players"
+            "Get Total Players"
           ]
         }
       },
@@ -60533,7 +60533,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/total_players"
+            "Get Total Players"
           ]
         }
       },
@@ -60550,7 +60550,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/export_csv"
+            "Export Stats"
           ]
         }
       },
@@ -60568,7 +60568,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/export_csv"
+            "Export Stats"
           ]
         }
       },
@@ -60586,7 +60586,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/export_csv"
+            "Export Stats"
           ]
         }
       },
@@ -60604,7 +60604,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/export_csv"
+            "Export Stats"
           ]
         }
       },
@@ -60643,7 +60643,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/export_csv"
+            "Export Stats"
           ]
         }
       },
@@ -60660,7 +60660,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/export_csv"
+            "Export Stats"
           ]
         }
       },
@@ -60678,7 +60678,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/export_csv"
+            "Export Stats"
           ]
         }
       },
@@ -62380,7 +62380,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/listeners"
+            "Get Listeners (2)"
           ]
         }
       },
@@ -62398,7 +62398,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/listeners"
+            "Get Listeners (2)"
           ]
         }
       },
@@ -62416,7 +62416,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/listeners"
+            "Get Listeners (2)"
           ]
         }
       },
@@ -62434,7 +62434,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/listeners"
+            "Get Listeners (2)"
           ]
         }
       },
@@ -62451,7 +62451,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/listeners"
+            "Get Listeners (2)"
           ]
         }
       },
@@ -62468,7 +62468,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/listeners_per_minute"
+            "Get Listeners By Minute (2)"
           ]
         }
       },
@@ -62486,7 +62486,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/listeners_per_minute"
+            "Get Listeners By Minute (2)"
           ]
         }
       },
@@ -62504,7 +62504,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/listeners_per_minute"
+            "Get Listeners By Minute (2)"
           ]
         }
       },
@@ -62522,7 +62522,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/listeners_per_minute"
+            "Get Listeners By Minute (2)"
           ]
         }
       },
@@ -62539,7 +62539,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/listeners_per_minute"
+            "Get Listeners By Minute (2)"
           ]
         }
       },
@@ -62556,7 +62556,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/countries"
+            "Get Countries (2)"
           ]
         }
       },
@@ -62574,7 +62574,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/countries"
+            "Get Countries (2)"
           ]
         }
       },
@@ -62592,7 +62592,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/countries"
+            "Get Countries (2)"
           ]
         }
       },
@@ -62610,7 +62610,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/countries"
+            "Get Countries (2)"
           ]
         }
       },
@@ -62627,7 +62627,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/countries"
+            "Get Countries (2)"
           ]
         }
       },
@@ -62644,7 +62644,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/countries_continent"
+            "Get Countries By Continent (2)"
           ]
         }
       },
@@ -62662,7 +62662,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/countries_continent"
+            "Get Countries By Continent (2)"
           ]
         }
       },
@@ -62680,7 +62680,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/countries_continent"
+            "Get Countries By Continent (2)"
           ]
         }
       },
@@ -62698,7 +62698,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/countries_continent"
+            "Get Countries By Continent (2)"
           ]
         }
       },
@@ -62715,7 +62715,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/countries_continent"
+            "Get Countries By Continent (2)"
           ]
         }
       },
@@ -62732,7 +62732,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/consumption"
+            "Get Consumption (2)"
           ]
         }
       },
@@ -62750,7 +62750,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/consumption"
+            "Get Consumption (2)"
           ]
         }
       },
@@ -62768,7 +62768,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/consumption"
+            "Get Consumption (2)"
           ]
         }
       },
@@ -62786,7 +62786,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/consumption"
+            "Get Consumption (2)"
           ]
         }
       },
@@ -62803,7 +62803,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/consumption"
+            "Get Consumption (2)"
           ]
         }
       },
@@ -62820,7 +62820,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/total_consumption"
+            "Get Total Consumption (2)"
           ]
         }
       },
@@ -62838,7 +62838,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/total_consumption"
+            "Get Total Consumption (2)"
           ]
         }
       },
@@ -62856,7 +62856,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/total_consumption"
+            "Get Total Consumption (2)"
           ]
         }
       },
@@ -62874,7 +62874,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/total_consumption"
+            "Get Total Consumption (2)"
           ]
         }
       },
@@ -62891,7 +62891,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/total_consumption"
+            "Get Total Consumption (2)"
           ]
         }
       },
@@ -62908,7 +62908,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/players"
+            "Get Players (2)"
           ]
         }
       },
@@ -62926,7 +62926,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/players"
+            "Get Players (2)"
           ]
         }
       },
@@ -62944,7 +62944,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/players"
+            "Get Players (2)"
           ]
         }
       },
@@ -62962,7 +62962,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/players"
+            "Get Players (2)"
           ]
         }
       },
@@ -62979,7 +62979,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/players"
+            "Get Players (2)"
           ]
         }
       },
@@ -62996,7 +62996,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/total_players"
+            "Get Total Players (2)"
           ]
         }
       },
@@ -63014,7 +63014,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/total_players"
+            "Get Total Players (2)"
           ]
         }
       },
@@ -63032,7 +63032,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/total_players"
+            "Get Total Players (2)"
           ]
         }
       },
@@ -63050,7 +63050,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/total_players"
+            "Get Total Players (2)"
           ]
         }
       },
@@ -63067,7 +63067,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/total_players"
+            "Get Total Players (2)"
           ]
         }
       },
@@ -63084,7 +63084,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/export_csv"
+            "Export Stats (2)"
           ]
         }
       },
@@ -63102,7 +63102,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/export_csv"
+            "Export Stats (2)"
           ]
         }
       },
@@ -63120,7 +63120,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/export_csv"
+            "Export Stats (2)"
           ]
         }
       },
@@ -63138,7 +63138,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/export_csv"
+            "Export Stats (2)"
           ]
         }
       },
@@ -63177,7 +63177,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/export_csv"
+            "Export Stats (2)"
           ]
         }
       },
@@ -63194,7 +63194,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/export_csv"
+            "Export Stats (2)"
           ]
         }
       },
@@ -63212,7 +63212,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Stats > Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/stats/export_csv"
+            "Export Stats (2)"
           ]
         }
       },
@@ -64917,134 +64917,134 @@ export class InfomaniakStreamingRadio implements INodeType {
       "options": [
         {
           "name": "Get Playlist With Stream URL",
-          "value": "GET /1/radios/streams/{stream_uuid}/playlist"
+          "value": "Get Playlist With Stream URL"
         },
         {
           "name": "Get Introduction File",
-          "value": "GET /1/radios/streams/{stream_uuid}/introduction-file"
+          "value": "Get Introduction File"
         },
         {
           "name": "Get Playlist With Legacy Parameters",
-          "value": "GET /1/radios/playlist/{any}"
+          "value": "Get Playlist With Legacy Parameters"
         },
         {
           "name": "List Streams",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/streams"
+          "value": "List Streams"
         },
         {
           "name": "Store Stream",
-          "value": "POST /1/radios/{radio_product_id}/stations/{station_id}/streams"
+          "value": "Store Stream"
         },
         {
           "name": "Get Stream",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}"
+          "value": "Get Stream"
         },
         {
           "name": "Update Stream",
-          "value": "PUT /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}"
+          "value": "Update Stream"
         },
         {
           "name": "Delete Stream",
-          "value": "DELETE /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}"
+          "value": "Delete Stream"
         },
         {
           "name": "Get Actual Bitrate",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/actual-bitrate"
+          "value": "Get Actual Bitrate"
         },
         {
           "name": "Get Introduction File",
-          "value": "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/introduction-file"
+          "value": "Get Introduction File (2)"
         },
         {
           "name": "Update Introduction File",
-          "value": "POST /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/introduction-file"
+          "value": "Update Introduction File"
         },
         {
           "name": "Delete Introduction File",
-          "value": "DELETE /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/introduction-file"
+          "value": "Delete Introduction File"
         },
         {
           "name": "Get Playlist With Stream URL",
-          "value": "GET /2/radios/streams/{stream_uuid}/playlist"
+          "value": "Get Playlist With Stream URL (2)"
         },
         {
           "name": "Get Introduction File",
-          "value": "GET /2/radios/streams/{stream_uuid}/introduction-file"
+          "value": "Get Introduction File (3)"
         },
         {
           "name": "Get Playlist With Legacy Parameters",
-          "value": "GET /2/radios/playlist/{any}"
+          "value": "Get Playlist With Legacy Parameters (2)"
         },
         {
           "name": "List Streams",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/streams"
+          "value": "List Streams (2)"
         },
         {
           "name": "Store Stream",
-          "value": "POST /2/radios/{radio_product_id}/stations/{station_id}/streams"
+          "value": "Store Stream (2)"
         },
         {
           "name": "Get Stream",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}"
+          "value": "Get Stream (2)"
         },
         {
           "name": "Update Stream",
-          "value": "PUT /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}"
+          "value": "Update Stream (2)"
         },
         {
           "name": "Delete Stream",
-          "value": "DELETE /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}"
+          "value": "Delete Stream (2)"
         },
         {
           "name": "Get Actual Bitrate",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/actual-bitrate"
+          "value": "Get Actual Bitrate (2)"
         },
         {
           "name": "Get Introduction File",
-          "value": "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/introduction-file"
+          "value": "Get Introduction File (4)"
         },
         {
           "name": "Update Introduction File",
-          "value": "POST /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/introduction-file"
+          "value": "Update Introduction File (2)"
         },
         {
           "name": "Delete Introduction File",
-          "value": "DELETE /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/introduction-file"
+          "value": "Delete Introduction File (2)"
         },
         {
           "name": "Mountpoint Is Available",
-          "value": "POST /1/radios/streams/available-mountpoint"
+          "value": "Mountpoint Is Available"
         },
         {
           "name": "Add Fallback Stream",
-          "value": "POST /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/add-fallback"
+          "value": "Add Fallback Stream"
         },
         {
           "name": "Remove Fallback Stream",
-          "value": "POST /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/remove-fallback"
+          "value": "Remove Fallback Stream"
         },
         {
           "name": "Mountpoint Is Available",
-          "value": "POST /2/radios/streams/available-mountpoint"
+          "value": "Mountpoint Is Available (2)"
         },
         {
           "name": "Add Fallback Stream",
-          "value": "POST /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/add-fallback"
+          "value": "Add Fallback Stream (2)"
         },
         {
           "name": "Remove Fallback Stream",
-          "value": "POST /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/remove-fallback"
+          "value": "Remove Fallback Stream (2)"
         },
         {
           "name": "Delete Stream And Unbind",
-          "value": "DELETE /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/unbind"
+          "value": "Delete Stream And Unbind"
         },
         {
           "name": "Delete Stream And Unbind",
-          "value": "DELETE /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/unbind"
+          "value": "Delete Stream And Unbind (2)"
         }
       ],
-      "default": "GET /1/radios/streams/{stream_uuid}/playlist",
+      "default": "Get Playlist With Stream URL",
       "noDataExpression": true
     },
     {
@@ -65058,7 +65058,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "GET /1/radios/streams/{stream_uuid}/playlist"
+            "Get Playlist With Stream URL"
           ]
         }
       },
@@ -65076,7 +65076,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "GET /1/radios/streams/{stream_uuid}/introduction-file"
+            "Get Introduction File"
           ]
         }
       },
@@ -65094,7 +65094,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "GET /1/radios/playlist/{any}"
+            "Get Playlist With Legacy Parameters"
           ]
         }
       },
@@ -65111,7 +65111,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams"
+            "List Streams"
           ]
         }
       },
@@ -65129,7 +65129,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams"
+            "List Streams"
           ]
         }
       },
@@ -65148,7 +65148,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams"
+            "List Streams"
           ]
         }
       },
@@ -65245,7 +65245,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/streams"
+            "Store Stream"
           ]
         }
       },
@@ -65263,7 +65263,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/streams"
+            "Store Stream"
           ]
         }
       },
@@ -65282,7 +65282,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/streams"
+            "Store Stream"
           ]
         }
       },
@@ -65372,7 +65372,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/streams"
+            "Store Stream"
           ]
         }
       },
@@ -65432,7 +65432,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/streams"
+            "Store Stream"
           ]
         }
       },
@@ -65468,7 +65468,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/streams"
+            "Store Stream"
           ]
         }
       },
@@ -65487,7 +65487,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/streams"
+            "Store Stream"
           ]
         }
       },
@@ -65610,7 +65610,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}"
+            "Get Stream"
           ]
         }
       },
@@ -65628,7 +65628,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}"
+            "Get Stream"
           ]
         }
       },
@@ -65646,7 +65646,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}"
+            "Get Stream"
           ]
         }
       },
@@ -65665,7 +65665,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}"
+            "Get Stream"
           ]
         }
       },
@@ -65690,7 +65690,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "PUT /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}"
+            "Update Stream"
           ]
         }
       },
@@ -65708,7 +65708,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "PUT /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}"
+            "Update Stream"
           ]
         }
       },
@@ -65726,7 +65726,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "PUT /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}"
+            "Update Stream"
           ]
         }
       },
@@ -65745,7 +65745,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "PUT /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}"
+            "Update Stream"
           ]
         }
       },
@@ -65956,7 +65956,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "DELETE /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}"
+            "Delete Stream"
           ]
         }
       },
@@ -65974,7 +65974,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "DELETE /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}"
+            "Delete Stream"
           ]
         }
       },
@@ -65992,7 +65992,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "DELETE /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}"
+            "Delete Stream"
           ]
         }
       },
@@ -66010,7 +66010,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "DELETE /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}"
+            "Delete Stream"
           ]
         }
       },
@@ -66027,7 +66027,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/actual-bitrate"
+            "Get Actual Bitrate"
           ]
         }
       },
@@ -66045,7 +66045,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/actual-bitrate"
+            "Get Actual Bitrate"
           ]
         }
       },
@@ -66063,7 +66063,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/actual-bitrate"
+            "Get Actual Bitrate"
           ]
         }
       },
@@ -66081,7 +66081,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/introduction-file"
+            "Get Introduction File (2)"
           ]
         }
       },
@@ -66099,7 +66099,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/introduction-file"
+            "Get Introduction File (2)"
           ]
         }
       },
@@ -66117,7 +66117,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/introduction-file"
+            "Get Introduction File (2)"
           ]
         }
       },
@@ -66135,7 +66135,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/introduction-file"
+            "Update Introduction File"
           ]
         }
       },
@@ -66153,7 +66153,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/introduction-file"
+            "Update Introduction File"
           ]
         }
       },
@@ -66171,7 +66171,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/introduction-file"
+            "Update Introduction File"
           ]
         }
       },
@@ -66189,7 +66189,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/introduction-file"
+            "Update Introduction File"
           ]
         }
       },
@@ -66207,7 +66207,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "DELETE /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/introduction-file"
+            "Delete Introduction File"
           ]
         }
       },
@@ -66225,7 +66225,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "DELETE /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/introduction-file"
+            "Delete Introduction File"
           ]
         }
       },
@@ -66243,7 +66243,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "DELETE /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/introduction-file"
+            "Delete Introduction File"
           ]
         }
       },
@@ -66261,7 +66261,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "GET /2/radios/streams/{stream_uuid}/playlist"
+            "Get Playlist With Stream URL (2)"
           ]
         }
       },
@@ -66279,7 +66279,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "GET /2/radios/streams/{stream_uuid}/introduction-file"
+            "Get Introduction File (3)"
           ]
         }
       },
@@ -66297,7 +66297,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "GET /2/radios/playlist/{any}"
+            "Get Playlist With Legacy Parameters (2)"
           ]
         }
       },
@@ -66314,7 +66314,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams"
+            "List Streams (2)"
           ]
         }
       },
@@ -66332,7 +66332,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams"
+            "List Streams (2)"
           ]
         }
       },
@@ -66351,7 +66351,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams"
+            "List Streams (2)"
           ]
         }
       },
@@ -66448,7 +66448,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/streams"
+            "Store Stream (2)"
           ]
         }
       },
@@ -66466,7 +66466,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/streams"
+            "Store Stream (2)"
           ]
         }
       },
@@ -66485,7 +66485,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/streams"
+            "Store Stream (2)"
           ]
         }
       },
@@ -66575,7 +66575,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/streams"
+            "Store Stream (2)"
           ]
         }
       },
@@ -66635,7 +66635,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/streams"
+            "Store Stream (2)"
           ]
         }
       },
@@ -66671,7 +66671,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/streams"
+            "Store Stream (2)"
           ]
         }
       },
@@ -66690,7 +66690,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/streams"
+            "Store Stream (2)"
           ]
         }
       },
@@ -66813,7 +66813,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}"
+            "Get Stream (2)"
           ]
         }
       },
@@ -66831,7 +66831,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}"
+            "Get Stream (2)"
           ]
         }
       },
@@ -66849,7 +66849,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}"
+            "Get Stream (2)"
           ]
         }
       },
@@ -66868,7 +66868,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}"
+            "Get Stream (2)"
           ]
         }
       },
@@ -66893,7 +66893,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "PUT /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}"
+            "Update Stream (2)"
           ]
         }
       },
@@ -66911,7 +66911,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "PUT /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}"
+            "Update Stream (2)"
           ]
         }
       },
@@ -66929,7 +66929,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "PUT /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}"
+            "Update Stream (2)"
           ]
         }
       },
@@ -66948,7 +66948,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "PUT /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}"
+            "Update Stream (2)"
           ]
         }
       },
@@ -67159,7 +67159,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "DELETE /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}"
+            "Delete Stream (2)"
           ]
         }
       },
@@ -67177,7 +67177,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "DELETE /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}"
+            "Delete Stream (2)"
           ]
         }
       },
@@ -67195,7 +67195,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "DELETE /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}"
+            "Delete Stream (2)"
           ]
         }
       },
@@ -67213,7 +67213,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "DELETE /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}"
+            "Delete Stream (2)"
           ]
         }
       },
@@ -67230,7 +67230,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/actual-bitrate"
+            "Get Actual Bitrate (2)"
           ]
         }
       },
@@ -67248,7 +67248,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/actual-bitrate"
+            "Get Actual Bitrate (2)"
           ]
         }
       },
@@ -67266,7 +67266,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/actual-bitrate"
+            "Get Actual Bitrate (2)"
           ]
         }
       },
@@ -67284,7 +67284,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/introduction-file"
+            "Get Introduction File (4)"
           ]
         }
       },
@@ -67302,7 +67302,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/introduction-file"
+            "Get Introduction File (4)"
           ]
         }
       },
@@ -67320,7 +67320,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/introduction-file"
+            "Get Introduction File (4)"
           ]
         }
       },
@@ -67338,7 +67338,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/introduction-file"
+            "Update Introduction File (2)"
           ]
         }
       },
@@ -67356,7 +67356,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/introduction-file"
+            "Update Introduction File (2)"
           ]
         }
       },
@@ -67374,7 +67374,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/introduction-file"
+            "Update Introduction File (2)"
           ]
         }
       },
@@ -67392,7 +67392,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/introduction-file"
+            "Update Introduction File (2)"
           ]
         }
       },
@@ -67410,7 +67410,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "DELETE /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/introduction-file"
+            "Delete Introduction File (2)"
           ]
         }
       },
@@ -67428,7 +67428,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "DELETE /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/introduction-file"
+            "Delete Introduction File (2)"
           ]
         }
       },
@@ -67446,7 +67446,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "DELETE /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/introduction-file"
+            "Delete Introduction File (2)"
           ]
         }
       },
@@ -67464,7 +67464,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "POST /1/radios/streams/available-mountpoint"
+            "Mountpoint Is Available"
           ]
         }
       },
@@ -67482,7 +67482,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/add-fallback"
+            "Add Fallback Stream"
           ]
         }
       },
@@ -67500,7 +67500,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/add-fallback"
+            "Add Fallback Stream"
           ]
         }
       },
@@ -67518,7 +67518,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/add-fallback"
+            "Add Fallback Stream"
           ]
         }
       },
@@ -67536,7 +67536,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/remove-fallback"
+            "Remove Fallback Stream"
           ]
         }
       },
@@ -67554,7 +67554,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/remove-fallback"
+            "Remove Fallback Stream"
           ]
         }
       },
@@ -67572,7 +67572,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/remove-fallback"
+            "Remove Fallback Stream"
           ]
         }
       },
@@ -67590,7 +67590,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "POST /2/radios/streams/available-mountpoint"
+            "Mountpoint Is Available (2)"
           ]
         }
       },
@@ -67608,7 +67608,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/add-fallback"
+            "Add Fallback Stream (2)"
           ]
         }
       },
@@ -67626,7 +67626,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/add-fallback"
+            "Add Fallback Stream (2)"
           ]
         }
       },
@@ -67644,7 +67644,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/add-fallback"
+            "Add Fallback Stream (2)"
           ]
         }
       },
@@ -67662,7 +67662,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/remove-fallback"
+            "Remove Fallback Stream (2)"
           ]
         }
       },
@@ -67680,7 +67680,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/remove-fallback"
+            "Remove Fallback Stream (2)"
           ]
         }
       },
@@ -67698,7 +67698,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/remove-fallback"
+            "Remove Fallback Stream (2)"
           ]
         }
       },
@@ -67716,7 +67716,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "DELETE /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/unbind"
+            "Delete Stream And Unbind"
           ]
         }
       },
@@ -67734,7 +67734,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "DELETE /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/unbind"
+            "Delete Stream And Unbind"
           ]
         }
       },
@@ -67752,7 +67752,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "DELETE /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/unbind"
+            "Delete Stream And Unbind"
           ]
         }
       },
@@ -67770,7 +67770,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "DELETE /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/unbind"
+            "Delete Stream And Unbind"
           ]
         }
       },
@@ -67787,7 +67787,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "DELETE /1/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/unbind"
+            "Delete Stream And Unbind"
           ]
         }
       },
@@ -67804,7 +67804,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "DELETE /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/unbind"
+            "Delete Stream And Unbind (2)"
           ]
         }
       },
@@ -67822,7 +67822,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "DELETE /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/unbind"
+            "Delete Stream And Unbind (2)"
           ]
         }
       },
@@ -67840,7 +67840,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "DELETE /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/unbind"
+            "Delete Stream And Unbind (2)"
           ]
         }
       },
@@ -67858,7 +67858,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "DELETE /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/unbind"
+            "Delete Stream And Unbind (2)"
           ]
         }
       },
@@ -67875,7 +67875,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "DELETE /2/radios/{radio_product_id}/stations/{station_id}/streams/{stream_id}/unbind"
+            "Delete Stream And Unbind (2)"
           ]
         }
       },
@@ -67895,38 +67895,38 @@ export class InfomaniakStreamingRadio implements INodeType {
       "options": [
         {
           "name": "Add Transcoded Stream",
-          "value": "POST /1/radios/{radio_product_id}/stations/{station_id}/transcoding/add"
+          "value": "Add Transcoded Stream"
         },
         {
           "name": "Unbind Transcoded Stream",
-          "value": "POST /1/radios/{radio_product_id}/stations/{station_id}/transcoding/{stream_id}/unbind"
+          "value": "Unbind Transcoded Stream"
         },
         {
           "name": "Add Transcoded Stream",
-          "value": "POST /2/radios/{radio_product_id}/stations/{station_id}/transcoding/add"
+          "value": "Add Transcoded Stream (2)"
         },
         {
           "name": "Unbind Transcoded Stream",
-          "value": "POST /2/radios/{radio_product_id}/stations/{station_id}/transcoding/{stream_id}/unbind"
+          "value": "Unbind Transcoded Stream (2)"
         },
         {
           "name": "Delete Transcoding",
-          "value": "DELETE /1/radios/{radio_product_id}/stations/{station_id}/transcoding"
+          "value": "Delete Transcoding"
         },
         {
           "name": "Remove Transcoded Stream",
-          "value": "DELETE /1/radios/{radio_product_id}/stations/{station_id}/transcoding/{stream_id}"
+          "value": "Remove Transcoded Stream"
         },
         {
           "name": "Delete Transcoding",
-          "value": "DELETE /2/radios/{radio_product_id}/stations/{station_id}/transcoding"
+          "value": "Delete Transcoding (2)"
         },
         {
           "name": "Remove Transcoded Stream",
-          "value": "DELETE /2/radios/{radio_product_id}/stations/{station_id}/transcoding/{stream_id}"
+          "value": "Remove Transcoded Stream (2)"
         }
       ],
-      "default": "POST /1/radios/{radio_product_id}/stations/{station_id}/transcoding/add",
+      "default": "Add Transcoded Stream",
       "noDataExpression": true
     },
     {
@@ -67940,7 +67940,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Transcodings"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/transcoding/add"
+            "Add Transcoded Stream"
           ]
         }
       },
@@ -67958,7 +67958,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Transcodings"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/transcoding/add"
+            "Add Transcoded Stream"
           ]
         }
       },
@@ -67976,7 +67976,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Transcodings"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/transcoding/add"
+            "Add Transcoded Stream"
           ]
         }
       },
@@ -68036,7 +68036,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Transcodings"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/transcoding/add"
+            "Add Transcoded Stream"
           ]
         }
       },
@@ -68072,7 +68072,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Transcodings"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/transcoding/{stream_id}/unbind"
+            "Unbind Transcoded Stream"
           ]
         }
       },
@@ -68090,7 +68090,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Transcodings"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/transcoding/{stream_id}/unbind"
+            "Unbind Transcoded Stream"
           ]
         }
       },
@@ -68108,7 +68108,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Transcodings"
           ],
           "operation": [
-            "POST /1/radios/{radio_product_id}/stations/{station_id}/transcoding/{stream_id}/unbind"
+            "Unbind Transcoded Stream"
           ]
         }
       },
@@ -68126,7 +68126,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Transcodings"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/transcoding/add"
+            "Add Transcoded Stream (2)"
           ]
         }
       },
@@ -68144,7 +68144,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Transcodings"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/transcoding/add"
+            "Add Transcoded Stream (2)"
           ]
         }
       },
@@ -68162,7 +68162,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Transcodings"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/transcoding/add"
+            "Add Transcoded Stream (2)"
           ]
         }
       },
@@ -68222,7 +68222,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Transcodings"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/transcoding/add"
+            "Add Transcoded Stream (2)"
           ]
         }
       },
@@ -68258,7 +68258,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Transcodings"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/transcoding/{stream_id}/unbind"
+            "Unbind Transcoded Stream (2)"
           ]
         }
       },
@@ -68276,7 +68276,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Transcodings"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/transcoding/{stream_id}/unbind"
+            "Unbind Transcoded Stream (2)"
           ]
         }
       },
@@ -68294,7 +68294,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Transcodings"
           ],
           "operation": [
-            "POST /2/radios/{radio_product_id}/stations/{station_id}/transcoding/{stream_id}/unbind"
+            "Unbind Transcoded Stream (2)"
           ]
         }
       },
@@ -68312,7 +68312,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Transcodings"
           ],
           "operation": [
-            "DELETE /1/radios/{radio_product_id}/stations/{station_id}/transcoding"
+            "Delete Transcoding"
           ]
         }
       },
@@ -68330,7 +68330,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Transcodings"
           ],
           "operation": [
-            "DELETE /1/radios/{radio_product_id}/stations/{station_id}/transcoding"
+            "Delete Transcoding"
           ]
         }
       },
@@ -68348,7 +68348,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Transcodings"
           ],
           "operation": [
-            "DELETE /1/radios/{radio_product_id}/stations/{station_id}/transcoding/{stream_id}"
+            "Remove Transcoded Stream"
           ]
         }
       },
@@ -68366,7 +68366,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Transcodings"
           ],
           "operation": [
-            "DELETE /1/radios/{radio_product_id}/stations/{station_id}/transcoding/{stream_id}"
+            "Remove Transcoded Stream"
           ]
         }
       },
@@ -68384,7 +68384,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Transcodings"
           ],
           "operation": [
-            "DELETE /1/radios/{radio_product_id}/stations/{station_id}/transcoding/{stream_id}"
+            "Remove Transcoded Stream"
           ]
         }
       },
@@ -68402,7 +68402,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Transcodings"
           ],
           "operation": [
-            "DELETE /2/radios/{radio_product_id}/stations/{station_id}/transcoding"
+            "Delete Transcoding (2)"
           ]
         }
       },
@@ -68420,7 +68420,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Transcodings"
           ],
           "operation": [
-            "DELETE /2/radios/{radio_product_id}/stations/{station_id}/transcoding"
+            "Delete Transcoding (2)"
           ]
         }
       },
@@ -68438,7 +68438,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Transcodings"
           ],
           "operation": [
-            "DELETE /2/radios/{radio_product_id}/stations/{station_id}/transcoding/{stream_id}"
+            "Remove Transcoded Stream (2)"
           ]
         }
       },
@@ -68456,7 +68456,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Transcodings"
           ],
           "operation": [
-            "DELETE /2/radios/{radio_product_id}/stations/{station_id}/transcoding/{stream_id}"
+            "Remove Transcoded Stream (2)"
           ]
         }
       },
@@ -68474,7 +68474,7 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Transcodings"
           ],
           "operation": [
-            "DELETE /2/radios/{radio_product_id}/stations/{station_id}/transcoding/{stream_id}"
+            "Remove Transcoded Stream (2)"
           ]
         }
       },
@@ -68515,30 +68515,30 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/encoder_events",
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/encoder_events",
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream",
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream",
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/mediapulse/report",
-            "GET /1/radios/{radio_product_id}/mediapulse/report",
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/mediapulse/report",
-            "GET /2/radios/{radio_product_id}/mediapulse/report",
-            "GET /1/radios/options",
-            "GET /2/radios/options",
-            "GET /1/radios/packs",
-            "GET /2/radios/packs",
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/players",
-            "GET /1/radios/{radio_product_id}/players",
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/players",
-            "GET /2/radios/{radio_product_id}/players",
-            "GET /1/radios",
-            "GET /2/radios",
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/server_events",
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/server_events",
-            "GET /1/radios/{radio_product_id}/stations",
-            "GET /2/radios/{radio_product_id}/stations",
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams",
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams"
+            "List Encoder Events",
+            "List Encoder Events (2)",
+            "Get Hls Stream",
+            "Get Hls Stream (2)",
+            "Generate A Report For Export Mediapulse Log On A Station",
+            "Generate A Report For Export Mediapulse Log With Stations In Product",
+            "Generate A Report For Export Mediapulse Log On A Station (2)",
+            "Generate A Report For Export Mediapulse Log With Stations In Product (2)",
+            "List Options",
+            "List Options (2)",
+            "List Packs",
+            "List Packs (2)",
+            "List Station Players",
+            "List Product Players",
+            "List Station Players (2)",
+            "List Product Players (2)",
+            "List Products",
+            "List Products (2)",
+            "List Server Events",
+            "List Server Events (2)",
+            "List Stations",
+            "List Stations (2)",
+            "List Streams",
+            "List Streams (2)"
           ]
         }
       }
@@ -68581,30 +68581,30 @@ export class InfomaniakStreamingRadio implements INodeType {
             "Streams"
           ],
           "operation": [
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/encoder_events",
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/encoder_events",
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/hls_stream",
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/hls_stream",
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/mediapulse/report",
-            "GET /1/radios/{radio_product_id}/mediapulse/report",
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/mediapulse/report",
-            "GET /2/radios/{radio_product_id}/mediapulse/report",
-            "GET /1/radios/options",
-            "GET /2/radios/options",
-            "GET /1/radios/packs",
-            "GET /2/radios/packs",
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/players",
-            "GET /1/radios/{radio_product_id}/players",
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/players",
-            "GET /2/radios/{radio_product_id}/players",
-            "GET /1/radios",
-            "GET /2/radios",
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/server_events",
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/server_events",
-            "GET /1/radios/{radio_product_id}/stations",
-            "GET /2/radios/{radio_product_id}/stations",
-            "GET /1/radios/{radio_product_id}/stations/{station_id}/streams",
-            "GET /2/radios/{radio_product_id}/stations/{station_id}/streams"
+            "List Encoder Events",
+            "List Encoder Events (2)",
+            "Get Hls Stream",
+            "Get Hls Stream (2)",
+            "Generate A Report For Export Mediapulse Log On A Station",
+            "Generate A Report For Export Mediapulse Log With Stations In Product",
+            "Generate A Report For Export Mediapulse Log On A Station (2)",
+            "Generate A Report For Export Mediapulse Log With Stations In Product (2)",
+            "List Options",
+            "List Options (2)",
+            "List Packs",
+            "List Packs (2)",
+            "List Station Players",
+            "List Product Players",
+            "List Station Players (2)",
+            "List Product Players (2)",
+            "List Products",
+            "List Products (2)",
+            "List Server Events",
+            "List Server Events (2)",
+            "List Stations",
+            "List Stations (2)",
+            "List Streams",
+            "List Streams (2)"
           ],
           "returnAll": [
             false

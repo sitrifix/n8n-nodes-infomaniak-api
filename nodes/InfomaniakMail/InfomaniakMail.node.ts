@@ -15,8 +15,8 @@ type OperationDefinition = {
 };
 
 const operations: Record<string, Record<string, OperationDefinition>> = {
-  "Mailbox management": {
-    "GET /1/mail_hostings/{mail_hosting_id}/mailboxes": {
+  "Mailbox Management": {
+    "List Mailboxes": {
       "method": "GET",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes",
       "pagination": "limit-skip",
@@ -32,7 +32,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/mail_hostings/{mail_hosting_id}/mailboxes": {
+    "Add A Mailbox": {
       "method": "POST",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes",
       "pagination": "none",
@@ -77,7 +77,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}": {
+    "Display A Mailbox": {
       "method": "GET",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}",
       "pagination": "none",
@@ -99,7 +99,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Mailboxes": {
-    "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/request_reset_password": {
+    "Request Password Reset": {
       "method": "POST",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/request_reset_password",
       "pagination": "none",
@@ -136,7 +136,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/ask_password": {
+    "Ask Password To Admin.": {
       "method": "POST",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/ask_password",
       "pagination": "none",
@@ -158,7 +158,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Mailboxes > Accesses > Devices": {
-    "GET /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/devices": {
+    "List Device Access": {
       "method": "GET",
       "path": "/1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/devices",
       "pagination": "page-per-page",
@@ -178,7 +178,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/devices": {
+    "Create Device Access": {
       "method": "POST",
       "path": "/1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/devices",
       "pagination": "none",
@@ -223,7 +223,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/devices": {
+    "Delete Device Accesses For Mailbox": {
       "method": "DELETE",
       "path": "/1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/devices",
       "pagination": "none",
@@ -243,7 +243,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/devices/{device_access}": {
+    "Regenerate Password Device Access": {
       "method": "POST",
       "path": "/1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/devices/{device_access}",
       "pagination": "none",
@@ -267,7 +267,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/devices/{device_access}": {
+    "Delete Device Access": {
       "method": "DELETE",
       "path": "/1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/devices/{device_access}",
       "pagination": "none",
@@ -291,7 +291,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/devices/users/{user_id}": {
+    "List Device Access For A User": {
       "method": "GET",
       "path": "/1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/devices/users/{user_id}",
       "pagination": "page-per-page",
@@ -315,7 +315,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/devices/users/{user_id}": {
+    "Delete Device Access For A User": {
       "method": "DELETE",
       "path": "/1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/devices/users/{user_id}",
       "pagination": "none",
@@ -339,7 +339,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/mail_hostings/{service_mail}/accesses/devices/users/{user_id}": {
+    "List Device By User": {
       "method": "GET",
       "path": "/1/mail_hostings/{service_mail}/accesses/devices/users/{user_id}",
       "pagination": "page-per-page",
@@ -359,7 +359,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/mail_hostings/accesses/devices": {
+    "List Device": {
       "method": "GET",
       "path": "/1/mail_hostings/accesses/devices",
       "pagination": "page-per-page",
@@ -370,7 +370,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/mail_hostings/accesses/devices": {
+    "Delete Devices For Current User": {
       "method": "DELETE",
       "path": "/1/mail_hostings/accesses/devices",
       "pagination": "none",
@@ -381,7 +381,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PATCH /1/mail_hostings/accesses/devices/{device}": {
+    "Update Device": {
       "method": "PATCH",
       "path": "/1/mail_hostings/accesses/devices/{device}",
       "pagination": "none",
@@ -402,7 +402,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/mail_hostings/accesses/devices/{device}": {
+    "Delete Device Accesses For Device": {
       "method": "DELETE",
       "path": "/1/mail_hostings/accesses/devices/{device}",
       "pagination": "none",
@@ -420,7 +420,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Mailboxes > Accesses > Invitations": {
-    "POST /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail/invitations": {
+    "Create Webmail Access Link": {
       "method": "POST",
       "path": "/1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail/invitations",
       "pagination": "none",
@@ -461,7 +461,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "POST /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail/invitations/{invitation_webmail}/send": {
+    "Send Webmail Access Link By E Mail": {
       "method": "POST",
       "path": "/1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail/invitations/{invitation_webmail}/send",
       "pagination": "none",
@@ -496,7 +496,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Mailboxes > Accesses > Webmail": {
-    "GET /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail": {
+    "List User Access And Invitations": {
       "method": "GET",
       "path": "/1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail",
       "pagination": "page-per-page",
@@ -516,7 +516,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail": {
+    "Create Webmail Access": {
       "method": "POST",
       "path": "/1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail",
       "pagination": "none",
@@ -545,7 +545,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "POST /1/mail_hostings/accesses/webmail/mailboxes/{mailbox_id}/set_primary": {
+    "Set The Primary Mailbox For The Authenticated User": {
       "method": "POST",
       "path": "/1/mail_hostings/accesses/webmail/mailboxes/{mailbox_id}/set_primary",
       "pagination": "none",
@@ -561,7 +561,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail/users": {
+    "List Users Having Access": {
       "method": "GET",
       "path": "/1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail/users",
       "pagination": "page-per-page",
@@ -581,7 +581,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/mail_hostings/accesses/webmail": {
+    "List Of User Accesses For The Current User": {
       "method": "GET",
       "path": "/1/mail_hostings/accesses/webmail",
       "pagination": "page-per-page",
@@ -592,7 +592,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/mail_hostings/accesses/webmail/accounts/{account_id}/users/{user_id}": {
+    "List Of User Accesses For A Account And A User": {
       "method": "GET",
       "path": "/1/mail_hostings/accesses/webmail/accounts/{account_id}/users/{user_id}",
       "pagination": "page-per-page",
@@ -612,7 +612,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PATCH /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail/users/{user_id}": {
+    "Update Webmail Access": {
       "method": "PATCH",
       "path": "/1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail/users/{user_id}",
       "pagination": "none",
@@ -641,7 +641,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail/users/{user_id}": {
+    "Delete Webmail Access": {
       "method": "DELETE",
       "path": "/1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail/users/{user_id}",
       "pagination": "none",
@@ -665,7 +665,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/mail_hostings/accesses/webmail/mailboxes/{mailbox_id}": {
+    "Delete Access To A Mailbox For The Current User": {
       "method": "DELETE",
       "path": "/1/mail_hostings/accesses/webmail/mailboxes/{mailbox_id}",
       "pagination": "none",
@@ -683,7 +683,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Mailboxes > Aliases": {
-    "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/aliases": {
+    "List Aliases": {
       "method": "GET",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/aliases",
       "pagination": "none",
@@ -703,7 +703,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/aliases": {
+    "Add An Alias": {
       "method": "POST",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/aliases",
       "pagination": "none",
@@ -728,7 +728,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/aliases": {
+    "Update Aliases": {
       "method": "PUT",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/aliases",
       "pagination": "none",
@@ -753,7 +753,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/aliases/{alias}": {
+    "Delete An Alias": {
       "method": "DELETE",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/aliases/{alias}",
       "pagination": "none",
@@ -778,8 +778,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "bodyFieldName": null
     }
   },
-  "Mailboxes > Auto reply": {
-    "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auto_reply/model": {
+  "Mailboxes > Auto Reply": {
+    "List Auto Replies Models": {
       "method": "GET",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auto_reply/model",
       "pagination": "none",
@@ -799,7 +799,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auto_reply/model": {
+    "Add Auto Reply Model": {
       "method": "POST",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auto_reply/model",
       "pagination": "none",
@@ -852,7 +852,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auto_reply/reset": {
+    "Reset An Auto Reply": {
       "method": "PUT",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auto_reply/reset",
       "pagination": "none",
@@ -872,7 +872,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auto_reply/model/{model_id}": {
+    "Show Auto Reply Model": {
       "method": "GET",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auto_reply/model/{model_id}",
       "pagination": "none",
@@ -896,7 +896,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PATCH /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auto_reply/model/{model_id}": {
+    "Update Auto Reply Model": {
       "method": "PATCH",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auto_reply/model/{model_id}",
       "pagination": "none",
@@ -961,7 +961,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auto_reply/model/{model_id}": {
+    "Update Auto Reply Model (2)": {
       "method": "DELETE",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auto_reply/model/{model_id}",
       "pagination": "none",
@@ -987,7 +987,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Mailboxes > Folders": {
-    "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/folders": {
+    "List Folders": {
       "method": "GET",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/folders",
       "pagination": "none",
@@ -1007,7 +1007,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/folders": {
+    "Update Folders": {
       "method": "PUT",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/folders",
       "pagination": "none",
@@ -1056,7 +1056,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/folders/spam": {
+    "Purge Spam Folder": {
       "method": "DELETE",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/folders/spam",
       "pagination": "none",
@@ -1076,7 +1076,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/folders/trash": {
+    "Empty Trash Folder": {
       "method": "DELETE",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/folders/trash",
       "pagination": "none",
@@ -1098,7 +1098,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Mailboxes > Forwarding": {
-    "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/forwarding_addresses": {
+    "List Forwarding": {
       "method": "GET",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/forwarding_addresses",
       "pagination": "none",
@@ -1118,7 +1118,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/forwarding_addresses": {
+    "Add A Forwarding": {
       "method": "POST",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/forwarding_addresses",
       "pagination": "none",
@@ -1143,7 +1143,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/forwarding_addresses": {
+    "Update A Forwarding": {
       "method": "PUT",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/forwarding_addresses",
       "pagination": "none",
@@ -1180,7 +1180,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/forwarding_addresses": {
+    "Delete All Forwardings": {
       "method": "DELETE",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/forwarding_addresses",
       "pagination": "none",
@@ -1200,7 +1200,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/forwarding_addresses/{redirect_addresses}": {
+    "Delete A Forwarding": {
       "method": "DELETE",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/forwarding_addresses/{redirect_addresses}",
       "pagination": "none",
@@ -1225,8 +1225,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "bodyFieldName": null
     }
   },
-  "Mailboxes > Sieve filters": {
-    "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/set_activation": {
+  "Mailboxes > Sieve Filters": {
+    "Enable / Disable Filter": {
       "method": "PUT",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/set_activation",
       "pagination": "none",
@@ -1255,7 +1255,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/reorder": {
+    "Reorder Filters": {
       "method": "PUT",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/reorder",
       "pagination": "none",
@@ -1280,7 +1280,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters": {
+    "List Filters": {
       "method": "GET",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters",
       "pagination": "none",
@@ -1300,7 +1300,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters": {
+    "Add A Filter": {
       "method": "POST",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters",
       "pagination": "none",
@@ -1345,7 +1345,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "PATCH /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters": {
+    "Update A Filter": {
       "method": "PATCH",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters",
       "pagination": "none",
@@ -1394,7 +1394,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters": {
+    "Delete A Filter": {
       "method": "DELETE",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters",
       "pagination": "none",
@@ -1419,7 +1419,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/scripts": {
+    "Add A Script": {
       "method": "POST",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/scripts",
       "pagination": "none",
@@ -1452,7 +1452,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "PATCH /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/scripts": {
+    "Update A Script": {
       "method": "PATCH",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/scripts",
       "pagination": "none",
@@ -1489,7 +1489,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/scripts": {
+    "Delete A Script": {
       "method": "DELETE",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/scripts",
       "pagination": "none",
@@ -1514,7 +1514,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/scripts/set_activation": {
+    "Enable / Disable Script": {
       "method": "PUT",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/scripts/set_activation",
       "pagination": "none",
@@ -1543,7 +1543,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/scripts/import": {
+    "Import .siv File": {
       "method": "PUT",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/scripts/import",
       "pagination": "none",
@@ -1574,7 +1574,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Mailboxes > Signatures": {
-    "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures/set_defaults": {
+    "Set Default Signature": {
       "method": "POST",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures/set_defaults",
       "pagination": "none",
@@ -1603,7 +1603,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures": {
+    "List All Signatures": {
       "method": "GET",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures",
       "pagination": "none",
@@ -1623,7 +1623,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures": {
+    "Create Signature": {
       "method": "POST",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures",
       "pagination": "none",
@@ -1692,7 +1692,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures/upload": {
+    "Upload Image": {
       "method": "POST",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures/upload",
       "pagination": "none",
@@ -1717,7 +1717,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures/templates": {
+    "List Templates": {
       "method": "GET",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures/templates",
       "pagination": "none",
@@ -1737,7 +1737,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures/templates/{signature_template}": {
+    "Show One Template": {
       "method": "GET",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures/templates/{signature_template}",
       "pagination": "none",
@@ -1761,7 +1761,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures/{signature}": {
+    "Show A Signature": {
       "method": "GET",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures/{signature}",
       "pagination": "none",
@@ -1785,7 +1785,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PATCH /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures/{signature}": {
+    "Update A Specific Signature": {
       "method": "PATCH",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures/{signature}",
       "pagination": "none",
@@ -1854,7 +1854,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures/{signature}": {
+    "Delete A Signature": {
       "method": "DELETE",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures/{signature}",
       "pagination": "none",
@@ -1880,7 +1880,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Mailboxes > Users": {
-    "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/invitations": {
+    "Add An Invitation": {
       "method": "POST",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/invitations",
       "pagination": "none",
@@ -1925,7 +1925,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/users": {
+    "List Users": {
       "method": "GET",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/users",
       "pagination": "none",
@@ -1945,7 +1945,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/invitations": {
+    "List User Invitations": {
       "method": "GET",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/invitations",
       "pagination": "none",
@@ -1965,7 +1965,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/invitations/send": {
+    "Send An Invitation": {
       "method": "PUT",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/invitations/send",
       "pagination": "none",
@@ -2018,7 +2018,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "PATCH /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/users/{user_id}": {
+    "Update User Permission": {
       "method": "PATCH",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/users/{user_id}",
       "pagination": "none",
@@ -2047,7 +2047,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/users/{user_id}": {
+    "Remove A User": {
       "method": "DELETE",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/users/{user_id}",
       "pagination": "none",
@@ -2071,7 +2071,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PATCH /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/invitations/{key}": {
+    "Update Invitation Permission": {
       "method": "PATCH",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/invitations/{key}",
       "pagination": "none",
@@ -2104,7 +2104,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/invitations/{key}": {
+    "Delete An Invitation": {
       "method": "DELETE",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/invitations/{key}",
       "pagination": "none",
@@ -2130,7 +2130,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Mailing List": {
-    "GET /1/mail_hostings/{mail_hosting_id}/mailing_lists": {
+    "List All The Mailing Lists": {
       "method": "GET",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailing_lists",
       "pagination": "none",
@@ -2146,7 +2146,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/mail_hostings/{mail_hosting_id}/mailing_lists": {
+    "Create A Mailing List": {
       "method": "POST",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailing_lists",
       "pagination": "none",
@@ -2215,7 +2215,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}": {
+    "Show One Mailing List": {
       "method": "GET",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}",
       "pagination": "none",
@@ -2235,7 +2235,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PATCH /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}": {
+    "Update Mailing List Parameters": {
       "method": "PATCH",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}",
       "pagination": "none",
@@ -2304,7 +2304,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}": {
+    "Delete A Mailing List": {
       "method": "DELETE",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}",
       "pagination": "none",
@@ -2324,7 +2324,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/send": {
+    "Send A Mail Through A Mailing List": {
       "method": "PUT",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/send",
       "pagination": "none",
@@ -2357,7 +2357,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/form": {
+    "Generate A Form For A Mailing List": {
       "method": "PUT",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/form",
       "pagination": "none",
@@ -2396,7 +2396,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Mailing List > Subscribers": {
-    "GET /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/subscribers": {
+    "All Subscribers": {
       "method": "GET",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/subscribers",
       "pagination": "page-per-page",
@@ -2416,7 +2416,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/subscribers": {
+    "Add A New Subscriber": {
       "method": "POST",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/subscribers",
       "pagination": "none",
@@ -2441,7 +2441,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PATCH /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/subscribers": {
+    "Update Subscriber Parameters/details": {
       "method": "PATCH",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/subscribers",
       "pagination": "none",
@@ -2470,7 +2470,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/subscribers": {
+    "Remove A Subscriber": {
       "method": "DELETE",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/subscribers",
       "pagination": "none",
@@ -2495,7 +2495,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "POST /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/subscribers/import": {
+    "Import Subscribers": {
       "method": "POST",
       "path": "/1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/subscribers/import",
       "pagination": "none",
@@ -2522,7 +2522,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Service Mail > Auto Reply": {
-    "GET /1/mail_hostings/{mail_hosting_id}/auto_replies": {
+    "List Auto Replies": {
       "method": "GET",
       "path": "/1/mail_hostings/{mail_hosting_id}/auto_replies",
       "pagination": "none",
@@ -2538,7 +2538,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/mail_hostings/{mail_hosting_id}/auto_replies": {
+    "Create Auto Reply": {
       "method": "POST",
       "path": "/1/mail_hostings/{mail_hosting_id}/auto_replies",
       "pagination": "none",
@@ -2587,7 +2587,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /1/mail_hostings/{mail_hosting_id}/auto_replies/{auto_reply_id}": {
+    "Show A Specific Auto Reply": {
       "method": "GET",
       "path": "/1/mail_hostings/{mail_hosting_id}/auto_replies/{auto_reply_id}",
       "pagination": "none",
@@ -2607,7 +2607,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PATCH /1/mail_hostings/{mail_hosting_id}/auto_replies/{auto_reply_id}": {
+    "Update Auto Reply": {
       "method": "PATCH",
       "path": "/1/mail_hostings/{mail_hosting_id}/auto_replies/{auto_reply_id}",
       "pagination": "none",
@@ -2660,7 +2660,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/mail_hostings/{mail_hosting_id}/auto_replies/{auto_reply_id}": {
+    "Delete Auto Reply": {
       "method": "DELETE",
       "path": "/1/mail_hostings/{mail_hosting_id}/auto_replies/{auto_reply_id}",
       "pagination": "none",
@@ -2682,7 +2682,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Service Mail > Bimi": {
-    "POST /1/mail_hostings/{mail_hosting_id}/bimi": {
+    "Create/Update Bimi": {
       "method": "POST",
       "path": "/1/mail_hostings/{mail_hosting_id}/bimi",
       "pagination": "none",
@@ -2717,7 +2717,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Service Mail > Filters Models": {
-    "GET /1/mail_hostings/{mail_hosting_id}/filters": {
+    "List Filters Model": {
       "method": "GET",
       "path": "/1/mail_hostings/{mail_hosting_id}/filters",
       "pagination": "none",
@@ -2733,7 +2733,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/mail_hostings/{mail_hosting_id}/filters": {
+    "Create A Filter Model": {
       "method": "POST",
       "path": "/1/mail_hostings/{mail_hosting_id}/filters",
       "pagination": "none",
@@ -2774,7 +2774,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /1/mail_hostings/{mail_hosting_id}/filters/{filter_id}": {
+    "Show A Filter Model": {
       "method": "GET",
       "path": "/1/mail_hostings/{mail_hosting_id}/filters/{filter_id}",
       "pagination": "none",
@@ -2794,7 +2794,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/mail_hostings/{mail_hosting_id}/filters/{filter_id}": {
+    "Update A Filter Model": {
       "method": "PUT",
       "path": "/1/mail_hostings/{mail_hosting_id}/filters/{filter_id}",
       "pagination": "none",
@@ -2839,7 +2839,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/mail_hostings/{mail_hosting_id}/filters/{filter_id}": {
+    "Delete A Filter Model": {
       "method": "DELETE",
       "path": "/1/mail_hostings/{mail_hosting_id}/filters/{filter_id}",
       "pagination": "none",
@@ -2870,7 +2870,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Service Mail > Preferences": {
-    "GET /1/mail_hostings/{mail_hosting_id}/preferences": {
+    "List Preferences": {
       "method": "GET",
       "path": "/1/mail_hostings/{mail_hosting_id}/preferences",
       "pagination": "none",
@@ -2886,7 +2886,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PATCH /1/mail_hostings/{mail_hosting_id}/preferences": {
+    "Update Preferences": {
       "method": "PATCH",
       "path": "/1/mail_hostings/{mail_hosting_id}/preferences",
       "pagination": "none",
@@ -2937,7 +2937,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Service Mail > Redirections": {
-    "GET /1/mail_hostings/{mail_hosting_id}/redirections": {
+    "List Redirections": {
       "method": "GET",
       "path": "/1/mail_hostings/{mail_hosting_id}/redirections",
       "pagination": "none",
@@ -2953,7 +2953,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/mail_hostings/{mail_hosting_id}/redirections": {
+    "Create Redirection": {
       "method": "POST",
       "path": "/1/mail_hostings/{mail_hosting_id}/redirections",
       "pagination": "none",
@@ -2978,7 +2978,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/mail_hostings/{mail_hosting_id}/redirections/{redirection_id}": {
+    "Show Details": {
       "method": "GET",
       "path": "/1/mail_hostings/{mail_hosting_id}/redirections/{redirection_id}",
       "pagination": "none",
@@ -2998,7 +2998,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/mail_hostings/{mail_hosting_id}/redirections/{redirection_id}": {
+    "Update Redirection": {
       "method": "PUT",
       "path": "/1/mail_hostings/{mail_hosting_id}/redirections/{redirection_id}",
       "pagination": "none",
@@ -3023,7 +3023,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/mail_hostings/{mail_hosting_id}/redirections/{redirection_id}": {
+    "Delete Redirection": {
       "method": "DELETE",
       "path": "/1/mail_hostings/{mail_hosting_id}/redirections/{redirection_id}",
       "pagination": "none",
@@ -3043,7 +3043,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/mail_hostings/{mail_hosting_id}/redirections/{redirection_id}/enable": {
+    "Enable Redirection": {
       "method": "PUT",
       "path": "/1/mail_hostings/{mail_hosting_id}/redirections/{redirection_id}/enable",
       "pagination": "none",
@@ -3063,7 +3063,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/mail_hostings/{mail_hosting_id}/redirections/{redirection_id}/send-confirmation-requests": {
+    "Send Confirmation Request": {
       "method": "PUT",
       "path": "/1/mail_hostings/{mail_hosting_id}/redirections/{redirection_id}/send-confirmation-requests",
       "pagination": "none",
@@ -3085,7 +3085,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Service Mail > Redirections > Target": {
-    "GET /1/mail_hostings/{mail_hosting_id}/redirections/{redirection_id}/targets": {
+    "Get All Targets": {
       "method": "GET",
       "path": "/1/mail_hostings/{mail_hosting_id}/redirections/{redirection_id}/targets",
       "pagination": "none",
@@ -3105,7 +3105,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/mail_hostings/{mail_hosting_id}/redirections/{redirection_id}/targets": {
+    "Add New Target": {
       "method": "POST",
       "path": "/1/mail_hostings/{mail_hosting_id}/redirections/{redirection_id}/targets",
       "pagination": "none",
@@ -3130,7 +3130,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/mail_hostings/{mail_hosting_id}/redirections/{redirection_id}/targets": {
+    "Remove A Target": {
       "method": "DELETE",
       "path": "/1/mail_hostings/{mail_hosting_id}/redirections/{redirection_id}/targets",
       "pagination": "none",
@@ -3150,7 +3150,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/mail_hostings/{mail_hosting_id}/redirections/{redirection_id}/targets/{target_id}/resend-confirmation-request": {
+    "Resend Confirmation Email": {
       "method": "PUT",
       "path": "/1/mail_hostings/{mail_hosting_id}/redirections/{redirection_id}/targets/{target_id}/resend-confirmation-request",
       "pagination": "none",
@@ -3175,8 +3175,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "bodyFieldName": null
     }
   },
-  "Service Mail > Signatures templates": {
-    "GET /1/mail_hostings/{mail_hosting_id}/signatures/templates": {
+  "Service Mail > Signatures Templates": {
+    "List All Templates": {
       "method": "GET",
       "path": "/1/mail_hostings/{mail_hosting_id}/signatures/templates",
       "pagination": "page-per-page",
@@ -3192,7 +3192,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/mail_hostings/{mail_hosting_id}/signatures/templates": {
+    "Create A Template": {
       "method": "POST",
       "path": "/1/mail_hostings/{mail_hosting_id}/signatures/templates",
       "pagination": "none",
@@ -3253,7 +3253,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "POST /1/mail_hostings/{mail_hosting_id}/signatures/templates/upload": {
+    "Upload Image": {
       "method": "POST",
       "path": "/1/mail_hostings/{mail_hosting_id}/signatures/templates/upload",
       "pagination": "none",
@@ -3274,7 +3274,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/mail_hostings/{mail_hosting_id}/signatures/templates/{signature_template}/create_signatures": {
+    "Create A Signature For All Users": {
       "method": "POST",
       "path": "/1/mail_hostings/{mail_hosting_id}/signatures/templates/{signature_template}/create_signatures",
       "pagination": "none",
@@ -3294,7 +3294,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/mail_hostings/{mail_hosting_id}/signatures/templates/default": {
+    "Show Default": {
       "method": "GET",
       "path": "/1/mail_hostings/{mail_hosting_id}/signatures/templates/default",
       "pagination": "none",
@@ -3310,7 +3310,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/mail_hostings/{mail_hosting_id}/signatures/templates/{signature_template}": {
+    "Show A Signature Template": {
       "method": "GET",
       "path": "/1/mail_hostings/{mail_hosting_id}/signatures/templates/{signature_template}",
       "pagination": "none",
@@ -3330,7 +3330,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/mail_hostings/{mail_hosting_id}/signatures/templates/{signature_template}": {
+    "Update": {
       "method": "PUT",
       "path": "/1/mail_hostings/{mail_hosting_id}/signatures/templates/{signature_template}",
       "pagination": "none",
@@ -3395,7 +3395,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/mail_hostings/{mail_hosting_id}/signatures/templates/{signature_template}": {
+    "Delete": {
       "method": "DELETE",
       "path": "/1/mail_hostings/{mail_hosting_id}/signatures/templates/{signature_template}",
       "pagination": "none",
@@ -3485,7 +3485,7 @@ export class InfomaniakMail implements INodeType {
       "options": [
         {
           "name": "Mailbox Management",
-          "value": "Mailbox management"
+          "value": "Mailbox Management"
         },
         {
           "name": "Mailboxes",
@@ -3509,7 +3509,7 @@ export class InfomaniakMail implements INodeType {
         },
         {
           "name": "Mailboxes > Auto Reply",
-          "value": "Mailboxes > Auto reply"
+          "value": "Mailboxes > Auto Reply"
         },
         {
           "name": "Mailboxes > Folders",
@@ -3521,7 +3521,7 @@ export class InfomaniakMail implements INodeType {
         },
         {
           "name": "Mailboxes > Sieve Filters",
-          "value": "Mailboxes > Sieve filters"
+          "value": "Mailboxes > Sieve Filters"
         },
         {
           "name": "Mailboxes > Signatures",
@@ -3565,10 +3565,10 @@ export class InfomaniakMail implements INodeType {
         },
         {
           "name": "Service Mail > Signatures Templates",
-          "value": "Service Mail > Signatures templates"
+          "value": "Service Mail > Signatures Templates"
         }
       ],
-      "default": "Mailbox management",
+      "default": "Mailbox Management",
       "required": true,
       "noDataExpression": true
     },
@@ -3579,25 +3579,25 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailbox management"
+            "Mailbox Management"
           ]
         }
       },
       "options": [
         {
           "name": "List Mailboxes",
-          "value": "GET /1/mail_hostings/{mail_hosting_id}/mailboxes"
+          "value": "List Mailboxes"
         },
         {
           "name": "Add A Mailbox",
-          "value": "POST /1/mail_hostings/{mail_hosting_id}/mailboxes"
+          "value": "Add A Mailbox"
         },
         {
           "name": "Display A Mailbox",
-          "value": "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}"
+          "value": "Display A Mailbox"
         }
       ],
-      "default": "GET /1/mail_hostings/{mail_hosting_id}/mailboxes",
+      "default": "List Mailboxes",
       "noDataExpression": true
     },
     {
@@ -3608,10 +3608,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailbox management"
+            "Mailbox Management"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/mailboxes"
+            "List Mailboxes"
           ]
         }
       },
@@ -3627,10 +3627,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailbox management"
+            "Mailbox Management"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/mailboxes"
+            "List Mailboxes"
           ]
         }
       },
@@ -3742,10 +3742,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailbox management"
+            "Mailbox Management"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailboxes"
+            "Add A Mailbox"
           ]
         }
       },
@@ -3761,10 +3761,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailbox management"
+            "Mailbox Management"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailboxes"
+            "Add A Mailbox"
           ]
         }
       },
@@ -3786,10 +3786,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailbox management"
+            "Mailbox Management"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailboxes"
+            "Add A Mailbox"
           ]
         }
       },
@@ -3804,10 +3804,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailbox management"
+            "Mailbox Management"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailboxes"
+            "Add A Mailbox"
           ]
         }
       },
@@ -3874,10 +3874,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailbox management"
+            "Mailbox Management"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}"
+            "Display A Mailbox"
           ]
         }
       },
@@ -3892,10 +3892,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailbox management"
+            "Mailbox Management"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}"
+            "Display A Mailbox"
           ]
         }
       },
@@ -3911,10 +3911,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailbox management"
+            "Mailbox Management"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}"
+            "Display A Mailbox"
           ]
         }
       },
@@ -3962,14 +3962,14 @@ export class InfomaniakMail implements INodeType {
       "options": [
         {
           "name": "Request Password Reset",
-          "value": "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/request_reset_password"
+          "value": "Request Password Reset"
         },
         {
           "name": "Ask Password To Admin.",
-          "value": "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/ask_password"
+          "value": "Ask Password To Admin."
         }
       ],
-      "default": "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/request_reset_password",
+      "default": "Request Password Reset",
       "noDataExpression": true
     },
     {
@@ -3983,7 +3983,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/request_reset_password"
+            "Request Password Reset"
           ]
         }
       },
@@ -4000,7 +4000,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/request_reset_password"
+            "Request Password Reset"
           ]
         }
       },
@@ -4017,7 +4017,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/request_reset_password"
+            "Request Password Reset"
           ]
         }
       },
@@ -4058,7 +4058,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/request_reset_password"
+            "Request Password Reset"
           ]
         }
       },
@@ -4095,7 +4095,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/ask_password"
+            "Ask Password To Admin."
           ]
         }
       },
@@ -4112,7 +4112,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/ask_password"
+            "Ask Password To Admin."
           ]
         }
       },
@@ -4132,54 +4132,54 @@ export class InfomaniakMail implements INodeType {
       "options": [
         {
           "name": "List Device Access",
-          "value": "GET /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/devices"
+          "value": "List Device Access"
         },
         {
           "name": "Create Device Access",
-          "value": "POST /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/devices"
+          "value": "Create Device Access"
         },
         {
           "name": "Delete Device Accesses For Mailbox",
-          "value": "DELETE /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/devices"
+          "value": "Delete Device Accesses For Mailbox"
         },
         {
           "name": "Regenerate Password Device Access",
-          "value": "POST /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/devices/{device_access}"
+          "value": "Regenerate Password Device Access"
         },
         {
           "name": "Delete Device Access",
-          "value": "DELETE /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/devices/{device_access}"
+          "value": "Delete Device Access"
         },
         {
           "name": "List Device Access For A User",
-          "value": "GET /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/devices/users/{user_id}"
+          "value": "List Device Access For A User"
         },
         {
           "name": "Delete Device Access For A User",
-          "value": "DELETE /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/devices/users/{user_id}"
+          "value": "Delete Device Access For A User"
         },
         {
           "name": "List Device By User",
-          "value": "GET /1/mail_hostings/{service_mail}/accesses/devices/users/{user_id}"
+          "value": "List Device By User"
         },
         {
           "name": "List Device",
-          "value": "GET /1/mail_hostings/accesses/devices"
+          "value": "List Device"
         },
         {
           "name": "Delete Devices For Current User",
-          "value": "DELETE /1/mail_hostings/accesses/devices"
+          "value": "Delete Devices For Current User"
         },
         {
           "name": "Update Device",
-          "value": "PATCH /1/mail_hostings/accesses/devices/{device}"
+          "value": "Update Device"
         },
         {
           "name": "Delete Device Accesses For Device",
-          "value": "DELETE /1/mail_hostings/accesses/devices/{device}"
+          "value": "Delete Device Accesses For Device"
         }
       ],
-      "default": "GET /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/devices",
+      "default": "List Device Access",
       "noDataExpression": true
     },
     {
@@ -4193,7 +4193,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Devices"
           ],
           "operation": [
-            "GET /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/devices"
+            "List Device Access"
           ]
         }
       },
@@ -4211,7 +4211,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Devices"
           ],
           "operation": [
-            "GET /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/devices"
+            "List Device Access"
           ]
         }
       },
@@ -4230,7 +4230,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Devices"
           ],
           "operation": [
-            "GET /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/devices"
+            "List Device Access"
           ]
         }
       },
@@ -4359,7 +4359,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Devices"
           ],
           "operation": [
-            "POST /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/devices"
+            "Create Device Access"
           ]
         }
       },
@@ -4377,7 +4377,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Devices"
           ],
           "operation": [
-            "POST /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/devices"
+            "Create Device Access"
           ]
         }
       },
@@ -4395,7 +4395,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Devices"
           ],
           "operation": [
-            "POST /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/devices"
+            "Create Device Access"
           ]
         }
       },
@@ -4428,7 +4428,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Devices"
           ],
           "operation": [
-            "POST /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/devices"
+            "Create Device Access"
           ]
         }
       },
@@ -4497,7 +4497,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Devices"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/devices"
+            "Delete Device Accesses For Mailbox"
           ]
         }
       },
@@ -4515,7 +4515,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Devices"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/devices"
+            "Delete Device Accesses For Mailbox"
           ]
         }
       },
@@ -4533,7 +4533,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Devices"
           ],
           "operation": [
-            "POST /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/devices/{device_access}"
+            "Regenerate Password Device Access"
           ]
         }
       },
@@ -4551,61 +4551,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Devices"
           ],
           "operation": [
-            "POST /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/devices/{device_access}"
-          ]
-        }
-      },
-      "required": true,
-      "description": "The username (that is the part before the @) of the email address you want to request."
-    },
-    {
-      "displayName": "Device Access",
-      "name": "path_device_access",
-      "type": "number",
-      "default": 0,
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "Mailboxes > Accesses > Devices"
-          ],
-          "operation": [
-            "POST /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/devices/{device_access}"
-          ]
-        }
-      },
-      "required": true,
-      "description": "The unique identifier (ID) of the device access to request."
-    },
-    {
-      "displayName": "Service Mail",
-      "name": "path_service_mail",
-      "type": "number",
-      "default": 0,
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "Mailboxes > Accesses > Devices"
-          ],
-          "operation": [
-            "DELETE /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/devices/{device_access}"
-          ]
-        }
-      },
-      "required": true,
-      "description": "The unique identifier (ID) of the mail hosting to request."
-    },
-    {
-      "displayName": "Mailbox Name",
-      "name": "path_mailbox_name",
-      "type": "string",
-      "default": "",
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "Mailboxes > Accesses > Devices"
-          ],
-          "operation": [
-            "DELETE /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/devices/{device_access}"
+            "Regenerate Password Device Access"
           ]
         }
       },
@@ -4623,7 +4569,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Devices"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/devices/{device_access}"
+            "Regenerate Password Device Access"
           ]
         }
       },
@@ -4641,7 +4587,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Devices"
           ],
           "operation": [
-            "GET /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/devices/users/{user_id}"
+            "Delete Device Access"
           ]
         }
       },
@@ -4659,7 +4605,61 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Devices"
           ],
           "operation": [
-            "GET /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/devices/users/{user_id}"
+            "Delete Device Access"
+          ]
+        }
+      },
+      "required": true,
+      "description": "The username (that is the part before the @) of the email address you want to request."
+    },
+    {
+      "displayName": "Device Access",
+      "name": "path_device_access",
+      "type": "number",
+      "default": 0,
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "Mailboxes > Accesses > Devices"
+          ],
+          "operation": [
+            "Delete Device Access"
+          ]
+        }
+      },
+      "required": true,
+      "description": "The unique identifier (ID) of the device access to request."
+    },
+    {
+      "displayName": "Service Mail",
+      "name": "path_service_mail",
+      "type": "number",
+      "default": 0,
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "Mailboxes > Accesses > Devices"
+          ],
+          "operation": [
+            "List Device Access For A User"
+          ]
+        }
+      },
+      "required": true,
+      "description": "The unique identifier (ID) of the mail hosting to request."
+    },
+    {
+      "displayName": "Mailbox Name",
+      "name": "path_mailbox_name",
+      "type": "string",
+      "default": "",
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "Mailboxes > Accesses > Devices"
+          ],
+          "operation": [
+            "List Device Access For A User"
           ]
         }
       },
@@ -4677,7 +4677,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Devices"
           ],
           "operation": [
-            "GET /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/devices/users/{user_id}"
+            "List Device Access For A User"
           ]
         }
       },
@@ -4696,7 +4696,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Devices"
           ],
           "operation": [
-            "GET /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/devices/users/{user_id}"
+            "List Device Access For A User"
           ]
         }
       },
@@ -4779,7 +4779,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Devices"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/devices/users/{user_id}"
+            "Delete Device Access For A User"
           ]
         }
       },
@@ -4797,7 +4797,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Devices"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/devices/users/{user_id}"
+            "Delete Device Access For A User"
           ]
         }
       },
@@ -4815,7 +4815,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Devices"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/devices/users/{user_id}"
+            "Delete Device Access For A User"
           ]
         }
       },
@@ -4833,7 +4833,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Devices"
           ],
           "operation": [
-            "GET /1/mail_hostings/{service_mail}/accesses/devices/users/{user_id}"
+            "List Device By User"
           ]
         }
       },
@@ -4851,7 +4851,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Devices"
           ],
           "operation": [
-            "GET /1/mail_hostings/{service_mail}/accesses/devices/users/{user_id}"
+            "List Device By User"
           ]
         }
       },
@@ -4870,7 +4870,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Devices"
           ],
           "operation": [
-            "GET /1/mail_hostings/{service_mail}/accesses/devices/users/{user_id}"
+            "List Device By User"
           ]
         }
       },
@@ -4923,7 +4923,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Devices"
           ],
           "operation": [
-            "GET /1/mail_hostings/accesses/devices"
+            "List Device"
           ]
         }
       },
@@ -4975,7 +4975,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Devices"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/accesses/devices/{device}"
+            "Update Device"
           ]
         }
       },
@@ -4993,7 +4993,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Devices"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/accesses/devices/{device}"
+            "Update Device"
           ]
         }
       },
@@ -5010,7 +5010,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Devices"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/accesses/devices/{device}"
+            "Delete Device Accesses For Device"
           ]
         }
       },
@@ -5031,14 +5031,14 @@ export class InfomaniakMail implements INodeType {
       "options": [
         {
           "name": "Create Webmail Access Link",
-          "value": "POST /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail/invitations"
+          "value": "Create Webmail Access Link"
         },
         {
           "name": "Send Webmail Access Link By E Mail",
-          "value": "POST /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail/invitations/{invitation_webmail}/send"
+          "value": "Send Webmail Access Link By E Mail"
         }
       ],
-      "default": "POST /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail/invitations",
+      "default": "Create Webmail Access Link",
       "noDataExpression": true
     },
     {
@@ -5052,7 +5052,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Invitations"
           ],
           "operation": [
-            "POST /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail/invitations"
+            "Create Webmail Access Link"
           ]
         }
       },
@@ -5070,7 +5070,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Invitations"
           ],
           "operation": [
-            "POST /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail/invitations"
+            "Create Webmail Access Link"
           ]
         }
       },
@@ -5089,7 +5089,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Invitations"
           ],
           "operation": [
-            "POST /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail/invitations"
+            "Create Webmail Access Link"
           ]
         }
       },
@@ -5137,7 +5137,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Invitations"
           ],
           "operation": [
-            "POST /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail/invitations/{invitation_webmail}/send"
+            "Send Webmail Access Link By E Mail"
           ]
         }
       },
@@ -5155,7 +5155,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Invitations"
           ],
           "operation": [
-            "POST /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail/invitations/{invitation_webmail}/send"
+            "Send Webmail Access Link By E Mail"
           ]
         }
       },
@@ -5173,7 +5173,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Invitations"
           ],
           "operation": [
-            "POST /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail/invitations/{invitation_webmail}/send"
+            "Send Webmail Access Link By E Mail"
           ]
         }
       },
@@ -5191,7 +5191,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Invitations"
           ],
           "operation": [
-            "POST /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail/invitations/{invitation_webmail}/send"
+            "Send Webmail Access Link By E Mail"
           ]
         }
       },
@@ -5210,7 +5210,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Invitations"
           ],
           "operation": [
-            "POST /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail/invitations/{invitation_webmail}/send"
+            "Send Webmail Access Link By E Mail"
           ]
         }
       },
@@ -5260,42 +5260,42 @@ export class InfomaniakMail implements INodeType {
       "options": [
         {
           "name": "List User Access And Invitations",
-          "value": "GET /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail"
+          "value": "List User Access And Invitations"
         },
         {
           "name": "Create Webmail Access",
-          "value": "POST /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail"
+          "value": "Create Webmail Access"
         },
         {
           "name": "Set The Primary Mailbox For The Authenticated User",
-          "value": "POST /1/mail_hostings/accesses/webmail/mailboxes/{mailbox_id}/set_primary"
+          "value": "Set The Primary Mailbox For The Authenticated User"
         },
         {
           "name": "List Users Having Access",
-          "value": "GET /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail/users"
+          "value": "List Users Having Access"
         },
         {
           "name": "List Of User Accesses For The Current User",
-          "value": "GET /1/mail_hostings/accesses/webmail"
+          "value": "List Of User Accesses For The Current User"
         },
         {
           "name": "List Of User Accesses For A Account And A User",
-          "value": "GET /1/mail_hostings/accesses/webmail/accounts/{account_id}/users/{user_id}"
+          "value": "List Of User Accesses For A Account And A User"
         },
         {
           "name": "Update Webmail Access",
-          "value": "PATCH /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail/users/{user_id}"
+          "value": "Update Webmail Access"
         },
         {
           "name": "Delete Webmail Access",
-          "value": "DELETE /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail/users/{user_id}"
+          "value": "Delete Webmail Access"
         },
         {
           "name": "Delete Access To A Mailbox For The Current User",
-          "value": "DELETE /1/mail_hostings/accesses/webmail/mailboxes/{mailbox_id}"
+          "value": "Delete Access To A Mailbox For The Current User"
         }
       ],
-      "default": "GET /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail",
+      "default": "List User Access And Invitations",
       "noDataExpression": true
     },
     {
@@ -5309,7 +5309,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Webmail"
           ],
           "operation": [
-            "GET /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail"
+            "List User Access And Invitations"
           ]
         }
       },
@@ -5327,7 +5327,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Webmail"
           ],
           "operation": [
-            "GET /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail"
+            "List User Access And Invitations"
           ]
         }
       },
@@ -5346,7 +5346,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Webmail"
           ],
           "operation": [
-            "GET /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail"
+            "List User Access And Invitations"
           ]
         }
       },
@@ -5435,7 +5435,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Webmail"
           ],
           "operation": [
-            "POST /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail"
+            "Create Webmail Access"
           ]
         }
       },
@@ -5453,7 +5453,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Webmail"
           ],
           "operation": [
-            "POST /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail"
+            "Create Webmail Access"
           ]
         }
       },
@@ -5471,7 +5471,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Webmail"
           ],
           "operation": [
-            "POST /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail"
+            "Create Webmail Access"
           ]
         }
       },
@@ -5489,7 +5489,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Webmail"
           ],
           "operation": [
-            "POST /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail"
+            "Create Webmail Access"
           ]
         }
       },
@@ -5513,7 +5513,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Webmail"
           ],
           "operation": [
-            "POST /1/mail_hostings/accesses/webmail/mailboxes/{mailbox_id}/set_primary"
+            "Set The Primary Mailbox For The Authenticated User"
           ]
         }
       },
@@ -5531,7 +5531,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Webmail"
           ],
           "operation": [
-            "GET /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail/users"
+            "List Users Having Access"
           ]
         }
       },
@@ -5549,7 +5549,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Webmail"
           ],
           "operation": [
-            "GET /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail/users"
+            "List Users Having Access"
           ]
         }
       },
@@ -5568,7 +5568,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Webmail"
           ],
           "operation": [
-            "GET /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail/users"
+            "List Users Having Access"
           ]
         }
       },
@@ -5620,7 +5620,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Webmail"
           ],
           "operation": [
-            "GET /1/mail_hostings/accesses/webmail"
+            "List Of User Accesses For The Current User"
           ]
         }
       },
@@ -5672,7 +5672,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Webmail"
           ],
           "operation": [
-            "GET /1/mail_hostings/accesses/webmail/accounts/{account_id}/users/{user_id}"
+            "List Of User Accesses For A Account And A User"
           ]
         }
       },
@@ -5690,7 +5690,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Webmail"
           ],
           "operation": [
-            "GET /1/mail_hostings/accesses/webmail/accounts/{account_id}/users/{user_id}"
+            "List Of User Accesses For A Account And A User"
           ]
         }
       },
@@ -5708,7 +5708,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Webmail"
           ],
           "operation": [
-            "GET /1/mail_hostings/accesses/webmail/accounts/{account_id}/users/{user_id}"
+            "List Of User Accesses For A Account And A User"
           ]
         }
       },
@@ -5760,7 +5760,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Webmail"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail/users/{user_id}"
+            "Update Webmail Access"
           ]
         }
       },
@@ -5778,7 +5778,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Webmail"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail/users/{user_id}"
+            "Update Webmail Access"
           ]
         }
       },
@@ -5796,7 +5796,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Webmail"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail/users/{user_id}"
+            "Update Webmail Access"
           ]
         }
       },
@@ -5814,7 +5814,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Webmail"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail/users/{user_id}"
+            "Update Webmail Access"
           ]
         }
       },
@@ -5831,7 +5831,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Webmail"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail/users/{user_id}"
+            "Delete Webmail Access"
           ]
         }
       },
@@ -5849,7 +5849,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Webmail"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail/users/{user_id}"
+            "Delete Webmail Access"
           ]
         }
       },
@@ -5867,7 +5867,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Webmail"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail/users/{user_id}"
+            "Delete Webmail Access"
           ]
         }
       },
@@ -5885,7 +5885,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Webmail"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/accesses/webmail/mailboxes/{mailbox_id}"
+            "Delete Access To A Mailbox For The Current User"
           ]
         }
       },
@@ -5905,22 +5905,22 @@ export class InfomaniakMail implements INodeType {
       "options": [
         {
           "name": "List Aliases",
-          "value": "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/aliases"
+          "value": "List Aliases"
         },
         {
           "name": "Add An Alias",
-          "value": "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/aliases"
+          "value": "Add An Alias"
         },
         {
           "name": "Update Aliases",
-          "value": "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/aliases"
+          "value": "Update Aliases"
         },
         {
           "name": "Delete An Alias",
-          "value": "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/aliases/{alias}"
+          "value": "Delete An Alias"
         }
       ],
-      "default": "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/aliases",
+      "default": "List Aliases",
       "noDataExpression": true
     },
     {
@@ -5934,7 +5934,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Aliases"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/aliases"
+            "List Aliases"
           ]
         }
       },
@@ -5952,7 +5952,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Aliases"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/aliases"
+            "List Aliases"
           ]
         }
       },
@@ -5970,7 +5970,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Aliases"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/aliases"
+            "Add An Alias"
           ]
         }
       },
@@ -5988,7 +5988,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Aliases"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/aliases"
+            "Add An Alias"
           ]
         }
       },
@@ -6006,7 +6006,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Aliases"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/aliases"
+            "Add An Alias"
           ]
         }
       },
@@ -6023,7 +6023,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Aliases"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/aliases"
+            "Update Aliases"
           ]
         }
       },
@@ -6041,7 +6041,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Aliases"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/aliases"
+            "Update Aliases"
           ]
         }
       },
@@ -6059,7 +6059,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Aliases"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/aliases"
+            "Update Aliases"
           ]
         }
       },
@@ -6077,7 +6077,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Aliases"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/aliases/{alias}"
+            "Delete An Alias"
           ]
         }
       },
@@ -6095,7 +6095,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Aliases"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/aliases/{alias}"
+            "Delete An Alias"
           ]
         }
       },
@@ -6113,7 +6113,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Aliases"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/aliases/{alias}"
+            "Delete An Alias"
           ]
         }
       },
@@ -6127,37 +6127,37 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Auto reply"
+            "Mailboxes > Auto Reply"
           ]
         }
       },
       "options": [
         {
           "name": "List Auto Replies Models",
-          "value": "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auto_reply/model"
+          "value": "List Auto Replies Models"
         },
         {
           "name": "Add Auto Reply Model",
-          "value": "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auto_reply/model"
+          "value": "Add Auto Reply Model"
         },
         {
           "name": "Reset An Auto Reply",
-          "value": "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auto_reply/reset"
+          "value": "Reset An Auto Reply"
         },
         {
           "name": "Show Auto Reply Model",
-          "value": "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auto_reply/model/{model_id}"
+          "value": "Show Auto Reply Model"
         },
         {
           "name": "Update Auto Reply Model",
-          "value": "PATCH /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auto_reply/model/{model_id}"
+          "value": "Update Auto Reply Model"
         },
         {
           "name": "Update Auto Reply Model",
-          "value": "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auto_reply/model/{model_id}"
+          "value": "Update Auto Reply Model (2)"
         }
       ],
-      "default": "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auto_reply/model",
+      "default": "List Auto Replies Models",
       "noDataExpression": true
     },
     {
@@ -6168,10 +6168,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Auto reply"
+            "Mailboxes > Auto Reply"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auto_reply/model"
+            "List Auto Replies Models"
           ]
         }
       },
@@ -6186,10 +6186,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Auto reply"
+            "Mailboxes > Auto Reply"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auto_reply/model"
+            "List Auto Replies Models"
           ]
         }
       },
@@ -6204,10 +6204,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Auto reply"
+            "Mailboxes > Auto Reply"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auto_reply/model"
+            "Add Auto Reply Model"
           ]
         }
       },
@@ -6222,10 +6222,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Auto reply"
+            "Mailboxes > Auto Reply"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auto_reply/model"
+            "Add Auto Reply Model"
           ]
         }
       },
@@ -6240,10 +6240,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Auto reply"
+            "Mailboxes > Auto Reply"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auto_reply/model"
+            "Add Auto Reply Model"
           ]
         }
       },
@@ -6257,10 +6257,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Auto reply"
+            "Mailboxes > Auto Reply"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auto_reply/model"
+            "Add Auto Reply Model"
           ]
         }
       },
@@ -6274,10 +6274,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Auto reply"
+            "Mailboxes > Auto Reply"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auto_reply/model"
+            "Add Auto Reply Model"
           ]
         }
       },
@@ -6292,10 +6292,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Auto reply"
+            "Mailboxes > Auto Reply"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auto_reply/model"
+            "Add Auto Reply Model"
           ]
         }
       },
@@ -6311,10 +6311,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Auto reply"
+            "Mailboxes > Auto Reply"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auto_reply/model"
+            "Add Auto Reply Model"
           ]
         }
       },
@@ -6357,10 +6357,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Auto reply"
+            "Mailboxes > Auto Reply"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auto_reply/reset"
+            "Reset An Auto Reply"
           ]
         }
       },
@@ -6375,10 +6375,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Auto reply"
+            "Mailboxes > Auto Reply"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auto_reply/reset"
+            "Reset An Auto Reply"
           ]
         }
       },
@@ -6393,10 +6393,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Auto reply"
+            "Mailboxes > Auto Reply"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auto_reply/model/{model_id}"
+            "Show Auto Reply Model"
           ]
         }
       },
@@ -6411,10 +6411,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Auto reply"
+            "Mailboxes > Auto Reply"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auto_reply/model/{model_id}"
+            "Show Auto Reply Model"
           ]
         }
       },
@@ -6429,10 +6429,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Auto reply"
+            "Mailboxes > Auto Reply"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auto_reply/model/{model_id}"
+            "Show Auto Reply Model"
           ]
         }
       },
@@ -6447,10 +6447,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Auto reply"
+            "Mailboxes > Auto Reply"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auto_reply/model/{model_id}"
+            "Show Auto Reply Model"
           ]
         }
       },
@@ -6472,10 +6472,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Auto reply"
+            "Mailboxes > Auto Reply"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auto_reply/model/{model_id}"
+            "Update Auto Reply Model"
           ]
         }
       },
@@ -6490,10 +6490,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Auto reply"
+            "Mailboxes > Auto Reply"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auto_reply/model/{model_id}"
+            "Update Auto Reply Model"
           ]
         }
       },
@@ -6508,10 +6508,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Auto reply"
+            "Mailboxes > Auto Reply"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auto_reply/model/{model_id}"
+            "Update Auto Reply Model"
           ]
         }
       },
@@ -6525,10 +6525,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Auto reply"
+            "Mailboxes > Auto Reply"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auto_reply/model/{model_id}"
+            "Update Auto Reply Model"
           ]
         }
       },
@@ -6544,10 +6544,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Auto reply"
+            "Mailboxes > Auto Reply"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auto_reply/model/{model_id}"
+            "Update Auto Reply Model"
           ]
         }
       },
@@ -6622,10 +6622,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Auto reply"
+            "Mailboxes > Auto Reply"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auto_reply/model/{model_id}"
+            "Update Auto Reply Model (2)"
           ]
         }
       },
@@ -6640,10 +6640,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Auto reply"
+            "Mailboxes > Auto Reply"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auto_reply/model/{model_id}"
+            "Update Auto Reply Model (2)"
           ]
         }
       },
@@ -6658,10 +6658,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Auto reply"
+            "Mailboxes > Auto Reply"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auto_reply/model/{model_id}"
+            "Update Auto Reply Model (2)"
           ]
         }
       },
@@ -6681,22 +6681,22 @@ export class InfomaniakMail implements INodeType {
       "options": [
         {
           "name": "List Folders",
-          "value": "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/folders"
+          "value": "List Folders"
         },
         {
           "name": "Update Folders",
-          "value": "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/folders"
+          "value": "Update Folders"
         },
         {
           "name": "Purge Spam Folder",
-          "value": "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/folders/spam"
+          "value": "Purge Spam Folder"
         },
         {
           "name": "Empty Trash Folder",
-          "value": "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/folders/trash"
+          "value": "Empty Trash Folder"
         }
       ],
-      "default": "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/folders",
+      "default": "List Folders",
       "noDataExpression": true
     },
     {
@@ -6710,7 +6710,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Folders"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/folders"
+            "List Folders"
           ]
         }
       },
@@ -6728,7 +6728,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Folders"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/folders"
+            "List Folders"
           ]
         }
       },
@@ -6746,7 +6746,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Folders"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/folders"
+            "Update Folders"
           ]
         }
       },
@@ -6764,7 +6764,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Folders"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/folders"
+            "Update Folders"
           ]
         }
       },
@@ -6782,7 +6782,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Folders"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/folders"
+            "Update Folders"
           ]
         }
       },
@@ -6799,7 +6799,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Folders"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/folders"
+            "Update Folders"
           ]
         }
       },
@@ -6816,7 +6816,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Folders"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/folders"
+            "Update Folders"
           ]
         }
       },
@@ -6833,7 +6833,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Folders"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/folders"
+            "Update Folders"
           ]
         }
       },
@@ -6851,7 +6851,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Folders"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/folders"
+            "Update Folders"
           ]
         }
       },
@@ -6890,7 +6890,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Folders"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/folders/spam"
+            "Purge Spam Folder"
           ]
         }
       },
@@ -6908,7 +6908,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Folders"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/folders/spam"
+            "Purge Spam Folder"
           ]
         }
       },
@@ -6926,7 +6926,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Folders"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/folders/trash"
+            "Empty Trash Folder"
           ]
         }
       },
@@ -6944,7 +6944,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Folders"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/folders/trash"
+            "Empty Trash Folder"
           ]
         }
       },
@@ -6965,26 +6965,26 @@ export class InfomaniakMail implements INodeType {
       "options": [
         {
           "name": "List Forwarding",
-          "value": "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/forwarding_addresses"
+          "value": "List Forwarding"
         },
         {
           "name": "Add A Forwarding",
-          "value": "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/forwarding_addresses"
+          "value": "Add A Forwarding"
         },
         {
           "name": "Update A Forwarding",
-          "value": "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/forwarding_addresses"
+          "value": "Update A Forwarding"
         },
         {
           "name": "Delete All Forwardings",
-          "value": "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/forwarding_addresses"
+          "value": "Delete All Forwardings"
         },
         {
           "name": "Delete A Forwarding",
-          "value": "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/forwarding_addresses/{redirect_addresses}"
+          "value": "Delete A Forwarding"
         }
       ],
-      "default": "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/forwarding_addresses",
+      "default": "List Forwarding",
       "noDataExpression": true
     },
     {
@@ -6998,7 +6998,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Forwarding"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/forwarding_addresses"
+            "List Forwarding"
           ]
         }
       },
@@ -7016,7 +7016,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Forwarding"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/forwarding_addresses"
+            "List Forwarding"
           ]
         }
       },
@@ -7034,7 +7034,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Forwarding"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/forwarding_addresses"
+            "Add A Forwarding"
           ]
         }
       },
@@ -7052,7 +7052,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Forwarding"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/forwarding_addresses"
+            "Add A Forwarding"
           ]
         }
       },
@@ -7070,7 +7070,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Forwarding"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/forwarding_addresses"
+            "Add A Forwarding"
           ]
         }
       },
@@ -7087,7 +7087,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Forwarding"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/forwarding_addresses"
+            "Update A Forwarding"
           ]
         }
       },
@@ -7105,7 +7105,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Forwarding"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/forwarding_addresses"
+            "Update A Forwarding"
           ]
         }
       },
@@ -7124,7 +7124,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Forwarding"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/forwarding_addresses"
+            "Update A Forwarding"
           ]
         }
       },
@@ -7170,7 +7170,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Forwarding"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/forwarding_addresses"
+            "Delete All Forwardings"
           ]
         }
       },
@@ -7188,7 +7188,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Forwarding"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/forwarding_addresses"
+            "Delete All Forwardings"
           ]
         }
       },
@@ -7206,7 +7206,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Forwarding"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/forwarding_addresses/{redirect_addresses}"
+            "Delete A Forwarding"
           ]
         }
       },
@@ -7224,7 +7224,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Forwarding"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/forwarding_addresses/{redirect_addresses}"
+            "Delete A Forwarding"
           ]
         }
       },
@@ -7242,7 +7242,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Forwarding"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/forwarding_addresses/{redirect_addresses}"
+            "Delete A Forwarding"
           ]
         }
       },
@@ -7255,57 +7255,57 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ]
         }
       },
       "options": [
         {
           "name": "Enable / Disable Filter",
-          "value": "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/set_activation"
+          "value": "Enable / Disable Filter"
         },
         {
           "name": "Reorder Filters",
-          "value": "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/reorder"
+          "value": "Reorder Filters"
         },
         {
           "name": "List Filters",
-          "value": "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters"
+          "value": "List Filters"
         },
         {
           "name": "Add A Filter",
-          "value": "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters"
+          "value": "Add A Filter"
         },
         {
           "name": "Update A Filter",
-          "value": "PATCH /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters"
+          "value": "Update A Filter"
         },
         {
           "name": "Delete A Filter",
-          "value": "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters"
+          "value": "Delete A Filter"
         },
         {
           "name": "Add A Script",
-          "value": "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/scripts"
+          "value": "Add A Script"
         },
         {
           "name": "Update A Script",
-          "value": "PATCH /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/scripts"
+          "value": "Update A Script"
         },
         {
           "name": "Delete A Script",
-          "value": "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/scripts"
+          "value": "Delete A Script"
         },
         {
           "name": "Enable / Disable Script",
-          "value": "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/scripts/set_activation"
+          "value": "Enable / Disable Script"
         },
         {
           "name": "Import .siv File",
-          "value": "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/scripts/import"
+          "value": "Import .siv File"
         }
       ],
-      "default": "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/set_activation",
+      "default": "Enable / Disable Filter",
       "noDataExpression": true
     },
     {
@@ -7316,10 +7316,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/set_activation"
+            "Enable / Disable Filter"
           ]
         }
       },
@@ -7334,10 +7334,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/set_activation"
+            "Enable / Disable Filter"
           ]
         }
       },
@@ -7352,10 +7352,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/set_activation"
+            "Enable / Disable Filter"
           ]
         }
       },
@@ -7370,10 +7370,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/set_activation"
+            "Enable / Disable Filter"
           ]
         }
       },
@@ -7388,10 +7388,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/reorder"
+            "Reorder Filters"
           ]
         }
       },
@@ -7406,10 +7406,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/reorder"
+            "Reorder Filters"
           ]
         }
       },
@@ -7424,10 +7424,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/reorder"
+            "Reorder Filters"
           ]
         }
       },
@@ -7442,10 +7442,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters"
+            "List Filters"
           ]
         }
       },
@@ -7460,10 +7460,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters"
+            "List Filters"
           ]
         }
       },
@@ -7478,10 +7478,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters"
+            "Add A Filter"
           ]
         }
       },
@@ -7496,10 +7496,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters"
+            "Add A Filter"
           ]
         }
       },
@@ -7514,10 +7514,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters"
+            "Add A Filter"
           ]
         }
       },
@@ -7532,10 +7532,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters"
+            "Add A Filter"
           ]
         }
       },
@@ -7550,10 +7550,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters"
+            "Add A Filter"
           ]
         }
       },
@@ -7568,10 +7568,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters"
+            "Add A Filter"
           ]
         }
       },
@@ -7586,10 +7586,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters"
+            "Add A Filter"
           ]
         }
       },
@@ -7605,10 +7605,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters"
+            "Add A Filter"
           ]
         }
       },
@@ -7629,10 +7629,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters"
+            "Update A Filter"
           ]
         }
       },
@@ -7647,10 +7647,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters"
+            "Update A Filter"
           ]
         }
       },
@@ -7665,10 +7665,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters"
+            "Update A Filter"
           ]
         }
       },
@@ -7683,10 +7683,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters"
+            "Update A Filter"
           ]
         }
       },
@@ -7701,10 +7701,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters"
+            "Update A Filter"
           ]
         }
       },
@@ -7719,10 +7719,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters"
+            "Update A Filter"
           ]
         }
       },
@@ -7737,10 +7737,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters"
+            "Update A Filter"
           ]
         }
       },
@@ -7755,10 +7755,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters"
+            "Update A Filter"
           ]
         }
       },
@@ -7774,10 +7774,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters"
+            "Update A Filter"
           ]
         }
       },
@@ -7798,10 +7798,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters"
+            "Delete A Filter"
           ]
         }
       },
@@ -7816,10 +7816,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters"
+            "Delete A Filter"
           ]
         }
       },
@@ -7834,10 +7834,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters"
+            "Delete A Filter"
           ]
         }
       },
@@ -7852,10 +7852,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/scripts"
+            "Add A Script"
           ]
         }
       },
@@ -7870,10 +7870,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/scripts"
+            "Add A Script"
           ]
         }
       },
@@ -7888,10 +7888,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/scripts"
+            "Add A Script"
           ]
         }
       },
@@ -7906,10 +7906,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/scripts"
+            "Add A Script"
           ]
         }
       },
@@ -7925,10 +7925,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/scripts"
+            "Add A Script"
           ]
         }
       },
@@ -7950,10 +7950,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/scripts"
+            "Update A Script"
           ]
         }
       },
@@ -7968,10 +7968,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/scripts"
+            "Update A Script"
           ]
         }
       },
@@ -7986,10 +7986,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/scripts"
+            "Update A Script"
           ]
         }
       },
@@ -8004,10 +8004,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/scripts"
+            "Update A Script"
           ]
         }
       },
@@ -8022,10 +8022,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/scripts"
+            "Update A Script"
           ]
         }
       },
@@ -8040,10 +8040,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/scripts"
+            "Update A Script"
           ]
         }
       },
@@ -8058,10 +8058,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/scripts"
+            "Delete A Script"
           ]
         }
       },
@@ -8076,10 +8076,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/scripts"
+            "Delete A Script"
           ]
         }
       },
@@ -8094,10 +8094,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/scripts"
+            "Delete A Script"
           ]
         }
       },
@@ -8112,10 +8112,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/scripts/set_activation"
+            "Enable / Disable Script"
           ]
         }
       },
@@ -8130,10 +8130,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/scripts/set_activation"
+            "Enable / Disable Script"
           ]
         }
       },
@@ -8148,10 +8148,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/scripts/set_activation"
+            "Enable / Disable Script"
           ]
         }
       },
@@ -8166,10 +8166,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/scripts/set_activation"
+            "Enable / Disable Script"
           ]
         }
       },
@@ -8184,10 +8184,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/scripts/import"
+            "Import .siv File"
           ]
         }
       },
@@ -8202,10 +8202,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/scripts/import"
+            "Import .siv File"
           ]
         }
       },
@@ -8220,10 +8220,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/scripts/import"
+            "Import .siv File"
           ]
         }
       },
@@ -8238,10 +8238,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailboxes > Sieve filters"
+            "Mailboxes > Sieve Filters"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/filters/scripts/import"
+            "Import .siv File"
           ]
         }
       },
@@ -8262,42 +8262,42 @@ export class InfomaniakMail implements INodeType {
       "options": [
         {
           "name": "Set Default Signature",
-          "value": "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures/set_defaults"
+          "value": "Set Default Signature"
         },
         {
           "name": "List All Signatures",
-          "value": "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures"
+          "value": "List All Signatures"
         },
         {
           "name": "Create Signature",
-          "value": "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures"
+          "value": "Create Signature"
         },
         {
           "name": "Upload Image",
-          "value": "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures/upload"
+          "value": "Upload Image"
         },
         {
           "name": "List Templates",
-          "value": "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures/templates"
+          "value": "List Templates"
         },
         {
           "name": "Show One Template",
-          "value": "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures/templates/{signature_template}"
+          "value": "Show One Template"
         },
         {
           "name": "Show A Signature",
-          "value": "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures/{signature}"
+          "value": "Show A Signature"
         },
         {
           "name": "Update A Specific Signature",
-          "value": "PATCH /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures/{signature}"
+          "value": "Update A Specific Signature"
         },
         {
           "name": "Delete A Signature",
-          "value": "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures/{signature}"
+          "value": "Delete A Signature"
         }
       ],
-      "default": "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures/set_defaults",
+      "default": "Set Default Signature",
       "noDataExpression": true
     },
     {
@@ -8311,7 +8311,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Signatures"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures/set_defaults"
+            "Set Default Signature"
           ]
         }
       },
@@ -8329,7 +8329,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Signatures"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures/set_defaults"
+            "Set Default Signature"
           ]
         }
       },
@@ -8348,7 +8348,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Signatures"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures/set_defaults"
+            "Set Default Signature"
           ]
         }
       },
@@ -8378,7 +8378,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Signatures"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures"
+            "List All Signatures"
           ]
         }
       },
@@ -8396,7 +8396,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Signatures"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures"
+            "List All Signatures"
           ]
         }
       },
@@ -8415,7 +8415,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Signatures"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures"
+            "List All Signatures"
           ]
         }
       },
@@ -8440,7 +8440,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Signatures"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures"
+            "Create Signature"
           ]
         }
       },
@@ -8458,7 +8458,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Signatures"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures"
+            "Create Signature"
           ]
         }
       },
@@ -8476,7 +8476,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Signatures"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures"
+            "Create Signature"
           ]
         }
       },
@@ -8495,7 +8495,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Signatures"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures"
+            "Create Signature"
           ]
         }
       },
@@ -8590,7 +8590,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Signatures"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures/upload"
+            "Upload Image"
           ]
         }
       },
@@ -8608,7 +8608,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Signatures"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures/upload"
+            "Upload Image"
           ]
         }
       },
@@ -8626,7 +8626,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Signatures"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures/upload"
+            "Upload Image"
           ]
         }
       },
@@ -8644,7 +8644,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Signatures"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures/templates"
+            "List Templates"
           ]
         }
       },
@@ -8662,7 +8662,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Signatures"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures/templates"
+            "List Templates"
           ]
         }
       },
@@ -8680,7 +8680,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Signatures"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures/templates/{signature_template}"
+            "Show One Template"
           ]
         }
       },
@@ -8698,7 +8698,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Signatures"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures/templates/{signature_template}"
+            "Show One Template"
           ]
         }
       },
@@ -8716,7 +8716,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Signatures"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures/templates/{signature_template}"
+            "Show One Template"
           ]
         }
       },
@@ -8734,7 +8734,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Signatures"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures/{signature}"
+            "Show A Signature"
           ]
         }
       },
@@ -8752,7 +8752,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Signatures"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures/{signature}"
+            "Show A Signature"
           ]
         }
       },
@@ -8770,7 +8770,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Signatures"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures/{signature}"
+            "Show A Signature"
           ]
         }
       },
@@ -8788,7 +8788,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Signatures"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures/{signature}"
+            "Update A Specific Signature"
           ]
         }
       },
@@ -8806,7 +8806,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Signatures"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures/{signature}"
+            "Update A Specific Signature"
           ]
         }
       },
@@ -8824,7 +8824,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Signatures"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures/{signature}"
+            "Update A Specific Signature"
           ]
         }
       },
@@ -8843,7 +8843,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Signatures"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures/{signature}"
+            "Update A Specific Signature"
           ]
         }
       },
@@ -8939,7 +8939,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Signatures"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures/{signature}"
+            "Delete A Signature"
           ]
         }
       },
@@ -8957,7 +8957,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Signatures"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures/{signature}"
+            "Delete A Signature"
           ]
         }
       },
@@ -8975,7 +8975,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Signatures"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/signatures/{signature}"
+            "Delete A Signature"
           ]
         }
       },
@@ -8996,38 +8996,38 @@ export class InfomaniakMail implements INodeType {
       "options": [
         {
           "name": "Add An Invitation",
-          "value": "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/invitations"
+          "value": "Add An Invitation"
         },
         {
           "name": "List Users",
-          "value": "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/users"
+          "value": "List Users"
         },
         {
           "name": "List User Invitations",
-          "value": "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/invitations"
+          "value": "List User Invitations"
         },
         {
           "name": "Send An Invitation",
-          "value": "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/invitations/send"
+          "value": "Send An Invitation"
         },
         {
           "name": "Update User Permission",
-          "value": "PATCH /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/users/{user_id}"
+          "value": "Update User Permission"
         },
         {
           "name": "Remove A User",
-          "value": "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/users/{user_id}"
+          "value": "Remove A User"
         },
         {
           "name": "Update Invitation Permission",
-          "value": "PATCH /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/invitations/{key}"
+          "value": "Update Invitation Permission"
         },
         {
           "name": "Delete An Invitation",
-          "value": "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/invitations/{key}"
+          "value": "Delete An Invitation"
         }
       ],
-      "default": "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/invitations",
+      "default": "Add An Invitation",
       "noDataExpression": true
     },
     {
@@ -9041,7 +9041,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Users"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/invitations"
+            "Add An Invitation"
           ]
         }
       },
@@ -9059,7 +9059,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Users"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/invitations"
+            "Add An Invitation"
           ]
         }
       },
@@ -9077,7 +9077,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Users"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/invitations"
+            "Add An Invitation"
           ]
         }
       },
@@ -9095,7 +9095,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Users"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/invitations"
+            "Add An Invitation"
           ]
         }
       },
@@ -9143,7 +9143,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Users"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/users"
+            "List Users"
           ]
         }
       },
@@ -9161,7 +9161,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Users"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/users"
+            "List Users"
           ]
         }
       },
@@ -9180,7 +9180,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Users"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/users"
+            "List Users"
           ]
         }
       },
@@ -9205,7 +9205,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Users"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/invitations"
+            "List User Invitations"
           ]
         }
       },
@@ -9223,7 +9223,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Users"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/invitations"
+            "List User Invitations"
           ]
         }
       },
@@ -9241,7 +9241,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Users"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/invitations/send"
+            "Send An Invitation"
           ]
         }
       },
@@ -9259,7 +9259,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Users"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/invitations/send"
+            "Send An Invitation"
           ]
         }
       },
@@ -9278,7 +9278,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Users"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/auth/invitations/send"
+            "Send An Invitation"
           ]
         }
       },
@@ -9368,7 +9368,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Users"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/users/{user_id}"
+            "Update User Permission"
           ]
         }
       },
@@ -9386,7 +9386,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Users"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/users/{user_id}"
+            "Update User Permission"
           ]
         }
       },
@@ -9404,7 +9404,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Users"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/users/{user_id}"
+            "Update User Permission"
           ]
         }
       },
@@ -9422,7 +9422,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Users"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/users/{user_id}"
+            "Update User Permission"
           ]
         }
       },
@@ -9439,7 +9439,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Users"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/users/{user_id}"
+            "Remove A User"
           ]
         }
       },
@@ -9457,7 +9457,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Users"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/users/{user_id}"
+            "Remove A User"
           ]
         }
       },
@@ -9475,7 +9475,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Users"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/users/{user_id}"
+            "Remove A User"
           ]
         }
       },
@@ -9493,7 +9493,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Users"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/invitations/{key}"
+            "Update Invitation Permission"
           ]
         }
       },
@@ -9511,7 +9511,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Users"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/invitations/{key}"
+            "Update Invitation Permission"
           ]
         }
       },
@@ -9529,7 +9529,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Users"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/invitations/{key}"
+            "Update Invitation Permission"
           ]
         }
       },
@@ -9547,7 +9547,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Users"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/invitations/{key}"
+            "Update Invitation Permission"
           ]
         }
       },
@@ -9577,7 +9577,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Users"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/invitations/{key}"
+            "Delete An Invitation"
           ]
         }
       },
@@ -9595,7 +9595,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Users"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/invitations/{key}"
+            "Delete An Invitation"
           ]
         }
       },
@@ -9613,7 +9613,7 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Users"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{mail_hosting_id}/mailboxes/{mailbox_name}/invitations/{key}"
+            "Delete An Invitation"
           ]
         }
       },
@@ -9633,34 +9633,34 @@ export class InfomaniakMail implements INodeType {
       "options": [
         {
           "name": "List All The Mailing Lists",
-          "value": "GET /1/mail_hostings/{mail_hosting_id}/mailing_lists"
+          "value": "List All The Mailing Lists"
         },
         {
           "name": "Create A Mailing List",
-          "value": "POST /1/mail_hostings/{mail_hosting_id}/mailing_lists"
+          "value": "Create A Mailing List"
         },
         {
           "name": "Show One Mailing List",
-          "value": "GET /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}"
+          "value": "Show One Mailing List"
         },
         {
           "name": "Update Mailing List Parameters",
-          "value": "PATCH /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}"
+          "value": "Update Mailing List Parameters"
         },
         {
           "name": "Delete A Mailing List",
-          "value": "DELETE /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}"
+          "value": "Delete A Mailing List"
         },
         {
           "name": "Send A Mail Through A Mailing List",
-          "value": "PUT /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/send"
+          "value": "Send A Mail Through A Mailing List"
         },
         {
           "name": "Generate A Form For A Mailing List",
-          "value": "PUT /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/form"
+          "value": "Generate A Form For A Mailing List"
         }
       ],
-      "default": "GET /1/mail_hostings/{mail_hosting_id}/mailing_lists",
+      "default": "List All The Mailing Lists",
       "noDataExpression": true
     },
     {
@@ -9674,7 +9674,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/mailing_lists"
+            "List All The Mailing Lists"
           ]
         }
       },
@@ -9691,7 +9691,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailing_lists"
+            "Create A Mailing List"
           ]
         }
       },
@@ -9708,7 +9708,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailing_lists"
+            "Create A Mailing List"
           ]
         }
       },
@@ -9725,7 +9725,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailing_lists"
+            "Create A Mailing List"
           ]
         }
       },
@@ -9743,7 +9743,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailing_lists"
+            "Create A Mailing List"
           ]
         }
       },
@@ -9760,7 +9760,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailing_lists"
+            "Create A Mailing List"
           ]
         }
       },
@@ -9777,7 +9777,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailing_lists"
+            "Create A Mailing List"
           ]
         }
       },
@@ -9795,7 +9795,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailing_lists"
+            "Create A Mailing List"
           ]
         }
       },
@@ -9813,7 +9813,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailing_lists"
+            "Create A Mailing List"
           ]
         }
       },
@@ -9830,7 +9830,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailing_lists"
+            "Create A Mailing List"
           ]
         }
       },
@@ -9848,7 +9848,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailing_lists"
+            "Create A Mailing List"
           ]
         }
       },
@@ -9892,7 +9892,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailing_lists"
+            "Create A Mailing List"
           ]
         }
       },
@@ -9925,7 +9925,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailing_lists"
+            "Create A Mailing List"
           ]
         }
       },
@@ -9984,7 +9984,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}"
+            "Show One Mailing List"
           ]
         }
       },
@@ -10001,7 +10001,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}"
+            "Show One Mailing List"
           ]
         }
       },
@@ -10018,7 +10018,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}"
+            "Update Mailing List Parameters"
           ]
         }
       },
@@ -10035,7 +10035,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}"
+            "Update Mailing List Parameters"
           ]
         }
       },
@@ -10052,7 +10052,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}"
+            "Update Mailing List Parameters"
           ]
         }
       },
@@ -10069,7 +10069,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}"
+            "Update Mailing List Parameters"
           ]
         }
       },
@@ -10087,7 +10087,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}"
+            "Update Mailing List Parameters"
           ]
         }
       },
@@ -10104,7 +10104,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}"
+            "Update Mailing List Parameters"
           ]
         }
       },
@@ -10121,7 +10121,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}"
+            "Update Mailing List Parameters"
           ]
         }
       },
@@ -10139,7 +10139,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}"
+            "Update Mailing List Parameters"
           ]
         }
       },
@@ -10156,7 +10156,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}"
+            "Update Mailing List Parameters"
           ]
         }
       },
@@ -10174,7 +10174,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}"
+            "Update Mailing List Parameters"
           ]
         }
       },
@@ -10218,7 +10218,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}"
+            "Update Mailing List Parameters"
           ]
         }
       },
@@ -10251,7 +10251,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}"
+            "Update Mailing List Parameters"
           ]
         }
       },
@@ -10310,7 +10310,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}"
+            "Delete A Mailing List"
           ]
         }
       },
@@ -10327,7 +10327,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}"
+            "Delete A Mailing List"
           ]
         }
       },
@@ -10344,7 +10344,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/send"
+            "Send A Mail Through A Mailing List"
           ]
         }
       },
@@ -10361,7 +10361,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/send"
+            "Send A Mail Through A Mailing List"
           ]
         }
       },
@@ -10378,7 +10378,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/send"
+            "Send A Mail Through A Mailing List"
           ]
         }
       },
@@ -10396,7 +10396,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/send"
+            "Send A Mail Through A Mailing List"
           ]
         }
       },
@@ -10414,7 +10414,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/send"
+            "Send A Mail Through A Mailing List"
           ]
         }
       },
@@ -10432,7 +10432,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/form"
+            "Generate A Form For A Mailing List"
           ]
         }
       },
@@ -10449,7 +10449,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/form"
+            "Generate A Form For A Mailing List"
           ]
         }
       },
@@ -10466,7 +10466,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/form"
+            "Generate A Form For A Mailing List"
           ]
         }
       },
@@ -10484,7 +10484,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/form"
+            "Generate A Form For A Mailing List"
           ]
         }
       },
@@ -10502,7 +10502,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/form"
+            "Generate A Form For A Mailing List"
           ]
         }
       },
@@ -10520,7 +10520,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/form"
+            "Generate A Form For A Mailing List"
           ]
         }
       },
@@ -10541,26 +10541,26 @@ export class InfomaniakMail implements INodeType {
       "options": [
         {
           "name": "All Subscribers",
-          "value": "GET /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/subscribers"
+          "value": "All Subscribers"
         },
         {
           "name": "Add A New Subscriber",
-          "value": "POST /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/subscribers"
+          "value": "Add A New Subscriber"
         },
         {
           "name": "Update Subscriber Parameters/details",
-          "value": "PATCH /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/subscribers"
+          "value": "Update Subscriber Parameters/details"
         },
         {
           "name": "Remove A Subscriber",
-          "value": "DELETE /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/subscribers"
+          "value": "Remove A Subscriber"
         },
         {
           "name": "Import Subscribers",
-          "value": "POST /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/subscribers/import"
+          "value": "Import Subscribers"
         }
       ],
-      "default": "GET /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/subscribers",
+      "default": "All Subscribers",
       "noDataExpression": true
     },
     {
@@ -10574,7 +10574,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List > Subscribers"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/subscribers"
+            "All Subscribers"
           ]
         }
       },
@@ -10591,7 +10591,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List > Subscribers"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/subscribers"
+            "All Subscribers"
           ]
         }
       },
@@ -10609,7 +10609,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List > Subscribers"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/subscribers"
+            "All Subscribers"
           ]
         }
       },
@@ -10691,7 +10691,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List > Subscribers"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/subscribers"
+            "Add A New Subscriber"
           ]
         }
       },
@@ -10708,7 +10708,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List > Subscribers"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/subscribers"
+            "Add A New Subscriber"
           ]
         }
       },
@@ -10725,7 +10725,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List > Subscribers"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/subscribers"
+            "Add A New Subscriber"
           ]
         }
       },
@@ -10743,7 +10743,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List > Subscribers"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/subscribers"
+            "Update Subscriber Parameters/details"
           ]
         }
       },
@@ -10760,7 +10760,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List > Subscribers"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/subscribers"
+            "Update Subscriber Parameters/details"
           ]
         }
       },
@@ -10777,7 +10777,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List > Subscribers"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/subscribers"
+            "Update Subscriber Parameters/details"
           ]
         }
       },
@@ -10796,7 +10796,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List > Subscribers"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/subscribers"
+            "Update Subscriber Parameters/details"
           ]
         }
       },
@@ -10821,7 +10821,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List > Subscribers"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/subscribers"
+            "Remove A Subscriber"
           ]
         }
       },
@@ -10838,7 +10838,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List > Subscribers"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/subscribers"
+            "Remove A Subscriber"
           ]
         }
       },
@@ -10856,7 +10856,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List > Subscribers"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/subscribers"
+            "Remove A Subscriber"
           ]
         }
       },
@@ -10880,7 +10880,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List > Subscribers"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/subscribers/import"
+            "Import Subscribers"
           ]
         }
       },
@@ -10897,7 +10897,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List > Subscribers"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/subscribers/import"
+            "Import Subscribers"
           ]
         }
       },
@@ -10914,7 +10914,7 @@ export class InfomaniakMail implements INodeType {
             "Mailing List > Subscribers"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/subscribers/import"
+            "Import Subscribers"
           ]
         }
       },
@@ -10935,26 +10935,26 @@ export class InfomaniakMail implements INodeType {
       "options": [
         {
           "name": "List Auto Replies",
-          "value": "GET /1/mail_hostings/{mail_hosting_id}/auto_replies"
+          "value": "List Auto Replies"
         },
         {
           "name": "Create Auto Reply",
-          "value": "POST /1/mail_hostings/{mail_hosting_id}/auto_replies"
+          "value": "Create Auto Reply"
         },
         {
           "name": "Show A Specific Auto Reply",
-          "value": "GET /1/mail_hostings/{mail_hosting_id}/auto_replies/{auto_reply_id}"
+          "value": "Show A Specific Auto Reply"
         },
         {
           "name": "Update Auto Reply",
-          "value": "PATCH /1/mail_hostings/{mail_hosting_id}/auto_replies/{auto_reply_id}"
+          "value": "Update Auto Reply"
         },
         {
           "name": "Delete Auto Reply",
-          "value": "DELETE /1/mail_hostings/{mail_hosting_id}/auto_replies/{auto_reply_id}"
+          "value": "Delete Auto Reply"
         }
       ],
-      "default": "GET /1/mail_hostings/{mail_hosting_id}/auto_replies",
+      "default": "List Auto Replies",
       "noDataExpression": true
     },
     {
@@ -10968,7 +10968,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Auto Reply"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/auto_replies"
+            "List Auto Replies"
           ]
         }
       },
@@ -10986,7 +10986,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Auto Reply"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/auto_replies"
+            "List Auto Replies"
           ]
         }
       },
@@ -11011,7 +11011,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Auto Reply"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/auto_replies"
+            "Create Auto Reply"
           ]
         }
       },
@@ -11029,7 +11029,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Auto Reply"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/auto_replies"
+            "Create Auto Reply"
           ]
         }
       },
@@ -11047,7 +11047,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Auto Reply"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/auto_replies"
+            "Create Auto Reply"
           ]
         }
       },
@@ -11064,7 +11064,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Auto Reply"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/auto_replies"
+            "Create Auto Reply"
           ]
         }
       },
@@ -11083,7 +11083,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Auto Reply"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/auto_replies"
+            "Create Auto Reply"
           ]
         }
       },
@@ -11136,7 +11136,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Auto Reply"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/auto_replies/{auto_reply_id}"
+            "Show A Specific Auto Reply"
           ]
         }
       },
@@ -11153,7 +11153,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Auto Reply"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/auto_replies/{auto_reply_id}"
+            "Show A Specific Auto Reply"
           ]
         }
       },
@@ -11170,7 +11170,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Auto Reply"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/auto_replies/{auto_reply_id}"
+            "Update Auto Reply"
           ]
         }
       },
@@ -11188,7 +11188,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Auto Reply"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/auto_replies/{auto_reply_id}"
+            "Update Auto Reply"
           ]
         }
       },
@@ -11207,7 +11207,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Auto Reply"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/auto_replies/{auto_reply_id}"
+            "Update Auto Reply"
           ]
         }
       },
@@ -11280,7 +11280,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Auto Reply"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{mail_hosting_id}/auto_replies/{auto_reply_id}"
+            "Delete Auto Reply"
           ]
         }
       },
@@ -11298,7 +11298,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Auto Reply"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{mail_hosting_id}/auto_replies/{auto_reply_id}"
+            "Delete Auto Reply"
           ]
         }
       },
@@ -11319,10 +11319,10 @@ export class InfomaniakMail implements INodeType {
       "options": [
         {
           "name": "Create/Update Bimi",
-          "value": "POST /1/mail_hostings/{mail_hosting_id}/bimi"
+          "value": "Create/Update Bimi"
         }
       ],
-      "default": "POST /1/mail_hostings/{mail_hosting_id}/bimi",
+      "default": "Create/Update Bimi",
       "noDataExpression": true
     },
     {
@@ -11336,7 +11336,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Bimi"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/bimi"
+            "Create/Update Bimi"
           ]
         }
       },
@@ -11354,7 +11354,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Bimi"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/bimi"
+            "Create/Update Bimi"
           ]
         }
       },
@@ -11399,26 +11399,26 @@ export class InfomaniakMail implements INodeType {
       "options": [
         {
           "name": "List Filters Model",
-          "value": "GET /1/mail_hostings/{mail_hosting_id}/filters"
+          "value": "List Filters Model"
         },
         {
           "name": "Create A Filter Model",
-          "value": "POST /1/mail_hostings/{mail_hosting_id}/filters"
+          "value": "Create A Filter Model"
         },
         {
           "name": "Show A Filter Model",
-          "value": "GET /1/mail_hostings/{mail_hosting_id}/filters/{filter_id}"
+          "value": "Show A Filter Model"
         },
         {
           "name": "Update A Filter Model",
-          "value": "PUT /1/mail_hostings/{mail_hosting_id}/filters/{filter_id}"
+          "value": "Update A Filter Model"
         },
         {
           "name": "Delete A Filter Model",
-          "value": "DELETE /1/mail_hostings/{mail_hosting_id}/filters/{filter_id}"
+          "value": "Delete A Filter Model"
         }
       ],
-      "default": "GET /1/mail_hostings/{mail_hosting_id}/filters",
+      "default": "List Filters Model",
       "noDataExpression": true
     },
     {
@@ -11432,7 +11432,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Filters Models"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/filters"
+            "List Filters Model"
           ]
         }
       },
@@ -11450,7 +11450,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Filters Models"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/filters"
+            "Create A Filter Model"
           ]
         }
       },
@@ -11467,7 +11467,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Filters Models"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/filters"
+            "Create A Filter Model"
           ]
         }
       },
@@ -11484,7 +11484,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Filters Models"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/filters"
+            "Create A Filter Model"
           ]
         }
       },
@@ -11503,7 +11503,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Filters Models"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/filters"
+            "Create A Filter Model"
           ]
         }
       },
@@ -11545,7 +11545,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Filters Models"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/filters/{filter_id}"
+            "Show A Filter Model"
           ]
         }
       },
@@ -11563,7 +11563,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Filters Models"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/filters/{filter_id}"
+            "Show A Filter Model"
           ]
         }
       },
@@ -11581,7 +11581,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Filters Models"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/filters/{filter_id}"
+            "Update A Filter Model"
           ]
         }
       },
@@ -11598,7 +11598,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Filters Models"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/filters/{filter_id}"
+            "Update A Filter Model"
           ]
         }
       },
@@ -11615,7 +11615,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Filters Models"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/filters/{filter_id}"
+            "Update A Filter Model"
           ]
         }
       },
@@ -11632,7 +11632,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Filters Models"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/filters/{filter_id}"
+            "Update A Filter Model"
           ]
         }
       },
@@ -11651,7 +11651,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Filters Models"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/filters/{filter_id}"
+            "Update A Filter Model"
           ]
         }
       },
@@ -11693,7 +11693,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Filters Models"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{mail_hosting_id}/filters/{filter_id}"
+            "Delete A Filter Model"
           ]
         }
       },
@@ -11710,7 +11710,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Filters Models"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{mail_hosting_id}/filters/{filter_id}"
+            "Delete A Filter Model"
           ]
         }
       },
@@ -11727,7 +11727,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Filters Models"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{mail_hosting_id}/filters/{filter_id}"
+            "Delete A Filter Model"
           ]
         }
       },
@@ -11745,7 +11745,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Filters Models"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{mail_hosting_id}/filters/{filter_id}"
+            "Delete A Filter Model"
           ]
         }
       },
@@ -11766,14 +11766,14 @@ export class InfomaniakMail implements INodeType {
       "options": [
         {
           "name": "List Preferences",
-          "value": "GET /1/mail_hostings/{mail_hosting_id}/preferences"
+          "value": "List Preferences"
         },
         {
           "name": "Update Preferences",
-          "value": "PATCH /1/mail_hostings/{mail_hosting_id}/preferences"
+          "value": "Update Preferences"
         }
       ],
-      "default": "GET /1/mail_hostings/{mail_hosting_id}/preferences",
+      "default": "List Preferences",
       "noDataExpression": true
     },
     {
@@ -11787,7 +11787,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Preferences"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/preferences"
+            "List Preferences"
           ]
         }
       },
@@ -11805,7 +11805,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Preferences"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/preferences"
+            "Update Preferences"
           ]
         }
       },
@@ -11823,7 +11823,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Preferences"
           ],
           "operation": [
-            "PATCH /1/mail_hostings/{mail_hosting_id}/preferences"
+            "Update Preferences"
           ]
         }
       },
@@ -11892,34 +11892,34 @@ export class InfomaniakMail implements INodeType {
       "options": [
         {
           "name": "List Redirections",
-          "value": "GET /1/mail_hostings/{mail_hosting_id}/redirections"
+          "value": "List Redirections"
         },
         {
           "name": "Create Redirection",
-          "value": "POST /1/mail_hostings/{mail_hosting_id}/redirections"
+          "value": "Create Redirection"
         },
         {
           "name": "Show Details",
-          "value": "GET /1/mail_hostings/{mail_hosting_id}/redirections/{redirection_id}"
+          "value": "Show Details"
         },
         {
           "name": "Update Redirection",
-          "value": "PUT /1/mail_hostings/{mail_hosting_id}/redirections/{redirection_id}"
+          "value": "Update Redirection"
         },
         {
           "name": "Delete Redirection",
-          "value": "DELETE /1/mail_hostings/{mail_hosting_id}/redirections/{redirection_id}"
+          "value": "Delete Redirection"
         },
         {
           "name": "Enable Redirection",
-          "value": "PUT /1/mail_hostings/{mail_hosting_id}/redirections/{redirection_id}/enable"
+          "value": "Enable Redirection"
         },
         {
           "name": "Send Confirmation Request",
-          "value": "PUT /1/mail_hostings/{mail_hosting_id}/redirections/{redirection_id}/send-confirmation-requests"
+          "value": "Send Confirmation Request"
         }
       ],
-      "default": "GET /1/mail_hostings/{mail_hosting_id}/redirections",
+      "default": "List Redirections",
       "noDataExpression": true
     },
     {
@@ -11933,7 +11933,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Redirections"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/redirections"
+            "List Redirections"
           ]
         }
       },
@@ -11952,7 +11952,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Redirections"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/redirections"
+            "List Redirections"
           ]
         }
       },
@@ -12022,7 +12022,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Redirections"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/redirections"
+            "Create Redirection"
           ]
         }
       },
@@ -12039,7 +12039,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Redirections"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/redirections"
+            "Create Redirection"
           ]
         }
       },
@@ -12057,7 +12057,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Redirections"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/redirections"
+            "Create Redirection"
           ]
         }
       },
@@ -12075,7 +12075,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Redirections"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/redirections/{redirection_id}"
+            "Show Details"
           ]
         }
       },
@@ -12092,7 +12092,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Redirections"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/redirections/{redirection_id}"
+            "Show Details"
           ]
         }
       },
@@ -12109,7 +12109,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Redirections"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/redirections/{redirection_id}"
+            "Update Redirection"
           ]
         }
       },
@@ -12126,7 +12126,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Redirections"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/redirections/{redirection_id}"
+            "Update Redirection"
           ]
         }
       },
@@ -12143,7 +12143,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Redirections"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/redirections/{redirection_id}"
+            "Update Redirection"
           ]
         }
       },
@@ -12160,7 +12160,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Redirections"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{mail_hosting_id}/redirections/{redirection_id}"
+            "Delete Redirection"
           ]
         }
       },
@@ -12177,7 +12177,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Redirections"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{mail_hosting_id}/redirections/{redirection_id}"
+            "Delete Redirection"
           ]
         }
       },
@@ -12194,7 +12194,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Redirections"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/redirections/{redirection_id}/enable"
+            "Enable Redirection"
           ]
         }
       },
@@ -12212,7 +12212,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Redirections"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/redirections/{redirection_id}/enable"
+            "Enable Redirection"
           ]
         }
       },
@@ -12230,7 +12230,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Redirections"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/redirections/{redirection_id}/send-confirmation-requests"
+            "Send Confirmation Request"
           ]
         }
       },
@@ -12247,7 +12247,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Redirections"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/redirections/{redirection_id}/send-confirmation-requests"
+            "Send Confirmation Request"
           ]
         }
       },
@@ -12267,22 +12267,22 @@ export class InfomaniakMail implements INodeType {
       "options": [
         {
           "name": "Get All Targets",
-          "value": "GET /1/mail_hostings/{mail_hosting_id}/redirections/{redirection_id}/targets"
+          "value": "Get All Targets"
         },
         {
           "name": "Add New Target",
-          "value": "POST /1/mail_hostings/{mail_hosting_id}/redirections/{redirection_id}/targets"
+          "value": "Add New Target"
         },
         {
           "name": "Remove A Target",
-          "value": "DELETE /1/mail_hostings/{mail_hosting_id}/redirections/{redirection_id}/targets"
+          "value": "Remove A Target"
         },
         {
           "name": "Resend Confirmation Email",
-          "value": "PUT /1/mail_hostings/{mail_hosting_id}/redirections/{redirection_id}/targets/{target_id}/resend-confirmation-request"
+          "value": "Resend Confirmation Email"
         }
       ],
-      "default": "GET /1/mail_hostings/{mail_hosting_id}/redirections/{redirection_id}/targets",
+      "default": "Get All Targets",
       "noDataExpression": true
     },
     {
@@ -12296,7 +12296,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Redirections > Target"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/redirections/{redirection_id}/targets"
+            "Get All Targets"
           ]
         }
       },
@@ -12313,7 +12313,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Redirections > Target"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/redirections/{redirection_id}/targets"
+            "Get All Targets"
           ]
         }
       },
@@ -12330,7 +12330,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Redirections > Target"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/redirections/{redirection_id}/targets"
+            "Add New Target"
           ]
         }
       },
@@ -12347,7 +12347,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Redirections > Target"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/redirections/{redirection_id}/targets"
+            "Add New Target"
           ]
         }
       },
@@ -12364,7 +12364,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Redirections > Target"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/redirections/{redirection_id}/targets"
+            "Add New Target"
           ]
         }
       },
@@ -12381,7 +12381,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Redirections > Target"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{mail_hosting_id}/redirections/{redirection_id}/targets"
+            "Remove A Target"
           ]
         }
       },
@@ -12398,7 +12398,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Redirections > Target"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{mail_hosting_id}/redirections/{redirection_id}/targets"
+            "Remove A Target"
           ]
         }
       },
@@ -12415,7 +12415,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Redirections > Target"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/redirections/{redirection_id}/targets/{target_id}/resend-confirmation-request"
+            "Resend Confirmation Email"
           ]
         }
       },
@@ -12432,7 +12432,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Redirections > Target"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/redirections/{redirection_id}/targets/{target_id}/resend-confirmation-request"
+            "Resend Confirmation Email"
           ]
         }
       },
@@ -12449,7 +12449,7 @@ export class InfomaniakMail implements INodeType {
             "Service Mail > Redirections > Target"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/redirections/{redirection_id}/targets/{target_id}/resend-confirmation-request"
+            "Resend Confirmation Email"
           ]
         }
       },
@@ -12462,45 +12462,45 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Service Mail > Signatures templates"
+            "Service Mail > Signatures Templates"
           ]
         }
       },
       "options": [
         {
           "name": "List All Templates",
-          "value": "GET /1/mail_hostings/{mail_hosting_id}/signatures/templates"
+          "value": "List All Templates"
         },
         {
           "name": "Create A Template",
-          "value": "POST /1/mail_hostings/{mail_hosting_id}/signatures/templates"
+          "value": "Create A Template"
         },
         {
           "name": "Upload Image",
-          "value": "POST /1/mail_hostings/{mail_hosting_id}/signatures/templates/upload"
+          "value": "Upload Image"
         },
         {
           "name": "Create A Signature For All Users",
-          "value": "POST /1/mail_hostings/{mail_hosting_id}/signatures/templates/{signature_template}/create_signatures"
+          "value": "Create A Signature For All Users"
         },
         {
           "name": "Show Default",
-          "value": "GET /1/mail_hostings/{mail_hosting_id}/signatures/templates/default"
+          "value": "Show Default"
         },
         {
           "name": "Show A Signature Template",
-          "value": "GET /1/mail_hostings/{mail_hosting_id}/signatures/templates/{signature_template}"
+          "value": "Show A Signature Template"
         },
         {
           "name": "Update",
-          "value": "PUT /1/mail_hostings/{mail_hosting_id}/signatures/templates/{signature_template}"
+          "value": "Update"
         },
         {
           "name": "Delete",
-          "value": "DELETE /1/mail_hostings/{mail_hosting_id}/signatures/templates/{signature_template}"
+          "value": "Delete"
         }
       ],
-      "default": "GET /1/mail_hostings/{mail_hosting_id}/signatures/templates",
+      "default": "List All Templates",
       "noDataExpression": true
     },
     {
@@ -12511,10 +12511,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Service Mail > Signatures templates"
+            "Service Mail > Signatures Templates"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/signatures/templates"
+            "List All Templates"
           ]
         }
       },
@@ -12529,10 +12529,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Service Mail > Signatures templates"
+            "Service Mail > Signatures Templates"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/signatures/templates"
+            "List All Templates"
           ]
         }
       },
@@ -12612,10 +12612,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Service Mail > Signatures templates"
+            "Service Mail > Signatures Templates"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/signatures/templates"
+            "Create A Template"
           ]
         }
       },
@@ -12629,10 +12629,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Service Mail > Signatures templates"
+            "Service Mail > Signatures Templates"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/signatures/templates"
+            "Create A Template"
           ]
         }
       },
@@ -12647,10 +12647,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Service Mail > Signatures templates"
+            "Service Mail > Signatures Templates"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/signatures/templates"
+            "Create A Template"
           ]
         }
       },
@@ -12666,10 +12666,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Service Mail > Signatures templates"
+            "Service Mail > Signatures Templates"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/signatures/templates"
+            "Create A Template"
           ]
         }
       },
@@ -12783,10 +12783,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Service Mail > Signatures templates"
+            "Service Mail > Signatures Templates"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/signatures/templates/upload"
+            "Upload Image"
           ]
         }
       },
@@ -12800,10 +12800,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Service Mail > Signatures templates"
+            "Service Mail > Signatures Templates"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/signatures/templates/upload"
+            "Upload Image"
           ]
         }
       },
@@ -12818,10 +12818,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Service Mail > Signatures templates"
+            "Service Mail > Signatures Templates"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/signatures/templates/{signature_template}/create_signatures"
+            "Create A Signature For All Users"
           ]
         }
       },
@@ -12835,10 +12835,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Service Mail > Signatures templates"
+            "Service Mail > Signatures Templates"
           ],
           "operation": [
-            "POST /1/mail_hostings/{mail_hosting_id}/signatures/templates/{signature_template}/create_signatures"
+            "Create A Signature For All Users"
           ]
         }
       },
@@ -12852,10 +12852,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Service Mail > Signatures templates"
+            "Service Mail > Signatures Templates"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/signatures/templates/default"
+            "Show Default"
           ]
         }
       },
@@ -12870,10 +12870,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Service Mail > Signatures templates"
+            "Service Mail > Signatures Templates"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/signatures/templates/default"
+            "Show Default"
           ]
         }
       },
@@ -12895,10 +12895,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Service Mail > Signatures templates"
+            "Service Mail > Signatures Templates"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/signatures/templates/{signature_template}"
+            "Show A Signature Template"
           ]
         }
       },
@@ -12912,10 +12912,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Service Mail > Signatures templates"
+            "Service Mail > Signatures Templates"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/signatures/templates/{signature_template}"
+            "Show A Signature Template"
           ]
         }
       },
@@ -12930,10 +12930,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Service Mail > Signatures templates"
+            "Service Mail > Signatures Templates"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/signatures/templates/{signature_template}"
+            "Show A Signature Template"
           ]
         }
       },
@@ -12955,10 +12955,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Service Mail > Signatures templates"
+            "Service Mail > Signatures Templates"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/signatures/templates/{signature_template}"
+            "Update"
           ]
         }
       },
@@ -12972,10 +12972,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Service Mail > Signatures templates"
+            "Service Mail > Signatures Templates"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/signatures/templates/{signature_template}"
+            "Update"
           ]
         }
       },
@@ -12990,10 +12990,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Service Mail > Signatures templates"
+            "Service Mail > Signatures Templates"
           ],
           "operation": [
-            "PUT /1/mail_hostings/{mail_hosting_id}/signatures/templates/{signature_template}"
+            "Update"
           ]
         }
       },
@@ -13117,10 +13117,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Service Mail > Signatures templates"
+            "Service Mail > Signatures Templates"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{mail_hosting_id}/signatures/templates/{signature_template}"
+            "Delete"
           ]
         }
       },
@@ -13134,10 +13134,10 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Service Mail > Signatures templates"
+            "Service Mail > Signatures Templates"
           ],
           "operation": [
-            "DELETE /1/mail_hostings/{mail_hosting_id}/signatures/templates/{signature_template}"
+            "Delete"
           ]
         }
       },
@@ -13151,7 +13151,7 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailbox management",
+            "Mailbox Management",
             "Mailboxes > Accesses > Devices",
             "Mailboxes > Accesses > Devices",
             "Mailboxes > Accesses > Devices",
@@ -13161,20 +13161,20 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Webmail",
             "Mailboxes > Accesses > Webmail",
             "Mailing List > Subscribers",
-            "Service Mail > Signatures templates"
+            "Service Mail > Signatures Templates"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/mailboxes",
-            "GET /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/devices",
-            "GET /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/devices/users/{user_id}",
-            "GET /1/mail_hostings/{service_mail}/accesses/devices/users/{user_id}",
-            "GET /1/mail_hostings/accesses/devices",
-            "GET /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail",
-            "GET /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail/users",
-            "GET /1/mail_hostings/accesses/webmail",
-            "GET /1/mail_hostings/accesses/webmail/accounts/{account_id}/users/{user_id}",
-            "GET /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/subscribers",
-            "GET /1/mail_hostings/{mail_hosting_id}/signatures/templates"
+            "List Mailboxes",
+            "List Device Access",
+            "List Device Access For A User",
+            "List Device By User",
+            "List Device",
+            "List User Access And Invitations",
+            "List Users Having Access",
+            "List Of User Accesses For The Current User",
+            "List Of User Accesses For A Account And A User",
+            "All Subscribers",
+            "List All Templates"
           ]
         }
       }
@@ -13191,7 +13191,7 @@ export class InfomaniakMail implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Mailbox management",
+            "Mailbox Management",
             "Mailboxes > Accesses > Devices",
             "Mailboxes > Accesses > Devices",
             "Mailboxes > Accesses > Devices",
@@ -13201,20 +13201,20 @@ export class InfomaniakMail implements INodeType {
             "Mailboxes > Accesses > Webmail",
             "Mailboxes > Accesses > Webmail",
             "Mailing List > Subscribers",
-            "Service Mail > Signatures templates"
+            "Service Mail > Signatures Templates"
           ],
           "operation": [
-            "GET /1/mail_hostings/{mail_hosting_id}/mailboxes",
-            "GET /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/devices",
-            "GET /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/devices/users/{user_id}",
-            "GET /1/mail_hostings/{service_mail}/accesses/devices/users/{user_id}",
-            "GET /1/mail_hostings/accesses/devices",
-            "GET /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail",
-            "GET /1/mail_hostings/{service_mail}/mailboxes/{mailbox_name}/accesses/webmail/users",
-            "GET /1/mail_hostings/accesses/webmail",
-            "GET /1/mail_hostings/accesses/webmail/accounts/{account_id}/users/{user_id}",
-            "GET /1/mail_hostings/{mail_hosting_id}/mailing_lists/{mailing_list_name}/subscribers",
-            "GET /1/mail_hostings/{mail_hosting_id}/signatures/templates"
+            "List Mailboxes",
+            "List Device Access",
+            "List Device Access For A User",
+            "List Device By User",
+            "List Device",
+            "List User Access And Invitations",
+            "List Users Having Access",
+            "List Of User Accesses For The Current User",
+            "List Of User Accesses For A Account And A User",
+            "All Subscribers",
+            "List All Templates"
           ],
           "returnAll": [
             false

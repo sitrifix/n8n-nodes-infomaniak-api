@@ -16,7 +16,7 @@ type OperationDefinition = {
 
 const operations: Record<string, Record<string, OperationDefinition>> = {
   "Drive": {
-    "PUT /2/drive/{drive_id}": {
+    "Update Drive": {
       "method": "PUT",
       "path": "/2/drive/{drive_id}",
       "pagination": "none",
@@ -45,7 +45,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /3/drive/{drive_id}/users": {
+    "Get Users": {
       "method": "GET",
       "path": "/3/drive/{drive_id}/users",
       "pagination": "none",
@@ -61,7 +61,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /3/drive/{drive_id}/wake": {
+    "Wake A Sleeping Drive Up": {
       "method": "POST",
       "path": "/3/drive/{drive_id}/wake",
       "pagination": "none",
@@ -79,7 +79,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Drive > Activity": {
-    "GET /2/drive/{drive_id}/activities": {
+    "Get Drive Activities Of All The Users.": {
       "method": "GET",
       "path": "/2/drive/{drive_id}/activities",
       "pagination": "page-per-page",
@@ -95,7 +95,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /3/drive/{drive_id}/activities": {
+    "Get Drive Activities Of All The Users. (2)": {
       "method": "GET",
       "path": "/3/drive/{drive_id}/activities",
       "pagination": "none",
@@ -111,7 +111,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /3/drive/{drive_id}/activities/total": {
+    "Get Total Count Drive Activities Of All The Users.": {
       "method": "GET",
       "path": "/3/drive/{drive_id}/activities/total",
       "pagination": "none",
@@ -127,7 +127,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /3/drive/{drive_id}/files/{file_id}/activities": {
+    "Get File Activities": {
       "method": "GET",
       "path": "/3/drive/{drive_id}/files/{file_id}/activities",
       "pagination": "none",
@@ -147,7 +147,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /3/drive/{drive_id}/files/activities": {
+    "Get Root Activities": {
       "method": "GET",
       "path": "/3/drive/{drive_id}/files/activities",
       "pagination": "none",
@@ -165,7 +165,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Drive > Activity > Report": {
-    "GET /2/drive/{drive_id}/activities/reports": {
+    "List Reports": {
       "method": "GET",
       "path": "/2/drive/{drive_id}/activities/reports",
       "pagination": "page-per-page",
@@ -181,7 +181,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/drive/{drive_id}/activities/reports": {
+    "Create Report": {
       "method": "POST",
       "path": "/2/drive/{drive_id}/activities/reports",
       "pagination": "none",
@@ -230,7 +230,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /2/drive/{drive_id}/activities/reports/{report_id}": {
+    "Get Report": {
       "method": "GET",
       "path": "/2/drive/{drive_id}/activities/reports/{report_id}",
       "pagination": "page-per-page",
@@ -250,7 +250,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /2/drive/{drive_id}/activities/reports/{report_id}": {
+    "Delete Report": {
       "method": "DELETE",
       "path": "/2/drive/{drive_id}/activities/reports/{report_id}",
       "pagination": "none",
@@ -270,7 +270,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/drive/{drive_id}/activities/reports/{report_id}/export": {
+    "Export Report": {
       "method": "GET",
       "path": "/2/drive/{drive_id}/activities/reports/{report_id}/export",
       "pagination": "none",
@@ -292,7 +292,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Drive > Files": {
-    "POST /2/drive/{drive_id}/files/exists": {
+    "Check File' Existence": {
       "method": "POST",
       "path": "/2/drive/{drive_id}/files/exists",
       "pagination": "none",
@@ -313,7 +313,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /3/drive/{drive_id}/files/largest": {
+    "Get Largest Files": {
       "method": "GET",
       "path": "/3/drive/{drive_id}/files/largest",
       "pagination": "none",
@@ -329,7 +329,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /3/drive/{drive_id}/files/last_modified": {
+    "Get Last Modified Files": {
       "method": "GET",
       "path": "/3/drive/{drive_id}/files/last_modified",
       "pagination": "none",
@@ -345,7 +345,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /3/drive/{drive_id}/files/most_versions": {
+    "Get Most Versioned Files": {
       "method": "GET",
       "path": "/3/drive/{drive_id}/files/most_versions",
       "pagination": "none",
@@ -361,7 +361,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /3/drive/{drive_id}/files/my_shared": {
+    "Get My Shared Files": {
       "method": "GET",
       "path": "/3/drive/{drive_id}/files/my_shared",
       "pagination": "none",
@@ -377,7 +377,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /3/drive/{drive_id}/files/shared_with_me": {
+    "Get Shared Files": {
       "method": "GET",
       "path": "/3/drive/{drive_id}/files/shared_with_me",
       "pagination": "none",
@@ -393,7 +393,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /3/drive/{drive_id}/files/team_directory": {
+    "Create Team Directory": {
       "method": "POST",
       "path": "/3/drive/{drive_id}/files/team_directory",
       "pagination": "none",
@@ -422,7 +422,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /3/drive/{drive_id}/files/recents": {
+    "List The Most Recent Files Or Directories Used By The User.": {
       "method": "GET",
       "path": "/3/drive/{drive_id}/files/recents",
       "pagination": "none",
@@ -440,7 +440,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Drive > Files > Action": {
-    "POST /2/drive/{drive_id}/cancel": {
+    "Undo Action": {
       "method": "POST",
       "path": "/2/drive/{drive_id}/cancel",
       "pagination": "none",
@@ -467,7 +467,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Drive > Files > Archive": {
-    "GET /2/drive/{drive_id}/files/archives/{archive_uuid}": {
+    "Download Archive": {
       "method": "GET",
       "path": "/2/drive/{drive_id}/files/archives/{archive_uuid}",
       "pagination": "none",
@@ -487,7 +487,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /3/drive/{drive_id}/files/archives": {
+    "Build Archive": {
       "method": "POST",
       "path": "/3/drive/{drive_id}/files/archives",
       "pagination": "none",
@@ -518,7 +518,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Drive > Files > Category": {
-    "GET /2/drive/{drive_id}/categories": {
+    "Get All Categories": {
       "method": "GET",
       "path": "/2/drive/{drive_id}/categories",
       "pagination": "none",
@@ -534,7 +534,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/drive/{drive_id}/categories": {
+    "Create Category": {
       "method": "POST",
       "path": "/2/drive/{drive_id}/categories",
       "pagination": "none",
@@ -559,7 +559,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "PUT /2/drive/{drive_id}/categories/{category_id}": {
+    "Edit Category": {
       "method": "PUT",
       "path": "/2/drive/{drive_id}/categories/{category_id}",
       "pagination": "none",
@@ -588,7 +588,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /2/drive/{drive_id}/categories/{category_id}": {
+    "Delete Category": {
       "method": "DELETE",
       "path": "/2/drive/{drive_id}/categories/{category_id}",
       "pagination": "none",
@@ -608,7 +608,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/drive/{drive_id}/files/categories/{category_id}": {
+    "Add Category On Files": {
       "method": "POST",
       "path": "/2/drive/{drive_id}/files/categories/{category_id}",
       "pagination": "none",
@@ -633,7 +633,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /2/drive/{drive_id}/files/categories/{category_id}": {
+    "Remove Category On Files": {
       "method": "DELETE",
       "path": "/2/drive/{drive_id}/files/categories/{category_id}",
       "pagination": "none",
@@ -658,7 +658,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/drive/{drive_id}/files/{file_id}/categories/{category_id}": {
+    "Add Category On File": {
       "method": "POST",
       "path": "/2/drive/{drive_id}/files/{file_id}/categories/{category_id}",
       "pagination": "none",
@@ -682,7 +682,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /2/drive/{drive_id}/files/{file_id}/categories/{category_id}": {
+    "Remove Category On File": {
       "method": "DELETE",
       "path": "/2/drive/{drive_id}/files/{file_id}/categories/{category_id}",
       "pagination": "none",
@@ -706,7 +706,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /2/drive/{drive_id}/files/{file_id}/categories": {
+    "Remove Categories On File": {
       "method": "DELETE",
       "path": "/2/drive/{drive_id}/files/{file_id}/categories",
       "pagination": "none",
@@ -726,7 +726,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/drive/{drive_id}/files/{file_id}/categories/{category_id}/ai-feedback": {
+    "Validates An AI Generated Category": {
       "method": "POST",
       "path": "/2/drive/{drive_id}/files/{file_id}/categories/{category_id}/ai-feedback",
       "pagination": "none",
@@ -757,7 +757,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Drive > Files > Category > Right": {
-    "GET /2/drive/{drive_id}/categories/rights": {
+    "Get": {
       "method": "GET",
       "path": "/2/drive/{drive_id}/categories/rights",
       "pagination": "none",
@@ -773,7 +773,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/drive/{drive_id}/categories/rights": {
+    "Update/Create": {
       "method": "POST",
       "path": "/2/drive/{drive_id}/categories/rights",
       "pagination": "none",
@@ -820,7 +820,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Drive > Files > Dropbox": {
-    "GET /2/drive/{drive_id}/files/{file_id}/dropbox": {
+    "Get Dropbox": {
       "method": "GET",
       "path": "/2/drive/{drive_id}/files/{file_id}/dropbox",
       "pagination": "none",
@@ -840,7 +840,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/drive/{drive_id}/files/{file_id}/dropbox": {
+    "Convert A Folder Into A Dropbox": {
       "method": "POST",
       "path": "/2/drive/{drive_id}/files/{file_id}/dropbox",
       "pagination": "none",
@@ -881,7 +881,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "PUT /2/drive/{drive_id}/files/{file_id}/dropbox": {
+    "Update Dropbox": {
       "method": "PUT",
       "path": "/2/drive/{drive_id}/files/{file_id}/dropbox",
       "pagination": "none",
@@ -922,7 +922,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /2/drive/{drive_id}/files/{file_id}/dropbox": {
+    "Delete Dropbox": {
       "method": "DELETE",
       "path": "/2/drive/{drive_id}/files/{file_id}/dropbox",
       "pagination": "none",
@@ -942,7 +942,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/drive/{drive_id}/files/{file_id}/dropbox/invite": {
+    "Dropbox Invite": {
       "method": "POST",
       "path": "/2/drive/{drive_id}/files/{file_id}/dropbox/invite",
       "pagination": "none",
@@ -975,7 +975,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /3/drive/{drive_id}/files/dropboxes": {
+    "Get Drop Boxes": {
       "method": "GET",
       "path": "/3/drive/{drive_id}/files/dropboxes",
       "pagination": "none",
@@ -991,7 +991,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /3/drive/{drive_id}/files/dropboxes": {
+    "Create A New Dropbox": {
       "method": "POST",
       "path": "/3/drive/{drive_id}/files/dropboxes",
       "pagination": "none",
@@ -1017,8 +1017,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "bodyFieldName": null
     }
   },
-  "Drive > Files > External import": {
-    "GET /2/drive/{drive_id}/imports": {
+  "Drive > Files > External Import": {
+    "List Imports": {
       "method": "GET",
       "path": "/2/drive/{drive_id}/imports",
       "pagination": "page-per-page",
@@ -1034,7 +1034,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /2/drive/{drive_id}/imports": {
+    "Clean Imports History": {
       "method": "DELETE",
       "path": "/2/drive/{drive_id}/imports",
       "pagination": "none",
@@ -1050,7 +1050,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/drive/{drive_id}/imports/sharelink": {
+    "Import K Drive Sharelink": {
       "method": "POST",
       "path": "/2/drive/{drive_id}/imports/sharelink",
       "pagination": "none",
@@ -1091,7 +1091,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "POST /2/drive/{drive_id}/imports/kdrive": {
+    "Import K Drive": {
       "method": "POST",
       "path": "/2/drive/{drive_id}/imports/kdrive",
       "pagination": "none",
@@ -1120,7 +1120,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "POST /2/drive/{drive_id}/imports/webdav": {
+    "Import Web DAV App": {
       "method": "POST",
       "path": "/2/drive/{drive_id}/imports/webdav",
       "pagination": "none",
@@ -1161,7 +1161,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "POST /2/drive/{drive_id}/imports/oauth": {
+    "Import OAuth2 App": {
       "method": "POST",
       "path": "/2/drive/{drive_id}/imports/oauth",
       "pagination": "none",
@@ -1206,7 +1206,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /2/drive/{drive_id}/imports/oauth/drives": {
+    "List Eligible Drives": {
       "method": "GET",
       "path": "/2/drive/{drive_id}/imports/oauth/drives",
       "pagination": "none",
@@ -1227,7 +1227,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/drive/{drive_id}/imports/{import_id}": {
+    "List Errored Import Files": {
       "method": "GET",
       "path": "/2/drive/{drive_id}/imports/{import_id}",
       "pagination": "page-per-page",
@@ -1247,7 +1247,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /2/drive/{drive_id}/imports/{import_id}": {
+    "Delete Import": {
       "method": "DELETE",
       "path": "/2/drive/{drive_id}/imports/{import_id}",
       "pagination": "none",
@@ -1267,7 +1267,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /2/drive/{drive_id}/imports/{import_id}/cancel": {
+    "Cancel Import": {
       "method": "PUT",
       "path": "/2/drive/{drive_id}/imports/{import_id}/cancel",
       "pagination": "none",
@@ -1289,7 +1289,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Drive > Files > Favorite": {
-    "POST /2/drive/{drive_id}/files/{file_id}/favorite": {
+    "Favorite File": {
       "method": "POST",
       "path": "/2/drive/{drive_id}/files/{file_id}/favorite",
       "pagination": "none",
@@ -1309,7 +1309,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /2/drive/{drive_id}/files/{file_id}/favorite": {
+    "Unfavorite File": {
       "method": "DELETE",
       "path": "/2/drive/{drive_id}/files/{file_id}/favorite",
       "pagination": "none",
@@ -1329,7 +1329,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /3/drive/{drive_id}/files/favorites": {
+    "Get Favorite Files List": {
       "method": "GET",
       "path": "/3/drive/{drive_id}/files/favorites",
       "pagination": "none",
@@ -1347,7 +1347,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Drive > Files > File/Directory": {
-    "DELETE /2/drive/{drive_id}/files/{file_id}": {
+    "Trash": {
       "method": "DELETE",
       "path": "/2/drive/{drive_id}/files/{file_id}",
       "pagination": "none",
@@ -1367,7 +1367,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/drive/{drive_id}/files/{file_id}/thumbnail": {
+    "Thumbnail": {
       "method": "GET",
       "path": "/2/drive/{drive_id}/files/{file_id}/thumbnail",
       "pagination": "none",
@@ -1387,7 +1387,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/drive/{drive_id}/files/{file_id}/preview": {
+    "Preview": {
       "method": "GET",
       "path": "/2/drive/{drive_id}/files/{file_id}/preview",
       "pagination": "none",
@@ -1407,7 +1407,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/drive/{drive_id}/files/{file_id}/download": {
+    "Download": {
       "method": "GET",
       "path": "/2/drive/{drive_id}/files/{file_id}/download",
       "pagination": "none",
@@ -1427,7 +1427,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/drive/{drive_id}/files/{file_id}/rename": {
+    "Rename": {
       "method": "POST",
       "path": "/2/drive/{drive_id}/files/{file_id}/rename",
       "pagination": "none",
@@ -1452,7 +1452,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/drive/{drive_id}/files/{file_id}/sizes": {
+    "Get Size": {
       "method": "GET",
       "path": "/2/drive/{drive_id}/files/{file_id}/sizes",
       "pagination": "none",
@@ -1472,7 +1472,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/drive/{drive_id}/files/{file_id}/hash": {
+    "Hash": {
       "method": "GET",
       "path": "/2/drive/{drive_id}/files/{file_id}/hash",
       "pagination": "none",
@@ -1492,7 +1492,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/drive/{drive_id}/files/{file_id}/copy-to-drive": {
+    "Copy To Drive": {
       "method": "POST",
       "path": "/2/drive/{drive_id}/files/{file_id}/copy-to-drive",
       "pagination": "none",
@@ -1521,7 +1521,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/drive/{drive_id}/files/{file_id}/temporary_url": {
+    "Get A File Temporary URL": {
       "method": "GET",
       "path": "/2/drive/{drive_id}/files/{file_id}/temporary_url",
       "pagination": "none",
@@ -1541,7 +1541,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /3/drive/{drive_id}/files/{file_id}": {
+    "Get File/Directory": {
       "method": "GET",
       "path": "/3/drive/{drive_id}/files/{file_id}",
       "pagination": "none",
@@ -1561,7 +1561,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /3/drive/{drive_id}/files/{file_id}/files": {
+    "Get Files In Directory": {
       "method": "GET",
       "path": "/3/drive/{drive_id}/files/{file_id}/files",
       "pagination": "none",
@@ -1581,7 +1581,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /3/drive/{drive_id}/files/{file_id}/count": {
+    "Count Element In Directory": {
       "method": "GET",
       "path": "/3/drive/{drive_id}/files/{file_id}/count",
       "pagination": "none",
@@ -1601,7 +1601,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /3/drive/{drive_id}/files/{file_id}/directory": {
+    "Create Directory": {
       "method": "POST",
       "path": "/3/drive/{drive_id}/files/{file_id}/directory",
       "pagination": "none",
@@ -1638,7 +1638,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "POST /3/drive/{drive_id}/files/{file_id}/file": {
+    "Create Default File": {
       "method": "POST",
       "path": "/3/drive/{drive_id}/files/{file_id}/file",
       "pagination": "none",
@@ -1667,7 +1667,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /3/drive/{drive_id}/files/{file_id}/copy/{destination_directory_id}": {
+    "Copy To Directory": {
       "method": "POST",
       "path": "/3/drive/{drive_id}/files/{file_id}/copy/{destination_directory_id}",
       "pagination": "none",
@@ -1696,7 +1696,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "POST /3/drive/{drive_id}/files/{file_id}/duplicate": {
+    "Duplicate": {
       "method": "POST",
       "path": "/3/drive/{drive_id}/files/{file_id}/duplicate",
       "pagination": "none",
@@ -1721,7 +1721,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "POST /3/drive/{drive_id}/files/{file_id}/convert": {
+    "Convert File": {
       "method": "POST",
       "path": "/3/drive/{drive_id}/files/{file_id}/convert",
       "pagination": "none",
@@ -1741,7 +1741,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /3/drive/{drive_id}/files/{file_id}/move/{destination_directory_id}": {
+    "Move": {
       "method": "POST",
       "path": "/3/drive/{drive_id}/files/{file_id}/move/{destination_directory_id}",
       "pagination": "none",
@@ -1774,7 +1774,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /3/drive/{drive_id}/files/{file_id}/lock": {
+    "Unlock": {
       "method": "DELETE",
       "path": "/3/drive/{drive_id}/files/{file_id}/lock",
       "pagination": "none",
@@ -1805,7 +1805,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Drive > Files > File/Directory > Access": {
-    "POST /2/drive/{drive_id}/files/{file_id}/access/applications": {
+    "Allow External Applications": {
       "method": "POST",
       "path": "/2/drive/{drive_id}/files/{file_id}/access/applications",
       "pagination": "none",
@@ -1834,7 +1834,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /2/drive/{drive_id}/files/{file_id}/access": {
+    "Get Multi Access": {
       "method": "GET",
       "path": "/2/drive/{drive_id}/files/{file_id}/access",
       "pagination": "none",
@@ -1854,7 +1854,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/drive/{drive_id}/files/{file_id}/access": {
+    "Add Multi Access": {
       "method": "POST",
       "path": "/2/drive/{drive_id}/files/{file_id}/access",
       "pagination": "none",
@@ -1895,7 +1895,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "POST /2/drive/{drive_id}/files/{file_id}/access/sync-parent": {
+    "Synchronize With Parent Rights": {
       "method": "POST",
       "path": "/2/drive/{drive_id}/files/{file_id}/access/sync-parent",
       "pagination": "none",
@@ -1915,7 +1915,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/drive/{drive_id}/files/{file_id}/access/check": {
+    "Check Access Change": {
       "method": "POST",
       "path": "/2/drive/{drive_id}/files/{file_id}/access/check",
       "pagination": "none",
@@ -1954,7 +1954,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Drive > Files > File/Directory > Access > Invitation": {
-    "GET /2/drive/{drive_id}/files/{file_id}/access/invitations": {
+    "Invitation > Get Access": {
       "method": "GET",
       "path": "/2/drive/{drive_id}/files/{file_id}/access/invitations",
       "pagination": "none",
@@ -1974,7 +1974,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/drive/{drive_id}/files/{file_id}/access/invitations": {
+    "Add Access": {
       "method": "POST",
       "path": "/2/drive/{drive_id}/files/{file_id}/access/invitations",
       "pagination": "none",
@@ -2007,7 +2007,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "POST /2/drive/{drive_id}/files/{file_id}/access/invitations/check": {
+    "Check Access": {
       "method": "POST",
       "path": "/2/drive/{drive_id}/files/{file_id}/access/invitations/check",
       "pagination": "none",
@@ -2038,7 +2038,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Drive > Files > File/Directory > Access > Request": {
-    "GET /2/drive/{drive_id}/access/requests/{request_id}": {
+    "Get Requested File Access From Its ID": {
       "method": "GET",
       "path": "/2/drive/{drive_id}/access/requests/{request_id}",
       "pagination": "none",
@@ -2058,7 +2058,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /2/drive/{drive_id}/access/requests/{request_id}/decline": {
+    "Decline A File Access Request": {
       "method": "PUT",
       "path": "/2/drive/{drive_id}/access/requests/{request_id}/decline",
       "pagination": "none",
@@ -2078,7 +2078,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/drive/{drive_id}/files/{file_id}/access/requests": {
+    "Get Requested File Access From A File ID": {
       "method": "GET",
       "path": "/2/drive/{drive_id}/files/{file_id}/access/requests",
       "pagination": "none",
@@ -2098,7 +2098,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/drive/{drive_id}/files/{file_id}/access/requests": {
+    "Create A New File Access Request": {
       "method": "POST",
       "path": "/2/drive/{drive_id}/files/{file_id}/access/requests",
       "pagination": "none",
@@ -2125,7 +2125,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Drive > Files > File/Directory > Access > Teams": {
-    "GET /2/drive/{drive_id}/files/{file_id}/access/teams": {
+    "Get Access": {
       "method": "GET",
       "path": "/2/drive/{drive_id}/files/{file_id}/access/teams",
       "pagination": "none",
@@ -2145,7 +2145,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/drive/{drive_id}/files/{file_id}/access/teams": {
+    "Add Access": {
       "method": "POST",
       "path": "/2/drive/{drive_id}/files/{file_id}/access/teams",
       "pagination": "none",
@@ -2178,7 +2178,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "PUT /2/drive/{drive_id}/files/{file_id}/access/teams/{team_id}": {
+    "Update Access": {
       "method": "PUT",
       "path": "/2/drive/{drive_id}/files/{file_id}/access/teams/{team_id}",
       "pagination": "none",
@@ -2207,7 +2207,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /2/drive/{drive_id}/files/{file_id}/access/teams/{team_id}": {
+    "Remove Access": {
       "method": "DELETE",
       "path": "/2/drive/{drive_id}/files/{file_id}/access/teams/{team_id}",
       "pagination": "none",
@@ -2233,7 +2233,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Drive > Files > File/Directory > Access > Users": {
-    "GET /2/drive/{drive_id}/files/{file_id}/access/users": {
+    "Get Access": {
       "method": "GET",
       "path": "/2/drive/{drive_id}/files/{file_id}/access/users",
       "pagination": "none",
@@ -2253,7 +2253,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/drive/{drive_id}/files/{file_id}/access/users": {
+    "Add Access": {
       "method": "POST",
       "path": "/2/drive/{drive_id}/files/{file_id}/access/users",
       "pagination": "none",
@@ -2286,7 +2286,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "PUT /2/drive/{drive_id}/files/{file_id}/access/users/{user_id}": {
+    "Update Access": {
       "method": "PUT",
       "path": "/2/drive/{drive_id}/files/{file_id}/access/users/{user_id}",
       "pagination": "none",
@@ -2315,7 +2315,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /2/drive/{drive_id}/files/{file_id}/access/users/{user_id}": {
+    "Remove Access": {
       "method": "DELETE",
       "path": "/2/drive/{drive_id}/files/{file_id}/access/users/{user_id}",
       "pagination": "none",
@@ -2339,7 +2339,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/drive/{drive_id}/files/{file_id}/access/force": {
+    "Force Write Access": {
       "method": "POST",
       "path": "/2/drive/{drive_id}/files/{file_id}/access/force",
       "pagination": "none",
@@ -2361,7 +2361,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Drive > Files > File/Directory > Comment": {
-    "GET /2/drive/{drive_id}/files/{file_id}/comments": {
+    "Get File Comments": {
       "method": "GET",
       "path": "/2/drive/{drive_id}/files/{file_id}/comments",
       "pagination": "page-per-page",
@@ -2381,7 +2381,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/drive/{drive_id}/files/{file_id}/comments": {
+    "Add Comment": {
       "method": "POST",
       "path": "/2/drive/{drive_id}/files/{file_id}/comments",
       "pagination": "none",
@@ -2406,7 +2406,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/drive/{drive_id}/files/{file_id}/comments/{comment_id}": {
+    "Get Comment Reply": {
       "method": "GET",
       "path": "/2/drive/{drive_id}/files/{file_id}/comments/{comment_id}",
       "pagination": "page-per-page",
@@ -2430,7 +2430,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/drive/{drive_id}/files/{file_id}/comments/{comment_id}": {
+    "Add Comment Reply": {
       "method": "POST",
       "path": "/2/drive/{drive_id}/files/{file_id}/comments/{comment_id}",
       "pagination": "none",
@@ -2459,7 +2459,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /2/drive/{drive_id}/files/{file_id}/comments/{comment_id}": {
+    "Modify Comment": {
       "method": "PUT",
       "path": "/2/drive/{drive_id}/files/{file_id}/comments/{comment_id}",
       "pagination": "none",
@@ -2492,7 +2492,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /2/drive/{drive_id}/files/{file_id}/comments/{comment_id}": {
+    "Delete Comment": {
       "method": "DELETE",
       "path": "/2/drive/{drive_id}/files/{file_id}/comments/{comment_id}",
       "pagination": "none",
@@ -2516,7 +2516,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/drive/{drive_id}/files/{file_id}/comments/{comment_id}/like": {
+    "Like Comment": {
       "method": "POST",
       "path": "/2/drive/{drive_id}/files/{file_id}/comments/{comment_id}/like",
       "pagination": "none",
@@ -2540,7 +2540,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/drive/{drive_id}/files/{file_id}/comments/{comment_id}/unlike": {
+    "Unlike Comment": {
       "method": "POST",
       "path": "/2/drive/{drive_id}/files/{file_id}/comments/{comment_id}/unlike",
       "pagination": "none",
@@ -2566,7 +2566,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Drive > Files > File/Directory > Upload": {
-    "DELETE /2/drive/{drive_id}/upload": {
+    "Cancel By Path": {
       "method": "DELETE",
       "path": "/2/drive/{drive_id}/upload",
       "pagination": "none",
@@ -2595,7 +2595,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "POST /3/drive/{drive_id}/upload": {
+    "Upload": {
       "method": "POST",
       "path": "/3/drive/{drive_id}/upload",
       "pagination": "none",
@@ -2618,7 +2618,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Drive > Files > File/Directory > Upload > Session": {
-    "DELETE /2/drive/{drive_id}/upload/session/{session_token}": {
+    "Cancel Session": {
       "method": "DELETE",
       "path": "/2/drive/{drive_id}/upload/session/{session_token}",
       "pagination": "none",
@@ -2638,7 +2638,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /2/drive/{drive_id}/upload/session/batch": {
+    "Batch : Cancel Sessions": {
       "method": "DELETE",
       "path": "/2/drive/{drive_id}/upload/session/batch",
       "pagination": "none",
@@ -2659,7 +2659,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /3/drive/{drive_id}/upload/session/start": {
+    "Start Session": {
       "method": "POST",
       "path": "/3/drive/{drive_id}/upload/session/start",
       "pagination": "none",
@@ -2712,7 +2712,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "POST /3/drive/{drive_id}/upload/session/batch/start": {
+    "Batch : Start Sessions": {
       "method": "POST",
       "path": "/3/drive/{drive_id}/upload/session/batch/start",
       "pagination": "none",
@@ -2733,7 +2733,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /3/drive/{drive_id}/upload/session/{session_token}/chunk": {
+    "Append Chunk To Session": {
       "method": "POST",
       "path": "/3/drive/{drive_id}/upload/session/{session_token}/chunk",
       "pagination": "none",
@@ -2762,7 +2762,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": "body"
     },
-    "POST /3/drive/{drive_id}/upload/session/{session_token}/finish": {
+    "Close Session": {
       "method": "POST",
       "path": "/3/drive/{drive_id}/upload/session/{session_token}/finish",
       "pagination": "none",
@@ -2795,7 +2795,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "POST /3/drive/{drive_id}/upload/session/batch/finish": {
+    "Batch : Close Sessions": {
       "method": "POST",
       "path": "/3/drive/{drive_id}/upload/session/batch/finish",
       "pagination": "none",
@@ -2818,7 +2818,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Drive > Files > File/Directory > Version": {
-    "GET /2/drive/{drive_id}/files/{file_id}/versions": {
+    "List": {
       "method": "GET",
       "path": "/2/drive/{drive_id}/files/{file_id}/versions",
       "pagination": "none",
@@ -2838,7 +2838,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /2/drive/{drive_id}/files/{file_id}/versions": {
+    "Delete All": {
       "method": "DELETE",
       "path": "/2/drive/{drive_id}/files/{file_id}/versions",
       "pagination": "none",
@@ -2858,7 +2858,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /2/drive/{drive_id}/files/{file_id}/versions/current": {
+    "Update Current": {
       "method": "PUT",
       "path": "/2/drive/{drive_id}/files/{file_id}/versions/current",
       "pagination": "none",
@@ -2883,7 +2883,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/drive/{drive_id}/files/{file_id}/versions/{version_id}": {
+    "Get": {
       "method": "GET",
       "path": "/2/drive/{drive_id}/files/{file_id}/versions/{version_id}",
       "pagination": "none",
@@ -2907,7 +2907,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /2/drive/{drive_id}/files/{file_id}/versions/{version_id}": {
+    "Update": {
       "method": "PUT",
       "path": "/2/drive/{drive_id}/files/{file_id}/versions/{version_id}",
       "pagination": "none",
@@ -2936,7 +2936,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /2/drive/{drive_id}/files/{file_id}/versions/{version_id}": {
+    "Delete": {
       "method": "DELETE",
       "path": "/2/drive/{drive_id}/files/{file_id}/versions/{version_id}",
       "pagination": "none",
@@ -2960,7 +2960,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/drive/{drive_id}/files/{file_id}/versions/{version_id}/download": {
+    "Download": {
       "method": "GET",
       "path": "/2/drive/{drive_id}/files/{file_id}/versions/{version_id}/download",
       "pagination": "none",
@@ -2984,7 +2984,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/drive/{drive_id}/files/{file_id}/versions/{version_id}/restore": {
+    "Restore": {
       "method": "POST",
       "path": "/2/drive/{drive_id}/files/{file_id}/versions/{version_id}/restore",
       "pagination": "none",
@@ -3008,7 +3008,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/drive/{drive_id}/files/{file_id}/versions/{version_id}/restore/{destination_directory_id}": {
+    "Restore To Directory": {
       "method": "POST",
       "path": "/2/drive/{drive_id}/files/{file_id}/versions/{version_id}/restore/{destination_directory_id}",
       "pagination": "none",
@@ -3041,7 +3041,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /3/drive/{drive_id}/files/{file_id}/versions": {
+    "List (2)": {
       "method": "GET",
       "path": "/3/drive/{drive_id}/files/{file_id}/versions",
       "pagination": "page-per-page",
@@ -3061,7 +3061,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /3/drive/{drive_id}/files/{file_id}/versions/{version_id}/restore": {
+    "Restore (2)": {
       "method": "POST",
       "path": "/3/drive/{drive_id}/files/{file_id}/versions/{version_id}/restore",
       "pagination": "none",
@@ -3085,7 +3085,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /3/drive/{drive_id}/files/{file_id}/versions/{version_id}/restore/{destination_directory_id}": {
+    "Restore To Directory (2)": {
       "method": "POST",
       "path": "/3/drive/{drive_id}/files/{file_id}/versions/{version_id}/restore/{destination_directory_id}",
       "pagination": "none",
@@ -3120,7 +3120,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Drive > Files > Search": {
-    "GET /3/drive/{drive_id}/files/search": {
+    "Search File/directory": {
       "method": "GET",
       "path": "/3/drive/{drive_id}/files/search",
       "pagination": "none",
@@ -3136,7 +3136,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /3/drive/{drive_id}/files/search/dropboxes": {
+    "Search Dropbox": {
       "method": "GET",
       "path": "/3/drive/{drive_id}/files/search/dropboxes",
       "pagination": "none",
@@ -3152,7 +3152,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /3/drive/{drive_id}/files/search/favorites": {
+    "Search Favorite": {
       "method": "GET",
       "path": "/3/drive/{drive_id}/files/search/favorites",
       "pagination": "none",
@@ -3168,7 +3168,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /3/drive/{drive_id}/files/search/links": {
+    "Search Sharelink": {
       "method": "GET",
       "path": "/3/drive/{drive_id}/files/search/links",
       "pagination": "none",
@@ -3184,7 +3184,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /3/drive/{drive_id}/files/search/shared_with_me": {
+    "Search Shared": {
       "method": "GET",
       "path": "/3/drive/{drive_id}/files/search/shared_with_me",
       "pagination": "none",
@@ -3200,7 +3200,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /3/drive/{drive_id}/files/search/my_shared": {
+    "Search My Shared": {
       "method": "GET",
       "path": "/3/drive/{drive_id}/files/search/my_shared",
       "pagination": "none",
@@ -3216,7 +3216,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /3/drive/{drive_id}/files/search/trash": {
+    "Search Trash": {
       "method": "GET",
       "path": "/3/drive/{drive_id}/files/search/trash",
       "pagination": "none",
@@ -3233,8 +3233,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "bodyFieldName": null
     }
   },
-  "Drive > Files > Share link > Archive": {
-    "POST /2/app/{drive_id}/share/{sharelink_uuid}/archive": {
+  "Drive > Files > Share Link > Archive": {
+    "Build Archive": {
       "method": "POST",
       "path": "/2/app/{drive_id}/share/{sharelink_uuid}/archive",
       "pagination": "none",
@@ -3267,7 +3267,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /2/app/{drive_id}/share/{sharelink_uuid}/archive/{archive_uuid}/download": {
+    "Download Sharelink Archive": {
       "method": "GET",
       "path": "/2/app/{drive_id}/share/{sharelink_uuid}/archive/{archive_uuid}/download",
       "pagination": "none",
@@ -3292,8 +3292,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "bodyFieldName": null
     }
   },
-  "Drive > Files > Share link > Manage": {
-    "GET /2/drive/{drive_id}/files/{file_id}/link": {
+  "Drive > Files > Share Link > Manage": {
+    "Get Share Link": {
       "method": "GET",
       "path": "/2/drive/{drive_id}/files/{file_id}/link",
       "pagination": "none",
@@ -3313,7 +3313,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/drive/{drive_id}/files/{file_id}/link": {
+    "Create Share Link": {
       "method": "POST",
       "path": "/2/drive/{drive_id}/files/{file_id}/link",
       "pagination": "none",
@@ -3370,7 +3370,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "PUT /2/drive/{drive_id}/files/{file_id}/link": {
+    "Update Share Link": {
       "method": "PUT",
       "path": "/2/drive/{drive_id}/files/{file_id}/link",
       "pagination": "none",
@@ -3427,7 +3427,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /2/drive/{drive_id}/files/{file_id}/link": {
+    "Remove Share Link": {
       "method": "DELETE",
       "path": "/2/drive/{drive_id}/files/{file_id}/link",
       "pagination": "none",
@@ -3447,7 +3447,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/drive/{drive_id}/files/{file_id}/link/invite": {
+    "Share Link Invite": {
       "method": "POST",
       "path": "/2/drive/{drive_id}/files/{file_id}/link/invite",
       "pagination": "none",
@@ -3480,7 +3480,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /3/drive/{drive_id}/files/links": {
+    "Get Share Link Files": {
       "method": "GET",
       "path": "/3/drive/{drive_id}/files/links",
       "pagination": "none",
@@ -3498,7 +3498,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Drive > Files > Trash": {
-    "DELETE /2/drive/{drive_id}/trash": {
+    "Empty Trash": {
       "method": "DELETE",
       "path": "/2/drive/{drive_id}/trash",
       "pagination": "none",
@@ -3514,7 +3514,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/drive/{drive_id}/trash/count": {
+    "Count Directory/File In Trash": {
       "method": "GET",
       "path": "/2/drive/{drive_id}/trash/count",
       "pagination": "none",
@@ -3530,7 +3530,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /2/drive/{drive_id}/trash/{file_id}": {
+    "Remove File": {
       "method": "DELETE",
       "path": "/2/drive/{drive_id}/trash/{file_id}",
       "pagination": "none",
@@ -3550,7 +3550,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/drive/{drive_id}/trash/{file_id}/restore": {
+    "Restore File": {
       "method": "POST",
       "path": "/2/drive/{drive_id}/trash/{file_id}/restore",
       "pagination": "none",
@@ -3575,7 +3575,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/drive/{drive_id}/trash/{file_id}/thumbnail": {
+    "Get Thumbnail": {
       "method": "GET",
       "path": "/2/drive/{drive_id}/trash/{file_id}/thumbnail",
       "pagination": "none",
@@ -3595,7 +3595,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/drive/{drive_id}/trash/{file_id}/count": {
+    "Count Directory/File In Trashed Directory": {
       "method": "GET",
       "path": "/2/drive/{drive_id}/trash/{file_id}/count",
       "pagination": "none",
@@ -3615,7 +3615,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /3/drive/{drive_id}/trash": {
+    "Get Files Of Trash": {
       "method": "GET",
       "path": "/3/drive/{drive_id}/trash",
       "pagination": "none",
@@ -3631,7 +3631,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /3/drive/{drive_id}/trash/{file_id}": {
+    "Get Trashed File": {
       "method": "GET",
       "path": "/3/drive/{drive_id}/trash/{file_id}",
       "pagination": "none",
@@ -3651,7 +3651,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /3/drive/{drive_id}/trash/{file_id}/files": {
+    "Get Files Of Trashed Directory": {
       "method": "GET",
       "path": "/3/drive/{drive_id}/trash/{file_id}/files",
       "pagination": "none",
@@ -3671,7 +3671,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /3/drive/{drive_id}/trash/{file_id}/count": {
+    "Count Directories/files In Trash": {
       "method": "GET",
       "path": "/3/drive/{drive_id}/trash/{file_id}/count",
       "pagination": "none",
@@ -3693,7 +3693,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Drive > Invitations": {
-    "GET /2/drive/{drive_id}/users/invitation": {
+    "Get User Invitation": {
       "method": "GET",
       "path": "/2/drive/{drive_id}/users/invitation",
       "pagination": "page-per-page",
@@ -3709,7 +3709,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/drive/{drive_id}/users/invitation/{invitation_id}": {
+    "Get Invitation Information": {
       "method": "GET",
       "path": "/2/drive/{drive_id}/users/invitation/{invitation_id}",
       "pagination": "none",
@@ -3729,7 +3729,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /2/drive/{drive_id}/users/invitation/{invitation_id}": {
+    "Update An Invitation": {
       "method": "PUT",
       "path": "/2/drive/{drive_id}/users/invitation/{invitation_id}",
       "pagination": "none",
@@ -3770,7 +3770,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /2/drive/{drive_id}/users/invitation/{invitation_id}": {
+    "Delete Invitation": {
       "method": "DELETE",
       "path": "/2/drive/{drive_id}/users/invitation/{invitation_id}",
       "pagination": "none",
@@ -3790,7 +3790,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/drive/{drive_id}/users/invitation/{invitation_id}/send": {
+    "Send Invitation": {
       "method": "POST",
       "path": "/2/drive/{drive_id}/users/invitation/{invitation_id}/send",
       "pagination": "none",
@@ -3812,7 +3812,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Drive > Settings": {
-    "GET /2/drive/{drive_id}/settings": {
+    "Get Drive's Settings": {
       "method": "GET",
       "path": "/2/drive/{drive_id}/settings",
       "pagination": "none",
@@ -3828,7 +3828,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /2/drive/{drive_id}/settings/ai": {
+    "Update IA Settings": {
       "method": "PUT",
       "path": "/2/drive/{drive_id}/settings/ai",
       "pagination": "none",
@@ -3857,7 +3857,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "PUT /2/drive/{drive_id}/settings/link": {
+    "Update Share Link Settings": {
       "method": "PUT",
       "path": "/2/drive/{drive_id}/settings/link",
       "pagination": "none",
@@ -3890,7 +3890,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "PUT /2/drive/{drive_id}/settings/trash": {
+    "Update Trash Settings": {
       "method": "PUT",
       "path": "/2/drive/{drive_id}/settings/trash",
       "pagination": "none",
@@ -3911,7 +3911,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /2/drive/{drive_id}/settings/office": {
+    "Update Office Settings": {
       "method": "PUT",
       "path": "/2/drive/{drive_id}/settings/office",
       "pagination": "none",
@@ -3944,7 +3944,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "PUT /2/drive/{drive_id}/preferences": {
+    "Update Preferences": {
       "method": "PUT",
       "path": "/2/drive/{drive_id}/preferences",
       "pagination": "none",
@@ -3979,7 +3979,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Drive > Statistics": {
-    "GET /2/drive/{drive_id}/statistics/sizes": {
+    "Chart : Files Size": {
       "method": "GET",
       "path": "/2/drive/{drive_id}/statistics/sizes",
       "pagination": "none",
@@ -4012,7 +4012,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/drive/{drive_id}/statistics/sizes/export": {
+    "Export : Files Size": {
       "method": "GET",
       "path": "/2/drive/{drive_id}/statistics/sizes/export",
       "pagination": "none",
@@ -4045,7 +4045,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/drive/{drive_id}/statistics/activities/users": {
+    "Activities : Users": {
       "method": "GET",
       "path": "/2/drive/{drive_id}/statistics/activities/users",
       "pagination": "none",
@@ -4070,7 +4070,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/drive/{drive_id}/statistics/activities/shared_files": {
+    "Activities : Shared Files": {
       "method": "GET",
       "path": "/2/drive/{drive_id}/statistics/activities/shared_files",
       "pagination": "none",
@@ -4095,7 +4095,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/drive/{drive_id}/statistics/activities": {
+    "Chart : Activities": {
       "method": "GET",
       "path": "/2/drive/{drive_id}/statistics/activities",
       "pagination": "none",
@@ -4128,7 +4128,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/drive/{drive_id}/statistics/activities/export": {
+    "Export : Activities": {
       "method": "GET",
       "path": "/2/drive/{drive_id}/statistics/activities/export",
       "pagination": "none",
@@ -4161,7 +4161,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/drive/{drive_id}/statistics/activities/links": {
+    "Activities : Share Links": {
       "method": "GET",
       "path": "/2/drive/{drive_id}/statistics/activities/links",
       "pagination": "page-per-page",
@@ -4186,7 +4186,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/drive/{drive_id}/statistics/activities/links/export": {
+    "Export : Share Links Activities": {
       "method": "GET",
       "path": "/2/drive/{drive_id}/statistics/activities/links/export",
       "pagination": "none",
@@ -4213,7 +4213,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Drive > Users": {
-    "GET /2/drive/{drive_id}/users": {
+    "Get Users": {
       "method": "GET",
       "path": "/2/drive/{drive_id}/users",
       "pagination": "page-per-page",
@@ -4229,7 +4229,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/drive/{drive_id}/users": {
+    "Create User": {
       "method": "POST",
       "path": "/2/drive/{drive_id}/users",
       "pagination": "none",
@@ -4290,7 +4290,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /2/drive/{drive_id}/users/{user_id}": {
+    "Get User": {
       "method": "GET",
       "path": "/2/drive/{drive_id}/users/{user_id}",
       "pagination": "none",
@@ -4310,7 +4310,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /2/drive/{drive_id}/users/{user_id}": {
+    "Update User": {
       "method": "PUT",
       "path": "/2/drive/{drive_id}/users/{user_id}",
       "pagination": "none",
@@ -4339,7 +4339,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /2/drive/{drive_id}/users/{user_id}": {
+    "Delete User": {
       "method": "DELETE",
       "path": "/2/drive/{drive_id}/users/{user_id}",
       "pagination": "none",
@@ -4364,7 +4364,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "PATCH /2/drive/{drive_id}/users/{user_id}/manager": {
+    "Update User Manager Right": {
       "method": "PATCH",
       "path": "/2/drive/{drive_id}/users/{user_id}/manager",
       "pagination": "none",
@@ -4389,7 +4389,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/drive/{drive_id}/users/{user_id}/lock": {
+    "Lock User": {
       "method": "POST",
       "path": "/2/drive/{drive_id}/users/{user_id}/lock",
       "pagination": "none",
@@ -4409,7 +4409,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/drive/{drive_id}/users/{user_id}/unlock": {
+    "Unlock User": {
       "method": "POST",
       "path": "/2/drive/{drive_id}/users/{user_id}/unlock",
       "pagination": "none",
@@ -4431,7 +4431,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Others": {
-    "GET /2/drive": {
+    "Accessibles Drives": {
       "method": "GET",
       "path": "/2/drive",
       "pagination": "page-per-page",
@@ -4449,7 +4449,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Users": {
-    "GET /2/drive/users": {
+    "Get Users": {
       "method": "GET",
       "path": "/2/drive/users",
       "pagination": "page-per-page",
@@ -4460,7 +4460,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/drive/users/{user_id}/drives": {
+    "Get Drives": {
       "method": "GET",
       "path": "/2/drive/users/{user_id}/drives",
       "pagination": "page-per-page",
@@ -4481,7 +4481,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/drive/preferences": {
+    "Get User's Preference": {
       "method": "GET",
       "path": "/2/drive/preferences",
       "pagination": "none",
@@ -4492,7 +4492,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PATCH /2/drive/preferences": {
+    "Set User's Preference": {
       "method": "PATCH",
       "path": "/2/drive/preferences",
       "pagination": "none",
@@ -4638,7 +4638,7 @@ export class InfomaniakKdrive implements INodeType {
         },
         {
           "name": "Drive > Files > External Import",
-          "value": "Drive > Files > External import"
+          "value": "Drive > Files > External Import"
         },
         {
           "name": "Drive > Files > Favorite",
@@ -4690,11 +4690,11 @@ export class InfomaniakKdrive implements INodeType {
         },
         {
           "name": "Drive > Files > Share Link > Archive",
-          "value": "Drive > Files > Share link > Archive"
+          "value": "Drive > Files > Share Link > Archive"
         },
         {
           "name": "Drive > Files > Share Link > Manage",
-          "value": "Drive > Files > Share link > Manage"
+          "value": "Drive > Files > Share Link > Manage"
         },
         {
           "name": "Drive > Files > Trash",
@@ -4743,18 +4743,18 @@ export class InfomaniakKdrive implements INodeType {
       "options": [
         {
           "name": "Update Drive",
-          "value": "PUT /2/drive/{drive_id}"
+          "value": "Update Drive"
         },
         {
           "name": "Get Users",
-          "value": "GET /3/drive/{drive_id}/users"
+          "value": "Get Users"
         },
         {
           "name": "Wake A Sleeping Drive Up",
-          "value": "POST /3/drive/{drive_id}/wake"
+          "value": "Wake A Sleeping Drive Up"
         }
       ],
-      "default": "PUT /2/drive/{drive_id}",
+      "default": "Update Drive",
       "noDataExpression": true
     },
     {
@@ -4768,7 +4768,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}"
+            "Update Drive"
           ]
         }
       },
@@ -4787,7 +4787,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}"
+            "Update Drive"
           ]
         }
       },
@@ -4824,7 +4824,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/users"
+            "Get Users"
           ]
         }
       },
@@ -4843,7 +4843,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/users"
+            "Get Users"
           ]
         }
       },
@@ -4932,7 +4932,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/wake"
+            "Wake A Sleeping Drive Up"
           ]
         }
       },
@@ -4953,26 +4953,26 @@ export class InfomaniakKdrive implements INodeType {
       "options": [
         {
           "name": "Get Drive Activities Of All The Users.",
-          "value": "GET /2/drive/{drive_id}/activities"
+          "value": "Get Drive Activities Of All The Users."
         },
         {
           "name": "Get Drive Activities Of All The Users.",
-          "value": "GET /3/drive/{drive_id}/activities"
+          "value": "Get Drive Activities Of All The Users. (2)"
         },
         {
           "name": "Get Total Count Drive Activities Of All The Users.",
-          "value": "GET /3/drive/{drive_id}/activities/total"
+          "value": "Get Total Count Drive Activities Of All The Users."
         },
         {
           "name": "Get File Activities",
-          "value": "GET /3/drive/{drive_id}/files/{file_id}/activities"
+          "value": "Get File Activities"
         },
         {
           "name": "Get Root Activities",
-          "value": "GET /3/drive/{drive_id}/files/activities"
+          "value": "Get Root Activities"
         }
       ],
-      "default": "GET /2/drive/{drive_id}/activities",
+      "default": "Get Drive Activities Of All The Users.",
       "noDataExpression": true
     },
     {
@@ -4986,7 +4986,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Activity"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/activities"
+            "Get Drive Activities Of All The Users."
           ]
         }
       },
@@ -5005,7 +5005,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Activity"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/activities"
+            "Get Drive Activities Of All The Users."
           ]
         }
       },
@@ -5171,7 +5171,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Activity"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/activities"
+            "Get Drive Activities Of All The Users. (2)"
           ]
         }
       },
@@ -5190,7 +5190,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Activity"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/activities"
+            "Get Drive Activities Of All The Users. (2)"
           ]
         }
       },
@@ -5344,7 +5344,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Activity"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/activities/total"
+            "Get Total Count Drive Activities Of All The Users."
           ]
         }
       },
@@ -5363,7 +5363,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Activity"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/activities/total"
+            "Get Total Count Drive Activities Of All The Users."
           ]
         }
       },
@@ -5441,7 +5441,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Activity"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/files/{file_id}/activities"
+            "Get File Activities"
           ]
         }
       },
@@ -5459,7 +5459,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Activity"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/files/{file_id}/activities"
+            "Get File Activities"
           ]
         }
       },
@@ -5478,7 +5478,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Activity"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/files/{file_id}/activities"
+            "Get File Activities"
           ]
         }
       },
@@ -5597,7 +5597,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Activity"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/files/activities"
+            "Get Root Activities"
           ]
         }
       },
@@ -5616,7 +5616,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Activity"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/files/activities"
+            "Get Root Activities"
           ]
         }
       },
@@ -5738,26 +5738,26 @@ export class InfomaniakKdrive implements INodeType {
       "options": [
         {
           "name": "List Reports",
-          "value": "GET /2/drive/{drive_id}/activities/reports"
+          "value": "List Reports"
         },
         {
           "name": "Create Report",
-          "value": "POST /2/drive/{drive_id}/activities/reports"
+          "value": "Create Report"
         },
         {
           "name": "Get Report",
-          "value": "GET /2/drive/{drive_id}/activities/reports/{report_id}"
+          "value": "Get Report"
         },
         {
           "name": "Delete Report",
-          "value": "DELETE /2/drive/{drive_id}/activities/reports/{report_id}"
+          "value": "Delete Report"
         },
         {
           "name": "Export Report",
-          "value": "GET /2/drive/{drive_id}/activities/reports/{report_id}/export"
+          "value": "Export Report"
         }
       ],
-      "default": "GET /2/drive/{drive_id}/activities/reports",
+      "default": "List Reports",
       "noDataExpression": true
     },
     {
@@ -5771,7 +5771,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Activity > Report"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/activities/reports"
+            "List Reports"
           ]
         }
       },
@@ -5790,7 +5790,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Activity > Report"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/activities/reports"
+            "List Reports"
           ]
         }
       },
@@ -5873,7 +5873,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Activity > Report"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/activities/reports"
+            "Create Report"
           ]
         }
       },
@@ -5892,7 +5892,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Activity > Report"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/activities/reports"
+            "Create Report"
           ]
         }
       },
@@ -5940,7 +5940,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Activity > Report"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/activities/reports"
+            "Create Report"
           ]
         }
       },
@@ -6026,7 +6026,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Activity > Report"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/activities/reports/{report_id}"
+            "Get Report"
           ]
         }
       },
@@ -6044,7 +6044,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Activity > Report"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/activities/reports/{report_id}"
+            "Get Report"
           ]
         }
       },
@@ -6063,7 +6063,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Activity > Report"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/activities/reports/{report_id}"
+            "Get Report"
           ]
         }
       },
@@ -6109,7 +6109,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Activity > Report"
           ],
           "operation": [
-            "DELETE /2/drive/{drive_id}/activities/reports/{report_id}"
+            "Delete Report"
           ]
         }
       },
@@ -6127,7 +6127,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Activity > Report"
           ],
           "operation": [
-            "DELETE /2/drive/{drive_id}/activities/reports/{report_id}"
+            "Delete Report"
           ]
         }
       },
@@ -6145,7 +6145,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Activity > Report"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/activities/reports/{report_id}/export"
+            "Export Report"
           ]
         }
       },
@@ -6163,7 +6163,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Activity > Report"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/activities/reports/{report_id}/export"
+            "Export Report"
           ]
         }
       },
@@ -6184,38 +6184,38 @@ export class InfomaniakKdrive implements INodeType {
       "options": [
         {
           "name": "Check File' Existence",
-          "value": "POST /2/drive/{drive_id}/files/exists"
+          "value": "Check File' Existence"
         },
         {
           "name": "Get Largest Files",
-          "value": "GET /3/drive/{drive_id}/files/largest"
+          "value": "Get Largest Files"
         },
         {
           "name": "Get Last Modified Files",
-          "value": "GET /3/drive/{drive_id}/files/last_modified"
+          "value": "Get Last Modified Files"
         },
         {
           "name": "Get Most Versioned Files",
-          "value": "GET /3/drive/{drive_id}/files/most_versions"
+          "value": "Get Most Versioned Files"
         },
         {
           "name": "Get My Shared Files",
-          "value": "GET /3/drive/{drive_id}/files/my_shared"
+          "value": "Get My Shared Files"
         },
         {
           "name": "Get Shared Files",
-          "value": "GET /3/drive/{drive_id}/files/shared_with_me"
+          "value": "Get Shared Files"
         },
         {
           "name": "Create Team Directory",
-          "value": "POST /3/drive/{drive_id}/files/team_directory"
+          "value": "Create Team Directory"
         },
         {
           "name": "List The Most Recent Files Or Directories Used By The User.",
-          "value": "GET /3/drive/{drive_id}/files/recents"
+          "value": "List The Most Recent Files Or Directories Used By The User."
         }
       ],
-      "default": "POST /2/drive/{drive_id}/files/exists",
+      "default": "Check File' Existence",
       "noDataExpression": true
     },
     {
@@ -6229,7 +6229,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/exists"
+            "Check File' Existence"
           ]
         }
       },
@@ -6247,7 +6247,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/exists"
+            "Check File' Existence"
           ]
         }
       },
@@ -6265,7 +6265,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/files/largest"
+            "Get Largest Files"
           ]
         }
       },
@@ -6284,7 +6284,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/files/largest"
+            "Get Largest Files"
           ]
         }
       },
@@ -6349,7 +6349,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/files/last_modified"
+            "Get Last Modified Files"
           ]
         }
       },
@@ -6368,7 +6368,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/files/last_modified"
+            "Get Last Modified Files"
           ]
         }
       },
@@ -6433,7 +6433,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/files/most_versions"
+            "Get Most Versioned Files"
           ]
         }
       },
@@ -6452,7 +6452,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/files/most_versions"
+            "Get Most Versioned Files"
           ]
         }
       },
@@ -6517,7 +6517,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/files/my_shared"
+            "Get My Shared Files"
           ]
         }
       },
@@ -6536,97 +6536,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/files/my_shared"
-          ]
-        }
-      },
-      "options": [
-        {
-          "displayName": "With",
-          "name": "query_with",
-          "type": "string",
-          "default": "",
-          "description": "*Optional* : Allows loading additional data about a resource, which may include related resources."
-        },
-        {
-          "displayName": "Cursor",
-          "name": "query_cursor",
-          "type": "string",
-          "default": ""
-        },
-        {
-          "displayName": "Limit",
-          "name": "query_limit",
-          "type": "number",
-          "default": 0
-        },
-        {
-          "displayName": "Order By",
-          "name": "query_order_by",
-          "type": "json",
-          "default": {}
-        },
-        {
-          "displayName": "Order",
-          "name": "query_order",
-          "type": "options",
-          "default": "",
-          "options": [
-            {
-              "name": "asc",
-              "value": "asc"
-            },
-            {
-              "name": "desc",
-              "value": "desc"
-            }
-          ]
-        },
-        {
-          "displayName": "Order For",
-          "name": "query_order_for",
-          "type": "json",
-          "default": {}
-        },
-        {
-          "displayName": "Type",
-          "name": "query_type",
-          "type": "json",
-          "default": {}
-        }
-      ]
-    },
-    {
-      "displayName": "Drive Id",
-      "name": "path_drive_id",
-      "type": "number",
-      "default": 0,
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "Drive > Files"
-          ],
-          "operation": [
-            "GET /3/drive/{drive_id}/files/shared_with_me"
-          ]
-        }
-      },
-      "required": true,
-      "description": "Drive identifier"
-    },
-    {
-      "displayName": "Additional Query Parameters",
-      "name": "queryParameters",
-      "type": "collection",
-      "placeholder": "Add Parameter",
-      "default": {},
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "Drive > Files"
-          ],
-          "operation": [
-            "GET /3/drive/{drive_id}/files/shared_with_me"
+            "Get My Shared Files"
           ]
         }
       },
@@ -6697,7 +6607,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/files/team_directory"
+            "Get Shared Files"
           ]
         }
       },
@@ -6716,7 +6626,97 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/files/team_directory"
+            "Get Shared Files"
+          ]
+        }
+      },
+      "options": [
+        {
+          "displayName": "With",
+          "name": "query_with",
+          "type": "string",
+          "default": "",
+          "description": "*Optional* : Allows loading additional data about a resource, which may include related resources."
+        },
+        {
+          "displayName": "Cursor",
+          "name": "query_cursor",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "displayName": "Limit",
+          "name": "query_limit",
+          "type": "number",
+          "default": 0
+        },
+        {
+          "displayName": "Order By",
+          "name": "query_order_by",
+          "type": "json",
+          "default": {}
+        },
+        {
+          "displayName": "Order",
+          "name": "query_order",
+          "type": "options",
+          "default": "",
+          "options": [
+            {
+              "name": "asc",
+              "value": "asc"
+            },
+            {
+              "name": "desc",
+              "value": "desc"
+            }
+          ]
+        },
+        {
+          "displayName": "Order For",
+          "name": "query_order_for",
+          "type": "json",
+          "default": {}
+        },
+        {
+          "displayName": "Type",
+          "name": "query_type",
+          "type": "json",
+          "default": {}
+        }
+      ]
+    },
+    {
+      "displayName": "Drive Id",
+      "name": "path_drive_id",
+      "type": "number",
+      "default": 0,
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "Drive > Files"
+          ],
+          "operation": [
+            "Create Team Directory"
+          ]
+        }
+      },
+      "required": true,
+      "description": "Drive identifier"
+    },
+    {
+      "displayName": "Additional Query Parameters",
+      "name": "queryParameters",
+      "type": "collection",
+      "placeholder": "Add Parameter",
+      "default": {},
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "Drive > Files"
+          ],
+          "operation": [
+            "Create Team Directory"
           ]
         }
       },
@@ -6741,7 +6741,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/files/team_directory"
+            "Create Team Directory"
           ]
         }
       },
@@ -6760,7 +6760,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/files/team_directory"
+            "Create Team Directory"
           ]
         }
       },
@@ -6791,7 +6791,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/files/recents"
+            "List The Most Recent Files Or Directories Used By The User."
           ]
         }
       },
@@ -6809,7 +6809,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/files/recents"
+            "List The Most Recent Files Or Directories Used By The User."
           ]
         }
       },
@@ -6883,10 +6883,10 @@ export class InfomaniakKdrive implements INodeType {
       "options": [
         {
           "name": "Undo Action",
-          "value": "POST /2/drive/{drive_id}/cancel"
+          "value": "Undo Action"
         }
       ],
-      "default": "POST /2/drive/{drive_id}/cancel",
+      "default": "Undo Action",
       "noDataExpression": true
     },
     {
@@ -6900,7 +6900,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Action"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/cancel"
+            "Undo Action"
           ]
         }
       },
@@ -6919,7 +6919,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Action"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/cancel"
+            "Undo Action"
           ]
         }
       },
@@ -6954,14 +6954,14 @@ export class InfomaniakKdrive implements INodeType {
       "options": [
         {
           "name": "Download Archive",
-          "value": "GET /2/drive/{drive_id}/files/archives/{archive_uuid}"
+          "value": "Download Archive"
         },
         {
           "name": "Build Archive",
-          "value": "POST /3/drive/{drive_id}/files/archives"
+          "value": "Build Archive"
         }
       ],
-      "default": "GET /2/drive/{drive_id}/files/archives/{archive_uuid}",
+      "default": "Download Archive",
       "noDataExpression": true
     },
     {
@@ -6975,7 +6975,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Archive"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/archives/{archive_uuid}"
+            "Download Archive"
           ]
         }
       },
@@ -6993,7 +6993,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Archive"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/archives/{archive_uuid}"
+            "Download Archive"
           ]
         }
       },
@@ -7011,7 +7011,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Archive"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/files/archives"
+            "Build Archive"
           ]
         }
       },
@@ -7030,7 +7030,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Archive"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/files/archives"
+            "Build Archive"
           ]
         }
       },
@@ -7072,46 +7072,46 @@ export class InfomaniakKdrive implements INodeType {
       "options": [
         {
           "name": "Get All Categories",
-          "value": "GET /2/drive/{drive_id}/categories"
+          "value": "Get All Categories"
         },
         {
           "name": "Create Category",
-          "value": "POST /2/drive/{drive_id}/categories"
+          "value": "Create Category"
         },
         {
           "name": "Edit Category",
-          "value": "PUT /2/drive/{drive_id}/categories/{category_id}"
+          "value": "Edit Category"
         },
         {
           "name": "Delete Category",
-          "value": "DELETE /2/drive/{drive_id}/categories/{category_id}"
+          "value": "Delete Category"
         },
         {
           "name": "Add Category On Files",
-          "value": "POST /2/drive/{drive_id}/files/categories/{category_id}"
+          "value": "Add Category On Files"
         },
         {
           "name": "Remove Category On Files",
-          "value": "DELETE /2/drive/{drive_id}/files/categories/{category_id}"
+          "value": "Remove Category On Files"
         },
         {
           "name": "Add Category On File",
-          "value": "POST /2/drive/{drive_id}/files/{file_id}/categories/{category_id}"
+          "value": "Add Category On File"
         },
         {
           "name": "Remove Category On File",
-          "value": "DELETE /2/drive/{drive_id}/files/{file_id}/categories/{category_id}"
+          "value": "Remove Category On File"
         },
         {
           "name": "Remove Categories On File",
-          "value": "DELETE /2/drive/{drive_id}/files/{file_id}/categories"
+          "value": "Remove Categories On File"
         },
         {
           "name": "Validates An AI Generated Category",
-          "value": "POST /2/drive/{drive_id}/files/{file_id}/categories/{category_id}/ai-feedback"
+          "value": "Validates An AI Generated Category"
         }
       ],
-      "default": "GET /2/drive/{drive_id}/categories",
+      "default": "Get All Categories",
       "noDataExpression": true
     },
     {
@@ -7125,7 +7125,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Category"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/categories"
+            "Get All Categories"
           ]
         }
       },
@@ -7143,7 +7143,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Category"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/categories"
+            "Create Category"
           ]
         }
       },
@@ -7161,7 +7161,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Category"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/categories"
+            "Create Category"
           ]
         }
       },
@@ -7180,7 +7180,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Category"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/categories"
+            "Create Category"
           ]
         }
       },
@@ -7204,7 +7204,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Category"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/categories/{category_id}"
+            "Edit Category"
           ]
         }
       },
@@ -7222,7 +7222,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Category"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/categories/{category_id}"
+            "Edit Category"
           ]
         }
       },
@@ -7241,7 +7241,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Category"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/categories/{category_id}"
+            "Edit Category"
           ]
         }
       },
@@ -7272,7 +7272,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Category"
           ],
           "operation": [
-            "DELETE /2/drive/{drive_id}/categories/{category_id}"
+            "Delete Category"
           ]
         }
       },
@@ -7290,7 +7290,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Category"
           ],
           "operation": [
-            "DELETE /2/drive/{drive_id}/categories/{category_id}"
+            "Delete Category"
           ]
         }
       },
@@ -7308,7 +7308,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Category"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/categories/{category_id}"
+            "Add Category On Files"
           ]
         }
       },
@@ -7326,61 +7326,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Category"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/categories/{category_id}"
-          ]
-        }
-      },
-      "required": true,
-      "description": "Category Identifier"
-    },
-    {
-      "displayName": "File Ids",
-      "name": "body_file_ids",
-      "type": "json",
-      "default": {},
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "Drive > Files > Category"
-          ],
-          "operation": [
-            "POST /2/drive/{drive_id}/files/categories/{category_id}"
-          ]
-        }
-      },
-      "required": true,
-      "description": "List of files to act upon"
-    },
-    {
-      "displayName": "Drive Id",
-      "name": "path_drive_id",
-      "type": "number",
-      "default": 0,
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "Drive > Files > Category"
-          ],
-          "operation": [
-            "DELETE /2/drive/{drive_id}/files/categories/{category_id}"
-          ]
-        }
-      },
-      "required": true,
-      "description": "Drive Identifier"
-    },
-    {
-      "displayName": "Category Id",
-      "name": "path_category_id",
-      "type": "number",
-      "default": 0,
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "Drive > Files > Category"
-          ],
-          "operation": [
-            "DELETE /2/drive/{drive_id}/files/categories/{category_id}"
+            "Add Category On Files"
           ]
         }
       },
@@ -7398,7 +7344,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Category"
           ],
           "operation": [
-            "DELETE /2/drive/{drive_id}/files/categories/{category_id}"
+            "Add Category On Files"
           ]
         }
       },
@@ -7416,7 +7362,61 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Category"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/categories/{category_id}"
+            "Remove Category On Files"
+          ]
+        }
+      },
+      "required": true,
+      "description": "Drive Identifier"
+    },
+    {
+      "displayName": "Category Id",
+      "name": "path_category_id",
+      "type": "number",
+      "default": 0,
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "Drive > Files > Category"
+          ],
+          "operation": [
+            "Remove Category On Files"
+          ]
+        }
+      },
+      "required": true,
+      "description": "Category Identifier"
+    },
+    {
+      "displayName": "File Ids",
+      "name": "body_file_ids",
+      "type": "json",
+      "default": {},
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "Drive > Files > Category"
+          ],
+          "operation": [
+            "Remove Category On Files"
+          ]
+        }
+      },
+      "required": true,
+      "description": "List of files to act upon"
+    },
+    {
+      "displayName": "Drive Id",
+      "name": "path_drive_id",
+      "type": "number",
+      "default": 0,
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "Drive > Files > Category"
+          ],
+          "operation": [
+            "Add Category On File"
           ]
         }
       },
@@ -7434,7 +7434,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Category"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/categories/{category_id}"
+            "Add Category On File"
           ]
         }
       },
@@ -7452,7 +7452,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Category"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/categories/{category_id}"
+            "Add Category On File"
           ]
         }
       },
@@ -7470,7 +7470,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Category"
           ],
           "operation": [
-            "DELETE /2/drive/{drive_id}/files/{file_id}/categories/{category_id}"
+            "Remove Category On File"
           ]
         }
       },
@@ -7488,7 +7488,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Category"
           ],
           "operation": [
-            "DELETE /2/drive/{drive_id}/files/{file_id}/categories/{category_id}"
+            "Remove Category On File"
           ]
         }
       },
@@ -7506,7 +7506,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Category"
           ],
           "operation": [
-            "DELETE /2/drive/{drive_id}/files/{file_id}/categories/{category_id}"
+            "Remove Category On File"
           ]
         }
       },
@@ -7524,7 +7524,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Category"
           ],
           "operation": [
-            "DELETE /2/drive/{drive_id}/files/{file_id}/categories"
+            "Remove Categories On File"
           ]
         }
       },
@@ -7542,7 +7542,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Category"
           ],
           "operation": [
-            "DELETE /2/drive/{drive_id}/files/{file_id}/categories"
+            "Remove Categories On File"
           ]
         }
       },
@@ -7560,7 +7560,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Category"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/categories/{category_id}/ai-feedback"
+            "Validates An AI Generated Category"
           ]
         }
       },
@@ -7578,7 +7578,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Category"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/categories/{category_id}/ai-feedback"
+            "Validates An AI Generated Category"
           ]
         }
       },
@@ -7596,7 +7596,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Category"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/categories/{category_id}/ai-feedback"
+            "Validates An AI Generated Category"
           ]
         }
       },
@@ -7614,7 +7614,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Category"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/categories/{category_id}/ai-feedback"
+            "Validates An AI Generated Category"
           ]
         }
       },
@@ -7635,14 +7635,14 @@ export class InfomaniakKdrive implements INodeType {
       "options": [
         {
           "name": "Get",
-          "value": "GET /2/drive/{drive_id}/categories/rights"
+          "value": "Get"
         },
         {
           "name": "Update/Create",
-          "value": "POST /2/drive/{drive_id}/categories/rights"
+          "value": "Update/Create"
         }
       ],
-      "default": "GET /2/drive/{drive_id}/categories/rights",
+      "default": "Get",
       "noDataExpression": true
     },
     {
@@ -7656,7 +7656,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Category > Right"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/categories/rights"
+            "Get"
           ]
         }
       },
@@ -7674,7 +7674,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Category > Right"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/categories/rights"
+            "Update/Create"
           ]
         }
       },
@@ -7693,7 +7693,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Category > Right"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/categories/rights"
+            "Update/Create"
           ]
         }
       },
@@ -7757,34 +7757,34 @@ export class InfomaniakKdrive implements INodeType {
       "options": [
         {
           "name": "Get Dropbox",
-          "value": "GET /2/drive/{drive_id}/files/{file_id}/dropbox"
+          "value": "Get Dropbox"
         },
         {
           "name": "Convert A Folder Into A Dropbox",
-          "value": "POST /2/drive/{drive_id}/files/{file_id}/dropbox"
+          "value": "Convert A Folder Into A Dropbox"
         },
         {
           "name": "Update Dropbox",
-          "value": "PUT /2/drive/{drive_id}/files/{file_id}/dropbox"
+          "value": "Update Dropbox"
         },
         {
           "name": "Delete Dropbox",
-          "value": "DELETE /2/drive/{drive_id}/files/{file_id}/dropbox"
+          "value": "Delete Dropbox"
         },
         {
           "name": "Dropbox Invite",
-          "value": "POST /2/drive/{drive_id}/files/{file_id}/dropbox/invite"
+          "value": "Dropbox Invite"
         },
         {
           "name": "Get Drop Boxes",
-          "value": "GET /3/drive/{drive_id}/files/dropboxes"
+          "value": "Get Drop Boxes"
         },
         {
           "name": "Create A New Dropbox",
-          "value": "POST /3/drive/{drive_id}/files/dropboxes"
+          "value": "Create A New Dropbox"
         }
       ],
-      "default": "GET /2/drive/{drive_id}/files/{file_id}/dropbox",
+      "default": "Get Dropbox",
       "noDataExpression": true
     },
     {
@@ -7798,7 +7798,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Dropbox"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/dropbox"
+            "Get Dropbox"
           ]
         }
       },
@@ -7816,7 +7816,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Dropbox"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/dropbox"
+            "Get Dropbox"
           ]
         }
       },
@@ -7835,7 +7835,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Dropbox"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/dropbox"
+            "Get Dropbox"
           ]
         }
       },
@@ -7860,7 +7860,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Dropbox"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/dropbox"
+            "Convert A Folder Into A Dropbox"
           ]
         }
       },
@@ -7878,7 +7878,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Dropbox"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/dropbox"
+            "Convert A Folder Into A Dropbox"
           ]
         }
       },
@@ -7897,7 +7897,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Dropbox"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/dropbox"
+            "Convert A Folder Into A Dropbox"
           ]
         }
       },
@@ -7950,7 +7950,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Dropbox"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/files/{file_id}/dropbox"
+            "Update Dropbox"
           ]
         }
       },
@@ -7968,7 +7968,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Dropbox"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/files/{file_id}/dropbox"
+            "Update Dropbox"
           ]
         }
       },
@@ -7987,7 +7987,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Dropbox"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/files/{file_id}/dropbox"
+            "Update Dropbox"
           ]
         }
       },
@@ -8040,7 +8040,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Dropbox"
           ],
           "operation": [
-            "DELETE /2/drive/{drive_id}/files/{file_id}/dropbox"
+            "Delete Dropbox"
           ]
         }
       },
@@ -8058,7 +8058,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Dropbox"
           ],
           "operation": [
-            "DELETE /2/drive/{drive_id}/files/{file_id}/dropbox"
+            "Delete Dropbox"
           ]
         }
       },
@@ -8076,7 +8076,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Dropbox"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/dropbox/invite"
+            "Dropbox Invite"
           ]
         }
       },
@@ -8094,7 +8094,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Dropbox"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/dropbox/invite"
+            "Dropbox Invite"
           ]
         }
       },
@@ -8113,7 +8113,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Dropbox"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/dropbox/invite"
+            "Dropbox Invite"
           ]
         }
       },
@@ -8152,7 +8152,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Dropbox"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/files/dropboxes"
+            "Get Drop Boxes"
           ]
         }
       },
@@ -8171,7 +8171,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Dropbox"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/files/dropboxes"
+            "Get Drop Boxes"
           ]
         }
       },
@@ -8242,7 +8242,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Dropbox"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/files/dropboxes"
+            "Create A New Dropbox"
           ]
         }
       },
@@ -8260,7 +8260,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Dropbox"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/files/dropboxes"
+            "Create A New Dropbox"
           ]
         }
       },
@@ -8279,7 +8279,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Dropbox"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/files/dropboxes"
+            "Create A New Dropbox"
           ]
         }
       },
@@ -8300,53 +8300,53 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > External import"
+            "Drive > Files > External Import"
           ]
         }
       },
       "options": [
         {
           "name": "List Imports",
-          "value": "GET /2/drive/{drive_id}/imports"
+          "value": "List Imports"
         },
         {
           "name": "Clean Imports History",
-          "value": "DELETE /2/drive/{drive_id}/imports"
+          "value": "Clean Imports History"
         },
         {
           "name": "Import K Drive Sharelink",
-          "value": "POST /2/drive/{drive_id}/imports/sharelink"
+          "value": "Import K Drive Sharelink"
         },
         {
           "name": "Import K Drive",
-          "value": "POST /2/drive/{drive_id}/imports/kdrive"
+          "value": "Import K Drive"
         },
         {
           "name": "Import Web DAV App",
-          "value": "POST /2/drive/{drive_id}/imports/webdav"
+          "value": "Import Web DAV App"
         },
         {
           "name": "Import OAuth2 App",
-          "value": "POST /2/drive/{drive_id}/imports/oauth"
+          "value": "Import OAuth2 App"
         },
         {
           "name": "List Eligible Drives",
-          "value": "GET /2/drive/{drive_id}/imports/oauth/drives"
+          "value": "List Eligible Drives"
         },
         {
           "name": "List Errored Import Files",
-          "value": "GET /2/drive/{drive_id}/imports/{import_id}"
+          "value": "List Errored Import Files"
         },
         {
           "name": "Delete Import",
-          "value": "DELETE /2/drive/{drive_id}/imports/{import_id}"
+          "value": "Delete Import"
         },
         {
           "name": "Cancel Import",
-          "value": "PUT /2/drive/{drive_id}/imports/{import_id}/cancel"
+          "value": "Cancel Import"
         }
       ],
-      "default": "GET /2/drive/{drive_id}/imports",
+      "default": "List Imports",
       "noDataExpression": true
     },
     {
@@ -8357,10 +8357,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > External import"
+            "Drive > Files > External Import"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/imports"
+            "List Imports"
           ]
         }
       },
@@ -8376,10 +8376,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > External import"
+            "Drive > Files > External Import"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/imports"
+            "List Imports"
           ]
         }
       },
@@ -8422,10 +8422,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > External import"
+            "Drive > Files > External Import"
           ],
           "operation": [
-            "DELETE /2/drive/{drive_id}/imports"
+            "Clean Imports History"
           ]
         }
       },
@@ -8440,10 +8440,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > External import"
+            "Drive > Files > External Import"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/imports/sharelink"
+            "Import K Drive Sharelink"
           ]
         }
       },
@@ -8458,10 +8458,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > External import"
+            "Drive > Files > External Import"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/imports/sharelink"
+            "Import K Drive Sharelink"
           ]
         }
       },
@@ -8476,10 +8476,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > External import"
+            "Drive > Files > External Import"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/imports/sharelink"
+            "Import K Drive Sharelink"
           ]
         }
       },
@@ -8494,10 +8494,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > External import"
+            "Drive > Files > External Import"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/imports/sharelink"
+            "Import K Drive Sharelink"
           ]
         }
       },
@@ -8513,10 +8513,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > External import"
+            "Drive > Files > External Import"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/imports/sharelink"
+            "Import K Drive Sharelink"
           ]
         }
       },
@@ -8552,10 +8552,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > External import"
+            "Drive > Files > External Import"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/imports/kdrive"
+            "Import K Drive"
           ]
         }
       },
@@ -8570,10 +8570,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > External import"
+            "Drive > Files > External Import"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/imports/kdrive"
+            "Import K Drive"
           ]
         }
       },
@@ -8588,10 +8588,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > External import"
+            "Drive > Files > External Import"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/imports/kdrive"
+            "Import K Drive"
           ]
         }
       },
@@ -8607,10 +8607,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > External import"
+            "Drive > Files > External Import"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/imports/kdrive"
+            "Import K Drive"
           ]
         }
       },
@@ -8632,10 +8632,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > External import"
+            "Drive > Files > External Import"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/imports/webdav"
+            "Import Web DAV App"
           ]
         }
       },
@@ -8650,10 +8650,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > External import"
+            "Drive > Files > External Import"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/imports/webdav"
+            "Import Web DAV App"
           ]
         }
       },
@@ -8686,10 +8686,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > External import"
+            "Drive > Files > External Import"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/imports/webdav"
+            "Import Web DAV App"
           ]
         }
       },
@@ -8704,10 +8704,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > External import"
+            "Drive > Files > External Import"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/imports/webdav"
+            "Import Web DAV App"
           ]
         }
       },
@@ -8722,10 +8722,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > External import"
+            "Drive > Files > External Import"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/imports/webdav"
+            "Import Web DAV App"
           ]
         }
       },
@@ -8740,10 +8740,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > External import"
+            "Drive > Files > External Import"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/imports/webdav"
+            "Import Web DAV App"
           ]
         }
       },
@@ -8759,10 +8759,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > External import"
+            "Drive > Files > External Import"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/imports/webdav"
+            "Import Web DAV App"
           ]
         }
       },
@@ -8784,10 +8784,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > External import"
+            "Drive > Files > External Import"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/imports/oauth"
+            "Import OAuth2 App"
           ]
         }
       },
@@ -8802,10 +8802,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > External import"
+            "Drive > Files > External Import"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/imports/oauth"
+            "Import OAuth2 App"
           ]
         }
       },
@@ -8838,10 +8838,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > External import"
+            "Drive > Files > External Import"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/imports/oauth"
+            "Import OAuth2 App"
           ]
         }
       },
@@ -8857,10 +8857,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > External import"
+            "Drive > Files > External Import"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/imports/oauth"
+            "Import OAuth2 App"
           ]
         }
       },
@@ -8910,10 +8910,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > External import"
+            "Drive > Files > External Import"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/imports/oauth/drives"
+            "List Eligible Drives"
           ]
         }
       },
@@ -8928,10 +8928,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > External import"
+            "Drive > Files > External Import"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/imports/oauth/drives"
+            "List Eligible Drives"
           ]
         }
       },
@@ -8964,10 +8964,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > External import"
+            "Drive > Files > External Import"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/imports/oauth/drives"
+            "List Eligible Drives"
           ]
         }
       },
@@ -8994,10 +8994,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > External import"
+            "Drive > Files > External Import"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/imports/{import_id}"
+            "List Errored Import Files"
           ]
         }
       },
@@ -9012,10 +9012,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > External import"
+            "Drive > Files > External Import"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/imports/{import_id}"
+            "List Errored Import Files"
           ]
         }
       },
@@ -9031,10 +9031,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > External import"
+            "Drive > Files > External Import"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/imports/{import_id}"
+            "List Errored Import Files"
           ]
         }
       },
@@ -9077,10 +9077,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > External import"
+            "Drive > Files > External Import"
           ],
           "operation": [
-            "DELETE /2/drive/{drive_id}/imports/{import_id}"
+            "Delete Import"
           ]
         }
       },
@@ -9095,10 +9095,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > External import"
+            "Drive > Files > External Import"
           ],
           "operation": [
-            "DELETE /2/drive/{drive_id}/imports/{import_id}"
+            "Delete Import"
           ]
         }
       },
@@ -9113,10 +9113,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > External import"
+            "Drive > Files > External Import"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/imports/{import_id}/cancel"
+            "Cancel Import"
           ]
         }
       },
@@ -9131,10 +9131,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > External import"
+            "Drive > Files > External Import"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/imports/{import_id}/cancel"
+            "Cancel Import"
           ]
         }
       },
@@ -9155,18 +9155,18 @@ export class InfomaniakKdrive implements INodeType {
       "options": [
         {
           "name": "Favorite File",
-          "value": "POST /2/drive/{drive_id}/files/{file_id}/favorite"
+          "value": "Favorite File"
         },
         {
           "name": "Unfavorite File",
-          "value": "DELETE /2/drive/{drive_id}/files/{file_id}/favorite"
+          "value": "Unfavorite File"
         },
         {
           "name": "Get Favorite Files List",
-          "value": "GET /3/drive/{drive_id}/files/favorites"
+          "value": "Get Favorite Files List"
         }
       ],
-      "default": "POST /2/drive/{drive_id}/files/{file_id}/favorite",
+      "default": "Favorite File",
       "noDataExpression": true
     },
     {
@@ -9180,7 +9180,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Favorite"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/favorite"
+            "Favorite File"
           ]
         }
       },
@@ -9198,7 +9198,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Favorite"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/favorite"
+            "Favorite File"
           ]
         }
       },
@@ -9216,7 +9216,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Favorite"
           ],
           "operation": [
-            "DELETE /2/drive/{drive_id}/files/{file_id}/favorite"
+            "Unfavorite File"
           ]
         }
       },
@@ -9234,7 +9234,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Favorite"
           ],
           "operation": [
-            "DELETE /2/drive/{drive_id}/files/{file_id}/favorite"
+            "Unfavorite File"
           ]
         }
       },
@@ -9252,7 +9252,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Favorite"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/files/favorites"
+            "Get Favorite Files List"
           ]
         }
       },
@@ -9271,7 +9271,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Favorite"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/files/favorites"
+            "Get Favorite Files List"
           ]
         }
       },
@@ -9345,82 +9345,82 @@ export class InfomaniakKdrive implements INodeType {
       "options": [
         {
           "name": "Trash",
-          "value": "DELETE /2/drive/{drive_id}/files/{file_id}"
+          "value": "Trash"
         },
         {
           "name": "Thumbnail",
-          "value": "GET /2/drive/{drive_id}/files/{file_id}/thumbnail"
+          "value": "Thumbnail"
         },
         {
           "name": "Preview",
-          "value": "GET /2/drive/{drive_id}/files/{file_id}/preview"
+          "value": "Preview"
         },
         {
           "name": "Download",
-          "value": "GET /2/drive/{drive_id}/files/{file_id}/download"
+          "value": "Download"
         },
         {
           "name": "Rename",
-          "value": "POST /2/drive/{drive_id}/files/{file_id}/rename"
+          "value": "Rename"
         },
         {
           "name": "Get Size",
-          "value": "GET /2/drive/{drive_id}/files/{file_id}/sizes"
+          "value": "Get Size"
         },
         {
           "name": "Hash",
-          "value": "GET /2/drive/{drive_id}/files/{file_id}/hash"
+          "value": "Hash"
         },
         {
           "name": "Copy To Drive",
-          "value": "POST /2/drive/{drive_id}/files/{file_id}/copy-to-drive"
+          "value": "Copy To Drive"
         },
         {
           "name": "Get A File Temporary URL",
-          "value": "GET /2/drive/{drive_id}/files/{file_id}/temporary_url"
+          "value": "Get A File Temporary URL"
         },
         {
           "name": "Get File/Directory",
-          "value": "GET /3/drive/{drive_id}/files/{file_id}"
+          "value": "Get File/Directory"
         },
         {
           "name": "Get Files In Directory",
-          "value": "GET /3/drive/{drive_id}/files/{file_id}/files"
+          "value": "Get Files In Directory"
         },
         {
           "name": "Count Element In Directory",
-          "value": "GET /3/drive/{drive_id}/files/{file_id}/count"
+          "value": "Count Element In Directory"
         },
         {
           "name": "Create Directory",
-          "value": "POST /3/drive/{drive_id}/files/{file_id}/directory"
+          "value": "Create Directory"
         },
         {
           "name": "Create Default File",
-          "value": "POST /3/drive/{drive_id}/files/{file_id}/file"
+          "value": "Create Default File"
         },
         {
           "name": "Copy To Directory",
-          "value": "POST /3/drive/{drive_id}/files/{file_id}/copy/{destination_directory_id}"
+          "value": "Copy To Directory"
         },
         {
           "name": "Duplicate",
-          "value": "POST /3/drive/{drive_id}/files/{file_id}/duplicate"
+          "value": "Duplicate"
         },
         {
           "name": "Convert File",
-          "value": "POST /3/drive/{drive_id}/files/{file_id}/convert"
+          "value": "Convert File"
         },
         {
           "name": "Move",
-          "value": "POST /3/drive/{drive_id}/files/{file_id}/move/{destination_directory_id}"
+          "value": "Move"
         },
         {
           "name": "Unlock",
-          "value": "DELETE /3/drive/{drive_id}/files/{file_id}/lock"
+          "value": "Unlock"
         }
       ],
-      "default": "DELETE /2/drive/{drive_id}/files/{file_id}",
+      "default": "Trash",
       "noDataExpression": true
     },
     {
@@ -9434,7 +9434,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "DELETE /2/drive/{drive_id}/files/{file_id}"
+            "Trash"
           ]
         }
       },
@@ -9452,7 +9452,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "DELETE /2/drive/{drive_id}/files/{file_id}"
+            "Trash"
           ]
         }
       },
@@ -9470,7 +9470,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/thumbnail"
+            "Thumbnail"
           ]
         }
       },
@@ -9488,7 +9488,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/thumbnail"
+            "Thumbnail"
           ]
         }
       },
@@ -9507,7 +9507,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/thumbnail"
+            "Thumbnail"
           ]
         }
       },
@@ -9537,7 +9537,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/preview"
+            "Preview"
           ]
         }
       },
@@ -9555,7 +9555,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/preview"
+            "Preview"
           ]
         }
       },
@@ -9574,7 +9574,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/preview"
+            "Preview"
           ]
         }
       },
@@ -9626,7 +9626,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/download"
+            "Download"
           ]
         }
       },
@@ -9644,7 +9644,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/download"
+            "Download"
           ]
         }
       },
@@ -9663,7 +9663,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/download"
+            "Download"
           ]
         }
       },
@@ -9697,7 +9697,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/rename"
+            "Rename"
           ]
         }
       },
@@ -9715,7 +9715,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/rename"
+            "Rename"
           ]
         }
       },
@@ -9733,7 +9733,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/rename"
+            "Rename"
           ]
         }
       },
@@ -9751,7 +9751,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/sizes"
+            "Get Size"
           ]
         }
       },
@@ -9769,7 +9769,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/sizes"
+            "Get Size"
           ]
         }
       },
@@ -9788,7 +9788,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/sizes"
+            "Get Size"
           ]
         }
       },
@@ -9822,7 +9822,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/hash"
+            "Hash"
           ]
         }
       },
@@ -9840,7 +9840,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/hash"
+            "Hash"
           ]
         }
       },
@@ -9858,7 +9858,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/copy-to-drive"
+            "Copy To Drive"
           ]
         }
       },
@@ -9875,7 +9875,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/copy-to-drive"
+            "Copy To Drive"
           ]
         }
       },
@@ -9892,7 +9892,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/copy-to-drive"
+            "Copy To Drive"
           ]
         }
       },
@@ -9910,7 +9910,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/copy-to-drive"
+            "Copy To Drive"
           ]
         }
       },
@@ -9928,7 +9928,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/temporary_url"
+            "Get A File Temporary URL"
           ]
         }
       },
@@ -9946,7 +9946,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/temporary_url"
+            "Get A File Temporary URL"
           ]
         }
       },
@@ -9965,7 +9965,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/temporary_url"
+            "Get A File Temporary URL"
           ]
         }
       },
@@ -9989,7 +9989,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/files/{file_id}"
+            "Get File/Directory"
           ]
         }
       },
@@ -10007,7 +10007,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/files/{file_id}"
+            "Get File/Directory"
           ]
         }
       },
@@ -10026,7 +10026,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/files/{file_id}"
+            "Get File/Directory"
           ]
         }
       },
@@ -10051,7 +10051,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/files/{file_id}/files"
+            "Get Files In Directory"
           ]
         }
       },
@@ -10069,7 +10069,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/files/{file_id}/files"
+            "Get Files In Directory"
           ]
         }
       },
@@ -10088,7 +10088,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/files/{file_id}/files"
+            "Get Files In Directory"
           ]
         }
       },
@@ -10159,7 +10159,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/files/{file_id}/count"
+            "Count Element In Directory"
           ]
         }
       },
@@ -10177,7 +10177,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/files/{file_id}/count"
+            "Count Element In Directory"
           ]
         }
       },
@@ -10196,7 +10196,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/files/{file_id}/count"
+            "Count Element In Directory"
           ]
         }
       },
@@ -10230,7 +10230,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/files/{file_id}/directory"
+            "Create Directory"
           ]
         }
       },
@@ -10248,7 +10248,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/files/{file_id}/directory"
+            "Create Directory"
           ]
         }
       },
@@ -10266,7 +10266,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/files/{file_id}/directory"
+            "Create Directory"
           ]
         }
       },
@@ -10291,7 +10291,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/files/{file_id}/directory"
+            "Create Directory"
           ]
         }
       },
@@ -10310,7 +10310,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/files/{file_id}/directory"
+            "Create Directory"
           ]
         }
       },
@@ -10348,7 +10348,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/files/{file_id}/file"
+            "Create Default File"
           ]
         }
       },
@@ -10366,7 +10366,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/files/{file_id}/file"
+            "Create Default File"
           ]
         }
       },
@@ -10384,7 +10384,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/files/{file_id}/file"
+            "Create Default File"
           ]
         }
       },
@@ -10409,7 +10409,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/files/{file_id}/file"
+            "Create Default File"
           ]
         }
       },
@@ -10427,7 +10427,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/files/{file_id}/file"
+            "Create Default File"
           ]
         }
       },
@@ -10471,7 +10471,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/files/{file_id}/copy/{destination_directory_id}"
+            "Copy To Directory"
           ]
         }
       },
@@ -10489,7 +10489,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/files/{file_id}/copy/{destination_directory_id}"
+            "Copy To Directory"
           ]
         }
       },
@@ -10507,7 +10507,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/files/{file_id}/copy/{destination_directory_id}"
+            "Copy To Directory"
           ]
         }
       },
@@ -10526,7 +10526,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/files/{file_id}/copy/{destination_directory_id}"
+            "Copy To Directory"
           ]
         }
       },
@@ -10552,7 +10552,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/files/{file_id}/copy/{destination_directory_id}"
+            "Copy To Directory"
           ]
         }
       },
@@ -10577,7 +10577,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/files/{file_id}/duplicate"
+            "Duplicate"
           ]
         }
       },
@@ -10595,7 +10595,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/files/{file_id}/duplicate"
+            "Duplicate"
           ]
         }
       },
@@ -10614,7 +10614,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/files/{file_id}/duplicate"
+            "Duplicate"
           ]
         }
       },
@@ -10640,7 +10640,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/files/{file_id}/duplicate"
+            "Duplicate"
           ]
         }
       },
@@ -10665,7 +10665,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/files/{file_id}/convert"
+            "Convert File"
           ]
         }
       },
@@ -10683,7 +10683,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/files/{file_id}/convert"
+            "Convert File"
           ]
         }
       },
@@ -10702,7 +10702,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/files/{file_id}/convert"
+            "Convert File"
           ]
         }
       },
@@ -10727,7 +10727,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/files/{file_id}/move/{destination_directory_id}"
+            "Move"
           ]
         }
       },
@@ -10745,7 +10745,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/files/{file_id}/move/{destination_directory_id}"
+            "Move"
           ]
         }
       },
@@ -10763,7 +10763,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/files/{file_id}/move/{destination_directory_id}"
+            "Move"
           ]
         }
       },
@@ -10782,7 +10782,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/files/{file_id}/move/{destination_directory_id}"
+            "Move"
           ]
         }
       },
@@ -10824,7 +10824,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "DELETE /3/drive/{drive_id}/files/{file_id}/lock"
+            "Unlock"
           ]
         }
       },
@@ -10842,7 +10842,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "DELETE /3/drive/{drive_id}/files/{file_id}/lock"
+            "Unlock"
           ]
         }
       },
@@ -10860,7 +10860,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "DELETE /3/drive/{drive_id}/files/{file_id}/lock"
+            "Unlock"
           ]
         }
       },
@@ -10877,7 +10877,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory"
           ],
           "operation": [
-            "DELETE /3/drive/{drive_id}/files/{file_id}/lock"
+            "Unlock"
           ]
         }
       },
@@ -10897,26 +10897,26 @@ export class InfomaniakKdrive implements INodeType {
       "options": [
         {
           "name": "Allow External Applications",
-          "value": "POST /2/drive/{drive_id}/files/{file_id}/access/applications"
+          "value": "Allow External Applications"
         },
         {
           "name": "Get Multi Access",
-          "value": "GET /2/drive/{drive_id}/files/{file_id}/access"
+          "value": "Get Multi Access"
         },
         {
           "name": "Add Multi Access",
-          "value": "POST /2/drive/{drive_id}/files/{file_id}/access"
+          "value": "Add Multi Access"
         },
         {
           "name": "Synchronize With Parent Rights",
-          "value": "POST /2/drive/{drive_id}/files/{file_id}/access/sync-parent"
+          "value": "Synchronize With Parent Rights"
         },
         {
           "name": "Check Access Change",
-          "value": "POST /2/drive/{drive_id}/files/{file_id}/access/check"
+          "value": "Check Access Change"
         }
       ],
-      "default": "POST /2/drive/{drive_id}/files/{file_id}/access/applications",
+      "default": "Allow External Applications",
       "noDataExpression": true
     },
     {
@@ -10930,7 +10930,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/access/applications"
+            "Allow External Applications"
           ]
         }
       },
@@ -10948,7 +10948,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/access/applications"
+            "Allow External Applications"
           ]
         }
       },
@@ -10966,7 +10966,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/access/applications"
+            "Allow External Applications"
           ]
         }
       },
@@ -10995,7 +10995,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/access/applications"
+            "Allow External Applications"
           ]
         }
       },
@@ -11030,7 +11030,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/access"
+            "Get Multi Access"
           ]
         }
       },
@@ -11048,7 +11048,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/access"
+            "Get Multi Access"
           ]
         }
       },
@@ -11067,7 +11067,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/access"
+            "Get Multi Access"
           ]
         }
       },
@@ -11092,7 +11092,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/access"
+            "Add Multi Access"
           ]
         }
       },
@@ -11110,7 +11110,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/access"
+            "Add Multi Access"
           ]
         }
       },
@@ -11129,7 +11129,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/access"
+            "Add Multi Access"
           ]
         }
       },
@@ -11183,7 +11183,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/access"
+            "Add Multi Access"
           ]
         }
       },
@@ -11220,7 +11220,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/access"
+            "Add Multi Access"
           ]
         }
       },
@@ -11262,7 +11262,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/access/sync-parent"
+            "Synchronize With Parent Rights"
           ]
         }
       },
@@ -11280,7 +11280,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/access/sync-parent"
+            "Synchronize With Parent Rights"
           ]
         }
       },
@@ -11298,7 +11298,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/access/check"
+            "Check Access Change"
           ]
         }
       },
@@ -11316,7 +11316,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/access/check"
+            "Check Access Change"
           ]
         }
       },
@@ -11334,7 +11334,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/access/check"
+            "Check Access Change"
           ]
         }
       },
@@ -11371,7 +11371,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/access/check"
+            "Check Access Change"
           ]
         }
       },
@@ -11410,18 +11410,18 @@ export class InfomaniakKdrive implements INodeType {
       "options": [
         {
           "name": "Invitation > Get Access",
-          "value": "GET /2/drive/{drive_id}/files/{file_id}/access/invitations"
+          "value": "Invitation > Get Access"
         },
         {
           "name": "Add Access",
-          "value": "POST /2/drive/{drive_id}/files/{file_id}/access/invitations"
+          "value": "Add Access"
         },
         {
           "name": "Check Access",
-          "value": "POST /2/drive/{drive_id}/files/{file_id}/access/invitations/check"
+          "value": "Check Access"
         }
       ],
-      "default": "GET /2/drive/{drive_id}/files/{file_id}/access/invitations",
+      "default": "Invitation > Get Access",
       "noDataExpression": true
     },
     {
@@ -11435,7 +11435,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Invitation"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/access/invitations"
+            "Invitation > Get Access"
           ]
         }
       },
@@ -11453,7 +11453,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Invitation"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/access/invitations"
+            "Invitation > Get Access"
           ]
         }
       },
@@ -11471,7 +11471,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Invitation"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/access/invitations"
+            "Add Access"
           ]
         }
       },
@@ -11489,7 +11489,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Invitation"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/access/invitations"
+            "Add Access"
           ]
         }
       },
@@ -11508,7 +11508,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Invitation"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/access/invitations"
+            "Add Access"
           ]
         }
       },
@@ -11562,7 +11562,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Invitation"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/access/invitations"
+            "Add Access"
           ]
         }
       },
@@ -11579,7 +11579,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Invitation"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/access/invitations"
+            "Add Access"
           ]
         }
       },
@@ -11616,7 +11616,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Invitation"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/access/invitations"
+            "Add Access"
           ]
         }
       },
@@ -11640,7 +11640,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Invitation"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/access/invitations/check"
+            "Check Access"
           ]
         }
       },
@@ -11658,7 +11658,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Invitation"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/access/invitations/check"
+            "Check Access"
           ]
         }
       },
@@ -11677,7 +11677,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Invitation"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/access/invitations/check"
+            "Check Access"
           ]
         }
       },
@@ -11710,22 +11710,22 @@ export class InfomaniakKdrive implements INodeType {
       "options": [
         {
           "name": "Get Requested File Access From Its ID",
-          "value": "GET /2/drive/{drive_id}/access/requests/{request_id}"
+          "value": "Get Requested File Access From Its ID"
         },
         {
           "name": "Decline A File Access Request",
-          "value": "PUT /2/drive/{drive_id}/access/requests/{request_id}/decline"
+          "value": "Decline A File Access Request"
         },
         {
           "name": "Get Requested File Access From A File ID",
-          "value": "GET /2/drive/{drive_id}/files/{file_id}/access/requests"
+          "value": "Get Requested File Access From A File ID"
         },
         {
           "name": "Create A New File Access Request",
-          "value": "POST /2/drive/{drive_id}/files/{file_id}/access/requests"
+          "value": "Create A New File Access Request"
         }
       ],
-      "default": "GET /2/drive/{drive_id}/access/requests/{request_id}",
+      "default": "Get Requested File Access From Its ID",
       "noDataExpression": true
     },
     {
@@ -11739,7 +11739,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Request"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/access/requests/{request_id}"
+            "Get Requested File Access From Its ID"
           ]
         }
       },
@@ -11757,7 +11757,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Request"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/access/requests/{request_id}"
+            "Get Requested File Access From Its ID"
           ]
         }
       },
@@ -11776,7 +11776,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Request"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/access/requests/{request_id}"
+            "Get Requested File Access From Its ID"
           ]
         }
       },
@@ -11801,7 +11801,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Request"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/access/requests/{request_id}/decline"
+            "Decline A File Access Request"
           ]
         }
       },
@@ -11819,7 +11819,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Request"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/access/requests/{request_id}/decline"
+            "Decline A File Access Request"
           ]
         }
       },
@@ -11837,7 +11837,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Request"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/access/requests"
+            "Get Requested File Access From A File ID"
           ]
         }
       },
@@ -11855,7 +11855,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Request"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/access/requests"
+            "Get Requested File Access From A File ID"
           ]
         }
       },
@@ -11874,7 +11874,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Request"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/access/requests"
+            "Get Requested File Access From A File ID"
           ]
         }
       },
@@ -11899,7 +11899,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Request"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/access/requests"
+            "Create A New File Access Request"
           ]
         }
       },
@@ -11917,7 +11917,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Request"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/access/requests"
+            "Create A New File Access Request"
           ]
         }
       },
@@ -11936,7 +11936,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Request"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/access/requests"
+            "Create A New File Access Request"
           ]
         }
       },
@@ -11962,7 +11962,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Request"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/access/requests"
+            "Create A New File Access Request"
           ]
         }
       },
@@ -11990,22 +11990,22 @@ export class InfomaniakKdrive implements INodeType {
       "options": [
         {
           "name": "Get Access",
-          "value": "GET /2/drive/{drive_id}/files/{file_id}/access/teams"
+          "value": "Get Access"
         },
         {
           "name": "Add Access",
-          "value": "POST /2/drive/{drive_id}/files/{file_id}/access/teams"
+          "value": "Add Access"
         },
         {
           "name": "Update Access",
-          "value": "PUT /2/drive/{drive_id}/files/{file_id}/access/teams/{team_id}"
+          "value": "Update Access"
         },
         {
           "name": "Remove Access",
-          "value": "DELETE /2/drive/{drive_id}/files/{file_id}/access/teams/{team_id}"
+          "value": "Remove Access"
         }
       ],
-      "default": "GET /2/drive/{drive_id}/files/{file_id}/access/teams",
+      "default": "Get Access",
       "noDataExpression": true
     },
     {
@@ -12019,7 +12019,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Teams"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/access/teams"
+            "Get Access"
           ]
         }
       },
@@ -12037,7 +12037,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Teams"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/access/teams"
+            "Get Access"
           ]
         }
       },
@@ -12055,7 +12055,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Teams"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/access/teams"
+            "Add Access"
           ]
         }
       },
@@ -12073,7 +12073,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Teams"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/access/teams"
+            "Add Access"
           ]
         }
       },
@@ -12092,7 +12092,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Teams"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/access/teams"
+            "Add Access"
           ]
         }
       },
@@ -12146,7 +12146,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Teams"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/access/teams"
+            "Add Access"
           ]
         }
       },
@@ -12183,7 +12183,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Teams"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/access/teams"
+            "Add Access"
           ]
         }
       },
@@ -12213,7 +12213,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Teams"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/files/{file_id}/access/teams/{team_id}"
+            "Update Access"
           ]
         }
       },
@@ -12231,7 +12231,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Teams"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/files/{file_id}/access/teams/{team_id}"
+            "Update Access"
           ]
         }
       },
@@ -12249,7 +12249,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Teams"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/files/{file_id}/access/teams/{team_id}"
+            "Update Access"
           ]
         }
       },
@@ -12267,7 +12267,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Teams"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/files/{file_id}/access/teams/{team_id}"
+            "Update Access"
           ]
         }
       },
@@ -12303,7 +12303,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Teams"
           ],
           "operation": [
-            "DELETE /2/drive/{drive_id}/files/{file_id}/access/teams/{team_id}"
+            "Remove Access"
           ]
         }
       },
@@ -12321,7 +12321,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Teams"
           ],
           "operation": [
-            "DELETE /2/drive/{drive_id}/files/{file_id}/access/teams/{team_id}"
+            "Remove Access"
           ]
         }
       },
@@ -12339,7 +12339,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Teams"
           ],
           "operation": [
-            "DELETE /2/drive/{drive_id}/files/{file_id}/access/teams/{team_id}"
+            "Remove Access"
           ]
         }
       },
@@ -12360,26 +12360,26 @@ export class InfomaniakKdrive implements INodeType {
       "options": [
         {
           "name": "Get Access",
-          "value": "GET /2/drive/{drive_id}/files/{file_id}/access/users"
+          "value": "Get Access"
         },
         {
           "name": "Add Access",
-          "value": "POST /2/drive/{drive_id}/files/{file_id}/access/users"
+          "value": "Add Access"
         },
         {
           "name": "Update Access",
-          "value": "PUT /2/drive/{drive_id}/files/{file_id}/access/users/{user_id}"
+          "value": "Update Access"
         },
         {
           "name": "Remove Access",
-          "value": "DELETE /2/drive/{drive_id}/files/{file_id}/access/users/{user_id}"
+          "value": "Remove Access"
         },
         {
           "name": "Force Write Access",
-          "value": "POST /2/drive/{drive_id}/files/{file_id}/access/force"
+          "value": "Force Write Access"
         }
       ],
-      "default": "GET /2/drive/{drive_id}/files/{file_id}/access/users",
+      "default": "Get Access",
       "noDataExpression": true
     },
     {
@@ -12393,7 +12393,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Users"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/access/users"
+            "Get Access"
           ]
         }
       },
@@ -12411,7 +12411,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Users"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/access/users"
+            "Get Access"
           ]
         }
       },
@@ -12429,7 +12429,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Users"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/access/users"
+            "Add Access"
           ]
         }
       },
@@ -12447,7 +12447,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Users"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/access/users"
+            "Add Access"
           ]
         }
       },
@@ -12466,7 +12466,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Users"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/access/users"
+            "Add Access"
           ]
         }
       },
@@ -12520,7 +12520,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Users"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/access/users"
+            "Add Access"
           ]
         }
       },
@@ -12556,7 +12556,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Users"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/access/users"
+            "Add Access"
           ]
         }
       },
@@ -12574,7 +12574,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Users"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/access/users"
+            "Add Access"
           ]
         }
       },
@@ -12598,7 +12598,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Users"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/files/{file_id}/access/users/{user_id}"
+            "Update Access"
           ]
         }
       },
@@ -12616,7 +12616,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Users"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/files/{file_id}/access/users/{user_id}"
+            "Update Access"
           ]
         }
       },
@@ -12634,7 +12634,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Users"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/files/{file_id}/access/users/{user_id}"
+            "Update Access"
           ]
         }
       },
@@ -12652,7 +12652,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Users"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/files/{file_id}/access/users/{user_id}"
+            "Update Access"
           ]
         }
       },
@@ -12688,7 +12688,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Users"
           ],
           "operation": [
-            "DELETE /2/drive/{drive_id}/files/{file_id}/access/users/{user_id}"
+            "Remove Access"
           ]
         }
       },
@@ -12706,7 +12706,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Users"
           ],
           "operation": [
-            "DELETE /2/drive/{drive_id}/files/{file_id}/access/users/{user_id}"
+            "Remove Access"
           ]
         }
       },
@@ -12724,7 +12724,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Users"
           ],
           "operation": [
-            "DELETE /2/drive/{drive_id}/files/{file_id}/access/users/{user_id}"
+            "Remove Access"
           ]
         }
       },
@@ -12742,7 +12742,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Users"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/access/force"
+            "Force Write Access"
           ]
         }
       },
@@ -12760,7 +12760,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Access > Users"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/access/force"
+            "Force Write Access"
           ]
         }
       },
@@ -12781,38 +12781,38 @@ export class InfomaniakKdrive implements INodeType {
       "options": [
         {
           "name": "Get File Comments",
-          "value": "GET /2/drive/{drive_id}/files/{file_id}/comments"
+          "value": "Get File Comments"
         },
         {
           "name": "Add Comment",
-          "value": "POST /2/drive/{drive_id}/files/{file_id}/comments"
+          "value": "Add Comment"
         },
         {
           "name": "Get Comment Reply",
-          "value": "GET /2/drive/{drive_id}/files/{file_id}/comments/{comment_id}"
+          "value": "Get Comment Reply"
         },
         {
           "name": "Add Comment Reply",
-          "value": "POST /2/drive/{drive_id}/files/{file_id}/comments/{comment_id}"
+          "value": "Add Comment Reply"
         },
         {
           "name": "Modify Comment",
-          "value": "PUT /2/drive/{drive_id}/files/{file_id}/comments/{comment_id}"
+          "value": "Modify Comment"
         },
         {
           "name": "Delete Comment",
-          "value": "DELETE /2/drive/{drive_id}/files/{file_id}/comments/{comment_id}"
+          "value": "Delete Comment"
         },
         {
           "name": "Like Comment",
-          "value": "POST /2/drive/{drive_id}/files/{file_id}/comments/{comment_id}/like"
+          "value": "Like Comment"
         },
         {
           "name": "Unlike Comment",
-          "value": "POST /2/drive/{drive_id}/files/{file_id}/comments/{comment_id}/unlike"
+          "value": "Unlike Comment"
         }
       ],
-      "default": "GET /2/drive/{drive_id}/files/{file_id}/comments",
+      "default": "Get File Comments",
       "noDataExpression": true
     },
     {
@@ -12826,7 +12826,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Comment"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/comments"
+            "Get File Comments"
           ]
         }
       },
@@ -12844,7 +12844,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Comment"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/comments"
+            "Get File Comments"
           ]
         }
       },
@@ -12863,7 +12863,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Comment"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/comments"
+            "Get File Comments"
           ]
         }
       },
@@ -12940,7 +12940,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Comment"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/comments"
+            "Add Comment"
           ]
         }
       },
@@ -12958,7 +12958,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Comment"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/comments"
+            "Add Comment"
           ]
         }
       },
@@ -12977,7 +12977,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Comment"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/comments"
+            "Add Comment"
           ]
         }
       },
@@ -13002,7 +13002,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Comment"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/comments"
+            "Add Comment"
           ]
         }
       },
@@ -13019,7 +13019,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Comment"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/comments/{comment_id}"
+            "Get Comment Reply"
           ]
         }
       },
@@ -13037,7 +13037,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Comment"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/comments/{comment_id}"
+            "Get Comment Reply"
           ]
         }
       },
@@ -13055,7 +13055,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Comment"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/comments/{comment_id}"
+            "Get Comment Reply"
           ]
         }
       },
@@ -13073,7 +13073,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Comment"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/comments/{comment_id}"
+            "Get Comment Reply"
           ]
         }
       },
@@ -13150,7 +13150,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Comment"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/comments/{comment_id}"
+            "Add Comment Reply"
           ]
         }
       },
@@ -13168,7 +13168,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Comment"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/comments/{comment_id}"
+            "Add Comment Reply"
           ]
         }
       },
@@ -13186,7 +13186,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Comment"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/comments/{comment_id}"
+            "Add Comment Reply"
           ]
         }
       },
@@ -13204,7 +13204,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Comment"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/comments/{comment_id}"
+            "Add Comment Reply"
           ]
         }
       },
@@ -13229,7 +13229,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Comment"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/comments/{comment_id}"
+            "Add Comment Reply"
           ]
         }
       },
@@ -13246,7 +13246,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Comment"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/files/{file_id}/comments/{comment_id}"
+            "Modify Comment"
           ]
         }
       },
@@ -13264,7 +13264,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Comment"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/files/{file_id}/comments/{comment_id}"
+            "Modify Comment"
           ]
         }
       },
@@ -13282,7 +13282,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Comment"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/files/{file_id}/comments/{comment_id}"
+            "Modify Comment"
           ]
         }
       },
@@ -13300,7 +13300,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Comment"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/files/{file_id}/comments/{comment_id}"
+            "Modify Comment"
           ]
         }
       },
@@ -13326,7 +13326,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Comment"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/files/{file_id}/comments/{comment_id}"
+            "Modify Comment"
           ]
         }
       },
@@ -13356,7 +13356,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Comment"
           ],
           "operation": [
-            "DELETE /2/drive/{drive_id}/files/{file_id}/comments/{comment_id}"
+            "Delete Comment"
           ]
         }
       },
@@ -13374,7 +13374,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Comment"
           ],
           "operation": [
-            "DELETE /2/drive/{drive_id}/files/{file_id}/comments/{comment_id}"
+            "Delete Comment"
           ]
         }
       },
@@ -13392,7 +13392,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Comment"
           ],
           "operation": [
-            "DELETE /2/drive/{drive_id}/files/{file_id}/comments/{comment_id}"
+            "Delete Comment"
           ]
         }
       },
@@ -13409,7 +13409,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Comment"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/comments/{comment_id}/like"
+            "Like Comment"
           ]
         }
       },
@@ -13427,7 +13427,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Comment"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/comments/{comment_id}/like"
+            "Like Comment"
           ]
         }
       },
@@ -13445,7 +13445,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Comment"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/comments/{comment_id}/like"
+            "Like Comment"
           ]
         }
       },
@@ -13462,7 +13462,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Comment"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/comments/{comment_id}/unlike"
+            "Unlike Comment"
           ]
         }
       },
@@ -13480,7 +13480,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Comment"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/comments/{comment_id}/unlike"
+            "Unlike Comment"
           ]
         }
       },
@@ -13498,7 +13498,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Comment"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/comments/{comment_id}/unlike"
+            "Unlike Comment"
           ]
         }
       },
@@ -13518,14 +13518,14 @@ export class InfomaniakKdrive implements INodeType {
       "options": [
         {
           "name": "Cancel By Path",
-          "value": "DELETE /2/drive/{drive_id}/upload"
+          "value": "Cancel By Path"
         },
         {
           "name": "Upload",
-          "value": "POST /3/drive/{drive_id}/upload"
+          "value": "Upload"
         }
       ],
-      "default": "DELETE /2/drive/{drive_id}/upload",
+      "default": "Cancel By Path",
       "noDataExpression": true
     },
     {
@@ -13539,7 +13539,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Upload"
           ],
           "operation": [
-            "DELETE /2/drive/{drive_id}/upload"
+            "Cancel By Path"
           ]
         }
       },
@@ -13558,7 +13558,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Upload"
           ],
           "operation": [
-            "DELETE /2/drive/{drive_id}/upload"
+            "Cancel By Path"
           ]
         }
       },
@@ -13597,7 +13597,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Upload"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/upload"
+            "Upload"
           ]
         }
       },
@@ -13615,7 +13615,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Upload"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/upload"
+            "Upload"
           ]
         }
       },
@@ -13633,7 +13633,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Upload"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/upload"
+            "Upload"
           ]
         }
       },
@@ -13727,7 +13727,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Upload"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/upload"
+            "Upload"
           ]
         }
       }
@@ -13746,34 +13746,34 @@ export class InfomaniakKdrive implements INodeType {
       "options": [
         {
           "name": "Cancel Session",
-          "value": "DELETE /2/drive/{drive_id}/upload/session/{session_token}"
+          "value": "Cancel Session"
         },
         {
           "name": "Batch : Cancel Sessions",
-          "value": "DELETE /2/drive/{drive_id}/upload/session/batch"
+          "value": "Batch : Cancel Sessions"
         },
         {
           "name": "Start Session",
-          "value": "POST /3/drive/{drive_id}/upload/session/start"
+          "value": "Start Session"
         },
         {
           "name": "Batch : Start Sessions",
-          "value": "POST /3/drive/{drive_id}/upload/session/batch/start"
+          "value": "Batch : Start Sessions"
         },
         {
           "name": "Append Chunk To Session",
-          "value": "POST /3/drive/{drive_id}/upload/session/{session_token}/chunk"
+          "value": "Append Chunk To Session"
         },
         {
           "name": "Close Session",
-          "value": "POST /3/drive/{drive_id}/upload/session/{session_token}/finish"
+          "value": "Close Session"
         },
         {
           "name": "Batch : Close Sessions",
-          "value": "POST /3/drive/{drive_id}/upload/session/batch/finish"
+          "value": "Batch : Close Sessions"
         }
       ],
-      "default": "DELETE /2/drive/{drive_id}/upload/session/{session_token}",
+      "default": "Cancel Session",
       "noDataExpression": true
     },
     {
@@ -13787,7 +13787,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Upload > Session"
           ],
           "operation": [
-            "DELETE /2/drive/{drive_id}/upload/session/{session_token}"
+            "Cancel Session"
           ]
         }
       },
@@ -13805,7 +13805,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Upload > Session"
           ],
           "operation": [
-            "DELETE /2/drive/{drive_id}/upload/session/{session_token}"
+            "Cancel Session"
           ]
         }
       },
@@ -13823,7 +13823,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Upload > Session"
           ],
           "operation": [
-            "DELETE /2/drive/{drive_id}/upload/session/batch"
+            "Batch : Cancel Sessions"
           ]
         }
       },
@@ -13841,7 +13841,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Upload > Session"
           ],
           "operation": [
-            "DELETE /2/drive/{drive_id}/upload/session/batch"
+            "Batch : Cancel Sessions"
           ]
         }
       },
@@ -13858,7 +13858,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Upload > Session"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/upload/session/start"
+            "Start Session"
           ]
         }
       },
@@ -13877,7 +13877,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Upload > Session"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/upload/session/start"
+            "Start Session"
           ]
         }
       },
@@ -13902,7 +13902,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Upload > Session"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/upload/session/start"
+            "Start Session"
           ]
         }
       },
@@ -13920,7 +13920,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Upload > Session"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/upload/session/start"
+            "Start Session"
           ]
         }
       },
@@ -13939,7 +13939,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Upload > Session"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/upload/session/start"
+            "Start Session"
           ]
         }
       },
@@ -14020,7 +14020,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Upload > Session"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/upload/session/batch/start"
+            "Batch : Start Sessions"
           ]
         }
       },
@@ -14039,7 +14039,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Upload > Session"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/upload/session/batch/start"
+            "Batch : Start Sessions"
           ]
         }
       },
@@ -14064,7 +14064,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Upload > Session"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/upload/session/batch/start"
+            "Batch : Start Sessions"
           ]
         }
       },
@@ -14081,7 +14081,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Upload > Session"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/upload/session/{session_token}/chunk"
+            "Append Chunk To Session"
           ]
         }
       },
@@ -14099,7 +14099,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Upload > Session"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/upload/session/{session_token}/chunk"
+            "Append Chunk To Session"
           ]
         }
       },
@@ -14117,7 +14117,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Upload > Session"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/upload/session/{session_token}/chunk"
+            "Append Chunk To Session"
           ]
         }
       },
@@ -14134,7 +14134,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Upload > Session"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/upload/session/{session_token}/chunk"
+            "Append Chunk To Session"
           ]
         }
       },
@@ -14152,7 +14152,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Upload > Session"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/upload/session/{session_token}/chunk"
+            "Append Chunk To Session"
           ]
         }
       },
@@ -14177,7 +14177,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Upload > Session"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/upload/session/{session_token}/chunk"
+            "Append Chunk To Session"
           ]
         }
       }
@@ -14193,7 +14193,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Upload > Session"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/upload/session/{session_token}/finish"
+            "Close Session"
           ]
         }
       },
@@ -14211,7 +14211,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Upload > Session"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/upload/session/{session_token}/finish"
+            "Close Session"
           ]
         }
       },
@@ -14230,7 +14230,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Upload > Session"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/upload/session/{session_token}/finish"
+            "Close Session"
           ]
         }
       },
@@ -14256,7 +14256,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Upload > Session"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/upload/session/{session_token}/finish"
+            "Close Session"
           ]
         }
       },
@@ -14295,7 +14295,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Upload > Session"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/upload/session/batch/finish"
+            "Batch : Close Sessions"
           ]
         }
       },
@@ -14314,7 +14314,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Upload > Session"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/upload/session/batch/finish"
+            "Batch : Close Sessions"
           ]
         }
       },
@@ -14339,7 +14339,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Upload > Session"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/upload/session/batch/finish"
+            "Batch : Close Sessions"
           ]
         }
       },
@@ -14359,54 +14359,54 @@ export class InfomaniakKdrive implements INodeType {
       "options": [
         {
           "name": "List",
-          "value": "GET /2/drive/{drive_id}/files/{file_id}/versions"
+          "value": "List"
         },
         {
           "name": "Delete All",
-          "value": "DELETE /2/drive/{drive_id}/files/{file_id}/versions"
+          "value": "Delete All"
         },
         {
           "name": "Update Current",
-          "value": "PUT /2/drive/{drive_id}/files/{file_id}/versions/current"
+          "value": "Update Current"
         },
         {
           "name": "Get",
-          "value": "GET /2/drive/{drive_id}/files/{file_id}/versions/{version_id}"
+          "value": "Get"
         },
         {
           "name": "Update",
-          "value": "PUT /2/drive/{drive_id}/files/{file_id}/versions/{version_id}"
+          "value": "Update"
         },
         {
           "name": "Delete",
-          "value": "DELETE /2/drive/{drive_id}/files/{file_id}/versions/{version_id}"
+          "value": "Delete"
         },
         {
           "name": "Download",
-          "value": "GET /2/drive/{drive_id}/files/{file_id}/versions/{version_id}/download"
+          "value": "Download"
         },
         {
           "name": "Restore",
-          "value": "POST /2/drive/{drive_id}/files/{file_id}/versions/{version_id}/restore"
+          "value": "Restore"
         },
         {
           "name": "Restore To Directory",
-          "value": "POST /2/drive/{drive_id}/files/{file_id}/versions/{version_id}/restore/{destination_directory_id}"
+          "value": "Restore To Directory"
         },
         {
           "name": "List",
-          "value": "GET /3/drive/{drive_id}/files/{file_id}/versions"
+          "value": "List (2)"
         },
         {
           "name": "Restore",
-          "value": "POST /3/drive/{drive_id}/files/{file_id}/versions/{version_id}/restore"
+          "value": "Restore (2)"
         },
         {
           "name": "Restore To Directory",
-          "value": "POST /3/drive/{drive_id}/files/{file_id}/versions/{version_id}/restore/{destination_directory_id}"
+          "value": "Restore To Directory (2)"
         }
       ],
-      "default": "GET /2/drive/{drive_id}/files/{file_id}/versions",
+      "default": "List",
       "noDataExpression": true
     },
     {
@@ -14420,7 +14420,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Version"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/versions"
+            "List"
           ]
         }
       },
@@ -14438,7 +14438,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Version"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/versions"
+            "List"
           ]
         }
       },
@@ -14457,7 +14457,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Version"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/versions"
+            "List"
           ]
         }
       },
@@ -14506,7 +14506,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Version"
           ],
           "operation": [
-            "DELETE /2/drive/{drive_id}/files/{file_id}/versions"
+            "Delete All"
           ]
         }
       },
@@ -14524,7 +14524,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Version"
           ],
           "operation": [
-            "DELETE /2/drive/{drive_id}/files/{file_id}/versions"
+            "Delete All"
           ]
         }
       },
@@ -14542,7 +14542,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Version"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/files/{file_id}/versions/current"
+            "Update Current"
           ]
         }
       },
@@ -14560,7 +14560,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Version"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/files/{file_id}/versions/current"
+            "Update Current"
           ]
         }
       },
@@ -14578,7 +14578,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Version"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/files/{file_id}/versions/current"
+            "Update Current"
           ]
         }
       },
@@ -14596,7 +14596,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Version"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/versions/{version_id}"
+            "Get"
           ]
         }
       },
@@ -14614,7 +14614,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Version"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/versions/{version_id}"
+            "Get"
           ]
         }
       },
@@ -14632,7 +14632,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Version"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/versions/{version_id}"
+            "Get"
           ]
         }
       },
@@ -14650,7 +14650,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Version"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/files/{file_id}/versions/{version_id}"
+            "Update"
           ]
         }
       },
@@ -14668,7 +14668,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Version"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/files/{file_id}/versions/{version_id}"
+            "Update"
           ]
         }
       },
@@ -14686,7 +14686,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Version"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/files/{file_id}/versions/{version_id}"
+            "Update"
           ]
         }
       },
@@ -14704,7 +14704,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Version"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/files/{file_id}/versions/{version_id}"
+            "Update"
           ]
         }
       },
@@ -14722,7 +14722,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Version"
           ],
           "operation": [
-            "DELETE /2/drive/{drive_id}/files/{file_id}/versions/{version_id}"
+            "Delete"
           ]
         }
       },
@@ -14740,7 +14740,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Version"
           ],
           "operation": [
-            "DELETE /2/drive/{drive_id}/files/{file_id}/versions/{version_id}"
+            "Delete"
           ]
         }
       },
@@ -14758,7 +14758,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Version"
           ],
           "operation": [
-            "DELETE /2/drive/{drive_id}/files/{file_id}/versions/{version_id}"
+            "Delete"
           ]
         }
       },
@@ -14776,7 +14776,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Version"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/versions/{version_id}/download"
+            "Download"
           ]
         }
       },
@@ -14794,7 +14794,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Version"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/versions/{version_id}/download"
+            "Download"
           ]
         }
       },
@@ -14812,7 +14812,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Version"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/versions/{version_id}/download"
+            "Download"
           ]
         }
       },
@@ -14830,7 +14830,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Version"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/versions/{version_id}/restore"
+            "Restore"
           ]
         }
       },
@@ -14848,7 +14848,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Version"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/versions/{version_id}/restore"
+            "Restore"
           ]
         }
       },
@@ -14866,7 +14866,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Version"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/versions/{version_id}/restore"
+            "Restore"
           ]
         }
       },
@@ -14885,7 +14885,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Version"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/versions/{version_id}/restore"
+            "Restore"
           ]
         }
       },
@@ -14910,7 +14910,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Version"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/versions/{version_id}/restore/{destination_directory_id}"
+            "Restore To Directory"
           ]
         }
       },
@@ -14928,7 +14928,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Version"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/versions/{version_id}/restore/{destination_directory_id}"
+            "Restore To Directory"
           ]
         }
       },
@@ -14946,7 +14946,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Version"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/versions/{version_id}/restore/{destination_directory_id}"
+            "Restore To Directory"
           ]
         }
       },
@@ -14964,7 +14964,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Version"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/versions/{version_id}/restore/{destination_directory_id}"
+            "Restore To Directory"
           ]
         }
       },
@@ -14983,7 +14983,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Version"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/versions/{version_id}/restore/{destination_directory_id}"
+            "Restore To Directory"
           ]
         }
       },
@@ -15009,7 +15009,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Version"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/versions/{version_id}/restore/{destination_directory_id}"
+            "Restore To Directory"
           ]
         }
       },
@@ -15034,7 +15034,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Version"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/files/{file_id}/versions"
+            "List (2)"
           ]
         }
       },
@@ -15052,7 +15052,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Version"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/files/{file_id}/versions"
+            "List (2)"
           ]
         }
       },
@@ -15071,7 +15071,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Version"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/files/{file_id}/versions"
+            "List (2)"
           ]
         }
       },
@@ -15141,7 +15141,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Version"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/files/{file_id}/versions/{version_id}/restore"
+            "Restore (2)"
           ]
         }
       },
@@ -15159,7 +15159,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Version"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/files/{file_id}/versions/{version_id}/restore"
+            "Restore (2)"
           ]
         }
       },
@@ -15177,7 +15177,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Version"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/files/{file_id}/versions/{version_id}/restore"
+            "Restore (2)"
           ]
         }
       },
@@ -15196,7 +15196,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Version"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/files/{file_id}/versions/{version_id}/restore"
+            "Restore (2)"
           ]
         }
       },
@@ -15221,7 +15221,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Version"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/files/{file_id}/versions/{version_id}/restore/{destination_directory_id}"
+            "Restore To Directory (2)"
           ]
         }
       },
@@ -15239,7 +15239,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Version"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/files/{file_id}/versions/{version_id}/restore/{destination_directory_id}"
+            "Restore To Directory (2)"
           ]
         }
       },
@@ -15257,7 +15257,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Version"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/files/{file_id}/versions/{version_id}/restore/{destination_directory_id}"
+            "Restore To Directory (2)"
           ]
         }
       },
@@ -15275,7 +15275,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Version"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/files/{file_id}/versions/{version_id}/restore/{destination_directory_id}"
+            "Restore To Directory (2)"
           ]
         }
       },
@@ -15294,7 +15294,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Version"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/files/{file_id}/versions/{version_id}/restore/{destination_directory_id}"
+            "Restore To Directory (2)"
           ]
         }
       },
@@ -15320,7 +15320,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > File/Directory > Version"
           ],
           "operation": [
-            "POST /3/drive/{drive_id}/files/{file_id}/versions/{version_id}/restore/{destination_directory_id}"
+            "Restore To Directory (2)"
           ]
         }
       },
@@ -15348,34 +15348,34 @@ export class InfomaniakKdrive implements INodeType {
       "options": [
         {
           "name": "Search File/directory",
-          "value": "GET /3/drive/{drive_id}/files/search"
+          "value": "Search File/directory"
         },
         {
           "name": "Search Dropbox",
-          "value": "GET /3/drive/{drive_id}/files/search/dropboxes"
+          "value": "Search Dropbox"
         },
         {
           "name": "Search Favorite",
-          "value": "GET /3/drive/{drive_id}/files/search/favorites"
+          "value": "Search Favorite"
         },
         {
           "name": "Search Sharelink",
-          "value": "GET /3/drive/{drive_id}/files/search/links"
+          "value": "Search Sharelink"
         },
         {
           "name": "Search Shared",
-          "value": "GET /3/drive/{drive_id}/files/search/shared_with_me"
+          "value": "Search Shared"
         },
         {
           "name": "Search My Shared",
-          "value": "GET /3/drive/{drive_id}/files/search/my_shared"
+          "value": "Search My Shared"
         },
         {
           "name": "Search Trash",
-          "value": "GET /3/drive/{drive_id}/files/search/trash"
+          "value": "Search Trash"
         }
       ],
-      "default": "GET /3/drive/{drive_id}/files/search",
+      "default": "Search File/directory",
       "noDataExpression": true
     },
     {
@@ -15389,7 +15389,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Search"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/files/search"
+            "Search File/directory"
           ]
         }
       },
@@ -15408,7 +15408,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Search"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/files/search"
+            "Search File/directory"
           ]
         }
       },
@@ -15587,7 +15587,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Search"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/files/search/dropboxes"
+            "Search Dropbox"
           ]
         }
       },
@@ -15606,7 +15606,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Search"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/files/search/dropboxes"
+            "Search Dropbox"
           ]
         }
       },
@@ -15841,7 +15841,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Search"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/files/search/favorites"
+            "Search Favorite"
           ]
         }
       },
@@ -15860,7 +15860,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Search"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/files/search/favorites"
+            "Search Favorite"
           ]
         }
       },
@@ -16039,7 +16039,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Search"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/files/search/links"
+            "Search Sharelink"
           ]
         }
       },
@@ -16058,7 +16058,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Search"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/files/search/links"
+            "Search Sharelink"
           ]
         }
       },
@@ -16237,7 +16237,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Search"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/files/search/shared_with_me"
+            "Search Shared"
           ]
         }
       },
@@ -16256,7 +16256,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Search"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/files/search/shared_with_me"
+            "Search Shared"
           ]
         }
       },
@@ -16435,7 +16435,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Search"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/files/search/my_shared"
+            "Search My Shared"
           ]
         }
       },
@@ -16454,7 +16454,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Search"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/files/search/my_shared"
+            "Search My Shared"
           ]
         }
       },
@@ -16633,7 +16633,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Search"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/files/search/trash"
+            "Search Trash"
           ]
         }
       },
@@ -16652,7 +16652,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Search"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/files/search/trash"
+            "Search Trash"
           ]
         }
       },
@@ -16799,21 +16799,21 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > Share link > Archive"
+            "Drive > Files > Share Link > Archive"
           ]
         }
       },
       "options": [
         {
           "name": "Build Archive",
-          "value": "POST /2/app/{drive_id}/share/{sharelink_uuid}/archive"
+          "value": "Build Archive"
         },
         {
           "name": "Download Sharelink Archive",
-          "value": "GET /2/app/{drive_id}/share/{sharelink_uuid}/archive/{archive_uuid}/download"
+          "value": "Download Sharelink Archive"
         }
       ],
-      "default": "POST /2/app/{drive_id}/share/{sharelink_uuid}/archive",
+      "default": "Build Archive",
       "noDataExpression": true
     },
     {
@@ -16824,10 +16824,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > Share link > Archive"
+            "Drive > Files > Share Link > Archive"
           ],
           "operation": [
-            "POST /2/app/{drive_id}/share/{sharelink_uuid}/archive"
+            "Build Archive"
           ]
         }
       },
@@ -16842,10 +16842,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > Share link > Archive"
+            "Drive > Files > Share Link > Archive"
           ],
           "operation": [
-            "POST /2/app/{drive_id}/share/{sharelink_uuid}/archive"
+            "Build Archive"
           ]
         }
       },
@@ -16861,10 +16861,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > Share link > Archive"
+            "Drive > Files > Share Link > Archive"
           ],
           "operation": [
-            "POST /2/app/{drive_id}/share/{sharelink_uuid}/archive"
+            "Build Archive"
           ]
         }
       },
@@ -16900,10 +16900,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > Share link > Archive"
+            "Drive > Files > Share Link > Archive"
           ],
           "operation": [
-            "GET /2/app/{drive_id}/share/{sharelink_uuid}/archive/{archive_uuid}/download"
+            "Download Sharelink Archive"
           ]
         }
       },
@@ -16918,10 +16918,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > Share link > Archive"
+            "Drive > Files > Share Link > Archive"
           ],
           "operation": [
-            "GET /2/app/{drive_id}/share/{sharelink_uuid}/archive/{archive_uuid}/download"
+            "Download Sharelink Archive"
           ]
         }
       },
@@ -16936,10 +16936,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > Share link > Archive"
+            "Drive > Files > Share Link > Archive"
           ],
           "operation": [
-            "GET /2/app/{drive_id}/share/{sharelink_uuid}/archive/{archive_uuid}/download"
+            "Download Sharelink Archive"
           ]
         }
       },
@@ -16953,37 +16953,37 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > Share link > Manage"
+            "Drive > Files > Share Link > Manage"
           ]
         }
       },
       "options": [
         {
           "name": "Get Share Link",
-          "value": "GET /2/drive/{drive_id}/files/{file_id}/link"
+          "value": "Get Share Link"
         },
         {
           "name": "Create Share Link",
-          "value": "POST /2/drive/{drive_id}/files/{file_id}/link"
+          "value": "Create Share Link"
         },
         {
           "name": "Update Share Link",
-          "value": "PUT /2/drive/{drive_id}/files/{file_id}/link"
+          "value": "Update Share Link"
         },
         {
           "name": "Remove Share Link",
-          "value": "DELETE /2/drive/{drive_id}/files/{file_id}/link"
+          "value": "Remove Share Link"
         },
         {
           "name": "Share Link Invite",
-          "value": "POST /2/drive/{drive_id}/files/{file_id}/link/invite"
+          "value": "Share Link Invite"
         },
         {
           "name": "Get Share Link Files",
-          "value": "GET /3/drive/{drive_id}/files/links"
+          "value": "Get Share Link Files"
         }
       ],
-      "default": "GET /2/drive/{drive_id}/files/{file_id}/link",
+      "default": "Get Share Link",
       "noDataExpression": true
     },
     {
@@ -16994,10 +16994,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > Share link > Manage"
+            "Drive > Files > Share Link > Manage"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/link"
+            "Get Share Link"
           ]
         }
       },
@@ -17012,10 +17012,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > Share link > Manage"
+            "Drive > Files > Share Link > Manage"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/link"
+            "Get Share Link"
           ]
         }
       },
@@ -17031,10 +17031,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > Share link > Manage"
+            "Drive > Files > Share Link > Manage"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/files/{file_id}/link"
+            "Get Share Link"
           ]
         }
       },
@@ -17056,10 +17056,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > Share link > Manage"
+            "Drive > Files > Share Link > Manage"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/link"
+            "Create Share Link"
           ]
         }
       },
@@ -17074,10 +17074,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > Share link > Manage"
+            "Drive > Files > Share Link > Manage"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/link"
+            "Create Share Link"
           ]
         }
       },
@@ -17093,10 +17093,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > Share link > Manage"
+            "Drive > Files > Share Link > Manage"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/link"
+            "Create Share Link"
           ]
         }
       },
@@ -17118,10 +17118,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > Share link > Manage"
+            "Drive > Files > Share Link > Manage"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/link"
+            "Create Share Link"
           ]
         }
       },
@@ -17151,10 +17151,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > Share link > Manage"
+            "Drive > Files > Share Link > Manage"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/link"
+            "Create Share Link"
           ]
         }
       },
@@ -17225,10 +17225,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > Share link > Manage"
+            "Drive > Files > Share Link > Manage"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/files/{file_id}/link"
+            "Update Share Link"
           ]
         }
       },
@@ -17243,10 +17243,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > Share link > Manage"
+            "Drive > Files > Share Link > Manage"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/files/{file_id}/link"
+            "Update Share Link"
           ]
         }
       },
@@ -17262,10 +17262,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > Share link > Manage"
+            "Drive > Files > Share Link > Manage"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/files/{file_id}/link"
+            "Update Share Link"
           ]
         }
       },
@@ -17356,10 +17356,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > Share link > Manage"
+            "Drive > Files > Share Link > Manage"
           ],
           "operation": [
-            "DELETE /2/drive/{drive_id}/files/{file_id}/link"
+            "Remove Share Link"
           ]
         }
       },
@@ -17374,10 +17374,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > Share link > Manage"
+            "Drive > Files > Share Link > Manage"
           ],
           "operation": [
-            "DELETE /2/drive/{drive_id}/files/{file_id}/link"
+            "Remove Share Link"
           ]
         }
       },
@@ -17392,10 +17392,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > Share link > Manage"
+            "Drive > Files > Share Link > Manage"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/link/invite"
+            "Share Link Invite"
           ]
         }
       },
@@ -17410,10 +17410,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > Share link > Manage"
+            "Drive > Files > Share Link > Manage"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/link/invite"
+            "Share Link Invite"
           ]
         }
       },
@@ -17429,10 +17429,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > Share link > Manage"
+            "Drive > Files > Share Link > Manage"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/files/{file_id}/link/invite"
+            "Share Link Invite"
           ]
         }
       },
@@ -17468,10 +17468,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > Share link > Manage"
+            "Drive > Files > Share Link > Manage"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/files/links"
+            "Get Share Link Files"
           ]
         }
       },
@@ -17487,10 +17487,10 @@ export class InfomaniakKdrive implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Drive > Files > Share link > Manage"
+            "Drive > Files > Share Link > Manage"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/files/links"
+            "Get Share Link Files"
           ]
         }
       },
@@ -17570,46 +17570,46 @@ export class InfomaniakKdrive implements INodeType {
       "options": [
         {
           "name": "Empty Trash",
-          "value": "DELETE /2/drive/{drive_id}/trash"
+          "value": "Empty Trash"
         },
         {
           "name": "Count Directory/File In Trash",
-          "value": "GET /2/drive/{drive_id}/trash/count"
+          "value": "Count Directory/File In Trash"
         },
         {
           "name": "Remove File",
-          "value": "DELETE /2/drive/{drive_id}/trash/{file_id}"
+          "value": "Remove File"
         },
         {
           "name": "Restore File",
-          "value": "POST /2/drive/{drive_id}/trash/{file_id}/restore"
+          "value": "Restore File"
         },
         {
           "name": "Get Thumbnail",
-          "value": "GET /2/drive/{drive_id}/trash/{file_id}/thumbnail"
+          "value": "Get Thumbnail"
         },
         {
           "name": "Count Directory/File In Trashed Directory",
-          "value": "GET /2/drive/{drive_id}/trash/{file_id}/count"
+          "value": "Count Directory/File In Trashed Directory"
         },
         {
           "name": "Get Files Of Trash",
-          "value": "GET /3/drive/{drive_id}/trash"
+          "value": "Get Files Of Trash"
         },
         {
           "name": "Get Trashed File",
-          "value": "GET /3/drive/{drive_id}/trash/{file_id}"
+          "value": "Get Trashed File"
         },
         {
           "name": "Get Files Of Trashed Directory",
-          "value": "GET /3/drive/{drive_id}/trash/{file_id}/files"
+          "value": "Get Files Of Trashed Directory"
         },
         {
           "name": "Count Directories/files In Trash",
-          "value": "GET /3/drive/{drive_id}/trash/{file_id}/count"
+          "value": "Count Directories/files In Trash"
         }
       ],
-      "default": "DELETE /2/drive/{drive_id}/trash",
+      "default": "Empty Trash",
       "noDataExpression": true
     },
     {
@@ -17623,7 +17623,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Trash"
           ],
           "operation": [
-            "DELETE /2/drive/{drive_id}/trash"
+            "Empty Trash"
           ]
         }
       },
@@ -17641,7 +17641,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Trash"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/trash/count"
+            "Count Directory/File In Trash"
           ]
         }
       },
@@ -17659,7 +17659,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Trash"
           ],
           "operation": [
-            "DELETE /2/drive/{drive_id}/trash/{file_id}"
+            "Remove File"
           ]
         }
       },
@@ -17677,7 +17677,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Trash"
           ],
           "operation": [
-            "DELETE /2/drive/{drive_id}/trash/{file_id}"
+            "Remove File"
           ]
         }
       },
@@ -17695,7 +17695,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Trash"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/trash/{file_id}/restore"
+            "Restore File"
           ]
         }
       },
@@ -17713,7 +17713,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Trash"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/trash/{file_id}/restore"
+            "Restore File"
           ]
         }
       },
@@ -17731,7 +17731,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Trash"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/trash/{file_id}/restore"
+            "Restore File"
           ]
         }
       },
@@ -17749,7 +17749,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Trash"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/trash/{file_id}/thumbnail"
+            "Get Thumbnail"
           ]
         }
       },
@@ -17767,7 +17767,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Trash"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/trash/{file_id}/thumbnail"
+            "Get Thumbnail"
           ]
         }
       },
@@ -17786,7 +17786,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Trash"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/trash/{file_id}/thumbnail"
+            "Get Thumbnail"
           ]
         }
       },
@@ -17816,7 +17816,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Trash"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/trash/{file_id}/count"
+            "Count Directory/File In Trashed Directory"
           ]
         }
       },
@@ -17834,7 +17834,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Trash"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/trash/{file_id}/count"
+            "Count Directory/File In Trashed Directory"
           ]
         }
       },
@@ -17852,7 +17852,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Trash"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/trash"
+            "Get Files Of Trash"
           ]
         }
       },
@@ -17871,7 +17871,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Trash"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/trash"
+            "Get Files Of Trash"
           ]
         }
       },
@@ -17942,7 +17942,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Trash"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/trash/{file_id}"
+            "Get Trashed File"
           ]
         }
       },
@@ -17960,7 +17960,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Trash"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/trash/{file_id}"
+            "Get Trashed File"
           ]
         }
       },
@@ -17979,7 +17979,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Trash"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/trash/{file_id}"
+            "Get Trashed File"
           ]
         }
       },
@@ -18028,7 +18028,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Trash"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/trash/{file_id}/files"
+            "Get Files Of Trashed Directory"
           ]
         }
       },
@@ -18046,7 +18046,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Trash"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/trash/{file_id}/files"
+            "Get Files Of Trashed Directory"
           ]
         }
       },
@@ -18065,7 +18065,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Trash"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/trash/{file_id}/files"
+            "Get Files Of Trashed Directory"
           ]
         }
       },
@@ -18136,7 +18136,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Trash"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/trash/{file_id}/count"
+            "Count Directories/files In Trash"
           ]
         }
       },
@@ -18154,7 +18154,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Trash"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/trash/{file_id}/count"
+            "Count Directories/files In Trash"
           ]
         }
       },
@@ -18172,7 +18172,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Files > Trash"
           ],
           "operation": [
-            "GET /3/drive/{drive_id}/trash/{file_id}/count"
+            "Count Directories/files In Trash"
           ]
         }
       },
@@ -18209,26 +18209,26 @@ export class InfomaniakKdrive implements INodeType {
       "options": [
         {
           "name": "Get User Invitation",
-          "value": "GET /2/drive/{drive_id}/users/invitation"
+          "value": "Get User Invitation"
         },
         {
           "name": "Get Invitation Information",
-          "value": "GET /2/drive/{drive_id}/users/invitation/{invitation_id}"
+          "value": "Get Invitation Information"
         },
         {
           "name": "Update An Invitation",
-          "value": "PUT /2/drive/{drive_id}/users/invitation/{invitation_id}"
+          "value": "Update An Invitation"
         },
         {
           "name": "Delete Invitation",
-          "value": "DELETE /2/drive/{drive_id}/users/invitation/{invitation_id}"
+          "value": "Delete Invitation"
         },
         {
           "name": "Send Invitation",
-          "value": "POST /2/drive/{drive_id}/users/invitation/{invitation_id}/send"
+          "value": "Send Invitation"
         }
       ],
-      "default": "GET /2/drive/{drive_id}/users/invitation",
+      "default": "Get User Invitation",
       "noDataExpression": true
     },
     {
@@ -18242,7 +18242,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Invitations"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/users/invitation"
+            "Get User Invitation"
           ]
         }
       },
@@ -18261,7 +18261,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Invitations"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/users/invitation"
+            "Get User Invitation"
           ]
         }
       },
@@ -18325,7 +18325,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Invitations"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/users/invitation/{invitation_id}"
+            "Get Invitation Information"
           ]
         }
       },
@@ -18343,7 +18343,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Invitations"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/users/invitation/{invitation_id}"
+            "Get Invitation Information"
           ]
         }
       },
@@ -18361,7 +18361,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Invitations"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/users/invitation/{invitation_id}"
+            "Update An Invitation"
           ]
         }
       },
@@ -18379,7 +18379,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Invitations"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/users/invitation/{invitation_id}"
+            "Update An Invitation"
           ]
         }
       },
@@ -18398,7 +18398,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Invitations"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/users/invitation/{invitation_id}"
+            "Update An Invitation"
           ]
         }
       },
@@ -18478,7 +18478,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Invitations"
           ],
           "operation": [
-            "DELETE /2/drive/{drive_id}/users/invitation/{invitation_id}"
+            "Delete Invitation"
           ]
         }
       },
@@ -18496,7 +18496,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Invitations"
           ],
           "operation": [
-            "DELETE /2/drive/{drive_id}/users/invitation/{invitation_id}"
+            "Delete Invitation"
           ]
         }
       },
@@ -18515,7 +18515,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Invitations"
           ],
           "operation": [
-            "DELETE /2/drive/{drive_id}/users/invitation/{invitation_id}"
+            "Delete Invitation"
           ]
         }
       },
@@ -18539,7 +18539,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Invitations"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/users/invitation/{invitation_id}/send"
+            "Send Invitation"
           ]
         }
       },
@@ -18557,7 +18557,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Invitations"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/users/invitation/{invitation_id}/send"
+            "Send Invitation"
           ]
         }
       },
@@ -18578,30 +18578,30 @@ export class InfomaniakKdrive implements INodeType {
       "options": [
         {
           "name": "Get Drive's Settings",
-          "value": "GET /2/drive/{drive_id}/settings"
+          "value": "Get Drive's Settings"
         },
         {
           "name": "Update IA Settings",
-          "value": "PUT /2/drive/{drive_id}/settings/ai"
+          "value": "Update IA Settings"
         },
         {
           "name": "Update Share Link Settings",
-          "value": "PUT /2/drive/{drive_id}/settings/link"
+          "value": "Update Share Link Settings"
         },
         {
           "name": "Update Trash Settings",
-          "value": "PUT /2/drive/{drive_id}/settings/trash"
+          "value": "Update Trash Settings"
         },
         {
           "name": "Update Office Settings",
-          "value": "PUT /2/drive/{drive_id}/settings/office"
+          "value": "Update Office Settings"
         },
         {
           "name": "Update Preferences",
-          "value": "PUT /2/drive/{drive_id}/preferences"
+          "value": "Update Preferences"
         }
       ],
-      "default": "GET /2/drive/{drive_id}/settings",
+      "default": "Get Drive's Settings",
       "noDataExpression": true
     },
     {
@@ -18615,7 +18615,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Settings"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/settings"
+            "Get Drive's Settings"
           ]
         }
       },
@@ -18633,7 +18633,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Settings"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/settings/ai"
+            "Update IA Settings"
           ]
         }
       },
@@ -18652,7 +18652,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Settings"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/settings/ai"
+            "Update IA Settings"
           ]
         }
       },
@@ -18691,7 +18691,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Settings"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/settings/link"
+            "Update Share Link Settings"
           ]
         }
       },
@@ -18709,7 +18709,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Settings"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/settings/link"
+            "Update Share Link Settings"
           ]
         }
       },
@@ -18726,7 +18726,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Settings"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/settings/link"
+            "Update Share Link Settings"
           ]
         }
       },
@@ -18743,7 +18743,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Settings"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/settings/link"
+            "Update Share Link Settings"
           ]
         }
       },
@@ -18761,7 +18761,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Settings"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/settings/link"
+            "Update Share Link Settings"
           ]
         }
       },
@@ -18785,7 +18785,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Settings"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/settings/trash"
+            "Update Trash Settings"
           ]
         }
       },
@@ -18803,7 +18803,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Settings"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/settings/trash"
+            "Update Trash Settings"
           ]
         }
       },
@@ -18821,7 +18821,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Settings"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/settings/office"
+            "Update Office Settings"
           ]
         }
       },
@@ -18840,7 +18840,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Settings"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/settings/office"
+            "Update Office Settings"
           ]
         }
       },
@@ -18926,7 +18926,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Settings"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/preferences"
+            "Update Preferences"
           ]
         }
       },
@@ -18945,7 +18945,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Settings"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/preferences"
+            "Update Preferences"
           ]
         }
       },
@@ -19032,38 +19032,38 @@ export class InfomaniakKdrive implements INodeType {
       "options": [
         {
           "name": "Chart : Files Size",
-          "value": "GET /2/drive/{drive_id}/statistics/sizes"
+          "value": "Chart : Files Size"
         },
         {
           "name": "Export : Files Size",
-          "value": "GET /2/drive/{drive_id}/statistics/sizes/export"
+          "value": "Export : Files Size"
         },
         {
           "name": "Activities : Users",
-          "value": "GET /2/drive/{drive_id}/statistics/activities/users"
+          "value": "Activities : Users"
         },
         {
           "name": "Activities : Shared Files",
-          "value": "GET /2/drive/{drive_id}/statistics/activities/shared_files"
+          "value": "Activities : Shared Files"
         },
         {
           "name": "Chart : Activities",
-          "value": "GET /2/drive/{drive_id}/statistics/activities"
+          "value": "Chart : Activities"
         },
         {
           "name": "Export : Activities",
-          "value": "GET /2/drive/{drive_id}/statistics/activities/export"
+          "value": "Export : Activities"
         },
         {
           "name": "Activities : Share Links",
-          "value": "GET /2/drive/{drive_id}/statistics/activities/links"
+          "value": "Activities : Share Links"
         },
         {
           "name": "Export : Share Links Activities",
-          "value": "GET /2/drive/{drive_id}/statistics/activities/links/export"
+          "value": "Export : Share Links Activities"
         }
       ],
-      "default": "GET /2/drive/{drive_id}/statistics/sizes",
+      "default": "Chart : Files Size",
       "noDataExpression": true
     },
     {
@@ -19077,7 +19077,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Statistics"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/statistics/sizes"
+            "Chart : Files Size"
           ]
         }
       },
@@ -19095,7 +19095,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Statistics"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/statistics/sizes"
+            "Chart : Files Size"
           ]
         }
       },
@@ -19112,7 +19112,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Statistics"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/statistics/sizes"
+            "Chart : Files Size"
           ]
         }
       },
@@ -19129,7 +19129,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Statistics"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/statistics/sizes"
+            "Chart : Files Size"
           ]
         }
       },
@@ -19146,7 +19146,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Statistics"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/statistics/sizes"
+            "Chart : Files Size"
           ]
         }
       },
@@ -19163,7 +19163,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Statistics"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/statistics/sizes/export"
+            "Export : Files Size"
           ]
         }
       },
@@ -19181,7 +19181,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Statistics"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/statistics/sizes/export"
+            "Export : Files Size"
           ]
         }
       },
@@ -19198,7 +19198,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Statistics"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/statistics/sizes/export"
+            "Export : Files Size"
           ]
         }
       },
@@ -19215,7 +19215,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Statistics"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/statistics/sizes/export"
+            "Export : Files Size"
           ]
         }
       },
@@ -19232,7 +19232,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Statistics"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/statistics/sizes/export"
+            "Export : Files Size"
           ]
         }
       },
@@ -19249,7 +19249,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Statistics"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/statistics/activities/users"
+            "Activities : Users"
           ]
         }
       },
@@ -19267,7 +19267,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Statistics"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/statistics/activities/users"
+            "Activities : Users"
           ]
         }
       },
@@ -19284,7 +19284,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Statistics"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/statistics/activities/users"
+            "Activities : Users"
           ]
         }
       },
@@ -19301,7 +19301,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Statistics"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/statistics/activities/shared_files"
+            "Activities : Shared Files"
           ]
         }
       },
@@ -19319,7 +19319,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Statistics"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/statistics/activities/shared_files"
+            "Activities : Shared Files"
           ]
         }
       },
@@ -19336,7 +19336,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Statistics"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/statistics/activities/shared_files"
+            "Activities : Shared Files"
           ]
         }
       },
@@ -19353,7 +19353,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Statistics"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/statistics/activities"
+            "Chart : Activities"
           ]
         }
       },
@@ -19371,7 +19371,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Statistics"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/statistics/activities"
+            "Chart : Activities"
           ]
         }
       },
@@ -19388,7 +19388,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Statistics"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/statistics/activities"
+            "Chart : Activities"
           ]
         }
       },
@@ -19405,7 +19405,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Statistics"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/statistics/activities"
+            "Chart : Activities"
           ]
         }
       },
@@ -19436,7 +19436,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Statistics"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/statistics/activities"
+            "Chart : Activities"
           ]
         }
       },
@@ -19453,7 +19453,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Statistics"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/statistics/activities/export"
+            "Export : Activities"
           ]
         }
       },
@@ -19471,7 +19471,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Statistics"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/statistics/activities/export"
+            "Export : Activities"
           ]
         }
       },
@@ -19488,7 +19488,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Statistics"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/statistics/activities/export"
+            "Export : Activities"
           ]
         }
       },
@@ -19505,7 +19505,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Statistics"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/statistics/activities/export"
+            "Export : Activities"
           ]
         }
       },
@@ -19536,7 +19536,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Statistics"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/statistics/activities/export"
+            "Export : Activities"
           ]
         }
       },
@@ -19553,7 +19553,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Statistics"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/statistics/activities/links"
+            "Activities : Share Links"
           ]
         }
       },
@@ -19571,7 +19571,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Statistics"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/statistics/activities/links"
+            "Activities : Share Links"
           ]
         }
       },
@@ -19588,7 +19588,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Statistics"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/statistics/activities/links"
+            "Activities : Share Links"
           ]
         }
       },
@@ -19606,7 +19606,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Statistics"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/statistics/activities/links"
+            "Activities : Share Links"
           ]
         }
       },
@@ -19713,7 +19713,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Statistics"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/statistics/activities/links/export"
+            "Export : Share Links Activities"
           ]
         }
       },
@@ -19731,7 +19731,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Statistics"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/statistics/activities/links/export"
+            "Export : Share Links Activities"
           ]
         }
       },
@@ -19748,7 +19748,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Statistics"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/statistics/activities/links/export"
+            "Export : Share Links Activities"
           ]
         }
       },
@@ -19766,7 +19766,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Statistics"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/statistics/activities/links/export"
+            "Export : Share Links Activities"
           ]
         }
       },
@@ -19811,38 +19811,38 @@ export class InfomaniakKdrive implements INodeType {
       "options": [
         {
           "name": "Get Users",
-          "value": "GET /2/drive/{drive_id}/users"
+          "value": "Get Users"
         },
         {
           "name": "Create User",
-          "value": "POST /2/drive/{drive_id}/users"
+          "value": "Create User"
         },
         {
           "name": "Get User",
-          "value": "GET /2/drive/{drive_id}/users/{user_id}"
+          "value": "Get User"
         },
         {
           "name": "Update User",
-          "value": "PUT /2/drive/{drive_id}/users/{user_id}"
+          "value": "Update User"
         },
         {
           "name": "Delete User",
-          "value": "DELETE /2/drive/{drive_id}/users/{user_id}"
+          "value": "Delete User"
         },
         {
           "name": "Update User Manager Right",
-          "value": "PATCH /2/drive/{drive_id}/users/{user_id}/manager"
+          "value": "Update User Manager Right"
         },
         {
           "name": "Lock User",
-          "value": "POST /2/drive/{drive_id}/users/{user_id}/lock"
+          "value": "Lock User"
         },
         {
           "name": "Unlock User",
-          "value": "POST /2/drive/{drive_id}/users/{user_id}/unlock"
+          "value": "Unlock User"
         }
       ],
-      "default": "GET /2/drive/{drive_id}/users",
+      "default": "Get Users",
       "noDataExpression": true
     },
     {
@@ -19856,7 +19856,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Users"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/users"
+            "Get Users"
           ]
         }
       },
@@ -19875,7 +19875,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Users"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/users"
+            "Get Users"
           ]
         }
       },
@@ -19976,7 +19976,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Users"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/users"
+            "Create User"
           ]
         }
       },
@@ -19995,7 +19995,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Users"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/users"
+            "Create User"
           ]
         }
       },
@@ -20020,7 +20020,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Users"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/users"
+            "Create User"
           ]
         }
       },
@@ -20053,7 +20053,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Users"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/users"
+            "Create User"
           ]
         }
       },
@@ -20186,7 +20186,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Users"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/users/{user_id}"
+            "Get User"
           ]
         }
       },
@@ -20204,7 +20204,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Users"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/users/{user_id}"
+            "Get User"
           ]
         }
       },
@@ -20222,7 +20222,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Users"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/users/{user_id}"
+            "Update User"
           ]
         }
       },
@@ -20240,7 +20240,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Users"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/users/{user_id}"
+            "Update User"
           ]
         }
       },
@@ -20259,7 +20259,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Users"
           ],
           "operation": [
-            "PUT /2/drive/{drive_id}/users/{user_id}"
+            "Update User"
           ]
         }
       },
@@ -20301,7 +20301,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Users"
           ],
           "operation": [
-            "DELETE /2/drive/{drive_id}/users/{user_id}"
+            "Delete User"
           ]
         }
       },
@@ -20319,7 +20319,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Users"
           ],
           "operation": [
-            "DELETE /2/drive/{drive_id}/users/{user_id}"
+            "Delete User"
           ]
         }
       },
@@ -20338,7 +20338,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Users"
           ],
           "operation": [
-            "DELETE /2/drive/{drive_id}/users/{user_id}"
+            "Delete User"
           ]
         }
       },
@@ -20363,7 +20363,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Users"
           ],
           "operation": [
-            "PATCH /2/drive/{drive_id}/users/{user_id}/manager"
+            "Update User Manager Right"
           ]
         }
       },
@@ -20381,7 +20381,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Users"
           ],
           "operation": [
-            "PATCH /2/drive/{drive_id}/users/{user_id}/manager"
+            "Update User Manager Right"
           ]
         }
       },
@@ -20399,7 +20399,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Users"
           ],
           "operation": [
-            "PATCH /2/drive/{drive_id}/users/{user_id}/manager"
+            "Update User Manager Right"
           ]
         }
       },
@@ -20416,7 +20416,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Users"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/users/{user_id}/lock"
+            "Lock User"
           ]
         }
       },
@@ -20434,7 +20434,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Users"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/users/{user_id}/lock"
+            "Lock User"
           ]
         }
       },
@@ -20452,7 +20452,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Users"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/users/{user_id}/unlock"
+            "Unlock User"
           ]
         }
       },
@@ -20470,7 +20470,7 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Users"
           ],
           "operation": [
-            "POST /2/drive/{drive_id}/users/{user_id}/unlock"
+            "Unlock User"
           ]
         }
       },
@@ -20491,10 +20491,10 @@ export class InfomaniakKdrive implements INodeType {
       "options": [
         {
           "name": "Accessibles Drives",
-          "value": "GET /2/drive"
+          "value": "Accessibles Drives"
         }
       ],
-      "default": "GET /2/drive",
+      "default": "Accessibles Drives",
       "noDataExpression": true
     },
     {
@@ -20508,7 +20508,7 @@ export class InfomaniakKdrive implements INodeType {
             "Others"
           ],
           "operation": [
-            "GET /2/drive"
+            "Accessibles Drives"
           ]
         }
       },
@@ -20527,7 +20527,7 @@ export class InfomaniakKdrive implements INodeType {
             "Others"
           ],
           "operation": [
-            "GET /2/drive"
+            "Accessibles Drives"
           ]
         }
       },
@@ -20594,22 +20594,22 @@ export class InfomaniakKdrive implements INodeType {
       "options": [
         {
           "name": "Get Users",
-          "value": "GET /2/drive/users"
+          "value": "Get Users"
         },
         {
           "name": "Get Drives",
-          "value": "GET /2/drive/users/{user_id}/drives"
+          "value": "Get Drives"
         },
         {
           "name": "Get User's Preference",
-          "value": "GET /2/drive/preferences"
+          "value": "Get User's Preference"
         },
         {
           "name": "Set User's Preference",
-          "value": "PATCH /2/drive/preferences"
+          "value": "Set User's Preference"
         }
       ],
-      "default": "GET /2/drive/users",
+      "default": "Get Users",
       "noDataExpression": true
     },
     {
@@ -20624,7 +20624,7 @@ export class InfomaniakKdrive implements INodeType {
             "Users"
           ],
           "operation": [
-            "GET /2/drive/users"
+            "Get Users"
           ]
         }
       },
@@ -20713,7 +20713,7 @@ export class InfomaniakKdrive implements INodeType {
             "Users"
           ],
           "operation": [
-            "GET /2/drive/users/{user_id}/drives"
+            "Get Drives"
           ]
         }
       },
@@ -20731,7 +20731,7 @@ export class InfomaniakKdrive implements INodeType {
             "Users"
           ],
           "operation": [
-            "GET /2/drive/users/{user_id}/drives"
+            "Get Drives"
           ]
         }
       },
@@ -20750,7 +20750,7 @@ export class InfomaniakKdrive implements INodeType {
             "Users"
           ],
           "operation": [
-            "GET /2/drive/users/{user_id}/drives"
+            "Get Drives"
           ]
         }
       },
@@ -20809,7 +20809,7 @@ export class InfomaniakKdrive implements INodeType {
             "Users"
           ],
           "operation": [
-            "GET /2/drive/preferences"
+            "Get User's Preference"
           ]
         }
       },
@@ -20835,7 +20835,7 @@ export class InfomaniakKdrive implements INodeType {
             "Users"
           ],
           "operation": [
-            "PATCH /2/drive/preferences"
+            "Set User's Preference"
           ]
         }
       },
@@ -20923,8 +20923,8 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Activity",
             "Drive > Activity > Report",
             "Drive > Activity > Report",
-            "Drive > Files > External import",
-            "Drive > Files > External import",
+            "Drive > Files > External Import",
+            "Drive > Files > External Import",
             "Drive > Files > File/Directory > Comment",
             "Drive > Files > File/Directory > Comment",
             "Drive > Files > File/Directory > Version",
@@ -20936,20 +20936,20 @@ export class InfomaniakKdrive implements INodeType {
             "Users"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/activities",
-            "GET /2/drive/{drive_id}/activities/reports",
-            "GET /2/drive/{drive_id}/activities/reports/{report_id}",
-            "GET /2/drive/{drive_id}/imports",
-            "GET /2/drive/{drive_id}/imports/{import_id}",
-            "GET /2/drive/{drive_id}/files/{file_id}/comments",
-            "GET /2/drive/{drive_id}/files/{file_id}/comments/{comment_id}",
-            "GET /3/drive/{drive_id}/files/{file_id}/versions",
-            "GET /2/drive/{drive_id}/users/invitation",
-            "GET /2/drive/{drive_id}/statistics/activities/links",
-            "GET /2/drive/{drive_id}/users",
-            "GET /2/drive",
-            "GET /2/drive/users",
-            "GET /2/drive/users/{user_id}/drives"
+            "Get Drive Activities Of All The Users.",
+            "List Reports",
+            "Get Report",
+            "List Imports",
+            "List Errored Import Files",
+            "Get File Comments",
+            "Get Comment Reply",
+            "List (2)",
+            "Get User Invitation",
+            "Activities : Share Links",
+            "Get Users",
+            "Accessibles Drives",
+            "Get Users",
+            "Get Drives"
           ]
         }
       }
@@ -20969,8 +20969,8 @@ export class InfomaniakKdrive implements INodeType {
             "Drive > Activity",
             "Drive > Activity > Report",
             "Drive > Activity > Report",
-            "Drive > Files > External import",
-            "Drive > Files > External import",
+            "Drive > Files > External Import",
+            "Drive > Files > External Import",
             "Drive > Files > File/Directory > Comment",
             "Drive > Files > File/Directory > Comment",
             "Drive > Files > File/Directory > Version",
@@ -20982,20 +20982,20 @@ export class InfomaniakKdrive implements INodeType {
             "Users"
           ],
           "operation": [
-            "GET /2/drive/{drive_id}/activities",
-            "GET /2/drive/{drive_id}/activities/reports",
-            "GET /2/drive/{drive_id}/activities/reports/{report_id}",
-            "GET /2/drive/{drive_id}/imports",
-            "GET /2/drive/{drive_id}/imports/{import_id}",
-            "GET /2/drive/{drive_id}/files/{file_id}/comments",
-            "GET /2/drive/{drive_id}/files/{file_id}/comments/{comment_id}",
-            "GET /3/drive/{drive_id}/files/{file_id}/versions",
-            "GET /2/drive/{drive_id}/users/invitation",
-            "GET /2/drive/{drive_id}/statistics/activities/links",
-            "GET /2/drive/{drive_id}/users",
-            "GET /2/drive",
-            "GET /2/drive/users",
-            "GET /2/drive/users/{user_id}/drives"
+            "Get Drive Activities Of All The Users.",
+            "List Reports",
+            "Get Report",
+            "List Imports",
+            "List Errored Import Files",
+            "Get File Comments",
+            "Get Comment Reply",
+            "List (2)",
+            "Get User Invitation",
+            "Activities : Share Links",
+            "Get Users",
+            "Accessibles Drives",
+            "Get Users",
+            "Get Drives"
           ],
           "returnAll": [
             false

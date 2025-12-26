@@ -15,8 +15,8 @@ type OperationDefinition = {
 };
 
 const operations: Record<string, Record<string, OperationDefinition>> = {
-  "bots": {
-    "GET /api/v4/bots": {
+  "Bots": {
+    "Get Bots": {
       "method": "GET",
       "path": "/api/v4/bots",
       "pagination": "page-per-page",
@@ -27,7 +27,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /api/v4/bots": {
+    "Create A Bot": {
       "method": "POST",
       "path": "/api/v4/bots",
       "pagination": "none",
@@ -51,7 +51,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /api/v4/bots/{bot_user_id}": {
+    "Get A Bot": {
       "method": "GET",
       "path": "/api/v4/bots/{bot_user_id}",
       "pagination": "none",
@@ -67,7 +67,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /api/v4/bots/{bot_user_id}": {
+    "Patch A Bot": {
       "method": "PUT",
       "path": "/api/v4/bots/{bot_user_id}",
       "pagination": "none",
@@ -96,7 +96,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "POST /api/v4/bots/{bot_user_id}/disable": {
+    "Disable A Bot": {
       "method": "POST",
       "path": "/api/v4/bots/{bot_user_id}/disable",
       "pagination": "none",
@@ -112,7 +112,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /api/v4/bots/{bot_user_id}/enable": {
+    "Enable A Bot": {
       "method": "POST",
       "path": "/api/v4/bots/{bot_user_id}/enable",
       "pagination": "none",
@@ -129,8 +129,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "bodyFieldName": null
     }
   },
-  "channels": {
-    "GET /api/v4/channels": {
+  "Channels": {
+    "Get A List Of All Channels": {
       "method": "GET",
       "path": "/api/v4/channels",
       "pagination": "page-per-page",
@@ -141,7 +141,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /api/v4/channels": {
+    "Create A Channel": {
       "method": "POST",
       "path": "/api/v4/channels",
       "pagination": "none",
@@ -177,7 +177,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "POST /api/v4/channels/direct": {
+    "Create A Direct Message Channel": {
       "method": "POST",
       "path": "/api/v4/channels/direct",
       "pagination": "none",
@@ -188,7 +188,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": "body"
     },
-    "POST /api/v4/channels/group": {
+    "Create A Group Message Channel": {
       "method": "POST",
       "path": "/api/v4/channels/group",
       "pagination": "none",
@@ -199,7 +199,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": "body"
     },
-    "POST /api/v4/channels/search": {
+    "Search All Private And Open Type Channels": {
       "method": "POST",
       "path": "/api/v4/channels/search",
       "pagination": "none",
@@ -263,7 +263,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "POST /api/v4/channels/group/search": {
+    "Search Group Channels": {
       "method": "POST",
       "path": "/api/v4/channels/group/search",
       "pagination": "none",
@@ -279,7 +279,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /api/v4/teams/{team_id}/channels/ids": {
+    "Get A List Of Channels By Ids": {
       "method": "POST",
       "path": "/api/v4/teams/{team_id}/channels/ids",
       "pagination": "none",
@@ -295,7 +295,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": "body"
     },
-    "GET /api/v4/channels/{channel_id}": {
+    "Get A Channel": {
       "method": "GET",
       "path": "/api/v4/channels/{channel_id}",
       "pagination": "none",
@@ -311,7 +311,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /api/v4/channels/{channel_id}": {
+    "Update A Channel": {
       "method": "PUT",
       "path": "/api/v4/channels/{channel_id}",
       "pagination": "none",
@@ -348,7 +348,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /api/v4/channels/{channel_id}": {
+    "Delete A Channel": {
       "method": "DELETE",
       "path": "/api/v4/channels/{channel_id}",
       "pagination": "none",
@@ -364,7 +364,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /api/v4/channels/{channel_id}/patch": {
+    "Patch A Channel": {
       "method": "PUT",
       "path": "/api/v4/channels/{channel_id}/patch",
       "pagination": "none",
@@ -397,7 +397,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "PUT /api/v4/channels/{channel_id}/privacy": {
+    "Update Channel's Privacy": {
       "method": "PUT",
       "path": "/api/v4/channels/{channel_id}/privacy",
       "pagination": "none",
@@ -418,7 +418,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /api/v4/channels/{channel_id}/restore": {
+    "Restore A Channel": {
       "method": "POST",
       "path": "/api/v4/channels/{channel_id}/restore",
       "pagination": "none",
@@ -434,7 +434,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /api/v4/channels/{channel_id}/move": {
+    "Move A Channel": {
       "method": "POST",
       "path": "/api/v4/channels/{channel_id}/move",
       "pagination": "none",
@@ -459,7 +459,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /api/v4/channels/{channel_id}/stats": {
+    "Get Channel Statistics": {
       "method": "GET",
       "path": "/api/v4/channels/{channel_id}/stats",
       "pagination": "none",
@@ -475,7 +475,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/channels/{channel_id}/pinned": {
+    "Get A Channel's Pinned Posts": {
       "method": "GET",
       "path": "/api/v4/channels/{channel_id}/pinned",
       "pagination": "none",
@@ -491,7 +491,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/teams/{team_id}/channels": {
+    "Get Public Channels": {
       "method": "GET",
       "path": "/api/v4/teams/{team_id}/channels",
       "pagination": "page-per-page",
@@ -507,7 +507,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/teams/{team_id}/channels/private": {
+    "Get Private Channels": {
       "method": "GET",
       "path": "/api/v4/teams/{team_id}/channels/private",
       "pagination": "page-per-page",
@@ -523,7 +523,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/teams/{team_id}/channels/deleted": {
+    "Get Deleted Channels": {
       "method": "GET",
       "path": "/api/v4/teams/{team_id}/channels/deleted",
       "pagination": "page-per-page",
@@ -539,7 +539,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/teams/{team_id}/channels/autocomplete": {
+    "Autocomplete Channels": {
       "method": "GET",
       "path": "/api/v4/teams/{team_id}/channels/autocomplete",
       "pagination": "none",
@@ -560,7 +560,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/teams/{team_id}/channels/search_autocomplete": {
+    "Autocomplete Channels For Search": {
       "method": "GET",
       "path": "/api/v4/teams/{team_id}/channels/search_autocomplete",
       "pagination": "none",
@@ -581,7 +581,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /api/v4/teams/{team_id}/channels/search": {
+    "Search Channels": {
       "method": "POST",
       "path": "/api/v4/teams/{team_id}/channels/search",
       "pagination": "none",
@@ -602,7 +602,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /api/v4/teams/{team_id}/channels/search_archived": {
+    "Search Archived Channels": {
       "method": "POST",
       "path": "/api/v4/teams/{team_id}/channels/search_archived",
       "pagination": "none",
@@ -623,7 +623,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/teams/{team_id}/channels/name/{channel_name}": {
+    "Get A Channel By Name": {
       "method": "GET",
       "path": "/api/v4/teams/{team_id}/channels/name/{channel_name}",
       "pagination": "none",
@@ -643,7 +643,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/teams/name/{team_name}/channels/name/{channel_name}": {
+    "Get A Channel By Name And Team Name": {
       "method": "GET",
       "path": "/api/v4/teams/name/{team_name}/channels/name/{channel_name}",
       "pagination": "none",
@@ -663,7 +663,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/channels/{channel_id}/members": {
+    "Get Channel Members": {
       "method": "GET",
       "path": "/api/v4/channels/{channel_id}/members",
       "pagination": "page-per-page",
@@ -679,7 +679,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /api/v4/channels/{channel_id}/members": {
+    "Add User(s) To Channel": {
       "method": "POST",
       "path": "/api/v4/channels/{channel_id}/members",
       "pagination": "none",
@@ -708,7 +708,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "POST /api/v4/channels/{channel_id}/members/ids": {
+    "Get Channel Members By Ids": {
       "method": "POST",
       "path": "/api/v4/channels/{channel_id}/members/ids",
       "pagination": "none",
@@ -724,7 +724,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": "body"
     },
-    "GET /api/v4/channels/{channel_id}/members/{user_id}": {
+    "Get Channel Member": {
       "method": "GET",
       "path": "/api/v4/channels/{channel_id}/members/{user_id}",
       "pagination": "none",
@@ -744,7 +744,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /api/v4/channels/{channel_id}/members/{user_id}": {
+    "Remove User From Channel": {
       "method": "DELETE",
       "path": "/api/v4/channels/{channel_id}/members/{user_id}",
       "pagination": "none",
@@ -764,7 +764,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /api/v4/channels/{channel_id}/members/{user_id}/roles": {
+    "Update Channel Roles": {
       "method": "PUT",
       "path": "/api/v4/channels/{channel_id}/members/{user_id}/roles",
       "pagination": "none",
@@ -789,7 +789,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /api/v4/channels/{channel_id}/members/{user_id}/schemeRoles": {
+    "Update The Scheme Derived Roles Of A Channel Member.": {
       "method": "PUT",
       "path": "/api/v4/channels/{channel_id}/members/{user_id}/schemeRoles",
       "pagination": "none",
@@ -818,7 +818,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /api/v4/channels/{channel_id}/members/{user_id}/notify_props": {
+    "Update Channel Notifications": {
       "method": "PUT",
       "path": "/api/v4/channels/{channel_id}/members/{user_id}/notify_props",
       "pagination": "none",
@@ -855,7 +855,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "POST /api/v4/channels/members/{user_id}/view": {
+    "View Channel": {
       "method": "POST",
       "path": "/api/v4/channels/members/{user_id}/view",
       "pagination": "none",
@@ -880,7 +880,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /api/v4/users/{user_id}/teams/{team_id}/channels/members": {
+    "Get Channel Memberships And Roles For A User": {
       "method": "GET",
       "path": "/api/v4/users/{user_id}/teams/{team_id}/channels/members",
       "pagination": "none",
@@ -900,7 +900,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/users/{user_id}/teams/{team_id}/channels": {
+    "Get Channels For User": {
       "method": "GET",
       "path": "/api/v4/users/{user_id}/teams/{team_id}/channels",
       "pagination": "none",
@@ -920,7 +920,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/users/{user_id}/channels": {
+    "Get All Channels": {
       "method": "GET",
       "path": "/api/v4/users/{user_id}/channels",
       "pagination": "none",
@@ -936,7 +936,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/users/{user_id}/channels/{channel_id}/unread": {
+    "Get Unread Messages": {
       "method": "GET",
       "path": "/api/v4/users/{user_id}/channels/{channel_id}/unread",
       "pagination": "none",
@@ -956,7 +956,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /api/v4/channels/{channel_id}/scheme": {
+    "Set A Channel's Scheme": {
       "method": "PUT",
       "path": "/api/v4/channels/{channel_id}/scheme",
       "pagination": "none",
@@ -977,7 +977,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/channels/{channel_id}/moderations": {
+    "Get Information About Channel's Moderation.": {
       "method": "GET",
       "path": "/api/v4/channels/{channel_id}/moderations",
       "pagination": "none",
@@ -993,7 +993,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /api/v4/channels/{channel_id}/moderations/patch": {
+    "Update A Channel's Moderation Settings.": {
       "method": "PUT",
       "path": "/api/v4/channels/{channel_id}/moderations/patch",
       "pagination": "none",
@@ -1018,7 +1018,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /api/v4/users/{user_id}/teams/{team_id}/channels/categories": {
+    "Get User's Sidebar Categories": {
       "method": "GET",
       "path": "/api/v4/users/{user_id}/teams/{team_id}/channels/categories",
       "pagination": "none",
@@ -1038,7 +1038,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /api/v4/users/{user_id}/teams/{team_id}/channels/categories": {
+    "Create User's Sidebar Category": {
       "method": "POST",
       "path": "/api/v4/users/{user_id}/teams/{team_id}/channels/categories",
       "pagination": "none",
@@ -1079,7 +1079,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "PUT /api/v4/users/{user_id}/teams/{team_id}/channels/categories": {
+    "Update User's Sidebar Categories": {
       "method": "PUT",
       "path": "/api/v4/users/{user_id}/teams/{team_id}/channels/categories",
       "pagination": "none",
@@ -1099,7 +1099,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": "body"
     },
-    "GET /api/v4/users/{user_id}/teams/{team_id}/channels/categories/order": {
+    "Get User's Sidebar Category Order": {
       "method": "GET",
       "path": "/api/v4/users/{user_id}/teams/{team_id}/channels/categories/order",
       "pagination": "none",
@@ -1119,7 +1119,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /api/v4/users/{user_id}/teams/{team_id}/channels/categories/order": {
+    "Update User's Sidebar Category Order": {
       "method": "PUT",
       "path": "/api/v4/users/{user_id}/teams/{team_id}/channels/categories/order",
       "pagination": "none",
@@ -1139,7 +1139,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": "body"
     },
-    "GET /api/v4/users/{user_id}/teams/{team_id}/channels/categories/{category_id}": {
+    "Get Sidebar Category": {
       "method": "GET",
       "path": "/api/v4/users/{user_id}/teams/{team_id}/channels/categories/{category_id}",
       "pagination": "none",
@@ -1163,7 +1163,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /api/v4/users/{user_id}/teams/{team_id}/channels/categories/{category_id}": {
+    "Update Sidebar Category": {
       "method": "PUT",
       "path": "/api/v4/users/{user_id}/teams/{team_id}/channels/categories/{category_id}",
       "pagination": "none",
@@ -1212,7 +1212,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /api/v4/users/{user_id}/teams/{team_id}/channels/categories/{category_id}": {
+    "Delete Sidebar Category": {
       "method": "DELETE",
       "path": "/api/v4/users/{user_id}/teams/{team_id}/channels/categories/{category_id}",
       "pagination": "none",
@@ -1237,8 +1237,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "bodyFieldName": null
     }
   },
-  "commands": {
-    "GET /api/v4/commands": {
+  "Commands": {
+    "List Commands For A Team": {
       "method": "GET",
       "path": "/api/v4/commands",
       "pagination": "none",
@@ -1249,7 +1249,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /api/v4/commands": {
+    "Create A Command": {
       "method": "POST",
       "path": "/api/v4/commands",
       "pagination": "none",
@@ -1277,7 +1277,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/teams/{team_id}/commands/autocomplete": {
+    "List Autocomplete Commands": {
       "method": "GET",
       "path": "/api/v4/teams/{team_id}/commands/autocomplete",
       "pagination": "none",
@@ -1293,7 +1293,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/teams/{team_id}/commands/autocomplete_suggestions": {
+    "List Commands' Autocomplete Data": {
       "method": "GET",
       "path": "/api/v4/teams/{team_id}/commands/autocomplete_suggestions",
       "pagination": "none",
@@ -1314,7 +1314,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/commands/{command_id}": {
+    "Get A Command": {
       "method": "GET",
       "path": "/api/v4/commands/{command_id}",
       "pagination": "none",
@@ -1330,7 +1330,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /api/v4/commands/{command_id}": {
+    "Update A Command": {
       "method": "PUT",
       "path": "/api/v4/commands/{command_id}",
       "pagination": "none",
@@ -1415,7 +1415,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /api/v4/commands/{command_id}": {
+    "Delete A Command": {
       "method": "DELETE",
       "path": "/api/v4/commands/{command_id}",
       "pagination": "none",
@@ -1431,7 +1431,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /api/v4/commands/{command_id}/regen_token": {
+    "Generate A New Token": {
       "method": "PUT",
       "path": "/api/v4/commands/{command_id}/regen_token",
       "pagination": "none",
@@ -1447,7 +1447,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /api/v4/commands/execute": {
+    "Execute A Command": {
       "method": "POST",
       "path": "/api/v4/commands/execute",
       "pagination": "none",
@@ -1468,8 +1468,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "bodyFieldName": null
     }
   },
-  "emoji": {
-    "GET /api/v4/emoji": {
+  "Emoji": {
+    "Get A List Of Custom Emoji": {
       "method": "GET",
       "path": "/api/v4/emoji",
       "pagination": "page-per-page",
@@ -1480,7 +1480,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /api/v4/emoji": {
+    "Create A Custom Emoji": {
       "method": "POST",
       "path": "/api/v4/emoji",
       "pagination": "none",
@@ -1500,7 +1500,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/emoji/{emoji_id}": {
+    "Get A Custom Emoji": {
       "method": "GET",
       "path": "/api/v4/emoji/{emoji_id}",
       "pagination": "none",
@@ -1516,7 +1516,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /api/v4/emoji/{emoji_id}": {
+    "Delete A Custom Emoji": {
       "method": "DELETE",
       "path": "/api/v4/emoji/{emoji_id}",
       "pagination": "none",
@@ -1532,7 +1532,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/emoji/name/{emoji_name}": {
+    "Get A Custom Emoji By Name": {
       "method": "GET",
       "path": "/api/v4/emoji/name/{emoji_name}",
       "pagination": "none",
@@ -1548,7 +1548,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/emoji/{emoji_id}/image": {
+    "Get Custom Emoji Image": {
       "method": "GET",
       "path": "/api/v4/emoji/{emoji_id}/image",
       "pagination": "none",
@@ -1564,7 +1564,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /api/v4/emoji/search": {
+    "Search Custom Emoji": {
       "method": "POST",
       "path": "/api/v4/emoji/search",
       "pagination": "none",
@@ -1584,7 +1584,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /api/v4/emoji/autocomplete": {
+    "Autocomplete Custom Emoji": {
       "method": "GET",
       "path": "/api/v4/emoji/autocomplete",
       "pagination": "none",
@@ -1601,8 +1601,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "bodyFieldName": null
     }
   },
-  "files": {
-    "POST /api/v4/files": {
+  "Files": {
+    "Upload A File": {
       "method": "POST",
       "path": "/api/v4/files",
       "pagination": "none",
@@ -1618,7 +1618,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/files/{file_id}": {
+    "Get A File": {
       "method": "GET",
       "path": "/api/v4/files/{file_id}",
       "pagination": "none",
@@ -1634,7 +1634,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/files/{file_id}/thumbnail": {
+    "Get A File's Thumbnail": {
       "method": "GET",
       "path": "/api/v4/files/{file_id}/thumbnail",
       "pagination": "none",
@@ -1650,7 +1650,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/files/{file_id}/preview": {
+    "Get A File's Preview": {
       "method": "GET",
       "path": "/api/v4/files/{file_id}/preview",
       "pagination": "none",
@@ -1666,7 +1666,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/files/{file_id}/info": {
+    "Get Metadata For A File": {
       "method": "GET",
       "path": "/api/v4/files/{file_id}/info",
       "pagination": "none",
@@ -1683,8 +1683,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "bodyFieldName": null
     }
   },
-  "groups": {
-    "GET /api/v4/groups": {
+  "Groups": {
+    "Get Groups": {
       "method": "GET",
       "path": "/api/v4/groups",
       "pagination": "page-per-page",
@@ -1704,7 +1704,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/channels/{channel_id}/groups": {
+    "Get Channel Groups": {
       "method": "GET",
       "path": "/api/v4/channels/{channel_id}/groups",
       "pagination": "page-per-page",
@@ -1720,7 +1720,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/teams/{team_id}/groups": {
+    "Get Team Groups": {
       "method": "GET",
       "path": "/api/v4/teams/{team_id}/groups",
       "pagination": "page-per-page",
@@ -1736,7 +1736,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/teams/{team_id}/groups_by_channels": {
+    "Get Team Groups By Channels": {
       "method": "GET",
       "path": "/api/v4/teams/{team_id}/groups_by_channels",
       "pagination": "page-per-page",
@@ -1752,7 +1752,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/users/{user_id}/groups": {
+    "Get Groups For A User ID": {
       "method": "GET",
       "path": "/api/v4/users/{user_id}/groups",
       "pagination": "none",
@@ -1769,8 +1769,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "bodyFieldName": null
     }
   },
-  "insights": {
-    "GET /api/v4/teams/{team_id}/top/reactions": {
+  "Insights": {
+    "Get A List Of The Top Reactions For A Team.": {
       "method": "GET",
       "path": "/api/v4/teams/{team_id}/top/reactions",
       "pagination": "page-per-page",
@@ -1791,7 +1791,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/users/me/top/reactions": {
+    "Get A List Of The Top Reactions For A User.": {
       "method": "GET",
       "path": "/api/v4/users/me/top/reactions",
       "pagination": "page-per-page",
@@ -1807,7 +1807,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/teams/{team_id}/top/channels": {
+    "Get A List Of The Top Channels For A Team.": {
       "method": "GET",
       "path": "/api/v4/teams/{team_id}/top/channels",
       "pagination": "page-per-page",
@@ -1828,7 +1828,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/users/me/top/channels": {
+    "Get A List Of The Top Channels For A User.": {
       "method": "GET",
       "path": "/api/v4/users/me/top/channels",
       "pagination": "page-per-page",
@@ -1844,7 +1844,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/teams/{team_id}/top/team_members": {
+    "Get A List Of New Team Members.": {
       "method": "GET",
       "path": "/api/v4/teams/{team_id}/top/team_members",
       "pagination": "page-per-page",
@@ -1865,7 +1865,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/teams/{team_id}/top/threads": {
+    "Get A List Of The Top Threads For A Team.": {
       "method": "GET",
       "path": "/api/v4/teams/{team_id}/top/threads",
       "pagination": "page-per-page",
@@ -1886,7 +1886,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/users/me/top/threads": {
+    "Get A List Of The Top Threads For A User.": {
       "method": "GET",
       "path": "/api/v4/users/me/top/threads",
       "pagination": "page-per-page",
@@ -1902,7 +1902,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/users/me/top/dms": {
+    "Get A List Of The Top Dms For A User.": {
       "method": "GET",
       "path": "/api/v4/users/me/top/dms",
       "pagination": "page-per-page",
@@ -1919,8 +1919,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "bodyFieldName": null
     }
   },
-  "posts": {
-    "POST /api/v4/posts": {
+  "Posts": {
+    "Create A Post": {
       "method": "POST",
       "path": "/api/v4/posts",
       "pagination": "none",
@@ -1952,7 +1952,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "POST /api/v4/posts/ephemeral": {
+    "Create A Ephemeral Post": {
       "method": "POST",
       "path": "/api/v4/posts/ephemeral",
       "pagination": "none",
@@ -1972,7 +1972,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/posts/{post_id}": {
+    "Get A Post": {
       "method": "GET",
       "path": "/api/v4/posts/{post_id}",
       "pagination": "none",
@@ -1988,7 +1988,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /api/v4/posts/{post_id}": {
+    "Delete A Post": {
       "method": "DELETE",
       "path": "/api/v4/posts/{post_id}",
       "pagination": "none",
@@ -2004,7 +2004,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /api/v4/users/{user_id}/posts/{post_id}/set_unread": {
+    "Mark As Unread From A Post.": {
       "method": "POST",
       "path": "/api/v4/users/{user_id}/posts/{post_id}/set_unread",
       "pagination": "none",
@@ -2024,7 +2024,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /api/v4/posts/{post_id}/patch": {
+    "Patch A Post": {
       "method": "PUT",
       "path": "/api/v4/posts/{post_id}/patch",
       "pagination": "none",
@@ -2053,7 +2053,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /api/v4/posts/{post_id}/thread": {
+    "Get A Thread": {
       "method": "GET",
       "path": "/api/v4/posts/{post_id}/thread",
       "pagination": "none",
@@ -2069,7 +2069,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/users/{user_id}/posts/flagged": {
+    "Get A List Of Flagged Posts": {
       "method": "GET",
       "path": "/api/v4/users/{user_id}/posts/flagged",
       "pagination": "page-per-page",
@@ -2085,7 +2085,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/posts/{post_id}/files/info": {
+    "Get File Info For Post": {
       "method": "GET",
       "path": "/api/v4/posts/{post_id}/files/info",
       "pagination": "none",
@@ -2101,7 +2101,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/channels/{channel_id}/posts": {
+    "Get Posts For A Channel": {
       "method": "GET",
       "path": "/api/v4/channels/{channel_id}/posts",
       "pagination": "page-per-page",
@@ -2117,7 +2117,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/users/{user_id}/channels/{channel_id}/posts/unread": {
+    "Get Posts Around Oldest Unread": {
       "method": "GET",
       "path": "/api/v4/users/{user_id}/channels/{channel_id}/posts/unread",
       "pagination": "none",
@@ -2137,7 +2137,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /api/v4/teams/{team_id}/posts/search": {
+    "Search For Team Posts": {
       "method": "POST",
       "path": "/api/v4/teams/{team_id}/posts/search",
       "pagination": "none",
@@ -2178,7 +2178,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "POST /api/v4/posts/{post_id}/pin": {
+    "Pin A Post To The Channel": {
       "method": "POST",
       "path": "/api/v4/posts/{post_id}/pin",
       "pagination": "none",
@@ -2194,7 +2194,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /api/v4/posts/{post_id}/unpin": {
+    "Unpin A Post To The Channel": {
       "method": "POST",
       "path": "/api/v4/posts/{post_id}/unpin",
       "pagination": "none",
@@ -2210,7 +2210,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /api/v4/posts/{post_id}/actions/{action_id}": {
+    "Perform A Post Action": {
       "method": "POST",
       "path": "/api/v4/posts/{post_id}/actions/{action_id}",
       "pagination": "none",
@@ -2230,7 +2230,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /api/v4/posts/ids": {
+    "Get Posts By A List Of Ids": {
       "method": "POST",
       "path": "/api/v4/posts/ids",
       "pagination": "none",
@@ -2241,7 +2241,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": "body"
     },
-    "POST /api/v4/users/{user_id}/posts/{post_id}/reminder": {
+    "Set A Post Reminder": {
       "method": "POST",
       "path": "/api/v4/users/{user_id}/posts/{post_id}/reminder",
       "pagination": "none",
@@ -2267,8 +2267,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "bodyFieldName": null
     }
   },
-  "preferences": {
-    "GET /api/v4/users/{user_id}/preferences": {
+  "Preferences": {
+    "Get The User's Preferences": {
       "method": "GET",
       "path": "/api/v4/users/{user_id}/preferences",
       "pagination": "none",
@@ -2284,7 +2284,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /api/v4/users/{user_id}/preferences": {
+    "Save The User's Preferences": {
       "method": "PUT",
       "path": "/api/v4/users/{user_id}/preferences",
       "pagination": "none",
@@ -2300,7 +2300,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": "body"
     },
-    "POST /api/v4/users/{user_id}/preferences/delete": {
+    "Delete User's Preferences": {
       "method": "POST",
       "path": "/api/v4/users/{user_id}/preferences/delete",
       "pagination": "none",
@@ -2316,7 +2316,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": "body"
     },
-    "GET /api/v4/users/{user_id}/preferences/{category}": {
+    "List A User's Preferences By Category": {
       "method": "GET",
       "path": "/api/v4/users/{user_id}/preferences/{category}",
       "pagination": "none",
@@ -2336,7 +2336,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/users/{user_id}/preferences/{category}/name/{preference_name}": {
+    "Get A Specific User Preference": {
       "method": "GET",
       "path": "/api/v4/users/{user_id}/preferences/{category}/name/{preference_name}",
       "pagination": "none",
@@ -2361,8 +2361,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "bodyFieldName": null
     }
   },
-  "reactions": {
-    "POST /api/v4/reactions": {
+  "Reactions": {
+    "Create A Reaction": {
       "method": "POST",
       "path": "/api/v4/reactions",
       "pagination": "none",
@@ -2390,7 +2390,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /api/v4/posts/{post_id}/reactions": {
+    "Get A List Of Reactions To A Post": {
       "method": "GET",
       "path": "/api/v4/posts/{post_id}/reactions",
       "pagination": "none",
@@ -2406,7 +2406,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /api/v4/users/{user_id}/posts/{post_id}/reactions/{emoji_name}": {
+    "Remove A Reaction From A Post": {
       "method": "DELETE",
       "path": "/api/v4/users/{user_id}/posts/{post_id}/reactions/{emoji_name}",
       "pagination": "none",
@@ -2431,8 +2431,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "bodyFieldName": null
     }
   },
-  "roles": {
-    "GET /api/v4/roles": {
+  "Roles": {
+    "Get A List Of All The Roles": {
       "method": "GET",
       "path": "/api/v4/roles",
       "pagination": "none",
@@ -2443,7 +2443,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/roles/{role_id}": {
+    "Get A Role": {
       "method": "GET",
       "path": "/api/v4/roles/{role_id}",
       "pagination": "none",
@@ -2459,7 +2459,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/roles/name/{role_name}": {
+    "Get A Role By Name": {
       "method": "GET",
       "path": "/api/v4/roles/name/{role_name}",
       "pagination": "none",
@@ -2475,7 +2475,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /api/v4/roles/names": {
+    "Get A List Of Roles By Name": {
       "method": "POST",
       "path": "/api/v4/roles/names",
       "pagination": "none",
@@ -2487,8 +2487,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "bodyFieldName": "body"
     }
   },
-  "status": {
-    "GET /api/v4/users/{user_id}/status": {
+  "Status": {
+    "Get User Status": {
       "method": "GET",
       "path": "/api/v4/users/{user_id}/status",
       "pagination": "none",
@@ -2504,7 +2504,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /api/v4/users/{user_id}/status": {
+    "Update User Status": {
       "method": "PUT",
       "path": "/api/v4/users/{user_id}/status",
       "pagination": "none",
@@ -2533,7 +2533,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "POST /api/v4/users/status/ids": {
+    "Get User Statuses By ID": {
       "method": "POST",
       "path": "/api/v4/users/status/ids",
       "pagination": "none",
@@ -2544,7 +2544,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": "body"
     },
-    "PUT /api/v4/users/{user_id}/status/custom": {
+    "Update User Custom Status": {
       "method": "PUT",
       "path": "/api/v4/users/{user_id}/status/custom",
       "pagination": "none",
@@ -2577,7 +2577,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /api/v4/users/{user_id}/status/custom": {
+    "Unsets User Custom Status": {
       "method": "DELETE",
       "path": "/api/v4/users/{user_id}/status/custom",
       "pagination": "none",
@@ -2593,7 +2593,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /api/v4/users/{user_id}/status/custom/recent/delete": {
+    "Delete User's Recent Custom Status": {
       "method": "POST",
       "path": "/api/v4/users/{user_id}/status/custom/recent/delete",
       "pagination": "none",
@@ -2627,8 +2627,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "bodyFieldName": null
     }
   },
-  "system": {
-    "GET /api/v4/config/client": {
+  "System": {
+    "Get Client Configuration": {
       "method": "GET",
       "path": "/api/v4/config/client",
       "pagination": "none",
@@ -2645,8 +2645,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "bodyFieldName": null
     }
   },
-  "teams": {
-    "GET /api/v4/teams": {
+  "Teams": {
+    "Get Teams": {
       "method": "GET",
       "path": "/api/v4/teams",
       "pagination": "page-per-page",
@@ -2657,7 +2657,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/teams/{team_id}": {
+    "Get A Team": {
       "method": "GET",
       "path": "/api/v4/teams/{team_id}",
       "pagination": "none",
@@ -2673,7 +2673,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/teams/name/{name}": {
+    "Get A Team By Name": {
       "method": "GET",
       "path": "/api/v4/teams/name/{name}",
       "pagination": "none",
@@ -2689,7 +2689,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/users/{user_id}/teams": {
+    "Get A User's Teams": {
       "method": "GET",
       "path": "/api/v4/users/{user_id}/teams",
       "pagination": "none",
@@ -2705,7 +2705,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/teams/{team_id}/members": {
+    "Get Team Members": {
       "method": "GET",
       "path": "/api/v4/teams/{team_id}/members",
       "pagination": "page-per-page",
@@ -2721,7 +2721,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/users/{user_id}/teams/members": {
+    "Get Team Members For A User": {
       "method": "GET",
       "path": "/api/v4/users/{user_id}/teams/members",
       "pagination": "none",
@@ -2737,7 +2737,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/teams/{team_id}/members/{user_id}": {
+    "Get A Team Member": {
       "method": "GET",
       "path": "/api/v4/teams/{team_id}/members/{user_id}",
       "pagination": "none",
@@ -2757,7 +2757,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /api/v4/teams/{team_id}/members/ids": {
+    "Get Team Members By Ids": {
       "method": "POST",
       "path": "/api/v4/teams/{team_id}/members/ids",
       "pagination": "none",
@@ -2773,7 +2773,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": "body"
     },
-    "GET /api/v4/teams/{team_id}/stats": {
+    "Get A Team Stats": {
       "method": "GET",
       "path": "/api/v4/teams/{team_id}/stats",
       "pagination": "none",
@@ -2789,7 +2789,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /api/v4/teams/{team_id}/members/{user_id}/roles": {
+    "Update A Team Member Roles": {
       "method": "PUT",
       "path": "/api/v4/teams/{team_id}/members/{user_id}/roles",
       "pagination": "none",
@@ -2814,7 +2814,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/users/{user_id}/teams/unread": {
+    "Get Team Unreads For A User": {
       "method": "GET",
       "path": "/api/v4/users/{user_id}/teams/unread",
       "pagination": "none",
@@ -2835,7 +2835,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/users/{user_id}/teams/{team_id}/unread": {
+    "Get Unreads For A Team": {
       "method": "GET",
       "path": "/api/v4/users/{user_id}/teams/{team_id}/unread",
       "pagination": "none",
@@ -2855,7 +2855,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /api/v4/teams/{team_id}/invite-guests/email": {
+    "Invite Guests To The Team By Email": {
       "method": "POST",
       "path": "/api/v4/teams/{team_id}/invite-guests/email",
       "pagination": "none",
@@ -2884,7 +2884,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "POST /api/v4/teams/{team_id}/files/search": {
+    "Search Files In A Team": {
       "method": "POST",
       "path": "/api/v4/teams/{team_id}/files/search",
       "pagination": "none",
@@ -2926,8 +2926,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "bodyFieldName": null
     }
   },
-  "threads": {
-    "GET /api/v4/users/{user_id}/teams/{team_id}/threads": {
+  "Threads": {
+    "Get All Threads That User Is Following": {
       "method": "GET",
       "path": "/api/v4/users/{user_id}/teams/{team_id}/threads",
       "pagination": "none",
@@ -2947,7 +2947,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /api/v4/users/{user_id}/teams/{team_id}/threads/read": {
+    "Mark All Threads That User Is Following As Read": {
       "method": "PUT",
       "path": "/api/v4/users/{user_id}/teams/{team_id}/threads/read",
       "pagination": "none",
@@ -2967,7 +2967,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /api/v4/users/{user_id}/teams/{team_id}/threads/{thread_id}/read/{timestamp}": {
+    "Mark A Thread That User Is Following Read State To The Timestamp": {
       "method": "PUT",
       "path": "/api/v4/users/{user_id}/teams/{team_id}/threads/{thread_id}/read/{timestamp}",
       "pagination": "none",
@@ -2995,7 +2995,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /api/v4/users/{user_id}/teams/{team_id}/threads/{thread_id}/set_unread/{post_id}": {
+    "Mark A Thread That User Is Following As Unread Based On A Post ID": {
       "method": "PUT",
       "path": "/api/v4/users/{user_id}/teams/{team_id}/threads/{thread_id}/set_unread/{post_id}",
       "pagination": "none",
@@ -3023,7 +3023,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /api/v4/users/{user_id}/teams/{team_id}/threads/{thread_id}/following": {
+    "Start Following A Thread": {
       "method": "PUT",
       "path": "/api/v4/users/{user_id}/teams/{team_id}/threads/{thread_id}/following",
       "pagination": "none",
@@ -3047,7 +3047,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /api/v4/users/{user_id}/teams/{team_id}/threads/{thread_id}/following": {
+    "Stop Following A Thread": {
       "method": "DELETE",
       "path": "/api/v4/users/{user_id}/teams/{team_id}/threads/{thread_id}/following",
       "pagination": "none",
@@ -3071,7 +3071,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/users/{user_id}/teams/{team_id}/threads/{thread_id}": {
+    "Get A Thread Followed By The User": {
       "method": "GET",
       "path": "/api/v4/users/{user_id}/teams/{team_id}/threads/{thread_id}",
       "pagination": "none",
@@ -3096,8 +3096,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "bodyFieldName": null
     }
   },
-  "users": {
-    "GET /api/v4/users": {
+  "Users": {
+    "Get Users": {
       "method": "GET",
       "path": "/api/v4/users",
       "pagination": "page-per-page",
@@ -3108,7 +3108,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /api/v4/users/ids": {
+    "Get Users By Ids": {
       "method": "POST",
       "path": "/api/v4/users/ids",
       "pagination": "none",
@@ -3119,7 +3119,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": "body"
     },
-    "POST /api/v4/users/group_channels": {
+    "Get Users By Group Channels Ids": {
       "method": "POST",
       "path": "/api/v4/users/group_channels",
       "pagination": "none",
@@ -3130,7 +3130,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": "body"
     },
-    "POST /api/v4/users/usernames": {
+    "Get Users By Usernames": {
       "method": "POST",
       "path": "/api/v4/users/usernames",
       "pagination": "none",
@@ -3141,7 +3141,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": "body"
     },
-    "POST /api/v4/users/search": {
+    "Search Users": {
       "method": "POST",
       "path": "/api/v4/users/search",
       "pagination": "none",
@@ -3193,7 +3193,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /api/v4/users/autocomplete": {
+    "Autocomplete Users": {
       "method": "GET",
       "path": "/api/v4/users/autocomplete",
       "pagination": "none",
@@ -3209,7 +3209,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/users/{user_id}": {
+    "Get A User": {
       "method": "GET",
       "path": "/api/v4/users/{user_id}",
       "pagination": "none",
@@ -3225,7 +3225,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /api/v4/users/{user_id}/patch": {
+    "Patch A User": {
       "method": "PUT",
       "path": "/api/v4/users/{user_id}/patch",
       "pagination": "none",
@@ -3278,7 +3278,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "PUT /api/v4/users/{user_id}/roles": {
+    "Update A User's Roles": {
       "method": "PUT",
       "path": "/api/v4/users/{user_id}/roles",
       "pagination": "none",
@@ -3299,7 +3299,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/users/{user_id}/image": {
+    "Get User's Profile Image": {
       "method": "GET",
       "path": "/api/v4/users/{user_id}/image",
       "pagination": "none",
@@ -3315,7 +3315,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/users/{user_id}/image/default": {
+    "Return User's Default (generated) Profile Image": {
       "method": "GET",
       "path": "/api/v4/users/{user_id}/image/default",
       "pagination": "none",
@@ -3331,7 +3331,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/users/username/{username}": {
+    "Get A User By Username": {
       "method": "GET",
       "path": "/api/v4/users/username/{username}",
       "pagination": "none",
@@ -3347,7 +3347,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/users/email/{email}": {
+    "Get A User By Email": {
       "method": "GET",
       "path": "/api/v4/users/email/{email}",
       "pagination": "none",
@@ -3363,7 +3363,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /api/v4/users/{user_id}/typing": {
+    "Publish A User Typing Websocket Event.": {
       "method": "POST",
       "path": "/api/v4/users/{user_id}/typing",
       "pagination": "none",
@@ -3388,7 +3388,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /api/v4/users/{user_id}/channel_members": {
+    "Get All Channel Members For A User": {
       "method": "GET",
       "path": "/api/v4/users/{user_id}/channel_members",
       "pagination": "none",
@@ -3405,8 +3405,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "bodyFieldName": null
     }
   },
-  "webhooks": {
-    "GET /api/v4/hooks/incoming": {
+  "Webhooks": {
+    "List Incoming Webhooks": {
       "method": "GET",
       "path": "/api/v4/hooks/incoming",
       "pagination": "page-per-page",
@@ -3417,7 +3417,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /api/v4/hooks/incoming": {
+    "Create An Incoming Webhook": {
       "method": "POST",
       "path": "/api/v4/hooks/incoming",
       "pagination": "none",
@@ -3453,7 +3453,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /api/v4/hooks/incoming/{hook_id}": {
+    "Get An Incoming Webhook": {
       "method": "GET",
       "path": "/api/v4/hooks/incoming/{hook_id}",
       "pagination": "none",
@@ -3469,7 +3469,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /api/v4/hooks/incoming/{hook_id}": {
+    "Update An Incoming Webhook": {
       "method": "PUT",
       "path": "/api/v4/hooks/incoming/{hook_id}",
       "pagination": "none",
@@ -3510,7 +3510,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /api/v4/hooks/incoming/{hook_id}": {
+    "Delete An Incoming Webhook": {
       "method": "DELETE",
       "path": "/api/v4/hooks/incoming/{hook_id}",
       "pagination": "none",
@@ -3526,7 +3526,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /api/v4/hooks/outgoing": {
+    "List Outgoing Webhooks": {
       "method": "GET",
       "path": "/api/v4/hooks/outgoing",
       "pagination": "page-per-page",
@@ -3537,7 +3537,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /api/v4/hooks/outgoing": {
+    "Create An Outgoing Webhook": {
       "method": "POST",
       "path": "/api/v4/hooks/outgoing",
       "pagination": "none",
@@ -3585,7 +3585,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /api/v4/hooks/outgoing/{hook_id}": {
+    "Get An Outgoing Webhook": {
       "method": "GET",
       "path": "/api/v4/hooks/outgoing/{hook_id}",
       "pagination": "none",
@@ -3601,7 +3601,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /api/v4/hooks/outgoing/{hook_id}": {
+    "Update An Outgoing Webhook": {
       "method": "PUT",
       "path": "/api/v4/hooks/outgoing/{hook_id}",
       "pagination": "none",
@@ -3634,7 +3634,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /api/v4/hooks/outgoing/{hook_id}": {
+    "Delete An Outgoing Webhook": {
       "method": "DELETE",
       "path": "/api/v4/hooks/outgoing/{hook_id}",
       "pagination": "none",
@@ -3650,7 +3650,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /api/v4/hooks/outgoing/{hook_id}/regen_token": {
+    "Regenerate The Token For The Outgoing Webhook.": {
       "method": "POST",
       "path": "/api/v4/hooks/outgoing/{hook_id}/regen_token",
       "pagination": "none",
@@ -3736,74 +3736,74 @@ export class InfomaniakKchat implements INodeType {
       "options": [
         {
           "name": "Bots",
-          "value": "bots"
+          "value": "Bots"
         },
         {
           "name": "Channels",
-          "value": "channels"
+          "value": "Channels"
         },
         {
           "name": "Commands",
-          "value": "commands"
+          "value": "Commands"
         },
         {
           "name": "Emoji",
-          "value": "emoji"
+          "value": "Emoji"
         },
         {
           "name": "Files",
-          "value": "files"
+          "value": "Files"
         },
         {
           "name": "Groups",
-          "value": "groups"
+          "value": "Groups"
         },
         {
           "name": "Insights",
-          "value": "insights"
+          "value": "Insights"
         },
         {
           "name": "Posts",
-          "value": "posts"
+          "value": "Posts"
         },
         {
           "name": "Preferences",
-          "value": "preferences"
+          "value": "Preferences"
         },
         {
           "name": "Reactions",
-          "value": "reactions"
+          "value": "Reactions"
         },
         {
           "name": "Roles",
-          "value": "roles"
+          "value": "Roles"
         },
         {
           "name": "Status",
-          "value": "status"
+          "value": "Status"
         },
         {
           "name": "System",
-          "value": "system"
+          "value": "System"
         },
         {
           "name": "Teams",
-          "value": "teams"
+          "value": "Teams"
         },
         {
           "name": "Threads",
-          "value": "threads"
+          "value": "Threads"
         },
         {
           "name": "Users",
-          "value": "users"
+          "value": "Users"
         },
         {
           "name": "Webhooks",
-          "value": "webhooks"
+          "value": "Webhooks"
         }
       ],
-      "default": "bots",
+      "default": "Bots",
       "required": true,
       "noDataExpression": true
     },
@@ -3814,37 +3814,37 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "bots"
+            "Bots"
           ]
         }
       },
       "options": [
         {
           "name": "Get Bots",
-          "value": "GET /api/v4/bots"
+          "value": "Get Bots"
         },
         {
           "name": "Create A Bot",
-          "value": "POST /api/v4/bots"
+          "value": "Create A Bot"
         },
         {
           "name": "Get A Bot",
-          "value": "GET /api/v4/bots/{bot_user_id}"
+          "value": "Get A Bot"
         },
         {
           "name": "Patch A Bot",
-          "value": "PUT /api/v4/bots/{bot_user_id}"
+          "value": "Patch A Bot"
         },
         {
           "name": "Disable A Bot",
-          "value": "POST /api/v4/bots/{bot_user_id}/disable"
+          "value": "Disable A Bot"
         },
         {
           "name": "Enable A Bot",
-          "value": "POST /api/v4/bots/{bot_user_id}/enable"
+          "value": "Enable A Bot"
         }
       ],
-      "default": "GET /api/v4/bots",
+      "default": "Get Bots",
       "noDataExpression": true
     },
     {
@@ -3856,10 +3856,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "bots"
+            "Bots"
           ],
           "operation": [
-            "GET /api/v4/bots"
+            "Get Bots"
           ]
         }
       },
@@ -3902,10 +3902,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "bots"
+            "Bots"
           ],
           "operation": [
-            "POST /api/v4/bots"
+            "Create A Bot"
           ]
         }
       },
@@ -3920,10 +3920,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "bots"
+            "Bots"
           ],
           "operation": [
-            "POST /api/v4/bots"
+            "Create A Bot"
           ]
         }
       },
@@ -3950,10 +3950,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "bots"
+            "Bots"
           ],
           "operation": [
-            "GET /api/v4/bots/{bot_user_id}"
+            "Get A Bot"
           ]
         }
       },
@@ -3969,10 +3969,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "bots"
+            "Bots"
           ],
           "operation": [
-            "GET /api/v4/bots/{bot_user_id}"
+            "Get A Bot"
           ]
         }
       },
@@ -3994,10 +3994,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "bots"
+            "Bots"
           ],
           "operation": [
-            "PUT /api/v4/bots/{bot_user_id}"
+            "Patch A Bot"
           ]
         }
       },
@@ -4012,10 +4012,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "bots"
+            "Bots"
           ],
           "operation": [
-            "PUT /api/v4/bots/{bot_user_id}"
+            "Patch A Bot"
           ]
         }
       },
@@ -4030,10 +4030,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "bots"
+            "Bots"
           ],
           "operation": [
-            "PUT /api/v4/bots/{bot_user_id}"
+            "Patch A Bot"
           ]
         }
       },
@@ -4060,10 +4060,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "bots"
+            "Bots"
           ],
           "operation": [
-            "POST /api/v4/bots/{bot_user_id}/disable"
+            "Disable A Bot"
           ]
         }
       },
@@ -4078,10 +4078,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "bots"
+            "Bots"
           ],
           "operation": [
-            "POST /api/v4/bots/{bot_user_id}/enable"
+            "Enable A Bot"
           ]
         }
       },
@@ -4095,209 +4095,209 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ]
         }
       },
       "options": [
         {
           "name": "Get A List Of All Channels",
-          "value": "GET /api/v4/channels"
+          "value": "Get A List Of All Channels"
         },
         {
           "name": "Create A Channel",
-          "value": "POST /api/v4/channels"
+          "value": "Create A Channel"
         },
         {
           "name": "Create A Direct Message Channel",
-          "value": "POST /api/v4/channels/direct"
+          "value": "Create A Direct Message Channel"
         },
         {
           "name": "Create A Group Message Channel",
-          "value": "POST /api/v4/channels/group"
+          "value": "Create A Group Message Channel"
         },
         {
           "name": "Search All Private And Open Type Channels",
-          "value": "POST /api/v4/channels/search"
+          "value": "Search All Private And Open Type Channels"
         },
         {
           "name": "Search Group Channels",
-          "value": "POST /api/v4/channels/group/search"
+          "value": "Search Group Channels"
         },
         {
           "name": "Get A List Of Channels By Ids",
-          "value": "POST /api/v4/teams/{team_id}/channels/ids"
+          "value": "Get A List Of Channels By Ids"
         },
         {
           "name": "Get A Channel",
-          "value": "GET /api/v4/channels/{channel_id}"
+          "value": "Get A Channel"
         },
         {
           "name": "Update A Channel",
-          "value": "PUT /api/v4/channels/{channel_id}"
+          "value": "Update A Channel"
         },
         {
           "name": "Delete A Channel",
-          "value": "DELETE /api/v4/channels/{channel_id}"
+          "value": "Delete A Channel"
         },
         {
           "name": "Patch A Channel",
-          "value": "PUT /api/v4/channels/{channel_id}/patch"
+          "value": "Patch A Channel"
         },
         {
           "name": "Update Channel's Privacy",
-          "value": "PUT /api/v4/channels/{channel_id}/privacy"
+          "value": "Update Channel's Privacy"
         },
         {
           "name": "Restore A Channel",
-          "value": "POST /api/v4/channels/{channel_id}/restore"
+          "value": "Restore A Channel"
         },
         {
           "name": "Move A Channel",
-          "value": "POST /api/v4/channels/{channel_id}/move"
+          "value": "Move A Channel"
         },
         {
           "name": "Get Channel Statistics",
-          "value": "GET /api/v4/channels/{channel_id}/stats"
+          "value": "Get Channel Statistics"
         },
         {
           "name": "Get A Channel's Pinned Posts",
-          "value": "GET /api/v4/channels/{channel_id}/pinned"
+          "value": "Get A Channel's Pinned Posts"
         },
         {
           "name": "Get Public Channels",
-          "value": "GET /api/v4/teams/{team_id}/channels"
+          "value": "Get Public Channels"
         },
         {
           "name": "Get Private Channels",
-          "value": "GET /api/v4/teams/{team_id}/channels/private"
+          "value": "Get Private Channels"
         },
         {
           "name": "Get Deleted Channels",
-          "value": "GET /api/v4/teams/{team_id}/channels/deleted"
+          "value": "Get Deleted Channels"
         },
         {
           "name": "Autocomplete Channels",
-          "value": "GET /api/v4/teams/{team_id}/channels/autocomplete"
+          "value": "Autocomplete Channels"
         },
         {
           "name": "Autocomplete Channels For Search",
-          "value": "GET /api/v4/teams/{team_id}/channels/search_autocomplete"
+          "value": "Autocomplete Channels For Search"
         },
         {
           "name": "Search Channels",
-          "value": "POST /api/v4/teams/{team_id}/channels/search"
+          "value": "Search Channels"
         },
         {
           "name": "Search Archived Channels",
-          "value": "POST /api/v4/teams/{team_id}/channels/search_archived"
+          "value": "Search Archived Channels"
         },
         {
           "name": "Get A Channel By Name",
-          "value": "GET /api/v4/teams/{team_id}/channels/name/{channel_name}"
+          "value": "Get A Channel By Name"
         },
         {
           "name": "Get A Channel By Name And Team Name",
-          "value": "GET /api/v4/teams/name/{team_name}/channels/name/{channel_name}"
+          "value": "Get A Channel By Name And Team Name"
         },
         {
           "name": "Get Channel Members",
-          "value": "GET /api/v4/channels/{channel_id}/members"
+          "value": "Get Channel Members"
         },
         {
           "name": "Add User(s) To Channel",
-          "value": "POST /api/v4/channels/{channel_id}/members"
+          "value": "Add User(s) To Channel"
         },
         {
           "name": "Get Channel Members By Ids",
-          "value": "POST /api/v4/channels/{channel_id}/members/ids"
+          "value": "Get Channel Members By Ids"
         },
         {
           "name": "Get Channel Member",
-          "value": "GET /api/v4/channels/{channel_id}/members/{user_id}"
+          "value": "Get Channel Member"
         },
         {
           "name": "Remove User From Channel",
-          "value": "DELETE /api/v4/channels/{channel_id}/members/{user_id}"
+          "value": "Remove User From Channel"
         },
         {
           "name": "Update Channel Roles",
-          "value": "PUT /api/v4/channels/{channel_id}/members/{user_id}/roles"
+          "value": "Update Channel Roles"
         },
         {
           "name": "Update The Scheme Derived Roles Of A Channel Member.",
-          "value": "PUT /api/v4/channels/{channel_id}/members/{user_id}/schemeRoles"
+          "value": "Update The Scheme Derived Roles Of A Channel Member."
         },
         {
           "name": "Update Channel Notifications",
-          "value": "PUT /api/v4/channels/{channel_id}/members/{user_id}/notify_props"
+          "value": "Update Channel Notifications"
         },
         {
           "name": "View Channel",
-          "value": "POST /api/v4/channels/members/{user_id}/view"
+          "value": "View Channel"
         },
         {
           "name": "Get Channel Memberships And Roles For A User",
-          "value": "GET /api/v4/users/{user_id}/teams/{team_id}/channels/members"
+          "value": "Get Channel Memberships And Roles For A User"
         },
         {
           "name": "Get Channels For User",
-          "value": "GET /api/v4/users/{user_id}/teams/{team_id}/channels"
+          "value": "Get Channels For User"
         },
         {
           "name": "Get All Channels",
-          "value": "GET /api/v4/users/{user_id}/channels"
+          "value": "Get All Channels"
         },
         {
           "name": "Get Unread Messages",
-          "value": "GET /api/v4/users/{user_id}/channels/{channel_id}/unread"
+          "value": "Get Unread Messages"
         },
         {
           "name": "Set A Channel's Scheme",
-          "value": "PUT /api/v4/channels/{channel_id}/scheme"
+          "value": "Set A Channel's Scheme"
         },
         {
           "name": "Get Information About Channel's Moderation.",
-          "value": "GET /api/v4/channels/{channel_id}/moderations"
+          "value": "Get Information About Channel's Moderation."
         },
         {
           "name": "Update A Channel's Moderation Settings.",
-          "value": "PUT /api/v4/channels/{channel_id}/moderations/patch"
+          "value": "Update A Channel's Moderation Settings."
         },
         {
           "name": "Get User's Sidebar Categories",
-          "value": "GET /api/v4/users/{user_id}/teams/{team_id}/channels/categories"
+          "value": "Get User's Sidebar Categories"
         },
         {
           "name": "Create User's Sidebar Category",
-          "value": "POST /api/v4/users/{user_id}/teams/{team_id}/channels/categories"
+          "value": "Create User's Sidebar Category"
         },
         {
           "name": "Update User's Sidebar Categories",
-          "value": "PUT /api/v4/users/{user_id}/teams/{team_id}/channels/categories"
+          "value": "Update User's Sidebar Categories"
         },
         {
           "name": "Get User's Sidebar Category Order",
-          "value": "GET /api/v4/users/{user_id}/teams/{team_id}/channels/categories/order"
+          "value": "Get User's Sidebar Category Order"
         },
         {
           "name": "Update User's Sidebar Category Order",
-          "value": "PUT /api/v4/users/{user_id}/teams/{team_id}/channels/categories/order"
+          "value": "Update User's Sidebar Category Order"
         },
         {
           "name": "Get Sidebar Category",
-          "value": "GET /api/v4/users/{user_id}/teams/{team_id}/channels/categories/{category_id}"
+          "value": "Get Sidebar Category"
         },
         {
           "name": "Update Sidebar Category",
-          "value": "PUT /api/v4/users/{user_id}/teams/{team_id}/channels/categories/{category_id}"
+          "value": "Update Sidebar Category"
         },
         {
           "name": "Delete Sidebar Category",
-          "value": "DELETE /api/v4/users/{user_id}/teams/{team_id}/channels/categories/{category_id}"
+          "value": "Delete Sidebar Category"
         }
       ],
-      "default": "GET /api/v4/channels",
+      "default": "Get A List Of All Channels",
       "noDataExpression": true
     },
     {
@@ -4309,10 +4309,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "GET /api/v4/channels"
+            "Get A List Of All Channels"
           ]
         }
       },
@@ -4376,10 +4376,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "POST /api/v4/channels"
+            "Create A Channel"
           ]
         }
       },
@@ -4394,10 +4394,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "POST /api/v4/channels"
+            "Create A Channel"
           ]
         }
       },
@@ -4412,10 +4412,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "POST /api/v4/channels"
+            "Create A Channel"
           ]
         }
       },
@@ -4430,10 +4430,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "POST /api/v4/channels"
+            "Create A Channel"
           ]
         }
       },
@@ -4449,10 +4449,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "POST /api/v4/channels"
+            "Create A Channel"
           ]
         }
       },
@@ -4482,10 +4482,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "POST /api/v4/channels/direct"
+            "Create A Direct Message Channel"
           ]
         }
       }
@@ -4499,10 +4499,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "POST /api/v4/channels/group"
+            "Create A Group Message Channel"
           ]
         }
       }
@@ -4516,10 +4516,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "POST /api/v4/channels/search"
+            "Search All Private And Open Type Channels"
           ]
         }
       },
@@ -4541,10 +4541,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "POST /api/v4/channels/search"
+            "Search All Private And Open Type Channels"
           ]
         }
       },
@@ -4560,10 +4560,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "POST /api/v4/channels/search"
+            "Search All Private And Open Type Channels"
           ]
         }
       },
@@ -4662,10 +4662,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "POST /api/v4/channels/group/search"
+            "Search Group Channels"
           ]
         }
       },
@@ -4680,10 +4680,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "POST /api/v4/teams/{team_id}/channels/ids"
+            "Get A List Of Channels By Ids"
           ]
         }
       },
@@ -4699,10 +4699,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "POST /api/v4/teams/{team_id}/channels/ids"
+            "Get A List Of Channels By Ids"
           ]
         }
       }
@@ -4715,10 +4715,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "GET /api/v4/channels/{channel_id}"
+            "Get A Channel"
           ]
         }
       },
@@ -4733,10 +4733,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "PUT /api/v4/channels/{channel_id}"
+            "Update A Channel"
           ]
         }
       },
@@ -4751,10 +4751,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "PUT /api/v4/channels/{channel_id}"
+            "Update A Channel"
           ]
         }
       },
@@ -4770,10 +4770,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "PUT /api/v4/channels/{channel_id}"
+            "Update A Channel"
           ]
         }
       },
@@ -4816,10 +4816,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "DELETE /api/v4/channels/{channel_id}"
+            "Delete A Channel"
           ]
         }
       },
@@ -4834,10 +4834,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "PUT /api/v4/channels/{channel_id}/patch"
+            "Patch A Channel"
           ]
         }
       },
@@ -4853,10 +4853,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "PUT /api/v4/channels/{channel_id}/patch"
+            "Patch A Channel"
           ]
         }
       },
@@ -4899,10 +4899,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "PUT /api/v4/channels/{channel_id}/privacy"
+            "Update Channel's Privacy"
           ]
         }
       },
@@ -4917,10 +4917,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "PUT /api/v4/channels/{channel_id}/privacy"
+            "Update Channel's Privacy"
           ]
         }
       },
@@ -4935,10 +4935,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "POST /api/v4/channels/{channel_id}/restore"
+            "Restore A Channel"
           ]
         }
       },
@@ -4953,10 +4953,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "POST /api/v4/channels/{channel_id}/move"
+            "Move A Channel"
           ]
         }
       },
@@ -4971,10 +4971,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "POST /api/v4/channels/{channel_id}/move"
+            "Move A Channel"
           ]
         }
       },
@@ -4989,10 +4989,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "POST /api/v4/channels/{channel_id}/move"
+            "Move A Channel"
           ]
         }
       },
@@ -5014,10 +5014,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "GET /api/v4/channels/{channel_id}/stats"
+            "Get Channel Statistics"
           ]
         }
       },
@@ -5032,10 +5032,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "GET /api/v4/channels/{channel_id}/pinned"
+            "Get A Channel's Pinned Posts"
           ]
         }
       },
@@ -5050,10 +5050,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "GET /api/v4/teams/{team_id}/channels"
+            "Get Public Channels"
           ]
         }
       },
@@ -5069,10 +5069,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "GET /api/v4/teams/{team_id}/channels"
+            "Get Public Channels"
           ]
         }
       },
@@ -5101,10 +5101,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "GET /api/v4/teams/{team_id}/channels/private"
+            "Get Private Channels"
           ]
         }
       },
@@ -5120,10 +5120,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "GET /api/v4/teams/{team_id}/channels/private"
+            "Get Private Channels"
           ]
         }
       },
@@ -5152,10 +5152,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "GET /api/v4/teams/{team_id}/channels/deleted"
+            "Get Deleted Channels"
           ]
         }
       },
@@ -5171,10 +5171,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "GET /api/v4/teams/{team_id}/channels/deleted"
+            "Get Deleted Channels"
           ]
         }
       },
@@ -5203,10 +5203,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "GET /api/v4/teams/{team_id}/channels/autocomplete"
+            "Autocomplete Channels"
           ]
         }
       },
@@ -5221,10 +5221,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "GET /api/v4/teams/{team_id}/channels/autocomplete"
+            "Autocomplete Channels"
           ]
         }
       },
@@ -5239,10 +5239,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "GET /api/v4/teams/{team_id}/channels/search_autocomplete"
+            "Autocomplete Channels For Search"
           ]
         }
       },
@@ -5257,10 +5257,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "GET /api/v4/teams/{team_id}/channels/search_autocomplete"
+            "Autocomplete Channels For Search"
           ]
         }
       },
@@ -5275,10 +5275,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "POST /api/v4/teams/{team_id}/channels/search"
+            "Search Channels"
           ]
         }
       },
@@ -5293,10 +5293,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "POST /api/v4/teams/{team_id}/channels/search"
+            "Search Channels"
           ]
         }
       },
@@ -5311,10 +5311,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "POST /api/v4/teams/{team_id}/channels/search_archived"
+            "Search Archived Channels"
           ]
         }
       },
@@ -5329,10 +5329,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "POST /api/v4/teams/{team_id}/channels/search_archived"
+            "Search Archived Channels"
           ]
         }
       },
@@ -5347,10 +5347,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "GET /api/v4/teams/{team_id}/channels/name/{channel_name}"
+            "Get A Channel By Name"
           ]
         }
       },
@@ -5365,10 +5365,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "GET /api/v4/teams/{team_id}/channels/name/{channel_name}"
+            "Get A Channel By Name"
           ]
         }
       },
@@ -5384,10 +5384,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "GET /api/v4/teams/{team_id}/channels/name/{channel_name}"
+            "Get A Channel By Name"
           ]
         }
       },
@@ -5409,10 +5409,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "GET /api/v4/teams/name/{team_name}/channels/name/{channel_name}"
+            "Get A Channel By Name And Team Name"
           ]
         }
       },
@@ -5427,10 +5427,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "GET /api/v4/teams/name/{team_name}/channels/name/{channel_name}"
+            "Get A Channel By Name And Team Name"
           ]
         }
       },
@@ -5446,10 +5446,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "GET /api/v4/teams/name/{team_name}/channels/name/{channel_name}"
+            "Get A Channel By Name And Team Name"
           ]
         }
       },
@@ -5471,10 +5471,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "GET /api/v4/channels/{channel_id}/members"
+            "Get Channel Members"
           ]
         }
       },
@@ -5490,10 +5490,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "GET /api/v4/channels/{channel_id}/members"
+            "Get Channel Members"
           ]
         }
       },
@@ -5522,10 +5522,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "POST /api/v4/channels/{channel_id}/members"
+            "Add User(s) To Channel"
           ]
         }
       },
@@ -5541,10 +5541,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "POST /api/v4/channels/{channel_id}/members"
+            "Add User(s) To Channel"
           ]
         }
       },
@@ -5580,10 +5580,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "POST /api/v4/channels/{channel_id}/members/ids"
+            "Get Channel Members By Ids"
           ]
         }
       },
@@ -5599,10 +5599,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "POST /api/v4/channels/{channel_id}/members/ids"
+            "Get Channel Members By Ids"
           ]
         }
       }
@@ -5615,10 +5615,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "GET /api/v4/channels/{channel_id}/members/{user_id}"
+            "Get Channel Member"
           ]
         }
       },
@@ -5633,10 +5633,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "GET /api/v4/channels/{channel_id}/members/{user_id}"
+            "Get Channel Member"
           ]
         }
       },
@@ -5651,10 +5651,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "DELETE /api/v4/channels/{channel_id}/members/{user_id}"
+            "Remove User From Channel"
           ]
         }
       },
@@ -5669,10 +5669,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "DELETE /api/v4/channels/{channel_id}/members/{user_id}"
+            "Remove User From Channel"
           ]
         }
       },
@@ -5687,10 +5687,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "PUT /api/v4/channels/{channel_id}/members/{user_id}/roles"
+            "Update Channel Roles"
           ]
         }
       },
@@ -5705,10 +5705,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "PUT /api/v4/channels/{channel_id}/members/{user_id}/roles"
+            "Update Channel Roles"
           ]
         }
       },
@@ -5723,10 +5723,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "PUT /api/v4/channels/{channel_id}/members/{user_id}/roles"
+            "Update Channel Roles"
           ]
         }
       },
@@ -5740,10 +5740,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "PUT /api/v4/channels/{channel_id}/members/{user_id}/schemeRoles"
+            "Update The Scheme Derived Roles Of A Channel Member."
           ]
         }
       },
@@ -5758,10 +5758,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "PUT /api/v4/channels/{channel_id}/members/{user_id}/schemeRoles"
+            "Update The Scheme Derived Roles Of A Channel Member."
           ]
         }
       },
@@ -5776,10 +5776,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "PUT /api/v4/channels/{channel_id}/members/{user_id}/schemeRoles"
+            "Update The Scheme Derived Roles Of A Channel Member."
           ]
         }
       },
@@ -5793,10 +5793,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "PUT /api/v4/channels/{channel_id}/members/{user_id}/schemeRoles"
+            "Update The Scheme Derived Roles Of A Channel Member."
           ]
         }
       },
@@ -5810,10 +5810,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "PUT /api/v4/channels/{channel_id}/members/{user_id}/notify_props"
+            "Update Channel Notifications"
           ]
         }
       },
@@ -5828,10 +5828,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "PUT /api/v4/channels/{channel_id}/members/{user_id}/notify_props"
+            "Update Channel Notifications"
           ]
         }
       },
@@ -5847,10 +5847,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "PUT /api/v4/channels/{channel_id}/members/{user_id}/notify_props"
+            "Update Channel Notifications"
           ]
         }
       },
@@ -5893,10 +5893,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "POST /api/v4/channels/members/{user_id}/view"
+            "View Channel"
           ]
         }
       },
@@ -5911,10 +5911,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "POST /api/v4/channels/members/{user_id}/view"
+            "View Channel"
           ]
         }
       },
@@ -5930,10 +5930,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "POST /api/v4/channels/members/{user_id}/view"
+            "View Channel"
           ]
         }
       },
@@ -5955,10 +5955,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "GET /api/v4/users/{user_id}/teams/{team_id}/channels/members"
+            "Get Channel Memberships And Roles For A User"
           ]
         }
       },
@@ -5973,10 +5973,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "GET /api/v4/users/{user_id}/teams/{team_id}/channels/members"
+            "Get Channel Memberships And Roles For A User"
           ]
         }
       },
@@ -5991,10 +5991,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "GET /api/v4/users/{user_id}/teams/{team_id}/channels"
+            "Get Channels For User"
           ]
         }
       },
@@ -6009,10 +6009,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "GET /api/v4/users/{user_id}/teams/{team_id}/channels"
+            "Get Channels For User"
           ]
         }
       },
@@ -6028,10 +6028,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "GET /api/v4/users/{user_id}/teams/{team_id}/channels"
+            "Get Channels For User"
           ]
         }
       },
@@ -6060,10 +6060,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "GET /api/v4/users/{user_id}/channels"
+            "Get All Channels"
           ]
         }
       },
@@ -6079,10 +6079,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "GET /api/v4/users/{user_id}/channels"
+            "Get All Channels"
           ]
         }
       },
@@ -6111,10 +6111,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "GET /api/v4/users/{user_id}/channels/{channel_id}/unread"
+            "Get Unread Messages"
           ]
         }
       },
@@ -6129,10 +6129,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "GET /api/v4/users/{user_id}/channels/{channel_id}/unread"
+            "Get Unread Messages"
           ]
         }
       },
@@ -6147,10 +6147,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "PUT /api/v4/channels/{channel_id}/scheme"
+            "Set A Channel's Scheme"
           ]
         }
       },
@@ -6165,10 +6165,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "PUT /api/v4/channels/{channel_id}/scheme"
+            "Set A Channel's Scheme"
           ]
         }
       },
@@ -6183,10 +6183,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "GET /api/v4/channels/{channel_id}/moderations"
+            "Get Information About Channel's Moderation."
           ]
         }
       },
@@ -6201,10 +6201,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "PUT /api/v4/channels/{channel_id}/moderations/patch"
+            "Update A Channel's Moderation Settings."
           ]
         }
       },
@@ -6220,10 +6220,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "PUT /api/v4/channels/{channel_id}/moderations/patch"
+            "Update A Channel's Moderation Settings."
           ]
         }
       },
@@ -6250,10 +6250,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "GET /api/v4/users/{user_id}/teams/{team_id}/channels/categories"
+            "Get User's Sidebar Categories"
           ]
         }
       },
@@ -6268,10 +6268,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "GET /api/v4/users/{user_id}/teams/{team_id}/channels/categories"
+            "Get User's Sidebar Categories"
           ]
         }
       },
@@ -6286,10 +6286,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "POST /api/v4/users/{user_id}/teams/{team_id}/channels/categories"
+            "Create User's Sidebar Category"
           ]
         }
       },
@@ -6304,10 +6304,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "POST /api/v4/users/{user_id}/teams/{team_id}/channels/categories"
+            "Create User's Sidebar Category"
           ]
         }
       },
@@ -6323,10 +6323,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "POST /api/v4/users/{user_id}/teams/{team_id}/channels/categories"
+            "Create User's Sidebar Category"
           ]
         }
       },
@@ -6389,10 +6389,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "PUT /api/v4/users/{user_id}/teams/{team_id}/channels/categories"
+            "Update User's Sidebar Categories"
           ]
         }
       },
@@ -6407,10 +6407,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "PUT /api/v4/users/{user_id}/teams/{team_id}/channels/categories"
+            "Update User's Sidebar Categories"
           ]
         }
       },
@@ -6426,10 +6426,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "PUT /api/v4/users/{user_id}/teams/{team_id}/channels/categories"
+            "Update User's Sidebar Categories"
           ]
         }
       }
@@ -6442,10 +6442,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "GET /api/v4/users/{user_id}/teams/{team_id}/channels/categories/order"
+            "Get User's Sidebar Category Order"
           ]
         }
       },
@@ -6460,10 +6460,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "GET /api/v4/users/{user_id}/teams/{team_id}/channels/categories/order"
+            "Get User's Sidebar Category Order"
           ]
         }
       },
@@ -6478,10 +6478,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "PUT /api/v4/users/{user_id}/teams/{team_id}/channels/categories/order"
+            "Update User's Sidebar Category Order"
           ]
         }
       },
@@ -6496,10 +6496,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "PUT /api/v4/users/{user_id}/teams/{team_id}/channels/categories/order"
+            "Update User's Sidebar Category Order"
           ]
         }
       },
@@ -6515,10 +6515,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "PUT /api/v4/users/{user_id}/teams/{team_id}/channels/categories/order"
+            "Update User's Sidebar Category Order"
           ]
         }
       }
@@ -6531,10 +6531,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "GET /api/v4/users/{user_id}/teams/{team_id}/channels/categories/{category_id}"
+            "Get Sidebar Category"
           ]
         }
       },
@@ -6549,10 +6549,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "GET /api/v4/users/{user_id}/teams/{team_id}/channels/categories/{category_id}"
+            "Get Sidebar Category"
           ]
         }
       },
@@ -6567,10 +6567,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "GET /api/v4/users/{user_id}/teams/{team_id}/channels/categories/{category_id}"
+            "Get Sidebar Category"
           ]
         }
       },
@@ -6585,10 +6585,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "PUT /api/v4/users/{user_id}/teams/{team_id}/channels/categories/{category_id}"
+            "Update Sidebar Category"
           ]
         }
       },
@@ -6603,10 +6603,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "PUT /api/v4/users/{user_id}/teams/{team_id}/channels/categories/{category_id}"
+            "Update Sidebar Category"
           ]
         }
       },
@@ -6621,10 +6621,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "PUT /api/v4/users/{user_id}/teams/{team_id}/channels/categories/{category_id}"
+            "Update Sidebar Category"
           ]
         }
       },
@@ -6640,10 +6640,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "PUT /api/v4/users/{user_id}/teams/{team_id}/channels/categories/{category_id}"
+            "Update Sidebar Category"
           ]
         }
       },
@@ -6712,10 +6712,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "DELETE /api/v4/users/{user_id}/teams/{team_id}/channels/categories/{category_id}"
+            "Delete Sidebar Category"
           ]
         }
       },
@@ -6730,10 +6730,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "DELETE /api/v4/users/{user_id}/teams/{team_id}/channels/categories/{category_id}"
+            "Delete Sidebar Category"
           ]
         }
       },
@@ -6748,10 +6748,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "channels"
+            "Channels"
           ],
           "operation": [
-            "DELETE /api/v4/users/{user_id}/teams/{team_id}/channels/categories/{category_id}"
+            "Delete Sidebar Category"
           ]
         }
       },
@@ -6765,49 +6765,49 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "commands"
+            "Commands"
           ]
         }
       },
       "options": [
         {
           "name": "List Commands For A Team",
-          "value": "GET /api/v4/commands"
+          "value": "List Commands For A Team"
         },
         {
           "name": "Create A Command",
-          "value": "POST /api/v4/commands"
+          "value": "Create A Command"
         },
         {
           "name": "List Autocomplete Commands",
-          "value": "GET /api/v4/teams/{team_id}/commands/autocomplete"
+          "value": "List Autocomplete Commands"
         },
         {
           "name": "List Commands' Autocomplete Data",
-          "value": "GET /api/v4/teams/{team_id}/commands/autocomplete_suggestions"
+          "value": "List Commands' Autocomplete Data"
         },
         {
           "name": "Get A Command",
-          "value": "GET /api/v4/commands/{command_id}"
+          "value": "Get A Command"
         },
         {
           "name": "Update A Command",
-          "value": "PUT /api/v4/commands/{command_id}"
+          "value": "Update A Command"
         },
         {
           "name": "Delete A Command",
-          "value": "DELETE /api/v4/commands/{command_id}"
+          "value": "Delete A Command"
         },
         {
           "name": "Generate A New Token",
-          "value": "PUT /api/v4/commands/{command_id}/regen_token"
+          "value": "Generate A New Token"
         },
         {
           "name": "Execute A Command",
-          "value": "POST /api/v4/commands/execute"
+          "value": "Execute A Command"
         }
       ],
-      "default": "GET /api/v4/commands",
+      "default": "List Commands For A Team",
       "noDataExpression": true
     },
     {
@@ -6819,10 +6819,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "commands"
+            "Commands"
           ],
           "operation": [
-            "GET /api/v4/commands"
+            "List Commands For A Team"
           ]
         }
       },
@@ -6851,10 +6851,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "commands"
+            "Commands"
           ],
           "operation": [
-            "POST /api/v4/commands"
+            "Create A Command"
           ]
         }
       },
@@ -6869,10 +6869,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "commands"
+            "Commands"
           ],
           "operation": [
-            "POST /api/v4/commands"
+            "Create A Command"
           ]
         }
       },
@@ -6887,10 +6887,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "commands"
+            "Commands"
           ],
           "operation": [
-            "POST /api/v4/commands"
+            "Create A Command"
           ]
         }
       },
@@ -6905,10 +6905,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "commands"
+            "Commands"
           ],
           "operation": [
-            "POST /api/v4/commands"
+            "Create A Command"
           ]
         }
       },
@@ -6923,10 +6923,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "commands"
+            "Commands"
           ],
           "operation": [
-            "GET /api/v4/teams/{team_id}/commands/autocomplete"
+            "List Autocomplete Commands"
           ]
         }
       },
@@ -6941,10 +6941,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "commands"
+            "Commands"
           ],
           "operation": [
-            "GET /api/v4/teams/{team_id}/commands/autocomplete_suggestions"
+            "List Commands' Autocomplete Data"
           ]
         }
       },
@@ -6959,10 +6959,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "commands"
+            "Commands"
           ],
           "operation": [
-            "GET /api/v4/teams/{team_id}/commands/autocomplete_suggestions"
+            "List Commands' Autocomplete Data"
           ]
         }
       },
@@ -6977,10 +6977,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "commands"
+            "Commands"
           ],
           "operation": [
-            "GET /api/v4/commands/{command_id}"
+            "Get A Command"
           ]
         }
       },
@@ -6995,10 +6995,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "commands"
+            "Commands"
           ],
           "operation": [
-            "PUT /api/v4/commands/{command_id}"
+            "Update A Command"
           ]
         }
       },
@@ -7014,10 +7014,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "commands"
+            "Commands"
           ],
           "operation": [
-            "PUT /api/v4/commands/{command_id}"
+            "Update A Command"
           ]
         }
       },
@@ -7151,10 +7151,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "commands"
+            "Commands"
           ],
           "operation": [
-            "DELETE /api/v4/commands/{command_id}"
+            "Delete A Command"
           ]
         }
       },
@@ -7169,10 +7169,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "commands"
+            "Commands"
           ],
           "operation": [
-            "PUT /api/v4/commands/{command_id}/regen_token"
+            "Generate A New Token"
           ]
         }
       },
@@ -7187,10 +7187,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "commands"
+            "Commands"
           ],
           "operation": [
-            "POST /api/v4/commands/execute"
+            "Execute A Command"
           ]
         }
       },
@@ -7205,10 +7205,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "commands"
+            "Commands"
           ],
           "operation": [
-            "POST /api/v4/commands/execute"
+            "Execute A Command"
           ]
         }
       },
@@ -7222,45 +7222,45 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "emoji"
+            "Emoji"
           ]
         }
       },
       "options": [
         {
           "name": "Get A List Of Custom Emoji",
-          "value": "GET /api/v4/emoji"
+          "value": "Get A List Of Custom Emoji"
         },
         {
           "name": "Create A Custom Emoji",
-          "value": "POST /api/v4/emoji"
+          "value": "Create A Custom Emoji"
         },
         {
           "name": "Get A Custom Emoji",
-          "value": "GET /api/v4/emoji/{emoji_id}"
+          "value": "Get A Custom Emoji"
         },
         {
           "name": "Delete A Custom Emoji",
-          "value": "DELETE /api/v4/emoji/{emoji_id}"
+          "value": "Delete A Custom Emoji"
         },
         {
           "name": "Get A Custom Emoji By Name",
-          "value": "GET /api/v4/emoji/name/{emoji_name}"
+          "value": "Get A Custom Emoji By Name"
         },
         {
           "name": "Get Custom Emoji Image",
-          "value": "GET /api/v4/emoji/{emoji_id}/image"
+          "value": "Get Custom Emoji Image"
         },
         {
           "name": "Search Custom Emoji",
-          "value": "POST /api/v4/emoji/search"
+          "value": "Search Custom Emoji"
         },
         {
           "name": "Autocomplete Custom Emoji",
-          "value": "GET /api/v4/emoji/autocomplete"
+          "value": "Autocomplete Custom Emoji"
         }
       ],
-      "default": "GET /api/v4/emoji",
+      "default": "Get A List Of Custom Emoji",
       "noDataExpression": true
     },
     {
@@ -7272,10 +7272,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "emoji"
+            "Emoji"
           ],
           "operation": [
-            "GET /api/v4/emoji"
+            "Get A List Of Custom Emoji"
           ]
         }
       },
@@ -7311,10 +7311,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "emoji"
+            "Emoji"
           ],
           "operation": [
-            "POST /api/v4/emoji"
+            "Create A Custom Emoji"
           ]
         }
       },
@@ -7329,10 +7329,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "emoji"
+            "Emoji"
           ],
           "operation": [
-            "POST /api/v4/emoji"
+            "Create A Custom Emoji"
           ]
         }
       },
@@ -7347,10 +7347,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "emoji"
+            "Emoji"
           ],
           "operation": [
-            "GET /api/v4/emoji/{emoji_id}"
+            "Get A Custom Emoji"
           ]
         }
       },
@@ -7365,10 +7365,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "emoji"
+            "Emoji"
           ],
           "operation": [
-            "DELETE /api/v4/emoji/{emoji_id}"
+            "Delete A Custom Emoji"
           ]
         }
       },
@@ -7383,10 +7383,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "emoji"
+            "Emoji"
           ],
           "operation": [
-            "GET /api/v4/emoji/name/{emoji_name}"
+            "Get A Custom Emoji By Name"
           ]
         }
       },
@@ -7401,10 +7401,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "emoji"
+            "Emoji"
           ],
           "operation": [
-            "GET /api/v4/emoji/{emoji_id}/image"
+            "Get Custom Emoji Image"
           ]
         }
       },
@@ -7419,10 +7419,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "emoji"
+            "Emoji"
           ],
           "operation": [
-            "POST /api/v4/emoji/search"
+            "Search Custom Emoji"
           ]
         }
       },
@@ -7438,10 +7438,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "emoji"
+            "Emoji"
           ],
           "operation": [
-            "POST /api/v4/emoji/search"
+            "Search Custom Emoji"
           ]
         }
       },
@@ -7463,10 +7463,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "emoji"
+            "Emoji"
           ],
           "operation": [
-            "GET /api/v4/emoji/autocomplete"
+            "Autocomplete Custom Emoji"
           ]
         }
       },
@@ -7480,33 +7480,33 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "files"
+            "Files"
           ]
         }
       },
       "options": [
         {
           "name": "Upload A File",
-          "value": "POST /api/v4/files"
+          "value": "Upload A File"
         },
         {
           "name": "Get A File",
-          "value": "GET /api/v4/files/{file_id}"
+          "value": "Get A File"
         },
         {
           "name": "Get A File's Thumbnail",
-          "value": "GET /api/v4/files/{file_id}/thumbnail"
+          "value": "Get A File's Thumbnail"
         },
         {
           "name": "Get A File's Preview",
-          "value": "GET /api/v4/files/{file_id}/preview"
+          "value": "Get A File's Preview"
         },
         {
           "name": "Get Metadata For A File",
-          "value": "GET /api/v4/files/{file_id}/info"
+          "value": "Get Metadata For A File"
         }
       ],
-      "default": "POST /api/v4/files",
+      "default": "Upload A File",
       "noDataExpression": true
     },
     {
@@ -7518,10 +7518,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "files"
+            "Files"
           ],
           "operation": [
-            "POST /api/v4/files"
+            "Upload A File"
           ]
         }
       },
@@ -7550,10 +7550,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "files"
+            "Files"
           ],
           "operation": [
-            "POST /api/v4/files"
+            "Upload A File"
           ]
         }
       },
@@ -7568,10 +7568,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "files"
+            "Files"
           ],
           "operation": [
-            "GET /api/v4/files/{file_id}"
+            "Get A File"
           ]
         }
       },
@@ -7586,10 +7586,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "files"
+            "Files"
           ],
           "operation": [
-            "GET /api/v4/files/{file_id}/thumbnail"
+            "Get A File's Thumbnail"
           ]
         }
       },
@@ -7604,10 +7604,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "files"
+            "Files"
           ],
           "operation": [
-            "GET /api/v4/files/{file_id}/preview"
+            "Get A File's Preview"
           ]
         }
       },
@@ -7622,10 +7622,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "files"
+            "Files"
           ],
           "operation": [
-            "GET /api/v4/files/{file_id}/info"
+            "Get Metadata For A File"
           ]
         }
       },
@@ -7639,33 +7639,33 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "groups"
+            "Groups"
           ]
         }
       },
       "options": [
         {
           "name": "Get Groups",
-          "value": "GET /api/v4/groups"
+          "value": "Get Groups"
         },
         {
           "name": "Get Channel Groups",
-          "value": "GET /api/v4/channels/{channel_id}/groups"
+          "value": "Get Channel Groups"
         },
         {
           "name": "Get Team Groups",
-          "value": "GET /api/v4/teams/{team_id}/groups"
+          "value": "Get Team Groups"
         },
         {
           "name": "Get Team Groups By Channels",
-          "value": "GET /api/v4/teams/{team_id}/groups_by_channels"
+          "value": "Get Team Groups By Channels"
         },
         {
           "name": "Get Groups For A User ID",
-          "value": "GET /api/v4/users/{user_id}/groups"
+          "value": "Get Groups For A User ID"
         }
       ],
-      "default": "GET /api/v4/groups",
+      "default": "Get Groups",
       "noDataExpression": true
     },
     {
@@ -7676,10 +7676,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "groups"
+            "Groups"
           ],
           "operation": [
-            "GET /api/v4/groups"
+            "Get Groups"
           ]
         }
       },
@@ -7694,10 +7694,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "groups"
+            "Groups"
           ],
           "operation": [
-            "GET /api/v4/groups"
+            "Get Groups"
           ]
         }
       },
@@ -7713,10 +7713,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "groups"
+            "Groups"
           ],
           "operation": [
-            "GET /api/v4/groups"
+            "Get Groups"
           ]
         }
       },
@@ -7773,10 +7773,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "groups"
+            "Groups"
           ],
           "operation": [
-            "GET /api/v4/channels/{channel_id}/groups"
+            "Get Channel Groups"
           ]
         }
       },
@@ -7792,10 +7792,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "groups"
+            "Groups"
           ],
           "operation": [
-            "GET /api/v4/channels/{channel_id}/groups"
+            "Get Channel Groups"
           ]
         }
       },
@@ -7831,10 +7831,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "groups"
+            "Groups"
           ],
           "operation": [
-            "GET /api/v4/teams/{team_id}/groups"
+            "Get Team Groups"
           ]
         }
       },
@@ -7850,10 +7850,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "groups"
+            "Groups"
           ],
           "operation": [
-            "GET /api/v4/teams/{team_id}/groups"
+            "Get Team Groups"
           ]
         }
       },
@@ -7889,10 +7889,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "groups"
+            "Groups"
           ],
           "operation": [
-            "GET /api/v4/teams/{team_id}/groups_by_channels"
+            "Get Team Groups By Channels"
           ]
         }
       },
@@ -7908,10 +7908,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "groups"
+            "Groups"
           ],
           "operation": [
-            "GET /api/v4/teams/{team_id}/groups_by_channels"
+            "Get Team Groups By Channels"
           ]
         }
       },
@@ -7954,10 +7954,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "groups"
+            "Groups"
           ],
           "operation": [
-            "GET /api/v4/users/{user_id}/groups"
+            "Get Groups For A User ID"
           ]
         }
       },
@@ -7971,45 +7971,45 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "insights"
+            "Insights"
           ]
         }
       },
       "options": [
         {
           "name": "Get A List Of The Top Reactions For A Team.",
-          "value": "GET /api/v4/teams/{team_id}/top/reactions"
+          "value": "Get A List Of The Top Reactions For A Team."
         },
         {
           "name": "Get A List Of The Top Reactions For A User.",
-          "value": "GET /api/v4/users/me/top/reactions"
+          "value": "Get A List Of The Top Reactions For A User."
         },
         {
           "name": "Get A List Of The Top Channels For A Team.",
-          "value": "GET /api/v4/teams/{team_id}/top/channels"
+          "value": "Get A List Of The Top Channels For A Team."
         },
         {
           "name": "Get A List Of The Top Channels For A User.",
-          "value": "GET /api/v4/users/me/top/channels"
+          "value": "Get A List Of The Top Channels For A User."
         },
         {
           "name": "Get A List Of New Team Members.",
-          "value": "GET /api/v4/teams/{team_id}/top/team_members"
+          "value": "Get A List Of New Team Members."
         },
         {
           "name": "Get A List Of The Top Threads For A Team.",
-          "value": "GET /api/v4/teams/{team_id}/top/threads"
+          "value": "Get A List Of The Top Threads For A Team."
         },
         {
           "name": "Get A List Of The Top Threads For A User.",
-          "value": "GET /api/v4/users/me/top/threads"
+          "value": "Get A List Of The Top Threads For A User."
         },
         {
           "name": "Get A List Of The Top Dms For A User.",
-          "value": "GET /api/v4/users/me/top/dms"
+          "value": "Get A List Of The Top Dms For A User."
         }
       ],
-      "default": "GET /api/v4/teams/{team_id}/top/reactions",
+      "default": "Get A List Of The Top Reactions For A Team.",
       "noDataExpression": true
     },
     {
@@ -8020,10 +8020,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "insights"
+            "Insights"
           ],
           "operation": [
-            "GET /api/v4/teams/{team_id}/top/reactions"
+            "Get A List Of The Top Reactions For A Team."
           ]
         }
       },
@@ -8038,10 +8038,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "insights"
+            "Insights"
           ],
           "operation": [
-            "GET /api/v4/teams/{team_id}/top/reactions"
+            "Get A List Of The Top Reactions For A Team."
           ]
         }
       },
@@ -8057,10 +8057,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "insights"
+            "Insights"
           ],
           "operation": [
-            "GET /api/v4/teams/{team_id}/top/reactions"
+            "Get A List Of The Top Reactions For A Team."
           ]
         }
       },
@@ -8089,10 +8089,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "insights"
+            "Insights"
           ],
           "operation": [
-            "GET /api/v4/users/me/top/reactions"
+            "Get A List Of The Top Reactions For A User."
           ]
         }
       },
@@ -8108,10 +8108,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "insights"
+            "Insights"
           ],
           "operation": [
-            "GET /api/v4/users/me/top/reactions"
+            "Get A List Of The Top Reactions For A User."
           ]
         }
       },
@@ -8147,10 +8147,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "insights"
+            "Insights"
           ],
           "operation": [
-            "GET /api/v4/teams/{team_id}/top/channels"
+            "Get A List Of The Top Channels For A Team."
           ]
         }
       },
@@ -8165,10 +8165,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "insights"
+            "Insights"
           ],
           "operation": [
-            "GET /api/v4/teams/{team_id}/top/channels"
+            "Get A List Of The Top Channels For A Team."
           ]
         }
       },
@@ -8184,10 +8184,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "insights"
+            "Insights"
           ],
           "operation": [
-            "GET /api/v4/teams/{team_id}/top/channels"
+            "Get A List Of The Top Channels For A Team."
           ]
         }
       },
@@ -8216,10 +8216,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "insights"
+            "Insights"
           ],
           "operation": [
-            "GET /api/v4/users/me/top/channels"
+            "Get A List Of The Top Channels For A User."
           ]
         }
       },
@@ -8235,10 +8235,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "insights"
+            "Insights"
           ],
           "operation": [
-            "GET /api/v4/users/me/top/channels"
+            "Get A List Of The Top Channels For A User."
           ]
         }
       },
@@ -8274,10 +8274,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "insights"
+            "Insights"
           ],
           "operation": [
-            "GET /api/v4/teams/{team_id}/top/team_members"
+            "Get A List Of New Team Members."
           ]
         }
       },
@@ -8292,10 +8292,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "insights"
+            "Insights"
           ],
           "operation": [
-            "GET /api/v4/teams/{team_id}/top/team_members"
+            "Get A List Of New Team Members."
           ]
         }
       },
@@ -8311,10 +8311,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "insights"
+            "Insights"
           ],
           "operation": [
-            "GET /api/v4/teams/{team_id}/top/team_members"
+            "Get A List Of New Team Members."
           ]
         }
       },
@@ -8343,10 +8343,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "insights"
+            "Insights"
           ],
           "operation": [
-            "GET /api/v4/teams/{team_id}/top/threads"
+            "Get A List Of The Top Threads For A Team."
           ]
         }
       },
@@ -8361,10 +8361,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "insights"
+            "Insights"
           ],
           "operation": [
-            "GET /api/v4/teams/{team_id}/top/threads"
+            "Get A List Of The Top Threads For A Team."
           ]
         }
       },
@@ -8380,10 +8380,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "insights"
+            "Insights"
           ],
           "operation": [
-            "GET /api/v4/teams/{team_id}/top/threads"
+            "Get A List Of The Top Threads For A Team."
           ]
         }
       },
@@ -8412,10 +8412,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "insights"
+            "Insights"
           ],
           "operation": [
-            "GET /api/v4/users/me/top/threads"
+            "Get A List Of The Top Threads For A User."
           ]
         }
       },
@@ -8431,10 +8431,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "insights"
+            "Insights"
           ],
           "operation": [
-            "GET /api/v4/users/me/top/threads"
+            "Get A List Of The Top Threads For A User."
           ]
         }
       },
@@ -8470,10 +8470,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "insights"
+            "Insights"
           ],
           "operation": [
-            "GET /api/v4/users/me/top/dms"
+            "Get A List Of The Top Dms For A User."
           ]
         }
       },
@@ -8489,10 +8489,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "insights"
+            "Insights"
           ],
           "operation": [
-            "GET /api/v4/users/me/top/dms"
+            "Get A List Of The Top Dms For A User."
           ]
         }
       },
@@ -8520,81 +8520,81 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "posts"
+            "Posts"
           ]
         }
       },
       "options": [
         {
           "name": "Create A Post",
-          "value": "POST /api/v4/posts"
+          "value": "Create A Post"
         },
         {
           "name": "Create A Ephemeral Post",
-          "value": "POST /api/v4/posts/ephemeral"
+          "value": "Create A Ephemeral Post"
         },
         {
           "name": "Get A Post",
-          "value": "GET /api/v4/posts/{post_id}"
+          "value": "Get A Post"
         },
         {
           "name": "Delete A Post",
-          "value": "DELETE /api/v4/posts/{post_id}"
+          "value": "Delete A Post"
         },
         {
           "name": "Mark As Unread From A Post.",
-          "value": "POST /api/v4/users/{user_id}/posts/{post_id}/set_unread"
+          "value": "Mark As Unread From A Post."
         },
         {
           "name": "Patch A Post",
-          "value": "PUT /api/v4/posts/{post_id}/patch"
+          "value": "Patch A Post"
         },
         {
           "name": "Get A Thread",
-          "value": "GET /api/v4/posts/{post_id}/thread"
+          "value": "Get A Thread"
         },
         {
           "name": "Get A List Of Flagged Posts",
-          "value": "GET /api/v4/users/{user_id}/posts/flagged"
+          "value": "Get A List Of Flagged Posts"
         },
         {
           "name": "Get File Info For Post",
-          "value": "GET /api/v4/posts/{post_id}/files/info"
+          "value": "Get File Info For Post"
         },
         {
           "name": "Get Posts For A Channel",
-          "value": "GET /api/v4/channels/{channel_id}/posts"
+          "value": "Get Posts For A Channel"
         },
         {
           "name": "Get Posts Around Oldest Unread",
-          "value": "GET /api/v4/users/{user_id}/channels/{channel_id}/posts/unread"
+          "value": "Get Posts Around Oldest Unread"
         },
         {
           "name": "Search For Team Posts",
-          "value": "POST /api/v4/teams/{team_id}/posts/search"
+          "value": "Search For Team Posts"
         },
         {
           "name": "Pin A Post To The Channel",
-          "value": "POST /api/v4/posts/{post_id}/pin"
+          "value": "Pin A Post To The Channel"
         },
         {
           "name": "Unpin A Post To The Channel",
-          "value": "POST /api/v4/posts/{post_id}/unpin"
+          "value": "Unpin A Post To The Channel"
         },
         {
           "name": "Perform A Post Action",
-          "value": "POST /api/v4/posts/{post_id}/actions/{action_id}"
+          "value": "Perform A Post Action"
         },
         {
           "name": "Get Posts By A List Of Ids",
-          "value": "POST /api/v4/posts/ids"
+          "value": "Get Posts By A List Of Ids"
         },
         {
           "name": "Set A Post Reminder",
-          "value": "POST /api/v4/users/{user_id}/posts/{post_id}/reminder"
+          "value": "Set A Post Reminder"
         }
       ],
-      "default": "POST /api/v4/posts",
+      "default": "Create A Post",
       "noDataExpression": true
     },
     {
@@ -8606,10 +8606,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "posts"
+            "Posts"
           ],
           "operation": [
-            "POST /api/v4/posts"
+            "Create A Post"
           ]
         }
       },
@@ -8631,10 +8631,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "posts"
+            "Posts"
           ],
           "operation": [
-            "POST /api/v4/posts"
+            "Create A Post"
           ]
         }
       },
@@ -8649,10 +8649,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "posts"
+            "Posts"
           ],
           "operation": [
-            "POST /api/v4/posts"
+            "Create A Post"
           ]
         }
       },
@@ -8668,10 +8668,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "posts"
+            "Posts"
           ],
           "operation": [
-            "POST /api/v4/posts"
+            "Create A Post"
           ]
         }
       },
@@ -8707,10 +8707,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "posts"
+            "Posts"
           ],
           "operation": [
-            "POST /api/v4/posts/ephemeral"
+            "Create A Ephemeral Post"
           ]
         }
       },
@@ -8725,10 +8725,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "posts"
+            "Posts"
           ],
           "operation": [
-            "POST /api/v4/posts/ephemeral"
+            "Create A Ephemeral Post"
           ]
         }
       },
@@ -8743,10 +8743,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "posts"
+            "Posts"
           ],
           "operation": [
-            "GET /api/v4/posts/{post_id}"
+            "Get A Post"
           ]
         }
       },
@@ -8762,10 +8762,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "posts"
+            "Posts"
           ],
           "operation": [
-            "GET /api/v4/posts/{post_id}"
+            "Get A Post"
           ]
         }
       },
@@ -8787,10 +8787,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "posts"
+            "Posts"
           ],
           "operation": [
-            "DELETE /api/v4/posts/{post_id}"
+            "Delete A Post"
           ]
         }
       },
@@ -8805,10 +8805,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "posts"
+            "Posts"
           ],
           "operation": [
-            "POST /api/v4/users/{user_id}/posts/{post_id}/set_unread"
+            "Mark As Unread From A Post."
           ]
         }
       },
@@ -8823,10 +8823,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "posts"
+            "Posts"
           ],
           "operation": [
-            "POST /api/v4/users/{user_id}/posts/{post_id}/set_unread"
+            "Mark As Unread From A Post."
           ]
         }
       },
@@ -8841,10 +8841,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "posts"
+            "Posts"
           ],
           "operation": [
-            "PUT /api/v4/posts/{post_id}/patch"
+            "Patch A Post"
           ]
         }
       },
@@ -8860,10 +8860,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "posts"
+            "Posts"
           ],
           "operation": [
-            "PUT /api/v4/posts/{post_id}/patch"
+            "Patch A Post"
           ]
         }
       },
@@ -8899,10 +8899,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "posts"
+            "Posts"
           ],
           "operation": [
-            "GET /api/v4/posts/{post_id}/thread"
+            "Get A Thread"
           ]
         }
       },
@@ -8918,10 +8918,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "posts"
+            "Posts"
           ],
           "operation": [
-            "GET /api/v4/posts/{post_id}/thread"
+            "Get A Thread"
           ]
         }
       },
@@ -8985,10 +8985,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "posts"
+            "Posts"
           ],
           "operation": [
-            "GET /api/v4/users/{user_id}/posts/flagged"
+            "Get A List Of Flagged Posts"
           ]
         }
       },
@@ -9004,10 +9004,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "posts"
+            "Posts"
           ],
           "operation": [
-            "GET /api/v4/users/{user_id}/posts/flagged"
+            "Get A List Of Flagged Posts"
           ]
         }
       },
@@ -9050,10 +9050,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "posts"
+            "Posts"
           ],
           "operation": [
-            "GET /api/v4/posts/{post_id}/files/info"
+            "Get File Info For Post"
           ]
         }
       },
@@ -9069,10 +9069,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "posts"
+            "Posts"
           ],
           "operation": [
-            "GET /api/v4/posts/{post_id}/files/info"
+            "Get File Info For Post"
           ]
         }
       },
@@ -9094,10 +9094,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "posts"
+            "Posts"
           ],
           "operation": [
-            "GET /api/v4/channels/{channel_id}/posts"
+            "Get Posts For A Channel"
           ]
         }
       },
@@ -9113,10 +9113,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "posts"
+            "Posts"
           ],
           "operation": [
-            "GET /api/v4/channels/{channel_id}/posts"
+            "Get Posts For A Channel"
           ]
         }
       },
@@ -9173,10 +9173,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "posts"
+            "Posts"
           ],
           "operation": [
-            "GET /api/v4/users/{user_id}/channels/{channel_id}/posts/unread"
+            "Get Posts Around Oldest Unread"
           ]
         }
       },
@@ -9191,10 +9191,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "posts"
+            "Posts"
           ],
           "operation": [
-            "GET /api/v4/users/{user_id}/channels/{channel_id}/posts/unread"
+            "Get Posts Around Oldest Unread"
           ]
         }
       },
@@ -9210,10 +9210,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "posts"
+            "Posts"
           ],
           "operation": [
-            "GET /api/v4/users/{user_id}/channels/{channel_id}/posts/unread"
+            "Get Posts Around Oldest Unread"
           ]
         }
       },
@@ -9263,10 +9263,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "posts"
+            "Posts"
           ],
           "operation": [
-            "POST /api/v4/teams/{team_id}/posts/search"
+            "Search For Team Posts"
           ]
         }
       },
@@ -9281,10 +9281,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "posts"
+            "Posts"
           ],
           "operation": [
-            "POST /api/v4/teams/{team_id}/posts/search"
+            "Search For Team Posts"
           ]
         }
       },
@@ -9299,10 +9299,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "posts"
+            "Posts"
           ],
           "operation": [
-            "POST /api/v4/teams/{team_id}/posts/search"
+            "Search For Team Posts"
           ]
         }
       },
@@ -9318,10 +9318,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "posts"
+            "Posts"
           ],
           "operation": [
-            "POST /api/v4/teams/{team_id}/posts/search"
+            "Search For Team Posts"
           ]
         }
       },
@@ -9364,10 +9364,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "posts"
+            "Posts"
           ],
           "operation": [
-            "POST /api/v4/posts/{post_id}/pin"
+            "Pin A Post To The Channel"
           ]
         }
       },
@@ -9382,10 +9382,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "posts"
+            "Posts"
           ],
           "operation": [
-            "POST /api/v4/posts/{post_id}/unpin"
+            "Unpin A Post To The Channel"
           ]
         }
       },
@@ -9400,10 +9400,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "posts"
+            "Posts"
           ],
           "operation": [
-            "POST /api/v4/posts/{post_id}/actions/{action_id}"
+            "Perform A Post Action"
           ]
         }
       },
@@ -9418,10 +9418,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "posts"
+            "Posts"
           ],
           "operation": [
-            "POST /api/v4/posts/{post_id}/actions/{action_id}"
+            "Perform A Post Action"
           ]
         }
       },
@@ -9437,10 +9437,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "posts"
+            "Posts"
           ],
           "operation": [
-            "POST /api/v4/posts/ids"
+            "Get Posts By A List Of Ids"
           ]
         }
       }
@@ -9453,10 +9453,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "posts"
+            "Posts"
           ],
           "operation": [
-            "POST /api/v4/users/{user_id}/posts/{post_id}/reminder"
+            "Set A Post Reminder"
           ]
         }
       },
@@ -9471,10 +9471,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "posts"
+            "Posts"
           ],
           "operation": [
-            "POST /api/v4/users/{user_id}/posts/{post_id}/reminder"
+            "Set A Post Reminder"
           ]
         }
       },
@@ -9489,10 +9489,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "posts"
+            "Posts"
           ],
           "operation": [
-            "POST /api/v4/users/{user_id}/posts/{post_id}/reminder"
+            "Set A Post Reminder"
           ]
         }
       },
@@ -9506,33 +9506,33 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "preferences"
+            "Preferences"
           ]
         }
       },
       "options": [
         {
           "name": "Get The User's Preferences",
-          "value": "GET /api/v4/users/{user_id}/preferences"
+          "value": "Get The User's Preferences"
         },
         {
           "name": "Save The User's Preferences",
-          "value": "PUT /api/v4/users/{user_id}/preferences"
+          "value": "Save The User's Preferences"
         },
         {
           "name": "Delete User's Preferences",
-          "value": "POST /api/v4/users/{user_id}/preferences/delete"
+          "value": "Delete User's Preferences"
         },
         {
           "name": "List A User's Preferences By Category",
-          "value": "GET /api/v4/users/{user_id}/preferences/{category}"
+          "value": "List A User's Preferences By Category"
         },
         {
           "name": "Get A Specific User Preference",
-          "value": "GET /api/v4/users/{user_id}/preferences/{category}/name/{preference_name}"
+          "value": "Get A Specific User Preference"
         }
       ],
-      "default": "GET /api/v4/users/{user_id}/preferences",
+      "default": "Get The User's Preferences",
       "noDataExpression": true
     },
     {
@@ -9543,10 +9543,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "preferences"
+            "Preferences"
           ],
           "operation": [
-            "GET /api/v4/users/{user_id}/preferences"
+            "Get The User's Preferences"
           ]
         }
       },
@@ -9561,45 +9561,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "preferences"
+            "Preferences"
           ],
           "operation": [
-            "PUT /api/v4/users/{user_id}/preferences"
-          ]
-        }
-      },
-      "required": true,
-      "description": "User GUID"
-    },
-    {
-      "displayName": "Body",
-      "name": "body",
-      "type": "json",
-      "default": {},
-      "required": true,
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "preferences"
-          ],
-          "operation": [
-            "PUT /api/v4/users/{user_id}/preferences"
-          ]
-        }
-      }
-    },
-    {
-      "displayName": "User Id",
-      "name": "path_user_id",
-      "type": "string",
-      "default": "",
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "preferences"
-          ],
-          "operation": [
-            "POST /api/v4/users/{user_id}/preferences/delete"
+            "Save The User's Preferences"
           ]
         }
       },
@@ -9615,10 +9580,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "preferences"
+            "Preferences"
           ],
           "operation": [
-            "POST /api/v4/users/{user_id}/preferences/delete"
+            "Save The User's Preferences"
           ]
         }
       }
@@ -9631,10 +9596,45 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "preferences"
+            "Preferences"
           ],
           "operation": [
-            "GET /api/v4/users/{user_id}/preferences/{category}"
+            "Delete User's Preferences"
+          ]
+        }
+      },
+      "required": true,
+      "description": "User GUID"
+    },
+    {
+      "displayName": "Body",
+      "name": "body",
+      "type": "json",
+      "default": {},
+      "required": true,
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "Preferences"
+          ],
+          "operation": [
+            "Delete User's Preferences"
+          ]
+        }
+      }
+    },
+    {
+      "displayName": "User Id",
+      "name": "path_user_id",
+      "type": "string",
+      "default": "",
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "Preferences"
+          ],
+          "operation": [
+            "List A User's Preferences By Category"
           ]
         }
       },
@@ -9649,10 +9649,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "preferences"
+            "Preferences"
           ],
           "operation": [
-            "GET /api/v4/users/{user_id}/preferences/{category}"
+            "List A User's Preferences By Category"
           ]
         }
       },
@@ -9667,10 +9667,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "preferences"
+            "Preferences"
           ],
           "operation": [
-            "GET /api/v4/users/{user_id}/preferences/{category}/name/{preference_name}"
+            "Get A Specific User Preference"
           ]
         }
       },
@@ -9685,10 +9685,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "preferences"
+            "Preferences"
           ],
           "operation": [
-            "GET /api/v4/users/{user_id}/preferences/{category}/name/{preference_name}"
+            "Get A Specific User Preference"
           ]
         }
       },
@@ -9703,10 +9703,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "preferences"
+            "Preferences"
           ],
           "operation": [
-            "GET /api/v4/users/{user_id}/preferences/{category}/name/{preference_name}"
+            "Get A Specific User Preference"
           ]
         }
       },
@@ -9720,25 +9720,25 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "reactions"
+            "Reactions"
           ]
         }
       },
       "options": [
         {
           "name": "Create A Reaction",
-          "value": "POST /api/v4/reactions"
+          "value": "Create A Reaction"
         },
         {
           "name": "Get A List Of Reactions To A Post",
-          "value": "GET /api/v4/posts/{post_id}/reactions"
+          "value": "Get A List Of Reactions To A Post"
         },
         {
           "name": "Remove A Reaction From A Post",
-          "value": "DELETE /api/v4/users/{user_id}/posts/{post_id}/reactions/{emoji_name}"
+          "value": "Remove A Reaction From A Post"
         }
       ],
-      "default": "POST /api/v4/reactions",
+      "default": "Create A Reaction",
       "noDataExpression": true
     },
     {
@@ -9750,10 +9750,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "reactions"
+            "Reactions"
           ],
           "operation": [
-            "POST /api/v4/reactions"
+            "Create A Reaction"
           ]
         }
       },
@@ -9796,10 +9796,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "reactions"
+            "Reactions"
           ],
           "operation": [
-            "GET /api/v4/posts/{post_id}/reactions"
+            "Get A List Of Reactions To A Post"
           ]
         }
       },
@@ -9814,10 +9814,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "reactions"
+            "Reactions"
           ],
           "operation": [
-            "DELETE /api/v4/users/{user_id}/posts/{post_id}/reactions/{emoji_name}"
+            "Remove A Reaction From A Post"
           ]
         }
       },
@@ -9832,10 +9832,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "reactions"
+            "Reactions"
           ],
           "operation": [
-            "DELETE /api/v4/users/{user_id}/posts/{post_id}/reactions/{emoji_name}"
+            "Remove A Reaction From A Post"
           ]
         }
       },
@@ -9850,10 +9850,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "reactions"
+            "Reactions"
           ],
           "operation": [
-            "DELETE /api/v4/users/{user_id}/posts/{post_id}/reactions/{emoji_name}"
+            "Remove A Reaction From A Post"
           ]
         }
       },
@@ -9867,29 +9867,29 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "roles"
+            "Roles"
           ]
         }
       },
       "options": [
         {
           "name": "Get A List Of All The Roles",
-          "value": "GET /api/v4/roles"
+          "value": "Get A List Of All The Roles"
         },
         {
           "name": "Get A Role",
-          "value": "GET /api/v4/roles/{role_id}"
+          "value": "Get A Role"
         },
         {
           "name": "Get A Role By Name",
-          "value": "GET /api/v4/roles/name/{role_name}"
+          "value": "Get A Role By Name"
         },
         {
           "name": "Get A List Of Roles By Name",
-          "value": "POST /api/v4/roles/names"
+          "value": "Get A List Of Roles By Name"
         }
       ],
-      "default": "GET /api/v4/roles",
+      "default": "Get A List Of All The Roles",
       "noDataExpression": true
     },
     {
@@ -9900,10 +9900,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "roles"
+            "Roles"
           ],
           "operation": [
-            "GET /api/v4/roles/{role_id}"
+            "Get A Role"
           ]
         }
       },
@@ -9918,10 +9918,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "roles"
+            "Roles"
           ],
           "operation": [
-            "GET /api/v4/roles/name/{role_name}"
+            "Get A Role By Name"
           ]
         }
       },
@@ -9937,10 +9937,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "roles"
+            "Roles"
           ],
           "operation": [
-            "POST /api/v4/roles/names"
+            "Get A List Of Roles By Name"
           ]
         }
       }
@@ -9952,37 +9952,37 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "status"
+            "Status"
           ]
         }
       },
       "options": [
         {
           "name": "Get User Status",
-          "value": "GET /api/v4/users/{user_id}/status"
+          "value": "Get User Status"
         },
         {
           "name": "Update User Status",
-          "value": "PUT /api/v4/users/{user_id}/status"
+          "value": "Update User Status"
         },
         {
           "name": "Get User Statuses By ID",
-          "value": "POST /api/v4/users/status/ids"
+          "value": "Get User Statuses By ID"
         },
         {
           "name": "Update User Custom Status",
-          "value": "PUT /api/v4/users/{user_id}/status/custom"
+          "value": "Update User Custom Status"
         },
         {
           "name": "Unsets User Custom Status",
-          "value": "DELETE /api/v4/users/{user_id}/status/custom"
+          "value": "Unsets User Custom Status"
         },
         {
           "name": "Delete User's Recent Custom Status",
-          "value": "POST /api/v4/users/{user_id}/status/custom/recent/delete"
+          "value": "Delete User's Recent Custom Status"
         }
       ],
-      "default": "GET /api/v4/users/{user_id}/status",
+      "default": "Get User Status",
       "noDataExpression": true
     },
     {
@@ -9993,10 +9993,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "status"
+            "Status"
           ],
           "operation": [
-            "GET /api/v4/users/{user_id}/status"
+            "Get User Status"
           ]
         }
       },
@@ -10011,10 +10011,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "status"
+            "Status"
           ],
           "operation": [
-            "PUT /api/v4/users/{user_id}/status"
+            "Update User Status"
           ]
         }
       },
@@ -10029,10 +10029,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "status"
+            "Status"
           ],
           "operation": [
-            "PUT /api/v4/users/{user_id}/status"
+            "Update User Status"
           ]
         }
       },
@@ -10047,10 +10047,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "status"
+            "Status"
           ],
           "operation": [
-            "PUT /api/v4/users/{user_id}/status"
+            "Update User Status"
           ]
         }
       },
@@ -10066,10 +10066,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "status"
+            "Status"
           ],
           "operation": [
-            "PUT /api/v4/users/{user_id}/status"
+            "Update User Status"
           ]
         }
       },
@@ -10092,10 +10092,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "status"
+            "Status"
           ],
           "operation": [
-            "POST /api/v4/users/status/ids"
+            "Get User Statuses By ID"
           ]
         }
       }
@@ -10108,10 +10108,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "status"
+            "Status"
           ],
           "operation": [
-            "PUT /api/v4/users/{user_id}/status/custom"
+            "Update User Custom Status"
           ]
         }
       },
@@ -10126,10 +10126,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "status"
+            "Status"
           ],
           "operation": [
-            "PUT /api/v4/users/{user_id}/status/custom"
+            "Update User Custom Status"
           ]
         }
       },
@@ -10144,10 +10144,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "status"
+            "Status"
           ],
           "operation": [
-            "PUT /api/v4/users/{user_id}/status/custom"
+            "Update User Custom Status"
           ]
         }
       },
@@ -10163,10 +10163,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "status"
+            "Status"
           ],
           "operation": [
-            "PUT /api/v4/users/{user_id}/status/custom"
+            "Update User Custom Status"
           ]
         }
       },
@@ -10195,10 +10195,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "status"
+            "Status"
           ],
           "operation": [
-            "DELETE /api/v4/users/{user_id}/status/custom"
+            "Unsets User Custom Status"
           ]
         }
       },
@@ -10213,10 +10213,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "status"
+            "Status"
           ],
           "operation": [
-            "POST /api/v4/users/{user_id}/status/custom/recent/delete"
+            "Delete User's Recent Custom Status"
           ]
         }
       },
@@ -10231,10 +10231,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "status"
+            "Status"
           ],
           "operation": [
-            "POST /api/v4/users/{user_id}/status/custom/recent/delete"
+            "Delete User's Recent Custom Status"
           ]
         }
       },
@@ -10249,10 +10249,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "status"
+            "Status"
           ],
           "operation": [
-            "POST /api/v4/users/{user_id}/status/custom/recent/delete"
+            "Delete User's Recent Custom Status"
           ]
         }
       },
@@ -10267,10 +10267,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "status"
+            "Status"
           ],
           "operation": [
-            "POST /api/v4/users/{user_id}/status/custom/recent/delete"
+            "Delete User's Recent Custom Status"
           ]
         }
       },
@@ -10285,10 +10285,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "status"
+            "Status"
           ],
           "operation": [
-            "POST /api/v4/users/{user_id}/status/custom/recent/delete"
+            "Delete User's Recent Custom Status"
           ]
         }
       },
@@ -10302,17 +10302,17 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "system"
+            "System"
           ]
         }
       },
       "options": [
         {
           "name": "Get Client Configuration",
-          "value": "GET /api/v4/config/client"
+          "value": "Get Client Configuration"
         }
       ],
-      "default": "GET /api/v4/config/client",
+      "default": "Get Client Configuration",
       "noDataExpression": true
     },
     {
@@ -10323,10 +10323,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "system"
+            "System"
           ],
           "operation": [
-            "GET /api/v4/config/client"
+            "Get Client Configuration"
           ]
         }
       },
@@ -10340,69 +10340,69 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "teams"
+            "Teams"
           ]
         }
       },
       "options": [
         {
           "name": "Get Teams",
-          "value": "GET /api/v4/teams"
+          "value": "Get Teams"
         },
         {
           "name": "Get A Team",
-          "value": "GET /api/v4/teams/{team_id}"
+          "value": "Get A Team"
         },
         {
           "name": "Get A Team By Name",
-          "value": "GET /api/v4/teams/name/{name}"
+          "value": "Get A Team By Name"
         },
         {
           "name": "Get A User's Teams",
-          "value": "GET /api/v4/users/{user_id}/teams"
+          "value": "Get A User's Teams"
         },
         {
           "name": "Get Team Members",
-          "value": "GET /api/v4/teams/{team_id}/members"
+          "value": "Get Team Members"
         },
         {
           "name": "Get Team Members For A User",
-          "value": "GET /api/v4/users/{user_id}/teams/members"
+          "value": "Get Team Members For A User"
         },
         {
           "name": "Get A Team Member",
-          "value": "GET /api/v4/teams/{team_id}/members/{user_id}"
+          "value": "Get A Team Member"
         },
         {
           "name": "Get Team Members By Ids",
-          "value": "POST /api/v4/teams/{team_id}/members/ids"
+          "value": "Get Team Members By Ids"
         },
         {
           "name": "Get A Team Stats",
-          "value": "GET /api/v4/teams/{team_id}/stats"
+          "value": "Get A Team Stats"
         },
         {
           "name": "Update A Team Member Roles",
-          "value": "PUT /api/v4/teams/{team_id}/members/{user_id}/roles"
+          "value": "Update A Team Member Roles"
         },
         {
           "name": "Get Team Unreads For A User",
-          "value": "GET /api/v4/users/{user_id}/teams/unread"
+          "value": "Get Team Unreads For A User"
         },
         {
           "name": "Get Unreads For A Team",
-          "value": "GET /api/v4/users/{user_id}/teams/{team_id}/unread"
+          "value": "Get Unreads For A Team"
         },
         {
           "name": "Invite Guests To The Team By Email",
-          "value": "POST /api/v4/teams/{team_id}/invite-guests/email"
+          "value": "Invite Guests To The Team By Email"
         },
         {
           "name": "Search Files In A Team",
-          "value": "POST /api/v4/teams/{team_id}/files/search"
+          "value": "Search Files In A Team"
         }
       ],
-      "default": "GET /api/v4/teams",
+      "default": "Get Teams",
       "noDataExpression": true
     },
     {
@@ -10414,10 +10414,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "teams"
+            "Teams"
           ],
           "operation": [
-            "GET /api/v4/teams"
+            "Get Teams"
           ]
         }
       },
@@ -10460,10 +10460,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "teams"
+            "Teams"
           ],
           "operation": [
-            "GET /api/v4/teams/{team_id}"
+            "Get A Team"
           ]
         }
       },
@@ -10478,10 +10478,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "teams"
+            "Teams"
           ],
           "operation": [
-            "GET /api/v4/teams/name/{name}"
+            "Get A Team By Name"
           ]
         }
       },
@@ -10496,10 +10496,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "teams"
+            "Teams"
           ],
           "operation": [
-            "GET /api/v4/users/{user_id}/teams"
+            "Get A User's Teams"
           ]
         }
       },
@@ -10514,10 +10514,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "teams"
+            "Teams"
           ],
           "operation": [
-            "GET /api/v4/teams/{team_id}/members"
+            "Get Team Members"
           ]
         }
       },
@@ -10533,10 +10533,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "teams"
+            "Teams"
           ],
           "operation": [
-            "GET /api/v4/teams/{team_id}/members"
+            "Get Team Members"
           ]
         }
       },
@@ -10565,10 +10565,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "teams"
+            "Teams"
           ],
           "operation": [
-            "GET /api/v4/users/{user_id}/teams/members"
+            "Get Team Members For A User"
           ]
         }
       },
@@ -10583,10 +10583,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "teams"
+            "Teams"
           ],
           "operation": [
-            "GET /api/v4/teams/{team_id}/members/{user_id}"
+            "Get A Team Member"
           ]
         }
       },
@@ -10601,10 +10601,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "teams"
+            "Teams"
           ],
           "operation": [
-            "GET /api/v4/teams/{team_id}/members/{user_id}"
+            "Get A Team Member"
           ]
         }
       },
@@ -10619,10 +10619,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "teams"
+            "Teams"
           ],
           "operation": [
-            "POST /api/v4/teams/{team_id}/members/ids"
+            "Get Team Members By Ids"
           ]
         }
       },
@@ -10638,10 +10638,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "teams"
+            "Teams"
           ],
           "operation": [
-            "POST /api/v4/teams/{team_id}/members/ids"
+            "Get Team Members By Ids"
           ]
         }
       }
@@ -10654,10 +10654,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "teams"
+            "Teams"
           ],
           "operation": [
-            "GET /api/v4/teams/{team_id}/stats"
+            "Get A Team Stats"
           ]
         }
       },
@@ -10672,10 +10672,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "teams"
+            "Teams"
           ],
           "operation": [
-            "PUT /api/v4/teams/{team_id}/members/{user_id}/roles"
+            "Update A Team Member Roles"
           ]
         }
       },
@@ -10690,10 +10690,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "teams"
+            "Teams"
           ],
           "operation": [
-            "PUT /api/v4/teams/{team_id}/members/{user_id}/roles"
+            "Update A Team Member Roles"
           ]
         }
       },
@@ -10708,10 +10708,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "teams"
+            "Teams"
           ],
           "operation": [
-            "PUT /api/v4/teams/{team_id}/members/{user_id}/roles"
+            "Update A Team Member Roles"
           ]
         }
       },
@@ -10725,10 +10725,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "teams"
+            "Teams"
           ],
           "operation": [
-            "GET /api/v4/users/{user_id}/teams/unread"
+            "Get Team Unreads For A User"
           ]
         }
       },
@@ -10743,10 +10743,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "teams"
+            "Teams"
           ],
           "operation": [
-            "GET /api/v4/users/{user_id}/teams/unread"
+            "Get Team Unreads For A User"
           ]
         }
       },
@@ -10762,10 +10762,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "teams"
+            "Teams"
           ],
           "operation": [
-            "GET /api/v4/users/{user_id}/teams/unread"
+            "Get Team Unreads For A User"
           ]
         }
       },
@@ -10787,10 +10787,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "teams"
+            "Teams"
           ],
           "operation": [
-            "GET /api/v4/users/{user_id}/teams/{team_id}/unread"
+            "Get Unreads For A Team"
           ]
         }
       },
@@ -10805,10 +10805,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "teams"
+            "Teams"
           ],
           "operation": [
-            "GET /api/v4/users/{user_id}/teams/{team_id}/unread"
+            "Get Unreads For A Team"
           ]
         }
       },
@@ -10823,10 +10823,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "teams"
+            "Teams"
           ],
           "operation": [
-            "POST /api/v4/teams/{team_id}/invite-guests/email"
+            "Invite Guests To The Team By Email"
           ]
         }
       },
@@ -10841,10 +10841,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "teams"
+            "Teams"
           ],
           "operation": [
-            "POST /api/v4/teams/{team_id}/invite-guests/email"
+            "Invite Guests To The Team By Email"
           ]
         }
       },
@@ -10859,10 +10859,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "teams"
+            "Teams"
           ],
           "operation": [
-            "POST /api/v4/teams/{team_id}/invite-guests/email"
+            "Invite Guests To The Team By Email"
           ]
         }
       },
@@ -10878,10 +10878,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "teams"
+            "Teams"
           ],
           "operation": [
-            "POST /api/v4/teams/{team_id}/invite-guests/email"
+            "Invite Guests To The Team By Email"
           ]
         }
       },
@@ -10903,10 +10903,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "teams"
+            "Teams"
           ],
           "operation": [
-            "POST /api/v4/teams/{team_id}/files/search"
+            "Search Files In A Team"
           ]
         }
       },
@@ -10921,10 +10921,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "teams"
+            "Teams"
           ],
           "operation": [
-            "POST /api/v4/teams/{team_id}/files/search"
+            "Search Files In A Team"
           ]
         }
       },
@@ -10939,10 +10939,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "teams"
+            "Teams"
           ],
           "operation": [
-            "POST /api/v4/teams/{team_id}/files/search"
+            "Search Files In A Team"
           ]
         }
       },
@@ -10958,10 +10958,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "teams"
+            "Teams"
           ],
           "operation": [
-            "POST /api/v4/teams/{team_id}/files/search"
+            "Search Files In A Team"
           ]
         }
       },
@@ -11003,41 +11003,41 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "threads"
+            "Threads"
           ]
         }
       },
       "options": [
         {
           "name": "Get All Threads That User Is Following",
-          "value": "GET /api/v4/users/{user_id}/teams/{team_id}/threads"
+          "value": "Get All Threads That User Is Following"
         },
         {
           "name": "Mark All Threads That User Is Following As Read",
-          "value": "PUT /api/v4/users/{user_id}/teams/{team_id}/threads/read"
+          "value": "Mark All Threads That User Is Following As Read"
         },
         {
           "name": "Mark A Thread That User Is Following Read State To The Timestamp",
-          "value": "PUT /api/v4/users/{user_id}/teams/{team_id}/threads/{thread_id}/read/{timestamp}"
+          "value": "Mark A Thread That User Is Following Read State To The Timestamp"
         },
         {
           "name": "Mark A Thread That User Is Following As Unread Based On A Post ID",
-          "value": "PUT /api/v4/users/{user_id}/teams/{team_id}/threads/{thread_id}/set_unread/{post_id}"
+          "value": "Mark A Thread That User Is Following As Unread Based On A Post ID"
         },
         {
           "name": "Start Following A Thread",
-          "value": "PUT /api/v4/users/{user_id}/teams/{team_id}/threads/{thread_id}/following"
+          "value": "Start Following A Thread"
         },
         {
           "name": "Stop Following A Thread",
-          "value": "DELETE /api/v4/users/{user_id}/teams/{team_id}/threads/{thread_id}/following"
+          "value": "Stop Following A Thread"
         },
         {
           "name": "Get A Thread Followed By The User",
-          "value": "GET /api/v4/users/{user_id}/teams/{team_id}/threads/{thread_id}"
+          "value": "Get A Thread Followed By The User"
         }
       ],
-      "default": "GET /api/v4/users/{user_id}/teams/{team_id}/threads",
+      "default": "Get All Threads That User Is Following",
       "noDataExpression": true
     },
     {
@@ -11048,10 +11048,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "threads"
+            "Threads"
           ],
           "operation": [
-            "GET /api/v4/users/{user_id}/teams/{team_id}/threads"
+            "Get All Threads That User Is Following"
           ]
         }
       },
@@ -11066,10 +11066,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "threads"
+            "Threads"
           ],
           "operation": [
-            "GET /api/v4/users/{user_id}/teams/{team_id}/threads"
+            "Get All Threads That User Is Following"
           ]
         }
       },
@@ -11085,10 +11085,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "threads"
+            "Threads"
           ],
           "operation": [
-            "GET /api/v4/users/{user_id}/teams/{team_id}/threads"
+            "Get All Threads That User Is Following"
           ]
         }
       },
@@ -11152,10 +11152,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "threads"
+            "Threads"
           ],
           "operation": [
-            "PUT /api/v4/users/{user_id}/teams/{team_id}/threads/read"
+            "Mark All Threads That User Is Following As Read"
           ]
         }
       },
@@ -11170,10 +11170,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "threads"
+            "Threads"
           ],
           "operation": [
-            "PUT /api/v4/users/{user_id}/teams/{team_id}/threads/read"
+            "Mark All Threads That User Is Following As Read"
           ]
         }
       },
@@ -11188,10 +11188,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "threads"
+            "Threads"
           ],
           "operation": [
-            "PUT /api/v4/users/{user_id}/teams/{team_id}/threads/{thread_id}/read/{timestamp}"
+            "Mark A Thread That User Is Following Read State To The Timestamp"
           ]
         }
       },
@@ -11206,10 +11206,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "threads"
+            "Threads"
           ],
           "operation": [
-            "PUT /api/v4/users/{user_id}/teams/{team_id}/threads/{thread_id}/read/{timestamp}"
+            "Mark A Thread That User Is Following Read State To The Timestamp"
           ]
         }
       },
@@ -11224,10 +11224,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "threads"
+            "Threads"
           ],
           "operation": [
-            "PUT /api/v4/users/{user_id}/teams/{team_id}/threads/{thread_id}/read/{timestamp}"
+            "Mark A Thread That User Is Following Read State To The Timestamp"
           ]
         }
       },
@@ -11242,10 +11242,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "threads"
+            "Threads"
           ],
           "operation": [
-            "PUT /api/v4/users/{user_id}/teams/{team_id}/threads/{thread_id}/read/{timestamp}"
+            "Mark A Thread That User Is Following Read State To The Timestamp"
           ]
         }
       },
@@ -11260,10 +11260,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "threads"
+            "Threads"
           ],
           "operation": [
-            "PUT /api/v4/users/{user_id}/teams/{team_id}/threads/{thread_id}/set_unread/{post_id}"
+            "Mark A Thread That User Is Following As Unread Based On A Post ID"
           ]
         }
       },
@@ -11278,10 +11278,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "threads"
+            "Threads"
           ],
           "operation": [
-            "PUT /api/v4/users/{user_id}/teams/{team_id}/threads/{thread_id}/set_unread/{post_id}"
+            "Mark A Thread That User Is Following As Unread Based On A Post ID"
           ]
         }
       },
@@ -11296,10 +11296,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "threads"
+            "Threads"
           ],
           "operation": [
-            "PUT /api/v4/users/{user_id}/teams/{team_id}/threads/{thread_id}/set_unread/{post_id}"
+            "Mark A Thread That User Is Following As Unread Based On A Post ID"
           ]
         }
       },
@@ -11314,10 +11314,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "threads"
+            "Threads"
           ],
           "operation": [
-            "PUT /api/v4/users/{user_id}/teams/{team_id}/threads/{thread_id}/set_unread/{post_id}"
+            "Mark A Thread That User Is Following As Unread Based On A Post ID"
           ]
         }
       },
@@ -11332,10 +11332,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "threads"
+            "Threads"
           ],
           "operation": [
-            "PUT /api/v4/users/{user_id}/teams/{team_id}/threads/{thread_id}/following"
+            "Start Following A Thread"
           ]
         }
       },
@@ -11350,10 +11350,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "threads"
+            "Threads"
           ],
           "operation": [
-            "PUT /api/v4/users/{user_id}/teams/{team_id}/threads/{thread_id}/following"
+            "Start Following A Thread"
           ]
         }
       },
@@ -11368,10 +11368,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "threads"
+            "Threads"
           ],
           "operation": [
-            "PUT /api/v4/users/{user_id}/teams/{team_id}/threads/{thread_id}/following"
+            "Start Following A Thread"
           ]
         }
       },
@@ -11386,10 +11386,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "threads"
+            "Threads"
           ],
           "operation": [
-            "DELETE /api/v4/users/{user_id}/teams/{team_id}/threads/{thread_id}/following"
+            "Stop Following A Thread"
           ]
         }
       },
@@ -11404,10 +11404,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "threads"
+            "Threads"
           ],
           "operation": [
-            "DELETE /api/v4/users/{user_id}/teams/{team_id}/threads/{thread_id}/following"
+            "Stop Following A Thread"
           ]
         }
       },
@@ -11422,10 +11422,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "threads"
+            "Threads"
           ],
           "operation": [
-            "DELETE /api/v4/users/{user_id}/teams/{team_id}/threads/{thread_id}/following"
+            "Stop Following A Thread"
           ]
         }
       },
@@ -11440,10 +11440,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "threads"
+            "Threads"
           ],
           "operation": [
-            "GET /api/v4/users/{user_id}/teams/{team_id}/threads/{thread_id}"
+            "Get A Thread Followed By The User"
           ]
         }
       },
@@ -11458,10 +11458,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "threads"
+            "Threads"
           ],
           "operation": [
-            "GET /api/v4/users/{user_id}/teams/{team_id}/threads/{thread_id}"
+            "Get A Thread Followed By The User"
           ]
         }
       },
@@ -11476,10 +11476,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "threads"
+            "Threads"
           ],
           "operation": [
-            "GET /api/v4/users/{user_id}/teams/{team_id}/threads/{thread_id}"
+            "Get A Thread Followed By The User"
           ]
         }
       },
@@ -11493,73 +11493,73 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "users"
+            "Users"
           ]
         }
       },
       "options": [
         {
           "name": "Get Users",
-          "value": "GET /api/v4/users"
+          "value": "Get Users"
         },
         {
           "name": "Get Users By Ids",
-          "value": "POST /api/v4/users/ids"
+          "value": "Get Users By Ids"
         },
         {
           "name": "Get Users By Group Channels Ids",
-          "value": "POST /api/v4/users/group_channels"
+          "value": "Get Users By Group Channels Ids"
         },
         {
           "name": "Get Users By Usernames",
-          "value": "POST /api/v4/users/usernames"
+          "value": "Get Users By Usernames"
         },
         {
           "name": "Search Users",
-          "value": "POST /api/v4/users/search"
+          "value": "Search Users"
         },
         {
           "name": "Autocomplete Users",
-          "value": "GET /api/v4/users/autocomplete"
+          "value": "Autocomplete Users"
         },
         {
           "name": "Get A User",
-          "value": "GET /api/v4/users/{user_id}"
+          "value": "Get A User"
         },
         {
           "name": "Patch A User",
-          "value": "PUT /api/v4/users/{user_id}/patch"
+          "value": "Patch A User"
         },
         {
           "name": "Update A User's Roles",
-          "value": "PUT /api/v4/users/{user_id}/roles"
+          "value": "Update A User's Roles"
         },
         {
           "name": "Get User's Profile Image",
-          "value": "GET /api/v4/users/{user_id}/image"
+          "value": "Get User's Profile Image"
         },
         {
           "name": "Return User's Default (generated) Profile Image",
-          "value": "GET /api/v4/users/{user_id}/image/default"
+          "value": "Return User's Default (generated) Profile Image"
         },
         {
           "name": "Get A User By Username",
-          "value": "GET /api/v4/users/username/{username}"
+          "value": "Get A User By Username"
         },
         {
           "name": "Get A User By Email",
-          "value": "GET /api/v4/users/email/{email}"
+          "value": "Get A User By Email"
         },
         {
           "name": "Publish A User Typing Websocket Event.",
-          "value": "POST /api/v4/users/{user_id}/typing"
+          "value": "Publish A User Typing Websocket Event."
         },
         {
           "name": "Get All Channel Members For A User",
-          "value": "GET /api/v4/users/{user_id}/channel_members"
+          "value": "Get All Channel Members For A User"
         }
       ],
-      "default": "GET /api/v4/users",
+      "default": "Get Users",
       "noDataExpression": true
     },
     {
@@ -11571,10 +11571,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "users"
+            "Users"
           ],
           "operation": [
-            "GET /api/v4/users"
+            "Get Users"
           ]
         }
       },
@@ -11702,10 +11702,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "users"
+            "Users"
           ],
           "operation": [
-            "POST /api/v4/users/ids"
+            "Get Users By Ids"
           ]
         }
       },
@@ -11728,10 +11728,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "users"
+            "Users"
           ],
           "operation": [
-            "POST /api/v4/users/ids"
+            "Get Users By Ids"
           ]
         }
       }
@@ -11745,10 +11745,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "users"
+            "Users"
           ],
           "operation": [
-            "POST /api/v4/users/group_channels"
+            "Get Users By Group Channels Ids"
           ]
         }
       }
@@ -11762,10 +11762,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "users"
+            "Users"
           ],
           "operation": [
-            "POST /api/v4/users/usernames"
+            "Get Users By Usernames"
           ]
         }
       }
@@ -11778,10 +11778,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "users"
+            "Users"
           ],
           "operation": [
-            "POST /api/v4/users/search"
+            "Search Users"
           ]
         }
       },
@@ -11797,10 +11797,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "users"
+            "Users"
           ],
           "operation": [
-            "POST /api/v4/users/search"
+            "Search Users"
           ]
         }
       },
@@ -11878,10 +11878,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "users"
+            "Users"
           ],
           "operation": [
-            "GET /api/v4/users/autocomplete"
+            "Autocomplete Users"
           ]
         }
       },
@@ -11897,10 +11897,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "users"
+            "Users"
           ],
           "operation": [
-            "GET /api/v4/users/autocomplete"
+            "Autocomplete Users"
           ]
         }
       },
@@ -11936,10 +11936,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "users"
+            "Users"
           ],
           "operation": [
-            "GET /api/v4/users/{user_id}"
+            "Get A User"
           ]
         }
       },
@@ -11954,10 +11954,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "users"
+            "Users"
           ],
           "operation": [
-            "PUT /api/v4/users/{user_id}/patch"
+            "Patch A User"
           ]
         }
       },
@@ -11973,10 +11973,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "users"
+            "Users"
           ],
           "operation": [
-            "PUT /api/v4/users/{user_id}/patch"
+            "Patch A User"
           ]
         }
       },
@@ -12045,10 +12045,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "users"
+            "Users"
           ],
           "operation": [
-            "PUT /api/v4/users/{user_id}/roles"
+            "Update A User's Roles"
           ]
         }
       },
@@ -12063,10 +12063,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "users"
+            "Users"
           ],
           "operation": [
-            "PUT /api/v4/users/{user_id}/roles"
+            "Update A User's Roles"
           ]
         }
       },
@@ -12080,10 +12080,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "users"
+            "Users"
           ],
           "operation": [
-            "GET /api/v4/users/{user_id}/image"
+            "Get User's Profile Image"
           ]
         }
       },
@@ -12099,10 +12099,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "users"
+            "Users"
           ],
           "operation": [
-            "GET /api/v4/users/{user_id}/image"
+            "Get User's Profile Image"
           ]
         }
       },
@@ -12124,10 +12124,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "users"
+            "Users"
           ],
           "operation": [
-            "GET /api/v4/users/{user_id}/image/default"
+            "Return User's Default (generated) Profile Image"
           ]
         }
       },
@@ -12142,10 +12142,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "users"
+            "Users"
           ],
           "operation": [
-            "GET /api/v4/users/username/{username}"
+            "Get A User By Username"
           ]
         }
       },
@@ -12160,10 +12160,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "users"
+            "Users"
           ],
           "operation": [
-            "GET /api/v4/users/email/{email}"
+            "Get A User By Email"
           ]
         }
       },
@@ -12178,10 +12178,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "users"
+            "Users"
           ],
           "operation": [
-            "POST /api/v4/users/{user_id}/typing"
+            "Publish A User Typing Websocket Event."
           ]
         }
       },
@@ -12196,10 +12196,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "users"
+            "Users"
           ],
           "operation": [
-            "POST /api/v4/users/{user_id}/typing"
+            "Publish A User Typing Websocket Event."
           ]
         }
       },
@@ -12215,10 +12215,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "users"
+            "Users"
           ],
           "operation": [
-            "POST /api/v4/users/{user_id}/typing"
+            "Publish A User Typing Websocket Event."
           ]
         }
       },
@@ -12240,10 +12240,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "users"
+            "Users"
           ],
           "operation": [
-            "GET /api/v4/users/{user_id}/channel_members"
+            "Get All Channel Members For A User"
           ]
         }
       },
@@ -12259,10 +12259,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "users"
+            "Users"
           ],
           "operation": [
-            "GET /api/v4/users/{user_id}/channel_members"
+            "Get All Channel Members For A User"
           ]
         }
       },
@@ -12290,57 +12290,57 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "webhooks"
+            "Webhooks"
           ]
         }
       },
       "options": [
         {
           "name": "List Incoming Webhooks",
-          "value": "GET /api/v4/hooks/incoming"
+          "value": "List Incoming Webhooks"
         },
         {
           "name": "Create An Incoming Webhook",
-          "value": "POST /api/v4/hooks/incoming"
+          "value": "Create An Incoming Webhook"
         },
         {
           "name": "Get An Incoming Webhook",
-          "value": "GET /api/v4/hooks/incoming/{hook_id}"
+          "value": "Get An Incoming Webhook"
         },
         {
           "name": "Update An Incoming Webhook",
-          "value": "PUT /api/v4/hooks/incoming/{hook_id}"
+          "value": "Update An Incoming Webhook"
         },
         {
           "name": "Delete An Incoming Webhook",
-          "value": "DELETE /api/v4/hooks/incoming/{hook_id}"
+          "value": "Delete An Incoming Webhook"
         },
         {
           "name": "List Outgoing Webhooks",
-          "value": "GET /api/v4/hooks/outgoing"
+          "value": "List Outgoing Webhooks"
         },
         {
           "name": "Create An Outgoing Webhook",
-          "value": "POST /api/v4/hooks/outgoing"
+          "value": "Create An Outgoing Webhook"
         },
         {
           "name": "Get An Outgoing Webhook",
-          "value": "GET /api/v4/hooks/outgoing/{hook_id}"
+          "value": "Get An Outgoing Webhook"
         },
         {
           "name": "Update An Outgoing Webhook",
-          "value": "PUT /api/v4/hooks/outgoing/{hook_id}"
+          "value": "Update An Outgoing Webhook"
         },
         {
           "name": "Delete An Outgoing Webhook",
-          "value": "DELETE /api/v4/hooks/outgoing/{hook_id}"
+          "value": "Delete An Outgoing Webhook"
         },
         {
           "name": "Regenerate The Token For The Outgoing Webhook.",
-          "value": "POST /api/v4/hooks/outgoing/{hook_id}/regen_token"
+          "value": "Regenerate The Token For The Outgoing Webhook."
         }
       ],
-      "default": "GET /api/v4/hooks/incoming",
+      "default": "List Incoming Webhooks",
       "noDataExpression": true
     },
     {
@@ -12352,10 +12352,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "webhooks"
+            "Webhooks"
           ],
           "operation": [
-            "GET /api/v4/hooks/incoming"
+            "List Incoming Webhooks"
           ]
         }
       },
@@ -12391,10 +12391,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "webhooks"
+            "Webhooks"
           ],
           "operation": [
-            "POST /api/v4/hooks/incoming"
+            "Create An Incoming Webhook"
           ]
         }
       },
@@ -12410,10 +12410,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "webhooks"
+            "Webhooks"
           ],
           "operation": [
-            "POST /api/v4/hooks/incoming"
+            "Create An Incoming Webhook"
           ]
         }
       },
@@ -12463,10 +12463,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "webhooks"
+            "Webhooks"
           ],
           "operation": [
-            "GET /api/v4/hooks/incoming/{hook_id}"
+            "Get An Incoming Webhook"
           ]
         }
       },
@@ -12481,10 +12481,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "webhooks"
+            "Webhooks"
           ],
           "operation": [
-            "PUT /api/v4/hooks/incoming/{hook_id}"
+            "Update An Incoming Webhook"
           ]
         }
       },
@@ -12499,10 +12499,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "webhooks"
+            "Webhooks"
           ],
           "operation": [
-            "PUT /api/v4/hooks/incoming/{hook_id}"
+            "Update An Incoming Webhook"
           ]
         }
       },
@@ -12517,10 +12517,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "webhooks"
+            "Webhooks"
           ],
           "operation": [
-            "PUT /api/v4/hooks/incoming/{hook_id}"
+            "Update An Incoming Webhook"
           ]
         }
       },
@@ -12535,10 +12535,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "webhooks"
+            "Webhooks"
           ],
           "operation": [
-            "PUT /api/v4/hooks/incoming/{hook_id}"
+            "Update An Incoming Webhook"
           ]
         }
       },
@@ -12553,10 +12553,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "webhooks"
+            "Webhooks"
           ],
           "operation": [
-            "PUT /api/v4/hooks/incoming/{hook_id}"
+            "Update An Incoming Webhook"
           ]
         }
       },
@@ -12572,10 +12572,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "webhooks"
+            "Webhooks"
           ],
           "operation": [
-            "PUT /api/v4/hooks/incoming/{hook_id}"
+            "Update An Incoming Webhook"
           ]
         }
       },
@@ -12604,10 +12604,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "webhooks"
+            "Webhooks"
           ],
           "operation": [
-            "DELETE /api/v4/hooks/incoming/{hook_id}"
+            "Delete An Incoming Webhook"
           ]
         }
       },
@@ -12623,10 +12623,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "webhooks"
+            "Webhooks"
           ],
           "operation": [
-            "GET /api/v4/hooks/outgoing"
+            "List Outgoing Webhooks"
           ]
         }
       },
@@ -12669,10 +12669,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "webhooks"
+            "Webhooks"
           ],
           "operation": [
-            "POST /api/v4/hooks/outgoing"
+            "Create An Outgoing Webhook"
           ]
         }
       },
@@ -12687,10 +12687,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "webhooks"
+            "Webhooks"
           ],
           "operation": [
-            "POST /api/v4/hooks/outgoing"
+            "Create An Outgoing Webhook"
           ]
         }
       },
@@ -12705,10 +12705,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "webhooks"
+            "Webhooks"
           ],
           "operation": [
-            "POST /api/v4/hooks/outgoing"
+            "Create An Outgoing Webhook"
           ]
         }
       },
@@ -12723,10 +12723,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "webhooks"
+            "Webhooks"
           ],
           "operation": [
-            "POST /api/v4/hooks/outgoing"
+            "Create An Outgoing Webhook"
           ]
         }
       },
@@ -12742,10 +12742,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "webhooks"
+            "Webhooks"
           ],
           "operation": [
-            "POST /api/v4/hooks/outgoing"
+            "Create An Outgoing Webhook"
           ]
         }
       },
@@ -12795,10 +12795,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "webhooks"
+            "Webhooks"
           ],
           "operation": [
-            "GET /api/v4/hooks/outgoing/{hook_id}"
+            "Get An Outgoing Webhook"
           ]
         }
       },
@@ -12813,10 +12813,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "webhooks"
+            "Webhooks"
           ],
           "operation": [
-            "PUT /api/v4/hooks/outgoing/{hook_id}"
+            "Update An Outgoing Webhook"
           ]
         }
       },
@@ -12831,10 +12831,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "webhooks"
+            "Webhooks"
           ],
           "operation": [
-            "PUT /api/v4/hooks/outgoing/{hook_id}"
+            "Update An Outgoing Webhook"
           ]
         }
       },
@@ -12849,10 +12849,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "webhooks"
+            "Webhooks"
           ],
           "operation": [
-            "PUT /api/v4/hooks/outgoing/{hook_id}"
+            "Update An Outgoing Webhook"
           ]
         }
       },
@@ -12867,10 +12867,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "webhooks"
+            "Webhooks"
           ],
           "operation": [
-            "PUT /api/v4/hooks/outgoing/{hook_id}"
+            "Update An Outgoing Webhook"
           ]
         }
       },
@@ -12885,10 +12885,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "webhooks"
+            "Webhooks"
           ],
           "operation": [
-            "PUT /api/v4/hooks/outgoing/{hook_id}"
+            "Update An Outgoing Webhook"
           ]
         }
       },
@@ -12903,10 +12903,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "webhooks"
+            "Webhooks"
           ],
           "operation": [
-            "DELETE /api/v4/hooks/outgoing/{hook_id}"
+            "Delete An Outgoing Webhook"
           ]
         }
       },
@@ -12921,10 +12921,10 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "webhooks"
+            "Webhooks"
           ],
           "operation": [
-            "POST /api/v4/hooks/outgoing/{hook_id}/regen_token"
+            "Regenerate The Token For The Outgoing Webhook."
           ]
         }
       },
@@ -12939,60 +12939,60 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "bots",
-            "channels",
-            "channels",
-            "channels",
-            "channels",
-            "channels",
-            "emoji",
-            "groups",
-            "groups",
-            "groups",
-            "groups",
-            "insights",
-            "insights",
-            "insights",
-            "insights",
-            "insights",
-            "insights",
-            "insights",
-            "insights",
-            "posts",
-            "posts",
-            "teams",
-            "teams",
-            "users",
-            "webhooks",
-            "webhooks"
+            "Bots",
+            "Channels",
+            "Channels",
+            "Channels",
+            "Channels",
+            "Channels",
+            "Emoji",
+            "Groups",
+            "Groups",
+            "Groups",
+            "Groups",
+            "Insights",
+            "Insights",
+            "Insights",
+            "Insights",
+            "Insights",
+            "Insights",
+            "Insights",
+            "Insights",
+            "Posts",
+            "Posts",
+            "Teams",
+            "Teams",
+            "Users",
+            "Webhooks",
+            "Webhooks"
           ],
           "operation": [
-            "GET /api/v4/bots",
-            "GET /api/v4/channels",
-            "GET /api/v4/teams/{team_id}/channels",
-            "GET /api/v4/teams/{team_id}/channels/private",
-            "GET /api/v4/teams/{team_id}/channels/deleted",
-            "GET /api/v4/channels/{channel_id}/members",
-            "GET /api/v4/emoji",
-            "GET /api/v4/groups",
-            "GET /api/v4/channels/{channel_id}/groups",
-            "GET /api/v4/teams/{team_id}/groups",
-            "GET /api/v4/teams/{team_id}/groups_by_channels",
-            "GET /api/v4/teams/{team_id}/top/reactions",
-            "GET /api/v4/users/me/top/reactions",
-            "GET /api/v4/teams/{team_id}/top/channels",
-            "GET /api/v4/users/me/top/channels",
-            "GET /api/v4/teams/{team_id}/top/team_members",
-            "GET /api/v4/teams/{team_id}/top/threads",
-            "GET /api/v4/users/me/top/threads",
-            "GET /api/v4/users/me/top/dms",
-            "GET /api/v4/users/{user_id}/posts/flagged",
-            "GET /api/v4/channels/{channel_id}/posts",
-            "GET /api/v4/teams",
-            "GET /api/v4/teams/{team_id}/members",
-            "GET /api/v4/users",
-            "GET /api/v4/hooks/incoming",
-            "GET /api/v4/hooks/outgoing"
+            "Get Bots",
+            "Get A List Of All Channels",
+            "Get Public Channels",
+            "Get Private Channels",
+            "Get Deleted Channels",
+            "Get Channel Members",
+            "Get A List Of Custom Emoji",
+            "Get Groups",
+            "Get Channel Groups",
+            "Get Team Groups",
+            "Get Team Groups By Channels",
+            "Get A List Of The Top Reactions For A Team.",
+            "Get A List Of The Top Reactions For A User.",
+            "Get A List Of The Top Channels For A Team.",
+            "Get A List Of The Top Channels For A User.",
+            "Get A List Of New Team Members.",
+            "Get A List Of The Top Threads For A Team.",
+            "Get A List Of The Top Threads For A User.",
+            "Get A List Of The Top Dms For A User.",
+            "Get A List Of Flagged Posts",
+            "Get Posts For A Channel",
+            "Get Teams",
+            "Get Team Members",
+            "Get Users",
+            "List Incoming Webhooks",
+            "List Outgoing Webhooks"
           ]
         }
       }
@@ -13009,60 +13009,60 @@ export class InfomaniakKchat implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "bots",
-            "channels",
-            "channels",
-            "channels",
-            "channels",
-            "channels",
-            "emoji",
-            "groups",
-            "groups",
-            "groups",
-            "groups",
-            "insights",
-            "insights",
-            "insights",
-            "insights",
-            "insights",
-            "insights",
-            "insights",
-            "insights",
-            "posts",
-            "posts",
-            "teams",
-            "teams",
-            "users",
-            "webhooks",
-            "webhooks"
+            "Bots",
+            "Channels",
+            "Channels",
+            "Channels",
+            "Channels",
+            "Channels",
+            "Emoji",
+            "Groups",
+            "Groups",
+            "Groups",
+            "Groups",
+            "Insights",
+            "Insights",
+            "Insights",
+            "Insights",
+            "Insights",
+            "Insights",
+            "Insights",
+            "Insights",
+            "Posts",
+            "Posts",
+            "Teams",
+            "Teams",
+            "Users",
+            "Webhooks",
+            "Webhooks"
           ],
           "operation": [
-            "GET /api/v4/bots",
-            "GET /api/v4/channels",
-            "GET /api/v4/teams/{team_id}/channels",
-            "GET /api/v4/teams/{team_id}/channels/private",
-            "GET /api/v4/teams/{team_id}/channels/deleted",
-            "GET /api/v4/channels/{channel_id}/members",
-            "GET /api/v4/emoji",
-            "GET /api/v4/groups",
-            "GET /api/v4/channels/{channel_id}/groups",
-            "GET /api/v4/teams/{team_id}/groups",
-            "GET /api/v4/teams/{team_id}/groups_by_channels",
-            "GET /api/v4/teams/{team_id}/top/reactions",
-            "GET /api/v4/users/me/top/reactions",
-            "GET /api/v4/teams/{team_id}/top/channels",
-            "GET /api/v4/users/me/top/channels",
-            "GET /api/v4/teams/{team_id}/top/team_members",
-            "GET /api/v4/teams/{team_id}/top/threads",
-            "GET /api/v4/users/me/top/threads",
-            "GET /api/v4/users/me/top/dms",
-            "GET /api/v4/users/{user_id}/posts/flagged",
-            "GET /api/v4/channels/{channel_id}/posts",
-            "GET /api/v4/teams",
-            "GET /api/v4/teams/{team_id}/members",
-            "GET /api/v4/users",
-            "GET /api/v4/hooks/incoming",
-            "GET /api/v4/hooks/outgoing"
+            "Get Bots",
+            "Get A List Of All Channels",
+            "Get Public Channels",
+            "Get Private Channels",
+            "Get Deleted Channels",
+            "Get Channel Members",
+            "Get A List Of Custom Emoji",
+            "Get Groups",
+            "Get Channel Groups",
+            "Get Team Groups",
+            "Get Team Groups By Channels",
+            "Get A List Of The Top Reactions For A Team.",
+            "Get A List Of The Top Reactions For A User.",
+            "Get A List Of The Top Channels For A Team.",
+            "Get A List Of The Top Channels For A User.",
+            "Get A List Of New Team Members.",
+            "Get A List Of The Top Threads For A Team.",
+            "Get A List Of The Top Threads For A User.",
+            "Get A List Of The Top Dms For A User.",
+            "Get A List Of Flagged Posts",
+            "Get Posts For A Channel",
+            "Get Teams",
+            "Get Team Members",
+            "Get Users",
+            "List Incoming Webhooks",
+            "List Outgoing Webhooks"
           ],
           "returnAll": [
             false

@@ -16,7 +16,7 @@ type OperationDefinition = {
 
 const operations: Record<string, Record<string, OperationDefinition>> = {
   "Actions": {
-    "GET /1/actions": {
+    "List Available Actions": {
       "method": "GET",
       "path": "/1/actions",
       "pagination": "none",
@@ -27,7 +27,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/actions/{action_id}": {
+    "List Available Actions (2)": {
       "method": "GET",
       "path": "/1/actions/{action_id}",
       "pagination": "none",
@@ -45,7 +45,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "App Information": {
-    "GET /1/app-information/applications": {
+    "Get Application List.": {
       "method": "GET",
       "path": "/1/app-information/applications",
       "pagination": "none",
@@ -56,7 +56,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/app-information/applications/{application}": {
+    "Get Application.": {
       "method": "GET",
       "path": "/1/app-information/applications/{application}",
       "pagination": "none",
@@ -72,7 +72,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/app-information/versions": {
+    "Get Supported Store List.": {
       "method": "GET",
       "path": "/1/app-information/versions",
       "pagination": "none",
@@ -83,7 +83,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/app-information/versions/{appStore}": {
+    "Get Supported Store List. (2)": {
       "method": "GET",
       "path": "/1/app-information/versions/{appStore}",
       "pagination": "none",
@@ -94,7 +94,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/app-information/versions/{appStore}/{appPlatform}/{appName}": {
+    "Get Application With Associated Versions Details.": {
       "method": "GET",
       "path": "/1/app-information/versions/{appStore}/{appPlatform}/{appName}",
       "pagination": "none",
@@ -120,7 +120,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Countries": {
-    "GET /1/countries": {
+    "List Countries": {
       "method": "GET",
       "path": "/1/countries",
       "pagination": "limit-skip",
@@ -131,7 +131,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/countries/{country_id}": {
+    "Display A Country": {
       "method": "GET",
       "path": "/1/countries/{country_id}",
       "pagination": "none",
@@ -149,7 +149,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Events": {
-    "GET /2/events": {
+    "List Events": {
       "method": "GET",
       "path": "/2/events",
       "pagination": "none",
@@ -160,7 +160,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/events/{event_id}": {
+    "Display An Event": {
       "method": "GET",
       "path": "/2/events/{event_id}",
       "pagination": "none",
@@ -178,7 +178,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Events > Public Cloud Status": {
-    "GET /2/events/public-cloud-status": {
+    "List Public Cloud Status": {
       "method": "GET",
       "path": "/2/events/public-cloud-status",
       "pagination": "none",
@@ -191,7 +191,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Languages": {
-    "GET /1/languages": {
+    "List Languages": {
       "method": "GET",
       "path": "/1/languages",
       "pagination": "limit-skip",
@@ -202,7 +202,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/languages/{language_id}": {
+    "Display A Language": {
       "method": "GET",
       "path": "/1/languages/{language_id}",
       "pagination": "none",
@@ -219,8 +219,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "bodyFieldName": null
     }
   },
-  "My kSuite": {
-    "GET /1/my_ksuite/{my_k_suite_id}": {
+  "My K Suite": {
+    "Show My KSuite": {
       "method": "GET",
       "path": "/1/my_ksuite/{my_k_suite_id}",
       "pagination": "none",
@@ -236,7 +236,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/my_ksuite/current": {
+    "Current My KSuite": {
       "method": "GET",
       "path": "/1/my_ksuite/current",
       "pagination": "none",
@@ -248,8 +248,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "bodyFieldName": null
     }
   },
-  "My kSuite > Product management": {
-    "POST /1/my_ksuite/{my_k_suite_id}/cancel_unsubscribe": {
+  "My K Suite > Product Management": {
+    "Cancel Unsubscribe": {
       "method": "POST",
       "path": "/1/my_ksuite/{my_k_suite_id}/cancel_unsubscribe",
       "pagination": "none",
@@ -267,7 +267,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Products": {
-    "GET /1/products": {
+    "List Products": {
       "method": "GET",
       "path": "/1/products",
       "pagination": "limit-skip",
@@ -280,7 +280,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Profile": {
-    "POST /2/profile/avatar": {
+    "Add / Update Profile's Avatar.": {
       "method": "POST",
       "path": "/2/profile/avatar",
       "pagination": "none",
@@ -300,7 +300,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /2/profile/avatar": {
+    "Delete Profile's Avatar.": {
       "method": "DELETE",
       "path": "/2/profile/avatar",
       "pagination": "none",
@@ -311,7 +311,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/profile": {
+    "List User Information": {
       "method": "GET",
       "path": "/2/profile",
       "pagination": "none",
@@ -322,7 +322,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PATCH /2/profile": {
+    "Update Profile Information": {
       "method": "PATCH",
       "path": "/2/profile",
       "pagination": "none",
@@ -412,7 +412,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Profile > Applications Passwords": {
-    "GET /2/profile/applications/passwords": {
+    "List Applications Passwords": {
       "method": "GET",
       "path": "/2/profile/applications/passwords",
       "pagination": "none",
@@ -423,7 +423,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/profile/applications/passwords": {
+    "Add An Application Password": {
       "method": "POST",
       "path": "/2/profile/applications/passwords",
       "pagination": "none",
@@ -434,7 +434,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/profile/applications/passwords/{password_id}": {
+    "Display An Application Password": {
       "method": "GET",
       "path": "/2/profile/applications/passwords/{password_id}",
       "pagination": "none",
@@ -452,7 +452,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Profile > Emails": {
-    "GET /2/profile/emails": {
+    "List Emails": {
       "method": "GET",
       "path": "/2/profile/emails",
       "pagination": "none",
@@ -463,7 +463,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/profile/emails/{email_type}/{email_id}": {
+    "Display An Email": {
       "method": "GET",
       "path": "/2/profile/emails/{email_type}/{email_id}",
       "pagination": "none",
@@ -483,7 +483,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /2/profile/emails/{email_type}/{email_id}": {
+    "Delete An Email": {
       "method": "DELETE",
       "path": "/2/profile/emails/{email_type}/{email_id}",
       "pagination": "none",
@@ -505,7 +505,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Profile > Phones": {
-    "GET /2/profile/phones": {
+    "List Phones": {
       "method": "GET",
       "path": "/2/profile/phones",
       "pagination": "none",
@@ -516,7 +516,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/profile/phones/{phone_id}": {
+    "Display A Phone": {
       "method": "GET",
       "path": "/2/profile/phones/{phone_id}",
       "pagination": "none",
@@ -532,7 +532,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /2/profile/phones/{phone_id}": {
+    "Delete A Phone": {
       "method": "DELETE",
       "path": "/2/profile/phones/{phone_id}",
       "pagination": "none",
@@ -550,7 +550,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Tasks": {
-    "GET /1/async/tasks": {
+    "List Tasks": {
       "method": "GET",
       "path": "/1/async/tasks",
       "pagination": "limit-skip",
@@ -561,7 +561,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/async/tasks/{task_uuid}": {
+    "Display A Task": {
       "method": "GET",
       "path": "/1/async/tasks/{task_uuid}",
       "pagination": "none",
@@ -579,7 +579,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Timezones": {
-    "GET /1/timezones": {
+    "List Timezones": {
       "method": "GET",
       "path": "/1/timezones",
       "pagination": "limit-skip",
@@ -590,7 +590,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/timezones/{timezone_id}": {
+    "Display A Timezone": {
       "method": "GET",
       "path": "/1/timezones/{timezone_id}",
       "pagination": "none",
@@ -608,7 +608,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "User Management": {
-    "POST /1/accounts/{account}/invitations": {
+    "Invite A User": {
       "method": "POST",
       "path": "/1/accounts/{account}/invitations",
       "pagination": "none",
@@ -665,7 +665,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/accounts/{account}/invitations/{invitation}": {
+    "Cancel An Invitation": {
       "method": "DELETE",
       "path": "/1/accounts/{account}/invitations/{invitation}",
       "pagination": "none",
@@ -687,7 +687,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "User Management > Accounts": {
-    "GET /1/accounts": {
+    "List Accounts": {
       "method": "GET",
       "path": "/1/accounts",
       "pagination": "none",
@@ -698,7 +698,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/accounts/{account_id}": {
+    "Display An Account": {
       "method": "GET",
       "path": "/1/accounts/{account_id}",
       "pagination": "none",
@@ -714,7 +714,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/accounts/{account_id}/tags": {
+    "Display A Listing Of Tags For An Account.": {
       "method": "GET",
       "path": "/1/accounts/{account_id}/tags",
       "pagination": "none",
@@ -730,7 +730,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/accounts/{account_id}/products": {
+    "List Account's Products": {
       "method": "GET",
       "path": "/1/accounts/{account_id}/products",
       "pagination": "none",
@@ -746,7 +746,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/accounts/{account_id}/services": {
+    "List Services": {
       "method": "GET",
       "path": "/1/accounts/{account_id}/services",
       "pagination": "none",
@@ -762,7 +762,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/accounts/current/products": {
+    "List Current Account's Products": {
       "method": "GET",
       "path": "/1/accounts/current/products",
       "pagination": "none",
@@ -773,7 +773,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/accounts/{account_id}/basic/teams": {
+    "List Basic Teams Information Of An Account.": {
       "method": "GET",
       "path": "/1/accounts/{account_id}/basic/teams",
       "pagination": "none",
@@ -789,7 +789,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/accounts/{account}/users": {
+    "List Users": {
       "method": "GET",
       "path": "/2/accounts/{account}/users",
       "pagination": "page-per-page",
@@ -805,7 +805,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/accounts/{account}/users/{user}/app_accesses": {
+    "List App Accesses": {
       "method": "GET",
       "path": "/2/accounts/{account}/users/{user}/app_accesses",
       "pagination": "none",
@@ -827,7 +827,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "User Management > Accounts > Invitations": {
-    "GET /1/accounts/{account}/invitations/{invitation}": {
+    "Display An Invitation Of An Account": {
       "method": "GET",
       "path": "/1/accounts/{account}/invitations/{invitation}",
       "pagination": "none",
@@ -847,7 +847,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PATCH /1/accounts/{account}/invitations/{invitation}": {
+    "Patch An Invitation": {
       "method": "PATCH",
       "path": "/1/accounts/{account}/invitations/{invitation}",
       "pagination": "none",
@@ -896,7 +896,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /1/accounts/{account}/invitations/users/{user}": {
+    "Get Users Invitations": {
       "method": "GET",
       "path": "/1/accounts/{account}/invitations/users/{user}",
       "pagination": "none",
@@ -917,8 +917,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "bodyFieldName": null
     }
   },
-  "User Management > Accounts > Invitations > B2B": {
-    "GET /1/accounts/{account}/invitations/{invitation}/b2b": {
+  "User Management > Accounts > Invitations > B2 B": {
+    "List Customers": {
       "method": "GET",
       "path": "/1/accounts/{account}/invitations/{invitation}/b2b",
       "pagination": "page-per-page",
@@ -938,7 +938,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/accounts/{account}/invitations/{invitation}/b2b": {
+    "Assign Customers": {
       "method": "POST",
       "path": "/1/accounts/{account}/invitations/{invitation}/b2b",
       "pagination": "none",
@@ -963,7 +963,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/accounts/{account}/invitations/{invitation}/b2b/{partnership_id}": {
+    "Unassign Customers": {
       "method": "DELETE",
       "path": "/1/accounts/{account}/invitations/{invitation}/b2b/{partnership_id}",
       "pagination": "none",
@@ -989,7 +989,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "User Management > Accounts > Invitations > Drive": {
-    "POST /1/accounts/{account}/invitations/{invitation}/drive": {
+    "Add A Drive Access": {
       "method": "POST",
       "path": "/1/accounts/{account}/invitations/{invitation}/drive",
       "pagination": "none",
@@ -1018,7 +1018,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PATCH /1/accounts/{account}/invitations/{invitation}/drive/{drive_id}": {
+    "Update Drive Access": {
       "method": "PATCH",
       "path": "/1/accounts/{account}/invitations/{invitation}/drive/{drive_id}",
       "pagination": "none",
@@ -1051,7 +1051,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/accounts/{account}/invitations/{invitation}/drive/{drive_id}": {
+    "Revoke A Drive Access": {
       "method": "DELETE",
       "path": "/1/accounts/{account}/invitations/{invitation}/drive/{drive_id}",
       "pagination": "none",
@@ -1077,7 +1077,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "User Management > Accounts > Invitations > KChat": {
-    "PATCH /1/accounts/{account}/invitations/{invitation}/kchat": {
+    "Update A K Chat Access": {
       "method": "PATCH",
       "path": "/1/accounts/{account}/invitations/{invitation}/kchat",
       "pagination": "none",
@@ -1104,7 +1104,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "User Management > Accounts > Invitations > Mailbox": {
-    "POST /1/accounts/{account}/invitations/{invitation}/mailbox/invite": {
+    "Create Invite": {
       "method": "POST",
       "path": "/1/accounts/{account}/invitations/{invitation}/mailbox/invite",
       "pagination": "none",
@@ -1145,7 +1145,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "POST /1/accounts/{account}/invitations/{invitation}/mailbox/{mail_id}": {
+    "Create Mailbox": {
       "method": "POST",
       "path": "/1/accounts/{account}/invitations/{invitation}/mailbox/{mail_id}",
       "pagination": "none",
@@ -1178,7 +1178,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PATCH /1/accounts/{account}/invitations/{invitation}/mailbox/{mail_id}": {
+    "Update A Mailbox Access": {
       "method": "PATCH",
       "path": "/1/accounts/{account}/invitations/{invitation}/mailbox/{mail_id}",
       "pagination": "none",
@@ -1211,7 +1211,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/accounts/{account}/invitations/{invitation}/mailbox/{mail_id}": {
+    "Revoke A Drive Access": {
       "method": "DELETE",
       "path": "/1/accounts/{account}/invitations/{invitation}/mailbox/{mail_id}",
       "pagination": "none",
@@ -1241,8 +1241,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "bodyFieldName": null
     }
   },
-  "User Management > Accounts > Invitations > kSuite": {
-    "POST /1/accounts/{account}/invitations/{invitation}/ksuite": {
+  "User Management > Accounts > Invitations > K Suite": {
+    "Create A K Suite Access": {
       "method": "POST",
       "path": "/1/accounts/{account}/invitations/{invitation}/ksuite",
       "pagination": "none",
@@ -1279,7 +1279,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/accounts/{account}/invitations/{invitation}/ksuite": {
+    "Revoke K Suite Access": {
       "method": "DELETE",
       "path": "/1/accounts/{account}/invitations/{invitation}/ksuite",
       "pagination": "none",
@@ -1301,7 +1301,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "User Management > Teams": {
-    "GET /1/accounts/{account}/teams": {
+    "List Teams": {
       "method": "GET",
       "path": "/1/accounts/{account}/teams",
       "pagination": "page-per-page",
@@ -1317,7 +1317,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/accounts/{account}/teams": {
+    "Create A Team": {
       "method": "POST",
       "path": "/1/accounts/{account}/teams",
       "pagination": "none",
@@ -1346,7 +1346,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /1/accounts/{account}/teams/{team}": {
+    "Get A Team": {
       "method": "GET",
       "path": "/1/accounts/{account}/teams/{team}",
       "pagination": "none",
@@ -1366,7 +1366,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PATCH /1/accounts/{account}/teams/{team}": {
+    "Update A Team": {
       "method": "PATCH",
       "path": "/1/accounts/{account}/teams/{team}",
       "pagination": "none",
@@ -1399,7 +1399,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/accounts/{account}/teams/{team}": {
+    "Delete A Team": {
       "method": "DELETE",
       "path": "/1/accounts/{account}/teams/{team}",
       "pagination": "none",
@@ -1421,7 +1421,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "User Management > Teams > Users": {
-    "GET /1/accounts/{account}/teams/{team}/users": {
+    "List Team Users": {
       "method": "GET",
       "path": "/1/accounts/{account}/teams/{team}/users",
       "pagination": "page-per-page",
@@ -1441,7 +1441,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/accounts/{account}/teams/{team}/users": {
+    "Add Users To Team": {
       "method": "POST",
       "path": "/1/accounts/{account}/teams/{team}/users",
       "pagination": "none",
@@ -1466,7 +1466,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/accounts/{account}/teams/{team}/users": {
+    "Remove Users From Team": {
       "method": "DELETE",
       "path": "/1/accounts/{account}/teams/{team}/users",
       "pagination": "none",
@@ -1492,8 +1492,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "bodyFieldName": null
     }
   },
-  "kSuite > Workspace": {
-    "GET /2/profile/ksuites/mailboxes": {
+  "K Suite > Workspace": {
+    "Get Related Workspace Users": {
       "method": "GET",
       "path": "/2/profile/ksuites/mailboxes",
       "pagination": "none",
@@ -1504,7 +1504,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/profile/ksuites/mailboxes": {
+    "Attach A Mailbox To Current User": {
       "method": "POST",
       "path": "/2/profile/ksuites/mailboxes",
       "pagination": "none",
@@ -1524,7 +1524,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "PUT /2/profile/ksuites/mailboxes/{mailbox_id}/set_primary": {
+    "Set Mailbox As Primary": {
       "method": "PUT",
       "path": "/2/profile/ksuites/mailboxes/{mailbox_id}/set_primary",
       "pagination": "none",
@@ -1540,7 +1540,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /2/profile/ksuites/mailboxes/{mailbox_id}/update_password": {
+    "Update Mailbox Credential Password": {
       "method": "PUT",
       "path": "/2/profile/ksuites/mailboxes/{mailbox_id}/update_password",
       "pagination": "none",
@@ -1561,7 +1561,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /2/profile/ksuites/mailboxes/{mailbox_id}": {
+    "Unlink A Mailbox From Current User": {
       "method": "DELETE",
       "path": "/2/profile/ksuites/mailboxes/{mailbox_id}",
       "pagination": "none",
@@ -1671,11 +1671,11 @@ export class InfomaniakCoreRessource implements INodeType {
         },
         {
           "name": "My K Suite",
-          "value": "My kSuite"
+          "value": "My K Suite"
         },
         {
           "name": "My K Suite > Product Management",
-          "value": "My kSuite > Product management"
+          "value": "My K Suite > Product Management"
         },
         {
           "name": "Products",
@@ -1719,7 +1719,7 @@ export class InfomaniakCoreRessource implements INodeType {
         },
         {
           "name": "User Management > Accounts > Invitations > B2 B",
-          "value": "User Management > Accounts > Invitations > B2B"
+          "value": "User Management > Accounts > Invitations > B2 B"
         },
         {
           "name": "User Management > Accounts > Invitations > Drive",
@@ -1735,7 +1735,7 @@ export class InfomaniakCoreRessource implements INodeType {
         },
         {
           "name": "User Management > Accounts > Invitations > K Suite",
-          "value": "User Management > Accounts > Invitations > kSuite"
+          "value": "User Management > Accounts > Invitations > K Suite"
         },
         {
           "name": "User Management > Teams",
@@ -1747,7 +1747,7 @@ export class InfomaniakCoreRessource implements INodeType {
         },
         {
           "name": "K Suite > Workspace",
-          "value": "kSuite > Workspace"
+          "value": "K Suite > Workspace"
         }
       ],
       "default": "Actions",
@@ -1768,14 +1768,14 @@ export class InfomaniakCoreRessource implements INodeType {
       "options": [
         {
           "name": "List Available Actions",
-          "value": "GET /1/actions"
+          "value": "List Available Actions"
         },
         {
           "name": "List Available Actions",
-          "value": "GET /1/actions/{action_id}"
+          "value": "List Available Actions (2)"
         }
       ],
-      "default": "GET /1/actions",
+      "default": "List Available Actions",
       "noDataExpression": true
     },
     {
@@ -1790,7 +1790,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "Actions"
           ],
           "operation": [
-            "GET /1/actions"
+            "List Available Actions"
           ]
         }
       },
@@ -1814,7 +1814,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "Actions"
           ],
           "operation": [
-            "GET /1/actions/{action_id}"
+            "List Available Actions (2)"
           ]
         }
       },
@@ -1835,26 +1835,26 @@ export class InfomaniakCoreRessource implements INodeType {
       "options": [
         {
           "name": "Get Application List.",
-          "value": "GET /1/app-information/applications"
+          "value": "Get Application List."
         },
         {
           "name": "Get Application.",
-          "value": "GET /1/app-information/applications/{application}"
+          "value": "Get Application."
         },
         {
           "name": "Get Supported Store List.",
-          "value": "GET /1/app-information/versions"
+          "value": "Get Supported Store List."
         },
         {
           "name": "Get Supported Store List.",
-          "value": "GET /1/app-information/versions/{appStore}"
+          "value": "Get Supported Store List. (2)"
         },
         {
           "name": "Get Application With Associated Versions Details.",
-          "value": "GET /1/app-information/versions/{appStore}/{appPlatform}/{appName}"
+          "value": "Get Application With Associated Versions Details."
         }
       ],
-      "default": "GET /1/app-information/applications",
+      "default": "Get Application List.",
       "noDataExpression": true
     },
     {
@@ -1868,7 +1868,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "App Information"
           ],
           "operation": [
-            "GET /1/app-information/applications/{application}"
+            "Get Application."
           ]
         }
       },
@@ -1885,7 +1885,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "App Information"
           ],
           "operation": [
-            "GET /1/app-information/versions/{appStore}/{appPlatform}/{appName}"
+            "Get Application With Associated Versions Details."
           ]
         }
       },
@@ -1902,7 +1902,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "App Information"
           ],
           "operation": [
-            "GET /1/app-information/versions/{appStore}/{appPlatform}/{appName}"
+            "Get Application With Associated Versions Details."
           ]
         }
       },
@@ -1919,7 +1919,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "App Information"
           ],
           "operation": [
-            "GET /1/app-information/versions/{appStore}/{appPlatform}/{appName}"
+            "Get Application With Associated Versions Details."
           ]
         }
       },
@@ -1939,14 +1939,14 @@ export class InfomaniakCoreRessource implements INodeType {
       "options": [
         {
           "name": "List Countries",
-          "value": "GET /1/countries"
+          "value": "List Countries"
         },
         {
           "name": "Display A Country",
-          "value": "GET /1/countries/{country_id}"
+          "value": "Display A Country"
         }
       ],
-      "default": "GET /1/countries",
+      "default": "List Countries",
       "noDataExpression": true
     },
     {
@@ -1961,7 +1961,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "Countries"
           ],
           "operation": [
-            "GET /1/countries"
+            "List Countries"
           ]
         }
       },
@@ -2069,7 +2069,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "Countries"
           ],
           "operation": [
-            "GET /1/countries/{country_id}"
+            "Display A Country"
           ]
         }
       },
@@ -2090,14 +2090,14 @@ export class InfomaniakCoreRessource implements INodeType {
       "options": [
         {
           "name": "List Events",
-          "value": "GET /2/events"
+          "value": "List Events"
         },
         {
           "name": "Display An Event",
-          "value": "GET /2/events/{event_id}"
+          "value": "Display An Event"
         }
       ],
-      "default": "GET /2/events",
+      "default": "List Events",
       "noDataExpression": true
     },
     {
@@ -2112,7 +2112,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "Events"
           ],
           "operation": [
-            "GET /2/events"
+            "List Events"
           ]
         }
       },
@@ -2248,7 +2248,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "Events"
           ],
           "operation": [
-            "GET /2/events/{event_id}"
+            "Display An Event"
           ]
         }
       },
@@ -2269,10 +2269,10 @@ export class InfomaniakCoreRessource implements INodeType {
       "options": [
         {
           "name": "List Public Cloud Status",
-          "value": "GET /2/events/public-cloud-status"
+          "value": "List Public Cloud Status"
         }
       ],
-      "default": "GET /2/events/public-cloud-status",
+      "default": "List Public Cloud Status",
       "noDataExpression": true
     },
     {
@@ -2289,14 +2289,14 @@ export class InfomaniakCoreRessource implements INodeType {
       "options": [
         {
           "name": "List Languages",
-          "value": "GET /1/languages"
+          "value": "List Languages"
         },
         {
           "name": "Display A Language",
-          "value": "GET /1/languages/{language_id}"
+          "value": "Display A Language"
         }
       ],
-      "default": "GET /1/languages",
+      "default": "List Languages",
       "noDataExpression": true
     },
     {
@@ -2311,7 +2311,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "Languages"
           ],
           "operation": [
-            "GET /1/languages"
+            "List Languages"
           ]
         }
       },
@@ -2401,7 +2401,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "Languages"
           ],
           "operation": [
-            "GET /1/languages/{language_id}"
+            "Display A Language"
           ]
         }
       },
@@ -2415,21 +2415,21 @@ export class InfomaniakCoreRessource implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "My kSuite"
+            "My K Suite"
           ]
         }
       },
       "options": [
         {
           "name": "Show My KSuite",
-          "value": "GET /1/my_ksuite/{my_k_suite_id}"
+          "value": "Show My KSuite"
         },
         {
           "name": "Current My KSuite",
-          "value": "GET /1/my_ksuite/current"
+          "value": "Current My KSuite"
         }
       ],
-      "default": "GET /1/my_ksuite/{my_k_suite_id}",
+      "default": "Show My KSuite",
       "noDataExpression": true
     },
     {
@@ -2440,10 +2440,10 @@ export class InfomaniakCoreRessource implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "My kSuite"
+            "My K Suite"
           ],
           "operation": [
-            "GET /1/my_ksuite/{my_k_suite_id}"
+            "Show My KSuite"
           ]
         }
       },
@@ -2458,10 +2458,10 @@ export class InfomaniakCoreRessource implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "My kSuite"
+            "My K Suite"
           ],
           "operation": [
-            "GET /1/my_ksuite/{my_k_suite_id}"
+            "Show My KSuite"
           ]
         }
       },
@@ -2484,10 +2484,10 @@ export class InfomaniakCoreRessource implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "My kSuite"
+            "My K Suite"
           ],
           "operation": [
-            "GET /1/my_ksuite/current"
+            "Current My KSuite"
           ]
         }
       },
@@ -2508,17 +2508,17 @@ export class InfomaniakCoreRessource implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "My kSuite > Product management"
+            "My K Suite > Product Management"
           ]
         }
       },
       "options": [
         {
           "name": "Cancel Unsubscribe",
-          "value": "POST /1/my_ksuite/{my_k_suite_id}/cancel_unsubscribe"
+          "value": "Cancel Unsubscribe"
         }
       ],
-      "default": "POST /1/my_ksuite/{my_k_suite_id}/cancel_unsubscribe",
+      "default": "Cancel Unsubscribe",
       "noDataExpression": true
     },
     {
@@ -2529,10 +2529,10 @@ export class InfomaniakCoreRessource implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "My kSuite > Product management"
+            "My K Suite > Product Management"
           ],
           "operation": [
-            "POST /1/my_ksuite/{my_k_suite_id}/cancel_unsubscribe"
+            "Cancel Unsubscribe"
           ]
         }
       },
@@ -2552,10 +2552,10 @@ export class InfomaniakCoreRessource implements INodeType {
       "options": [
         {
           "name": "List Products",
-          "value": "GET /1/products"
+          "value": "List Products"
         }
       ],
-      "default": "GET /1/products",
+      "default": "List Products",
       "noDataExpression": true
     },
     {
@@ -2570,7 +2570,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "Products"
           ],
           "operation": [
-            "GET /1/products"
+            "List Products"
           ]
         }
       },
@@ -2917,22 +2917,22 @@ export class InfomaniakCoreRessource implements INodeType {
       "options": [
         {
           "name": "Add / Update Profile's Avatar.",
-          "value": "POST /2/profile/avatar"
+          "value": "Add / Update Profile's Avatar."
         },
         {
           "name": "Delete Profile's Avatar.",
-          "value": "DELETE /2/profile/avatar"
+          "value": "Delete Profile's Avatar."
         },
         {
           "name": "List User Information",
-          "value": "GET /2/profile"
+          "value": "List User Information"
         },
         {
           "name": "Update Profile Information",
-          "value": "PATCH /2/profile"
+          "value": "Update Profile Information"
         }
       ],
-      "default": "POST /2/profile/avatar",
+      "default": "Add / Update Profile's Avatar.",
       "noDataExpression": true
     },
     {
@@ -2946,7 +2946,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "Profile"
           ],
           "operation": [
-            "POST /2/profile/avatar"
+            "Add / Update Profile's Avatar."
           ]
         }
       },
@@ -2964,7 +2964,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "Profile"
           ],
           "operation": [
-            "POST /2/profile/avatar"
+            "Add / Update Profile's Avatar."
           ]
         }
       },
@@ -2982,7 +2982,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "Profile"
           ],
           "operation": [
-            "GET /2/profile"
+            "List User Information"
           ]
         }
       },
@@ -3008,7 +3008,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "Profile"
           ],
           "operation": [
-            "PATCH /2/profile"
+            "Update Profile Information"
           ]
         }
       },
@@ -3032,7 +3032,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "Profile"
           ],
           "operation": [
-            "PATCH /2/profile"
+            "Update Profile Information"
           ]
         }
       },
@@ -3051,7 +3051,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "Profile"
           ],
           "operation": [
-            "PATCH /2/profile"
+            "Update Profile Information"
           ]
         }
       },
@@ -3182,18 +3182,18 @@ export class InfomaniakCoreRessource implements INodeType {
       "options": [
         {
           "name": "List Applications Passwords",
-          "value": "GET /2/profile/applications/passwords"
+          "value": "List Applications Passwords"
         },
         {
           "name": "Add An Application Password",
-          "value": "POST /2/profile/applications/passwords"
+          "value": "Add An Application Password"
         },
         {
           "name": "Display An Application Password",
-          "value": "GET /2/profile/applications/passwords/{password_id}"
+          "value": "Display An Application Password"
         }
       ],
-      "default": "GET /2/profile/applications/passwords",
+      "default": "List Applications Passwords",
       "noDataExpression": true
     },
     {
@@ -3207,7 +3207,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "Profile > Applications Passwords"
           ],
           "operation": [
-            "GET /2/profile/applications/passwords/{password_id}"
+            "Display An Application Password"
           ]
         }
       },
@@ -3228,18 +3228,18 @@ export class InfomaniakCoreRessource implements INodeType {
       "options": [
         {
           "name": "List Emails",
-          "value": "GET /2/profile/emails"
+          "value": "List Emails"
         },
         {
           "name": "Display An Email",
-          "value": "GET /2/profile/emails/{email_type}/{email_id}"
+          "value": "Display An Email"
         },
         {
           "name": "Delete An Email",
-          "value": "DELETE /2/profile/emails/{email_type}/{email_id}"
+          "value": "Delete An Email"
         }
       ],
-      "default": "GET /2/profile/emails",
+      "default": "List Emails",
       "noDataExpression": true
     },
     {
@@ -3253,7 +3253,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "Profile > Emails"
           ],
           "operation": [
-            "GET /2/profile/emails/{email_type}/{email_id}"
+            "Display An Email"
           ]
         }
       },
@@ -3271,7 +3271,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "Profile > Emails"
           ],
           "operation": [
-            "GET /2/profile/emails/{email_type}/{email_id}"
+            "Display An Email"
           ]
         }
       },
@@ -3289,7 +3289,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "Profile > Emails"
           ],
           "operation": [
-            "DELETE /2/profile/emails/{email_type}/{email_id}"
+            "Delete An Email"
           ]
         }
       },
@@ -3307,7 +3307,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "Profile > Emails"
           ],
           "operation": [
-            "DELETE /2/profile/emails/{email_type}/{email_id}"
+            "Delete An Email"
           ]
         }
       },
@@ -3328,18 +3328,18 @@ export class InfomaniakCoreRessource implements INodeType {
       "options": [
         {
           "name": "List Phones",
-          "value": "GET /2/profile/phones"
+          "value": "List Phones"
         },
         {
           "name": "Display A Phone",
-          "value": "GET /2/profile/phones/{phone_id}"
+          "value": "Display A Phone"
         },
         {
           "name": "Delete A Phone",
-          "value": "DELETE /2/profile/phones/{phone_id}"
+          "value": "Delete A Phone"
         }
       ],
-      "default": "GET /2/profile/phones",
+      "default": "List Phones",
       "noDataExpression": true
     },
     {
@@ -3353,7 +3353,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "Profile > Phones"
           ],
           "operation": [
-            "GET /2/profile/phones/{phone_id}"
+            "Display A Phone"
           ]
         }
       },
@@ -3371,7 +3371,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "Profile > Phones"
           ],
           "operation": [
-            "DELETE /2/profile/phones/{phone_id}"
+            "Delete A Phone"
           ]
         }
       },
@@ -3392,14 +3392,14 @@ export class InfomaniakCoreRessource implements INodeType {
       "options": [
         {
           "name": "List Tasks",
-          "value": "GET /1/async/tasks"
+          "value": "List Tasks"
         },
         {
           "name": "Display A Task",
-          "value": "GET /1/async/tasks/{task_uuid}"
+          "value": "Display A Task"
         }
       ],
-      "default": "GET /1/async/tasks",
+      "default": "List Tasks",
       "noDataExpression": true
     },
     {
@@ -3414,7 +3414,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "Tasks"
           ],
           "operation": [
-            "GET /1/async/tasks"
+            "List Tasks"
           ]
         }
       },
@@ -3504,7 +3504,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "Tasks"
           ],
           "operation": [
-            "GET /1/async/tasks/{task_uuid}"
+            "Display A Task"
           ]
         }
       },
@@ -3525,14 +3525,14 @@ export class InfomaniakCoreRessource implements INodeType {
       "options": [
         {
           "name": "List Timezones",
-          "value": "GET /1/timezones"
+          "value": "List Timezones"
         },
         {
           "name": "Display A Timezone",
-          "value": "GET /1/timezones/{timezone_id}"
+          "value": "Display A Timezone"
         }
       ],
-      "default": "GET /1/timezones",
+      "default": "List Timezones",
       "noDataExpression": true
     },
     {
@@ -3547,7 +3547,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "Timezones"
           ],
           "operation": [
-            "GET /1/timezones"
+            "List Timezones"
           ]
         }
       },
@@ -3643,7 +3643,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "Timezones"
           ],
           "operation": [
-            "GET /1/timezones/{timezone_id}"
+            "Display A Timezone"
           ]
         }
       },
@@ -3664,14 +3664,14 @@ export class InfomaniakCoreRessource implements INodeType {
       "options": [
         {
           "name": "Invite A User",
-          "value": "POST /1/accounts/{account}/invitations"
+          "value": "Invite A User"
         },
         {
           "name": "Cancel An Invitation",
-          "value": "DELETE /1/accounts/{account}/invitations/{invitation}"
+          "value": "Cancel An Invitation"
         }
       ],
-      "default": "POST /1/accounts/{account}/invitations",
+      "default": "Invite A User",
       "noDataExpression": true
     },
     {
@@ -3685,7 +3685,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management"
           ],
           "operation": [
-            "POST /1/accounts/{account}/invitations"
+            "Invite A User"
           ]
         }
       },
@@ -3704,7 +3704,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management"
           ],
           "operation": [
-            "POST /1/accounts/{account}/invitations"
+            "Invite A User"
           ]
         }
       },
@@ -3729,7 +3729,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management"
           ],
           "operation": [
-            "POST /1/accounts/{account}/invitations"
+            "Invite A User"
           ]
         }
       },
@@ -3747,7 +3747,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management"
           ],
           "operation": [
-            "POST /1/accounts/{account}/invitations"
+            "Invite A User"
           ]
         }
       },
@@ -3765,7 +3765,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management"
           ],
           "operation": [
-            "POST /1/accounts/{account}/invitations"
+            "Invite A User"
           ]
         }
       },
@@ -3783,7 +3783,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management"
           ],
           "operation": [
-            "POST /1/accounts/{account}/invitations"
+            "Invite A User"
           ]
         }
       },
@@ -3823,7 +3823,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management"
           ],
           "operation": [
-            "POST /1/accounts/{account}/invitations"
+            "Invite A User"
           ]
         }
       },
@@ -3856,7 +3856,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management"
           ],
           "operation": [
-            "POST /1/accounts/{account}/invitations"
+            "Invite A User"
           ]
         }
       },
@@ -3909,7 +3909,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management"
           ],
           "operation": [
-            "DELETE /1/accounts/{account}/invitations/{invitation}"
+            "Cancel An Invitation"
           ]
         }
       },
@@ -3927,7 +3927,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management"
           ],
           "operation": [
-            "DELETE /1/accounts/{account}/invitations/{invitation}"
+            "Cancel An Invitation"
           ]
         }
       },
@@ -3948,42 +3948,42 @@ export class InfomaniakCoreRessource implements INodeType {
       "options": [
         {
           "name": "List Accounts",
-          "value": "GET /1/accounts"
+          "value": "List Accounts"
         },
         {
           "name": "Display An Account",
-          "value": "GET /1/accounts/{account_id}"
+          "value": "Display An Account"
         },
         {
           "name": "Display A Listing Of Tags For An Account.",
-          "value": "GET /1/accounts/{account_id}/tags"
+          "value": "Display A Listing Of Tags For An Account."
         },
         {
           "name": "List Account's Products",
-          "value": "GET /1/accounts/{account_id}/products"
+          "value": "List Account's Products"
         },
         {
           "name": "List Services",
-          "value": "GET /1/accounts/{account_id}/services"
+          "value": "List Services"
         },
         {
           "name": "List Current Account's Products",
-          "value": "GET /1/accounts/current/products"
+          "value": "List Current Account's Products"
         },
         {
           "name": "List Basic Teams Information Of An Account.",
-          "value": "GET /1/accounts/{account_id}/basic/teams"
+          "value": "List Basic Teams Information Of An Account."
         },
         {
           "name": "List Users",
-          "value": "GET /2/accounts/{account}/users"
+          "value": "List Users"
         },
         {
           "name": "List App Accesses",
-          "value": "GET /2/accounts/{account}/users/{user}/app_accesses"
+          "value": "List App Accesses"
         }
       ],
-      "default": "GET /1/accounts",
+      "default": "List Accounts",
       "noDataExpression": true
     },
     {
@@ -3998,7 +3998,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts"
           ],
           "operation": [
-            "GET /1/accounts"
+            "List Accounts"
           ]
         }
       },
@@ -4054,7 +4054,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts"
           ],
           "operation": [
-            "GET /1/accounts/{account_id}"
+            "Display An Account"
           ]
         }
       },
@@ -4073,7 +4073,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts"
           ],
           "operation": [
-            "GET /1/accounts/{account_id}"
+            "Display An Account"
           ]
         }
       },
@@ -4098,7 +4098,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts"
           ],
           "operation": [
-            "GET /1/accounts/{account_id}/tags"
+            "Display A Listing Of Tags For An Account."
           ]
         }
       },
@@ -4117,7 +4117,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts"
           ],
           "operation": [
-            "GET /1/accounts/{account_id}/tags"
+            "Display A Listing Of Tags For An Account."
           ]
         }
       },
@@ -4173,7 +4173,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts"
           ],
           "operation": [
-            "GET /1/accounts/{account_id}/products"
+            "List Account's Products"
           ]
         }
       },
@@ -4192,7 +4192,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts"
           ],
           "operation": [
-            "GET /1/accounts/{account_id}/products"
+            "List Account's Products"
           ]
         }
       },
@@ -4223,7 +4223,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts"
           ],
           "operation": [
-            "GET /1/accounts/{account_id}/services"
+            "List Services"
           ]
         }
       },
@@ -4242,7 +4242,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts"
           ],
           "operation": [
-            "GET /1/accounts/current/products"
+            "List Current Account's Products"
           ]
         }
       },
@@ -4273,7 +4273,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts"
           ],
           "operation": [
-            "GET /1/accounts/{account_id}/basic/teams"
+            "List Basic Teams Information Of An Account."
           ]
         }
       },
@@ -4292,7 +4292,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts"
           ],
           "operation": [
-            "GET /1/accounts/{account_id}/basic/teams"
+            "List Basic Teams Information Of An Account."
           ]
         }
       },
@@ -4317,7 +4317,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts"
           ],
           "operation": [
-            "GET /2/accounts/{account}/users"
+            "List Users"
           ]
         }
       },
@@ -4335,7 +4335,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts"
           ],
           "operation": [
-            "GET /2/accounts/{account}/users"
+            "List Users"
           ]
         }
       },
@@ -4442,7 +4442,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts"
           ],
           "operation": [
-            "GET /2/accounts/{account}/users/{user}/app_accesses"
+            "List App Accesses"
           ]
         }
       },
@@ -4459,7 +4459,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts"
           ],
           "operation": [
-            "GET /2/accounts/{account}/users/{user}/app_accesses"
+            "List App Accesses"
           ]
         }
       },
@@ -4479,18 +4479,18 @@ export class InfomaniakCoreRessource implements INodeType {
       "options": [
         {
           "name": "Display An Invitation Of An Account",
-          "value": "GET /1/accounts/{account}/invitations/{invitation}"
+          "value": "Display An Invitation Of An Account"
         },
         {
           "name": "Patch An Invitation",
-          "value": "PATCH /1/accounts/{account}/invitations/{invitation}"
+          "value": "Patch An Invitation"
         },
         {
           "name": "Get Users Invitations",
-          "value": "GET /1/accounts/{account}/invitations/users/{user}"
+          "value": "Get Users Invitations"
         }
       ],
-      "default": "GET /1/accounts/{account}/invitations/{invitation}",
+      "default": "Display An Invitation Of An Account",
       "noDataExpression": true
     },
     {
@@ -4504,7 +4504,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts > Invitations"
           ],
           "operation": [
-            "GET /1/accounts/{account}/invitations/{invitation}"
+            "Display An Invitation Of An Account"
           ]
         }
       },
@@ -4521,7 +4521,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts > Invitations"
           ],
           "operation": [
-            "GET /1/accounts/{account}/invitations/{invitation}"
+            "Display An Invitation Of An Account"
           ]
         }
       },
@@ -4539,7 +4539,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts > Invitations"
           ],
           "operation": [
-            "GET /1/accounts/{account}/invitations/{invitation}"
+            "Display An Invitation Of An Account"
           ]
         }
       },
@@ -4564,7 +4564,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts > Invitations"
           ],
           "operation": [
-            "PATCH /1/accounts/{account}/invitations/{invitation}"
+            "Patch An Invitation"
           ]
         }
       },
@@ -4581,7 +4581,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts > Invitations"
           ],
           "operation": [
-            "PATCH /1/accounts/{account}/invitations/{invitation}"
+            "Patch An Invitation"
           ]
         }
       },
@@ -4599,7 +4599,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts > Invitations"
           ],
           "operation": [
-            "PATCH /1/accounts/{account}/invitations/{invitation}"
+            "Patch An Invitation"
           ]
         }
       },
@@ -4674,7 +4674,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts > Invitations"
           ],
           "operation": [
-            "GET /1/accounts/{account}/invitations/users/{user}"
+            "Get Users Invitations"
           ]
         }
       },
@@ -4691,7 +4691,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts > Invitations"
           ],
           "operation": [
-            "GET /1/accounts/{account}/invitations/users/{user}"
+            "Get Users Invitations"
           ]
         }
       },
@@ -4709,7 +4709,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts > Invitations"
           ],
           "operation": [
-            "GET /1/accounts/{account}/invitations/users/{user}"
+            "Get Users Invitations"
           ]
         }
       },
@@ -4743,25 +4743,25 @@ export class InfomaniakCoreRessource implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "User Management > Accounts > Invitations > B2B"
+            "User Management > Accounts > Invitations > B2 B"
           ]
         }
       },
       "options": [
         {
           "name": "List Customers",
-          "value": "GET /1/accounts/{account}/invitations/{invitation}/b2b"
+          "value": "List Customers"
         },
         {
           "name": "Assign Customers",
-          "value": "POST /1/accounts/{account}/invitations/{invitation}/b2b"
+          "value": "Assign Customers"
         },
         {
           "name": "Unassign Customers",
-          "value": "DELETE /1/accounts/{account}/invitations/{invitation}/b2b/{partnership_id}"
+          "value": "Unassign Customers"
         }
       ],
-      "default": "GET /1/accounts/{account}/invitations/{invitation}/b2b",
+      "default": "List Customers",
       "noDataExpression": true
     },
     {
@@ -4772,10 +4772,10 @@ export class InfomaniakCoreRessource implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "User Management > Accounts > Invitations > B2B"
+            "User Management > Accounts > Invitations > B2 B"
           ],
           "operation": [
-            "GET /1/accounts/{account}/invitations/{invitation}/b2b"
+            "List Customers"
           ]
         }
       },
@@ -4789,10 +4789,10 @@ export class InfomaniakCoreRessource implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "User Management > Accounts > Invitations > B2B"
+            "User Management > Accounts > Invitations > B2 B"
           ],
           "operation": [
-            "GET /1/accounts/{account}/invitations/{invitation}/b2b"
+            "List Customers"
           ]
         }
       },
@@ -4807,10 +4807,10 @@ export class InfomaniakCoreRessource implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "User Management > Accounts > Invitations > B2B"
+            "User Management > Accounts > Invitations > B2 B"
           ],
           "operation": [
-            "GET /1/accounts/{account}/invitations/{invitation}/b2b"
+            "List Customers"
           ]
         }
       },
@@ -4890,10 +4890,10 @@ export class InfomaniakCoreRessource implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "User Management > Accounts > Invitations > B2B"
+            "User Management > Accounts > Invitations > B2 B"
           ],
           "operation": [
-            "POST /1/accounts/{account}/invitations/{invitation}/b2b"
+            "Assign Customers"
           ]
         }
       },
@@ -4907,10 +4907,10 @@ export class InfomaniakCoreRessource implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "User Management > Accounts > Invitations > B2B"
+            "User Management > Accounts > Invitations > B2 B"
           ],
           "operation": [
-            "POST /1/accounts/{account}/invitations/{invitation}/b2b"
+            "Assign Customers"
           ]
         }
       },
@@ -4924,10 +4924,10 @@ export class InfomaniakCoreRessource implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "User Management > Accounts > Invitations > B2B"
+            "User Management > Accounts > Invitations > B2 B"
           ],
           "operation": [
-            "POST /1/accounts/{account}/invitations/{invitation}/b2b"
+            "Assign Customers"
           ]
         }
       },
@@ -4941,10 +4941,10 @@ export class InfomaniakCoreRessource implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "User Management > Accounts > Invitations > B2B"
+            "User Management > Accounts > Invitations > B2 B"
           ],
           "operation": [
-            "DELETE /1/accounts/{account}/invitations/{invitation}/b2b/{partnership_id}"
+            "Unassign Customers"
           ]
         }
       },
@@ -4958,10 +4958,10 @@ export class InfomaniakCoreRessource implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "User Management > Accounts > Invitations > B2B"
+            "User Management > Accounts > Invitations > B2 B"
           ],
           "operation": [
-            "DELETE /1/accounts/{account}/invitations/{invitation}/b2b/{partnership_id}"
+            "Unassign Customers"
           ]
         }
       },
@@ -4975,10 +4975,10 @@ export class InfomaniakCoreRessource implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "User Management > Accounts > Invitations > B2B"
+            "User Management > Accounts > Invitations > B2 B"
           ],
           "operation": [
-            "DELETE /1/accounts/{account}/invitations/{invitation}/b2b/{partnership_id}"
+            "Unassign Customers"
           ]
         }
       },
@@ -4998,18 +4998,18 @@ export class InfomaniakCoreRessource implements INodeType {
       "options": [
         {
           "name": "Add A Drive Access",
-          "value": "POST /1/accounts/{account}/invitations/{invitation}/drive"
+          "value": "Add A Drive Access"
         },
         {
           "name": "Update Drive Access",
-          "value": "PATCH /1/accounts/{account}/invitations/{invitation}/drive/{drive_id}"
+          "value": "Update Drive Access"
         },
         {
           "name": "Revoke A Drive Access",
-          "value": "DELETE /1/accounts/{account}/invitations/{invitation}/drive/{drive_id}"
+          "value": "Revoke A Drive Access"
         }
       ],
-      "default": "POST /1/accounts/{account}/invitations/{invitation}/drive",
+      "default": "Add A Drive Access",
       "noDataExpression": true
     },
     {
@@ -5023,7 +5023,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts > Invitations > Drive"
           ],
           "operation": [
-            "POST /1/accounts/{account}/invitations/{invitation}/drive"
+            "Add A Drive Access"
           ]
         }
       },
@@ -5040,7 +5040,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts > Invitations > Drive"
           ],
           "operation": [
-            "POST /1/accounts/{account}/invitations/{invitation}/drive"
+            "Add A Drive Access"
           ]
         }
       },
@@ -5057,7 +5057,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts > Invitations > Drive"
           ],
           "operation": [
-            "POST /1/accounts/{account}/invitations/{invitation}/drive"
+            "Add A Drive Access"
           ]
         }
       },
@@ -5074,7 +5074,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts > Invitations > Drive"
           ],
           "operation": [
-            "POST /1/accounts/{account}/invitations/{invitation}/drive"
+            "Add A Drive Access"
           ]
         }
       },
@@ -5101,7 +5101,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts > Invitations > Drive"
           ],
           "operation": [
-            "PATCH /1/accounts/{account}/invitations/{invitation}/drive/{drive_id}"
+            "Update Drive Access"
           ]
         }
       },
@@ -5118,7 +5118,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts > Invitations > Drive"
           ],
           "operation": [
-            "PATCH /1/accounts/{account}/invitations/{invitation}/drive/{drive_id}"
+            "Update Drive Access"
           ]
         }
       },
@@ -5135,7 +5135,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts > Invitations > Drive"
           ],
           "operation": [
-            "PATCH /1/accounts/{account}/invitations/{invitation}/drive/{drive_id}"
+            "Update Drive Access"
           ]
         }
       },
@@ -5153,7 +5153,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts > Invitations > Drive"
           ],
           "operation": [
-            "PATCH /1/accounts/{account}/invitations/{invitation}/drive/{drive_id}"
+            "Update Drive Access"
           ]
         }
       },
@@ -5211,7 +5211,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts > Invitations > Drive"
           ],
           "operation": [
-            "DELETE /1/accounts/{account}/invitations/{invitation}/drive/{drive_id}"
+            "Revoke A Drive Access"
           ]
         }
       },
@@ -5228,7 +5228,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts > Invitations > Drive"
           ],
           "operation": [
-            "DELETE /1/accounts/{account}/invitations/{invitation}/drive/{drive_id}"
+            "Revoke A Drive Access"
           ]
         }
       },
@@ -5245,7 +5245,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts > Invitations > Drive"
           ],
           "operation": [
-            "DELETE /1/accounts/{account}/invitations/{invitation}/drive/{drive_id}"
+            "Revoke A Drive Access"
           ]
         }
       },
@@ -5265,10 +5265,10 @@ export class InfomaniakCoreRessource implements INodeType {
       "options": [
         {
           "name": "Update A K Chat Access",
-          "value": "PATCH /1/accounts/{account}/invitations/{invitation}/kchat"
+          "value": "Update A K Chat Access"
         }
       ],
-      "default": "PATCH /1/accounts/{account}/invitations/{invitation}/kchat",
+      "default": "Update A K Chat Access",
       "noDataExpression": true
     },
     {
@@ -5282,7 +5282,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts > Invitations > KChat"
           ],
           "operation": [
-            "PATCH /1/accounts/{account}/invitations/{invitation}/kchat"
+            "Update A K Chat Access"
           ]
         }
       },
@@ -5299,7 +5299,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts > Invitations > KChat"
           ],
           "operation": [
-            "PATCH /1/accounts/{account}/invitations/{invitation}/kchat"
+            "Update A K Chat Access"
           ]
         }
       },
@@ -5316,7 +5316,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts > Invitations > KChat"
           ],
           "operation": [
-            "PATCH /1/accounts/{account}/invitations/{invitation}/kchat"
+            "Update A K Chat Access"
           ]
         }
       },
@@ -5346,22 +5346,22 @@ export class InfomaniakCoreRessource implements INodeType {
       "options": [
         {
           "name": "Create Invite",
-          "value": "POST /1/accounts/{account}/invitations/{invitation}/mailbox/invite"
+          "value": "Create Invite"
         },
         {
           "name": "Create Mailbox",
-          "value": "POST /1/accounts/{account}/invitations/{invitation}/mailbox/{mail_id}"
+          "value": "Create Mailbox"
         },
         {
           "name": "Update A Mailbox Access",
-          "value": "PATCH /1/accounts/{account}/invitations/{invitation}/mailbox/{mail_id}"
+          "value": "Update A Mailbox Access"
         },
         {
           "name": "Revoke A Drive Access",
-          "value": "DELETE /1/accounts/{account}/invitations/{invitation}/mailbox/{mail_id}"
+          "value": "Revoke A Drive Access"
         }
       ],
-      "default": "POST /1/accounts/{account}/invitations/{invitation}/mailbox/invite",
+      "default": "Create Invite",
       "noDataExpression": true
     },
     {
@@ -5375,7 +5375,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts > Invitations > Mailbox"
           ],
           "operation": [
-            "POST /1/accounts/{account}/invitations/{invitation}/mailbox/invite"
+            "Create Invite"
           ]
         }
       },
@@ -5392,7 +5392,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts > Invitations > Mailbox"
           ],
           "operation": [
-            "POST /1/accounts/{account}/invitations/{invitation}/mailbox/invite"
+            "Create Invite"
           ]
         }
       },
@@ -5409,7 +5409,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts > Invitations > Mailbox"
           ],
           "operation": [
-            "POST /1/accounts/{account}/invitations/{invitation}/mailbox/invite"
+            "Create Invite"
           ]
         }
       },
@@ -5427,7 +5427,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts > Invitations > Mailbox"
           ],
           "operation": [
-            "POST /1/accounts/{account}/invitations/{invitation}/mailbox/invite"
+            "Create Invite"
           ]
         }
       },
@@ -5444,7 +5444,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts > Invitations > Mailbox"
           ],
           "operation": [
-            "POST /1/accounts/{account}/invitations/{invitation}/mailbox/invite"
+            "Create Invite"
           ]
         }
       },
@@ -5461,7 +5461,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts > Invitations > Mailbox"
           ],
           "operation": [
-            "POST /1/accounts/{account}/invitations/{invitation}/mailbox/invite"
+            "Create Invite"
           ]
         }
       },
@@ -5479,7 +5479,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts > Invitations > Mailbox"
           ],
           "operation": [
-            "POST /1/accounts/{account}/invitations/{invitation}/mailbox/invite"
+            "Create Invite"
           ]
         }
       },
@@ -5503,7 +5503,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts > Invitations > Mailbox"
           ],
           "operation": [
-            "POST /1/accounts/{account}/invitations/{invitation}/mailbox/{mail_id}"
+            "Create Mailbox"
           ]
         }
       },
@@ -5520,7 +5520,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts > Invitations > Mailbox"
           ],
           "operation": [
-            "POST /1/accounts/{account}/invitations/{invitation}/mailbox/{mail_id}"
+            "Create Mailbox"
           ]
         }
       },
@@ -5537,7 +5537,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts > Invitations > Mailbox"
           ],
           "operation": [
-            "POST /1/accounts/{account}/invitations/{invitation}/mailbox/{mail_id}"
+            "Create Mailbox"
           ]
         }
       },
@@ -5554,7 +5554,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts > Invitations > Mailbox"
           ],
           "operation": [
-            "POST /1/accounts/{account}/invitations/{invitation}/mailbox/{mail_id}"
+            "Create Mailbox"
           ]
         }
       },
@@ -5571,7 +5571,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts > Invitations > Mailbox"
           ],
           "operation": [
-            "POST /1/accounts/{account}/invitations/{invitation}/mailbox/{mail_id}"
+            "Create Mailbox"
           ]
         }
       },
@@ -5588,7 +5588,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts > Invitations > Mailbox"
           ],
           "operation": [
-            "PATCH /1/accounts/{account}/invitations/{invitation}/mailbox/{mail_id}"
+            "Update A Mailbox Access"
           ]
         }
       },
@@ -5605,7 +5605,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts > Invitations > Mailbox"
           ],
           "operation": [
-            "PATCH /1/accounts/{account}/invitations/{invitation}/mailbox/{mail_id}"
+            "Update A Mailbox Access"
           ]
         }
       },
@@ -5622,7 +5622,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts > Invitations > Mailbox"
           ],
           "operation": [
-            "PATCH /1/accounts/{account}/invitations/{invitation}/mailbox/{mail_id}"
+            "Update A Mailbox Access"
           ]
         }
       },
@@ -5639,7 +5639,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts > Invitations > Mailbox"
           ],
           "operation": [
-            "PATCH /1/accounts/{account}/invitations/{invitation}/mailbox/{mail_id}"
+            "Update A Mailbox Access"
           ]
         }
       },
@@ -5656,7 +5656,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts > Invitations > Mailbox"
           ],
           "operation": [
-            "PATCH /1/accounts/{account}/invitations/{invitation}/mailbox/{mail_id}"
+            "Update A Mailbox Access"
           ]
         }
       },
@@ -5673,7 +5673,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts > Invitations > Mailbox"
           ],
           "operation": [
-            "DELETE /1/accounts/{account}/invitations/{invitation}/mailbox/{mail_id}"
+            "Revoke A Drive Access"
           ]
         }
       },
@@ -5690,7 +5690,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts > Invitations > Mailbox"
           ],
           "operation": [
-            "DELETE /1/accounts/{account}/invitations/{invitation}/mailbox/{mail_id}"
+            "Revoke A Drive Access"
           ]
         }
       },
@@ -5707,7 +5707,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts > Invitations > Mailbox"
           ],
           "operation": [
-            "DELETE /1/accounts/{account}/invitations/{invitation}/mailbox/{mail_id}"
+            "Revoke A Drive Access"
           ]
         }
       },
@@ -5724,7 +5724,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Accounts > Invitations > Mailbox"
           ],
           "operation": [
-            "DELETE /1/accounts/{account}/invitations/{invitation}/mailbox/{mail_id}"
+            "Revoke A Drive Access"
           ]
         }
       },
@@ -5737,21 +5737,21 @@ export class InfomaniakCoreRessource implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "User Management > Accounts > Invitations > kSuite"
+            "User Management > Accounts > Invitations > K Suite"
           ]
         }
       },
       "options": [
         {
           "name": "Create A K Suite Access",
-          "value": "POST /1/accounts/{account}/invitations/{invitation}/ksuite"
+          "value": "Create A K Suite Access"
         },
         {
           "name": "Revoke K Suite Access",
-          "value": "DELETE /1/accounts/{account}/invitations/{invitation}/ksuite"
+          "value": "Revoke K Suite Access"
         }
       ],
-      "default": "POST /1/accounts/{account}/invitations/{invitation}/ksuite",
+      "default": "Create A K Suite Access",
       "noDataExpression": true
     },
     {
@@ -5762,10 +5762,10 @@ export class InfomaniakCoreRessource implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "User Management > Accounts > Invitations > kSuite"
+            "User Management > Accounts > Invitations > K Suite"
           ],
           "operation": [
-            "POST /1/accounts/{account}/invitations/{invitation}/ksuite"
+            "Create A K Suite Access"
           ]
         }
       },
@@ -5779,10 +5779,10 @@ export class InfomaniakCoreRessource implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "User Management > Accounts > Invitations > kSuite"
+            "User Management > Accounts > Invitations > K Suite"
           ],
           "operation": [
-            "POST /1/accounts/{account}/invitations/{invitation}/ksuite"
+            "Create A K Suite Access"
           ]
         }
       },
@@ -5796,10 +5796,10 @@ export class InfomaniakCoreRessource implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "User Management > Accounts > Invitations > kSuite"
+            "User Management > Accounts > Invitations > K Suite"
           ],
           "operation": [
-            "POST /1/accounts/{account}/invitations/{invitation}/ksuite"
+            "Create A K Suite Access"
           ]
         }
       },
@@ -5814,10 +5814,10 @@ export class InfomaniakCoreRessource implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "User Management > Accounts > Invitations > kSuite"
+            "User Management > Accounts > Invitations > K Suite"
           ],
           "operation": [
-            "POST /1/accounts/{account}/invitations/{invitation}/ksuite"
+            "Create A K Suite Access"
           ]
         }
       },
@@ -5850,10 +5850,10 @@ export class InfomaniakCoreRessource implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "User Management > Accounts > Invitations > kSuite"
+            "User Management > Accounts > Invitations > K Suite"
           ],
           "operation": [
-            "DELETE /1/accounts/{account}/invitations/{invitation}/ksuite"
+            "Revoke K Suite Access"
           ]
         }
       },
@@ -5867,10 +5867,10 @@ export class InfomaniakCoreRessource implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "User Management > Accounts > Invitations > kSuite"
+            "User Management > Accounts > Invitations > K Suite"
           ],
           "operation": [
-            "DELETE /1/accounts/{account}/invitations/{invitation}/ksuite"
+            "Revoke K Suite Access"
           ]
         }
       },
@@ -5890,26 +5890,26 @@ export class InfomaniakCoreRessource implements INodeType {
       "options": [
         {
           "name": "List Teams",
-          "value": "GET /1/accounts/{account}/teams"
+          "value": "List Teams"
         },
         {
           "name": "Create A Team",
-          "value": "POST /1/accounts/{account}/teams"
+          "value": "Create A Team"
         },
         {
           "name": "Get A Team",
-          "value": "GET /1/accounts/{account}/teams/{team}"
+          "value": "Get A Team"
         },
         {
           "name": "Update A Team",
-          "value": "PATCH /1/accounts/{account}/teams/{team}"
+          "value": "Update A Team"
         },
         {
           "name": "Delete A Team",
-          "value": "DELETE /1/accounts/{account}/teams/{team}"
+          "value": "Delete A Team"
         }
       ],
-      "default": "GET /1/accounts/{account}/teams",
+      "default": "List Teams",
       "noDataExpression": true
     },
     {
@@ -5923,7 +5923,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Teams"
           ],
           "operation": [
-            "GET /1/accounts/{account}/teams"
+            "List Teams"
           ]
         }
       },
@@ -5942,7 +5942,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Teams"
           ],
           "operation": [
-            "GET /1/accounts/{account}/teams"
+            "List Teams"
           ]
         }
       },
@@ -6037,7 +6037,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Teams"
           ],
           "operation": [
-            "POST /1/accounts/{account}/teams"
+            "Create A Team"
           ]
         }
       },
@@ -6055,7 +6055,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Teams"
           ],
           "operation": [
-            "POST /1/accounts/{account}/teams"
+            "Create A Team"
           ]
         }
       },
@@ -6074,7 +6074,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Teams"
           ],
           "operation": [
-            "POST /1/accounts/{account}/teams"
+            "Create A Team"
           ]
         }
       },
@@ -6106,7 +6106,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Teams"
           ],
           "operation": [
-            "GET /1/accounts/{account}/teams/{team}"
+            "Get A Team"
           ]
         }
       },
@@ -6124,7 +6124,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Teams"
           ],
           "operation": [
-            "GET /1/accounts/{account}/teams/{team}"
+            "Get A Team"
           ]
         }
       },
@@ -6143,7 +6143,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Teams"
           ],
           "operation": [
-            "GET /1/accounts/{account}/teams/{team}"
+            "Get A Team"
           ]
         }
       },
@@ -6168,7 +6168,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Teams"
           ],
           "operation": [
-            "PATCH /1/accounts/{account}/teams/{team}"
+            "Update A Team"
           ]
         }
       },
@@ -6186,7 +6186,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Teams"
           ],
           "operation": [
-            "PATCH /1/accounts/{account}/teams/{team}"
+            "Update A Team"
           ]
         }
       },
@@ -6205,7 +6205,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Teams"
           ],
           "operation": [
-            "PATCH /1/accounts/{account}/teams/{team}"
+            "Update A Team"
           ]
         }
       },
@@ -6244,7 +6244,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Teams"
           ],
           "operation": [
-            "DELETE /1/accounts/{account}/teams/{team}"
+            "Delete A Team"
           ]
         }
       },
@@ -6262,7 +6262,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Teams"
           ],
           "operation": [
-            "DELETE /1/accounts/{account}/teams/{team}"
+            "Delete A Team"
           ]
         }
       },
@@ -6283,18 +6283,18 @@ export class InfomaniakCoreRessource implements INodeType {
       "options": [
         {
           "name": "List Team Users",
-          "value": "GET /1/accounts/{account}/teams/{team}/users"
+          "value": "List Team Users"
         },
         {
           "name": "Add Users To Team",
-          "value": "POST /1/accounts/{account}/teams/{team}/users"
+          "value": "Add Users To Team"
         },
         {
           "name": "Remove Users From Team",
-          "value": "DELETE /1/accounts/{account}/teams/{team}/users"
+          "value": "Remove Users From Team"
         }
       ],
-      "default": "GET /1/accounts/{account}/teams/{team}/users",
+      "default": "List Team Users",
       "noDataExpression": true
     },
     {
@@ -6308,7 +6308,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Teams > Users"
           ],
           "operation": [
-            "GET /1/accounts/{account}/teams/{team}/users"
+            "List Team Users"
           ]
         }
       },
@@ -6326,7 +6326,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Teams > Users"
           ],
           "operation": [
-            "GET /1/accounts/{account}/teams/{team}/users"
+            "List Team Users"
           ]
         }
       },
@@ -6345,7 +6345,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Teams > Users"
           ],
           "operation": [
-            "GET /1/accounts/{account}/teams/{team}/users"
+            "List Team Users"
           ]
         }
       },
@@ -6427,7 +6427,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Teams > Users"
           ],
           "operation": [
-            "POST /1/accounts/{account}/teams/{team}/users"
+            "Add Users To Team"
           ]
         }
       },
@@ -6445,7 +6445,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Teams > Users"
           ],
           "operation": [
-            "POST /1/accounts/{account}/teams/{team}/users"
+            "Add Users To Team"
           ]
         }
       },
@@ -6463,7 +6463,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Teams > Users"
           ],
           "operation": [
-            "POST /1/accounts/{account}/teams/{team}/users"
+            "Add Users To Team"
           ]
         }
       },
@@ -6481,7 +6481,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Teams > Users"
           ],
           "operation": [
-            "DELETE /1/accounts/{account}/teams/{team}/users"
+            "Remove Users From Team"
           ]
         }
       },
@@ -6499,7 +6499,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Teams > Users"
           ],
           "operation": [
-            "DELETE /1/accounts/{account}/teams/{team}/users"
+            "Remove Users From Team"
           ]
         }
       },
@@ -6517,7 +6517,7 @@ export class InfomaniakCoreRessource implements INodeType {
             "User Management > Teams > Users"
           ],
           "operation": [
-            "DELETE /1/accounts/{account}/teams/{team}/users"
+            "Remove Users From Team"
           ]
         }
       },
@@ -6531,33 +6531,33 @@ export class InfomaniakCoreRessource implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "kSuite > Workspace"
+            "K Suite > Workspace"
           ]
         }
       },
       "options": [
         {
           "name": "Get Related Workspace Users",
-          "value": "GET /2/profile/ksuites/mailboxes"
+          "value": "Get Related Workspace Users"
         },
         {
           "name": "Attach A Mailbox To Current User",
-          "value": "POST /2/profile/ksuites/mailboxes"
+          "value": "Attach A Mailbox To Current User"
         },
         {
           "name": "Set Mailbox As Primary",
-          "value": "PUT /2/profile/ksuites/mailboxes/{mailbox_id}/set_primary"
+          "value": "Set Mailbox As Primary"
         },
         {
           "name": "Update Mailbox Credential Password",
-          "value": "PUT /2/profile/ksuites/mailboxes/{mailbox_id}/update_password"
+          "value": "Update Mailbox Credential Password"
         },
         {
           "name": "Unlink A Mailbox From Current User",
-          "value": "DELETE /2/profile/ksuites/mailboxes/{mailbox_id}"
+          "value": "Unlink A Mailbox From Current User"
         }
       ],
-      "default": "GET /2/profile/ksuites/mailboxes",
+      "default": "Get Related Workspace Users",
       "noDataExpression": true
     },
     {
@@ -6568,10 +6568,10 @@ export class InfomaniakCoreRessource implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "kSuite > Workspace"
+            "K Suite > Workspace"
           ],
           "operation": [
-            "POST /2/profile/ksuites/mailboxes"
+            "Attach A Mailbox To Current User"
           ]
         }
       },
@@ -6587,10 +6587,10 @@ export class InfomaniakCoreRessource implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "kSuite > Workspace"
+            "K Suite > Workspace"
           ],
           "operation": [
-            "POST /2/profile/ksuites/mailboxes"
+            "Attach A Mailbox To Current User"
           ]
         }
       },
@@ -6612,10 +6612,10 @@ export class InfomaniakCoreRessource implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "kSuite > Workspace"
+            "K Suite > Workspace"
           ],
           "operation": [
-            "PUT /2/profile/ksuites/mailboxes/{mailbox_id}/set_primary"
+            "Set Mailbox As Primary"
           ]
         }
       },
@@ -6629,10 +6629,10 @@ export class InfomaniakCoreRessource implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "kSuite > Workspace"
+            "K Suite > Workspace"
           ],
           "operation": [
-            "PUT /2/profile/ksuites/mailboxes/{mailbox_id}/update_password"
+            "Update Mailbox Credential Password"
           ]
         }
       },
@@ -6646,10 +6646,10 @@ export class InfomaniakCoreRessource implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "kSuite > Workspace"
+            "K Suite > Workspace"
           ],
           "operation": [
-            "PUT /2/profile/ksuites/mailboxes/{mailbox_id}/update_password"
+            "Update Mailbox Credential Password"
           ]
         }
       },
@@ -6664,10 +6664,10 @@ export class InfomaniakCoreRessource implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "kSuite > Workspace"
+            "K Suite > Workspace"
           ],
           "operation": [
-            "DELETE /2/profile/ksuites/mailboxes/{mailbox_id}"
+            "Unlink A Mailbox From Current User"
           ]
         }
       },
@@ -6687,20 +6687,20 @@ export class InfomaniakCoreRessource implements INodeType {
             "Tasks",
             "Timezones",
             "User Management > Accounts",
-            "User Management > Accounts > Invitations > B2B",
+            "User Management > Accounts > Invitations > B2 B",
             "User Management > Teams",
             "User Management > Teams > Users"
           ],
           "operation": [
-            "GET /1/countries",
-            "GET /1/languages",
-            "GET /1/products",
-            "GET /1/async/tasks",
-            "GET /1/timezones",
-            "GET /2/accounts/{account}/users",
-            "GET /1/accounts/{account}/invitations/{invitation}/b2b",
-            "GET /1/accounts/{account}/teams",
-            "GET /1/accounts/{account}/teams/{team}/users"
+            "List Countries",
+            "List Languages",
+            "List Products",
+            "List Tasks",
+            "List Timezones",
+            "List Users",
+            "List Customers",
+            "List Teams",
+            "List Team Users"
           ]
         }
       }
@@ -6723,20 +6723,20 @@ export class InfomaniakCoreRessource implements INodeType {
             "Tasks",
             "Timezones",
             "User Management > Accounts",
-            "User Management > Accounts > Invitations > B2B",
+            "User Management > Accounts > Invitations > B2 B",
             "User Management > Teams",
             "User Management > Teams > Users"
           ],
           "operation": [
-            "GET /1/countries",
-            "GET /1/languages",
-            "GET /1/products",
-            "GET /1/async/tasks",
-            "GET /1/timezones",
-            "GET /2/accounts/{account}/users",
-            "GET /1/accounts/{account}/invitations/{invitation}/b2b",
-            "GET /1/accounts/{account}/teams",
-            "GET /1/accounts/{account}/teams/{team}/users"
+            "List Countries",
+            "List Languages",
+            "List Products",
+            "List Tasks",
+            "List Timezones",
+            "List Users",
+            "List Customers",
+            "List Teams",
+            "List Team Users"
           ],
           "returnAll": [
             false

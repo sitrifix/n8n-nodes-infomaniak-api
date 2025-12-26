@@ -16,7 +16,7 @@ type OperationDefinition = {
 
 const operations: Record<string, Record<string, OperationDefinition>> = {
   "Channel": {
-    "GET /1/videos": {
+    "List Channels": {
       "method": "GET",
       "path": "/1/videos",
       "pagination": "limit-skip",
@@ -27,7 +27,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/videos": {
+    "Create A Channel": {
       "method": "POST",
       "path": "/1/videos",
       "pagination": "none",
@@ -48,7 +48,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/videos/{channel}": {
+    "Return A Channel": {
       "method": "GET",
       "path": "/1/videos/{channel}",
       "pagination": "none",
@@ -64,7 +64,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/videos/{channel}": {
+    "Update A Channel": {
       "method": "PUT",
       "path": "/1/videos/{channel}",
       "pagination": "none",
@@ -94,7 +94,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/videos/{channel}": {
+    "Delete A Channel": {
       "method": "DELETE",
       "path": "/1/videos/{channel}",
       "pagination": "none",
@@ -117,7 +117,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Channel > Config": {
-    "POST /1/videos/{channel}/encodes": {
+    "Config A Channel": {
       "method": "POST",
       "path": "/1/videos/{channel}/encodes",
       "pagination": "none",
@@ -145,7 +145,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Event": {
-    "GET /1/videos/{channel}/events": {
+    "List All Events": {
       "method": "GET",
       "path": "/1/videos/{channel}/events",
       "pagination": "none",
@@ -166,7 +166,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/videos/{channel}/events": {
+    "Create An Event": {
       "method": "POST",
       "path": "/1/videos/{channel}/events",
       "pagination": "none",
@@ -260,7 +260,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /1/videos/{channel}/events/{repeatable_planned_event}": {
+    "Return An Event": {
       "method": "GET",
       "path": "/1/videos/{channel}/events/{repeatable_planned_event}",
       "pagination": "none",
@@ -285,7 +285,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/videos/{channel}/events/{repeatable_planned_event}": {
+    "Update An Event": {
       "method": "PUT",
       "path": "/1/videos/{channel}/events/{repeatable_planned_event}",
       "pagination": "none",
@@ -387,7 +387,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/videos/{channel}/events/{repeatable_planned_event}": {
+    "Delete An Event": {
       "method": "DELETE",
       "path": "/1/videos/{channel}/events/{repeatable_planned_event}",
       "pagination": "none",
@@ -423,7 +423,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Integrations": {
-    "GET /1/videos/{channel}/integrations": {
+    "Integration Code": {
       "method": "GET",
       "path": "/1/videos/{channel}/integrations",
       "pagination": "none",
@@ -441,7 +441,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Live": {
-    "PUT /1/videos/{channel}/live/start": {
+    "Resume The Live": {
       "method": "PUT",
       "path": "/1/videos/{channel}/live/start",
       "pagination": "none",
@@ -462,7 +462,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/videos/{channel}/live/stop": {
+    "Interrupt The Live": {
       "method": "PUT",
       "path": "/1/videos/{channel}/live/stop",
       "pagination": "none",
@@ -485,7 +485,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Misc > Countries": {
-    "GET /1/videos/countries": {
+    "List Countries": {
       "method": "GET",
       "path": "/1/videos/countries",
       "pagination": "none",
@@ -496,7 +496,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/videos/timezones": {
+    "List Timezones": {
       "method": "GET",
       "path": "/1/videos/timezones",
       "pagination": "none",
@@ -508,8 +508,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "bodyFieldName": null
     }
   },
-  "Misc > stream": {
-    "GET /1/videos/password": {
+  "Misc > Stream": {
+    "Generate Stream Key": {
       "method": "GET",
       "path": "/1/videos/password",
       "pagination": "none",
@@ -522,7 +522,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Option": {
-    "GET /1/videos/{channel}/options": {
+    "List Option": {
       "method": "GET",
       "path": "/1/videos/{channel}/options",
       "pagination": "none",
@@ -543,7 +543,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/videos/{channel}/options/{video_option}": {
+    "Return Option": {
       "method": "GET",
       "path": "/1/videos/{channel}/options/{video_option}",
       "pagination": "none",
@@ -568,7 +568,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/videos/{channel}/options/{video_option}/recommit": {
+    "Undertake Option": {
       "method": "PUT",
       "path": "/1/videos/{channel}/options/{video_option}/recommit",
       "pagination": "none",
@@ -588,7 +588,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/videos/{channel}/options/{video_option}/terminate": {
+    "Terminate Option": {
       "method": "DELETE",
       "path": "/1/videos/{channel}/options/{video_option}/terminate",
       "pagination": "none",
@@ -620,7 +620,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Option > Record": {
-    "GET /1/videos/{channel}/options/recording": {
+    "Show A Storage Config": {
       "method": "GET",
       "path": "/1/videos/{channel}/options/recording",
       "pagination": "none",
@@ -641,7 +641,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/videos/{channel}/options/recording": {
+    "Create Recording Config": {
       "method": "POST",
       "path": "/1/videos/{channel}/options/recording",
       "pagination": "none",
@@ -662,7 +662,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/videos/{channel}/options/recording": {
+    "Update Recording Config": {
       "method": "PUT",
       "path": "/1/videos/{channel}/options/recording",
       "pagination": "none",
@@ -690,7 +690,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Option > Record > Instant": {
-    "POST /1/videos/{channel}/options/recording/instant": {
+    "Start A Record": {
       "method": "POST",
       "path": "/1/videos/{channel}/options/recording/instant",
       "pagination": "none",
@@ -748,7 +748,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/videos/{channel}/options/recording/instant": {
+    "Stop A Record": {
       "method": "DELETE",
       "path": "/1/videos/{channel}/options/recording/instant",
       "pagination": "none",
@@ -771,7 +771,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Option > Record > Storage": {
-    "GET /1/videos/{channel}/options/recording/storage": {
+    "Lists All Storage Machine": {
       "method": "GET",
       "path": "/1/videos/{channel}/options/recording/storage",
       "pagination": "none",
@@ -792,7 +792,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/videos/{channel}/options/recording/storage": {
+    "Return A Storage Machine": {
       "method": "POST",
       "path": "/1/videos/{channel}/options/recording/storage",
       "pagination": "none",
@@ -813,7 +813,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/videos/{channel}/options/recording/storage/test": {
+    "Update A Storage Machine": {
       "method": "POST",
       "path": "/1/videos/{channel}/options/recording/storage/test",
       "pagination": "none",
@@ -887,7 +887,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /1/videos/{channel}/options/recording/storage/{storage_machine}": {
+    "Create A Storage Machine": {
       "method": "GET",
       "path": "/1/videos/{channel}/options/recording/storage/{storage_machine}",
       "pagination": "none",
@@ -912,7 +912,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/videos/{channel}/options/recording/storage/{storage_machine}": {
+    "Update A Storage Machine (2)": {
       "method": "PUT",
       "path": "/1/videos/{channel}/options/recording/storage/{storage_machine}",
       "pagination": "none",
@@ -937,7 +937,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/videos/{channel}/options/recording/storage/{storage_machine}": {
+    "Update A Storage Machine (3)": {
       "method": "DELETE",
       "path": "/1/videos/{channel}/options/recording/storage/{storage_machine}",
       "pagination": "none",
@@ -964,7 +964,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Option > Timeshift": {
-    "GET /1/videos/{channel}/options/timeshift": {
+    "Return Timeshift Config": {
       "method": "GET",
       "path": "/1/videos/{channel}/options/timeshift",
       "pagination": "none",
@@ -985,7 +985,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/videos/{channel}/options/timeshift": {
+    "Create A Timeshift Config.": {
       "method": "POST",
       "path": "/1/videos/{channel}/options/timeshift",
       "pagination": "none",
@@ -1006,7 +1006,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/videos/{channel}/options/timeshift": {
+    "Update A Timeshift Config": {
       "method": "PUT",
       "path": "/1/videos/{channel}/options/timeshift",
       "pagination": "none",
@@ -1038,7 +1038,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Option > Watermarking": {
-    "GET /1/videos/{channel}/options/watermark": {
+    "Return Watermark": {
       "method": "GET",
       "path": "/1/videos/{channel}/options/watermark",
       "pagination": "none",
@@ -1054,7 +1054,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/videos/{channel}/options/watermark": {
+    "Update Watermark": {
       "method": "PUT",
       "path": "/1/videos/{channel}/options/watermark",
       "pagination": "none",
@@ -1120,7 +1120,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "PUT /1/videos/{channel}/options/watermark/enable": {
+    "Enabled Watermark": {
       "method": "PUT",
       "path": "/1/videos/{channel}/options/watermark/enable",
       "pagination": "none",
@@ -1136,7 +1136,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/videos/{channel}/options/watermark/disable": {
+    "Disable Watermark": {
       "method": "PUT",
       "path": "/1/videos/{channel}/options/watermark/disable",
       "pagination": "none",
@@ -1153,8 +1153,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "bodyFieldName": null
     }
   },
-  "Option > simulcast": {
-    "POST /1/videos/{channel}/simulcasts/{simulcast_platform}": {
+  "Option > Simulcast": {
+    "Return Simulcast": {
       "method": "POST",
       "path": "/1/videos/{channel}/simulcasts/{simulcast_platform}",
       "pagination": "none",
@@ -1200,7 +1200,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/videos/{channel}/simulcasts": {
+    "Lists All Simulcast Config": {
       "method": "GET",
       "path": "/1/videos/{channel}/simulcasts",
       "pagination": "none",
@@ -1216,7 +1216,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/videos/{channel}/simulcasts/{simulcast_platform}/{simulcast_config}": {
+    "Return Simulcast (2)": {
       "method": "GET",
       "path": "/1/videos/{channel}/simulcasts/{simulcast_platform}/{simulcast_config}",
       "pagination": "none",
@@ -1240,7 +1240,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/videos/{channel}/simulcasts/{simulcast_platform}/{simulcast_config}": {
+    "Return Simulcast (3)": {
       "method": "PUT",
       "path": "/1/videos/{channel}/simulcasts/{simulcast_platform}/{simulcast_config}",
       "pagination": "none",
@@ -1302,7 +1302,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/videos/{channel}/simulcasts/{simulcast_platform}/{simulcast_config}": {
+    "Delete A Player": {
       "method": "DELETE",
       "path": "/1/videos/{channel}/simulcasts/{simulcast_platform}/{simulcast_config}",
       "pagination": "none",
@@ -1331,7 +1331,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/videos/{channel}/simulcasts/{simulcast_platform}/{simulcast_config}/enable": {
+    "Disable Simulcast": {
       "method": "PUT",
       "path": "/1/videos/{channel}/simulcasts/{simulcast_platform}/{simulcast_config}/enable",
       "pagination": "none",
@@ -1360,7 +1360,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/videos/{channel}/simulcasts/{simulcast_platform}/{simulcast_config}/disable": {
+    "Disable Simulcast (2)": {
       "method": "PUT",
       "path": "/1/videos/{channel}/simulcasts/{simulcast_platform}/{simulcast_config}/disable",
       "pagination": "none",
@@ -1391,7 +1391,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Players": {
-    "GET /1/videos/{channel}/players": {
+    "Lists All Players": {
       "method": "GET",
       "path": "/1/videos/{channel}/players",
       "pagination": "limit-skip",
@@ -1412,7 +1412,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/videos/{channel}/players": {
+    "Create A Player": {
       "method": "POST",
       "path": "/1/videos/{channel}/players",
       "pagination": "none",
@@ -1654,7 +1654,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /1/videos/{channel}/players/{player}": {
+    "Return A Player": {
       "method": "GET",
       "path": "/1/videos/{channel}/players/{player}",
       "pagination": "none",
@@ -1679,7 +1679,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/videos/{channel}/players/{player}": {
+    "Copy A Player": {
       "method": "POST",
       "path": "/1/videos/{channel}/players/{player}",
       "pagination": "none",
@@ -1709,7 +1709,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/videos/{channel}/players/{player}": {
+    "Update A Player": {
       "method": "PUT",
       "path": "/1/videos/{channel}/players/{player}",
       "pagination": "none",
@@ -1955,7 +1955,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/videos/{channel}/players/{player}": {
+    "Delete A Player": {
       "method": "DELETE",
       "path": "/1/videos/{channel}/players/{player}",
       "pagination": "none",
@@ -1982,7 +1982,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Players > Ads": {
-    "GET /1/videos/{channel}/players/{player}/ads": {
+    "List All Ads": {
       "method": "GET",
       "path": "/1/videos/{channel}/players/{player}/ads",
       "pagination": "none",
@@ -2002,7 +2002,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/videos/{channel}/players/{player}/ads": {
+    "Create An Ads": {
       "method": "POST",
       "path": "/1/videos/{channel}/players/{player}/ads",
       "pagination": "none",
@@ -2044,7 +2044,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "POST /1/videos/{channel}/players/{player}/ads/duplicate": {
+    "Copy An Ads": {
       "method": "POST",
       "path": "/1/videos/{channel}/players/{player}/ads/duplicate",
       "pagination": "none",
@@ -2074,7 +2074,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/videos/{channel}/players/{player}/ads/{ads}": {
+    "Return An Ads": {
       "method": "GET",
       "path": "/1/videos/{channel}/players/{player}/ads/{ads}",
       "pagination": "none",
@@ -2098,7 +2098,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/videos/{channel}/players/{player}/ads/{ads}": {
+    "Update An Ads": {
       "method": "PUT",
       "path": "/1/videos/{channel}/players/{player}/ads/{ads}",
       "pagination": "none",
@@ -2144,7 +2144,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/videos/{channel}/players/{player}/ads/{ads}": {
+    "Delete An Ads": {
       "method": "DELETE",
       "path": "/1/videos/{channel}/players/{player}/ads/{ads}",
       "pagination": "none",
@@ -2175,7 +2175,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Players > Embeds": {
-    "GET /1/videos/{channel}/players/{player}/embed": {
+    "Integration Code": {
       "method": "GET",
       "path": "/1/videos/{channel}/players/{player}/embed",
       "pagination": "none",
@@ -2195,7 +2195,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/videos/{channel}/players/{player}/embed/url": {
+    "Integration URL": {
       "method": "GET",
       "path": "/1/videos/{channel}/players/{player}/embed/url",
       "pagination": "none",
@@ -2217,7 +2217,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Players > Pictures": {
-    "GET /1/videos/{channel}/players/{player}/thumbnail/{thumbnail}": {
+    "Show Picture": {
       "method": "GET",
       "path": "/1/videos/{channel}/players/{player}/thumbnail/{thumbnail}",
       "pagination": "none",
@@ -2243,7 +2243,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Prices": {
-    "GET /1/videos/shop/prices": {
+    "Get Price": {
       "method": "GET",
       "path": "/1/videos/shop/prices",
       "pagination": "none",
@@ -2254,7 +2254,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/videos/shop/descriptions": {
+    "Get Description": {
       "method": "GET",
       "path": "/1/videos/shop/descriptions",
       "pagination": "none",
@@ -2267,7 +2267,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Restrictions": {
-    "GET /1/videos/{channel}/restrictions": {
+    "Show Restriction": {
       "method": "GET",
       "path": "/1/videos/{channel}/restrictions",
       "pagination": "none",
@@ -2288,7 +2288,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/videos/{channel}/restrictions": {
+    "Update Channels": {
       "method": "PUT",
       "path": "/1/videos/{channel}/restrictions",
       "pagination": "none",
@@ -2334,7 +2334,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "PUT /1/videos/{channel}/restrictions/password": {
+    "Update Restriction Password": {
       "method": "PUT",
       "path": "/1/videos/{channel}/restrictions/password",
       "pagination": "none",
@@ -2365,8 +2365,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "bodyFieldName": null
     }
   },
-  "Stats > Channel > Connection history": {
-    "GET /1/videos/{channel}/history": {
+  "Stats > Channel > Connection History": {
+    "Return List Of Connection": {
       "method": "GET",
       "path": "/1/videos/{channel}/history",
       "pagination": "none",
@@ -2382,7 +2382,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/videos/{channel}/history/{connection_history}": {
+    "Return A Channel": {
       "method": "GET",
       "path": "/1/videos/{channel}/history/{connection_history}",
       "pagination": "none",
@@ -2404,7 +2404,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Stats > Channel > Consumption": {
-    "GET /1/videos/{channel}/stats/consumption": {
+    "Consumption": {
       "method": "GET",
       "path": "/1/videos/{channel}/stats/consumption",
       "pagination": "none",
@@ -2437,7 +2437,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/videos/{channel}/stats/consumption/resolutions/histogram": {
+    "Consumption Per Resolution": {
       "method": "GET",
       "path": "/1/videos/{channel}/stats/consumption/resolutions/histogram",
       "pagination": "none",
@@ -2471,8 +2471,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "bodyFieldName": null
     }
   },
-  "Stats > Channel > Export stats": {
-    "GET /1/videos/{channel}/stats/export_csv/{statistics}": {
+  "Stats > Channel > Export Stats": {
+    "Return Text/csv": {
       "method": "GET",
       "path": "/1/videos/{channel}/stats/export_csv/{statistics}",
       "pagination": "none",
@@ -2503,7 +2503,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Stats > Channel > Geolocation": {
-    "GET /1/videos/{channel}/stats/geolocation/countries": {
+    "Countries": {
       "method": "GET",
       "path": "/1/videos/{channel}/stats/geolocation/countries",
       "pagination": "none",
@@ -2536,7 +2536,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/videos/{channel}/stats/geolocation/clusters": {
+    "Clusters": {
       "method": "GET",
       "path": "/1/videos/{channel}/stats/geolocation/clusters",
       "pagination": "none",
@@ -2571,7 +2571,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Stats > Channel > Technologies": {
-    "GET /1/videos/{channel}/stats/technologies/browsers/shares": {
+    "Browsers Share": {
       "method": "GET",
       "path": "/1/videos/{channel}/stats/technologies/browsers/shares",
       "pagination": "none",
@@ -2604,7 +2604,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/videos/{channel}/stats/technologies/players/shares": {
+    "Player Share": {
       "method": "GET",
       "path": "/1/videos/{channel}/stats/technologies/players/shares",
       "pagination": "none",
@@ -2637,7 +2637,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/videos/{channel}/stats/technologies/os/shares": {
+    "OS Share": {
       "method": "GET",
       "path": "/1/videos/{channel}/stats/technologies/os/shares",
       "pagination": "none",
@@ -2672,7 +2672,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Stats > Channel > Viewers": {
-    "GET /1/videos/{channel}/stats/viewers": {
+    "Viewers Share": {
       "method": "GET",
       "path": "/1/videos/{channel}/stats/viewers",
       "pagination": "none",
@@ -2705,7 +2705,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/videos/{channel}/stats/viewers/histogram": {
+    "Viewers Histogram Share": {
       "method": "GET",
       "path": "/1/videos/{channel}/stats/viewers/histogram",
       "pagination": "none",
@@ -2738,7 +2738,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/videos/{channel}/stats/viewers/resolutions/shares": {
+    "Viewers Per Resolution Share.": {
       "method": "GET",
       "path": "/1/videos/{channel}/stats/viewers/resolutions/shares",
       "pagination": "none",
@@ -2771,7 +2771,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/videos/{channel}/stats/viewers/resolutions/histogram": {
+    "Viewers Per Resolution Histogram.": {
       "method": "GET",
       "path": "/1/videos/{channel}/stats/viewers/resolutions/histogram",
       "pagination": "none",
@@ -2804,7 +2804,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/videos/{channel}/stats/viewers/uniques": {
+    "Unique Viewers.": {
       "method": "GET",
       "path": "/1/videos/{channel}/stats/viewers/uniques",
       "pagination": "none",
@@ -2839,7 +2839,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Stats > Channel > Viewing": {
-    "GET /1/videos/{channel}/stats/viewing": {
+    "Viewing Time": {
       "method": "GET",
       "path": "/1/videos/{channel}/stats/viewing",
       "pagination": "none",
@@ -2872,7 +2872,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/videos/{channel}/stats/viewing/resolutions/histogram": {
+    "Viewing Histogram Par Channel": {
       "method": "GET",
       "path": "/1/videos/{channel}/stats/viewing/resolutions/histogram",
       "pagination": "none",
@@ -2907,7 +2907,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Stats > Globals > Consumption": {
-    "GET /1/videos/stats/consumption": {
+    "Consumption": {
       "method": "GET",
       "path": "/1/videos/stats/consumption",
       "pagination": "none",
@@ -2927,7 +2927,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/videos/stats/consumption/channels/histogram": {
+    "Consumption Per Channel Histogram": {
       "method": "GET",
       "path": "/1/videos/stats/consumption/channels/histogram",
       "pagination": "none",
@@ -2949,7 +2949,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Stats > Globals > Geolocation": {
-    "GET /1/videos/stats/geolocation/countries": {
+    "Countries": {
       "method": "GET",
       "path": "/1/videos/stats/geolocation/countries",
       "pagination": "none",
@@ -2969,7 +2969,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/videos/stats/geolocation/clusters": {
+    "Clusters": {
       "method": "GET",
       "path": "/1/videos/stats/geolocation/clusters",
       "pagination": "none",
@@ -2991,7 +2991,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Stats > Globals > Viewers": {
-    "GET /1/videos/stats/viewers": {
+    "Viewers": {
       "method": "GET",
       "path": "/1/videos/stats/viewers",
       "pagination": "none",
@@ -3019,7 +3019,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/videos/stats/viewers/uniques": {
+    "Unique Viewers": {
       "method": "GET",
       "path": "/1/videos/stats/viewers/uniques",
       "pagination": "none",
@@ -3047,7 +3047,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/videos/stats/viewers/histogram": {
+    "Viewers Histogram": {
       "method": "GET",
       "path": "/1/videos/stats/viewers/histogram",
       "pagination": "none",
@@ -3075,7 +3075,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/videos/stats/viewers/channels/histogram": {
+    "Viewers Per Channel Histogram": {
       "method": "GET",
       "path": "/1/videos/stats/viewers/channels/histogram",
       "pagination": "none",
@@ -3103,7 +3103,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/videos/stats/viewers/channels/shares": {
+    "Viewers Per Channel Share": {
       "method": "GET",
       "path": "/1/videos/stats/viewers/channels/shares",
       "pagination": "none",
@@ -3125,7 +3125,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Stats > Globals > Viewing": {
-    "GET /1/videos/stats/viewing": {
+    "Viewing Time": {
       "method": "GET",
       "path": "/1/videos/stats/viewing",
       "pagination": "none",
@@ -3153,7 +3153,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/videos/stats/viewing/channels/histogram": {
+    "Viewing Histogram Par Channel": {
       "method": "GET",
       "path": "/1/videos/stats/viewing/channels/histogram",
       "pagination": "none",
@@ -3183,7 +3183,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Thumbnail": {
-    "GET /1/videos/{channel}/thumbnail": {
+    "Show Picture": {
       "method": "GET",
       "path": "/1/videos/{channel}/thumbnail",
       "pagination": "none",
@@ -3200,8 +3200,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "bodyFieldName": null
     }
   },
-  "order": {
-    "GET /1/videos/order/{order}": {
+  "Order": {
+    "Returns A Pack Order": {
       "method": "GET",
       "path": "/1/videos/order/{order}",
       "pagination": "none",
@@ -3222,7 +3222,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/videos/order": {
+    "Returns A Pack Order (2)": {
       "method": "GET",
       "path": "/1/videos/order",
       "pagination": "none",
@@ -3243,7 +3243,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/videos/order": {
+    "Update A Pack": {
       "method": "PUT",
       "path": "/1/videos/order",
       "pagination": "none",
@@ -3358,7 +3358,7 @@ export class InfomaniakStreamingVideo implements INodeType {
         },
         {
           "name": "Misc > Stream",
-          "value": "Misc > stream"
+          "value": "Misc > Stream"
         },
         {
           "name": "Option",
@@ -3386,7 +3386,7 @@ export class InfomaniakStreamingVideo implements INodeType {
         },
         {
           "name": "Option > Simulcast",
-          "value": "Option > simulcast"
+          "value": "Option > Simulcast"
         },
         {
           "name": "Players",
@@ -3414,7 +3414,7 @@ export class InfomaniakStreamingVideo implements INodeType {
         },
         {
           "name": "Stats > Channel > Connection History",
-          "value": "Stats > Channel > Connection history"
+          "value": "Stats > Channel > Connection History"
         },
         {
           "name": "Stats > Channel > Consumption",
@@ -3422,7 +3422,7 @@ export class InfomaniakStreamingVideo implements INodeType {
         },
         {
           "name": "Stats > Channel > Export Stats",
-          "value": "Stats > Channel > Export stats"
+          "value": "Stats > Channel > Export Stats"
         },
         {
           "name": "Stats > Channel > Geolocation",
@@ -3462,7 +3462,7 @@ export class InfomaniakStreamingVideo implements INodeType {
         },
         {
           "name": "Order",
-          "value": "order"
+          "value": "Order"
         }
       ],
       "default": "Channel",
@@ -3483,26 +3483,26 @@ export class InfomaniakStreamingVideo implements INodeType {
       "options": [
         {
           "name": "List Channels",
-          "value": "GET /1/videos"
+          "value": "List Channels"
         },
         {
           "name": "Create A Channel",
-          "value": "POST /1/videos"
+          "value": "Create A Channel"
         },
         {
           "name": "Return A Channel",
-          "value": "GET /1/videos/{channel}"
+          "value": "Return A Channel"
         },
         {
           "name": "Update A Channel",
-          "value": "PUT /1/videos/{channel}"
+          "value": "Update A Channel"
         },
         {
           "name": "Delete A Channel",
-          "value": "DELETE /1/videos/{channel}"
+          "value": "Delete A Channel"
         }
       ],
-      "default": "GET /1/videos",
+      "default": "List Channels",
       "noDataExpression": true
     },
     {
@@ -3517,7 +3517,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Channel"
           ],
           "operation": [
-            "GET /1/videos"
+            "List Channels"
           ]
         }
       },
@@ -3614,7 +3614,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Channel"
           ],
           "operation": [
-            "POST /1/videos"
+            "Create A Channel"
           ]
         }
       },
@@ -3633,7 +3633,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Channel"
           ],
           "operation": [
-            "POST /1/videos"
+            "Create A Channel"
           ]
         }
       },
@@ -3657,7 +3657,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Channel"
           ],
           "operation": [
-            "POST /1/videos"
+            "Create A Channel"
           ]
         }
       },
@@ -3675,7 +3675,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Channel"
           ],
           "operation": [
-            "GET /1/videos/{channel}"
+            "Return A Channel"
           ]
         }
       },
@@ -3694,7 +3694,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Channel"
           ],
           "operation": [
-            "GET /1/videos/{channel}"
+            "Return A Channel"
           ]
         }
       },
@@ -3719,7 +3719,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Channel"
           ],
           "operation": [
-            "PUT /1/videos/{channel}"
+            "Update A Channel"
           ]
         }
       },
@@ -3737,7 +3737,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Channel"
           ],
           "operation": [
-            "PUT /1/videos/{channel}"
+            "Update A Channel"
           ]
         }
       },
@@ -3755,7 +3755,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Channel"
           ],
           "operation": [
-            "PUT /1/videos/{channel}"
+            "Update A Channel"
           ]
         }
       },
@@ -3774,7 +3774,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Channel"
           ],
           "operation": [
-            "PUT /1/videos/{channel}"
+            "Update A Channel"
           ]
         }
       },
@@ -3799,7 +3799,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Channel"
           ],
           "operation": [
-            "DELETE /1/videos/{channel}"
+            "Delete A Channel"
           ]
         }
       },
@@ -3817,7 +3817,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Channel"
           ],
           "operation": [
-            "DELETE /1/videos/{channel}"
+            "Delete A Channel"
           ]
         }
       },
@@ -3838,10 +3838,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "options": [
         {
           "name": "Config A Channel",
-          "value": "POST /1/videos/{channel}/encodes"
+          "value": "Config A Channel"
         }
       ],
-      "default": "POST /1/videos/{channel}/encodes",
+      "default": "Config A Channel",
       "noDataExpression": true
     },
     {
@@ -3855,7 +3855,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Channel > Config"
           ],
           "operation": [
-            "POST /1/videos/{channel}/encodes"
+            "Config A Channel"
           ]
         }
       },
@@ -3873,7 +3873,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Channel > Config"
           ],
           "operation": [
-            "POST /1/videos/{channel}/encodes"
+            "Config A Channel"
           ]
         }
       },
@@ -3891,7 +3891,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Channel > Config"
           ],
           "operation": [
-            "POST /1/videos/{channel}/encodes"
+            "Config A Channel"
           ]
         }
       },
@@ -3911,26 +3911,26 @@ export class InfomaniakStreamingVideo implements INodeType {
       "options": [
         {
           "name": "List All Events",
-          "value": "GET /1/videos/{channel}/events"
+          "value": "List All Events"
         },
         {
           "name": "Create An Event",
-          "value": "POST /1/videos/{channel}/events"
+          "value": "Create An Event"
         },
         {
           "name": "Return An Event",
-          "value": "GET /1/videos/{channel}/events/{repeatable_planned_event}"
+          "value": "Return An Event"
         },
         {
           "name": "Update An Event",
-          "value": "PUT /1/videos/{channel}/events/{repeatable_planned_event}"
+          "value": "Update An Event"
         },
         {
           "name": "Delete An Event",
-          "value": "DELETE /1/videos/{channel}/events/{repeatable_planned_event}"
+          "value": "Delete An Event"
         }
       ],
-      "default": "GET /1/videos/{channel}/events",
+      "default": "List All Events",
       "noDataExpression": true
     },
     {
@@ -3944,7 +3944,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Event"
           ],
           "operation": [
-            "GET /1/videos/{channel}/events"
+            "List All Events"
           ]
         }
       },
@@ -3962,7 +3962,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Event"
           ],
           "operation": [
-            "GET /1/videos/{channel}/events"
+            "List All Events"
           ]
         }
       },
@@ -3980,7 +3980,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Event"
           ],
           "operation": [
-            "POST /1/videos/{channel}/events"
+            "Create An Event"
           ]
         }
       },
@@ -3998,7 +3998,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Event"
           ],
           "operation": [
-            "POST /1/videos/{channel}/events"
+            "Create An Event"
           ]
         }
       },
@@ -4016,7 +4016,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Event"
           ],
           "operation": [
-            "POST /1/videos/{channel}/events"
+            "Create An Event"
           ]
         }
       },
@@ -4034,7 +4034,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Event"
           ],
           "operation": [
-            "POST /1/videos/{channel}/events"
+            "Create An Event"
           ]
         }
       },
@@ -4052,7 +4052,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Event"
           ],
           "operation": [
-            "POST /1/videos/{channel}/events"
+            "Create An Event"
           ]
         }
       },
@@ -4070,7 +4070,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Event"
           ],
           "operation": [
-            "POST /1/videos/{channel}/events"
+            "Create An Event"
           ]
         }
       },
@@ -4088,7 +4088,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Event"
           ],
           "operation": [
-            "POST /1/videos/{channel}/events"
+            "Create An Event"
           ]
         }
       },
@@ -4106,7 +4106,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Event"
           ],
           "operation": [
-            "POST /1/videos/{channel}/events"
+            "Create An Event"
           ]
         }
       },
@@ -4124,7 +4124,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Event"
           ],
           "operation": [
-            "POST /1/videos/{channel}/events"
+            "Create An Event"
           ]
         }
       },
@@ -4143,7 +4143,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Event"
           ],
           "operation": [
-            "POST /1/videos/{channel}/events"
+            "Create An Event"
           ]
         }
       },
@@ -4232,7 +4232,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Event"
           ],
           "operation": [
-            "GET /1/videos/{channel}/events/{repeatable_planned_event}"
+            "Return An Event"
           ]
         }
       },
@@ -4250,7 +4250,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Event"
           ],
           "operation": [
-            "GET /1/videos/{channel}/events/{repeatable_planned_event}"
+            "Return An Event"
           ]
         }
       },
@@ -4267,7 +4267,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Event"
           ],
           "operation": [
-            "GET /1/videos/{channel}/events/{repeatable_planned_event}"
+            "Return An Event"
           ]
         }
       },
@@ -4285,7 +4285,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Event"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/events/{repeatable_planned_event}"
+            "Update An Event"
           ]
         }
       },
@@ -4303,7 +4303,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Event"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/events/{repeatable_planned_event}"
+            "Update An Event"
           ]
         }
       },
@@ -4320,7 +4320,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Event"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/events/{repeatable_planned_event}"
+            "Update An Event"
           ]
         }
       },
@@ -4338,7 +4338,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Event"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/events/{repeatable_planned_event}"
+            "Update An Event"
           ]
         }
       },
@@ -4356,7 +4356,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Event"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/events/{repeatable_planned_event}"
+            "Update An Event"
           ]
         }
       },
@@ -4374,7 +4374,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Event"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/events/{repeatable_planned_event}"
+            "Update An Event"
           ]
         }
       },
@@ -4392,7 +4392,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Event"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/events/{repeatable_planned_event}"
+            "Update An Event"
           ]
         }
       },
@@ -4410,7 +4410,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Event"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/events/{repeatable_planned_event}"
+            "Update An Event"
           ]
         }
       },
@@ -4428,7 +4428,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Event"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/events/{repeatable_planned_event}"
+            "Update An Event"
           ]
         }
       },
@@ -4446,7 +4446,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Event"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/events/{repeatable_planned_event}"
+            "Update An Event"
           ]
         }
       },
@@ -4464,7 +4464,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Event"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/events/{repeatable_planned_event}"
+            "Update An Event"
           ]
         }
       },
@@ -4497,7 +4497,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Event"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/events/{repeatable_planned_event}"
+            "Update An Event"
           ]
         }
       },
@@ -4586,7 +4586,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Event"
           ],
           "operation": [
-            "DELETE /1/videos/{channel}/events/{repeatable_planned_event}"
+            "Delete An Event"
           ]
         }
       },
@@ -4604,7 +4604,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Event"
           ],
           "operation": [
-            "DELETE /1/videos/{channel}/events/{repeatable_planned_event}"
+            "Delete An Event"
           ]
         }
       },
@@ -4621,7 +4621,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Event"
           ],
           "operation": [
-            "DELETE /1/videos/{channel}/events/{repeatable_planned_event}"
+            "Delete An Event"
           ]
         }
       },
@@ -4640,7 +4640,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Event"
           ],
           "operation": [
-            "DELETE /1/videos/{channel}/events/{repeatable_planned_event}"
+            "Delete An Event"
           ]
         }
       },
@@ -4688,10 +4688,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "options": [
         {
           "name": "Integration Code",
-          "value": "GET /1/videos/{channel}/integrations"
+          "value": "Integration Code"
         }
       ],
-      "default": "GET /1/videos/{channel}/integrations",
+      "default": "Integration Code",
       "noDataExpression": true
     },
     {
@@ -4705,7 +4705,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Integrations"
           ],
           "operation": [
-            "GET /1/videos/{channel}/integrations"
+            "Integration Code"
           ]
         }
       },
@@ -4726,14 +4726,14 @@ export class InfomaniakStreamingVideo implements INodeType {
       "options": [
         {
           "name": "Resume The Live",
-          "value": "PUT /1/videos/{channel}/live/start"
+          "value": "Resume The Live"
         },
         {
           "name": "Interrupt The Live",
-          "value": "PUT /1/videos/{channel}/live/stop"
+          "value": "Interrupt The Live"
         }
       ],
-      "default": "PUT /1/videos/{channel}/live/start",
+      "default": "Resume The Live",
       "noDataExpression": true
     },
     {
@@ -4747,7 +4747,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Live"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/live/start"
+            "Resume The Live"
           ]
         }
       },
@@ -4765,7 +4765,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Live"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/live/start"
+            "Resume The Live"
           ]
         }
       },
@@ -4784,7 +4784,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Live"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/live/start"
+            "Resume The Live"
           ]
         }
       },
@@ -4809,7 +4809,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Live"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/live/stop"
+            "Interrupt The Live"
           ]
         }
       },
@@ -4827,7 +4827,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Live"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/live/stop"
+            "Interrupt The Live"
           ]
         }
       },
@@ -4846,7 +4846,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Live"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/live/stop"
+            "Interrupt The Live"
           ]
         }
       },
@@ -4874,14 +4874,14 @@ export class InfomaniakStreamingVideo implements INodeType {
       "options": [
         {
           "name": "List Countries",
-          "value": "GET /1/videos/countries"
+          "value": "List Countries"
         },
         {
           "name": "List Timezones",
-          "value": "GET /1/videos/timezones"
+          "value": "List Timezones"
         }
       ],
-      "default": "GET /1/videos/countries",
+      "default": "List Countries",
       "noDataExpression": true
     },
     {
@@ -4891,17 +4891,17 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Misc > stream"
+            "Misc > Stream"
           ]
         }
       },
       "options": [
         {
           "name": "Generate Stream Key",
-          "value": "GET /1/videos/password"
+          "value": "Generate Stream Key"
         }
       ],
-      "default": "GET /1/videos/password",
+      "default": "Generate Stream Key",
       "noDataExpression": true
     },
     {
@@ -4918,22 +4918,22 @@ export class InfomaniakStreamingVideo implements INodeType {
       "options": [
         {
           "name": "List Option",
-          "value": "GET /1/videos/{channel}/options"
+          "value": "List Option"
         },
         {
           "name": "Return Option",
-          "value": "GET /1/videos/{channel}/options/{video_option}"
+          "value": "Return Option"
         },
         {
           "name": "Undertake Option",
-          "value": "PUT /1/videos/{channel}/options/{video_option}/recommit"
+          "value": "Undertake Option"
         },
         {
           "name": "Terminate Option",
-          "value": "DELETE /1/videos/{channel}/options/{video_option}/terminate"
+          "value": "Terminate Option"
         }
       ],
-      "default": "GET /1/videos/{channel}/options",
+      "default": "List Option",
       "noDataExpression": true
     },
     {
@@ -4947,7 +4947,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option"
           ],
           "operation": [
-            "GET /1/videos/{channel}/options"
+            "List Option"
           ]
         }
       },
@@ -4965,7 +4965,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option"
           ],
           "operation": [
-            "GET /1/videos/{channel}/options"
+            "List Option"
           ]
         }
       },
@@ -4983,7 +4983,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option"
           ],
           "operation": [
-            "GET /1/videos/{channel}/options/{video_option}"
+            "Return Option"
           ]
         }
       },
@@ -5001,7 +5001,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option"
           ],
           "operation": [
-            "GET /1/videos/{channel}/options/{video_option}"
+            "Return Option"
           ]
         }
       },
@@ -5018,7 +5018,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option"
           ],
           "operation": [
-            "GET /1/videos/{channel}/options/{video_option}"
+            "Return Option"
           ]
         }
       },
@@ -5036,7 +5036,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/options/{video_option}/recommit"
+            "Undertake Option"
           ]
         }
       },
@@ -5054,7 +5054,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/options/{video_option}/recommit"
+            "Undertake Option"
           ]
         }
       },
@@ -5071,7 +5071,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option"
           ],
           "operation": [
-            "DELETE /1/videos/{channel}/options/{video_option}/terminate"
+            "Terminate Option"
           ]
         }
       },
@@ -5089,7 +5089,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option"
           ],
           "operation": [
-            "DELETE /1/videos/{channel}/options/{video_option}/terminate"
+            "Terminate Option"
           ]
         }
       },
@@ -5106,7 +5106,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option"
           ],
           "operation": [
-            "DELETE /1/videos/{channel}/options/{video_option}/terminate"
+            "Terminate Option"
           ]
         }
       },
@@ -5125,7 +5125,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option"
           ],
           "operation": [
-            "DELETE /1/videos/{channel}/options/{video_option}/terminate"
+            "Terminate Option"
           ]
         }
       },
@@ -5152,18 +5152,18 @@ export class InfomaniakStreamingVideo implements INodeType {
       "options": [
         {
           "name": "Show A Storage Config",
-          "value": "GET /1/videos/{channel}/options/recording"
+          "value": "Show A Storage Config"
         },
         {
           "name": "Create Recording Config",
-          "value": "POST /1/videos/{channel}/options/recording"
+          "value": "Create Recording Config"
         },
         {
           "name": "Update Recording Config",
-          "value": "PUT /1/videos/{channel}/options/recording"
+          "value": "Update Recording Config"
         }
       ],
-      "default": "GET /1/videos/{channel}/options/recording",
+      "default": "Show A Storage Config",
       "noDataExpression": true
     },
     {
@@ -5177,7 +5177,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Record"
           ],
           "operation": [
-            "GET /1/videos/{channel}/options/recording"
+            "Show A Storage Config"
           ]
         }
       },
@@ -5195,7 +5195,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Record"
           ],
           "operation": [
-            "GET /1/videos/{channel}/options/recording"
+            "Show A Storage Config"
           ]
         }
       },
@@ -5213,7 +5213,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Record"
           ],
           "operation": [
-            "POST /1/videos/{channel}/options/recording"
+            "Create Recording Config"
           ]
         }
       },
@@ -5231,7 +5231,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Record"
           ],
           "operation": [
-            "POST /1/videos/{channel}/options/recording"
+            "Create Recording Config"
           ]
         }
       },
@@ -5249,7 +5249,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Record"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/options/recording"
+            "Update Recording Config"
           ]
         }
       },
@@ -5267,7 +5267,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Record"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/options/recording"
+            "Update Recording Config"
           ]
         }
       },
@@ -5286,7 +5286,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Record"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/options/recording"
+            "Update Recording Config"
           ]
         }
       },
@@ -5314,14 +5314,14 @@ export class InfomaniakStreamingVideo implements INodeType {
       "options": [
         {
           "name": "Start A Record",
-          "value": "POST /1/videos/{channel}/options/recording/instant"
+          "value": "Start A Record"
         },
         {
           "name": "Stop A Record",
-          "value": "DELETE /1/videos/{channel}/options/recording/instant"
+          "value": "Stop A Record"
         }
       ],
-      "default": "POST /1/videos/{channel}/options/recording/instant",
+      "default": "Start A Record",
       "noDataExpression": true
     },
     {
@@ -5335,7 +5335,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Record > Instant"
           ],
           "operation": [
-            "POST /1/videos/{channel}/options/recording/instant"
+            "Start A Record"
           ]
         }
       },
@@ -5353,7 +5353,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Record > Instant"
           ],
           "operation": [
-            "POST /1/videos/{channel}/options/recording/instant"
+            "Start A Record"
           ]
         }
       },
@@ -5371,7 +5371,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Record > Instant"
           ],
           "operation": [
-            "POST /1/videos/{channel}/options/recording/instant"
+            "Start A Record"
           ]
         }
       },
@@ -5389,7 +5389,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Record > Instant"
           ],
           "operation": [
-            "POST /1/videos/{channel}/options/recording/instant"
+            "Start A Record"
           ]
         }
       },
@@ -5407,7 +5407,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Record > Instant"
           ],
           "operation": [
-            "POST /1/videos/{channel}/options/recording/instant"
+            "Start A Record"
           ]
         }
       },
@@ -5425,7 +5425,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Record > Instant"
           ],
           "operation": [
-            "POST /1/videos/{channel}/options/recording/instant"
+            "Start A Record"
           ]
         }
       },
@@ -5443,7 +5443,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Record > Instant"
           ],
           "operation": [
-            "POST /1/videos/{channel}/options/recording/instant"
+            "Start A Record"
           ]
         }
       },
@@ -5461,7 +5461,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Record > Instant"
           ],
           "operation": [
-            "POST /1/videos/{channel}/options/recording/instant"
+            "Start A Record"
           ]
         }
       },
@@ -5506,7 +5506,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Record > Instant"
           ],
           "operation": [
-            "DELETE /1/videos/{channel}/options/recording/instant"
+            "Stop A Record"
           ]
         }
       },
@@ -5524,7 +5524,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Record > Instant"
           ],
           "operation": [
-            "DELETE /1/videos/{channel}/options/recording/instant"
+            "Stop A Record"
           ]
         }
       },
@@ -5545,30 +5545,30 @@ export class InfomaniakStreamingVideo implements INodeType {
       "options": [
         {
           "name": "Lists All Storage Machine",
-          "value": "GET /1/videos/{channel}/options/recording/storage"
+          "value": "Lists All Storage Machine"
         },
         {
           "name": "Return A Storage Machine",
-          "value": "POST /1/videos/{channel}/options/recording/storage"
+          "value": "Return A Storage Machine"
         },
         {
           "name": "Update A Storage Machine",
-          "value": "POST /1/videos/{channel}/options/recording/storage/test"
+          "value": "Update A Storage Machine"
         },
         {
           "name": "Create A Storage Machine",
-          "value": "GET /1/videos/{channel}/options/recording/storage/{storage_machine}"
+          "value": "Create A Storage Machine"
         },
         {
           "name": "Update A Storage Machine",
-          "value": "PUT /1/videos/{channel}/options/recording/storage/{storage_machine}"
+          "value": "Update A Storage Machine (2)"
         },
         {
           "name": "Update A Storage Machine",
-          "value": "DELETE /1/videos/{channel}/options/recording/storage/{storage_machine}"
+          "value": "Update A Storage Machine (3)"
         }
       ],
-      "default": "GET /1/videos/{channel}/options/recording/storage",
+      "default": "Lists All Storage Machine",
       "noDataExpression": true
     },
     {
@@ -5582,7 +5582,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Record > Storage"
           ],
           "operation": [
-            "GET /1/videos/{channel}/options/recording/storage"
+            "Lists All Storage Machine"
           ]
         }
       },
@@ -5600,7 +5600,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Record > Storage"
           ],
           "operation": [
-            "GET /1/videos/{channel}/options/recording/storage"
+            "Lists All Storage Machine"
           ]
         }
       },
@@ -5618,7 +5618,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Record > Storage"
           ],
           "operation": [
-            "POST /1/videos/{channel}/options/recording/storage"
+            "Return A Storage Machine"
           ]
         }
       },
@@ -5636,7 +5636,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Record > Storage"
           ],
           "operation": [
-            "POST /1/videos/{channel}/options/recording/storage"
+            "Return A Storage Machine"
           ]
         }
       },
@@ -5654,7 +5654,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Record > Storage"
           ],
           "operation": [
-            "POST /1/videos/{channel}/options/recording/storage/test"
+            "Update A Storage Machine"
           ]
         }
       },
@@ -5672,7 +5672,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Record > Storage"
           ],
           "operation": [
-            "POST /1/videos/{channel}/options/recording/storage/test"
+            "Update A Storage Machine"
           ]
         }
       },
@@ -5690,7 +5690,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Record > Storage"
           ],
           "operation": [
-            "POST /1/videos/{channel}/options/recording/storage/test"
+            "Update A Storage Machine"
           ]
         }
       },
@@ -5708,7 +5708,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Record > Storage"
           ],
           "operation": [
-            "POST /1/videos/{channel}/options/recording/storage/test"
+            "Update A Storage Machine"
           ]
         }
       },
@@ -5726,7 +5726,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Record > Storage"
           ],
           "operation": [
-            "POST /1/videos/{channel}/options/recording/storage/test"
+            "Update A Storage Machine"
           ]
         }
       },
@@ -5763,7 +5763,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Record > Storage"
           ],
           "operation": [
-            "POST /1/videos/{channel}/options/recording/storage/test"
+            "Update A Storage Machine"
           ]
         }
       },
@@ -5851,7 +5851,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Record > Storage"
           ],
           "operation": [
-            "GET /1/videos/{channel}/options/recording/storage/{storage_machine}"
+            "Create A Storage Machine"
           ]
         }
       },
@@ -5869,7 +5869,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Record > Storage"
           ],
           "operation": [
-            "GET /1/videos/{channel}/options/recording/storage/{storage_machine}"
+            "Create A Storage Machine"
           ]
         }
       },
@@ -5886,7 +5886,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Record > Storage"
           ],
           "operation": [
-            "GET /1/videos/{channel}/options/recording/storage/{storage_machine}"
+            "Create A Storage Machine"
           ]
         }
       },
@@ -5904,7 +5904,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Record > Storage"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/options/recording/storage/{storage_machine}"
+            "Update A Storage Machine (2)"
           ]
         }
       },
@@ -5922,7 +5922,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Record > Storage"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/options/recording/storage/{storage_machine}"
+            "Update A Storage Machine (2)"
           ]
         }
       },
@@ -5939,7 +5939,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Record > Storage"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/options/recording/storage/{storage_machine}"
+            "Update A Storage Machine (2)"
           ]
         }
       },
@@ -5957,7 +5957,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Record > Storage"
           ],
           "operation": [
-            "DELETE /1/videos/{channel}/options/recording/storage/{storage_machine}"
+            "Update A Storage Machine (3)"
           ]
         }
       },
@@ -5975,7 +5975,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Record > Storage"
           ],
           "operation": [
-            "DELETE /1/videos/{channel}/options/recording/storage/{storage_machine}"
+            "Update A Storage Machine (3)"
           ]
         }
       },
@@ -5992,7 +5992,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Record > Storage"
           ],
           "operation": [
-            "DELETE /1/videos/{channel}/options/recording/storage/{storage_machine}"
+            "Update A Storage Machine (3)"
           ]
         }
       },
@@ -6013,18 +6013,18 @@ export class InfomaniakStreamingVideo implements INodeType {
       "options": [
         {
           "name": "Return Timeshift Config",
-          "value": "GET /1/videos/{channel}/options/timeshift"
+          "value": "Return Timeshift Config"
         },
         {
           "name": "Create A Timeshift Config.",
-          "value": "POST /1/videos/{channel}/options/timeshift"
+          "value": "Create A Timeshift Config."
         },
         {
           "name": "Update A Timeshift Config",
-          "value": "PUT /1/videos/{channel}/options/timeshift"
+          "value": "Update A Timeshift Config"
         }
       ],
-      "default": "GET /1/videos/{channel}/options/timeshift",
+      "default": "Return Timeshift Config",
       "noDataExpression": true
     },
     {
@@ -6038,7 +6038,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Timeshift"
           ],
           "operation": [
-            "GET /1/videos/{channel}/options/timeshift"
+            "Return Timeshift Config"
           ]
         }
       },
@@ -6056,7 +6056,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Timeshift"
           ],
           "operation": [
-            "GET /1/videos/{channel}/options/timeshift"
+            "Return Timeshift Config"
           ]
         }
       },
@@ -6074,7 +6074,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Timeshift"
           ],
           "operation": [
-            "POST /1/videos/{channel}/options/timeshift"
+            "Create A Timeshift Config."
           ]
         }
       },
@@ -6092,7 +6092,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Timeshift"
           ],
           "operation": [
-            "POST /1/videos/{channel}/options/timeshift"
+            "Create A Timeshift Config."
           ]
         }
       },
@@ -6110,7 +6110,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Timeshift"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/options/timeshift"
+            "Update A Timeshift Config"
           ]
         }
       },
@@ -6128,7 +6128,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Timeshift"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/options/timeshift"
+            "Update A Timeshift Config"
           ]
         }
       },
@@ -6147,7 +6147,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Timeshift"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/options/timeshift"
+            "Update A Timeshift Config"
           ]
         }
       },
@@ -6182,22 +6182,22 @@ export class InfomaniakStreamingVideo implements INodeType {
       "options": [
         {
           "name": "Return Watermark",
-          "value": "GET /1/videos/{channel}/options/watermark"
+          "value": "Return Watermark"
         },
         {
           "name": "Update Watermark",
-          "value": "PUT /1/videos/{channel}/options/watermark"
+          "value": "Update Watermark"
         },
         {
           "name": "Enabled Watermark",
-          "value": "PUT /1/videos/{channel}/options/watermark/enable"
+          "value": "Enabled Watermark"
         },
         {
           "name": "Disable Watermark",
-          "value": "PUT /1/videos/{channel}/options/watermark/disable"
+          "value": "Disable Watermark"
         }
       ],
-      "default": "GET /1/videos/{channel}/options/watermark",
+      "default": "Return Watermark",
       "noDataExpression": true
     },
     {
@@ -6211,7 +6211,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Watermarking"
           ],
           "operation": [
-            "GET /1/videos/{channel}/options/watermark"
+            "Return Watermark"
           ]
         }
       },
@@ -6230,7 +6230,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Watermarking"
           ],
           "operation": [
-            "GET /1/videos/{channel}/options/watermark"
+            "Return Watermark"
           ]
         }
       },
@@ -6255,7 +6255,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Watermarking"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/options/watermark"
+            "Update Watermark"
           ]
         }
       },
@@ -6273,7 +6273,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Watermarking"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/options/watermark"
+            "Update Watermark"
           ]
         }
       },
@@ -6292,7 +6292,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Watermarking"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/options/watermark"
+            "Update Watermark"
           ]
         }
       },
@@ -6317,7 +6317,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Watermarking"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/options/watermark"
+            "Update Watermark"
           ]
         }
       },
@@ -6335,7 +6335,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Watermarking"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/options/watermark"
+            "Update Watermark"
           ]
         }
       },
@@ -6353,7 +6353,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Watermarking"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/options/watermark"
+            "Update Watermark"
           ]
         }
       },
@@ -6372,7 +6372,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Watermarking"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/options/watermark"
+            "Update Watermark"
           ]
         }
       },
@@ -6445,7 +6445,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Watermarking"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/options/watermark/enable"
+            "Enabled Watermark"
           ]
         }
       },
@@ -6464,7 +6464,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Watermarking"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/options/watermark/enable"
+            "Enabled Watermark"
           ]
         }
       },
@@ -6489,7 +6489,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Watermarking"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/options/watermark/disable"
+            "Disable Watermark"
           ]
         }
       },
@@ -6508,7 +6508,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Option > Watermarking"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/options/watermark/disable"
+            "Disable Watermark"
           ]
         }
       },
@@ -6529,41 +6529,41 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Option > simulcast"
+            "Option > Simulcast"
           ]
         }
       },
       "options": [
         {
           "name": "Return Simulcast",
-          "value": "POST /1/videos/{channel}/simulcasts/{simulcast_platform}"
+          "value": "Return Simulcast"
         },
         {
           "name": "Lists All Simulcast Config",
-          "value": "GET /1/videos/{channel}/simulcasts"
+          "value": "Lists All Simulcast Config"
         },
         {
           "name": "Return Simulcast",
-          "value": "GET /1/videos/{channel}/simulcasts/{simulcast_platform}/{simulcast_config}"
+          "value": "Return Simulcast (2)"
         },
         {
           "name": "Return Simulcast",
-          "value": "PUT /1/videos/{channel}/simulcasts/{simulcast_platform}/{simulcast_config}"
+          "value": "Return Simulcast (3)"
         },
         {
           "name": "Delete A Player",
-          "value": "DELETE /1/videos/{channel}/simulcasts/{simulcast_platform}/{simulcast_config}"
+          "value": "Delete A Player"
         },
         {
           "name": "Disable Simulcast",
-          "value": "PUT /1/videos/{channel}/simulcasts/{simulcast_platform}/{simulcast_config}/enable"
+          "value": "Disable Simulcast"
         },
         {
           "name": "Disable Simulcast",
-          "value": "PUT /1/videos/{channel}/simulcasts/{simulcast_platform}/{simulcast_config}/disable"
+          "value": "Disable Simulcast (2)"
         }
       ],
-      "default": "POST /1/videos/{channel}/simulcasts/{simulcast_platform}",
+      "default": "Return Simulcast",
       "noDataExpression": true
     },
     {
@@ -6574,10 +6574,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Option > simulcast"
+            "Option > Simulcast"
           ],
           "operation": [
-            "POST /1/videos/{channel}/simulcasts/{simulcast_platform}"
+            "Return Simulcast"
           ]
         }
       },
@@ -6592,10 +6592,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Option > simulcast"
+            "Option > Simulcast"
           ],
           "operation": [
-            "POST /1/videos/{channel}/simulcasts/{simulcast_platform}"
+            "Return Simulcast"
           ]
         }
       },
@@ -6609,10 +6609,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Option > simulcast"
+            "Option > Simulcast"
           ],
           "operation": [
-            "POST /1/videos/{channel}/simulcasts/{simulcast_platform}"
+            "Return Simulcast"
           ]
         }
       },
@@ -6627,10 +6627,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Option > simulcast"
+            "Option > Simulcast"
           ],
           "operation": [
-            "POST /1/videos/{channel}/simulcasts/{simulcast_platform}"
+            "Return Simulcast"
           ]
         }
       },
@@ -6644,10 +6644,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Option > simulcast"
+            "Option > Simulcast"
           ],
           "operation": [
-            "POST /1/videos/{channel}/simulcasts/{simulcast_platform}"
+            "Return Simulcast"
           ]
         }
       },
@@ -6672,10 +6672,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Option > simulcast"
+            "Option > Simulcast"
           ],
           "operation": [
-            "POST /1/videos/{channel}/simulcasts/{simulcast_platform}"
+            "Return Simulcast"
           ]
         }
       },
@@ -6690,10 +6690,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Option > simulcast"
+            "Option > Simulcast"
           ],
           "operation": [
-            "POST /1/videos/{channel}/simulcasts/{simulcast_platform}"
+            "Return Simulcast"
           ]
         }
       },
@@ -6708,10 +6708,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Option > simulcast"
+            "Option > Simulcast"
           ],
           "operation": [
-            "POST /1/videos/{channel}/simulcasts/{simulcast_platform}"
+            "Return Simulcast"
           ]
         }
       },
@@ -6726,10 +6726,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Option > simulcast"
+            "Option > Simulcast"
           ],
           "operation": [
-            "GET /1/videos/{channel}/simulcasts"
+            "Lists All Simulcast Config"
           ]
         }
       },
@@ -6744,10 +6744,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Option > simulcast"
+            "Option > Simulcast"
           ],
           "operation": [
-            "GET /1/videos/{channel}/simulcasts/{simulcast_platform}/{simulcast_config}"
+            "Return Simulcast (2)"
           ]
         }
       },
@@ -6762,10 +6762,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Option > simulcast"
+            "Option > Simulcast"
           ],
           "operation": [
-            "GET /1/videos/{channel}/simulcasts/{simulcast_platform}/{simulcast_config}"
+            "Return Simulcast (2)"
           ]
         }
       },
@@ -6779,10 +6779,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Option > simulcast"
+            "Option > Simulcast"
           ],
           "operation": [
-            "GET /1/videos/{channel}/simulcasts/{simulcast_platform}/{simulcast_config}"
+            "Return Simulcast (2)"
           ]
         }
       },
@@ -6796,10 +6796,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Option > simulcast"
+            "Option > Simulcast"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/simulcasts/{simulcast_platform}/{simulcast_config}"
+            "Return Simulcast (3)"
           ]
         }
       },
@@ -6814,10 +6814,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Option > simulcast"
+            "Option > Simulcast"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/simulcasts/{simulcast_platform}/{simulcast_config}"
+            "Return Simulcast (3)"
           ]
         }
       },
@@ -6831,10 +6831,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Option > simulcast"
+            "Option > Simulcast"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/simulcasts/{simulcast_platform}/{simulcast_config}"
+            "Return Simulcast (3)"
           ]
         }
       },
@@ -6848,10 +6848,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Option > simulcast"
+            "Option > Simulcast"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/simulcasts/{simulcast_platform}/{simulcast_config}"
+            "Return Simulcast (3)"
           ]
         }
       },
@@ -6866,10 +6866,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Option > simulcast"
+            "Option > Simulcast"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/simulcasts/{simulcast_platform}/{simulcast_config}"
+            "Return Simulcast (3)"
           ]
         }
       },
@@ -6894,10 +6894,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Option > simulcast"
+            "Option > Simulcast"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/simulcasts/{simulcast_platform}/{simulcast_config}"
+            "Return Simulcast (3)"
           ]
         }
       },
@@ -6912,10 +6912,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Option > simulcast"
+            "Option > Simulcast"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/simulcasts/{simulcast_platform}/{simulcast_config}"
+            "Return Simulcast (3)"
           ]
         }
       },
@@ -6930,10 +6930,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Option > simulcast"
+            "Option > Simulcast"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/simulcasts/{simulcast_platform}/{simulcast_config}"
+            "Return Simulcast (3)"
           ]
         }
       },
@@ -6949,10 +6949,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Option > simulcast"
+            "Option > Simulcast"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/simulcasts/{simulcast_platform}/{simulcast_config}"
+            "Return Simulcast (3)"
           ]
         }
       },
@@ -6993,10 +6993,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Option > simulcast"
+            "Option > Simulcast"
           ],
           "operation": [
-            "DELETE /1/videos/{channel}/simulcasts/{simulcast_platform}/{simulcast_config}"
+            "Delete A Player"
           ]
         }
       },
@@ -7011,10 +7011,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Option > simulcast"
+            "Option > Simulcast"
           ],
           "operation": [
-            "DELETE /1/videos/{channel}/simulcasts/{simulcast_platform}/{simulcast_config}"
+            "Delete A Player"
           ]
         }
       },
@@ -7028,10 +7028,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Option > simulcast"
+            "Option > Simulcast"
           ],
           "operation": [
-            "DELETE /1/videos/{channel}/simulcasts/{simulcast_platform}/{simulcast_config}"
+            "Delete A Player"
           ]
         }
       },
@@ -7045,10 +7045,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Option > simulcast"
+            "Option > Simulcast"
           ],
           "operation": [
-            "DELETE /1/videos/{channel}/simulcasts/{simulcast_platform}/{simulcast_config}"
+            "Delete A Player"
           ]
         }
       },
@@ -7063,10 +7063,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Option > simulcast"
+            "Option > Simulcast"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/simulcasts/{simulcast_platform}/{simulcast_config}/enable"
+            "Disable Simulcast"
           ]
         }
       },
@@ -7081,10 +7081,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Option > simulcast"
+            "Option > Simulcast"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/simulcasts/{simulcast_platform}/{simulcast_config}/enable"
+            "Disable Simulcast"
           ]
         }
       },
@@ -7098,10 +7098,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Option > simulcast"
+            "Option > Simulcast"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/simulcasts/{simulcast_platform}/{simulcast_config}/enable"
+            "Disable Simulcast"
           ]
         }
       },
@@ -7115,10 +7115,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Option > simulcast"
+            "Option > Simulcast"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/simulcasts/{simulcast_platform}/{simulcast_config}/enable"
+            "Disable Simulcast"
           ]
         }
       },
@@ -7133,10 +7133,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Option > simulcast"
+            "Option > Simulcast"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/simulcasts/{simulcast_platform}/{simulcast_config}/disable"
+            "Disable Simulcast (2)"
           ]
         }
       },
@@ -7151,10 +7151,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Option > simulcast"
+            "Option > Simulcast"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/simulcasts/{simulcast_platform}/{simulcast_config}/disable"
+            "Disable Simulcast (2)"
           ]
         }
       },
@@ -7168,10 +7168,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Option > simulcast"
+            "Option > Simulcast"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/simulcasts/{simulcast_platform}/{simulcast_config}/disable"
+            "Disable Simulcast (2)"
           ]
         }
       },
@@ -7185,10 +7185,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Option > simulcast"
+            "Option > Simulcast"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/simulcasts/{simulcast_platform}/{simulcast_config}/disable"
+            "Disable Simulcast (2)"
           ]
         }
       },
@@ -7209,30 +7209,30 @@ export class InfomaniakStreamingVideo implements INodeType {
       "options": [
         {
           "name": "Lists All Players",
-          "value": "GET /1/videos/{channel}/players"
+          "value": "Lists All Players"
         },
         {
           "name": "Create A Player",
-          "value": "POST /1/videos/{channel}/players"
+          "value": "Create A Player"
         },
         {
           "name": "Return A Player",
-          "value": "GET /1/videos/{channel}/players/{player}"
+          "value": "Return A Player"
         },
         {
           "name": "Copy A Player",
-          "value": "POST /1/videos/{channel}/players/{player}"
+          "value": "Copy A Player"
         },
         {
           "name": "Update A Player",
-          "value": "PUT /1/videos/{channel}/players/{player}"
+          "value": "Update A Player"
         },
         {
           "name": "Delete A Player",
-          "value": "DELETE /1/videos/{channel}/players/{player}"
+          "value": "Delete A Player"
         }
       ],
-      "default": "GET /1/videos/{channel}/players",
+      "default": "Lists All Players",
       "noDataExpression": true
     },
     {
@@ -7246,7 +7246,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "GET /1/videos/{channel}/players"
+            "Lists All Players"
           ]
         }
       },
@@ -7264,7 +7264,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "GET /1/videos/{channel}/players"
+            "Lists All Players"
           ]
         }
       },
@@ -7283,7 +7283,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "GET /1/videos/{channel}/players"
+            "Lists All Players"
           ]
         }
       },
@@ -7380,7 +7380,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players"
+            "Create A Player"
           ]
         }
       },
@@ -7398,7 +7398,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players"
+            "Create A Player"
           ]
         }
       },
@@ -7417,7 +7417,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players"
+            "Create A Player"
           ]
         }
       },
@@ -7442,7 +7442,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players"
+            "Create A Player"
           ]
         }
       },
@@ -7459,7 +7459,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players"
+            "Create A Player"
           ]
         }
       },
@@ -7476,7 +7476,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players"
+            "Create A Player"
           ]
         }
       },
@@ -7493,7 +7493,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players"
+            "Create A Player"
           ]
         }
       },
@@ -7510,7 +7510,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players"
+            "Create A Player"
           ]
         }
       },
@@ -7527,7 +7527,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players"
+            "Create A Player"
           ]
         }
       },
@@ -7544,7 +7544,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players"
+            "Create A Player"
           ]
         }
       },
@@ -7562,7 +7562,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players"
+            "Create A Player"
           ]
         }
       },
@@ -7580,7 +7580,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players"
+            "Create A Player"
           ]
         }
       },
@@ -7598,7 +7598,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players"
+            "Create A Player"
           ]
         }
       },
@@ -7615,7 +7615,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players"
+            "Create A Player"
           ]
         }
       },
@@ -7632,7 +7632,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players"
+            "Create A Player"
           ]
         }
       },
@@ -7649,7 +7649,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players"
+            "Create A Player"
           ]
         }
       },
@@ -7666,7 +7666,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players"
+            "Create A Player"
           ]
         }
       },
@@ -7683,7 +7683,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players"
+            "Create A Player"
           ]
         }
       },
@@ -7700,7 +7700,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players"
+            "Create A Player"
           ]
         }
       },
@@ -7717,7 +7717,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players"
+            "Create A Player"
           ]
         }
       },
@@ -7734,7 +7734,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players"
+            "Create A Player"
           ]
         }
       },
@@ -7752,7 +7752,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players"
+            "Create A Player"
           ]
         }
       },
@@ -7783,7 +7783,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players"
+            "Create A Player"
           ]
         }
       },
@@ -7800,7 +7800,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players"
+            "Create A Player"
           ]
         }
       },
@@ -7817,7 +7817,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players"
+            "Create A Player"
           ]
         }
       },
@@ -7834,7 +7834,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players"
+            "Create A Player"
           ]
         }
       },
@@ -7851,7 +7851,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players"
+            "Create A Player"
           ]
         }
       },
@@ -7868,7 +7868,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players"
+            "Create A Player"
           ]
         }
       },
@@ -7885,7 +7885,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players"
+            "Create A Player"
           ]
         }
       },
@@ -7902,7 +7902,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players"
+            "Create A Player"
           ]
         }
       },
@@ -7919,7 +7919,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players"
+            "Create A Player"
           ]
         }
       },
@@ -7936,7 +7936,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players"
+            "Create A Player"
           ]
         }
       },
@@ -7953,7 +7953,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players"
+            "Create A Player"
           ]
         }
       },
@@ -7970,7 +7970,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players"
+            "Create A Player"
           ]
         }
       },
@@ -7988,7 +7988,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players"
+            "Create A Player"
           ]
         }
       },
@@ -8199,7 +8199,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "GET /1/videos/{channel}/players/{player}"
+            "Return A Player"
           ]
         }
       },
@@ -8217,7 +8217,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "GET /1/videos/{channel}/players/{player}"
+            "Return A Player"
           ]
         }
       },
@@ -8235,7 +8235,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "GET /1/videos/{channel}/players/{player}"
+            "Return A Player"
           ]
         }
       },
@@ -8254,7 +8254,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "GET /1/videos/{channel}/players/{player}"
+            "Return A Player"
           ]
         }
       },
@@ -8279,7 +8279,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players/{player}"
+            "Copy A Player"
           ]
         }
       },
@@ -8297,7 +8297,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players/{player}"
+            "Copy A Player"
           ]
         }
       },
@@ -8315,7 +8315,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players/{player}"
+            "Copy A Player"
           ]
         }
       },
@@ -8334,7 +8334,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players/{player}"
+            "Copy A Player"
           ]
         }
       },
@@ -8359,7 +8359,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players/{player}"
+            "Copy A Player"
           ]
         }
       },
@@ -8377,7 +8377,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/players/{player}"
+            "Update A Player"
           ]
         }
       },
@@ -8395,7 +8395,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/players/{player}"
+            "Update A Player"
           ]
         }
       },
@@ -8413,7 +8413,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/players/{player}"
+            "Update A Player"
           ]
         }
       },
@@ -8432,7 +8432,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/players/{player}"
+            "Update A Player"
           ]
         }
       },
@@ -8457,7 +8457,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/players/{player}"
+            "Update A Player"
           ]
         }
       },
@@ -8474,7 +8474,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/players/{player}"
+            "Update A Player"
           ]
         }
       },
@@ -8491,7 +8491,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/players/{player}"
+            "Update A Player"
           ]
         }
       },
@@ -8508,7 +8508,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/players/{player}"
+            "Update A Player"
           ]
         }
       },
@@ -8525,7 +8525,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/players/{player}"
+            "Update A Player"
           ]
         }
       },
@@ -8542,7 +8542,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/players/{player}"
+            "Update A Player"
           ]
         }
       },
@@ -8559,7 +8559,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/players/{player}"
+            "Update A Player"
           ]
         }
       },
@@ -8577,7 +8577,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/players/{player}"
+            "Update A Player"
           ]
         }
       },
@@ -8595,7 +8595,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/players/{player}"
+            "Update A Player"
           ]
         }
       },
@@ -8613,7 +8613,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/players/{player}"
+            "Update A Player"
           ]
         }
       },
@@ -8630,7 +8630,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/players/{player}"
+            "Update A Player"
           ]
         }
       },
@@ -8647,7 +8647,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/players/{player}"
+            "Update A Player"
           ]
         }
       },
@@ -8664,7 +8664,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/players/{player}"
+            "Update A Player"
           ]
         }
       },
@@ -8681,7 +8681,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/players/{player}"
+            "Update A Player"
           ]
         }
       },
@@ -8698,7 +8698,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/players/{player}"
+            "Update A Player"
           ]
         }
       },
@@ -8715,7 +8715,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/players/{player}"
+            "Update A Player"
           ]
         }
       },
@@ -8732,7 +8732,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/players/{player}"
+            "Update A Player"
           ]
         }
       },
@@ -8749,7 +8749,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/players/{player}"
+            "Update A Player"
           ]
         }
       },
@@ -8767,7 +8767,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/players/{player}"
+            "Update A Player"
           ]
         }
       },
@@ -8798,7 +8798,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/players/{player}"
+            "Update A Player"
           ]
         }
       },
@@ -8815,7 +8815,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/players/{player}"
+            "Update A Player"
           ]
         }
       },
@@ -8832,7 +8832,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/players/{player}"
+            "Update A Player"
           ]
         }
       },
@@ -8849,7 +8849,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/players/{player}"
+            "Update A Player"
           ]
         }
       },
@@ -8866,7 +8866,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/players/{player}"
+            "Update A Player"
           ]
         }
       },
@@ -8883,7 +8883,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/players/{player}"
+            "Update A Player"
           ]
         }
       },
@@ -8900,7 +8900,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/players/{player}"
+            "Update A Player"
           ]
         }
       },
@@ -8917,7 +8917,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/players/{player}"
+            "Update A Player"
           ]
         }
       },
@@ -8934,7 +8934,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/players/{player}"
+            "Update A Player"
           ]
         }
       },
@@ -8951,7 +8951,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/players/{player}"
+            "Update A Player"
           ]
         }
       },
@@ -8968,7 +8968,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/players/{player}"
+            "Update A Player"
           ]
         }
       },
@@ -8985,7 +8985,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/players/{player}"
+            "Update A Player"
           ]
         }
       },
@@ -9003,7 +9003,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/players/{player}"
+            "Update A Player"
           ]
         }
       },
@@ -9214,7 +9214,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "DELETE /1/videos/{channel}/players/{player}"
+            "Delete A Player"
           ]
         }
       },
@@ -9232,7 +9232,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "DELETE /1/videos/{channel}/players/{player}"
+            "Delete A Player"
           ]
         }
       },
@@ -9250,7 +9250,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "DELETE /1/videos/{channel}/players/{player}"
+            "Delete A Player"
           ]
         }
       },
@@ -9269,7 +9269,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "DELETE /1/videos/{channel}/players/{player}"
+            "Delete A Player"
           ]
         }
       },
@@ -9297,30 +9297,30 @@ export class InfomaniakStreamingVideo implements INodeType {
       "options": [
         {
           "name": "List All Ads",
-          "value": "GET /1/videos/{channel}/players/{player}/ads"
+          "value": "List All Ads"
         },
         {
           "name": "Create An Ads",
-          "value": "POST /1/videos/{channel}/players/{player}/ads"
+          "value": "Create An Ads"
         },
         {
           "name": "Copy An Ads",
-          "value": "POST /1/videos/{channel}/players/{player}/ads/duplicate"
+          "value": "Copy An Ads"
         },
         {
           "name": "Return An Ads",
-          "value": "GET /1/videos/{channel}/players/{player}/ads/{ads}"
+          "value": "Return An Ads"
         },
         {
           "name": "Update An Ads",
-          "value": "PUT /1/videos/{channel}/players/{player}/ads/{ads}"
+          "value": "Update An Ads"
         },
         {
           "name": "Delete An Ads",
-          "value": "DELETE /1/videos/{channel}/players/{player}/ads/{ads}"
+          "value": "Delete An Ads"
         }
       ],
-      "default": "GET /1/videos/{channel}/players/{player}/ads",
+      "default": "List All Ads",
       "noDataExpression": true
     },
     {
@@ -9334,7 +9334,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players > Ads"
           ],
           "operation": [
-            "GET /1/videos/{channel}/players/{player}/ads"
+            "List All Ads"
           ]
         }
       },
@@ -9352,7 +9352,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players > Ads"
           ],
           "operation": [
-            "GET /1/videos/{channel}/players/{player}/ads"
+            "List All Ads"
           ]
         }
       },
@@ -9371,7 +9371,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players > Ads"
           ],
           "operation": [
-            "GET /1/videos/{channel}/players/{player}/ads"
+            "List All Ads"
           ]
         }
       },
@@ -9396,7 +9396,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players > Ads"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players/{player}/ads"
+            "Create An Ads"
           ]
         }
       },
@@ -9414,7 +9414,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players > Ads"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players/{player}/ads"
+            "Create An Ads"
           ]
         }
       },
@@ -9432,7 +9432,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players > Ads"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players/{player}/ads"
+            "Create An Ads"
           ]
         }
       },
@@ -9451,7 +9451,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players > Ads"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players/{player}/ads"
+            "Create An Ads"
           ]
         }
       },
@@ -9476,7 +9476,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players > Ads"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players/{player}/ads"
+            "Create An Ads"
           ]
         }
       },
@@ -9494,7 +9494,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players > Ads"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players/{player}/ads"
+            "Create An Ads"
           ]
         }
       },
@@ -9522,7 +9522,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players > Ads"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players/{player}/ads"
+            "Create An Ads"
           ]
         }
       },
@@ -9541,7 +9541,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players > Ads"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players/{player}/ads"
+            "Create An Ads"
           ]
         }
       },
@@ -9566,7 +9566,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players > Ads"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players/{player}/ads/duplicate"
+            "Copy An Ads"
           ]
         }
       },
@@ -9584,7 +9584,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players > Ads"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players/{player}/ads/duplicate"
+            "Copy An Ads"
           ]
         }
       },
@@ -9602,7 +9602,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players > Ads"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players/{player}/ads/duplicate"
+            "Copy An Ads"
           ]
         }
       },
@@ -9621,7 +9621,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players > Ads"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players/{player}/ads/duplicate"
+            "Copy An Ads"
           ]
         }
       },
@@ -9646,7 +9646,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players > Ads"
           ],
           "operation": [
-            "POST /1/videos/{channel}/players/{player}/ads/duplicate"
+            "Copy An Ads"
           ]
         }
       },
@@ -9664,7 +9664,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players > Ads"
           ],
           "operation": [
-            "GET /1/videos/{channel}/players/{player}/ads/{ads}"
+            "Return An Ads"
           ]
         }
       },
@@ -9682,7 +9682,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players > Ads"
           ],
           "operation": [
-            "GET /1/videos/{channel}/players/{player}/ads/{ads}"
+            "Return An Ads"
           ]
         }
       },
@@ -9700,7 +9700,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players > Ads"
           ],
           "operation": [
-            "GET /1/videos/{channel}/players/{player}/ads/{ads}"
+            "Return An Ads"
           ]
         }
       },
@@ -9719,7 +9719,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players > Ads"
           ],
           "operation": [
-            "GET /1/videos/{channel}/players/{player}/ads/{ads}"
+            "Return An Ads"
           ]
         }
       },
@@ -9744,7 +9744,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players > Ads"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/players/{player}/ads/{ads}"
+            "Update An Ads"
           ]
         }
       },
@@ -9762,7 +9762,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players > Ads"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/players/{player}/ads/{ads}"
+            "Update An Ads"
           ]
         }
       },
@@ -9780,7 +9780,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players > Ads"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/players/{player}/ads/{ads}"
+            "Update An Ads"
           ]
         }
       },
@@ -9798,7 +9798,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players > Ads"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/players/{player}/ads/{ads}"
+            "Update An Ads"
           ]
         }
       },
@@ -9817,7 +9817,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players > Ads"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/players/{player}/ads/{ads}"
+            "Update An Ads"
           ]
         }
       },
@@ -9843,7 +9843,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players > Ads"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/players/{player}/ads/{ads}"
+            "Update An Ads"
           ]
         }
       },
@@ -9899,7 +9899,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players > Ads"
           ],
           "operation": [
-            "DELETE /1/videos/{channel}/players/{player}/ads/{ads}"
+            "Delete An Ads"
           ]
         }
       },
@@ -9917,7 +9917,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players > Ads"
           ],
           "operation": [
-            "DELETE /1/videos/{channel}/players/{player}/ads/{ads}"
+            "Delete An Ads"
           ]
         }
       },
@@ -9935,7 +9935,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players > Ads"
           ],
           "operation": [
-            "DELETE /1/videos/{channel}/players/{player}/ads/{ads}"
+            "Delete An Ads"
           ]
         }
       },
@@ -9953,7 +9953,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players > Ads"
           ],
           "operation": [
-            "DELETE /1/videos/{channel}/players/{player}/ads/{ads}"
+            "Delete An Ads"
           ]
         }
       },
@@ -9972,7 +9972,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players > Ads"
           ],
           "operation": [
-            "DELETE /1/videos/{channel}/players/{player}/ads/{ads}"
+            "Delete An Ads"
           ]
         }
       },
@@ -10000,14 +10000,14 @@ export class InfomaniakStreamingVideo implements INodeType {
       "options": [
         {
           "name": "Integration Code",
-          "value": "GET /1/videos/{channel}/players/{player}/embed"
+          "value": "Integration Code"
         },
         {
           "name": "Integration URL",
-          "value": "GET /1/videos/{channel}/players/{player}/embed/url"
+          "value": "Integration URL"
         }
       ],
-      "default": "GET /1/videos/{channel}/players/{player}/embed",
+      "default": "Integration Code",
       "noDataExpression": true
     },
     {
@@ -10021,7 +10021,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players > Embeds"
           ],
           "operation": [
-            "GET /1/videos/{channel}/players/{player}/embed"
+            "Integration Code"
           ]
         }
       },
@@ -10039,7 +10039,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players > Embeds"
           ],
           "operation": [
-            "GET /1/videos/{channel}/players/{player}/embed"
+            "Integration Code"
           ]
         }
       },
@@ -10058,7 +10058,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players > Embeds"
           ],
           "operation": [
-            "GET /1/videos/{channel}/players/{player}/embed"
+            "Integration Code"
           ]
         }
       },
@@ -10083,7 +10083,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players > Embeds"
           ],
           "operation": [
-            "GET /1/videos/{channel}/players/{player}/embed/url"
+            "Integration URL"
           ]
         }
       },
@@ -10101,7 +10101,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players > Embeds"
           ],
           "operation": [
-            "GET /1/videos/{channel}/players/{player}/embed/url"
+            "Integration URL"
           ]
         }
       },
@@ -10120,7 +10120,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players > Embeds"
           ],
           "operation": [
-            "GET /1/videos/{channel}/players/{player}/embed/url"
+            "Integration URL"
           ]
         }
       },
@@ -10148,10 +10148,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "options": [
         {
           "name": "Show Picture",
-          "value": "GET /1/videos/{channel}/players/{player}/thumbnail/{thumbnail}"
+          "value": "Show Picture"
         }
       ],
-      "default": "GET /1/videos/{channel}/players/{player}/thumbnail/{thumbnail}",
+      "default": "Show Picture",
       "noDataExpression": true
     },
     {
@@ -10165,7 +10165,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players > Pictures"
           ],
           "operation": [
-            "GET /1/videos/{channel}/players/{player}/thumbnail/{thumbnail}"
+            "Show Picture"
           ]
         }
       },
@@ -10183,7 +10183,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players > Pictures"
           ],
           "operation": [
-            "GET /1/videos/{channel}/players/{player}/thumbnail/{thumbnail}"
+            "Show Picture"
           ]
         }
       },
@@ -10201,7 +10201,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players > Pictures"
           ],
           "operation": [
-            "GET /1/videos/{channel}/players/{player}/thumbnail/{thumbnail}"
+            "Show Picture"
           ]
         }
       },
@@ -10219,7 +10219,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players > Pictures"
           ],
           "operation": [
-            "GET /1/videos/{channel}/players/{player}/thumbnail/{thumbnail}"
+            "Show Picture"
           ]
         }
       },
@@ -10247,14 +10247,14 @@ export class InfomaniakStreamingVideo implements INodeType {
       "options": [
         {
           "name": "Get Price",
-          "value": "GET /1/videos/shop/prices"
+          "value": "Get Price"
         },
         {
           "name": "Get Description",
-          "value": "GET /1/videos/shop/descriptions"
+          "value": "Get Description"
         }
       ],
-      "default": "GET /1/videos/shop/prices",
+      "default": "Get Price",
       "noDataExpression": true
     },
     {
@@ -10271,18 +10271,18 @@ export class InfomaniakStreamingVideo implements INodeType {
       "options": [
         {
           "name": "Show Restriction",
-          "value": "GET /1/videos/{channel}/restrictions"
+          "value": "Show Restriction"
         },
         {
           "name": "Update Channels",
-          "value": "PUT /1/videos/{channel}/restrictions"
+          "value": "Update Channels"
         },
         {
           "name": "Update Restriction Password",
-          "value": "PUT /1/videos/{channel}/restrictions/password"
+          "value": "Update Restriction Password"
         }
       ],
-      "default": "GET /1/videos/{channel}/restrictions",
+      "default": "Show Restriction",
       "noDataExpression": true
     },
     {
@@ -10296,7 +10296,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Restrictions"
           ],
           "operation": [
-            "GET /1/videos/{channel}/restrictions"
+            "Show Restriction"
           ]
         }
       },
@@ -10314,7 +10314,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Restrictions"
           ],
           "operation": [
-            "GET /1/videos/{channel}/restrictions"
+            "Show Restriction"
           ]
         }
       },
@@ -10332,7 +10332,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Restrictions"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/restrictions"
+            "Update Channels"
           ]
         }
       },
@@ -10350,7 +10350,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Restrictions"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/restrictions"
+            "Update Channels"
           ]
         }
       },
@@ -10369,7 +10369,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Restrictions"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/restrictions"
+            "Update Channels"
           ]
         }
       },
@@ -10429,7 +10429,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Restrictions"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/restrictions/password"
+            "Update Restriction Password"
           ]
         }
       },
@@ -10447,7 +10447,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Restrictions"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/restrictions/password"
+            "Update Restriction Password"
           ]
         }
       },
@@ -10465,7 +10465,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Restrictions"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/restrictions/password"
+            "Update Restriction Password"
           ]
         }
       },
@@ -10483,7 +10483,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Restrictions"
           ],
           "operation": [
-            "PUT /1/videos/{channel}/restrictions/password"
+            "Update Restriction Password"
           ]
         }
       },
@@ -10496,21 +10496,21 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > Channel > Connection history"
+            "Stats > Channel > Connection History"
           ]
         }
       },
       "options": [
         {
           "name": "Return List Of Connection",
-          "value": "GET /1/videos/{channel}/history"
+          "value": "Return List Of Connection"
         },
         {
           "name": "Return A Channel",
-          "value": "GET /1/videos/{channel}/history/{connection_history}"
+          "value": "Return A Channel"
         }
       ],
-      "default": "GET /1/videos/{channel}/history",
+      "default": "Return List Of Connection",
       "noDataExpression": true
     },
     {
@@ -10521,10 +10521,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > Channel > Connection history"
+            "Stats > Channel > Connection History"
           ],
           "operation": [
-            "GET /1/videos/{channel}/history"
+            "Return List Of Connection"
           ]
         }
       },
@@ -10539,10 +10539,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > Channel > Connection history"
+            "Stats > Channel > Connection History"
           ],
           "operation": [
-            "GET /1/videos/{channel}/history/{connection_history}"
+            "Return A Channel"
           ]
         }
       },
@@ -10557,10 +10557,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > Channel > Connection history"
+            "Stats > Channel > Connection History"
           ],
           "operation": [
-            "GET /1/videos/{channel}/history/{connection_history}"
+            "Return A Channel"
           ]
         }
       },
@@ -10580,14 +10580,14 @@ export class InfomaniakStreamingVideo implements INodeType {
       "options": [
         {
           "name": "Consumption",
-          "value": "GET /1/videos/{channel}/stats/consumption"
+          "value": "Consumption"
         },
         {
           "name": "Consumption Per Resolution",
-          "value": "GET /1/videos/{channel}/stats/consumption/resolutions/histogram"
+          "value": "Consumption Per Resolution"
         }
       ],
-      "default": "GET /1/videos/{channel}/stats/consumption",
+      "default": "Consumption",
       "noDataExpression": true
     },
     {
@@ -10601,7 +10601,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Consumption"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/consumption"
+            "Consumption"
           ]
         }
       },
@@ -10619,7 +10619,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Consumption"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/consumption"
+            "Consumption"
           ]
         }
       },
@@ -10637,7 +10637,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Consumption"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/consumption"
+            "Consumption"
           ]
         }
       },
@@ -10655,7 +10655,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Consumption"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/consumption"
+            "Consumption"
           ]
         }
       },
@@ -10703,7 +10703,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Consumption"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/consumption"
+            "Consumption"
           ]
         }
       },
@@ -10721,7 +10721,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Consumption"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/consumption/resolutions/histogram"
+            "Consumption Per Resolution"
           ]
         }
       },
@@ -10739,7 +10739,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Consumption"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/consumption/resolutions/histogram"
+            "Consumption Per Resolution"
           ]
         }
       },
@@ -10757,7 +10757,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Consumption"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/consumption/resolutions/histogram"
+            "Consumption Per Resolution"
           ]
         }
       },
@@ -10775,7 +10775,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Consumption"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/consumption/resolutions/histogram"
+            "Consumption Per Resolution"
           ]
         }
       },
@@ -10823,7 +10823,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Consumption"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/consumption/resolutions/histogram"
+            "Consumption Per Resolution"
           ]
         }
       },
@@ -10837,17 +10837,17 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > Channel > Export stats"
+            "Stats > Channel > Export Stats"
           ]
         }
       },
       "options": [
         {
           "name": "Return Text/csv",
-          "value": "GET /1/videos/{channel}/stats/export_csv/{statistics}"
+          "value": "Return Text/csv"
         }
       ],
-      "default": "GET /1/videos/{channel}/stats/export_csv/{statistics}",
+      "default": "Return Text/csv",
       "noDataExpression": true
     },
     {
@@ -10858,10 +10858,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > Channel > Export stats"
+            "Stats > Channel > Export Stats"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/export_csv/{statistics}"
+            "Return Text/csv"
           ]
         }
       },
@@ -10876,10 +10876,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > Channel > Export stats"
+            "Stats > Channel > Export Stats"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/export_csv/{statistics}"
+            "Return Text/csv"
           ]
         }
       },
@@ -10893,10 +10893,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > Channel > Export stats"
+            "Stats > Channel > Export Stats"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/export_csv/{statistics}"
+            "Return Text/csv"
           ]
         }
       },
@@ -10911,10 +10911,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > Channel > Export stats"
+            "Stats > Channel > Export Stats"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/export_csv/{statistics}"
+            "Return Text/csv"
           ]
         }
       },
@@ -10929,10 +10929,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Stats > Channel > Export stats"
+            "Stats > Channel > Export Stats"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/export_csv/{statistics}"
+            "Return Text/csv"
           ]
         }
       },
@@ -10995,14 +10995,14 @@ export class InfomaniakStreamingVideo implements INodeType {
       "options": [
         {
           "name": "Countries",
-          "value": "GET /1/videos/{channel}/stats/geolocation/countries"
+          "value": "Countries"
         },
         {
           "name": "Clusters",
-          "value": "GET /1/videos/{channel}/stats/geolocation/clusters"
+          "value": "Clusters"
         }
       ],
-      "default": "GET /1/videos/{channel}/stats/geolocation/countries",
+      "default": "Countries",
       "noDataExpression": true
     },
     {
@@ -11016,7 +11016,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Geolocation"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/geolocation/countries"
+            "Countries"
           ]
         }
       },
@@ -11034,7 +11034,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Geolocation"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/geolocation/countries"
+            "Countries"
           ]
         }
       },
@@ -11052,7 +11052,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Geolocation"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/geolocation/countries"
+            "Countries"
           ]
         }
       },
@@ -11070,7 +11070,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Geolocation"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/geolocation/countries"
+            "Countries"
           ]
         }
       },
@@ -11118,7 +11118,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Geolocation"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/geolocation/countries"
+            "Countries"
           ]
         }
       },
@@ -11136,7 +11136,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Geolocation"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/geolocation/clusters"
+            "Clusters"
           ]
         }
       },
@@ -11154,7 +11154,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Geolocation"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/geolocation/clusters"
+            "Clusters"
           ]
         }
       },
@@ -11172,7 +11172,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Geolocation"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/geolocation/clusters"
+            "Clusters"
           ]
         }
       },
@@ -11190,7 +11190,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Geolocation"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/geolocation/clusters"
+            "Clusters"
           ]
         }
       },
@@ -11238,7 +11238,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Geolocation"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/geolocation/clusters"
+            "Clusters"
           ]
         }
       },
@@ -11259,18 +11259,18 @@ export class InfomaniakStreamingVideo implements INodeType {
       "options": [
         {
           "name": "Browsers Share",
-          "value": "GET /1/videos/{channel}/stats/technologies/browsers/shares"
+          "value": "Browsers Share"
         },
         {
           "name": "Player Share",
-          "value": "GET /1/videos/{channel}/stats/technologies/players/shares"
+          "value": "Player Share"
         },
         {
           "name": "OS Share",
-          "value": "GET /1/videos/{channel}/stats/technologies/os/shares"
+          "value": "OS Share"
         }
       ],
-      "default": "GET /1/videos/{channel}/stats/technologies/browsers/shares",
+      "default": "Browsers Share",
       "noDataExpression": true
     },
     {
@@ -11284,7 +11284,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Technologies"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/technologies/browsers/shares"
+            "Browsers Share"
           ]
         }
       },
@@ -11302,7 +11302,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Technologies"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/technologies/browsers/shares"
+            "Browsers Share"
           ]
         }
       },
@@ -11320,7 +11320,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Technologies"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/technologies/browsers/shares"
+            "Browsers Share"
           ]
         }
       },
@@ -11338,7 +11338,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Technologies"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/technologies/browsers/shares"
+            "Browsers Share"
           ]
         }
       },
@@ -11386,7 +11386,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Technologies"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/technologies/browsers/shares"
+            "Browsers Share"
           ]
         }
       },
@@ -11404,7 +11404,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Technologies"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/technologies/players/shares"
+            "Player Share"
           ]
         }
       },
@@ -11422,7 +11422,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Technologies"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/technologies/players/shares"
+            "Player Share"
           ]
         }
       },
@@ -11440,7 +11440,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Technologies"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/technologies/players/shares"
+            "Player Share"
           ]
         }
       },
@@ -11458,7 +11458,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Technologies"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/technologies/players/shares"
+            "Player Share"
           ]
         }
       },
@@ -11506,7 +11506,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Technologies"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/technologies/players/shares"
+            "Player Share"
           ]
         }
       },
@@ -11524,7 +11524,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Technologies"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/technologies/os/shares"
+            "OS Share"
           ]
         }
       },
@@ -11542,7 +11542,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Technologies"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/technologies/os/shares"
+            "OS Share"
           ]
         }
       },
@@ -11560,7 +11560,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Technologies"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/technologies/os/shares"
+            "OS Share"
           ]
         }
       },
@@ -11578,7 +11578,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Technologies"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/technologies/os/shares"
+            "OS Share"
           ]
         }
       },
@@ -11626,7 +11626,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Technologies"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/technologies/os/shares"
+            "OS Share"
           ]
         }
       },
@@ -11647,26 +11647,26 @@ export class InfomaniakStreamingVideo implements INodeType {
       "options": [
         {
           "name": "Viewers Share",
-          "value": "GET /1/videos/{channel}/stats/viewers"
+          "value": "Viewers Share"
         },
         {
           "name": "Viewers Histogram Share",
-          "value": "GET /1/videos/{channel}/stats/viewers/histogram"
+          "value": "Viewers Histogram Share"
         },
         {
           "name": "Viewers Per Resolution Share.",
-          "value": "GET /1/videos/{channel}/stats/viewers/resolutions/shares"
+          "value": "Viewers Per Resolution Share."
         },
         {
           "name": "Viewers Per Resolution Histogram.",
-          "value": "GET /1/videos/{channel}/stats/viewers/resolutions/histogram"
+          "value": "Viewers Per Resolution Histogram."
         },
         {
           "name": "Unique Viewers.",
-          "value": "GET /1/videos/{channel}/stats/viewers/uniques"
+          "value": "Unique Viewers."
         }
       ],
-      "default": "GET /1/videos/{channel}/stats/viewers",
+      "default": "Viewers Share",
       "noDataExpression": true
     },
     {
@@ -11680,7 +11680,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Viewers"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/viewers"
+            "Viewers Share"
           ]
         }
       },
@@ -11698,7 +11698,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Viewers"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/viewers"
+            "Viewers Share"
           ]
         }
       },
@@ -11716,7 +11716,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Viewers"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/viewers"
+            "Viewers Share"
           ]
         }
       },
@@ -11734,7 +11734,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Viewers"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/viewers"
+            "Viewers Share"
           ]
         }
       },
@@ -11782,7 +11782,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Viewers"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/viewers"
+            "Viewers Share"
           ]
         }
       },
@@ -11800,7 +11800,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Viewers"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/viewers/histogram"
+            "Viewers Histogram Share"
           ]
         }
       },
@@ -11818,7 +11818,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Viewers"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/viewers/histogram"
+            "Viewers Histogram Share"
           ]
         }
       },
@@ -11836,7 +11836,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Viewers"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/viewers/histogram"
+            "Viewers Histogram Share"
           ]
         }
       },
@@ -11854,7 +11854,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Viewers"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/viewers/histogram"
+            "Viewers Histogram Share"
           ]
         }
       },
@@ -11902,7 +11902,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Viewers"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/viewers/histogram"
+            "Viewers Histogram Share"
           ]
         }
       },
@@ -11920,7 +11920,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Viewers"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/viewers/resolutions/shares"
+            "Viewers Per Resolution Share."
           ]
         }
       },
@@ -11938,7 +11938,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Viewers"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/viewers/resolutions/shares"
+            "Viewers Per Resolution Share."
           ]
         }
       },
@@ -11956,7 +11956,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Viewers"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/viewers/resolutions/shares"
+            "Viewers Per Resolution Share."
           ]
         }
       },
@@ -11974,7 +11974,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Viewers"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/viewers/resolutions/shares"
+            "Viewers Per Resolution Share."
           ]
         }
       },
@@ -12022,7 +12022,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Viewers"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/viewers/resolutions/shares"
+            "Viewers Per Resolution Share."
           ]
         }
       },
@@ -12040,7 +12040,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Viewers"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/viewers/resolutions/histogram"
+            "Viewers Per Resolution Histogram."
           ]
         }
       },
@@ -12058,7 +12058,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Viewers"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/viewers/resolutions/histogram"
+            "Viewers Per Resolution Histogram."
           ]
         }
       },
@@ -12076,7 +12076,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Viewers"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/viewers/resolutions/histogram"
+            "Viewers Per Resolution Histogram."
           ]
         }
       },
@@ -12094,7 +12094,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Viewers"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/viewers/resolutions/histogram"
+            "Viewers Per Resolution Histogram."
           ]
         }
       },
@@ -12142,7 +12142,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Viewers"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/viewers/resolutions/histogram"
+            "Viewers Per Resolution Histogram."
           ]
         }
       },
@@ -12160,7 +12160,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Viewers"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/viewers/uniques"
+            "Unique Viewers."
           ]
         }
       },
@@ -12178,7 +12178,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Viewers"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/viewers/uniques"
+            "Unique Viewers."
           ]
         }
       },
@@ -12196,7 +12196,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Viewers"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/viewers/uniques"
+            "Unique Viewers."
           ]
         }
       },
@@ -12214,7 +12214,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Viewers"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/viewers/uniques"
+            "Unique Viewers."
           ]
         }
       },
@@ -12262,7 +12262,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Viewers"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/viewers/uniques"
+            "Unique Viewers."
           ]
         }
       },
@@ -12283,14 +12283,14 @@ export class InfomaniakStreamingVideo implements INodeType {
       "options": [
         {
           "name": "Viewing Time",
-          "value": "GET /1/videos/{channel}/stats/viewing"
+          "value": "Viewing Time"
         },
         {
           "name": "Viewing Histogram Par Channel",
-          "value": "GET /1/videos/{channel}/stats/viewing/resolutions/histogram"
+          "value": "Viewing Histogram Par Channel"
         }
       ],
-      "default": "GET /1/videos/{channel}/stats/viewing",
+      "default": "Viewing Time",
       "noDataExpression": true
     },
     {
@@ -12304,7 +12304,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Viewing"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/viewing"
+            "Viewing Time"
           ]
         }
       },
@@ -12322,7 +12322,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Viewing"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/viewing"
+            "Viewing Time"
           ]
         }
       },
@@ -12340,7 +12340,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Viewing"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/viewing"
+            "Viewing Time"
           ]
         }
       },
@@ -12358,7 +12358,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Viewing"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/viewing"
+            "Viewing Time"
           ]
         }
       },
@@ -12406,7 +12406,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Viewing"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/viewing"
+            "Viewing Time"
           ]
         }
       },
@@ -12424,7 +12424,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Viewing"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/viewing/resolutions/histogram"
+            "Viewing Histogram Par Channel"
           ]
         }
       },
@@ -12442,7 +12442,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Viewing"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/viewing/resolutions/histogram"
+            "Viewing Histogram Par Channel"
           ]
         }
       },
@@ -12460,7 +12460,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Viewing"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/viewing/resolutions/histogram"
+            "Viewing Histogram Par Channel"
           ]
         }
       },
@@ -12478,7 +12478,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Viewing"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/viewing/resolutions/histogram"
+            "Viewing Histogram Par Channel"
           ]
         }
       },
@@ -12526,7 +12526,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Channel > Viewing"
           ],
           "operation": [
-            "GET /1/videos/{channel}/stats/viewing/resolutions/histogram"
+            "Viewing Histogram Par Channel"
           ]
         }
       },
@@ -12547,14 +12547,14 @@ export class InfomaniakStreamingVideo implements INodeType {
       "options": [
         {
           "name": "Consumption",
-          "value": "GET /1/videos/stats/consumption"
+          "value": "Consumption"
         },
         {
           "name": "Consumption Per Channel Histogram",
-          "value": "GET /1/videos/stats/consumption/channels/histogram"
+          "value": "Consumption Per Channel Histogram"
         }
       ],
-      "default": "GET /1/videos/stats/consumption",
+      "default": "Consumption",
       "noDataExpression": true
     },
     {
@@ -12568,7 +12568,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Globals > Consumption"
           ],
           "operation": [
-            "GET /1/videos/stats/consumption"
+            "Consumption"
           ]
         }
       },
@@ -12586,7 +12586,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Globals > Consumption"
           ],
           "operation": [
-            "GET /1/videos/stats/consumption"
+            "Consumption"
           ]
         }
       },
@@ -12605,7 +12605,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Globals > Consumption"
           ],
           "operation": [
-            "GET /1/videos/stats/consumption"
+            "Consumption"
           ]
         }
       },
@@ -12665,7 +12665,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Globals > Consumption"
           ],
           "operation": [
-            "GET /1/videos/stats/consumption/channels/histogram"
+            "Consumption Per Channel Histogram"
           ]
         }
       },
@@ -12683,7 +12683,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Globals > Consumption"
           ],
           "operation": [
-            "GET /1/videos/stats/consumption/channels/histogram"
+            "Consumption Per Channel Histogram"
           ]
         }
       },
@@ -12702,7 +12702,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Globals > Consumption"
           ],
           "operation": [
-            "GET /1/videos/stats/consumption/channels/histogram"
+            "Consumption Per Channel Histogram"
           ]
         }
       },
@@ -12765,14 +12765,14 @@ export class InfomaniakStreamingVideo implements INodeType {
       "options": [
         {
           "name": "Countries",
-          "value": "GET /1/videos/stats/geolocation/countries"
+          "value": "Countries"
         },
         {
           "name": "Clusters",
-          "value": "GET /1/videos/stats/geolocation/clusters"
+          "value": "Clusters"
         }
       ],
-      "default": "GET /1/videos/stats/geolocation/countries",
+      "default": "Countries",
       "noDataExpression": true
     },
     {
@@ -12786,7 +12786,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Globals > Geolocation"
           ],
           "operation": [
-            "GET /1/videos/stats/geolocation/countries"
+            "Countries"
           ]
         }
       },
@@ -12804,7 +12804,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Globals > Geolocation"
           ],
           "operation": [
-            "GET /1/videos/stats/geolocation/countries"
+            "Countries"
           ]
         }
       },
@@ -12823,7 +12823,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Globals > Geolocation"
           ],
           "operation": [
-            "GET /1/videos/stats/geolocation/countries"
+            "Countries"
           ]
         }
       },
@@ -12883,7 +12883,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Globals > Geolocation"
           ],
           "operation": [
-            "GET /1/videos/stats/geolocation/clusters"
+            "Clusters"
           ]
         }
       },
@@ -12901,7 +12901,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Globals > Geolocation"
           ],
           "operation": [
-            "GET /1/videos/stats/geolocation/clusters"
+            "Clusters"
           ]
         }
       },
@@ -12920,7 +12920,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Globals > Geolocation"
           ],
           "operation": [
-            "GET /1/videos/stats/geolocation/clusters"
+            "Clusters"
           ]
         }
       },
@@ -12983,26 +12983,26 @@ export class InfomaniakStreamingVideo implements INodeType {
       "options": [
         {
           "name": "Viewers",
-          "value": "GET /1/videos/stats/viewers"
+          "value": "Viewers"
         },
         {
           "name": "Unique Viewers",
-          "value": "GET /1/videos/stats/viewers/uniques"
+          "value": "Unique Viewers"
         },
         {
           "name": "Viewers Histogram",
-          "value": "GET /1/videos/stats/viewers/histogram"
+          "value": "Viewers Histogram"
         },
         {
           "name": "Viewers Per Channel Histogram",
-          "value": "GET /1/videos/stats/viewers/channels/histogram"
+          "value": "Viewers Per Channel Histogram"
         },
         {
           "name": "Viewers Per Channel Share",
-          "value": "GET /1/videos/stats/viewers/channels/shares"
+          "value": "Viewers Per Channel Share"
         }
       ],
-      "default": "GET /1/videos/stats/viewers",
+      "default": "Viewers",
       "noDataExpression": true
     },
     {
@@ -13016,7 +13016,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Globals > Viewers"
           ],
           "operation": [
-            "GET /1/videos/stats/viewers"
+            "Viewers"
           ]
         }
       },
@@ -13034,7 +13034,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Globals > Viewers"
           ],
           "operation": [
-            "GET /1/videos/stats/viewers"
+            "Viewers"
           ]
         }
       },
@@ -13052,7 +13052,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Globals > Viewers"
           ],
           "operation": [
-            "GET /1/videos/stats/viewers"
+            "Viewers"
           ]
         }
       },
@@ -13100,7 +13100,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Globals > Viewers"
           ],
           "operation": [
-            "GET /1/videos/stats/viewers"
+            "Viewers"
           ]
         }
       },
@@ -13118,7 +13118,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Globals > Viewers"
           ],
           "operation": [
-            "GET /1/videos/stats/viewers/uniques"
+            "Unique Viewers"
           ]
         }
       },
@@ -13136,7 +13136,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Globals > Viewers"
           ],
           "operation": [
-            "GET /1/videos/stats/viewers/uniques"
+            "Unique Viewers"
           ]
         }
       },
@@ -13154,7 +13154,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Globals > Viewers"
           ],
           "operation": [
-            "GET /1/videos/stats/viewers/uniques"
+            "Unique Viewers"
           ]
         }
       },
@@ -13202,7 +13202,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Globals > Viewers"
           ],
           "operation": [
-            "GET /1/videos/stats/viewers/uniques"
+            "Unique Viewers"
           ]
         }
       },
@@ -13220,7 +13220,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Globals > Viewers"
           ],
           "operation": [
-            "GET /1/videos/stats/viewers/histogram"
+            "Viewers Histogram"
           ]
         }
       },
@@ -13238,7 +13238,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Globals > Viewers"
           ],
           "operation": [
-            "GET /1/videos/stats/viewers/histogram"
+            "Viewers Histogram"
           ]
         }
       },
@@ -13256,7 +13256,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Globals > Viewers"
           ],
           "operation": [
-            "GET /1/videos/stats/viewers/histogram"
+            "Viewers Histogram"
           ]
         }
       },
@@ -13304,7 +13304,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Globals > Viewers"
           ],
           "operation": [
-            "GET /1/videos/stats/viewers/histogram"
+            "Viewers Histogram"
           ]
         }
       },
@@ -13322,7 +13322,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Globals > Viewers"
           ],
           "operation": [
-            "GET /1/videos/stats/viewers/channels/histogram"
+            "Viewers Per Channel Histogram"
           ]
         }
       },
@@ -13340,7 +13340,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Globals > Viewers"
           ],
           "operation": [
-            "GET /1/videos/stats/viewers/channels/histogram"
+            "Viewers Per Channel Histogram"
           ]
         }
       },
@@ -13358,7 +13358,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Globals > Viewers"
           ],
           "operation": [
-            "GET /1/videos/stats/viewers/channels/histogram"
+            "Viewers Per Channel Histogram"
           ]
         }
       },
@@ -13406,7 +13406,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Globals > Viewers"
           ],
           "operation": [
-            "GET /1/videos/stats/viewers/channels/histogram"
+            "Viewers Per Channel Histogram"
           ]
         }
       },
@@ -13424,7 +13424,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Globals > Viewers"
           ],
           "operation": [
-            "GET /1/videos/stats/viewers/channels/shares"
+            "Viewers Per Channel Share"
           ]
         }
       },
@@ -13442,7 +13442,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Globals > Viewers"
           ],
           "operation": [
-            "GET /1/videos/stats/viewers/channels/shares"
+            "Viewers Per Channel Share"
           ]
         }
       },
@@ -13461,7 +13461,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Globals > Viewers"
           ],
           "operation": [
-            "GET /1/videos/stats/viewers/channels/shares"
+            "Viewers Per Channel Share"
           ]
         }
       },
@@ -13524,14 +13524,14 @@ export class InfomaniakStreamingVideo implements INodeType {
       "options": [
         {
           "name": "Viewing Time",
-          "value": "GET /1/videos/stats/viewing"
+          "value": "Viewing Time"
         },
         {
           "name": "Viewing Histogram Par Channel",
-          "value": "GET /1/videos/stats/viewing/channels/histogram"
+          "value": "Viewing Histogram Par Channel"
         }
       ],
-      "default": "GET /1/videos/stats/viewing",
+      "default": "Viewing Time",
       "noDataExpression": true
     },
     {
@@ -13545,7 +13545,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Globals > Viewing"
           ],
           "operation": [
-            "GET /1/videos/stats/viewing"
+            "Viewing Time"
           ]
         }
       },
@@ -13563,7 +13563,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Globals > Viewing"
           ],
           "operation": [
-            "GET /1/videos/stats/viewing"
+            "Viewing Time"
           ]
         }
       },
@@ -13581,7 +13581,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Globals > Viewing"
           ],
           "operation": [
-            "GET /1/videos/stats/viewing"
+            "Viewing Time"
           ]
         }
       },
@@ -13629,7 +13629,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Globals > Viewing"
           ],
           "operation": [
-            "GET /1/videos/stats/viewing"
+            "Viewing Time"
           ]
         }
       },
@@ -13647,7 +13647,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Globals > Viewing"
           ],
           "operation": [
-            "GET /1/videos/stats/viewing/channels/histogram"
+            "Viewing Histogram Par Channel"
           ]
         }
       },
@@ -13665,7 +13665,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Globals > Viewing"
           ],
           "operation": [
-            "GET /1/videos/stats/viewing/channels/histogram"
+            "Viewing Histogram Par Channel"
           ]
         }
       },
@@ -13683,7 +13683,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Globals > Viewing"
           ],
           "operation": [
-            "GET /1/videos/stats/viewing/channels/histogram"
+            "Viewing Histogram Par Channel"
           ]
         }
       },
@@ -13731,7 +13731,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Stats > Globals > Viewing"
           ],
           "operation": [
-            "GET /1/videos/stats/viewing/channels/histogram"
+            "Viewing Histogram Par Channel"
           ]
         }
       },
@@ -13752,10 +13752,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "options": [
         {
           "name": "Show Picture",
-          "value": "GET /1/videos/{channel}/thumbnail"
+          "value": "Show Picture"
         }
       ],
-      "default": "GET /1/videos/{channel}/thumbnail",
+      "default": "Show Picture",
       "noDataExpression": true
     },
     {
@@ -13769,7 +13769,7 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Thumbnail"
           ],
           "operation": [
-            "GET /1/videos/{channel}/thumbnail"
+            "Show Picture"
           ]
         }
       },
@@ -13783,25 +13783,25 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "order"
+            "Order"
           ]
         }
       },
       "options": [
         {
           "name": "Returns A Pack Order",
-          "value": "GET /1/videos/order/{order}"
+          "value": "Returns A Pack Order"
         },
         {
           "name": "Returns A Pack Order",
-          "value": "GET /1/videos/order"
+          "value": "Returns A Pack Order (2)"
         },
         {
           "name": "Update A Pack",
-          "value": "PUT /1/videos/order"
+          "value": "Update A Pack"
         }
       ],
-      "default": "GET /1/videos/order/{order}",
+      "default": "Returns A Pack Order",
       "noDataExpression": true
     },
     {
@@ -13812,10 +13812,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "order"
+            "Order"
           ],
           "operation": [
-            "GET /1/videos/order/{order}"
+            "Returns A Pack Order"
           ]
         }
       },
@@ -13829,10 +13829,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "order"
+            "Order"
           ],
           "operation": [
-            "GET /1/videos/order/{order}"
+            "Returns A Pack Order"
           ]
         }
       },
@@ -13848,10 +13848,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "order"
+            "Order"
           ],
           "operation": [
-            "GET /1/videos/order/{order}"
+            "Returns A Pack Order"
           ]
         }
       },
@@ -13873,10 +13873,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "order"
+            "Order"
           ],
           "operation": [
-            "GET /1/videos/order"
+            "Returns A Pack Order (2)"
           ]
         }
       },
@@ -13890,10 +13890,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "order"
+            "Order"
           ],
           "operation": [
-            "GET /1/videos/order"
+            "Returns A Pack Order (2)"
           ]
         }
       },
@@ -13909,10 +13909,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "order"
+            "Order"
           ],
           "operation": [
-            "GET /1/videos/order"
+            "Returns A Pack Order (2)"
           ]
         }
       },
@@ -13934,10 +13934,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "order"
+            "Order"
           ],
           "operation": [
-            "PUT /1/videos/order"
+            "Update A Pack"
           ]
         }
       },
@@ -13953,10 +13953,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "order"
+            "Order"
           ],
           "operation": [
-            "PUT /1/videos/order"
+            "Update A Pack"
           ]
         }
       },
@@ -13979,10 +13979,10 @@ export class InfomaniakStreamingVideo implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "order"
+            "Order"
           ],
           "operation": [
-            "PUT /1/videos/order"
+            "Update A Pack"
           ]
         }
       },
@@ -14008,8 +14008,8 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "GET /1/videos",
-            "GET /1/videos/{channel}/players"
+            "List Channels",
+            "Lists All Players"
           ]
         }
       }
@@ -14030,8 +14030,8 @@ export class InfomaniakStreamingVideo implements INodeType {
             "Players"
           ],
           "operation": [
-            "GET /1/videos",
-            "GET /1/videos/{channel}/players"
+            "List Channels",
+            "Lists All Players"
           ],
           "returnAll": [
             false

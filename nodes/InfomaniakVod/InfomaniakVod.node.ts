@@ -16,7 +16,7 @@ type OperationDefinition = {
 
 const operations: Record<string, Record<string, OperationDefinition>> = {
   "General": {
-    "GET /1/vod/channel": {
+    "List Channels": {
       "method": "GET",
       "path": "/1/vod/channel",
       "pagination": "none",
@@ -32,7 +32,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/disk-usage": {
+    "Returns The Disk Usage (in Bytes) For The Given Channel.": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/disk-usage",
       "pagination": "none",
@@ -48,7 +48,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/media/{media}/thumbnail": {
+    "Returns The Media Poster.": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/media/{media}/thumbnail",
       "pagination": "none",
@@ -68,7 +68,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/vod/channel/{channel}/media/{media}/thumbnail": {
+    "Replaces The Thumbnail & Poster For A Given Media": {
       "method": "POST",
       "path": "/1/vod/channel/{channel}/media/{media}/thumbnail",
       "pagination": "none",
@@ -98,7 +98,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/browse": {
+    "Lists All Children Of The Channel's Root Folder.": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/browse",
       "pagination": "none",
@@ -114,7 +114,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/vod/channel/{channel}/browse": {
+    "Moves One Or Many Medias/folders To Trash.": {
       "method": "DELETE",
       "path": "/1/vod/channel/{channel}/browse",
       "pagination": "none",
@@ -135,7 +135,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "POST /1/vod/channel/{channel}/browse/copy": {
+    "Duplicates One Or Many Medias/folders To A Given Folder.": {
       "method": "POST",
       "path": "/1/vod/channel/{channel}/browse/copy",
       "pagination": "none",
@@ -160,7 +160,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "POST /1/vod/channel/{channel}/browse/move": {
+    "Moves One Or Many Medias/folders To A Given Folder.": {
       "method": "POST",
       "path": "/1/vod/channel/{channel}/browse/move",
       "pagination": "none",
@@ -185,7 +185,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/browse/trash": {
+    "Lists All Medias/folders In Trash.": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/browse/trash",
       "pagination": "none",
@@ -201,7 +201,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/vod/channel/{channel}/browse/trash": {
+    "Deletes One Or Many Medias/folders From Trash, Permanently.": {
       "method": "DELETE",
       "path": "/1/vod/channel/{channel}/browse/trash",
       "pagination": "none",
@@ -217,7 +217,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/vod/channel/{channel}/browse/trash/{file}": {
+    "Deletes A Media/folder From Trash, Permanently.": {
       "method": "DELETE",
       "path": "/1/vod/channel/{channel}/browse/trash/{file}",
       "pagination": "none",
@@ -237,7 +237,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/vod/channel/{channel}/browse/trash/{file}/restore": {
+    "Restores A Media/folder From Trash To Its Original Location.": {
       "method": "POST",
       "path": "/1/vod/channel/{channel}/browse/trash/{file}/restore",
       "pagination": "none",
@@ -257,7 +257,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/browse/tree": {
+    "Returns The Tree Of The Folder With All Its Children, Recursively.": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/browse/tree",
       "pagination": "none",
@@ -273,7 +273,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/browse/breadcrumb": {
+    "Returns The Breadcrumb Of The Media/folder Up To Root Ancestor.": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/browse/breadcrumb",
       "pagination": "none",
@@ -289,7 +289,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/browse/{file}/breadcrumb": {
+    "Returns The Breadcrumb Of The Media/folder Up To Root Ancestor. (2)": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/browse/{file}/breadcrumb",
       "pagination": "none",
@@ -305,7 +305,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/vod/channel/{channel}/browse/update": {
+    "Updates One Or Many Medias/folders.": {
       "method": "PUT",
       "path": "/1/vod/channel/{channel}/browse/update",
       "pagination": "none",
@@ -326,7 +326,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/browse/{file}": {
+    "Lists All Children Of A Given Folder.": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/browse/{file}",
       "pagination": "none",
@@ -346,7 +346,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/vod/channel/{channel}/browse/{file}": {
+    "Updates A Media/folder.": {
       "method": "PUT",
       "path": "/1/vod/channel/{channel}/browse/{file}",
       "pagination": "none",
@@ -375,7 +375,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/vod/channel/{channel}/browse/{file}": {
+    "Moves A Media/folder To Trash.": {
       "method": "DELETE",
       "path": "/1/vod/channel/{channel}/browse/{file}",
       "pagination": "none",
@@ -395,7 +395,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/browse/{file}/tree": {
+    "Returns The Tree Of The Folder With All Its Children, Recursively. (2)": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/browse/{file}/tree",
       "pagination": "none",
@@ -411,7 +411,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/vod/channel/{channel}/browse/{file}/copy": {
+    "Duplicates A Media/folder To A Given Folder.": {
       "method": "POST",
       "path": "/1/vod/channel/{channel}/browse/{file}/copy",
       "pagination": "none",
@@ -436,7 +436,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/vod/channel/{channel}/browse/{file}/move": {
+    "Moves A Media/folder To A Given Folder.": {
       "method": "POST",
       "path": "/1/vod/channel/{channel}/browse/{file}/move",
       "pagination": "none",
@@ -461,7 +461,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/callback/log": {
+    "Lists All Callback Logs.": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/callback/log",
       "pagination": "none",
@@ -477,7 +477,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/vod/channel/{channel}/callback/log": {
+    "Deletes One Or Many Callback Logs.": {
       "method": "DELETE",
       "path": "/1/vod/channel/{channel}/callback/log",
       "pagination": "none",
@@ -493,7 +493,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/callback/log/{callbackLog}": {
+    "Returns A Callback Log.": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/callback/log/{callbackLog}",
       "pagination": "none",
@@ -513,7 +513,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/vod/channel/{channel}/callback/log/{callbackLog}": {
+    "Deletes A Callback Log.": {
       "method": "DELETE",
       "path": "/1/vod/channel/{channel}/callback/log/{callbackLog}",
       "pagination": "none",
@@ -533,7 +533,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/callback": {
+    "Lists All Callbacks.": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/callback",
       "pagination": "none",
@@ -549,7 +549,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/vod/channel/{channel}/callback": {
+    "Creates A New Callback.": {
       "method": "POST",
       "path": "/1/vod/channel/{channel}/callback",
       "pagination": "none",
@@ -565,7 +565,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/vod/channel/{channel}/callback": {
+    "Updates One Or Many Callbacks.": {
       "method": "PUT",
       "path": "/1/vod/channel/{channel}/callback",
       "pagination": "none",
@@ -581,7 +581,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/vod/channel/{channel}/callback": {
+    "Deletes One Or Many Callbacks.": {
       "method": "DELETE",
       "path": "/1/vod/channel/{channel}/callback",
       "pagination": "none",
@@ -597,7 +597,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/callback/{callback}": {
+    "Returns A Callback.": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/callback/{callback}",
       "pagination": "none",
@@ -617,7 +617,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/vod/channel/{channel}/callback/{callback}": {
+    "Updates A Callback.": {
       "method": "PUT",
       "path": "/1/vod/channel/{channel}/callback/{callback}",
       "pagination": "none",
@@ -637,7 +637,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/vod/channel/{channel}/callback/{callback}": {
+    "Deletes A Callback.": {
       "method": "DELETE",
       "path": "/1/vod/channel/{channel}/callback/{callback}",
       "pagination": "none",
@@ -657,7 +657,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/journal": {
+    "Lists All Event.": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/journal",
       "pagination": "none",
@@ -673,7 +673,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/encoding": {
+    "Lists All Encodings.": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/encoding",
       "pagination": "none",
@@ -689,7 +689,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/vod/channel/{channel}/encoding": {
+    "Creates A New Encoding.": {
       "method": "POST",
       "path": "/1/vod/channel/{channel}/encoding",
       "pagination": "none",
@@ -705,7 +705,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/vod/channel/{channel}/encoding": {
+    "Deletes One Or Many Players.": {
       "method": "DELETE",
       "path": "/1/vod/channel/{channel}/encoding",
       "pagination": "none",
@@ -721,7 +721,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/encoding/{encoding}": {
+    "Returns An Encoding.": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/encoding/{encoding}",
       "pagination": "none",
@@ -741,7 +741,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/vod/channel/{channel}/encoding/{encoding}": {
+    "Updates An Encoding.": {
       "method": "PUT",
       "path": "/1/vod/channel/{channel}/encoding/{encoding}",
       "pagination": "none",
@@ -761,7 +761,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/vod/channel/{channel}/encoding/{encoding}": {
+    "Deletes An Encoding.": {
       "method": "DELETE",
       "path": "/1/vod/channel/{channel}/encoding/{encoding}",
       "pagination": "none",
@@ -781,7 +781,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/logo": {
+    "List Logos": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/logo",
       "pagination": "none",
@@ -797,7 +797,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/vod/channel/{channel}/logo": {
+    "Create A Logo": {
       "method": "POST",
       "path": "/1/vod/channel/{channel}/logo",
       "pagination": "none",
@@ -813,7 +813,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/vod/channel/{channel}/logo": {
+    "Deletes Logos": {
       "method": "DELETE",
       "path": "/1/vod/channel/{channel}/logo",
       "pagination": "none",
@@ -829,7 +829,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/vod/channel/{channel}/logo/detach": {
+    "Detach Logo": {
       "method": "POST",
       "path": "/1/vod/channel/{channel}/logo/detach",
       "pagination": "none",
@@ -845,7 +845,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/logo/{logo}": {
+    "Display Logo": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/logo/{logo}",
       "pagination": "none",
@@ -865,7 +865,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/vod/channel/{channel}/logo/{logo}": {
+    "Updates Logo": {
       "method": "PUT",
       "path": "/1/vod/channel/{channel}/logo/{logo}",
       "pagination": "none",
@@ -885,7 +885,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/vod/channel/{channel}/logo/{logo}": {
+    "Delete Logo": {
       "method": "DELETE",
       "path": "/1/vod/channel/{channel}/logo/{logo}",
       "pagination": "none",
@@ -905,7 +905,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/vod/channel/{channel}/logo/{logo}/attach": {
+    "Sets A Logo Either For Media Or Folders": {
       "method": "POST",
       "path": "/1/vod/channel/{channel}/logo/{logo}/attach",
       "pagination": "none",
@@ -925,7 +925,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/folder": {
+    "List All Folders.": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/folder",
       "pagination": "none",
@@ -941,7 +941,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/vod/channel/{channel}/folder": {
+    "Creates A New Folder In The Channel's Root Folder.": {
       "method": "POST",
       "path": "/1/vod/channel/{channel}/folder",
       "pagination": "none",
@@ -957,7 +957,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/vod/channel/{channel}/folder/{folder}/encoding": {
+    "Adds One Or Many Given Encodings To A Folder.": {
       "method": "POST",
       "path": "/1/vod/channel/{channel}/folder/{folder}/encoding",
       "pagination": "none",
@@ -977,7 +977,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/vod/channel/{channel}/folder/{folder}/encoding": {
+    "Remove Encodings From Folder": {
       "method": "DELETE",
       "path": "/1/vod/channel/{channel}/folder/{folder}/encoding",
       "pagination": "none",
@@ -997,7 +997,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/vod/channel/{channel}/folder/{folder}/encoding/{encoding}": {
+    "Appends An Encoding To A Folder.": {
       "method": "POST",
       "path": "/1/vod/channel/{channel}/folder/{folder}/encoding/{encoding}",
       "pagination": "none",
@@ -1021,7 +1021,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/vod/channel/{channel}/folder/{folder}/encoding/{encoding}": {
+    "Removes An Encoding From A Folder.": {
       "method": "DELETE",
       "path": "/1/vod/channel/{channel}/folder/{folder}/encoding/{encoding}",
       "pagination": "none",
@@ -1045,7 +1045,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/vod/channel/{channel}/folder/{folder}/logo/{logo}": {
+    "Add Logo To A Folder": {
       "method": "POST",
       "path": "/1/vod/channel/{channel}/folder/{folder}/logo/{logo}",
       "pagination": "none",
@@ -1069,7 +1069,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/vod/channel/{channel}/folder/{folder}/logo": {
+    "Delete Logo (2)": {
       "method": "DELETE",
       "path": "/1/vod/channel/{channel}/folder/{folder}/logo",
       "pagination": "none",
@@ -1089,7 +1089,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/folder/root": {
+    "Returns The Channel's Root Folder.": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/folder/root",
       "pagination": "none",
@@ -1105,7 +1105,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/folder/{folder}": {
+    "Returns A Folder.": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/folder/{folder}",
       "pagination": "none",
@@ -1130,7 +1130,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/vod/channel/{channel}/folder/{folder}": {
+    "Creates A New Folder In The Parent Folder.": {
       "method": "POST",
       "path": "/1/vod/channel/{channel}/folder/{folder}",
       "pagination": "none",
@@ -1235,7 +1235,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "PUT /1/vod/channel/{channel}/folder/{folder}": {
+    "Updates A Folder.": {
       "method": "PUT",
       "path": "/1/vod/channel/{channel}/folder/{folder}",
       "pagination": "none",
@@ -1340,7 +1340,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/vod/channel/{channel}/folder/{folder}": {
+    "Deletes A Folder With All Its Children, Recursively.": {
       "method": "DELETE",
       "path": "/1/vod/channel/{channel}/folder/{folder}",
       "pagination": "none",
@@ -1360,7 +1360,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/folder/{folder}/playlist": {
+    "Lists All Playlists Having A Given Folder Attached.": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/folder/{folder}/playlist",
       "pagination": "none",
@@ -1380,7 +1380,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/ftp/user": {
+    "Lists All FTP Users.": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/ftp/user",
       "pagination": "none",
@@ -1396,7 +1396,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/vod/channel/{channel}/ftp/user": {
+    "Creates A New FTP User.": {
       "method": "POST",
       "path": "/1/vod/channel/{channel}/ftp/user",
       "pagination": "none",
@@ -1412,7 +1412,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/ftp/user/{ftpUser}": {
+    "Returns A FTP User.": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/ftp/user/{ftpUser}",
       "pagination": "none",
@@ -1432,7 +1432,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/vod/channel/{channel}/ftp/user/{ftpUser}": {
+    "Updates A FTP User.": {
       "method": "PUT",
       "path": "/1/vod/channel/{channel}/ftp/user/{ftpUser}",
       "pagination": "none",
@@ -1452,7 +1452,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/vod/channel/{channel}/ftp/user/{ftpUser}": {
+    "Deletes A FTP User.": {
       "method": "DELETE",
       "path": "/1/vod/channel/{channel}/ftp/user/{ftpUser}",
       "pagination": "none",
@@ -1472,7 +1472,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/media": {
+    "Lists All Medias.": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/media",
       "pagination": "none",
@@ -1488,7 +1488,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/vod/channel/{channel}/media": {
+    "Updates One Or Many Medias.": {
       "method": "PUT",
       "path": "/1/vod/channel/{channel}/media",
       "pagination": "none",
@@ -1504,7 +1504,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/media/{media}": {
+    "Returns A Media.": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/media/{media}",
       "pagination": "none",
@@ -1529,7 +1529,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/vod/channel/{channel}/media/{media}": {
+    "Updates A Media.": {
       "method": "PUT",
       "path": "/1/vod/channel/{channel}/media/{media}",
       "pagination": "none",
@@ -1610,7 +1610,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/vod/channel/{channel}/media/{media}": {
+    "Deletes A Media.": {
       "method": "DELETE",
       "path": "/1/vod/channel/{channel}/media/{media}",
       "pagination": "none",
@@ -1630,7 +1630,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/media/{media}/chapter": {
+    "Lists All Chapters Of A Given Media.": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/media/{media}/chapter",
       "pagination": "none",
@@ -1650,7 +1650,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/vod/channel/{channel}/media/{media}/chapter": {
+    "Creates A New Chapter To A Given Media.": {
       "method": "POST",
       "path": "/1/vod/channel/{channel}/media/{media}/chapter",
       "pagination": "none",
@@ -1703,7 +1703,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "PUT /1/vod/channel/{channel}/media/{media}/chapter": {
+    "Updates One Or Many Chapters.": {
       "method": "PUT",
       "path": "/1/vod/channel/{channel}/media/{media}/chapter",
       "pagination": "none",
@@ -1723,7 +1723,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/vod/channel/{channel}/media/{media}/chapter": {
+    "Deletes One Or Many Chapters.": {
       "method": "DELETE",
       "path": "/1/vod/channel/{channel}/media/{media}/chapter",
       "pagination": "none",
@@ -1743,7 +1743,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/media/{media}/chapter/{chapter}": {
+    "Returns A Chapter.": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/media/{media}/chapter/{chapter}",
       "pagination": "none",
@@ -1772,7 +1772,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/vod/channel/{channel}/media/{media}/chapter/{chapter}": {
+    "Updates A Chapter.": {
       "method": "PUT",
       "path": "/1/vod/channel/{channel}/media/{media}/chapter/{chapter}",
       "pagination": "none",
@@ -1829,7 +1829,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/vod/channel/{channel}/media/{media}/chapter/{chapter}": {
+    "Deletes A Chapter.": {
       "method": "DELETE",
       "path": "/1/vod/channel/{channel}/media/{media}/chapter/{chapter}",
       "pagination": "none",
@@ -1853,7 +1853,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/media/{media}/cut": {
+    "List Media Cuts": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/media/{media}/cut",
       "pagination": "none",
@@ -1873,7 +1873,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/vod/channel/{channel}/media/{media}/cut": {
+    "Cut A Media": {
       "method": "POST",
       "path": "/1/vod/channel/{channel}/media/{media}/cut",
       "pagination": "none",
@@ -1898,7 +1898,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "POST /1/vod/channel/{channel}/media/{media}/waveform": {
+    "Get New More Precise Waveform ( For Medias Older Than 2024, Async Job )": {
       "method": "POST",
       "path": "/1/vod/channel/{channel}/media/{media}/waveform",
       "pagination": "none",
@@ -1918,7 +1918,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/vod/channel/{channel}/media/{media}/thumbstrip": {
+    "Get New Thumbstrip Thumbnail ( For Medias Older Than 2024, Async Job )": {
       "method": "POST",
       "path": "/1/vod/channel/{channel}/media/{media}/thumbstrip",
       "pagination": "none",
@@ -1938,7 +1938,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/player": {
+    "Lists All Players.": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/player",
       "pagination": "none",
@@ -1954,7 +1954,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/vod/channel/{channel}/player": {
+    "Creates A New Player.": {
       "method": "POST",
       "path": "/1/vod/channel/{channel}/player",
       "pagination": "none",
@@ -1970,7 +1970,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/vod/channel/{channel}/player": {
+    "Deletes One Or Many Players. (2)": {
       "method": "DELETE",
       "path": "/1/vod/channel/{channel}/player",
       "pagination": "none",
@@ -1986,7 +1986,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/player/{player}": {
+    "Returns A Player.": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/player/{player}",
       "pagination": "none",
@@ -2011,7 +2011,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/vod/channel/{channel}/player/{player}": {
+    "Updates A Player.": {
       "method": "PUT",
       "path": "/1/vod/channel/{channel}/player/{player}",
       "pagination": "none",
@@ -2040,7 +2040,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/vod/channel/{channel}/player/{player}": {
+    "Deletes A Player.": {
       "method": "DELETE",
       "path": "/1/vod/channel/{channel}/player/{player}",
       "pagination": "none",
@@ -2060,7 +2060,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/vod/channel/{channel}/player/{player}/copy": {
+    "Duplicates A Player.": {
       "method": "POST",
       "path": "/1/vod/channel/{channel}/player/{player}/copy",
       "pagination": "none",
@@ -2080,7 +2080,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/player/{player}/ad": {
+    "Lists All Ads.": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/player/{player}/ad",
       "pagination": "none",
@@ -2100,7 +2100,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/vod/channel/{channel}/player/{player}/ad": {
+    "Creates A New Ad.": {
       "method": "POST",
       "path": "/1/vod/channel/{channel}/player/{player}/ad",
       "pagination": "none",
@@ -2120,7 +2120,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/vod/channel/{channel}/player/{player}/ad": {
+    "Deletes One Or Many Ads.": {
       "method": "DELETE",
       "path": "/1/vod/channel/{channel}/player/{player}/ad",
       "pagination": "none",
@@ -2140,7 +2140,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/player/{player}/ad/{ad}": {
+    "Returns A Ad.": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/player/{player}/ad/{ad}",
       "pagination": "none",
@@ -2164,7 +2164,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/vod/channel/{channel}/player/{player}/ad/{ad}": {
+    "Updates A Ad.": {
       "method": "PUT",
       "path": "/1/vod/channel/{channel}/player/{player}/ad/{ad}",
       "pagination": "none",
@@ -2188,7 +2188,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/vod/channel/{channel}/player/{player}/ad/{ad}": {
+    "Deletes A Ad.": {
       "method": "DELETE",
       "path": "/1/vod/channel/{channel}/player/{player}/ad/{ad}",
       "pagination": "none",
@@ -2212,7 +2212,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/playlist": {
+    "Lists All Playlists.": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/playlist",
       "pagination": "none",
@@ -2228,7 +2228,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/vod/channel/{channel}/playlist": {
+    "Creates A New Playlist.": {
       "method": "POST",
       "path": "/1/vod/channel/{channel}/playlist",
       "pagination": "none",
@@ -2244,7 +2244,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/vod/channel/{channel}/playlist": {
+    "Deletes One Or Many Playlists.": {
       "method": "DELETE",
       "path": "/1/vod/channel/{channel}/playlist",
       "pagination": "none",
@@ -2260,7 +2260,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/playlist/{playlist}": {
+    "Returns A Playlist.": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/playlist/{playlist}",
       "pagination": "none",
@@ -2285,7 +2285,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/vod/channel/{channel}/playlist/{playlist}": {
+    "Updates A Playlist.": {
       "method": "PUT",
       "path": "/1/vod/channel/{channel}/playlist/{playlist}",
       "pagination": "none",
@@ -2305,7 +2305,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PATCH /1/vod/channel/{channel}/playlist/{playlist}": {
+    "Updates A Playlist. (2)": {
       "method": "PATCH",
       "path": "/1/vod/channel/{channel}/playlist/{playlist}",
       "pagination": "none",
@@ -2325,7 +2325,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/vod/channel/{channel}/playlist/{playlist}": {
+    "Deletes A Playlist.": {
       "method": "DELETE",
       "path": "/1/vod/channel/{channel}/playlist/{playlist}",
       "pagination": "none",
@@ -2345,7 +2345,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/playlist/{playlist}/browse/{folder?}": {
+    "Lists All Children Of A Given Folder, With Attached To Playlist Flag.": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/playlist/{playlist}/browse/{folder?}",
       "pagination": "none",
@@ -2369,7 +2369,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/share": {
+    "Lists All Shares.": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/share",
       "pagination": "none",
@@ -2385,7 +2385,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/vod/channel/{channel}/share": {
+    "Creates A New Share To A Given Target": {
       "method": "POST",
       "path": "/1/vod/channel/{channel}/share",
       "pagination": "none",
@@ -2414,7 +2414,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/share/{share}": {
+    "Returns A Share.": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/share/{share}",
       "pagination": "none",
@@ -2439,7 +2439,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/vod/channel/{channel}/share/{share}": {
+    "Updates A Share.": {
       "method": "PUT",
       "path": "/1/vod/channel/{channel}/share/{share}",
       "pagination": "none",
@@ -2459,7 +2459,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/vod/channel/{channel}/share/{share}": {
+    "Deletes A Share.": {
       "method": "DELETE",
       "path": "/1/vod/channel/{channel}/share/{share}",
       "pagination": "none",
@@ -2479,7 +2479,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/vod/channel/{channel}/share/{share}/token": {
+    "Create A Token From A Share": {
       "method": "POST",
       "path": "/1/vod/channel/{channel}/share/{share}/token",
       "pagination": "none",
@@ -2504,7 +2504,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/statistics/avg_time": {
+    "Get Average Time": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/statistics/avg_time",
       "pagination": "none",
@@ -2520,7 +2520,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/statistics/consumption": {
+    "Get Channel Consumption": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/statistics/consumption",
       "pagination": "none",
@@ -2536,7 +2536,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/statistics/consumption/encodings/histogram": {
+    "Get Channel Consumption Per Encoding": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/statistics/consumption/encodings/histogram",
       "pagination": "none",
@@ -2552,7 +2552,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/statistics/media": {
+    "Get Channel Top Medias": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/statistics/media",
       "pagination": "none",
@@ -2568,7 +2568,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/statistics/media/{media}/consumption": {
+    "Get Media Consumption": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/statistics/media/{media}/consumption",
       "pagination": "none",
@@ -2588,7 +2588,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/statistics/media/{media}/consumption/encodings/histogram": {
+    "Get Media Consumption Per Encoding": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/statistics/media/{media}/consumption/encodings/histogram",
       "pagination": "none",
@@ -2608,7 +2608,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/statistics/media/{media}/geolocation/clusters": {
+    "Get Media Top Clusters": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/statistics/media/{media}/geolocation/clusters",
       "pagination": "none",
@@ -2628,7 +2628,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/statistics/media/{media}/geolocation/countries": {
+    "Get Media Top Countries": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/statistics/media/{media}/geolocation/countries",
       "pagination": "none",
@@ -2648,7 +2648,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/statistics/media/{media}/technologies/browsers/shares": {
+    "Get Browser Shares Per Media": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/statistics/media/{media}/technologies/browsers/shares",
       "pagination": "none",
@@ -2668,7 +2668,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/statistics/media/{media}/technologies/os/shares": {
+    "Get Os Shares Per Media": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/statistics/media/{media}/technologies/os/shares",
       "pagination": "none",
@@ -2688,7 +2688,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/statistics/media/{media}/technologies/playback/shares": {
+    "Get Playbacks Shares Per Media": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/statistics/media/{media}/technologies/playback/shares",
       "pagination": "none",
@@ -2708,7 +2708,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/statistics/media/{media}/technologies/players/shares": {
+    "Get Players Shares Per Media": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/statistics/media/{media}/technologies/players/shares",
       "pagination": "none",
@@ -2728,7 +2728,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/statistics/media/{media}/viewers": {
+    "Get Media Viewers": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/statistics/media/{media}/viewers",
       "pagination": "none",
@@ -2753,7 +2753,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/statistics/media/{media}/viewers/encodings/histogram": {
+    "Get Media Viewers Per Encoding Histogram": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/statistics/media/{media}/viewers/encodings/histogram",
       "pagination": "none",
@@ -2773,7 +2773,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/statistics/media/{media}/viewers/encodings/shares": {
+    "Get Media Viewers Per Encoding Share": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/statistics/media/{media}/viewers/encodings/shares",
       "pagination": "none",
@@ -2793,7 +2793,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/statistics/media/{media}/viewers/uniques": {
+    "Get Media Unique Viewers": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/statistics/media/{media}/viewers/uniques",
       "pagination": "none",
@@ -2818,7 +2818,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/statistics/media/{media}/viewing": {
+    "Get Media Viewing Time": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/statistics/media/{media}/viewing",
       "pagination": "none",
@@ -2838,7 +2838,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/statistics/media/{media}/viewing/encodings/histogram": {
+    "Get Viewing Time Per Encoding And Media": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/statistics/media/{media}/viewing/encodings/histogram",
       "pagination": "none",
@@ -2858,7 +2858,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/statistics/technologies/browsers/shares": {
+    "Get Channel Browser Shares": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/statistics/technologies/browsers/shares",
       "pagination": "none",
@@ -2874,7 +2874,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/statistics/technologies/os/shares": {
+    "Get Channel Os Shares": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/statistics/technologies/os/shares",
       "pagination": "none",
@@ -2890,7 +2890,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/statistics/technologies/playback/shares": {
+    "Get Channel Playbacks Shares": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/statistics/technologies/playback/shares",
       "pagination": "none",
@@ -2906,7 +2906,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/statistics/technologies/players/shares": {
+    "Get Channel Players Shares": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/statistics/technologies/players/shares",
       "pagination": "none",
@@ -2922,7 +2922,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/statistics/time_ip": {
+    "Get Consumed Time Per IP": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/statistics/time_ip",
       "pagination": "none",
@@ -2938,7 +2938,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/statistics/viewers": {
+    "Get Channel Viewers": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/statistics/viewers",
       "pagination": "none",
@@ -2954,7 +2954,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/statistics/viewers/encodings/histogram": {
+    "Get Channel Viewers Per Encoding Histogram": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/statistics/viewers/encodings/histogram",
       "pagination": "none",
@@ -2970,7 +2970,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/statistics/viewers/encodings/shares": {
+    "Get Channel Viewers Per Encoding Share": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/statistics/viewers/encodings/shares",
       "pagination": "none",
@@ -2986,7 +2986,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/statistics/viewers/histogram": {
+    "Get Channel Viewers Histogram": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/statistics/viewers/histogram",
       "pagination": "none",
@@ -3002,7 +3002,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/statistics/viewers/medias": {
+    "Get Media Viewers (2)": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/statistics/viewers/medias",
       "pagination": "none",
@@ -3023,7 +3023,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/statistics/viewers/uniques": {
+    "Get Channel Unique Viewers": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/statistics/viewers/uniques",
       "pagination": "none",
@@ -3039,7 +3039,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/statistics/viewers/uniques/medias": {
+    "Get Media Unique Viewers (2)": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/statistics/viewers/uniques/medias",
       "pagination": "none",
@@ -3060,7 +3060,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/statistics/viewing": {
+    "Get Channel Viewing Time": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/statistics/viewing",
       "pagination": "none",
@@ -3076,7 +3076,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/statistics/viewing/encodings/histogram": {
+    "Get Channel Viewing Time Per Encoding": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/statistics/viewing/encodings/histogram",
       "pagination": "none",
@@ -3092,7 +3092,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/upload": {
+    "List Uploads": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/upload",
       "pagination": "none",
@@ -3108,7 +3108,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/vod/channel/{channel}/upload": {
+    "Create New Media": {
       "method": "POST",
       "path": "/1/vod/channel/{channel}/upload",
       "pagination": "none",
@@ -3145,7 +3145,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "POST /1/vod/channel/{channel}/media/{media}/subtitle/{language}": {
+    "Creates A New Subtitle To A Given Media.": {
       "method": "POST",
       "path": "/1/vod/channel/{channel}/media/{media}/subtitle/{language}",
       "pagination": "none",
@@ -3169,7 +3169,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/vod/channel/{channel}/media/{media}/subtitle/{language}/import": {
+    "Creates A New Subtitle To A Given Media, From A Provided File.": {
       "method": "POST",
       "path": "/1/vod/channel/{channel}/media/{media}/subtitle/{language}/import",
       "pagination": "none",
@@ -3193,7 +3193,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/vod/channel/{channel}/media/{media}/subtitle/{subtitle}/default": {
+    "Set A Default Subtitle.": {
       "method": "PUT",
       "path": "/1/vod/channel/{channel}/media/{media}/subtitle/{subtitle}/default",
       "pagination": "none",
@@ -3217,7 +3217,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/media/{media}/subtitle/{subtitle}": {
+    "Returns A Subtitle.": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/media/{media}/subtitle/{subtitle}",
       "pagination": "none",
@@ -3241,7 +3241,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/vod/channel/{channel}/media/{media}/subtitle/{subtitle}": {
+    "Updates A Subtitle.": {
       "method": "PUT",
       "path": "/1/vod/channel/{channel}/media/{media}/subtitle/{subtitle}",
       "pagination": "none",
@@ -3265,7 +3265,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/vod/channel/{channel}/media/{media}/subtitle/{subtitle}": {
+    "Deletes A Subtitle.": {
       "method": "DELETE",
       "path": "/1/vod/channel/{channel}/media/{media}/subtitle/{subtitle}",
       "pagination": "none",
@@ -3289,7 +3289,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/vod/channel/{channel}/media/{media}/logo/{logo}": {
+    "Attach Logo": {
       "method": "POST",
       "path": "/1/vod/channel/{channel}/media/{media}/logo/{logo}",
       "pagination": "none",
@@ -3313,7 +3313,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/vod/channel/{channel}/media/{media}/logo": {
+    "Attach Logo (2)": {
       "method": "DELETE",
       "path": "/1/vod/channel/{channel}/media/{media}/logo",
       "pagination": "none",
@@ -3333,7 +3333,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/encoding/constraint": {
+    "List Major Encoding Constraints That Should Be Respected": {
       "method": "GET",
       "path": "/1/vod/encoding/constraint",
       "pagination": "none",
@@ -3344,7 +3344,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/encoding/profile": {
+    "List Encoding Profiles.": {
       "method": "GET",
       "path": "/1/vod/encoding/profile",
       "pagination": "none",
@@ -3355,7 +3355,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/country": {
+    "Lists All Available Countries.": {
       "method": "GET",
       "path": "/1/vod/country",
       "pagination": "none",
@@ -3366,7 +3366,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/category": {
+    "Lists All Available Categories.": {
       "method": "GET",
       "path": "/1/vod/category",
       "pagination": "none",
@@ -3377,7 +3377,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/language": {
+    "Lists All Available Languages.": {
       "method": "GET",
       "path": "/1/vod/language",
       "pagination": "none",
@@ -3388,7 +3388,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/search": {
+    "Finds And Returns Anything Matching A Given Query.": {
       "method": "GET",
       "path": "/1/vod/search",
       "pagination": "none",
@@ -3399,7 +3399,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/media/{media}/playlist": {
+    "Lists All Playlists Having A Given Media Attached.": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/media/{media}/playlist",
       "pagination": "none",
@@ -3419,7 +3419,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/vod/channel/{channel}/playlist/attach": {
+    "Adds One Or Many Given Medias/folders To One Or Many Playlists.": {
       "method": "POST",
       "path": "/1/vod/channel/{channel}/playlist/attach",
       "pagination": "none",
@@ -3435,7 +3435,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/vod/channel/{channel}/playlist/detach": {
+    "Removes One Or Many Given Medias/folders From One Or Many Playlists.": {
       "method": "DELETE",
       "path": "/1/vod/channel/{channel}/playlist/detach",
       "pagination": "none",
@@ -3451,7 +3451,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/media/{media}/subtitle": {
+    "Lists All Subtitles Of A Given Media.": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/media/{media}/subtitle",
       "pagination": "none",
@@ -3471,7 +3471,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/vod/channel/{channel}/media/{media}/subtitle": {
+    "Updates One Or Many Subtitle.": {
       "method": "PUT",
       "path": "/1/vod/channel/{channel}/media/{media}/subtitle",
       "pagination": "none",
@@ -3491,7 +3491,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/vod/channel/{channel}/media/{media}/subtitle": {
+    "Deletes Many Subtitles.": {
       "method": "DELETE",
       "path": "/1/vod/channel/{channel}/media/{media}/subtitle",
       "pagination": "none",
@@ -3513,7 +3513,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "V2 > Browse": {
-    "POST /1/vod/channel/{channel}/browse/export": {
+    "Exports One Or Many Medias To An External Platform.": {
       "method": "POST",
       "path": "/1/vod/channel/{channel}/browse/export",
       "pagination": "none",
@@ -3529,7 +3529,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/vod/channel/{channel}/browse/trash/restore": {
+    "Restores One Or Many Medias/folders From Trash To Their Original Location.": {
       "method": "DELETE",
       "path": "/1/vod/channel/{channel}/browse/trash/restore",
       "pagination": "none",
@@ -3545,7 +3545,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/vod/channel/{channel}/browse/{file}/export": {
+    "Exports A Media To An External Platform.": {
       "method": "POST",
       "path": "/1/vod/channel/{channel}/browse/{file}/export",
       "pagination": "none",
@@ -3567,7 +3567,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "V2 > Channel": {
-    "GET /1/vod/channel/{channel}": {
+    "Returns A Channel.": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}",
       "pagination": "none",
@@ -3583,7 +3583,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/vod/channel/{channel}": {
+    "Updates A Channel.": {
       "method": "PUT",
       "path": "/1/vod/channel/{channel}",
       "pagination": "none",
@@ -3601,7 +3601,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "V2 > Playlist": {
-    "GET /1/res/playlist/{playlist}.{ext}": {
+    "Returns A Playlist In Its Given Extension": {
       "method": "GET",
       "path": "/1/res/playlist/{playlist}.{ext}",
       "pagination": "none",
@@ -3621,7 +3621,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/vod/channel/{channel}/playlist/{playlist}/attach": {
+    "Adds One Or Many Given Medias/folders To A Playlist.": {
       "method": "POST",
       "path": "/1/vod/channel/{channel}/playlist/{playlist}/attach",
       "pagination": "none",
@@ -3641,7 +3641,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/vod/channel/{channel}/playlist/{playlist}/detach": {
+    "Removes One Or Many Given Medias/folders From A Playlist.": {
       "method": "DELETE",
       "path": "/1/vod/channel/{channel}/playlist/{playlist}/detach",
       "pagination": "none",
@@ -3661,7 +3661,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/vod/channel/{channel}/playlist/{playlist}/copy": {
+    "Duplicates A Playlist.": {
       "method": "POST",
       "path": "/1/vod/channel/{channel}/playlist/{playlist}/copy",
       "pagination": "none",
@@ -3681,7 +3681,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/playlist/{playlist}/image": {
+    "Returns A Playlist Image.": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/playlist/{playlist}/image",
       "pagination": "none",
@@ -3701,7 +3701,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/vod/channel/{channel}/playlist/{playlist}/image": {
+    "Deletes A Playlist Image": {
       "method": "DELETE",
       "path": "/1/vod/channel/{channel}/playlist/{playlist}/image",
       "pagination": "none",
@@ -3721,7 +3721,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/playlist/{playlist}/media": {
+    "Lists All Medias Of A Playlist.": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/playlist/{playlist}/media",
       "pagination": "none",
@@ -3741,7 +3741,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/vod/channel/{channel}/playlist/{playlist}/media/move/up": {
+    "Moves One Or Many Given Medias One Position Up.": {
       "method": "POST",
       "path": "/1/vod/channel/{channel}/playlist/{playlist}/media/move/up",
       "pagination": "none",
@@ -3761,7 +3761,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/vod/channel/{channel}/playlist/{playlist}/media/move/down": {
+    "Moves One Or Many Given Medias One Position Down.": {
       "method": "POST",
       "path": "/1/vod/channel/{channel}/playlist/{playlist}/media/move/down",
       "pagination": "none",
@@ -3781,7 +3781,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/vod/channel/{channel}/playlist/{playlist}/media/move/after": {
+    "Moves One Or Many Given Medias After A Given Media.": {
       "method": "POST",
       "path": "/1/vod/channel/{channel}/playlist/{playlist}/media/move/after",
       "pagination": "none",
@@ -3801,7 +3801,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/vod/channel/{channel}/playlist/{playlist}/media/move/before": {
+    "Moves One Or Many Given Medias Before A Given Media.": {
       "method": "POST",
       "path": "/1/vod/channel/{channel}/playlist/{playlist}/media/move/before",
       "pagination": "none",
@@ -3823,7 +3823,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "V2 > Subtitles": {
-    "POST /1/vod/channel/{channel}/media/{media}/subtitle": {
+    "Generate Subtitle From Media": {
       "method": "POST",
       "path": "/1/vod/channel/{channel}/media/{media}/subtitle",
       "pagination": "none",
@@ -3843,7 +3843,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/media/{media}/subtitle/summarize": {
+    "Get Summary From Media As Description": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/media/{media}/subtitle/summarize",
       "pagination": "none",
@@ -3863,7 +3863,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/media/{media}/subtitle/{subtitle}/summarize": {
+    "Get Summary From Subtitle": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/media/{media}/subtitle/{subtitle}/summarize",
       "pagination": "none",
@@ -3887,7 +3887,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/vod/channel/{channel}/media/{media}/subtitle/{subtitle}/summarize": {
+    "Get Custom Summary From Media": {
       "method": "POST",
       "path": "/1/vod/channel/{channel}/media/{media}/subtitle/{subtitle}/summarize",
       "pagination": "none",
@@ -3911,7 +3911,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/vod/channel/{channel}/media/{media}/subtitle/{subtitle}/translate": {
+    "Translate Subtitle": {
       "method": "POST",
       "path": "/1/vod/channel/{channel}/media/{media}/subtitle/{subtitle}/translate",
       "pagination": "none",
@@ -3941,8 +3941,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "bodyFieldName": null
     }
   },
-  "V2 > UserActivity": {
-    "GET /1/vod/channel/{channel}/user-activity-log": {
+  "V2 > User Activity": {
+    "Get Channel User Activity Log": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/user-activity-log",
       "pagination": "none",
@@ -3958,7 +3958,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/vod/channel/{channel}/user-activity-log": {
+    "Put User Activity Log": {
       "method": "PUT",
       "path": "/1/vod/channel/{channel}/user-activity-log",
       "pagination": "none",
@@ -3974,7 +3974,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/folder/{folder}/user-activity-log": {
+    "Get Folder User Activity Log": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/folder/{folder}/user-activity-log",
       "pagination": "none",
@@ -3994,7 +3994,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/vod/channel/{channel}/media/{media}/user-activity-log": {
+    "Get Media User Activity Log": {
       "method": "GET",
       "path": "/1/vod/channel/{channel}/media/{media}/user-activity-log",
       "pagination": "none",
@@ -4016,7 +4016,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "V3 > Ad": {
-    "GET /2/vod/players/{player}/ads": {
+    "List Advertisements.": {
       "method": "GET",
       "path": "/2/vod/players/{player}/ads",
       "pagination": "page-per-page",
@@ -4032,7 +4032,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/vod/players/{player}/ads": {
+    "Create An Advertisement.": {
       "method": "POST",
       "path": "/2/vod/players/{player}/ads",
       "pagination": "none",
@@ -4077,7 +4077,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /2/vod/players/{player}/ads": {
+    "Bulk Delete Advertisements.": {
       "method": "DELETE",
       "path": "/2/vod/players/{player}/ads",
       "pagination": "none",
@@ -4098,7 +4098,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/ads/{ad}": {
+    "Show Ad Details.": {
       "method": "GET",
       "path": "/2/vod/ads/{ad}",
       "pagination": "none",
@@ -4114,7 +4114,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /2/vod/ads/{ad}": {
+    "Update Advertisement.": {
       "method": "PUT",
       "path": "/2/vod/ads/{ad}",
       "pagination": "none",
@@ -4159,7 +4159,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /2/vod/ads/{ad}": {
+    "Delete Advertisement.": {
       "method": "DELETE",
       "path": "/2/vod/ads/{ad}",
       "pagination": "none",
@@ -4177,7 +4177,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "V3 > Alert": {
-    "GET /2/vod/channels/{channel}/alerts": {
+    "List Alerts.": {
       "method": "GET",
       "path": "/2/vod/channels/{channel}/alerts",
       "pagination": "page-per-page",
@@ -4193,7 +4193,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/alerts/{alert}": {
+    "Get Alert.": {
       "method": "GET",
       "path": "/2/vod/alerts/{alert}",
       "pagination": "none",
@@ -4211,7 +4211,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "V3 > Callback": {
-    "GET /2/vod/channels/{channel}/callbacks": {
+    "List Callbacks.": {
       "method": "GET",
       "path": "/2/vod/channels/{channel}/callbacks",
       "pagination": "none",
@@ -4227,7 +4227,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/vod/channels/{channel}/callbacks": {
+    "Create Callback.": {
       "method": "POST",
       "path": "/2/vod/channels/{channel}/callbacks",
       "pagination": "none",
@@ -4280,7 +4280,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /2/vod/callbacks/{callback}": {
+    "Show Callback Details.": {
       "method": "GET",
       "path": "/2/vod/callbacks/{callback}",
       "pagination": "none",
@@ -4296,7 +4296,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /2/vod/callbacks/{callback}": {
+    "Update Callback Details.": {
       "method": "PUT",
       "path": "/2/vod/callbacks/{callback}",
       "pagination": "none",
@@ -4349,7 +4349,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /2/vod/callbacks/{callback}": {
+    "Delete Callback.": {
       "method": "DELETE",
       "path": "/2/vod/callbacks/{callback}",
       "pagination": "none",
@@ -4367,7 +4367,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "V3 > Category": {
-    "GET /2/vod/categories": {
+    "List Categories.": {
       "method": "GET",
       "path": "/2/vod/categories",
       "pagination": "page-per-page",
@@ -4380,7 +4380,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "V3 > Channel": {
-    "GET /2/vod/accounts/{account}/channels": {
+    "List Channels.": {
       "method": "GET",
       "path": "/2/vod/accounts/{account}/channels",
       "pagination": "page-per-page",
@@ -4396,7 +4396,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/channels/{channel}": {
+    "Show Channel Details.": {
       "method": "GET",
       "path": "/2/vod/channels/{channel}",
       "pagination": "none",
@@ -4412,7 +4412,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/channels/{channel}/disk-usage": {
+    "Get Channel Used Disk Space.": {
       "method": "GET",
       "path": "/2/vod/channels/{channel}/disk-usage",
       "pagination": "none",
@@ -4428,7 +4428,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/channels/{channel}/disk-usage/trash": {
+    "Get Trash Disk Usage.": {
       "method": "GET",
       "path": "/2/vod/channels/{channel}/disk-usage/trash",
       "pagination": "none",
@@ -4444,7 +4444,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/disk-usage/{folder}": {
+    "Get Folder Disk Usage.": {
       "method": "GET",
       "path": "/2/vod/disk-usage/{folder}",
       "pagination": "none",
@@ -4462,7 +4462,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "V3 > Chapter": {
-    "GET /2/vod/media/{media}/chapters": {
+    "List Chapters.": {
       "method": "GET",
       "path": "/2/vod/media/{media}/chapters",
       "pagination": "page-per-page",
@@ -4478,7 +4478,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/chapters/{chapter}": {
+    "Show Chapter Details.": {
       "method": "GET",
       "path": "/2/vod/chapters/{chapter}",
       "pagination": "page-per-page",
@@ -4496,7 +4496,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "V3 > Country": {
-    "GET /2/vod/countries": {
+    "List Countries.": {
       "method": "GET",
       "path": "/2/vod/countries",
       "pagination": "page-per-page",
@@ -4509,7 +4509,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "V3 > Encoding": {
-    "GET /2/vod/channels/{channel}/encodings": {
+    "List Encodings.": {
       "method": "GET",
       "path": "/2/vod/channels/{channel}/encodings",
       "pagination": "page-per-page",
@@ -4525,7 +4525,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/vod/channels/{channel}/encodings": {
+    "Create Encoding.": {
       "method": "POST",
       "path": "/2/vod/channels/{channel}/encodings",
       "pagination": "none",
@@ -4582,7 +4582,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /2/vod/channels/{channel}/encodings": {
+    "Bulk Delete Encodings.": {
       "method": "DELETE",
       "path": "/2/vod/channels/{channel}/encodings",
       "pagination": "none",
@@ -4603,7 +4603,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/encodings/{encoding}": {
+    "Show Encoding Details.": {
       "method": "GET",
       "path": "/2/vod/encodings/{encoding}",
       "pagination": "none",
@@ -4619,7 +4619,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /2/vod/encodings/{encoding}": {
+    "Update Encoding.": {
       "method": "PUT",
       "path": "/2/vod/encodings/{encoding}",
       "pagination": "none",
@@ -4640,7 +4640,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /2/vod/encodings/{encoding}": {
+    "Delete Encoding.": {
       "method": "DELETE",
       "path": "/2/vod/encodings/{encoding}",
       "pagination": "none",
@@ -4656,7 +4656,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/encodings/constraints": {
+    "List Encoding Constraints.": {
       "method": "GET",
       "path": "/2/vod/encodings/constraints",
       "pagination": "none",
@@ -4667,7 +4667,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/encodings/profiles": {
+    "List Encoding Profiles.": {
       "method": "GET",
       "path": "/2/vod/encodings/profiles",
       "pagination": "none",
@@ -4680,7 +4680,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "V3 > Filesystem": {
-    "GET /2/vod/channels/{channel}/browse": {
+    "Browse Channel Root.": {
       "method": "GET",
       "path": "/2/vod/channels/{channel}/browse",
       "pagination": "page-per-page",
@@ -4696,7 +4696,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /2/vod/channels/{channel}/browse": {
+    "Discard File(s).": {
       "method": "DELETE",
       "path": "/2/vod/channels/{channel}/browse",
       "pagination": "none",
@@ -4717,7 +4717,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/channels/{channel}/browse/tree": {
+    "Get Root Tree.": {
       "method": "GET",
       "path": "/2/vod/channels/{channel}/browse/tree",
       "pagination": "none",
@@ -4733,7 +4733,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/channels/{channel}/browse/breadcrumb": {
+    "Get Root Breadcrumb.": {
       "method": "GET",
       "path": "/2/vod/channels/{channel}/browse/breadcrumb",
       "pagination": "none",
@@ -4749,7 +4749,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/channels/{channel}/browse/trash": {
+    "Browse Trash.": {
       "method": "GET",
       "path": "/2/vod/channels/{channel}/browse/trash",
       "pagination": "page-per-page",
@@ -4765,7 +4765,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /2/vod/channels/{channel}/browse/trash": {
+    "Empty Trash.": {
       "method": "DELETE",
       "path": "/2/vod/channels/{channel}/browse/trash",
       "pagination": "none",
@@ -4781,7 +4781,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/browse/{folder}": {
+    "Browse Folder.": {
       "method": "GET",
       "path": "/2/vod/browse/{folder}",
       "pagination": "none",
@@ -4797,7 +4797,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/browse/{folder}/breadcrumb": {
+    "Get Folder Breadcrumb.": {
       "method": "GET",
       "path": "/2/vod/browse/{folder}/breadcrumb",
       "pagination": "none",
@@ -4813,7 +4813,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/browse/{folder}/tree": {
+    "Get Folder Tree.": {
       "method": "GET",
       "path": "/2/vod/browse/{folder}/tree",
       "pagination": "none",
@@ -4829,7 +4829,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/vod/channels/{channel}/browse/restore": {
+    "Restore File(s).": {
       "method": "POST",
       "path": "/2/vod/channels/{channel}/browse/restore",
       "pagination": "none",
@@ -4850,7 +4850,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/vod/channels/{channel}/browse/move": {
+    "Move File(s).": {
       "method": "POST",
       "path": "/2/vod/channels/{channel}/browse/move",
       "pagination": "none",
@@ -4877,7 +4877,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "V3 > Folder": {
-    "GET /2/vod/channels/{channel}/folders/root": {
+    "Show Root Folder.": {
       "method": "GET",
       "path": "/2/vod/channels/{channel}/folders/root",
       "pagination": "none",
@@ -4893,7 +4893,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/channels/{channel}/folders": {
+    "List Folders.": {
       "method": "GET",
       "path": "/2/vod/channels/{channel}/folders",
       "pagination": "page-per-page",
@@ -4909,7 +4909,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/vod/channels/{channel}/folders": {
+    "Create Folder.": {
       "method": "POST",
       "path": "/2/vod/channels/{channel}/folders",
       "pagination": "none",
@@ -5026,7 +5026,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /2/vod/folders/{folder}": {
+    "Show Folder Details.": {
       "method": "GET",
       "path": "/2/vod/folders/{folder}",
       "pagination": "none",
@@ -5042,7 +5042,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /2/vod/folders/{folder}": {
+    "Update Folder Details.": {
       "method": "PUT",
       "path": "/2/vod/folders/{folder}",
       "pagination": "none",
@@ -5151,7 +5151,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /2/vod/folders/{folder}": {
+    "Delete A Folder.": {
       "method": "DELETE",
       "path": "/2/vod/folders/{folder}",
       "pagination": "none",
@@ -5167,7 +5167,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/vod/folders/{folder}/encodings": {
+    "Synchronize Encodings For A Folder.": {
       "method": "POST",
       "path": "/2/vod/folders/{folder}/encodings",
       "pagination": "none",
@@ -5188,7 +5188,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "PUT /2/vod/folders/{folder}/encodings": {
+    "Attach Encodings To A Folder.": {
       "method": "PUT",
       "path": "/2/vod/folders/{folder}/encodings",
       "pagination": "none",
@@ -5209,7 +5209,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /2/vod/folders/{folder}/encodings": {
+    "Detach Encodings From A Folder.": {
       "method": "DELETE",
       "path": "/2/vod/folders/{folder}/encodings",
       "pagination": "none",
@@ -5225,7 +5225,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /2/vod/folders/{folder}/logo": {
+    "Attach A Logo To A Folder.": {
       "method": "PUT",
       "path": "/2/vod/folders/{folder}/logo",
       "pagination": "none",
@@ -5246,7 +5246,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /2/vod/folders/{folder}/logo": {
+    "Detach A Logo From A Folder.": {
       "method": "DELETE",
       "path": "/2/vod/folders/{folder}/logo",
       "pagination": "none",
@@ -5262,7 +5262,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /2/vod/folders/{folder}/labels": {
+    "Attach Labels To A Folder.": {
       "method": "PUT",
       "path": "/2/vod/folders/{folder}/labels",
       "pagination": "none",
@@ -5283,7 +5283,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /2/vod/folders/{folder}/labels": {
+    "Detach Labels From A Folder.": {
       "method": "DELETE",
       "path": "/2/vod/folders/{folder}/labels",
       "pagination": "none",
@@ -5304,7 +5304,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /2/vod/folders/{folder}/lock": {
+    "Locks The Provided Folder.": {
       "method": "PUT",
       "path": "/2/vod/folders/{folder}/lock",
       "pagination": "none",
@@ -5320,7 +5320,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /2/vod/folders/{folder}/unlock": {
+    "Unlocks The Provided Folder.": {
       "method": "PUT",
       "path": "/2/vod/folders/{folder}/unlock",
       "pagination": "none",
@@ -5338,7 +5338,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "V3 > Ftp": {
-    "GET /2/vod/channels/{channel}/ftpusers": {
+    "List FTP Users.": {
       "method": "GET",
       "path": "/2/vod/channels/{channel}/ftpusers",
       "pagination": "page-per-page",
@@ -5354,7 +5354,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/vod/channels/{channel}/ftpusers": {
+    "Create FTP User.": {
       "method": "POST",
       "path": "/2/vod/channels/{channel}/ftpusers",
       "pagination": "none",
@@ -5403,7 +5403,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /2/vod/ftpusers/{user}": {
+    "Show FTP User Details.": {
       "method": "GET",
       "path": "/2/vod/ftpusers/{user}",
       "pagination": "none",
@@ -5419,7 +5419,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /2/vod/ftpusers/{user}": {
+    "Update FTP User Details.": {
       "method": "PUT",
       "path": "/2/vod/ftpusers/{user}",
       "pagination": "none",
@@ -5468,7 +5468,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /2/vod/ftpusers/{user}": {
+    "Delete FTP User.": {
       "method": "DELETE",
       "path": "/2/vod/ftpusers/{user}",
       "pagination": "none",
@@ -5484,7 +5484,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/vod/ftp/login": {
+    "Login.": {
       "method": "POST",
       "path": "/2/vod/ftp/login",
       "pagination": "none",
@@ -5504,7 +5504,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/vod/ftp/on/connect": {
+    "On Connect Callback.": {
       "method": "POST",
       "path": "/2/vod/ftp/on/connect",
       "pagination": "none",
@@ -5515,7 +5515,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/vod/ftp/on/disconnect": {
+    "On Disconnect Callback.": {
       "method": "POST",
       "path": "/2/vod/ftp/on/disconnect",
       "pagination": "none",
@@ -5526,7 +5526,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/vod/ftp/on/login": {
+    "On Login Callback.": {
       "method": "POST",
       "path": "/2/vod/ftp/on/login",
       "pagination": "none",
@@ -5537,7 +5537,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/vod/ftp/on/login-failed": {
+    "On Login Failed Callback.": {
       "method": "POST",
       "path": "/2/vod/ftp/on/login-failed",
       "pagination": "none",
@@ -5548,7 +5548,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/vod/ftp/on/logout": {
+    "On Logout Callback.": {
       "method": "POST",
       "path": "/2/vod/ftp/on/logout",
       "pagination": "none",
@@ -5561,7 +5561,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "V3 > Journal": {
-    "GET /2/vod/media/{media}/journal": {
+    "Get Media Journal.": {
       "method": "GET",
       "path": "/2/vod/media/{media}/journal",
       "pagination": "page-per-page",
@@ -5577,7 +5577,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/channels/{channel}/journal": {
+    "Get Journal.": {
       "method": "GET",
       "path": "/2/vod/channels/{channel}/journal",
       "pagination": "page-per-page",
@@ -5595,7 +5595,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "V3 > Label": {
-    "GET /2/vod/channels/{channel}/labels": {
+    "List Labels.": {
       "method": "GET",
       "path": "/2/vod/channels/{channel}/labels",
       "pagination": "page-per-page",
@@ -5611,7 +5611,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/vod/channels/{channel}/labels": {
+    "Bulk Attach Labels.": {
       "method": "POST",
       "path": "/2/vod/channels/{channel}/labels",
       "pagination": "none",
@@ -5640,7 +5640,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /2/vod/channels/{channel}/labels": {
+    "Bulk Delete Labels.": {
       "method": "DELETE",
       "path": "/2/vod/channels/{channel}/labels",
       "pagination": "none",
@@ -5661,7 +5661,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/labels/{genericLabel}": {
+    "Show Label Details.": {
       "method": "GET",
       "path": "/2/vod/labels/{genericLabel}",
       "pagination": "none",
@@ -5677,7 +5677,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /2/vod/labels/{genericLabel}": {
+    "Update Label.": {
       "method": "PUT",
       "path": "/2/vod/labels/{genericLabel}",
       "pagination": "none",
@@ -5702,7 +5702,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /2/vod/labels/{genericLabel}": {
+    "Delete Label.": {
       "method": "DELETE",
       "path": "/2/vod/labels/{genericLabel}",
       "pagination": "none",
@@ -5720,7 +5720,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "V3 > Language": {
-    "GET /2/vod/lang": {
+    "List Languages.": {
       "method": "GET",
       "path": "/2/vod/lang",
       "pagination": "page-per-page",
@@ -5731,7 +5731,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/lang/{lang}": {
+    "Show Language Details.": {
       "method": "GET",
       "path": "/2/vod/lang/{lang}",
       "pagination": "none",
@@ -5748,8 +5748,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "bodyFieldName": null
     }
   },
-  "V3 > LinkedSvc": {
-    "POST /2/vod/channels/{channel}/services": {
+  "V3 > Linked Svc": {
+    "Sync Linked Services.": {
       "method": "POST",
       "path": "/2/vod/channels/{channel}/services",
       "pagination": "none",
@@ -5772,7 +5772,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "V3 > Logo": {
-    "GET /2/vod/channels/{channel}/logos": {
+    "List Logos.": {
       "method": "GET",
       "path": "/2/vod/channels/{channel}/logos",
       "pagination": "page-per-page",
@@ -5788,7 +5788,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/vod/channels/{channel}/logos": {
+    "Create A New Logo.": {
       "method": "POST",
       "path": "/2/vod/channels/{channel}/logos",
       "pagination": "none",
@@ -5837,7 +5837,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /2/vod/channels/{channel}/logos": {
+    "Bulk Delete Logos.": {
       "method": "DELETE",
       "path": "/2/vod/channels/{channel}/logos",
       "pagination": "none",
@@ -5853,7 +5853,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/logos/{logo}": {
+    "Show Logo Details.": {
       "method": "GET",
       "path": "/2/vod/logos/{logo}",
       "pagination": "none",
@@ -5869,7 +5869,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /2/vod/logos/{logo}": {
+    "Update Logo Details.": {
       "method": "PUT",
       "path": "/2/vod/logos/{logo}",
       "pagination": "none",
@@ -5914,7 +5914,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /2/vod/logos/{logo}": {
+    "Delete A Logo.": {
       "method": "DELETE",
       "path": "/2/vod/logos/{logo}",
       "pagination": "none",
@@ -5932,7 +5932,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "V3 > Media": {
-    "GET /2/vod/channels/{channel}/media": {
+    "List Media.": {
       "method": "GET",
       "path": "/2/vod/channels/{channel}/media",
       "pagination": "page-per-page",
@@ -5948,7 +5948,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/channels/{channel}/media/status": {
+    "Get Media Statuses Counters.": {
       "method": "GET",
       "path": "/2/vod/channels/{channel}/media/status",
       "pagination": "page-per-page",
@@ -5964,7 +5964,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/media/{media}": {
+    "Show Media Details.": {
       "method": "GET",
       "path": "/2/vod/media/{media}",
       "pagination": "none",
@@ -5980,7 +5980,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /2/vod/media/{media}": {
+    "Update Media Details.": {
       "method": "PUT",
       "path": "/2/vod/media/{media}",
       "pagination": "none",
@@ -6029,7 +6029,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /2/vod/media/{media}/metadata": {
+    "Get Metadata From A Media.": {
       "method": "GET",
       "path": "/2/vod/media/{media}/metadata",
       "pagination": "page-per-page",
@@ -6045,7 +6045,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /2/vod/media/{media}/metadata": {
+    "Update Metadata From A Media.": {
       "method": "PUT",
       "path": "/2/vod/media/{media}/metadata",
       "pagination": "none",
@@ -6082,7 +6082,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /2/vod/media/{media}/metadata": {
+    "Deletes Metadata From A Media.": {
       "method": "DELETE",
       "path": "/2/vod/media/{media}/metadata",
       "pagination": "none",
@@ -6103,7 +6103,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/vod/media/{media}/shares": {
+    "Share Media.": {
       "method": "POST",
       "path": "/2/vod/media/{media}/shares",
       "pagination": "none",
@@ -6144,7 +6144,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /2/vod/media/{media}/shares": {
+    "Bulk Delete Media Shares.": {
       "method": "DELETE",
       "path": "/2/vod/media/{media}/shares",
       "pagination": "none",
@@ -6160,7 +6160,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/vod/media/{media}/suggest": {
+    "Attach Suggested Media.": {
       "method": "POST",
       "path": "/2/vod/media/{media}/suggest",
       "pagination": "none",
@@ -6181,7 +6181,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "PUT /2/vod/media/{media}/labels": {
+    "Attach Labels To A Media.": {
       "method": "PUT",
       "path": "/2/vod/media/{media}/labels",
       "pagination": "none",
@@ -6202,7 +6202,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /2/vod/media/{media}/labels": {
+    "Detach Labels From A Media.": {
       "method": "DELETE",
       "path": "/2/vod/media/{media}/labels",
       "pagination": "none",
@@ -6225,7 +6225,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "V3 > Metadata": {
-    "GET /2/vod/channels/{channel}/metadata": {
+    "List Metadata.": {
       "method": "GET",
       "path": "/2/vod/channels/{channel}/metadata",
       "pagination": "page-per-page",
@@ -6241,7 +6241,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/vod/channels/{channel}/metadata": {
+    "Bulk Attach Metadata.": {
       "method": "POST",
       "path": "/2/vod/channels/{channel}/metadata",
       "pagination": "none",
@@ -6270,7 +6270,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /2/vod/channels/{channel}/metadata": {
+    "Bulk Delete Metadata.": {
       "method": "DELETE",
       "path": "/2/vod/channels/{channel}/metadata",
       "pagination": "none",
@@ -6291,7 +6291,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /2/vod/metadata/{metadata}": {
+    "Update Metadata.": {
       "method": "PUT",
       "path": "/2/vod/metadata/{metadata}",
       "pagination": "none",
@@ -6316,7 +6316,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /2/vod/metadata/{metadata}": {
+    "Delete Metadata.": {
       "method": "DELETE",
       "path": "/2/vod/metadata/{metadata}",
       "pagination": "none",
@@ -6334,7 +6334,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "V3 > Mixtape": {
-    "GET /2/vod/channels/{channel}/mixtapes": {
+    "List Mixtapes.": {
       "method": "GET",
       "path": "/2/vod/channels/{channel}/mixtapes",
       "pagination": "page-per-page",
@@ -6350,7 +6350,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/vod/channels/{channel}/mixtapes": {
+    "Create A Mixtape.": {
       "method": "POST",
       "path": "/2/vod/channels/{channel}/mixtapes",
       "pagination": "none",
@@ -6391,7 +6391,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /2/vod/channels/{channel}/mixtapes": {
+    "Bulk Delete Mixtapes.": {
       "method": "DELETE",
       "path": "/2/vod/channels/{channel}/mixtapes",
       "pagination": "none",
@@ -6412,7 +6412,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/mixtapes/{mixtape}": {
+    "Show Mixtape Details.": {
       "method": "GET",
       "path": "/2/vod/mixtapes/{mixtape}",
       "pagination": "none",
@@ -6428,7 +6428,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /2/vod/mixtapes/{mixtape}": {
+    "Update A Mixtape.": {
       "method": "PUT",
       "path": "/2/vod/mixtapes/{mixtape}",
       "pagination": "none",
@@ -6469,7 +6469,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /2/vod/mixtapes/{mixtape}": {
+    "Delete A Mixtape.": {
       "method": "DELETE",
       "path": "/2/vod/mixtapes/{mixtape}",
       "pagination": "none",
@@ -6485,7 +6485,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/mixtapes/{mixtape}/media": {
+    "List Media In Mixtape.": {
       "method": "GET",
       "path": "/2/vod/mixtapes/{mixtape}/media",
       "pagination": "page-per-page",
@@ -6501,7 +6501,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /2/vod/mixtapes/{mixtape}/media": {
+    "Attach Direct Media.": {
       "method": "PUT",
       "path": "/2/vod/mixtapes/{mixtape}/media",
       "pagination": "none",
@@ -6530,7 +6530,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /2/vod/mixtapes/{mixtape}/media": {
+    "Detach Direct Media.": {
       "method": "DELETE",
       "path": "/2/vod/mixtapes/{mixtape}/media",
       "pagination": "none",
@@ -6546,7 +6546,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/vod/mixtapes/{mixtape}/media/{media}/move": {
+    "Move A Manually Attached Media In Mixtape.": {
       "method": "POST",
       "path": "/2/vod/mixtapes/{mixtape}/media/{media}/move",
       "pagination": "page-per-page",
@@ -6573,7 +6573,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "V3 > Player": {
-    "GET /2/vod/channels/{channel}/players": {
+    "List Players.": {
       "method": "GET",
       "path": "/2/vod/channels/{channel}/players",
       "pagination": "page-per-page",
@@ -6589,7 +6589,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/vod/channels/{channel}/players": {
+    "Create Player.": {
       "method": "POST",
       "path": "/2/vod/channels/{channel}/players",
       "pagination": "none",
@@ -6882,7 +6882,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /2/vod/channels/{channel}/players": {
+    "Bulk Delete Players.": {
       "method": "DELETE",
       "path": "/2/vod/channels/{channel}/players",
       "pagination": "none",
@@ -6903,7 +6903,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/players/{player}": {
+    "Show Player Details.": {
       "method": "GET",
       "path": "/2/vod/players/{player}",
       "pagination": "none",
@@ -6919,7 +6919,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /2/vod/players/{player}": {
+    "Update Player Details.": {
       "method": "PUT",
       "path": "/2/vod/players/{player}",
       "pagination": "none",
@@ -7212,7 +7212,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /2/vod/players/{player}": {
+    "Delete Player.": {
       "method": "DELETE",
       "path": "/2/vod/players/{player}",
       "pagination": "none",
@@ -7230,7 +7230,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "V3 > Playlist": {
-    "GET /2/vod/channels/{channel}/playlists": {
+    "List Playlists.": {
       "method": "GET",
       "path": "/2/vod/channels/{channel}/playlists",
       "pagination": "page-per-page",
@@ -7246,7 +7246,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/playlists/{playlist}/media": {
+    "List Media In Playlist.": {
       "method": "GET",
       "path": "/2/vod/playlists/{playlist}/media",
       "pagination": "page-per-page",
@@ -7262,7 +7262,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/playlists/{playlist}": {
+    "Show Playlist Details.": {
       "method": "GET",
       "path": "/2/vod/playlists/{playlist}",
       "pagination": "none",
@@ -7280,7 +7280,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "V3 > Reflect": {
-    "GET /2/vod/reflect/endpoints/v{version}/{endpoint?}": {
+    "Get Vversion": {
       "method": "GET",
       "path": "/2/vod/reflect/endpoints/v{version}/{endpoint?}",
       "pagination": "none",
@@ -7300,7 +7300,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/vod/reflect/endpoints/v{version}/{endpoint}": {
+    "Create Vversion": {
       "method": "POST",
       "path": "/2/vod/reflect/endpoints/v{version}/{endpoint}",
       "pagination": "none",
@@ -7322,7 +7322,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "V3 > Resources": {
-    "GET /2/vod/res/media/{media}": {
+    "Download Media Source.": {
       "method": "GET",
       "path": "/2/vod/res/media/{media}",
       "pagination": "none",
@@ -7338,7 +7338,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/res/thumbnails/{thumbnail}.{format}": {
+    "Display Thumbnail.": {
       "method": "GET",
       "path": "/2/vod/res/thumbnails/{thumbnail}.{format}",
       "pagination": "none",
@@ -7358,7 +7358,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/res/playlists/{playlist}.{format}": {
+    "Display Playlist Image.": {
       "method": "GET",
       "path": "/2/vod/res/playlists/{playlist}.{format}",
       "pagination": "none",
@@ -7378,7 +7378,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/res/shares/{share}.{image}.{format}": {
+    "Display Share Image.": {
       "method": "GET",
       "path": "/2/vod/res/shares/{share}.{image}.{format}",
       "pagination": "none",
@@ -7402,7 +7402,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/res/shares/{share}.{format?}": {
+    "Render Share Link.": {
       "method": "GET",
       "path": "/2/vod/res/shares/{share}.{format?}",
       "pagination": "none",
@@ -7422,7 +7422,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/res/players/{player}.{image}.{format}": {
+    "Display Player Image.": {
       "method": "GET",
       "path": "/2/vod/res/players/{player}.{image}.{format}",
       "pagination": "none",
@@ -7446,7 +7446,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/res/logos/{logo}.{format}": {
+    "Display A Logo Image.": {
       "method": "GET",
       "path": "/2/vod/res/logos/{logo}.{format}",
       "pagination": "none",
@@ -7466,7 +7466,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/res/media/{media}/chapters.{format}": {
+    "Render Chapter.": {
       "method": "GET",
       "path": "/2/vod/res/media/{media}/chapters.{format}",
       "pagination": "none",
@@ -7486,7 +7486,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/res/chapters/{chapter}.{format}": {
+    "Display Chapter Image.": {
       "method": "GET",
       "path": "/2/vod/res/chapters/{chapter}.{format}",
       "pagination": "none",
@@ -7506,7 +7506,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/res/subtitles/{subtitle}.{format}": {
+    "Render Subtitle.": {
       "method": "GET",
       "path": "/2/vod/res/subtitles/{subtitle}.{format}",
       "pagination": "none",
@@ -7526,7 +7526,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/res/suggestions/{target}": {
+    "List Suggested Media.": {
       "method": "GET",
       "path": "/2/vod/res/suggestions/{target}",
       "pagination": "none",
@@ -7544,7 +7544,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "V3 > Share": {
-    "GET /2/vod/channels/{channel}/shares": {
+    "List Channel Shares.": {
       "method": "GET",
       "path": "/2/vod/channels/{channel}/shares",
       "pagination": "page-per-page",
@@ -7560,7 +7560,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /2/vod/channels/{channel}/shares": {
+    "Bulk Delete Shares.": {
       "method": "DELETE",
       "path": "/2/vod/channels/{channel}/shares",
       "pagination": "none",
@@ -7576,7 +7576,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/media/{media}/shares": {
+    "List Media Shares.": {
       "method": "GET",
       "path": "/2/vod/media/{media}/shares",
       "pagination": "page-per-page",
@@ -7592,7 +7592,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/shares/{share}": {
+    "Show Share Details.": {
       "method": "GET",
       "path": "/2/vod/shares/{share}",
       "pagination": "none",
@@ -7608,7 +7608,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /2/vod/shares/{share}": {
+    "Update Share Details.": {
       "method": "PUT",
       "path": "/2/vod/shares/{share}",
       "pagination": "none",
@@ -7649,7 +7649,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /2/vod/shares/{share}": {
+    "Delete Share.": {
       "method": "DELETE",
       "path": "/2/vod/shares/{share}",
       "pagination": "none",
@@ -7667,7 +7667,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "V3 > Statistics": {
-    "GET /2/vod/statistics/{channel}/media/top": {
+    "Get Top Media Statistics.": {
       "method": "GET",
       "path": "/2/vod/statistics/{channel}/media/top",
       "pagination": "none",
@@ -7683,7 +7683,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/statistics/{channel}/media/unique_viewers": {
+    "Get Media Unique Viewers' Statistics.": {
       "method": "GET",
       "path": "/2/vod/statistics/{channel}/media/unique_viewers",
       "pagination": "none",
@@ -7704,7 +7704,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/statistics/{channel}/media/viewers": {
+    "Get Media Viewers' Statistics.": {
       "method": "GET",
       "path": "/2/vod/statistics/{channel}/media/viewers",
       "pagination": "none",
@@ -7725,7 +7725,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/statistics/{subject}/consumption": {
+    "Get The Consumption.": {
       "method": "GET",
       "path": "/2/vod/statistics/{subject}/consumption",
       "pagination": "none",
@@ -7741,7 +7741,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/statistics/{subject}/view_time": {
+    "Get The View Time.": {
       "method": "GET",
       "path": "/2/vod/statistics/{subject}/view_time",
       "pagination": "none",
@@ -7757,7 +7757,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/statistics/{subject}/viewers": {
+    "Get The Viewers.": {
       "method": "GET",
       "path": "/2/vod/statistics/{subject}/viewers",
       "pagination": "none",
@@ -7773,7 +7773,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/statistics/{subject}/unique_viewers": {
+    "Get The Unique Viewers.": {
       "method": "GET",
       "path": "/2/vod/statistics/{subject}/unique_viewers",
       "pagination": "none",
@@ -7789,7 +7789,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/statistics/{subject}/average_view_time": {
+    "Get The Average View Time.": {
       "method": "GET",
       "path": "/2/vod/statistics/{subject}/average_view_time",
       "pagination": "none",
@@ -7805,7 +7805,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/statistics/{subject}/histogram/encodings": {
+    "Get Encoding Statistics.": {
       "method": "GET",
       "path": "/2/vod/statistics/{subject}/histogram/encodings",
       "pagination": "none",
@@ -7821,7 +7821,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/statistics/{subject}/histogram/viewers": {
+    "Get Browsers Statistics.": {
       "method": "GET",
       "path": "/2/vod/statistics/{subject}/histogram/viewers",
       "pagination": "none",
@@ -7837,7 +7837,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/statistics/{subject}/browsers": {
+    "Get Browsers Statistics. (2)": {
       "method": "GET",
       "path": "/2/vod/statistics/{subject}/browsers",
       "pagination": "none",
@@ -7853,7 +7853,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/statistics/{subject}/cities": {
+    "Get Cities Statistics.": {
       "method": "GET",
       "path": "/2/vod/statistics/{subject}/cities",
       "pagination": "none",
@@ -7869,7 +7869,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/statistics/{subject}/countries": {
+    "Get Countries Statistics.": {
       "method": "GET",
       "path": "/2/vod/statistics/{subject}/countries",
       "pagination": "none",
@@ -7885,7 +7885,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/statistics/{subject}/operating_systems": {
+    "Get Operating System Statistics.": {
       "method": "GET",
       "path": "/2/vod/statistics/{subject}/operating_systems",
       "pagination": "none",
@@ -7901,7 +7901,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/statistics/{subject}/playbacks": {
+    "Get Playbacks Statistics.": {
       "method": "GET",
       "path": "/2/vod/statistics/{subject}/playbacks",
       "pagination": "none",
@@ -7917,7 +7917,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/statistics/{subject}/players": {
+    "Get Players Statistics.": {
       "method": "GET",
       "path": "/2/vod/statistics/{subject}/players",
       "pagination": "none",
@@ -7933,7 +7933,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/statistics/{subject}/clusters": {
+    "Get Cluster Statistics.": {
       "method": "GET",
       "path": "/2/vod/statistics/{subject}/clusters",
       "pagination": "none",
@@ -7949,7 +7949,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/statistics/{subject}/viewers_per_encoding": {
+    "Get Viewers Per Encoding Statistics.": {
       "method": "GET",
       "path": "/2/vod/statistics/{subject}/viewers_per_encoding",
       "pagination": "none",
@@ -7965,7 +7965,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/statistics/{subject}/consumed_time_per_ip": {
+    "Get Consumed Time Per IP Statistics.": {
       "method": "GET",
       "path": "/2/vod/statistics/{subject}/consumed_time_per_ip",
       "pagination": "none",
@@ -7981,7 +7981,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/statistics/{subject}/consumed_time_per_encoding": {
+    "Get Consumed Time Per Encoding Statistics.": {
       "method": "GET",
       "path": "/2/vod/statistics/{subject}/consumed_time_per_encoding",
       "pagination": "none",
@@ -7999,7 +7999,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "V3 > Subtitle": {
-    "GET /2/vod/media/{media}/subtitles": {
+    "List Subtitles.": {
       "method": "GET",
       "path": "/2/vod/media/{media}/subtitles",
       "pagination": "page-per-page",
@@ -8015,7 +8015,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/vod/media/{media}/subtitles": {
+    "Create Subtitle.": {
       "method": "POST",
       "path": "/2/vod/media/{media}/subtitles",
       "pagination": "none",
@@ -8056,7 +8056,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /2/vod/media/{media}/subtitles": {
+    "Bulk Delete Subtitles.": {
       "method": "DELETE",
       "path": "/2/vod/media/{media}/subtitles",
       "pagination": "none",
@@ -8077,7 +8077,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/subtitles/{subtitle}": {
+    "Show Subtitle Details.": {
       "method": "GET",
       "path": "/2/vod/subtitles/{subtitle}",
       "pagination": "none",
@@ -8093,7 +8093,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /2/vod/subtitles/{subtitle}": {
+    "Update Subtitle Details.": {
       "method": "PUT",
       "path": "/2/vod/subtitles/{subtitle}",
       "pagination": "none",
@@ -8126,7 +8126,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /2/vod/subtitles/{subtitle}": {
+    "Delete A Subtitle.": {
       "method": "DELETE",
       "path": "/2/vod/subtitles/{subtitle}",
       "pagination": "none",
@@ -8144,7 +8144,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "V3 > Thumbnail": {
-    "GET /2/vod/media/{media}/thumbnails": {
+    "List Thumbnails.": {
       "method": "GET",
       "path": "/2/vod/media/{media}/thumbnails",
       "pagination": "page-per-page",
@@ -8160,7 +8160,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/vod/thumbnails/{thumbnail}": {
+    "Show Thumbnail Details.": {
       "method": "GET",
       "path": "/2/vod/thumbnails/{thumbnail}",
       "pagination": "none",
@@ -8178,7 +8178,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "V3 > Upload": {
-    "GET /2/vod/folders/{folder}/upload/endpoint": {
+    "Get An Upload Endpooint.": {
       "method": "GET",
       "path": "/2/vod/folders/{folder}/upload/endpoint",
       "pagination": "none",
@@ -8194,7 +8194,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/vod/folders/{folder}/upload": {
+    "Create Upload": {
       "method": "POST",
       "path": "/2/vod/folders/{folder}/upload",
       "pagination": "none",
@@ -8329,7 +8329,7 @@ export class InfomaniakVod implements INodeType {
         },
         {
           "name": "V2 > User Activity",
-          "value": "V2 > UserActivity"
+          "value": "V2 > User Activity"
         },
         {
           "name": "V3 > Ad",
@@ -8389,7 +8389,7 @@ export class InfomaniakVod implements INodeType {
         },
         {
           "name": "V3 > Linked Svc",
-          "value": "V3 > LinkedSvc"
+          "value": "V3 > Linked Svc"
         },
         {
           "name": "V3 > Logo",
@@ -8462,662 +8462,662 @@ export class InfomaniakVod implements INodeType {
       "options": [
         {
           "name": "List Channels",
-          "value": "GET /1/vod/channel"
+          "value": "List Channels"
         },
         {
           "name": "Returns The Disk Usage (in Bytes) For The Given Channel.",
-          "value": "GET /1/vod/channel/{channel}/disk-usage"
+          "value": "Returns The Disk Usage (in Bytes) For The Given Channel."
         },
         {
           "name": "Returns The Media Poster.",
-          "value": "GET /1/vod/channel/{channel}/media/{media}/thumbnail"
+          "value": "Returns The Media Poster."
         },
         {
           "name": "Replaces The Thumbnail & Poster For A Given Media",
-          "value": "POST /1/vod/channel/{channel}/media/{media}/thumbnail"
+          "value": "Replaces The Thumbnail & Poster For A Given Media"
         },
         {
           "name": "Lists All Children Of The Channel's Root Folder.",
-          "value": "GET /1/vod/channel/{channel}/browse"
+          "value": "Lists All Children Of The Channel's Root Folder."
         },
         {
           "name": "Moves One Or Many Medias/folders To Trash.",
-          "value": "DELETE /1/vod/channel/{channel}/browse"
+          "value": "Moves One Or Many Medias/folders To Trash."
         },
         {
           "name": "Duplicates One Or Many Medias/folders To A Given Folder.",
-          "value": "POST /1/vod/channel/{channel}/browse/copy"
+          "value": "Duplicates One Or Many Medias/folders To A Given Folder."
         },
         {
           "name": "Moves One Or Many Medias/folders To A Given Folder.",
-          "value": "POST /1/vod/channel/{channel}/browse/move"
+          "value": "Moves One Or Many Medias/folders To A Given Folder."
         },
         {
           "name": "Lists All Medias/folders In Trash.",
-          "value": "GET /1/vod/channel/{channel}/browse/trash"
+          "value": "Lists All Medias/folders In Trash."
         },
         {
           "name": "Deletes One Or Many Medias/folders From Trash, Permanently.",
-          "value": "DELETE /1/vod/channel/{channel}/browse/trash"
+          "value": "Deletes One Or Many Medias/folders From Trash, Permanently."
         },
         {
           "name": "Deletes A Media/folder From Trash, Permanently.",
-          "value": "DELETE /1/vod/channel/{channel}/browse/trash/{file}"
+          "value": "Deletes A Media/folder From Trash, Permanently."
         },
         {
           "name": "Restores A Media/folder From Trash To Its Original Location.",
-          "value": "POST /1/vod/channel/{channel}/browse/trash/{file}/restore"
+          "value": "Restores A Media/folder From Trash To Its Original Location."
         },
         {
           "name": "Returns The Tree Of The Folder With All Its Children, Recursively.",
-          "value": "GET /1/vod/channel/{channel}/browse/tree"
+          "value": "Returns The Tree Of The Folder With All Its Children, Recursively."
         },
         {
           "name": "Returns The Breadcrumb Of The Media/folder Up To Root Ancestor.",
-          "value": "GET /1/vod/channel/{channel}/browse/breadcrumb"
+          "value": "Returns The Breadcrumb Of The Media/folder Up To Root Ancestor."
         },
         {
           "name": "Returns The Breadcrumb Of The Media/folder Up To Root Ancestor.",
-          "value": "GET /1/vod/channel/{channel}/browse/{file}/breadcrumb"
+          "value": "Returns The Breadcrumb Of The Media/folder Up To Root Ancestor. (2)"
         },
         {
           "name": "Updates One Or Many Medias/folders.",
-          "value": "PUT /1/vod/channel/{channel}/browse/update"
+          "value": "Updates One Or Many Medias/folders."
         },
         {
           "name": "Lists All Children Of A Given Folder.",
-          "value": "GET /1/vod/channel/{channel}/browse/{file}"
+          "value": "Lists All Children Of A Given Folder."
         },
         {
           "name": "Updates A Media/folder.",
-          "value": "PUT /1/vod/channel/{channel}/browse/{file}"
+          "value": "Updates A Media/folder."
         },
         {
           "name": "Moves A Media/folder To Trash.",
-          "value": "DELETE /1/vod/channel/{channel}/browse/{file}"
+          "value": "Moves A Media/folder To Trash."
         },
         {
           "name": "Returns The Tree Of The Folder With All Its Children, Recursively.",
-          "value": "GET /1/vod/channel/{channel}/browse/{file}/tree"
+          "value": "Returns The Tree Of The Folder With All Its Children, Recursively. (2)"
         },
         {
           "name": "Duplicates A Media/folder To A Given Folder.",
-          "value": "POST /1/vod/channel/{channel}/browse/{file}/copy"
+          "value": "Duplicates A Media/folder To A Given Folder."
         },
         {
           "name": "Moves A Media/folder To A Given Folder.",
-          "value": "POST /1/vod/channel/{channel}/browse/{file}/move"
+          "value": "Moves A Media/folder To A Given Folder."
         },
         {
           "name": "Lists All Callback Logs.",
-          "value": "GET /1/vod/channel/{channel}/callback/log"
+          "value": "Lists All Callback Logs."
         },
         {
           "name": "Deletes One Or Many Callback Logs.",
-          "value": "DELETE /1/vod/channel/{channel}/callback/log"
+          "value": "Deletes One Or Many Callback Logs."
         },
         {
           "name": "Returns A Callback Log.",
-          "value": "GET /1/vod/channel/{channel}/callback/log/{callbackLog}"
+          "value": "Returns A Callback Log."
         },
         {
           "name": "Deletes A Callback Log.",
-          "value": "DELETE /1/vod/channel/{channel}/callback/log/{callbackLog}"
+          "value": "Deletes A Callback Log."
         },
         {
           "name": "Lists All Callbacks.",
-          "value": "GET /1/vod/channel/{channel}/callback"
+          "value": "Lists All Callbacks."
         },
         {
           "name": "Creates A New Callback.",
-          "value": "POST /1/vod/channel/{channel}/callback"
+          "value": "Creates A New Callback."
         },
         {
           "name": "Updates One Or Many Callbacks.",
-          "value": "PUT /1/vod/channel/{channel}/callback"
+          "value": "Updates One Or Many Callbacks."
         },
         {
           "name": "Deletes One Or Many Callbacks.",
-          "value": "DELETE /1/vod/channel/{channel}/callback"
+          "value": "Deletes One Or Many Callbacks."
         },
         {
           "name": "Returns A Callback.",
-          "value": "GET /1/vod/channel/{channel}/callback/{callback}"
+          "value": "Returns A Callback."
         },
         {
           "name": "Updates A Callback.",
-          "value": "PUT /1/vod/channel/{channel}/callback/{callback}"
+          "value": "Updates A Callback."
         },
         {
           "name": "Deletes A Callback.",
-          "value": "DELETE /1/vod/channel/{channel}/callback/{callback}"
+          "value": "Deletes A Callback."
         },
         {
           "name": "Lists All Event.",
-          "value": "GET /1/vod/channel/{channel}/journal"
+          "value": "Lists All Event."
         },
         {
           "name": "Lists All Encodings.",
-          "value": "GET /1/vod/channel/{channel}/encoding"
+          "value": "Lists All Encodings."
         },
         {
           "name": "Creates A New Encoding.",
-          "value": "POST /1/vod/channel/{channel}/encoding"
+          "value": "Creates A New Encoding."
         },
         {
           "name": "Deletes One Or Many Players.",
-          "value": "DELETE /1/vod/channel/{channel}/encoding"
+          "value": "Deletes One Or Many Players."
         },
         {
           "name": "Returns An Encoding.",
-          "value": "GET /1/vod/channel/{channel}/encoding/{encoding}"
+          "value": "Returns An Encoding."
         },
         {
           "name": "Updates An Encoding.",
-          "value": "PUT /1/vod/channel/{channel}/encoding/{encoding}"
+          "value": "Updates An Encoding."
         },
         {
           "name": "Deletes An Encoding.",
-          "value": "DELETE /1/vod/channel/{channel}/encoding/{encoding}"
+          "value": "Deletes An Encoding."
         },
         {
           "name": "List Logos",
-          "value": "GET /1/vod/channel/{channel}/logo"
+          "value": "List Logos"
         },
         {
           "name": "Create A Logo",
-          "value": "POST /1/vod/channel/{channel}/logo"
+          "value": "Create A Logo"
         },
         {
           "name": "Deletes Logos",
-          "value": "DELETE /1/vod/channel/{channel}/logo"
+          "value": "Deletes Logos"
         },
         {
           "name": "Detach Logo",
-          "value": "POST /1/vod/channel/{channel}/logo/detach"
+          "value": "Detach Logo"
         },
         {
           "name": "Display Logo",
-          "value": "GET /1/vod/channel/{channel}/logo/{logo}"
+          "value": "Display Logo"
         },
         {
           "name": "Updates Logo",
-          "value": "PUT /1/vod/channel/{channel}/logo/{logo}"
+          "value": "Updates Logo"
         },
         {
           "name": "Delete Logo",
-          "value": "DELETE /1/vod/channel/{channel}/logo/{logo}"
+          "value": "Delete Logo"
         },
         {
           "name": "Sets A Logo Either For Media Or Folders",
-          "value": "POST /1/vod/channel/{channel}/logo/{logo}/attach"
+          "value": "Sets A Logo Either For Media Or Folders"
         },
         {
           "name": "List All Folders.",
-          "value": "GET /1/vod/channel/{channel}/folder"
+          "value": "List All Folders."
         },
         {
           "name": "Creates A New Folder In The Channel's Root Folder.",
-          "value": "POST /1/vod/channel/{channel}/folder"
+          "value": "Creates A New Folder In The Channel's Root Folder."
         },
         {
           "name": "Adds One Or Many Given Encodings To A Folder.",
-          "value": "POST /1/vod/channel/{channel}/folder/{folder}/encoding"
+          "value": "Adds One Or Many Given Encodings To A Folder."
         },
         {
           "name": "Remove Encodings From Folder",
-          "value": "DELETE /1/vod/channel/{channel}/folder/{folder}/encoding"
+          "value": "Remove Encodings From Folder"
         },
         {
           "name": "Appends An Encoding To A Folder.",
-          "value": "POST /1/vod/channel/{channel}/folder/{folder}/encoding/{encoding}"
+          "value": "Appends An Encoding To A Folder."
         },
         {
           "name": "Removes An Encoding From A Folder.",
-          "value": "DELETE /1/vod/channel/{channel}/folder/{folder}/encoding/{encoding}"
+          "value": "Removes An Encoding From A Folder."
         },
         {
           "name": "Add Logo To A Folder",
-          "value": "POST /1/vod/channel/{channel}/folder/{folder}/logo/{logo}"
+          "value": "Add Logo To A Folder"
         },
         {
           "name": "Delete Logo",
-          "value": "DELETE /1/vod/channel/{channel}/folder/{folder}/logo"
+          "value": "Delete Logo (2)"
         },
         {
           "name": "Returns The Channel's Root Folder.",
-          "value": "GET /1/vod/channel/{channel}/folder/root"
+          "value": "Returns The Channel's Root Folder."
         },
         {
           "name": "Returns A Folder.",
-          "value": "GET /1/vod/channel/{channel}/folder/{folder}"
+          "value": "Returns A Folder."
         },
         {
           "name": "Creates A New Folder In The Parent Folder.",
-          "value": "POST /1/vod/channel/{channel}/folder/{folder}"
+          "value": "Creates A New Folder In The Parent Folder."
         },
         {
           "name": "Updates A Folder.",
-          "value": "PUT /1/vod/channel/{channel}/folder/{folder}"
+          "value": "Updates A Folder."
         },
         {
           "name": "Deletes A Folder With All Its Children, Recursively.",
-          "value": "DELETE /1/vod/channel/{channel}/folder/{folder}"
+          "value": "Deletes A Folder With All Its Children, Recursively."
         },
         {
           "name": "Lists All Playlists Having A Given Folder Attached.",
-          "value": "GET /1/vod/channel/{channel}/folder/{folder}/playlist"
+          "value": "Lists All Playlists Having A Given Folder Attached."
         },
         {
           "name": "Lists All FTP Users.",
-          "value": "GET /1/vod/channel/{channel}/ftp/user"
+          "value": "Lists All FTP Users."
         },
         {
           "name": "Creates A New FTP User.",
-          "value": "POST /1/vod/channel/{channel}/ftp/user"
+          "value": "Creates A New FTP User."
         },
         {
           "name": "Returns A FTP User.",
-          "value": "GET /1/vod/channel/{channel}/ftp/user/{ftpUser}"
+          "value": "Returns A FTP User."
         },
         {
           "name": "Updates A FTP User.",
-          "value": "PUT /1/vod/channel/{channel}/ftp/user/{ftpUser}"
+          "value": "Updates A FTP User."
         },
         {
           "name": "Deletes A FTP User.",
-          "value": "DELETE /1/vod/channel/{channel}/ftp/user/{ftpUser}"
+          "value": "Deletes A FTP User."
         },
         {
           "name": "Lists All Medias.",
-          "value": "GET /1/vod/channel/{channel}/media"
+          "value": "Lists All Medias."
         },
         {
           "name": "Updates One Or Many Medias.",
-          "value": "PUT /1/vod/channel/{channel}/media"
+          "value": "Updates One Or Many Medias."
         },
         {
           "name": "Returns A Media.",
-          "value": "GET /1/vod/channel/{channel}/media/{media}"
+          "value": "Returns A Media."
         },
         {
           "name": "Updates A Media.",
-          "value": "PUT /1/vod/channel/{channel}/media/{media}"
+          "value": "Updates A Media."
         },
         {
           "name": "Deletes A Media.",
-          "value": "DELETE /1/vod/channel/{channel}/media/{media}"
+          "value": "Deletes A Media."
         },
         {
           "name": "Lists All Chapters Of A Given Media.",
-          "value": "GET /1/vod/channel/{channel}/media/{media}/chapter"
+          "value": "Lists All Chapters Of A Given Media."
         },
         {
           "name": "Creates A New Chapter To A Given Media.",
-          "value": "POST /1/vod/channel/{channel}/media/{media}/chapter"
+          "value": "Creates A New Chapter To A Given Media."
         },
         {
           "name": "Updates One Or Many Chapters.",
-          "value": "PUT /1/vod/channel/{channel}/media/{media}/chapter"
+          "value": "Updates One Or Many Chapters."
         },
         {
           "name": "Deletes One Or Many Chapters.",
-          "value": "DELETE /1/vod/channel/{channel}/media/{media}/chapter"
+          "value": "Deletes One Or Many Chapters."
         },
         {
           "name": "Returns A Chapter.",
-          "value": "GET /1/vod/channel/{channel}/media/{media}/chapter/{chapter}"
+          "value": "Returns A Chapter."
         },
         {
           "name": "Updates A Chapter.",
-          "value": "PUT /1/vod/channel/{channel}/media/{media}/chapter/{chapter}"
+          "value": "Updates A Chapter."
         },
         {
           "name": "Deletes A Chapter.",
-          "value": "DELETE /1/vod/channel/{channel}/media/{media}/chapter/{chapter}"
+          "value": "Deletes A Chapter."
         },
         {
           "name": "List Media Cuts",
-          "value": "GET /1/vod/channel/{channel}/media/{media}/cut"
+          "value": "List Media Cuts"
         },
         {
           "name": "Cut A Media",
-          "value": "POST /1/vod/channel/{channel}/media/{media}/cut"
+          "value": "Cut A Media"
         },
         {
           "name": "Get New More Precise Waveform ( For Medias Older Than 2024, Async Job )",
-          "value": "POST /1/vod/channel/{channel}/media/{media}/waveform"
+          "value": "Get New More Precise Waveform ( For Medias Older Than 2024, Async Job )"
         },
         {
           "name": "Get New Thumbstrip Thumbnail ( For Medias Older Than 2024, Async Job )",
-          "value": "POST /1/vod/channel/{channel}/media/{media}/thumbstrip"
+          "value": "Get New Thumbstrip Thumbnail ( For Medias Older Than 2024, Async Job )"
         },
         {
           "name": "Lists All Players.",
-          "value": "GET /1/vod/channel/{channel}/player"
+          "value": "Lists All Players."
         },
         {
           "name": "Creates A New Player.",
-          "value": "POST /1/vod/channel/{channel}/player"
+          "value": "Creates A New Player."
         },
         {
           "name": "Deletes One Or Many Players.",
-          "value": "DELETE /1/vod/channel/{channel}/player"
+          "value": "Deletes One Or Many Players. (2)"
         },
         {
           "name": "Returns A Player.",
-          "value": "GET /1/vod/channel/{channel}/player/{player}"
+          "value": "Returns A Player."
         },
         {
           "name": "Updates A Player.",
-          "value": "PUT /1/vod/channel/{channel}/player/{player}"
+          "value": "Updates A Player."
         },
         {
           "name": "Deletes A Player.",
-          "value": "DELETE /1/vod/channel/{channel}/player/{player}"
+          "value": "Deletes A Player."
         },
         {
           "name": "Duplicates A Player.",
-          "value": "POST /1/vod/channel/{channel}/player/{player}/copy"
+          "value": "Duplicates A Player."
         },
         {
           "name": "Lists All Ads.",
-          "value": "GET /1/vod/channel/{channel}/player/{player}/ad"
+          "value": "Lists All Ads."
         },
         {
           "name": "Creates A New Ad.",
-          "value": "POST /1/vod/channel/{channel}/player/{player}/ad"
+          "value": "Creates A New Ad."
         },
         {
           "name": "Deletes One Or Many Ads.",
-          "value": "DELETE /1/vod/channel/{channel}/player/{player}/ad"
+          "value": "Deletes One Or Many Ads."
         },
         {
           "name": "Returns A Ad.",
-          "value": "GET /1/vod/channel/{channel}/player/{player}/ad/{ad}"
+          "value": "Returns A Ad."
         },
         {
           "name": "Updates A Ad.",
-          "value": "PUT /1/vod/channel/{channel}/player/{player}/ad/{ad}"
+          "value": "Updates A Ad."
         },
         {
           "name": "Deletes A Ad.",
-          "value": "DELETE /1/vod/channel/{channel}/player/{player}/ad/{ad}"
+          "value": "Deletes A Ad."
         },
         {
           "name": "Lists All Playlists.",
-          "value": "GET /1/vod/channel/{channel}/playlist"
+          "value": "Lists All Playlists."
         },
         {
           "name": "Creates A New Playlist.",
-          "value": "POST /1/vod/channel/{channel}/playlist"
+          "value": "Creates A New Playlist."
         },
         {
           "name": "Deletes One Or Many Playlists.",
-          "value": "DELETE /1/vod/channel/{channel}/playlist"
+          "value": "Deletes One Or Many Playlists."
         },
         {
           "name": "Returns A Playlist.",
-          "value": "GET /1/vod/channel/{channel}/playlist/{playlist}"
+          "value": "Returns A Playlist."
         },
         {
           "name": "Updates A Playlist.",
-          "value": "PUT /1/vod/channel/{channel}/playlist/{playlist}"
+          "value": "Updates A Playlist."
         },
         {
           "name": "Updates A Playlist.",
-          "value": "PATCH /1/vod/channel/{channel}/playlist/{playlist}"
+          "value": "Updates A Playlist. (2)"
         },
         {
           "name": "Deletes A Playlist.",
-          "value": "DELETE /1/vod/channel/{channel}/playlist/{playlist}"
+          "value": "Deletes A Playlist."
         },
         {
           "name": "Lists All Children Of A Given Folder, With Attached To Playlist Flag.",
-          "value": "GET /1/vod/channel/{channel}/playlist/{playlist}/browse/{folder?}"
+          "value": "Lists All Children Of A Given Folder, With Attached To Playlist Flag."
         },
         {
           "name": "Lists All Shares.",
-          "value": "GET /1/vod/channel/{channel}/share"
+          "value": "Lists All Shares."
         },
         {
           "name": "Creates A New Share To A Given Target",
-          "value": "POST /1/vod/channel/{channel}/share"
+          "value": "Creates A New Share To A Given Target"
         },
         {
           "name": "Returns A Share.",
-          "value": "GET /1/vod/channel/{channel}/share/{share}"
+          "value": "Returns A Share."
         },
         {
           "name": "Updates A Share.",
-          "value": "PUT /1/vod/channel/{channel}/share/{share}"
+          "value": "Updates A Share."
         },
         {
           "name": "Deletes A Share.",
-          "value": "DELETE /1/vod/channel/{channel}/share/{share}"
+          "value": "Deletes A Share."
         },
         {
           "name": "Create A Token From A Share",
-          "value": "POST /1/vod/channel/{channel}/share/{share}/token"
+          "value": "Create A Token From A Share"
         },
         {
           "name": "Get Average Time",
-          "value": "GET /1/vod/channel/{channel}/statistics/avg_time"
+          "value": "Get Average Time"
         },
         {
           "name": "Get Channel Consumption",
-          "value": "GET /1/vod/channel/{channel}/statistics/consumption"
+          "value": "Get Channel Consumption"
         },
         {
           "name": "Get Channel Consumption Per Encoding",
-          "value": "GET /1/vod/channel/{channel}/statistics/consumption/encodings/histogram"
+          "value": "Get Channel Consumption Per Encoding"
         },
         {
           "name": "Get Channel Top Medias",
-          "value": "GET /1/vod/channel/{channel}/statistics/media"
+          "value": "Get Channel Top Medias"
         },
         {
           "name": "Get Media Consumption",
-          "value": "GET /1/vod/channel/{channel}/statistics/media/{media}/consumption"
+          "value": "Get Media Consumption"
         },
         {
           "name": "Get Media Consumption Per Encoding",
-          "value": "GET /1/vod/channel/{channel}/statistics/media/{media}/consumption/encodings/histogram"
+          "value": "Get Media Consumption Per Encoding"
         },
         {
           "name": "Get Media Top Clusters",
-          "value": "GET /1/vod/channel/{channel}/statistics/media/{media}/geolocation/clusters"
+          "value": "Get Media Top Clusters"
         },
         {
           "name": "Get Media Top Countries",
-          "value": "GET /1/vod/channel/{channel}/statistics/media/{media}/geolocation/countries"
+          "value": "Get Media Top Countries"
         },
         {
           "name": "Get Browser Shares Per Media",
-          "value": "GET /1/vod/channel/{channel}/statistics/media/{media}/technologies/browsers/shares"
+          "value": "Get Browser Shares Per Media"
         },
         {
           "name": "Get Os Shares Per Media",
-          "value": "GET /1/vod/channel/{channel}/statistics/media/{media}/technologies/os/shares"
+          "value": "Get Os Shares Per Media"
         },
         {
           "name": "Get Playbacks Shares Per Media",
-          "value": "GET /1/vod/channel/{channel}/statistics/media/{media}/technologies/playback/shares"
+          "value": "Get Playbacks Shares Per Media"
         },
         {
           "name": "Get Players Shares Per Media",
-          "value": "GET /1/vod/channel/{channel}/statistics/media/{media}/technologies/players/shares"
+          "value": "Get Players Shares Per Media"
         },
         {
           "name": "Get Media Viewers",
-          "value": "GET /1/vod/channel/{channel}/statistics/media/{media}/viewers"
+          "value": "Get Media Viewers"
         },
         {
           "name": "Get Media Viewers Per Encoding Histogram",
-          "value": "GET /1/vod/channel/{channel}/statistics/media/{media}/viewers/encodings/histogram"
+          "value": "Get Media Viewers Per Encoding Histogram"
         },
         {
           "name": "Get Media Viewers Per Encoding Share",
-          "value": "GET /1/vod/channel/{channel}/statistics/media/{media}/viewers/encodings/shares"
+          "value": "Get Media Viewers Per Encoding Share"
         },
         {
           "name": "Get Media Unique Viewers",
-          "value": "GET /1/vod/channel/{channel}/statistics/media/{media}/viewers/uniques"
+          "value": "Get Media Unique Viewers"
         },
         {
           "name": "Get Media Viewing Time",
-          "value": "GET /1/vod/channel/{channel}/statistics/media/{media}/viewing"
+          "value": "Get Media Viewing Time"
         },
         {
           "name": "Get Viewing Time Per Encoding And Media",
-          "value": "GET /1/vod/channel/{channel}/statistics/media/{media}/viewing/encodings/histogram"
+          "value": "Get Viewing Time Per Encoding And Media"
         },
         {
           "name": "Get Channel Browser Shares",
-          "value": "GET /1/vod/channel/{channel}/statistics/technologies/browsers/shares"
+          "value": "Get Channel Browser Shares"
         },
         {
           "name": "Get Channel Os Shares",
-          "value": "GET /1/vod/channel/{channel}/statistics/technologies/os/shares"
+          "value": "Get Channel Os Shares"
         },
         {
           "name": "Get Channel Playbacks Shares",
-          "value": "GET /1/vod/channel/{channel}/statistics/technologies/playback/shares"
+          "value": "Get Channel Playbacks Shares"
         },
         {
           "name": "Get Channel Players Shares",
-          "value": "GET /1/vod/channel/{channel}/statistics/technologies/players/shares"
+          "value": "Get Channel Players Shares"
         },
         {
           "name": "Get Consumed Time Per IP",
-          "value": "GET /1/vod/channel/{channel}/statistics/time_ip"
+          "value": "Get Consumed Time Per IP"
         },
         {
           "name": "Get Channel Viewers",
-          "value": "GET /1/vod/channel/{channel}/statistics/viewers"
+          "value": "Get Channel Viewers"
         },
         {
           "name": "Get Channel Viewers Per Encoding Histogram",
-          "value": "GET /1/vod/channel/{channel}/statistics/viewers/encodings/histogram"
+          "value": "Get Channel Viewers Per Encoding Histogram"
         },
         {
           "name": "Get Channel Viewers Per Encoding Share",
-          "value": "GET /1/vod/channel/{channel}/statistics/viewers/encodings/shares"
+          "value": "Get Channel Viewers Per Encoding Share"
         },
         {
           "name": "Get Channel Viewers Histogram",
-          "value": "GET /1/vod/channel/{channel}/statistics/viewers/histogram"
+          "value": "Get Channel Viewers Histogram"
         },
         {
           "name": "Get Media Viewers",
-          "value": "GET /1/vod/channel/{channel}/statistics/viewers/medias"
+          "value": "Get Media Viewers (2)"
         },
         {
           "name": "Get Channel Unique Viewers",
-          "value": "GET /1/vod/channel/{channel}/statistics/viewers/uniques"
+          "value": "Get Channel Unique Viewers"
         },
         {
           "name": "Get Media Unique Viewers",
-          "value": "GET /1/vod/channel/{channel}/statistics/viewers/uniques/medias"
+          "value": "Get Media Unique Viewers (2)"
         },
         {
           "name": "Get Channel Viewing Time",
-          "value": "GET /1/vod/channel/{channel}/statistics/viewing"
+          "value": "Get Channel Viewing Time"
         },
         {
           "name": "Get Channel Viewing Time Per Encoding",
-          "value": "GET /1/vod/channel/{channel}/statistics/viewing/encodings/histogram"
+          "value": "Get Channel Viewing Time Per Encoding"
         },
         {
           "name": "List Uploads",
-          "value": "GET /1/vod/channel/{channel}/upload"
+          "value": "List Uploads"
         },
         {
           "name": "Create New Media",
-          "value": "POST /1/vod/channel/{channel}/upload"
+          "value": "Create New Media"
         },
         {
           "name": "Creates A New Subtitle To A Given Media.",
-          "value": "POST /1/vod/channel/{channel}/media/{media}/subtitle/{language}"
+          "value": "Creates A New Subtitle To A Given Media."
         },
         {
           "name": "Creates A New Subtitle To A Given Media, From A Provided File.",
-          "value": "POST /1/vod/channel/{channel}/media/{media}/subtitle/{language}/import"
+          "value": "Creates A New Subtitle To A Given Media, From A Provided File."
         },
         {
           "name": "Set A Default Subtitle.",
-          "value": "PUT /1/vod/channel/{channel}/media/{media}/subtitle/{subtitle}/default"
+          "value": "Set A Default Subtitle."
         },
         {
           "name": "Returns A Subtitle.",
-          "value": "GET /1/vod/channel/{channel}/media/{media}/subtitle/{subtitle}"
+          "value": "Returns A Subtitle."
         },
         {
           "name": "Updates A Subtitle.",
-          "value": "PUT /1/vod/channel/{channel}/media/{media}/subtitle/{subtitle}"
+          "value": "Updates A Subtitle."
         },
         {
           "name": "Deletes A Subtitle.",
-          "value": "DELETE /1/vod/channel/{channel}/media/{media}/subtitle/{subtitle}"
+          "value": "Deletes A Subtitle."
         },
         {
           "name": "Attach Logo",
-          "value": "POST /1/vod/channel/{channel}/media/{media}/logo/{logo}"
+          "value": "Attach Logo"
         },
         {
           "name": "Attach Logo",
-          "value": "DELETE /1/vod/channel/{channel}/media/{media}/logo"
+          "value": "Attach Logo (2)"
         },
         {
           "name": "List Major Encoding Constraints That Should Be Respected",
-          "value": "GET /1/vod/encoding/constraint"
+          "value": "List Major Encoding Constraints That Should Be Respected"
         },
         {
           "name": "List Encoding Profiles.",
-          "value": "GET /1/vod/encoding/profile"
+          "value": "List Encoding Profiles."
         },
         {
           "name": "Lists All Available Countries.",
-          "value": "GET /1/vod/country"
+          "value": "Lists All Available Countries."
         },
         {
           "name": "Lists All Available Categories.",
-          "value": "GET /1/vod/category"
+          "value": "Lists All Available Categories."
         },
         {
           "name": "Lists All Available Languages.",
-          "value": "GET /1/vod/language"
+          "value": "Lists All Available Languages."
         },
         {
           "name": "Finds And Returns Anything Matching A Given Query.",
-          "value": "GET /1/vod/search"
+          "value": "Finds And Returns Anything Matching A Given Query."
         },
         {
           "name": "Lists All Playlists Having A Given Media Attached.",
-          "value": "GET /1/vod/channel/{channel}/media/{media}/playlist"
+          "value": "Lists All Playlists Having A Given Media Attached."
         },
         {
           "name": "Adds One Or Many Given Medias/folders To One Or Many Playlists.",
-          "value": "POST /1/vod/channel/{channel}/playlist/attach"
+          "value": "Adds One Or Many Given Medias/folders To One Or Many Playlists."
         },
         {
           "name": "Removes One Or Many Given Medias/folders From One Or Many Playlists.",
-          "value": "DELETE /1/vod/channel/{channel}/playlist/detach"
+          "value": "Removes One Or Many Given Medias/folders From One Or Many Playlists."
         },
         {
           "name": "Lists All Subtitles Of A Given Media.",
-          "value": "GET /1/vod/channel/{channel}/media/{media}/subtitle"
+          "value": "Lists All Subtitles Of A Given Media."
         },
         {
           "name": "Updates One Or Many Subtitle.",
-          "value": "PUT /1/vod/channel/{channel}/media/{media}/subtitle"
+          "value": "Updates One Or Many Subtitle."
         },
         {
           "name": "Deletes Many Subtitles.",
-          "value": "DELETE /1/vod/channel/{channel}/media/{media}/subtitle"
+          "value": "Deletes Many Subtitles."
         }
       ],
-      "default": "GET /1/vod/channel",
+      "default": "List Channels",
       "noDataExpression": true
     },
     {
@@ -9131,7 +9131,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel"
+            "List Channels"
           ]
         }
       },
@@ -9148,7 +9148,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/disk-usage"
+            "Returns The Disk Usage (in Bytes) For The Given Channel."
           ]
         }
       },
@@ -9165,7 +9165,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/media/{media}/thumbnail"
+            "Returns The Media Poster."
           ]
         }
       },
@@ -9182,7 +9182,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/media/{media}/thumbnail"
+            "Returns The Media Poster."
           ]
         }
       },
@@ -9199,7 +9199,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/media/{media}/thumbnail"
+            "Replaces The Thumbnail & Poster For A Given Media"
           ]
         }
       },
@@ -9216,7 +9216,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/media/{media}/thumbnail"
+            "Replaces The Thumbnail & Poster For A Given Media"
           ]
         }
       },
@@ -9233,7 +9233,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/media/{media}/thumbnail"
+            "Replaces The Thumbnail & Poster For A Given Media"
           ]
         }
       },
@@ -9252,7 +9252,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/media/{media}/thumbnail"
+            "Replaces The Thumbnail & Poster For A Given Media"
           ]
         }
       },
@@ -9277,7 +9277,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/browse"
+            "Lists All Children Of The Channel's Root Folder."
           ]
         }
       },
@@ -9294,7 +9294,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/browse"
+            "Moves One Or Many Medias/folders To Trash."
           ]
         }
       },
@@ -9312,7 +9312,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/browse"
+            "Moves One Or Many Medias/folders To Trash."
           ]
         }
       },
@@ -9337,7 +9337,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/browse/copy"
+            "Duplicates One Or Many Medias/folders To A Given Folder."
           ]
         }
       },
@@ -9354,7 +9354,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/browse/copy"
+            "Duplicates One Or Many Medias/folders To A Given Folder."
           ]
         }
       },
@@ -9373,7 +9373,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/browse/copy"
+            "Duplicates One Or Many Medias/folders To A Given Folder."
           ]
         }
       },
@@ -9398,7 +9398,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/browse/move"
+            "Moves One Or Many Medias/folders To A Given Folder."
           ]
         }
       },
@@ -9415,7 +9415,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/browse/move"
+            "Moves One Or Many Medias/folders To A Given Folder."
           ]
         }
       },
@@ -9434,7 +9434,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/browse/move"
+            "Moves One Or Many Medias/folders To A Given Folder."
           ]
         }
       },
@@ -9459,7 +9459,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/browse/trash"
+            "Lists All Medias/folders In Trash."
           ]
         }
       },
@@ -9476,7 +9476,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/browse/trash"
+            "Deletes One Or Many Medias/folders From Trash, Permanently."
           ]
         }
       },
@@ -9493,7 +9493,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/browse/trash/{file}"
+            "Deletes A Media/folder From Trash, Permanently."
           ]
         }
       },
@@ -9510,7 +9510,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/browse/trash/{file}"
+            "Deletes A Media/folder From Trash, Permanently."
           ]
         }
       },
@@ -9527,7 +9527,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/browse/trash/{file}/restore"
+            "Restores A Media/folder From Trash To Its Original Location."
           ]
         }
       },
@@ -9544,7 +9544,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/browse/trash/{file}/restore"
+            "Restores A Media/folder From Trash To Its Original Location."
           ]
         }
       },
@@ -9561,7 +9561,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/browse/tree"
+            "Returns The Tree Of The Folder With All Its Children, Recursively."
           ]
         }
       },
@@ -9578,7 +9578,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/browse/breadcrumb"
+            "Returns The Breadcrumb Of The Media/folder Up To Root Ancestor."
           ]
         }
       },
@@ -9595,7 +9595,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/browse/{file}/breadcrumb"
+            "Returns The Breadcrumb Of The Media/folder Up To Root Ancestor. (2)"
           ]
         }
       },
@@ -9612,7 +9612,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "PUT /1/vod/channel/{channel}/browse/update"
+            "Updates One Or Many Medias/folders."
           ]
         }
       },
@@ -9630,7 +9630,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "PUT /1/vod/channel/{channel}/browse/update"
+            "Updates One Or Many Medias/folders."
           ]
         }
       },
@@ -9654,7 +9654,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/browse/{file}"
+            "Lists All Children Of A Given Folder."
           ]
         }
       },
@@ -9671,7 +9671,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/browse/{file}"
+            "Lists All Children Of A Given Folder."
           ]
         }
       },
@@ -9688,7 +9688,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "PUT /1/vod/channel/{channel}/browse/{file}"
+            "Updates A Media/folder."
           ]
         }
       },
@@ -9705,7 +9705,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "PUT /1/vod/channel/{channel}/browse/{file}"
+            "Updates A Media/folder."
           ]
         }
       },
@@ -9723,7 +9723,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "PUT /1/vod/channel/{channel}/browse/{file}"
+            "Updates A Media/folder."
           ]
         }
       },
@@ -9753,7 +9753,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/browse/{file}"
+            "Moves A Media/folder To Trash."
           ]
         }
       },
@@ -9770,7 +9770,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/browse/{file}"
+            "Moves A Media/folder To Trash."
           ]
         }
       },
@@ -9787,7 +9787,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/browse/{file}/tree"
+            "Returns The Tree Of The Folder With All Its Children, Recursively. (2)"
           ]
         }
       },
@@ -9804,7 +9804,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/browse/{file}/copy"
+            "Duplicates A Media/folder To A Given Folder."
           ]
         }
       },
@@ -9821,7 +9821,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/browse/{file}/copy"
+            "Duplicates A Media/folder To A Given Folder."
           ]
         }
       },
@@ -9838,7 +9838,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/browse/{file}/copy"
+            "Duplicates A Media/folder To A Given Folder."
           ]
         }
       },
@@ -9856,7 +9856,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/browse/{file}/move"
+            "Moves A Media/folder To A Given Folder."
           ]
         }
       },
@@ -9873,7 +9873,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/browse/{file}/move"
+            "Moves A Media/folder To A Given Folder."
           ]
         }
       },
@@ -9890,7 +9890,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/browse/{file}/move"
+            "Moves A Media/folder To A Given Folder."
           ]
         }
       },
@@ -9908,7 +9908,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/callback/log"
+            "Lists All Callback Logs."
           ]
         }
       },
@@ -9925,7 +9925,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/callback/log"
+            "Deletes One Or Many Callback Logs."
           ]
         }
       },
@@ -9942,7 +9942,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/callback/log/{callbackLog}"
+            "Returns A Callback Log."
           ]
         }
       },
@@ -9959,7 +9959,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/callback/log/{callbackLog}"
+            "Returns A Callback Log."
           ]
         }
       },
@@ -9976,7 +9976,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/callback/log/{callbackLog}"
+            "Deletes A Callback Log."
           ]
         }
       },
@@ -9993,7 +9993,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/callback/log/{callbackLog}"
+            "Deletes A Callback Log."
           ]
         }
       },
@@ -10010,7 +10010,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/callback"
+            "Lists All Callbacks."
           ]
         }
       },
@@ -10027,7 +10027,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/callback"
+            "Creates A New Callback."
           ]
         }
       },
@@ -10044,7 +10044,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "PUT /1/vod/channel/{channel}/callback"
+            "Updates One Or Many Callbacks."
           ]
         }
       },
@@ -10061,7 +10061,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/callback"
+            "Deletes One Or Many Callbacks."
           ]
         }
       },
@@ -10078,7 +10078,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/callback/{callback}"
+            "Returns A Callback."
           ]
         }
       },
@@ -10095,7 +10095,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/callback/{callback}"
+            "Returns A Callback."
           ]
         }
       },
@@ -10112,7 +10112,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "PUT /1/vod/channel/{channel}/callback/{callback}"
+            "Updates A Callback."
           ]
         }
       },
@@ -10129,7 +10129,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "PUT /1/vod/channel/{channel}/callback/{callback}"
+            "Updates A Callback."
           ]
         }
       },
@@ -10146,7 +10146,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/callback/{callback}"
+            "Deletes A Callback."
           ]
         }
       },
@@ -10163,7 +10163,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/callback/{callback}"
+            "Deletes A Callback."
           ]
         }
       },
@@ -10180,7 +10180,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/journal"
+            "Lists All Event."
           ]
         }
       },
@@ -10197,7 +10197,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/encoding"
+            "Lists All Encodings."
           ]
         }
       },
@@ -10214,7 +10214,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/encoding"
+            "Creates A New Encoding."
           ]
         }
       },
@@ -10231,7 +10231,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/encoding"
+            "Deletes One Or Many Players."
           ]
         }
       },
@@ -10248,7 +10248,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/encoding/{encoding}"
+            "Returns An Encoding."
           ]
         }
       },
@@ -10265,7 +10265,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/encoding/{encoding}"
+            "Returns An Encoding."
           ]
         }
       },
@@ -10282,7 +10282,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "PUT /1/vod/channel/{channel}/encoding/{encoding}"
+            "Updates An Encoding."
           ]
         }
       },
@@ -10299,7 +10299,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "PUT /1/vod/channel/{channel}/encoding/{encoding}"
+            "Updates An Encoding."
           ]
         }
       },
@@ -10316,7 +10316,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/encoding/{encoding}"
+            "Deletes An Encoding."
           ]
         }
       },
@@ -10333,7 +10333,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/encoding/{encoding}"
+            "Deletes An Encoding."
           ]
         }
       },
@@ -10350,7 +10350,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/logo"
+            "List Logos"
           ]
         }
       },
@@ -10367,7 +10367,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/logo"
+            "Create A Logo"
           ]
         }
       },
@@ -10384,126 +10384,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/logo"
-          ]
-        }
-      },
-      "required": true
-    },
-    {
-      "displayName": "Channel",
-      "name": "path_channel",
-      "type": "json",
-      "default": {},
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "General"
-          ],
-          "operation": [
-            "POST /1/vod/channel/{channel}/logo/detach"
-          ]
-        }
-      },
-      "required": true
-    },
-    {
-      "displayName": "Channel",
-      "name": "path_channel",
-      "type": "string",
-      "default": "",
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "General"
-          ],
-          "operation": [
-            "GET /1/vod/channel/{channel}/logo/{logo}"
-          ]
-        }
-      },
-      "required": true
-    },
-    {
-      "displayName": "Logo",
-      "name": "path_logo",
-      "type": "string",
-      "default": "",
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "General"
-          ],
-          "operation": [
-            "GET /1/vod/channel/{channel}/logo/{logo}"
-          ]
-        }
-      },
-      "required": true
-    },
-    {
-      "displayName": "Channel",
-      "name": "path_channel",
-      "type": "string",
-      "default": "",
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "General"
-          ],
-          "operation": [
-            "PUT /1/vod/channel/{channel}/logo/{logo}"
-          ]
-        }
-      },
-      "required": true
-    },
-    {
-      "displayName": "Logo",
-      "name": "path_logo",
-      "type": "string",
-      "default": "",
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "General"
-          ],
-          "operation": [
-            "PUT /1/vod/channel/{channel}/logo/{logo}"
-          ]
-        }
-      },
-      "required": true
-    },
-    {
-      "displayName": "Channel",
-      "name": "path_channel",
-      "type": "string",
-      "default": "",
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "General"
-          ],
-          "operation": [
-            "DELETE /1/vod/channel/{channel}/logo/{logo}"
-          ]
-        }
-      },
-      "required": true
-    },
-    {
-      "displayName": "Logo",
-      "name": "path_logo",
-      "type": "string",
-      "default": "",
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "General"
-          ],
-          "operation": [
-            "DELETE /1/vod/channel/{channel}/logo/{logo}"
+            "Deletes Logos"
           ]
         }
       },
@@ -10520,24 +10401,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/logo/{logo}/attach"
-          ]
-        }
-      },
-      "required": true
-    },
-    {
-      "displayName": "Logo",
-      "name": "path_logo",
-      "type": "json",
-      "default": {},
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "General"
-          ],
-          "operation": [
-            "POST /1/vod/channel/{channel}/logo/{logo}/attach"
+            "Detach Logo"
           ]
         }
       },
@@ -10554,7 +10418,143 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/folder"
+            "Display Logo"
+          ]
+        }
+      },
+      "required": true
+    },
+    {
+      "displayName": "Logo",
+      "name": "path_logo",
+      "type": "string",
+      "default": "",
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "General"
+          ],
+          "operation": [
+            "Display Logo"
+          ]
+        }
+      },
+      "required": true
+    },
+    {
+      "displayName": "Channel",
+      "name": "path_channel",
+      "type": "string",
+      "default": "",
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "General"
+          ],
+          "operation": [
+            "Updates Logo"
+          ]
+        }
+      },
+      "required": true
+    },
+    {
+      "displayName": "Logo",
+      "name": "path_logo",
+      "type": "string",
+      "default": "",
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "General"
+          ],
+          "operation": [
+            "Updates Logo"
+          ]
+        }
+      },
+      "required": true
+    },
+    {
+      "displayName": "Channel",
+      "name": "path_channel",
+      "type": "string",
+      "default": "",
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "General"
+          ],
+          "operation": [
+            "Delete Logo"
+          ]
+        }
+      },
+      "required": true
+    },
+    {
+      "displayName": "Logo",
+      "name": "path_logo",
+      "type": "string",
+      "default": "",
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "General"
+          ],
+          "operation": [
+            "Delete Logo"
+          ]
+        }
+      },
+      "required": true
+    },
+    {
+      "displayName": "Channel",
+      "name": "path_channel",
+      "type": "json",
+      "default": {},
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "General"
+          ],
+          "operation": [
+            "Sets A Logo Either For Media Or Folders"
+          ]
+        }
+      },
+      "required": true
+    },
+    {
+      "displayName": "Logo",
+      "name": "path_logo",
+      "type": "json",
+      "default": {},
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "General"
+          ],
+          "operation": [
+            "Sets A Logo Either For Media Or Folders"
+          ]
+        }
+      },
+      "required": true
+    },
+    {
+      "displayName": "Channel",
+      "name": "path_channel",
+      "type": "string",
+      "default": "",
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "General"
+          ],
+          "operation": [
+            "List All Folders."
           ]
         }
       },
@@ -10572,7 +10572,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/folder"
+            "List All Folders."
           ]
         }
       },
@@ -10596,7 +10596,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/folder"
+            "Creates A New Folder In The Channel's Root Folder."
           ]
         }
       },
@@ -10613,7 +10613,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/folder/{folder}/encoding"
+            "Adds One Or Many Given Encodings To A Folder."
           ]
         }
       },
@@ -10630,7 +10630,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/folder/{folder}/encoding"
+            "Adds One Or Many Given Encodings To A Folder."
           ]
         }
       },
@@ -10647,7 +10647,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/folder/{folder}/encoding"
+            "Remove Encodings From Folder"
           ]
         }
       },
@@ -10664,7 +10664,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/folder/{folder}/encoding"
+            "Remove Encodings From Folder"
           ]
         }
       },
@@ -10681,7 +10681,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/folder/{folder}/encoding/{encoding}"
+            "Appends An Encoding To A Folder."
           ]
         }
       },
@@ -10698,7 +10698,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/folder/{folder}/encoding/{encoding}"
+            "Appends An Encoding To A Folder."
           ]
         }
       },
@@ -10715,7 +10715,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/folder/{folder}/encoding/{encoding}"
+            "Appends An Encoding To A Folder."
           ]
         }
       },
@@ -10732,7 +10732,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/folder/{folder}/encoding/{encoding}"
+            "Removes An Encoding From A Folder."
           ]
         }
       },
@@ -10749,7 +10749,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/folder/{folder}/encoding/{encoding}"
+            "Removes An Encoding From A Folder."
           ]
         }
       },
@@ -10766,7 +10766,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/folder/{folder}/encoding/{encoding}"
+            "Removes An Encoding From A Folder."
           ]
         }
       },
@@ -10783,7 +10783,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/folder/{folder}/logo/{logo}"
+            "Add Logo To A Folder"
           ]
         }
       },
@@ -10800,7 +10800,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/folder/{folder}/logo/{logo}"
+            "Add Logo To A Folder"
           ]
         }
       },
@@ -10817,7 +10817,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/folder/{folder}/logo/{logo}"
+            "Add Logo To A Folder"
           ]
         }
       },
@@ -10834,7 +10834,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/folder/{folder}/logo"
+            "Delete Logo (2)"
           ]
         }
       },
@@ -10851,7 +10851,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/folder/{folder}/logo"
+            "Delete Logo (2)"
           ]
         }
       },
@@ -10868,7 +10868,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/folder/root"
+            "Returns The Channel's Root Folder."
           ]
         }
       },
@@ -10886,7 +10886,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/folder/root"
+            "Returns The Channel's Root Folder."
           ]
         }
       },
@@ -10910,7 +10910,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/folder/{folder}"
+            "Returns A Folder."
           ]
         }
       },
@@ -10927,7 +10927,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/folder/{folder}"
+            "Returns A Folder."
           ]
         }
       },
@@ -10944,7 +10944,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/folder/{folder}"
+            "Returns A Folder."
           ]
         }
       },
@@ -10962,7 +10962,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/folder/{folder}"
+            "Returns A Folder."
           ]
         }
       },
@@ -10986,7 +10986,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/folder/{folder}"
+            "Creates A New Folder In The Parent Folder."
           ]
         }
       },
@@ -11003,7 +11003,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/folder/{folder}"
+            "Creates A New Folder In The Parent Folder."
           ]
         }
       },
@@ -11021,7 +11021,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/folder/{folder}"
+            "Creates A New Folder In The Parent Folder."
           ]
         }
       },
@@ -11165,7 +11165,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "PUT /1/vod/channel/{channel}/folder/{folder}"
+            "Updates A Folder."
           ]
         }
       },
@@ -11182,7 +11182,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "PUT /1/vod/channel/{channel}/folder/{folder}"
+            "Updates A Folder."
           ]
         }
       },
@@ -11200,7 +11200,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "PUT /1/vod/channel/{channel}/folder/{folder}"
+            "Updates A Folder."
           ]
         }
       },
@@ -11344,7 +11344,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/folder/{folder}"
+            "Deletes A Folder With All Its Children, Recursively."
           ]
         }
       },
@@ -11361,7 +11361,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/folder/{folder}"
+            "Deletes A Folder With All Its Children, Recursively."
           ]
         }
       },
@@ -11378,7 +11378,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/folder/{folder}/playlist"
+            "Lists All Playlists Having A Given Folder Attached."
           ]
         }
       },
@@ -11395,7 +11395,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/folder/{folder}/playlist"
+            "Lists All Playlists Having A Given Folder Attached."
           ]
         }
       },
@@ -11413,7 +11413,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/folder/{folder}/playlist"
+            "Lists All Playlists Having A Given Folder Attached."
           ]
         }
       },
@@ -11437,7 +11437,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/ftp/user"
+            "Lists All FTP Users."
           ]
         }
       },
@@ -11454,7 +11454,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/ftp/user"
+            "Creates A New FTP User."
           ]
         }
       },
@@ -11471,7 +11471,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/ftp/user/{ftpUser}"
+            "Returns A FTP User."
           ]
         }
       },
@@ -11488,7 +11488,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/ftp/user/{ftpUser}"
+            "Returns A FTP User."
           ]
         }
       },
@@ -11505,7 +11505,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "PUT /1/vod/channel/{channel}/ftp/user/{ftpUser}"
+            "Updates A FTP User."
           ]
         }
       },
@@ -11522,7 +11522,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "PUT /1/vod/channel/{channel}/ftp/user/{ftpUser}"
+            "Updates A FTP User."
           ]
         }
       },
@@ -11539,7 +11539,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/ftp/user/{ftpUser}"
+            "Deletes A FTP User."
           ]
         }
       },
@@ -11556,7 +11556,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/ftp/user/{ftpUser}"
+            "Deletes A FTP User."
           ]
         }
       },
@@ -11573,7 +11573,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/media"
+            "Lists All Medias."
           ]
         }
       },
@@ -11591,7 +11591,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/media"
+            "Lists All Medias."
           ]
         }
       },
@@ -11615,7 +11615,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "PUT /1/vod/channel/{channel}/media"
+            "Updates One Or Many Medias."
           ]
         }
       },
@@ -11632,7 +11632,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/media/{media}"
+            "Returns A Media."
           ]
         }
       },
@@ -11649,7 +11649,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/media/{media}"
+            "Returns A Media."
           ]
         }
       },
@@ -11666,7 +11666,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/media/{media}"
+            "Returns A Media."
           ]
         }
       },
@@ -11684,7 +11684,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/media/{media}"
+            "Returns A Media."
           ]
         }
       },
@@ -11708,7 +11708,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "PUT /1/vod/channel/{channel}/media/{media}"
+            "Updates A Media."
           ]
         }
       },
@@ -11725,7 +11725,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "PUT /1/vod/channel/{channel}/media/{media}"
+            "Updates A Media."
           ]
         }
       },
@@ -11743,7 +11743,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "PUT /1/vod/channel/{channel}/media/{media}"
+            "Updates A Media."
           ]
         }
       },
@@ -11853,7 +11853,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/media/{media}"
+            "Deletes A Media."
           ]
         }
       },
@@ -11870,7 +11870,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/media/{media}"
+            "Deletes A Media."
           ]
         }
       },
@@ -11887,7 +11887,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/media/{media}/chapter"
+            "Lists All Chapters Of A Given Media."
           ]
         }
       },
@@ -11904,7 +11904,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/media/{media}/chapter"
+            "Lists All Chapters Of A Given Media."
           ]
         }
       },
@@ -11922,7 +11922,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/media/{media}/chapter"
+            "Lists All Chapters Of A Given Media."
           ]
         }
       },
@@ -11946,7 +11946,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/media/{media}/chapter"
+            "Creates A New Chapter To A Given Media."
           ]
         }
       },
@@ -11963,7 +11963,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/media/{media}/chapter"
+            "Creates A New Chapter To A Given Media."
           ]
         }
       },
@@ -11981,7 +11981,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/media/{media}/chapter"
+            "Creates A New Chapter To A Given Media."
           ]
         }
       },
@@ -12047,7 +12047,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "PUT /1/vod/channel/{channel}/media/{media}/chapter"
+            "Updates One Or Many Chapters."
           ]
         }
       },
@@ -12064,7 +12064,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "PUT /1/vod/channel/{channel}/media/{media}/chapter"
+            "Updates One Or Many Chapters."
           ]
         }
       },
@@ -12081,7 +12081,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/media/{media}/chapter"
+            "Deletes One Or Many Chapters."
           ]
         }
       },
@@ -12098,7 +12098,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/media/{media}/chapter"
+            "Deletes One Or Many Chapters."
           ]
         }
       },
@@ -12115,7 +12115,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/media/{media}/chapter/{chapter}"
+            "Returns A Chapter."
           ]
         }
       },
@@ -12132,7 +12132,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/media/{media}/chapter/{chapter}"
+            "Returns A Chapter."
           ]
         }
       },
@@ -12149,7 +12149,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/media/{media}/chapter/{chapter}"
+            "Returns A Chapter."
           ]
         }
       },
@@ -12166,7 +12166,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/media/{media}/chapter/{chapter}"
+            "Returns A Chapter."
           ]
         }
       },
@@ -12184,7 +12184,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/media/{media}/chapter/{chapter}"
+            "Returns A Chapter."
           ]
         }
       },
@@ -12208,7 +12208,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "PUT /1/vod/channel/{channel}/media/{media}/chapter/{chapter}"
+            "Updates A Chapter."
           ]
         }
       },
@@ -12225,7 +12225,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "PUT /1/vod/channel/{channel}/media/{media}/chapter/{chapter}"
+            "Updates A Chapter."
           ]
         }
       },
@@ -12242,7 +12242,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "PUT /1/vod/channel/{channel}/media/{media}/chapter/{chapter}"
+            "Updates A Chapter."
           ]
         }
       },
@@ -12260,7 +12260,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "PUT /1/vod/channel/{channel}/media/{media}/chapter/{chapter}"
+            "Updates A Chapter."
           ]
         }
       },
@@ -12326,7 +12326,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/media/{media}/chapter/{chapter}"
+            "Deletes A Chapter."
           ]
         }
       },
@@ -12343,7 +12343,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/media/{media}/chapter/{chapter}"
+            "Deletes A Chapter."
           ]
         }
       },
@@ -12360,7 +12360,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/media/{media}/chapter/{chapter}"
+            "Deletes A Chapter."
           ]
         }
       },
@@ -12377,7 +12377,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/media/{media}/cut"
+            "List Media Cuts"
           ]
         }
       },
@@ -12394,7 +12394,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/media/{media}/cut"
+            "List Media Cuts"
           ]
         }
       },
@@ -12411,7 +12411,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/media/{media}/cut"
+            "Cut A Media"
           ]
         }
       },
@@ -12429,7 +12429,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/media/{media}/cut"
+            "Cut A Media"
           ]
         }
       },
@@ -12448,7 +12448,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/media/{media}/cut"
+            "Cut A Media"
           ]
         }
       },
@@ -12488,7 +12488,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/media/{media}/cut"
+            "Cut A Media"
           ]
         }
       },
@@ -12512,7 +12512,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/media/{media}/waveform"
+            "Get New More Precise Waveform ( For Medias Older Than 2024, Async Job )"
           ]
         }
       },
@@ -12529,7 +12529,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/media/{media}/waveform"
+            "Get New More Precise Waveform ( For Medias Older Than 2024, Async Job )"
           ]
         }
       },
@@ -12546,7 +12546,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/media/{media}/thumbstrip"
+            "Get New Thumbstrip Thumbnail ( For Medias Older Than 2024, Async Job )"
           ]
         }
       },
@@ -12563,7 +12563,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/media/{media}/thumbstrip"
+            "Get New Thumbstrip Thumbnail ( For Medias Older Than 2024, Async Job )"
           ]
         }
       },
@@ -12580,7 +12580,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/player"
+            "Lists All Players."
           ]
         }
       },
@@ -12598,7 +12598,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/player"
+            "Lists All Players."
           ]
         }
       },
@@ -12622,7 +12622,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/player"
+            "Creates A New Player."
           ]
         }
       },
@@ -12639,7 +12639,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/player"
+            "Deletes One Or Many Players. (2)"
           ]
         }
       },
@@ -12656,7 +12656,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/player/{player}"
+            "Returns A Player."
           ]
         }
       },
@@ -12673,7 +12673,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/player/{player}"
+            "Returns A Player."
           ]
         }
       },
@@ -12690,7 +12690,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/player/{player}"
+            "Returns A Player."
           ]
         }
       },
@@ -12708,7 +12708,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/player/{player}"
+            "Returns A Player."
           ]
         }
       },
@@ -12732,7 +12732,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "PUT /1/vod/channel/{channel}/player/{player}"
+            "Updates A Player."
           ]
         }
       },
@@ -12749,7 +12749,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "PUT /1/vod/channel/{channel}/player/{player}"
+            "Updates A Player."
           ]
         }
       },
@@ -12767,7 +12767,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "PUT /1/vod/channel/{channel}/player/{player}"
+            "Updates A Player."
           ]
         }
       },
@@ -12797,7 +12797,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/player/{player}"
+            "Deletes A Player."
           ]
         }
       },
@@ -12814,7 +12814,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/player/{player}"
+            "Deletes A Player."
           ]
         }
       },
@@ -12831,7 +12831,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/player/{player}/copy"
+            "Duplicates A Player."
           ]
         }
       },
@@ -12848,7 +12848,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/player/{player}/copy"
+            "Duplicates A Player."
           ]
         }
       },
@@ -12865,7 +12865,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/player/{player}/ad"
+            "Lists All Ads."
           ]
         }
       },
@@ -12882,7 +12882,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/player/{player}/ad"
+            "Lists All Ads."
           ]
         }
       },
@@ -12899,7 +12899,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/player/{player}/ad"
+            "Creates A New Ad."
           ]
         }
       },
@@ -12916,7 +12916,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/player/{player}/ad"
+            "Creates A New Ad."
           ]
         }
       },
@@ -12933,7 +12933,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/player/{player}/ad"
+            "Deletes One Or Many Ads."
           ]
         }
       },
@@ -12950,7 +12950,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/player/{player}/ad"
+            "Deletes One Or Many Ads."
           ]
         }
       },
@@ -12967,7 +12967,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/player/{player}/ad/{ad}"
+            "Returns A Ad."
           ]
         }
       },
@@ -12984,7 +12984,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/player/{player}/ad/{ad}"
+            "Returns A Ad."
           ]
         }
       },
@@ -13001,7 +13001,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/player/{player}/ad/{ad}"
+            "Returns A Ad."
           ]
         }
       },
@@ -13018,7 +13018,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "PUT /1/vod/channel/{channel}/player/{player}/ad/{ad}"
+            "Updates A Ad."
           ]
         }
       },
@@ -13035,7 +13035,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "PUT /1/vod/channel/{channel}/player/{player}/ad/{ad}"
+            "Updates A Ad."
           ]
         }
       },
@@ -13052,7 +13052,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "PUT /1/vod/channel/{channel}/player/{player}/ad/{ad}"
+            "Updates A Ad."
           ]
         }
       },
@@ -13069,7 +13069,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/player/{player}/ad/{ad}"
+            "Deletes A Ad."
           ]
         }
       },
@@ -13086,7 +13086,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/player/{player}/ad/{ad}"
+            "Deletes A Ad."
           ]
         }
       },
@@ -13103,7 +13103,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/player/{player}/ad/{ad}"
+            "Deletes A Ad."
           ]
         }
       },
@@ -13120,7 +13120,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/playlist"
+            "Lists All Playlists."
           ]
         }
       },
@@ -13138,7 +13138,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/playlist"
+            "Lists All Playlists."
           ]
         }
       },
@@ -13162,7 +13162,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/playlist"
+            "Creates A New Playlist."
           ]
         }
       },
@@ -13179,7 +13179,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/playlist"
+            "Deletes One Or Many Playlists."
           ]
         }
       },
@@ -13196,7 +13196,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/playlist/{playlist}"
+            "Returns A Playlist."
           ]
         }
       },
@@ -13213,7 +13213,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/playlist/{playlist}"
+            "Returns A Playlist."
           ]
         }
       },
@@ -13230,7 +13230,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/playlist/{playlist}"
+            "Returns A Playlist."
           ]
         }
       },
@@ -13248,7 +13248,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/playlist/{playlist}"
+            "Returns A Playlist."
           ]
         }
       },
@@ -13272,7 +13272,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "PUT /1/vod/channel/{channel}/playlist/{playlist}"
+            "Updates A Playlist."
           ]
         }
       },
@@ -13289,7 +13289,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "PUT /1/vod/channel/{channel}/playlist/{playlist}"
+            "Updates A Playlist."
           ]
         }
       },
@@ -13306,7 +13306,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "PATCH /1/vod/channel/{channel}/playlist/{playlist}"
+            "Updates A Playlist. (2)"
           ]
         }
       },
@@ -13323,7 +13323,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "PATCH /1/vod/channel/{channel}/playlist/{playlist}"
+            "Updates A Playlist. (2)"
           ]
         }
       },
@@ -13340,7 +13340,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/playlist/{playlist}"
+            "Deletes A Playlist."
           ]
         }
       },
@@ -13357,7 +13357,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/playlist/{playlist}"
+            "Deletes A Playlist."
           ]
         }
       },
@@ -13374,7 +13374,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/playlist/{playlist}/browse/{folder?}"
+            "Lists All Children Of A Given Folder, With Attached To Playlist Flag."
           ]
         }
       },
@@ -13391,7 +13391,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/playlist/{playlist}/browse/{folder?}"
+            "Lists All Children Of A Given Folder, With Attached To Playlist Flag."
           ]
         }
       },
@@ -13408,7 +13408,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/playlist/{playlist}/browse/{folder?}"
+            "Lists All Children Of A Given Folder, With Attached To Playlist Flag."
           ]
         }
       },
@@ -13425,7 +13425,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/share"
+            "Lists All Shares."
           ]
         }
       },
@@ -13442,7 +13442,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/share"
+            "Creates A New Share To A Given Target"
           ]
         }
       },
@@ -13460,7 +13460,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/share"
+            "Creates A New Share To A Given Target"
           ]
         }
       },
@@ -13499,7 +13499,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/share/{share}"
+            "Returns A Share."
           ]
         }
       },
@@ -13516,7 +13516,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/share/{share}"
+            "Returns A Share."
           ]
         }
       },
@@ -13533,7 +13533,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/share/{share}"
+            "Returns A Share."
           ]
         }
       },
@@ -13551,7 +13551,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/share/{share}"
+            "Returns A Share."
           ]
         }
       },
@@ -13575,7 +13575,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "PUT /1/vod/channel/{channel}/share/{share}"
+            "Updates A Share."
           ]
         }
       },
@@ -13592,7 +13592,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "PUT /1/vod/channel/{channel}/share/{share}"
+            "Updates A Share."
           ]
         }
       },
@@ -13609,7 +13609,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/share/{share}"
+            "Deletes A Share."
           ]
         }
       },
@@ -13626,7 +13626,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/share/{share}"
+            "Deletes A Share."
           ]
         }
       },
@@ -13643,7 +13643,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/share/{share}/token"
+            "Create A Token From A Share"
           ]
         }
       },
@@ -13660,7 +13660,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/share/{share}/token"
+            "Create A Token From A Share"
           ]
         }
       },
@@ -13678,7 +13678,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/share/{share}/token"
+            "Create A Token From A Share"
           ]
         }
       },
@@ -13702,7 +13702,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/statistics/avg_time"
+            "Get Average Time"
           ]
         }
       },
@@ -13720,7 +13720,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/statistics/avg_time"
+            "Get Average Time"
           ]
         }
       },
@@ -13745,7 +13745,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/statistics/consumption"
+            "Get Channel Consumption"
           ]
         }
       },
@@ -13763,7 +13763,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/statistics/consumption"
+            "Get Channel Consumption"
           ]
         }
       },
@@ -13788,7 +13788,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/statistics/consumption/encodings/histogram"
+            "Get Channel Consumption Per Encoding"
           ]
         }
       },
@@ -13806,177 +13806,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/statistics/consumption/encodings/histogram"
-          ]
-        }
-      },
-      "options": [
-        {
-          "displayName": "From",
-          "name": "query_from",
-          "type": "string",
-          "default": "",
-          "description": "begin date timestamp"
-        },
-        {
-          "displayName": "Per",
-          "name": "query_per",
-          "type": "string",
-          "default": "",
-          "description": "Histogram grouped by 1d,1h,1m .."
-        }
-      ]
-    },
-    {
-      "displayName": "Channel",
-      "name": "path_channel",
-      "type": "string",
-      "default": "",
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "General"
-          ],
-          "operation": [
-            "GET /1/vod/channel/{channel}/statistics/media"
-          ]
-        }
-      },
-      "required": true
-    },
-    {
-      "displayName": "Additional Query Parameters",
-      "name": "queryParameters",
-      "type": "collection",
-      "placeholder": "Add Parameter",
-      "default": {},
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "General"
-          ],
-          "operation": [
-            "GET /1/vod/channel/{channel}/statistics/media"
-          ]
-        }
-      },
-      "options": [
-        {
-          "displayName": "From",
-          "name": "query_from",
-          "type": "string",
-          "default": "",
-          "description": "begin date timestamp"
-        }
-      ]
-    },
-    {
-      "displayName": "Channel",
-      "name": "path_channel",
-      "type": "string",
-      "default": "",
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "General"
-          ],
-          "operation": [
-            "GET /1/vod/channel/{channel}/statistics/media/{media}/consumption"
-          ]
-        }
-      },
-      "required": true
-    },
-    {
-      "displayName": "Media",
-      "name": "path_media",
-      "type": "string",
-      "default": "",
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "General"
-          ],
-          "operation": [
-            "GET /1/vod/channel/{channel}/statistics/media/{media}/consumption"
-          ]
-        }
-      },
-      "required": true
-    },
-    {
-      "displayName": "Additional Query Parameters",
-      "name": "queryParameters",
-      "type": "collection",
-      "placeholder": "Add Parameter",
-      "default": {},
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "General"
-          ],
-          "operation": [
-            "GET /1/vod/channel/{channel}/statistics/media/{media}/consumption"
-          ]
-        }
-      },
-      "options": [
-        {
-          "displayName": "From",
-          "name": "query_from",
-          "type": "string",
-          "default": "",
-          "description": "begin date timestamp"
-        }
-      ]
-    },
-    {
-      "displayName": "Channel",
-      "name": "path_channel",
-      "type": "string",
-      "default": "",
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "General"
-          ],
-          "operation": [
-            "GET /1/vod/channel/{channel}/statistics/media/{media}/consumption/encodings/histogram"
-          ]
-        }
-      },
-      "required": true
-    },
-    {
-      "displayName": "Media",
-      "name": "path_media",
-      "type": "string",
-      "default": "",
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "General"
-          ],
-          "operation": [
-            "GET /1/vod/channel/{channel}/statistics/media/{media}/consumption/encodings/histogram"
-          ]
-        }
-      },
-      "required": true
-    },
-    {
-      "displayName": "Additional Query Parameters",
-      "name": "queryParameters",
-      "type": "collection",
-      "placeholder": "Add Parameter",
-      "default": {},
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "General"
-          ],
-          "operation": [
-            "GET /1/vod/channel/{channel}/statistics/media/{media}/consumption/encodings/histogram"
+            "Get Channel Consumption Per Encoding"
           ]
         }
       },
@@ -14008,92 +13838,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/statistics/media/{media}/geolocation/clusters"
-          ]
-        }
-      },
-      "required": true
-    },
-    {
-      "displayName": "Media",
-      "name": "path_media",
-      "type": "string",
-      "default": "",
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "General"
-          ],
-          "operation": [
-            "GET /1/vod/channel/{channel}/statistics/media/{media}/geolocation/clusters"
-          ]
-        }
-      },
-      "required": true
-    },
-    {
-      "displayName": "Channel",
-      "name": "path_channel",
-      "type": "string",
-      "default": "",
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "General"
-          ],
-          "operation": [
-            "GET /1/vod/channel/{channel}/statistics/media/{media}/geolocation/countries"
-          ]
-        }
-      },
-      "required": true
-    },
-    {
-      "displayName": "Media",
-      "name": "path_media",
-      "type": "string",
-      "default": "",
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "General"
-          ],
-          "operation": [
-            "GET /1/vod/channel/{channel}/statistics/media/{media}/geolocation/countries"
-          ]
-        }
-      },
-      "required": true
-    },
-    {
-      "displayName": "Channel",
-      "name": "path_channel",
-      "type": "string",
-      "default": "",
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "General"
-          ],
-          "operation": [
-            "GET /1/vod/channel/{channel}/statistics/media/{media}/technologies/browsers/shares"
-          ]
-        }
-      },
-      "required": true
-    },
-    {
-      "displayName": "Media",
-      "name": "path_media",
-      "type": "string",
-      "default": "",
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "General"
-          ],
-          "operation": [
-            "GET /1/vod/channel/{channel}/statistics/media/{media}/technologies/browsers/shares"
+            "Get Channel Top Medias"
           ]
         }
       },
@@ -14111,7 +13856,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/statistics/media/{media}/technologies/browsers/shares"
+            "Get Channel Top Medias"
           ]
         }
       },
@@ -14136,7 +13881,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/statistics/media/{media}/technologies/os/shares"
+            "Get Media Consumption"
           ]
         }
       },
@@ -14153,7 +13898,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/statistics/media/{media}/technologies/os/shares"
+            "Get Media Consumption"
           ]
         }
       },
@@ -14171,7 +13916,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/statistics/media/{media}/technologies/os/shares"
+            "Get Media Consumption"
           ]
         }
       },
@@ -14196,7 +13941,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/statistics/media/{media}/technologies/playback/shares"
+            "Get Media Consumption Per Encoding"
           ]
         }
       },
@@ -14213,7 +13958,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/statistics/media/{media}/technologies/playback/shares"
+            "Get Media Consumption Per Encoding"
           ]
         }
       },
@@ -14231,463 +13976,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/statistics/media/{media}/technologies/playback/shares"
-          ]
-        }
-      },
-      "options": [
-        {
-          "displayName": "From",
-          "name": "query_from",
-          "type": "string",
-          "default": "",
-          "description": "begin date timestamp"
-        }
-      ]
-    },
-    {
-      "displayName": "Channel",
-      "name": "path_channel",
-      "type": "string",
-      "default": "",
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "General"
-          ],
-          "operation": [
-            "GET /1/vod/channel/{channel}/statistics/media/{media}/technologies/players/shares"
-          ]
-        }
-      },
-      "required": true
-    },
-    {
-      "displayName": "Media",
-      "name": "path_media",
-      "type": "string",
-      "default": "",
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "General"
-          ],
-          "operation": [
-            "GET /1/vod/channel/{channel}/statistics/media/{media}/technologies/players/shares"
-          ]
-        }
-      },
-      "required": true
-    },
-    {
-      "displayName": "Additional Query Parameters",
-      "name": "queryParameters",
-      "type": "collection",
-      "placeholder": "Add Parameter",
-      "default": {},
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "General"
-          ],
-          "operation": [
-            "GET /1/vod/channel/{channel}/statistics/media/{media}/technologies/players/shares"
-          ]
-        }
-      },
-      "options": [
-        {
-          "displayName": "From",
-          "name": "query_from",
-          "type": "string",
-          "default": "",
-          "description": "begin date timestamp"
-        }
-      ]
-    },
-    {
-      "displayName": "Channel",
-      "name": "path_channel",
-      "type": "string",
-      "default": "",
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "General"
-          ],
-          "operation": [
-            "GET /1/vod/channel/{channel}/statistics/media/{media}/viewers"
-          ]
-        }
-      },
-      "required": true
-    },
-    {
-      "displayName": "Media",
-      "name": "path_media",
-      "type": "string",
-      "default": "",
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "General"
-          ],
-          "operation": [
-            "GET /1/vod/channel/{channel}/statistics/media/{media}/viewers"
-          ]
-        }
-      },
-      "required": true
-    },
-    {
-      "displayName": "Medias",
-      "name": "query_medias",
-      "type": "string",
-      "default": "",
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "General"
-          ],
-          "operation": [
-            "GET /1/vod/channel/{channel}/statistics/media/{media}/viewers"
-          ]
-        }
-      },
-      "required": true,
-      "description": "Valid Media identifiers separated with comma ,"
-    },
-    {
-      "displayName": "Additional Query Parameters",
-      "name": "queryParameters",
-      "type": "collection",
-      "placeholder": "Add Parameter",
-      "default": {},
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "General"
-          ],
-          "operation": [
-            "GET /1/vod/channel/{channel}/statistics/media/{media}/viewers"
-          ]
-        }
-      },
-      "options": [
-        {
-          "displayName": "From",
-          "name": "query_from",
-          "type": "string",
-          "default": "",
-          "description": "begin date timestamp"
-        }
-      ]
-    },
-    {
-      "displayName": "Channel",
-      "name": "path_channel",
-      "type": "string",
-      "default": "",
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "General"
-          ],
-          "operation": [
-            "GET /1/vod/channel/{channel}/statistics/media/{media}/viewers/encodings/histogram"
-          ]
-        }
-      },
-      "required": true
-    },
-    {
-      "displayName": "Media",
-      "name": "path_media",
-      "type": "string",
-      "default": "",
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "General"
-          ],
-          "operation": [
-            "GET /1/vod/channel/{channel}/statistics/media/{media}/viewers/encodings/histogram"
-          ]
-        }
-      },
-      "required": true
-    },
-    {
-      "displayName": "Additional Query Parameters",
-      "name": "queryParameters",
-      "type": "collection",
-      "placeholder": "Add Parameter",
-      "default": {},
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "General"
-          ],
-          "operation": [
-            "GET /1/vod/channel/{channel}/statistics/media/{media}/viewers/encodings/histogram"
-          ]
-        }
-      },
-      "options": [
-        {
-          "displayName": "From",
-          "name": "query_from",
-          "type": "string",
-          "default": "",
-          "description": "begin date timestamp"
-        }
-      ]
-    },
-    {
-      "displayName": "Channel",
-      "name": "path_channel",
-      "type": "string",
-      "default": "",
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "General"
-          ],
-          "operation": [
-            "GET /1/vod/channel/{channel}/statistics/media/{media}/viewers/encodings/shares"
-          ]
-        }
-      },
-      "required": true
-    },
-    {
-      "displayName": "Media",
-      "name": "path_media",
-      "type": "string",
-      "default": "",
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "General"
-          ],
-          "operation": [
-            "GET /1/vod/channel/{channel}/statistics/media/{media}/viewers/encodings/shares"
-          ]
-        }
-      },
-      "required": true
-    },
-    {
-      "displayName": "Additional Query Parameters",
-      "name": "queryParameters",
-      "type": "collection",
-      "placeholder": "Add Parameter",
-      "default": {},
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "General"
-          ],
-          "operation": [
-            "GET /1/vod/channel/{channel}/statistics/media/{media}/viewers/encodings/shares"
-          ]
-        }
-      },
-      "options": [
-        {
-          "displayName": "From",
-          "name": "query_from",
-          "type": "string",
-          "default": "",
-          "description": "begin date timestamp"
-        }
-      ]
-    },
-    {
-      "displayName": "Channel",
-      "name": "path_channel",
-      "type": "string",
-      "default": "",
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "General"
-          ],
-          "operation": [
-            "GET /1/vod/channel/{channel}/statistics/media/{media}/viewers/uniques"
-          ]
-        }
-      },
-      "required": true
-    },
-    {
-      "displayName": "Media",
-      "name": "path_media",
-      "type": "string",
-      "default": "",
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "General"
-          ],
-          "operation": [
-            "GET /1/vod/channel/{channel}/statistics/media/{media}/viewers/uniques"
-          ]
-        }
-      },
-      "required": true
-    },
-    {
-      "displayName": "Medias",
-      "name": "query_medias",
-      "type": "string",
-      "default": "",
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "General"
-          ],
-          "operation": [
-            "GET /1/vod/channel/{channel}/statistics/media/{media}/viewers/uniques"
-          ]
-        }
-      },
-      "required": true,
-      "description": "Valid Media identifiers separated with comma ,"
-    },
-    {
-      "displayName": "Additional Query Parameters",
-      "name": "queryParameters",
-      "type": "collection",
-      "placeholder": "Add Parameter",
-      "default": {},
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "General"
-          ],
-          "operation": [
-            "GET /1/vod/channel/{channel}/statistics/media/{media}/viewers/uniques"
-          ]
-        }
-      },
-      "options": [
-        {
-          "displayName": "From",
-          "name": "query_from",
-          "type": "string",
-          "default": "",
-          "description": "begin date timestamp"
-        }
-      ]
-    },
-    {
-      "displayName": "Channel",
-      "name": "path_channel",
-      "type": "string",
-      "default": "",
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "General"
-          ],
-          "operation": [
-            "GET /1/vod/channel/{channel}/statistics/media/{media}/viewing"
-          ]
-        }
-      },
-      "required": true
-    },
-    {
-      "displayName": "Media",
-      "name": "path_media",
-      "type": "string",
-      "default": "",
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "General"
-          ],
-          "operation": [
-            "GET /1/vod/channel/{channel}/statistics/media/{media}/viewing"
-          ]
-        }
-      },
-      "required": true
-    },
-    {
-      "displayName": "Additional Query Parameters",
-      "name": "queryParameters",
-      "type": "collection",
-      "placeholder": "Add Parameter",
-      "default": {},
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "General"
-          ],
-          "operation": [
-            "GET /1/vod/channel/{channel}/statistics/media/{media}/viewing"
-          ]
-        }
-      },
-      "options": [
-        {
-          "displayName": "From",
-          "name": "query_from",
-          "type": "string",
-          "default": "",
-          "description": "begin date timestamp"
-        }
-      ]
-    },
-    {
-      "displayName": "Channel",
-      "name": "path_channel",
-      "type": "string",
-      "default": "",
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "General"
-          ],
-          "operation": [
-            "GET /1/vod/channel/{channel}/statistics/media/{media}/viewing/encodings/histogram"
-          ]
-        }
-      },
-      "required": true
-    },
-    {
-      "displayName": "Media",
-      "name": "path_media",
-      "type": "string",
-      "default": "",
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "General"
-          ],
-          "operation": [
-            "GET /1/vod/channel/{channel}/statistics/media/{media}/viewing/encodings/histogram"
-          ]
-        }
-      },
-      "required": true
-    },
-    {
-      "displayName": "Additional Query Parameters",
-      "name": "queryParameters",
-      "type": "collection",
-      "placeholder": "Add Parameter",
-      "default": {},
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "General"
-          ],
-          "operation": [
-            "GET /1/vod/channel/{channel}/statistics/media/{media}/viewing/encodings/histogram"
+            "Get Media Consumption Per Encoding"
           ]
         }
       },
@@ -14719,7 +14008,92 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/statistics/technologies/browsers/shares"
+            "Get Media Top Clusters"
+          ]
+        }
+      },
+      "required": true
+    },
+    {
+      "displayName": "Media",
+      "name": "path_media",
+      "type": "string",
+      "default": "",
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "General"
+          ],
+          "operation": [
+            "Get Media Top Clusters"
+          ]
+        }
+      },
+      "required": true
+    },
+    {
+      "displayName": "Channel",
+      "name": "path_channel",
+      "type": "string",
+      "default": "",
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "General"
+          ],
+          "operation": [
+            "Get Media Top Countries"
+          ]
+        }
+      },
+      "required": true
+    },
+    {
+      "displayName": "Media",
+      "name": "path_media",
+      "type": "string",
+      "default": "",
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "General"
+          ],
+          "operation": [
+            "Get Media Top Countries"
+          ]
+        }
+      },
+      "required": true
+    },
+    {
+      "displayName": "Channel",
+      "name": "path_channel",
+      "type": "string",
+      "default": "",
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "General"
+          ],
+          "operation": [
+            "Get Browser Shares Per Media"
+          ]
+        }
+      },
+      "required": true
+    },
+    {
+      "displayName": "Media",
+      "name": "path_media",
+      "type": "string",
+      "default": "",
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "General"
+          ],
+          "operation": [
+            "Get Browser Shares Per Media"
           ]
         }
       },
@@ -14737,7 +14111,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/statistics/technologies/browsers/shares"
+            "Get Browser Shares Per Media"
           ]
         }
       },
@@ -14762,7 +14136,24 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/statistics/technologies/os/shares"
+            "Get Os Shares Per Media"
+          ]
+        }
+      },
+      "required": true
+    },
+    {
+      "displayName": "Media",
+      "name": "path_media",
+      "type": "string",
+      "default": "",
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "General"
+          ],
+          "operation": [
+            "Get Os Shares Per Media"
           ]
         }
       },
@@ -14780,7 +14171,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/statistics/technologies/os/shares"
+            "Get Os Shares Per Media"
           ]
         }
       },
@@ -14805,7 +14196,24 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/statistics/technologies/playback/shares"
+            "Get Playbacks Shares Per Media"
+          ]
+        }
+      },
+      "required": true
+    },
+    {
+      "displayName": "Media",
+      "name": "path_media",
+      "type": "string",
+      "default": "",
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "General"
+          ],
+          "operation": [
+            "Get Playbacks Shares Per Media"
           ]
         }
       },
@@ -14823,7 +14231,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/statistics/technologies/playback/shares"
+            "Get Playbacks Shares Per Media"
           ]
         }
       },
@@ -14848,7 +14256,24 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/statistics/technologies/players/shares"
+            "Get Players Shares Per Media"
+          ]
+        }
+      },
+      "required": true
+    },
+    {
+      "displayName": "Media",
+      "name": "path_media",
+      "type": "string",
+      "default": "",
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "General"
+          ],
+          "operation": [
+            "Get Players Shares Per Media"
           ]
         }
       },
@@ -14866,7 +14291,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/statistics/technologies/players/shares"
+            "Get Players Shares Per Media"
           ]
         }
       },
@@ -14891,11 +14316,46 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/statistics/time_ip"
+            "Get Media Viewers"
           ]
         }
       },
       "required": true
+    },
+    {
+      "displayName": "Media",
+      "name": "path_media",
+      "type": "string",
+      "default": "",
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "General"
+          ],
+          "operation": [
+            "Get Media Viewers"
+          ]
+        }
+      },
+      "required": true
+    },
+    {
+      "displayName": "Medias",
+      "name": "query_medias",
+      "type": "string",
+      "default": "",
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "General"
+          ],
+          "operation": [
+            "Get Media Viewers"
+          ]
+        }
+      },
+      "required": true,
+      "description": "Valid Media identifiers separated with comma ,"
     },
     {
       "displayName": "Additional Query Parameters",
@@ -14909,7 +14369,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/statistics/time_ip"
+            "Get Media Viewers"
           ]
         }
       },
@@ -14934,7 +14394,24 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/statistics/viewers"
+            "Get Media Viewers Per Encoding Histogram"
+          ]
+        }
+      },
+      "required": true
+    },
+    {
+      "displayName": "Media",
+      "name": "path_media",
+      "type": "string",
+      "default": "",
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "General"
+          ],
+          "operation": [
+            "Get Media Viewers Per Encoding Histogram"
           ]
         }
       },
@@ -14952,7 +14429,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/statistics/viewers"
+            "Get Media Viewers Per Encoding Histogram"
           ]
         }
       },
@@ -14977,7 +14454,24 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/statistics/viewers/encodings/histogram"
+            "Get Media Viewers Per Encoding Share"
+          ]
+        }
+      },
+      "required": true
+    },
+    {
+      "displayName": "Media",
+      "name": "path_media",
+      "type": "string",
+      "default": "",
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "General"
+          ],
+          "operation": [
+            "Get Media Viewers Per Encoding Share"
           ]
         }
       },
@@ -14995,7 +14489,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/statistics/viewers/encodings/histogram"
+            "Get Media Viewers Per Encoding Share"
           ]
         }
       },
@@ -15020,11 +14514,46 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/statistics/viewers/encodings/shares"
+            "Get Media Unique Viewers"
           ]
         }
       },
       "required": true
+    },
+    {
+      "displayName": "Media",
+      "name": "path_media",
+      "type": "string",
+      "default": "",
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "General"
+          ],
+          "operation": [
+            "Get Media Unique Viewers"
+          ]
+        }
+      },
+      "required": true
+    },
+    {
+      "displayName": "Medias",
+      "name": "query_medias",
+      "type": "string",
+      "default": "",
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "General"
+          ],
+          "operation": [
+            "Get Media Unique Viewers"
+          ]
+        }
+      },
+      "required": true,
+      "description": "Valid Media identifiers separated with comma ,"
     },
     {
       "displayName": "Additional Query Parameters",
@@ -15038,7 +14567,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/statistics/viewers/encodings/shares"
+            "Get Media Unique Viewers"
           ]
         }
       },
@@ -15063,7 +14592,24 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/statistics/viewers/histogram"
+            "Get Media Viewing Time"
+          ]
+        }
+      },
+      "required": true
+    },
+    {
+      "displayName": "Media",
+      "name": "path_media",
+      "type": "string",
+      "default": "",
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "General"
+          ],
+          "operation": [
+            "Get Media Viewing Time"
           ]
         }
       },
@@ -15081,7 +14627,67 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/statistics/viewers/histogram"
+            "Get Media Viewing Time"
+          ]
+        }
+      },
+      "options": [
+        {
+          "displayName": "From",
+          "name": "query_from",
+          "type": "string",
+          "default": "",
+          "description": "begin date timestamp"
+        }
+      ]
+    },
+    {
+      "displayName": "Channel",
+      "name": "path_channel",
+      "type": "string",
+      "default": "",
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "General"
+          ],
+          "operation": [
+            "Get Viewing Time Per Encoding And Media"
+          ]
+        }
+      },
+      "required": true
+    },
+    {
+      "displayName": "Media",
+      "name": "path_media",
+      "type": "string",
+      "default": "",
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "General"
+          ],
+          "operation": [
+            "Get Viewing Time Per Encoding And Media"
+          ]
+        }
+      },
+      "required": true
+    },
+    {
+      "displayName": "Additional Query Parameters",
+      "name": "queryParameters",
+      "type": "collection",
+      "placeholder": "Add Parameter",
+      "default": {},
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "General"
+          ],
+          "operation": [
+            "Get Viewing Time Per Encoding And Media"
           ]
         }
       },
@@ -15113,7 +14719,401 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/statistics/viewers/medias"
+            "Get Channel Browser Shares"
+          ]
+        }
+      },
+      "required": true
+    },
+    {
+      "displayName": "Additional Query Parameters",
+      "name": "queryParameters",
+      "type": "collection",
+      "placeholder": "Add Parameter",
+      "default": {},
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "General"
+          ],
+          "operation": [
+            "Get Channel Browser Shares"
+          ]
+        }
+      },
+      "options": [
+        {
+          "displayName": "From",
+          "name": "query_from",
+          "type": "string",
+          "default": "",
+          "description": "begin date timestamp"
+        }
+      ]
+    },
+    {
+      "displayName": "Channel",
+      "name": "path_channel",
+      "type": "string",
+      "default": "",
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "General"
+          ],
+          "operation": [
+            "Get Channel Os Shares"
+          ]
+        }
+      },
+      "required": true
+    },
+    {
+      "displayName": "Additional Query Parameters",
+      "name": "queryParameters",
+      "type": "collection",
+      "placeholder": "Add Parameter",
+      "default": {},
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "General"
+          ],
+          "operation": [
+            "Get Channel Os Shares"
+          ]
+        }
+      },
+      "options": [
+        {
+          "displayName": "From",
+          "name": "query_from",
+          "type": "string",
+          "default": "",
+          "description": "begin date timestamp"
+        }
+      ]
+    },
+    {
+      "displayName": "Channel",
+      "name": "path_channel",
+      "type": "string",
+      "default": "",
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "General"
+          ],
+          "operation": [
+            "Get Channel Playbacks Shares"
+          ]
+        }
+      },
+      "required": true
+    },
+    {
+      "displayName": "Additional Query Parameters",
+      "name": "queryParameters",
+      "type": "collection",
+      "placeholder": "Add Parameter",
+      "default": {},
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "General"
+          ],
+          "operation": [
+            "Get Channel Playbacks Shares"
+          ]
+        }
+      },
+      "options": [
+        {
+          "displayName": "From",
+          "name": "query_from",
+          "type": "string",
+          "default": "",
+          "description": "begin date timestamp"
+        }
+      ]
+    },
+    {
+      "displayName": "Channel",
+      "name": "path_channel",
+      "type": "string",
+      "default": "",
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "General"
+          ],
+          "operation": [
+            "Get Channel Players Shares"
+          ]
+        }
+      },
+      "required": true
+    },
+    {
+      "displayName": "Additional Query Parameters",
+      "name": "queryParameters",
+      "type": "collection",
+      "placeholder": "Add Parameter",
+      "default": {},
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "General"
+          ],
+          "operation": [
+            "Get Channel Players Shares"
+          ]
+        }
+      },
+      "options": [
+        {
+          "displayName": "From",
+          "name": "query_from",
+          "type": "string",
+          "default": "",
+          "description": "begin date timestamp"
+        }
+      ]
+    },
+    {
+      "displayName": "Channel",
+      "name": "path_channel",
+      "type": "string",
+      "default": "",
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "General"
+          ],
+          "operation": [
+            "Get Consumed Time Per IP"
+          ]
+        }
+      },
+      "required": true
+    },
+    {
+      "displayName": "Additional Query Parameters",
+      "name": "queryParameters",
+      "type": "collection",
+      "placeholder": "Add Parameter",
+      "default": {},
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "General"
+          ],
+          "operation": [
+            "Get Consumed Time Per IP"
+          ]
+        }
+      },
+      "options": [
+        {
+          "displayName": "From",
+          "name": "query_from",
+          "type": "string",
+          "default": "",
+          "description": "begin date timestamp"
+        }
+      ]
+    },
+    {
+      "displayName": "Channel",
+      "name": "path_channel",
+      "type": "string",
+      "default": "",
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "General"
+          ],
+          "operation": [
+            "Get Channel Viewers"
+          ]
+        }
+      },
+      "required": true
+    },
+    {
+      "displayName": "Additional Query Parameters",
+      "name": "queryParameters",
+      "type": "collection",
+      "placeholder": "Add Parameter",
+      "default": {},
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "General"
+          ],
+          "operation": [
+            "Get Channel Viewers"
+          ]
+        }
+      },
+      "options": [
+        {
+          "displayName": "From",
+          "name": "query_from",
+          "type": "string",
+          "default": "",
+          "description": "begin date timestamp"
+        }
+      ]
+    },
+    {
+      "displayName": "Channel",
+      "name": "path_channel",
+      "type": "string",
+      "default": "",
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "General"
+          ],
+          "operation": [
+            "Get Channel Viewers Per Encoding Histogram"
+          ]
+        }
+      },
+      "required": true
+    },
+    {
+      "displayName": "Additional Query Parameters",
+      "name": "queryParameters",
+      "type": "collection",
+      "placeholder": "Add Parameter",
+      "default": {},
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "General"
+          ],
+          "operation": [
+            "Get Channel Viewers Per Encoding Histogram"
+          ]
+        }
+      },
+      "options": [
+        {
+          "displayName": "From",
+          "name": "query_from",
+          "type": "string",
+          "default": "",
+          "description": "begin date timestamp"
+        }
+      ]
+    },
+    {
+      "displayName": "Channel",
+      "name": "path_channel",
+      "type": "string",
+      "default": "",
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "General"
+          ],
+          "operation": [
+            "Get Channel Viewers Per Encoding Share"
+          ]
+        }
+      },
+      "required": true
+    },
+    {
+      "displayName": "Additional Query Parameters",
+      "name": "queryParameters",
+      "type": "collection",
+      "placeholder": "Add Parameter",
+      "default": {},
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "General"
+          ],
+          "operation": [
+            "Get Channel Viewers Per Encoding Share"
+          ]
+        }
+      },
+      "options": [
+        {
+          "displayName": "From",
+          "name": "query_from",
+          "type": "string",
+          "default": "",
+          "description": "begin date timestamp"
+        }
+      ]
+    },
+    {
+      "displayName": "Channel",
+      "name": "path_channel",
+      "type": "string",
+      "default": "",
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "General"
+          ],
+          "operation": [
+            "Get Channel Viewers Histogram"
+          ]
+        }
+      },
+      "required": true
+    },
+    {
+      "displayName": "Additional Query Parameters",
+      "name": "queryParameters",
+      "type": "collection",
+      "placeholder": "Add Parameter",
+      "default": {},
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "General"
+          ],
+          "operation": [
+            "Get Channel Viewers Histogram"
+          ]
+        }
+      },
+      "options": [
+        {
+          "displayName": "From",
+          "name": "query_from",
+          "type": "string",
+          "default": "",
+          "description": "begin date timestamp"
+        },
+        {
+          "displayName": "Per",
+          "name": "query_per",
+          "type": "string",
+          "default": "",
+          "description": "Histogram grouped by 1d,1h,1m .."
+        }
+      ]
+    },
+    {
+      "displayName": "Channel",
+      "name": "path_channel",
+      "type": "string",
+      "default": "",
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "General"
+          ],
+          "operation": [
+            "Get Media Viewers (2)"
           ]
         }
       },
@@ -15130,7 +15130,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/statistics/viewers/medias"
+            "Get Media Viewers (2)"
           ]
         }
       },
@@ -15149,7 +15149,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/statistics/viewers/medias"
+            "Get Media Viewers (2)"
           ]
         }
       },
@@ -15174,7 +15174,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/statistics/viewers/uniques"
+            "Get Channel Unique Viewers"
           ]
         }
       },
@@ -15192,7 +15192,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/statistics/viewers/uniques"
+            "Get Channel Unique Viewers"
           ]
         }
       },
@@ -15217,7 +15217,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/statistics/viewers/uniques/medias"
+            "Get Media Unique Viewers (2)"
           ]
         }
       },
@@ -15234,7 +15234,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/statistics/viewers/uniques/medias"
+            "Get Media Unique Viewers (2)"
           ]
         }
       },
@@ -15253,7 +15253,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/statistics/viewers/uniques/medias"
+            "Get Media Unique Viewers (2)"
           ]
         }
       },
@@ -15278,7 +15278,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/statistics/viewing"
+            "Get Channel Viewing Time"
           ]
         }
       },
@@ -15296,7 +15296,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/statistics/viewing"
+            "Get Channel Viewing Time"
           ]
         }
       },
@@ -15321,7 +15321,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/statistics/viewing/encodings/histogram"
+            "Get Channel Viewing Time Per Encoding"
           ]
         }
       },
@@ -15339,7 +15339,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/statistics/viewing/encodings/histogram"
+            "Get Channel Viewing Time Per Encoding"
           ]
         }
       },
@@ -15364,7 +15364,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/upload"
+            "List Uploads"
           ]
         }
       },
@@ -15381,7 +15381,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/upload"
+            "Create New Media"
           ]
         }
       },
@@ -15398,7 +15398,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/upload"
+            "Create New Media"
           ]
         }
       },
@@ -15417,7 +15417,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/upload"
+            "Create New Media"
           ]
         }
       },
@@ -15461,7 +15461,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/media/{media}/subtitle/{language}"
+            "Creates A New Subtitle To A Given Media."
           ]
         }
       },
@@ -15478,7 +15478,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/media/{media}/subtitle/{language}"
+            "Creates A New Subtitle To A Given Media."
           ]
         }
       },
@@ -15495,7 +15495,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/media/{media}/subtitle/{language}"
+            "Creates A New Subtitle To A Given Media."
           ]
         }
       },
@@ -15512,7 +15512,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/media/{media}/subtitle/{language}/import"
+            "Creates A New Subtitle To A Given Media, From A Provided File."
           ]
         }
       },
@@ -15529,7 +15529,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/media/{media}/subtitle/{language}/import"
+            "Creates A New Subtitle To A Given Media, From A Provided File."
           ]
         }
       },
@@ -15546,7 +15546,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/media/{media}/subtitle/{language}/import"
+            "Creates A New Subtitle To A Given Media, From A Provided File."
           ]
         }
       },
@@ -15563,7 +15563,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "PUT /1/vod/channel/{channel}/media/{media}/subtitle/{subtitle}/default"
+            "Set A Default Subtitle."
           ]
         }
       },
@@ -15580,7 +15580,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "PUT /1/vod/channel/{channel}/media/{media}/subtitle/{subtitle}/default"
+            "Set A Default Subtitle."
           ]
         }
       },
@@ -15597,7 +15597,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "PUT /1/vod/channel/{channel}/media/{media}/subtitle/{subtitle}/default"
+            "Set A Default Subtitle."
           ]
         }
       },
@@ -15614,7 +15614,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/media/{media}/subtitle/{subtitle}"
+            "Returns A Subtitle."
           ]
         }
       },
@@ -15631,7 +15631,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/media/{media}/subtitle/{subtitle}"
+            "Returns A Subtitle."
           ]
         }
       },
@@ -15648,7 +15648,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/media/{media}/subtitle/{subtitle}"
+            "Returns A Subtitle."
           ]
         }
       },
@@ -15665,7 +15665,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "PUT /1/vod/channel/{channel}/media/{media}/subtitle/{subtitle}"
+            "Updates A Subtitle."
           ]
         }
       },
@@ -15682,7 +15682,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "PUT /1/vod/channel/{channel}/media/{media}/subtitle/{subtitle}"
+            "Updates A Subtitle."
           ]
         }
       },
@@ -15699,7 +15699,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "PUT /1/vod/channel/{channel}/media/{media}/subtitle/{subtitle}"
+            "Updates A Subtitle."
           ]
         }
       },
@@ -15716,7 +15716,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/media/{media}/subtitle/{subtitle}"
+            "Deletes A Subtitle."
           ]
         }
       },
@@ -15733,7 +15733,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/media/{media}/subtitle/{subtitle}"
+            "Deletes A Subtitle."
           ]
         }
       },
@@ -15750,7 +15750,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/media/{media}/subtitle/{subtitle}"
+            "Deletes A Subtitle."
           ]
         }
       },
@@ -15767,7 +15767,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/media/{media}/logo/{logo}"
+            "Attach Logo"
           ]
         }
       },
@@ -15784,7 +15784,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/media/{media}/logo/{logo}"
+            "Attach Logo"
           ]
         }
       },
@@ -15801,7 +15801,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/media/{media}/logo/{logo}"
+            "Attach Logo"
           ]
         }
       },
@@ -15818,7 +15818,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/media/{media}/logo"
+            "Attach Logo (2)"
           ]
         }
       },
@@ -15835,7 +15835,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/media/{media}/logo"
+            "Attach Logo (2)"
           ]
         }
       },
@@ -15852,7 +15852,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/media/{media}/playlist"
+            "Lists All Playlists Having A Given Media Attached."
           ]
         }
       },
@@ -15869,7 +15869,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/media/{media}/playlist"
+            "Lists All Playlists Having A Given Media Attached."
           ]
         }
       },
@@ -15886,7 +15886,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/playlist/attach"
+            "Adds One Or Many Given Medias/folders To One Or Many Playlists."
           ]
         }
       },
@@ -15903,7 +15903,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/playlist/detach"
+            "Removes One Or Many Given Medias/folders From One Or Many Playlists."
           ]
         }
       },
@@ -15920,7 +15920,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/media/{media}/subtitle"
+            "Lists All Subtitles Of A Given Media."
           ]
         }
       },
@@ -15937,7 +15937,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/media/{media}/subtitle"
+            "Lists All Subtitles Of A Given Media."
           ]
         }
       },
@@ -15954,7 +15954,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "PUT /1/vod/channel/{channel}/media/{media}/subtitle"
+            "Updates One Or Many Subtitle."
           ]
         }
       },
@@ -15971,7 +15971,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "PUT /1/vod/channel/{channel}/media/{media}/subtitle"
+            "Updates One Or Many Subtitle."
           ]
         }
       },
@@ -15988,7 +15988,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/media/{media}/subtitle"
+            "Deletes Many Subtitles."
           ]
         }
       },
@@ -16005,7 +16005,7 @@ export class InfomaniakVod implements INodeType {
             "General"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/media/{media}/subtitle"
+            "Deletes Many Subtitles."
           ]
         }
       },
@@ -16025,18 +16025,18 @@ export class InfomaniakVod implements INodeType {
       "options": [
         {
           "name": "Exports One Or Many Medias To An External Platform.",
-          "value": "POST /1/vod/channel/{channel}/browse/export"
+          "value": "Exports One Or Many Medias To An External Platform."
         },
         {
           "name": "Restores One Or Many Medias/folders From Trash To Their Original Location.",
-          "value": "DELETE /1/vod/channel/{channel}/browse/trash/restore"
+          "value": "Restores One Or Many Medias/folders From Trash To Their Original Location."
         },
         {
           "name": "Exports A Media To An External Platform.",
-          "value": "POST /1/vod/channel/{channel}/browse/{file}/export"
+          "value": "Exports A Media To An External Platform."
         }
       ],
-      "default": "POST /1/vod/channel/{channel}/browse/export",
+      "default": "Exports One Or Many Medias To An External Platform.",
       "noDataExpression": true
     },
     {
@@ -16050,7 +16050,7 @@ export class InfomaniakVod implements INodeType {
             "V2 > Browse"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/browse/export"
+            "Exports One Or Many Medias To An External Platform."
           ]
         }
       },
@@ -16067,7 +16067,7 @@ export class InfomaniakVod implements INodeType {
             "V2 > Browse"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/browse/trash/restore"
+            "Restores One Or Many Medias/folders From Trash To Their Original Location."
           ]
         }
       },
@@ -16084,7 +16084,7 @@ export class InfomaniakVod implements INodeType {
             "V2 > Browse"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/browse/{file}/export"
+            "Exports A Media To An External Platform."
           ]
         }
       },
@@ -16101,7 +16101,7 @@ export class InfomaniakVod implements INodeType {
             "V2 > Browse"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/browse/{file}/export"
+            "Exports A Media To An External Platform."
           ]
         }
       },
@@ -16121,14 +16121,14 @@ export class InfomaniakVod implements INodeType {
       "options": [
         {
           "name": "Returns A Channel.",
-          "value": "GET /1/vod/channel/{channel}"
+          "value": "Returns A Channel."
         },
         {
           "name": "Updates A Channel.",
-          "value": "PUT /1/vod/channel/{channel}"
+          "value": "Updates A Channel."
         }
       ],
-      "default": "GET /1/vod/channel/{channel}",
+      "default": "Returns A Channel.",
       "noDataExpression": true
     },
     {
@@ -16142,7 +16142,7 @@ export class InfomaniakVod implements INodeType {
             "V2 > Channel"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}"
+            "Returns A Channel."
           ]
         }
       },
@@ -16159,7 +16159,7 @@ export class InfomaniakVod implements INodeType {
             "V2 > Channel"
           ],
           "operation": [
-            "PUT /1/vod/channel/{channel}"
+            "Updates A Channel."
           ]
         }
       },
@@ -16179,50 +16179,50 @@ export class InfomaniakVod implements INodeType {
       "options": [
         {
           "name": "Returns A Playlist In Its Given Extension",
-          "value": "GET /1/res/playlist/{playlist}.{ext}"
+          "value": "Returns A Playlist In Its Given Extension"
         },
         {
           "name": "Adds One Or Many Given Medias/folders To A Playlist.",
-          "value": "POST /1/vod/channel/{channel}/playlist/{playlist}/attach"
+          "value": "Adds One Or Many Given Medias/folders To A Playlist."
         },
         {
           "name": "Removes One Or Many Given Medias/folders From A Playlist.",
-          "value": "DELETE /1/vod/channel/{channel}/playlist/{playlist}/detach"
+          "value": "Removes One Or Many Given Medias/folders From A Playlist."
         },
         {
           "name": "Duplicates A Playlist.",
-          "value": "POST /1/vod/channel/{channel}/playlist/{playlist}/copy"
+          "value": "Duplicates A Playlist."
         },
         {
           "name": "Returns A Playlist Image.",
-          "value": "GET /1/vod/channel/{channel}/playlist/{playlist}/image"
+          "value": "Returns A Playlist Image."
         },
         {
           "name": "Deletes A Playlist Image",
-          "value": "DELETE /1/vod/channel/{channel}/playlist/{playlist}/image"
+          "value": "Deletes A Playlist Image"
         },
         {
           "name": "Lists All Medias Of A Playlist.",
-          "value": "GET /1/vod/channel/{channel}/playlist/{playlist}/media"
+          "value": "Lists All Medias Of A Playlist."
         },
         {
           "name": "Moves One Or Many Given Medias One Position Up.",
-          "value": "POST /1/vod/channel/{channel}/playlist/{playlist}/media/move/up"
+          "value": "Moves One Or Many Given Medias One Position Up."
         },
         {
           "name": "Moves One Or Many Given Medias One Position Down.",
-          "value": "POST /1/vod/channel/{channel}/playlist/{playlist}/media/move/down"
+          "value": "Moves One Or Many Given Medias One Position Down."
         },
         {
           "name": "Moves One Or Many Given Medias After A Given Media.",
-          "value": "POST /1/vod/channel/{channel}/playlist/{playlist}/media/move/after"
+          "value": "Moves One Or Many Given Medias After A Given Media."
         },
         {
           "name": "Moves One Or Many Given Medias Before A Given Media.",
-          "value": "POST /1/vod/channel/{channel}/playlist/{playlist}/media/move/before"
+          "value": "Moves One Or Many Given Medias Before A Given Media."
         }
       ],
-      "default": "GET /1/res/playlist/{playlist}.{ext}",
+      "default": "Returns A Playlist In Its Given Extension",
       "noDataExpression": true
     },
     {
@@ -16236,7 +16236,7 @@ export class InfomaniakVod implements INodeType {
             "V2 > Playlist"
           ],
           "operation": [
-            "GET /1/res/playlist/{playlist}.{ext}"
+            "Returns A Playlist In Its Given Extension"
           ]
         }
       },
@@ -16253,7 +16253,7 @@ export class InfomaniakVod implements INodeType {
             "V2 > Playlist"
           ],
           "operation": [
-            "GET /1/res/playlist/{playlist}.{ext}"
+            "Returns A Playlist In Its Given Extension"
           ]
         }
       },
@@ -16270,7 +16270,7 @@ export class InfomaniakVod implements INodeType {
             "V2 > Playlist"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/playlist/{playlist}/attach"
+            "Adds One Or Many Given Medias/folders To A Playlist."
           ]
         }
       },
@@ -16287,7 +16287,7 @@ export class InfomaniakVod implements INodeType {
             "V2 > Playlist"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/playlist/{playlist}/attach"
+            "Adds One Or Many Given Medias/folders To A Playlist."
           ]
         }
       },
@@ -16304,7 +16304,7 @@ export class InfomaniakVod implements INodeType {
             "V2 > Playlist"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/playlist/{playlist}/detach"
+            "Removes One Or Many Given Medias/folders From A Playlist."
           ]
         }
       },
@@ -16321,7 +16321,7 @@ export class InfomaniakVod implements INodeType {
             "V2 > Playlist"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/playlist/{playlist}/detach"
+            "Removes One Or Many Given Medias/folders From A Playlist."
           ]
         }
       },
@@ -16338,7 +16338,7 @@ export class InfomaniakVod implements INodeType {
             "V2 > Playlist"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/playlist/{playlist}/copy"
+            "Duplicates A Playlist."
           ]
         }
       },
@@ -16355,7 +16355,7 @@ export class InfomaniakVod implements INodeType {
             "V2 > Playlist"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/playlist/{playlist}/copy"
+            "Duplicates A Playlist."
           ]
         }
       },
@@ -16372,7 +16372,7 @@ export class InfomaniakVod implements INodeType {
             "V2 > Playlist"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/playlist/{playlist}/image"
+            "Returns A Playlist Image."
           ]
         }
       },
@@ -16389,7 +16389,7 @@ export class InfomaniakVod implements INodeType {
             "V2 > Playlist"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/playlist/{playlist}/image"
+            "Returns A Playlist Image."
           ]
         }
       },
@@ -16406,7 +16406,7 @@ export class InfomaniakVod implements INodeType {
             "V2 > Playlist"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/playlist/{playlist}/image"
+            "Deletes A Playlist Image"
           ]
         }
       },
@@ -16423,7 +16423,7 @@ export class InfomaniakVod implements INodeType {
             "V2 > Playlist"
           ],
           "operation": [
-            "DELETE /1/vod/channel/{channel}/playlist/{playlist}/image"
+            "Deletes A Playlist Image"
           ]
         }
       },
@@ -16440,7 +16440,7 @@ export class InfomaniakVod implements INodeType {
             "V2 > Playlist"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/playlist/{playlist}/media"
+            "Lists All Medias Of A Playlist."
           ]
         }
       },
@@ -16457,7 +16457,7 @@ export class InfomaniakVod implements INodeType {
             "V2 > Playlist"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/playlist/{playlist}/media"
+            "Lists All Medias Of A Playlist."
           ]
         }
       },
@@ -16474,7 +16474,7 @@ export class InfomaniakVod implements INodeType {
             "V2 > Playlist"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/playlist/{playlist}/media/move/up"
+            "Moves One Or Many Given Medias One Position Up."
           ]
         }
       },
@@ -16491,7 +16491,7 @@ export class InfomaniakVod implements INodeType {
             "V2 > Playlist"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/playlist/{playlist}/media/move/up"
+            "Moves One Or Many Given Medias One Position Up."
           ]
         }
       },
@@ -16508,7 +16508,7 @@ export class InfomaniakVod implements INodeType {
             "V2 > Playlist"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/playlist/{playlist}/media/move/down"
+            "Moves One Or Many Given Medias One Position Down."
           ]
         }
       },
@@ -16525,7 +16525,7 @@ export class InfomaniakVod implements INodeType {
             "V2 > Playlist"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/playlist/{playlist}/media/move/down"
+            "Moves One Or Many Given Medias One Position Down."
           ]
         }
       },
@@ -16542,7 +16542,7 @@ export class InfomaniakVod implements INodeType {
             "V2 > Playlist"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/playlist/{playlist}/media/move/after"
+            "Moves One Or Many Given Medias After A Given Media."
           ]
         }
       },
@@ -16559,7 +16559,7 @@ export class InfomaniakVod implements INodeType {
             "V2 > Playlist"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/playlist/{playlist}/media/move/after"
+            "Moves One Or Many Given Medias After A Given Media."
           ]
         }
       },
@@ -16576,7 +16576,7 @@ export class InfomaniakVod implements INodeType {
             "V2 > Playlist"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/playlist/{playlist}/media/move/before"
+            "Moves One Or Many Given Medias Before A Given Media."
           ]
         }
       },
@@ -16593,7 +16593,7 @@ export class InfomaniakVod implements INodeType {
             "V2 > Playlist"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/playlist/{playlist}/media/move/before"
+            "Moves One Or Many Given Medias Before A Given Media."
           ]
         }
       },
@@ -16613,26 +16613,26 @@ export class InfomaniakVod implements INodeType {
       "options": [
         {
           "name": "Generate Subtitle From Media",
-          "value": "POST /1/vod/channel/{channel}/media/{media}/subtitle"
+          "value": "Generate Subtitle From Media"
         },
         {
           "name": "Get Summary From Media As Description",
-          "value": "GET /1/vod/channel/{channel}/media/{media}/subtitle/summarize"
+          "value": "Get Summary From Media As Description"
         },
         {
           "name": "Get Summary From Subtitle",
-          "value": "GET /1/vod/channel/{channel}/media/{media}/subtitle/{subtitle}/summarize"
+          "value": "Get Summary From Subtitle"
         },
         {
           "name": "Get Custom Summary From Media",
-          "value": "POST /1/vod/channel/{channel}/media/{media}/subtitle/{subtitle}/summarize"
+          "value": "Get Custom Summary From Media"
         },
         {
           "name": "Translate Subtitle",
-          "value": "POST /1/vod/channel/{channel}/media/{media}/subtitle/{subtitle}/translate"
+          "value": "Translate Subtitle"
         }
       ],
-      "default": "POST /1/vod/channel/{channel}/media/{media}/subtitle",
+      "default": "Generate Subtitle From Media",
       "noDataExpression": true
     },
     {
@@ -16646,7 +16646,7 @@ export class InfomaniakVod implements INodeType {
             "V2 > Subtitles"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/media/{media}/subtitle"
+            "Generate Subtitle From Media"
           ]
         }
       },
@@ -16663,7 +16663,7 @@ export class InfomaniakVod implements INodeType {
             "V2 > Subtitles"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/media/{media}/subtitle"
+            "Generate Subtitle From Media"
           ]
         }
       },
@@ -16680,7 +16680,7 @@ export class InfomaniakVod implements INodeType {
             "V2 > Subtitles"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/media/{media}/subtitle/summarize"
+            "Get Summary From Media As Description"
           ]
         }
       },
@@ -16697,7 +16697,7 @@ export class InfomaniakVod implements INodeType {
             "V2 > Subtitles"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/media/{media}/subtitle/summarize"
+            "Get Summary From Media As Description"
           ]
         }
       },
@@ -16714,7 +16714,7 @@ export class InfomaniakVod implements INodeType {
             "V2 > Subtitles"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/media/{media}/subtitle/{subtitle}/summarize"
+            "Get Summary From Subtitle"
           ]
         }
       },
@@ -16731,7 +16731,7 @@ export class InfomaniakVod implements INodeType {
             "V2 > Subtitles"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/media/{media}/subtitle/{subtitle}/summarize"
+            "Get Summary From Subtitle"
           ]
         }
       },
@@ -16748,7 +16748,7 @@ export class InfomaniakVod implements INodeType {
             "V2 > Subtitles"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/media/{media}/subtitle/{subtitle}/summarize"
+            "Get Summary From Subtitle"
           ]
         }
       },
@@ -16765,7 +16765,7 @@ export class InfomaniakVod implements INodeType {
             "V2 > Subtitles"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/media/{media}/subtitle/{subtitle}/summarize"
+            "Get Custom Summary From Media"
           ]
         }
       },
@@ -16782,7 +16782,7 @@ export class InfomaniakVod implements INodeType {
             "V2 > Subtitles"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/media/{media}/subtitle/{subtitle}/summarize"
+            "Get Custom Summary From Media"
           ]
         }
       },
@@ -16799,7 +16799,7 @@ export class InfomaniakVod implements INodeType {
             "V2 > Subtitles"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/media/{media}/subtitle/{subtitle}/summarize"
+            "Get Custom Summary From Media"
           ]
         }
       },
@@ -16816,7 +16816,7 @@ export class InfomaniakVod implements INodeType {
             "V2 > Subtitles"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/media/{media}/subtitle/{subtitle}/translate"
+            "Translate Subtitle"
           ]
         }
       },
@@ -16833,7 +16833,7 @@ export class InfomaniakVod implements INodeType {
             "V2 > Subtitles"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/media/{media}/subtitle/{subtitle}/translate"
+            "Translate Subtitle"
           ]
         }
       },
@@ -16850,7 +16850,7 @@ export class InfomaniakVod implements INodeType {
             "V2 > Subtitles"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/media/{media}/subtitle/{subtitle}/translate"
+            "Translate Subtitle"
           ]
         }
       },
@@ -16867,7 +16867,7 @@ export class InfomaniakVod implements INodeType {
             "V2 > Subtitles"
           ],
           "operation": [
-            "POST /1/vod/channel/{channel}/media/{media}/subtitle/{subtitle}/translate"
+            "Translate Subtitle"
           ]
         }
       },
@@ -16881,29 +16881,29 @@ export class InfomaniakVod implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "V2 > UserActivity"
+            "V2 > User Activity"
           ]
         }
       },
       "options": [
         {
           "name": "Get Channel User Activity Log",
-          "value": "GET /1/vod/channel/{channel}/user-activity-log"
+          "value": "Get Channel User Activity Log"
         },
         {
           "name": "Put User Activity Log",
-          "value": "PUT /1/vod/channel/{channel}/user-activity-log"
+          "value": "Put User Activity Log"
         },
         {
           "name": "Get Folder User Activity Log",
-          "value": "GET /1/vod/channel/{channel}/folder/{folder}/user-activity-log"
+          "value": "Get Folder User Activity Log"
         },
         {
           "name": "Get Media User Activity Log",
-          "value": "GET /1/vod/channel/{channel}/media/{media}/user-activity-log"
+          "value": "Get Media User Activity Log"
         }
       ],
-      "default": "GET /1/vod/channel/{channel}/user-activity-log",
+      "default": "Get Channel User Activity Log",
       "noDataExpression": true
     },
     {
@@ -16914,10 +16914,10 @@ export class InfomaniakVod implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "V2 > UserActivity"
+            "V2 > User Activity"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/user-activity-log"
+            "Get Channel User Activity Log"
           ]
         }
       },
@@ -16931,10 +16931,10 @@ export class InfomaniakVod implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "V2 > UserActivity"
+            "V2 > User Activity"
           ],
           "operation": [
-            "PUT /1/vod/channel/{channel}/user-activity-log"
+            "Put User Activity Log"
           ]
         }
       },
@@ -16948,10 +16948,10 @@ export class InfomaniakVod implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "V2 > UserActivity"
+            "V2 > User Activity"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/folder/{folder}/user-activity-log"
+            "Get Folder User Activity Log"
           ]
         }
       },
@@ -16965,10 +16965,10 @@ export class InfomaniakVod implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "V2 > UserActivity"
+            "V2 > User Activity"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/folder/{folder}/user-activity-log"
+            "Get Folder User Activity Log"
           ]
         }
       },
@@ -16982,10 +16982,10 @@ export class InfomaniakVod implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "V2 > UserActivity"
+            "V2 > User Activity"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/media/{media}/user-activity-log"
+            "Get Media User Activity Log"
           ]
         }
       },
@@ -16999,10 +16999,10 @@ export class InfomaniakVod implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "V2 > UserActivity"
+            "V2 > User Activity"
           ],
           "operation": [
-            "GET /1/vod/channel/{channel}/media/{media}/user-activity-log"
+            "Get Media User Activity Log"
           ]
         }
       },
@@ -17022,30 +17022,30 @@ export class InfomaniakVod implements INodeType {
       "options": [
         {
           "name": "List Advertisements.",
-          "value": "GET /2/vod/players/{player}/ads"
+          "value": "List Advertisements."
         },
         {
           "name": "Create An Advertisement.",
-          "value": "POST /2/vod/players/{player}/ads"
+          "value": "Create An Advertisement."
         },
         {
           "name": "Bulk Delete Advertisements.",
-          "value": "DELETE /2/vod/players/{player}/ads"
+          "value": "Bulk Delete Advertisements."
         },
         {
           "name": "Show Ad Details.",
-          "value": "GET /2/vod/ads/{ad}"
+          "value": "Show Ad Details."
         },
         {
           "name": "Update Advertisement.",
-          "value": "PUT /2/vod/ads/{ad}"
+          "value": "Update Advertisement."
         },
         {
           "name": "Delete Advertisement.",
-          "value": "DELETE /2/vod/ads/{ad}"
+          "value": "Delete Advertisement."
         }
       ],
-      "default": "GET /2/vod/players/{player}/ads",
+      "default": "List Advertisements.",
       "noDataExpression": true
     },
     {
@@ -17059,7 +17059,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Ad"
           ],
           "operation": [
-            "GET /2/vod/players/{player}/ads"
+            "List Advertisements."
           ]
         }
       },
@@ -17078,7 +17078,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Ad"
           ],
           "operation": [
-            "GET /2/vod/players/{player}/ads"
+            "List Advertisements."
           ]
         }
       },
@@ -17123,7 +17123,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Ad"
           ],
           "operation": [
-            "POST /2/vod/players/{player}/ads"
+            "Create An Advertisement."
           ]
         }
       },
@@ -17141,7 +17141,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Ad"
           ],
           "operation": [
-            "POST /2/vod/players/{player}/ads"
+            "Create An Advertisement."
           ]
         }
       },
@@ -17159,7 +17159,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Ad"
           ],
           "operation": [
-            "POST /2/vod/players/{player}/ads"
+            "Create An Advertisement."
           ]
         }
       },
@@ -17177,7 +17177,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Ad"
           ],
           "operation": [
-            "POST /2/vod/players/{player}/ads"
+            "Create An Advertisement."
           ]
         }
       },
@@ -17196,7 +17196,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Ad"
           ],
           "operation": [
-            "POST /2/vod/players/{player}/ads"
+            "Create An Advertisement."
           ]
         }
       },
@@ -17242,7 +17242,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Ad"
           ],
           "operation": [
-            "DELETE /2/vod/players/{player}/ads"
+            "Bulk Delete Advertisements."
           ]
         }
       },
@@ -17260,7 +17260,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Ad"
           ],
           "operation": [
-            "DELETE /2/vod/players/{player}/ads"
+            "Bulk Delete Advertisements."
           ]
         }
       },
@@ -17277,7 +17277,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Ad"
           ],
           "operation": [
-            "GET /2/vod/ads/{ad}"
+            "Show Ad Details."
           ]
         }
       },
@@ -17295,7 +17295,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Ad"
           ],
           "operation": [
-            "PUT /2/vod/ads/{ad}"
+            "Update Advertisement."
           ]
         }
       },
@@ -17313,7 +17313,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Ad"
           ],
           "operation": [
-            "PUT /2/vod/ads/{ad}"
+            "Update Advertisement."
           ]
         }
       },
@@ -17331,7 +17331,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Ad"
           ],
           "operation": [
-            "PUT /2/vod/ads/{ad}"
+            "Update Advertisement."
           ]
         }
       },
@@ -17349,7 +17349,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Ad"
           ],
           "operation": [
-            "PUT /2/vod/ads/{ad}"
+            "Update Advertisement."
           ]
         }
       },
@@ -17368,7 +17368,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Ad"
           ],
           "operation": [
-            "PUT /2/vod/ads/{ad}"
+            "Update Advertisement."
           ]
         }
       },
@@ -17414,7 +17414,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Ad"
           ],
           "operation": [
-            "DELETE /2/vod/ads/{ad}"
+            "Delete Advertisement."
           ]
         }
       },
@@ -17435,14 +17435,14 @@ export class InfomaniakVod implements INodeType {
       "options": [
         {
           "name": "List Alerts.",
-          "value": "GET /2/vod/channels/{channel}/alerts"
+          "value": "List Alerts."
         },
         {
           "name": "Get Alert.",
-          "value": "GET /2/vod/alerts/{alert}"
+          "value": "Get Alert."
         }
       ],
-      "default": "GET /2/vod/channels/{channel}/alerts",
+      "default": "List Alerts.",
       "noDataExpression": true
     },
     {
@@ -17456,7 +17456,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Alert"
           ],
           "operation": [
-            "GET /2/vod/channels/{channel}/alerts"
+            "List Alerts."
           ]
         }
       },
@@ -17475,7 +17475,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Alert"
           ],
           "operation": [
-            "GET /2/vod/channels/{channel}/alerts"
+            "List Alerts."
           ]
         }
       },
@@ -17520,7 +17520,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Alert"
           ],
           "operation": [
-            "GET /2/vod/alerts/{alert}"
+            "Get Alert."
           ]
         }
       },
@@ -17541,26 +17541,26 @@ export class InfomaniakVod implements INodeType {
       "options": [
         {
           "name": "List Callbacks.",
-          "value": "GET /2/vod/channels/{channel}/callbacks"
+          "value": "List Callbacks."
         },
         {
           "name": "Create Callback.",
-          "value": "POST /2/vod/channels/{channel}/callbacks"
+          "value": "Create Callback."
         },
         {
           "name": "Show Callback Details.",
-          "value": "GET /2/vod/callbacks/{callback}"
+          "value": "Show Callback Details."
         },
         {
           "name": "Update Callback Details.",
-          "value": "PUT /2/vod/callbacks/{callback}"
+          "value": "Update Callback Details."
         },
         {
           "name": "Delete Callback.",
-          "value": "DELETE /2/vod/callbacks/{callback}"
+          "value": "Delete Callback."
         }
       ],
-      "default": "GET /2/vod/channels/{channel}/callbacks",
+      "default": "List Callbacks.",
       "noDataExpression": true
     },
     {
@@ -17574,7 +17574,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Callback"
           ],
           "operation": [
-            "GET /2/vod/channels/{channel}/callbacks"
+            "List Callbacks."
           ]
         }
       },
@@ -17592,7 +17592,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Callback"
           ],
           "operation": [
-            "POST /2/vod/channels/{channel}/callbacks"
+            "Create Callback."
           ]
         }
       },
@@ -17611,7 +17611,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Callback"
           ],
           "operation": [
-            "POST /2/vod/channels/{channel}/callbacks"
+            "Create Callback."
           ]
         }
       },
@@ -17692,7 +17692,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Callback"
           ],
           "operation": [
-            "GET /2/vod/callbacks/{callback}"
+            "Show Callback Details."
           ]
         }
       },
@@ -17710,7 +17710,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Callback"
           ],
           "operation": [
-            "PUT /2/vod/callbacks/{callback}"
+            "Update Callback Details."
           ]
         }
       },
@@ -17729,7 +17729,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Callback"
           ],
           "operation": [
-            "PUT /2/vod/callbacks/{callback}"
+            "Update Callback Details."
           ]
         }
       },
@@ -17810,7 +17810,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Callback"
           ],
           "operation": [
-            "DELETE /2/vod/callbacks/{callback}"
+            "Delete Callback."
           ]
         }
       },
@@ -17831,10 +17831,10 @@ export class InfomaniakVod implements INodeType {
       "options": [
         {
           "name": "List Categories.",
-          "value": "GET /2/vod/categories"
+          "value": "List Categories."
         }
       ],
-      "default": "GET /2/vod/categories",
+      "default": "List Categories.",
       "noDataExpression": true
     },
     {
@@ -17849,7 +17849,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Category"
           ],
           "operation": [
-            "GET /2/vod/categories"
+            "List Categories."
           ]
         }
       },
@@ -17897,26 +17897,26 @@ export class InfomaniakVod implements INodeType {
       "options": [
         {
           "name": "List Channels.",
-          "value": "GET /2/vod/accounts/{account}/channels"
+          "value": "List Channels."
         },
         {
           "name": "Show Channel Details.",
-          "value": "GET /2/vod/channels/{channel}"
+          "value": "Show Channel Details."
         },
         {
           "name": "Get Channel Used Disk Space.",
-          "value": "GET /2/vod/channels/{channel}/disk-usage"
+          "value": "Get Channel Used Disk Space."
         },
         {
           "name": "Get Trash Disk Usage.",
-          "value": "GET /2/vod/channels/{channel}/disk-usage/trash"
+          "value": "Get Trash Disk Usage."
         },
         {
           "name": "Get Folder Disk Usage.",
-          "value": "GET /2/vod/disk-usage/{folder}"
+          "value": "Get Folder Disk Usage."
         }
       ],
-      "default": "GET /2/vod/accounts/{account}/channels",
+      "default": "List Channels.",
       "noDataExpression": true
     },
     {
@@ -17930,7 +17930,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Channel"
           ],
           "operation": [
-            "GET /2/vod/accounts/{account}/channels"
+            "List Channels."
           ]
         }
       },
@@ -17949,7 +17949,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Channel"
           ],
           "operation": [
-            "GET /2/vod/accounts/{account}/channels"
+            "List Channels."
           ]
         }
       },
@@ -17994,7 +17994,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Channel"
           ],
           "operation": [
-            "GET /2/vod/channels/{channel}"
+            "Show Channel Details."
           ]
         }
       },
@@ -18012,7 +18012,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Channel"
           ],
           "operation": [
-            "GET /2/vod/channels/{channel}/disk-usage"
+            "Get Channel Used Disk Space."
           ]
         }
       },
@@ -18031,7 +18031,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Channel"
           ],
           "operation": [
-            "GET /2/vod/channels/{channel}/disk-usage"
+            "Get Channel Used Disk Space."
           ]
         }
       },
@@ -18055,7 +18055,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Channel"
           ],
           "operation": [
-            "GET /2/vod/channels/{channel}/disk-usage/trash"
+            "Get Trash Disk Usage."
           ]
         }
       },
@@ -18074,7 +18074,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Channel"
           ],
           "operation": [
-            "GET /2/vod/channels/{channel}/disk-usage/trash"
+            "Get Trash Disk Usage."
           ]
         }
       },
@@ -18098,7 +18098,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Channel"
           ],
           "operation": [
-            "GET /2/vod/disk-usage/{folder}"
+            "Get Folder Disk Usage."
           ]
         }
       },
@@ -18117,7 +18117,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Channel"
           ],
           "operation": [
-            "GET /2/vod/disk-usage/{folder}"
+            "Get Folder Disk Usage."
           ]
         }
       },
@@ -18144,14 +18144,14 @@ export class InfomaniakVod implements INodeType {
       "options": [
         {
           "name": "List Chapters.",
-          "value": "GET /2/vod/media/{media}/chapters"
+          "value": "List Chapters."
         },
         {
           "name": "Show Chapter Details.",
-          "value": "GET /2/vod/chapters/{chapter}"
+          "value": "Show Chapter Details."
         }
       ],
-      "default": "GET /2/vod/media/{media}/chapters",
+      "default": "List Chapters.",
       "noDataExpression": true
     },
     {
@@ -18165,7 +18165,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Chapter"
           ],
           "operation": [
-            "GET /2/vod/media/{media}/chapters"
+            "List Chapters."
           ]
         }
       },
@@ -18184,7 +18184,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Chapter"
           ],
           "operation": [
-            "GET /2/vod/media/{media}/chapters"
+            "List Chapters."
           ]
         }
       },
@@ -18229,7 +18229,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Chapter"
           ],
           "operation": [
-            "GET /2/vod/chapters/{chapter}"
+            "Show Chapter Details."
           ]
         }
       },
@@ -18248,7 +18248,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Chapter"
           ],
           "operation": [
-            "GET /2/vod/chapters/{chapter}"
+            "Show Chapter Details."
           ]
         }
       },
@@ -18296,10 +18296,10 @@ export class InfomaniakVod implements INodeType {
       "options": [
         {
           "name": "List Countries.",
-          "value": "GET /2/vod/countries"
+          "value": "List Countries."
         }
       ],
-      "default": "GET /2/vod/countries",
+      "default": "List Countries.",
       "noDataExpression": true
     },
     {
@@ -18314,7 +18314,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Country"
           ],
           "operation": [
-            "GET /2/vod/countries"
+            "List Countries."
           ]
         }
       },
@@ -18362,38 +18362,38 @@ export class InfomaniakVod implements INodeType {
       "options": [
         {
           "name": "List Encodings.",
-          "value": "GET /2/vod/channels/{channel}/encodings"
+          "value": "List Encodings."
         },
         {
           "name": "Create Encoding.",
-          "value": "POST /2/vod/channels/{channel}/encodings"
+          "value": "Create Encoding."
         },
         {
           "name": "Bulk Delete Encodings.",
-          "value": "DELETE /2/vod/channels/{channel}/encodings"
+          "value": "Bulk Delete Encodings."
         },
         {
           "name": "Show Encoding Details.",
-          "value": "GET /2/vod/encodings/{encoding}"
+          "value": "Show Encoding Details."
         },
         {
           "name": "Update Encoding.",
-          "value": "PUT /2/vod/encodings/{encoding}"
+          "value": "Update Encoding."
         },
         {
           "name": "Delete Encoding.",
-          "value": "DELETE /2/vod/encodings/{encoding}"
+          "value": "Delete Encoding."
         },
         {
           "name": "List Encoding Constraints.",
-          "value": "GET /2/vod/encodings/constraints"
+          "value": "List Encoding Constraints."
         },
         {
           "name": "List Encoding Profiles.",
-          "value": "GET /2/vod/encodings/profiles"
+          "value": "List Encoding Profiles."
         }
       ],
-      "default": "GET /2/vod/channels/{channel}/encodings",
+      "default": "List Encodings.",
       "noDataExpression": true
     },
     {
@@ -18407,7 +18407,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Encoding"
           ],
           "operation": [
-            "GET /2/vod/channels/{channel}/encodings"
+            "List Encodings."
           ]
         }
       },
@@ -18426,7 +18426,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Encoding"
           ],
           "operation": [
-            "GET /2/vod/channels/{channel}/encodings"
+            "List Encodings."
           ]
         }
       },
@@ -18471,7 +18471,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Encoding"
           ],
           "operation": [
-            "POST /2/vod/channels/{channel}/encodings"
+            "Create Encoding."
           ]
         }
       },
@@ -18490,7 +18490,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Encoding"
           ],
           "operation": [
-            "POST /2/vod/channels/{channel}/encodings"
+            "Create Encoding."
           ]
         }
       },
@@ -18578,7 +18578,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Encoding"
           ],
           "operation": [
-            "DELETE /2/vod/channels/{channel}/encodings"
+            "Bulk Delete Encodings."
           ]
         }
       },
@@ -18596,7 +18596,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Encoding"
           ],
           "operation": [
-            "DELETE /2/vod/channels/{channel}/encodings"
+            "Bulk Delete Encodings."
           ]
         }
       },
@@ -18613,7 +18613,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Encoding"
           ],
           "operation": [
-            "GET /2/vod/encodings/{encoding}"
+            "Show Encoding Details."
           ]
         }
       },
@@ -18631,7 +18631,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Encoding"
           ],
           "operation": [
-            "PUT /2/vod/encodings/{encoding}"
+            "Update Encoding."
           ]
         }
       },
@@ -18650,7 +18650,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Encoding"
           ],
           "operation": [
-            "PUT /2/vod/encodings/{encoding}"
+            "Update Encoding."
           ]
         }
       },
@@ -18675,7 +18675,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Encoding"
           ],
           "operation": [
-            "DELETE /2/vod/encodings/{encoding}"
+            "Delete Encoding."
           ]
         }
       },
@@ -18696,50 +18696,50 @@ export class InfomaniakVod implements INodeType {
       "options": [
         {
           "name": "Browse Channel Root.",
-          "value": "GET /2/vod/channels/{channel}/browse"
+          "value": "Browse Channel Root."
         },
         {
           "name": "Discard File(s).",
-          "value": "DELETE /2/vod/channels/{channel}/browse"
+          "value": "Discard File(s)."
         },
         {
           "name": "Get Root Tree.",
-          "value": "GET /2/vod/channels/{channel}/browse/tree"
+          "value": "Get Root Tree."
         },
         {
           "name": "Get Root Breadcrumb.",
-          "value": "GET /2/vod/channels/{channel}/browse/breadcrumb"
+          "value": "Get Root Breadcrumb."
         },
         {
           "name": "Browse Trash.",
-          "value": "GET /2/vod/channels/{channel}/browse/trash"
+          "value": "Browse Trash."
         },
         {
           "name": "Empty Trash.",
-          "value": "DELETE /2/vod/channels/{channel}/browse/trash"
+          "value": "Empty Trash."
         },
         {
           "name": "Browse Folder.",
-          "value": "GET /2/vod/browse/{folder}"
+          "value": "Browse Folder."
         },
         {
           "name": "Get Folder Breadcrumb.",
-          "value": "GET /2/vod/browse/{folder}/breadcrumb"
+          "value": "Get Folder Breadcrumb."
         },
         {
           "name": "Get Folder Tree.",
-          "value": "GET /2/vod/browse/{folder}/tree"
+          "value": "Get Folder Tree."
         },
         {
           "name": "Restore File(s).",
-          "value": "POST /2/vod/channels/{channel}/browse/restore"
+          "value": "Restore File(s)."
         },
         {
           "name": "Move File(s).",
-          "value": "POST /2/vod/channels/{channel}/browse/move"
+          "value": "Move File(s)."
         }
       ],
-      "default": "GET /2/vod/channels/{channel}/browse",
+      "default": "Browse Channel Root.",
       "noDataExpression": true
     },
     {
@@ -18753,7 +18753,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Filesystem"
           ],
           "operation": [
-            "GET /2/vod/channels/{channel}/browse"
+            "Browse Channel Root."
           ]
         }
       },
@@ -18772,7 +18772,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Filesystem"
           ],
           "operation": [
-            "GET /2/vod/channels/{channel}/browse"
+            "Browse Channel Root."
           ]
         }
       },
@@ -18829,7 +18829,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Filesystem"
           ],
           "operation": [
-            "DELETE /2/vod/channels/{channel}/browse"
+            "Discard File(s)."
           ]
         }
       },
@@ -18847,7 +18847,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Filesystem"
           ],
           "operation": [
-            "DELETE /2/vod/channels/{channel}/browse"
+            "Discard File(s)."
           ]
         }
       },
@@ -18864,7 +18864,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Filesystem"
           ],
           "operation": [
-            "GET /2/vod/channels/{channel}/browse/tree"
+            "Get Root Tree."
           ]
         }
       },
@@ -18882,7 +18882,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Filesystem"
           ],
           "operation": [
-            "GET /2/vod/channels/{channel}/browse/breadcrumb"
+            "Get Root Breadcrumb."
           ]
         }
       },
@@ -18900,7 +18900,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Filesystem"
           ],
           "operation": [
-            "GET /2/vod/channels/{channel}/browse/trash"
+            "Browse Trash."
           ]
         }
       },
@@ -18919,7 +18919,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Filesystem"
           ],
           "operation": [
-            "GET /2/vod/channels/{channel}/browse/trash"
+            "Browse Trash."
           ]
         }
       },
@@ -18964,7 +18964,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Filesystem"
           ],
           "operation": [
-            "DELETE /2/vod/channels/{channel}/browse/trash"
+            "Empty Trash."
           ]
         }
       },
@@ -18983,7 +18983,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Filesystem"
           ],
           "operation": [
-            "DELETE /2/vod/channels/{channel}/browse/trash"
+            "Empty Trash."
           ]
         }
       },
@@ -19007,7 +19007,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Filesystem"
           ],
           "operation": [
-            "GET /2/vod/browse/{folder}"
+            "Browse Folder."
           ]
         }
       },
@@ -19026,7 +19026,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Filesystem"
           ],
           "operation": [
-            "GET /2/vod/browse/{folder}"
+            "Browse Folder."
           ]
         }
       },
@@ -19056,7 +19056,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Filesystem"
           ],
           "operation": [
-            "GET /2/vod/browse/{folder}/breadcrumb"
+            "Get Folder Breadcrumb."
           ]
         }
       },
@@ -19074,7 +19074,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Filesystem"
           ],
           "operation": [
-            "GET /2/vod/browse/{folder}/tree"
+            "Get Folder Tree."
           ]
         }
       },
@@ -19092,7 +19092,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Filesystem"
           ],
           "operation": [
-            "POST /2/vod/channels/{channel}/browse/restore"
+            "Restore File(s)."
           ]
         }
       },
@@ -19110,7 +19110,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Filesystem"
           ],
           "operation": [
-            "POST /2/vod/channels/{channel}/browse/restore"
+            "Restore File(s)."
           ]
         }
       },
@@ -19128,7 +19128,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Filesystem"
           ],
           "operation": [
-            "POST /2/vod/channels/{channel}/browse/move"
+            "Move File(s)."
           ]
         }
       },
@@ -19146,7 +19146,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Filesystem"
           ],
           "operation": [
-            "POST /2/vod/channels/{channel}/browse/move"
+            "Move File(s)."
           ]
         }
       },
@@ -19165,7 +19165,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Filesystem"
           ],
           "operation": [
-            "POST /2/vod/channels/{channel}/browse/move"
+            "Move File(s)."
           ]
         }
       },
@@ -19193,66 +19193,66 @@ export class InfomaniakVod implements INodeType {
       "options": [
         {
           "name": "Show Root Folder.",
-          "value": "GET /2/vod/channels/{channel}/folders/root"
+          "value": "Show Root Folder."
         },
         {
           "name": "List Folders.",
-          "value": "GET /2/vod/channels/{channel}/folders"
+          "value": "List Folders."
         },
         {
           "name": "Create Folder.",
-          "value": "POST /2/vod/channels/{channel}/folders"
+          "value": "Create Folder."
         },
         {
           "name": "Show Folder Details.",
-          "value": "GET /2/vod/folders/{folder}"
+          "value": "Show Folder Details."
         },
         {
           "name": "Update Folder Details.",
-          "value": "PUT /2/vod/folders/{folder}"
+          "value": "Update Folder Details."
         },
         {
           "name": "Delete A Folder.",
-          "value": "DELETE /2/vod/folders/{folder}"
+          "value": "Delete A Folder."
         },
         {
           "name": "Synchronize Encodings For A Folder.",
-          "value": "POST /2/vod/folders/{folder}/encodings"
+          "value": "Synchronize Encodings For A Folder."
         },
         {
           "name": "Attach Encodings To A Folder.",
-          "value": "PUT /2/vod/folders/{folder}/encodings"
+          "value": "Attach Encodings To A Folder."
         },
         {
           "name": "Detach Encodings From A Folder.",
-          "value": "DELETE /2/vod/folders/{folder}/encodings"
+          "value": "Detach Encodings From A Folder."
         },
         {
           "name": "Attach A Logo To A Folder.",
-          "value": "PUT /2/vod/folders/{folder}/logo"
+          "value": "Attach A Logo To A Folder."
         },
         {
           "name": "Detach A Logo From A Folder.",
-          "value": "DELETE /2/vod/folders/{folder}/logo"
+          "value": "Detach A Logo From A Folder."
         },
         {
           "name": "Attach Labels To A Folder.",
-          "value": "PUT /2/vod/folders/{folder}/labels"
+          "value": "Attach Labels To A Folder."
         },
         {
           "name": "Detach Labels From A Folder.",
-          "value": "DELETE /2/vod/folders/{folder}/labels"
+          "value": "Detach Labels From A Folder."
         },
         {
           "name": "Locks The Provided Folder.",
-          "value": "PUT /2/vod/folders/{folder}/lock"
+          "value": "Locks The Provided Folder."
         },
         {
           "name": "Unlocks The Provided Folder.",
-          "value": "PUT /2/vod/folders/{folder}/unlock"
+          "value": "Unlocks The Provided Folder."
         }
       ],
-      "default": "GET /2/vod/channels/{channel}/folders/root",
+      "default": "Show Root Folder.",
       "noDataExpression": true
     },
     {
@@ -19266,7 +19266,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Folder"
           ],
           "operation": [
-            "GET /2/vod/channels/{channel}/folders/root"
+            "Show Root Folder."
           ]
         }
       },
@@ -19284,7 +19284,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Folder"
           ],
           "operation": [
-            "GET /2/vod/channels/{channel}/folders"
+            "List Folders."
           ]
         }
       },
@@ -19303,7 +19303,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Folder"
           ],
           "operation": [
-            "GET /2/vod/channels/{channel}/folders"
+            "List Folders."
           ]
         }
       },
@@ -19348,7 +19348,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Folder"
           ],
           "operation": [
-            "POST /2/vod/channels/{channel}/folders"
+            "Create Folder."
           ]
         }
       },
@@ -19366,7 +19366,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Folder"
           ],
           "operation": [
-            "POST /2/vod/channels/{channel}/folders"
+            "Create Folder."
           ]
         }
       },
@@ -19385,7 +19385,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Folder"
           ],
           "operation": [
-            "POST /2/vod/channels/{channel}/folders"
+            "Create Folder."
           ]
         }
       },
@@ -19569,7 +19569,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Folder"
           ],
           "operation": [
-            "GET /2/vod/folders/{folder}"
+            "Show Folder Details."
           ]
         }
       },
@@ -19587,7 +19587,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Folder"
           ],
           "operation": [
-            "PUT /2/vod/folders/{folder}"
+            "Update Folder Details."
           ]
         }
       },
@@ -19606,7 +19606,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Folder"
           ],
           "operation": [
-            "PUT /2/vod/folders/{folder}"
+            "Update Folder Details."
           ]
         }
       },
@@ -19783,7 +19783,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Folder"
           ],
           "operation": [
-            "DELETE /2/vod/folders/{folder}"
+            "Delete A Folder."
           ]
         }
       },
@@ -19801,7 +19801,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Folder"
           ],
           "operation": [
-            "POST /2/vod/folders/{folder}/encodings"
+            "Synchronize Encodings For A Folder."
           ]
         }
       },
@@ -19820,7 +19820,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Folder"
           ],
           "operation": [
-            "POST /2/vod/folders/{folder}/encodings"
+            "Synchronize Encodings For A Folder."
           ]
         }
       },
@@ -19845,7 +19845,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Folder"
           ],
           "operation": [
-            "PUT /2/vod/folders/{folder}/encodings"
+            "Attach Encodings To A Folder."
           ]
         }
       },
@@ -19864,7 +19864,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Folder"
           ],
           "operation": [
-            "PUT /2/vod/folders/{folder}/encodings"
+            "Attach Encodings To A Folder."
           ]
         }
       },
@@ -19889,7 +19889,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Folder"
           ],
           "operation": [
-            "DELETE /2/vod/folders/{folder}/encodings"
+            "Detach Encodings From A Folder."
           ]
         }
       },
@@ -19908,7 +19908,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Folder"
           ],
           "operation": [
-            "DELETE /2/vod/folders/{folder}/encodings"
+            "Detach Encodings From A Folder."
           ]
         }
       },
@@ -19932,7 +19932,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Folder"
           ],
           "operation": [
-            "PUT /2/vod/folders/{folder}/logo"
+            "Attach A Logo To A Folder."
           ]
         }
       },
@@ -19950,7 +19950,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Folder"
           ],
           "operation": [
-            "PUT /2/vod/folders/{folder}/logo"
+            "Attach A Logo To A Folder."
           ]
         }
       },
@@ -19968,7 +19968,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Folder"
           ],
           "operation": [
-            "DELETE /2/vod/folders/{folder}/logo"
+            "Detach A Logo From A Folder."
           ]
         }
       },
@@ -19986,7 +19986,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Folder"
           ],
           "operation": [
-            "PUT /2/vod/folders/{folder}/labels"
+            "Attach Labels To A Folder."
           ]
         }
       },
@@ -20004,7 +20004,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Folder"
           ],
           "operation": [
-            "PUT /2/vod/folders/{folder}/labels"
+            "Attach Labels To A Folder."
           ]
         }
       },
@@ -20021,7 +20021,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Folder"
           ],
           "operation": [
-            "DELETE /2/vod/folders/{folder}/labels"
+            "Detach Labels From A Folder."
           ]
         }
       },
@@ -20039,7 +20039,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Folder"
           ],
           "operation": [
-            "DELETE /2/vod/folders/{folder}/labels"
+            "Detach Labels From A Folder."
           ]
         }
       },
@@ -20056,7 +20056,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Folder"
           ],
           "operation": [
-            "PUT /2/vod/folders/{folder}/lock"
+            "Locks The Provided Folder."
           ]
         }
       },
@@ -20074,7 +20074,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Folder"
           ],
           "operation": [
-            "PUT /2/vod/folders/{folder}/unlock"
+            "Unlocks The Provided Folder."
           ]
         }
       },
@@ -20095,50 +20095,50 @@ export class InfomaniakVod implements INodeType {
       "options": [
         {
           "name": "List FTP Users.",
-          "value": "GET /2/vod/channels/{channel}/ftpusers"
+          "value": "List FTP Users."
         },
         {
           "name": "Create FTP User.",
-          "value": "POST /2/vod/channels/{channel}/ftpusers"
+          "value": "Create FTP User."
         },
         {
           "name": "Show FTP User Details.",
-          "value": "GET /2/vod/ftpusers/{user}"
+          "value": "Show FTP User Details."
         },
         {
           "name": "Update FTP User Details.",
-          "value": "PUT /2/vod/ftpusers/{user}"
+          "value": "Update FTP User Details."
         },
         {
           "name": "Delete FTP User.",
-          "value": "DELETE /2/vod/ftpusers/{user}"
+          "value": "Delete FTP User."
         },
         {
           "name": "Login.",
-          "value": "POST /2/vod/ftp/login"
+          "value": "Login."
         },
         {
           "name": "On Connect Callback.",
-          "value": "POST /2/vod/ftp/on/connect"
+          "value": "On Connect Callback."
         },
         {
           "name": "On Disconnect Callback.",
-          "value": "POST /2/vod/ftp/on/disconnect"
+          "value": "On Disconnect Callback."
         },
         {
           "name": "On Login Callback.",
-          "value": "POST /2/vod/ftp/on/login"
+          "value": "On Login Callback."
         },
         {
           "name": "On Login Failed Callback.",
-          "value": "POST /2/vod/ftp/on/login-failed"
+          "value": "On Login Failed Callback."
         },
         {
           "name": "On Logout Callback.",
-          "value": "POST /2/vod/ftp/on/logout"
+          "value": "On Logout Callback."
         }
       ],
-      "default": "GET /2/vod/channels/{channel}/ftpusers",
+      "default": "List FTP Users.",
       "noDataExpression": true
     },
     {
@@ -20152,7 +20152,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Ftp"
           ],
           "operation": [
-            "GET /2/vod/channels/{channel}/ftpusers"
+            "List FTP Users."
           ]
         }
       },
@@ -20171,7 +20171,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Ftp"
           ],
           "operation": [
-            "GET /2/vod/channels/{channel}/ftpusers"
+            "List FTP Users."
           ]
         }
       },
@@ -20216,7 +20216,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Ftp"
           ],
           "operation": [
-            "POST /2/vod/channels/{channel}/ftpusers"
+            "Create FTP User."
           ]
         }
       },
@@ -20234,7 +20234,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Ftp"
           ],
           "operation": [
-            "POST /2/vod/channels/{channel}/ftpusers"
+            "Create FTP User."
           ]
         }
       },
@@ -20252,7 +20252,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Ftp"
           ],
           "operation": [
-            "POST /2/vod/channels/{channel}/ftpusers"
+            "Create FTP User."
           ]
         }
       },
@@ -20271,7 +20271,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Ftp"
           ],
           "operation": [
-            "POST /2/vod/channels/{channel}/ftpusers"
+            "Create FTP User."
           ]
         }
       },
@@ -20331,7 +20331,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Ftp"
           ],
           "operation": [
-            "GET /2/vod/ftpusers/{user}"
+            "Show FTP User Details."
           ]
         }
       },
@@ -20349,7 +20349,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Ftp"
           ],
           "operation": [
-            "PUT /2/vod/ftpusers/{user}"
+            "Update FTP User Details."
           ]
         }
       },
@@ -20368,7 +20368,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Ftp"
           ],
           "operation": [
-            "PUT /2/vod/ftpusers/{user}"
+            "Update FTP User Details."
           ]
         }
       },
@@ -20442,7 +20442,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Ftp"
           ],
           "operation": [
-            "DELETE /2/vod/ftpusers/{user}"
+            "Delete FTP User."
           ]
         }
       },
@@ -20460,7 +20460,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Ftp"
           ],
           "operation": [
-            "POST /2/vod/ftp/login"
+            "Login."
           ]
         }
       },
@@ -20478,7 +20478,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Ftp"
           ],
           "operation": [
-            "POST /2/vod/ftp/login"
+            "Login."
           ]
         }
       },
@@ -20499,14 +20499,14 @@ export class InfomaniakVod implements INodeType {
       "options": [
         {
           "name": "Get Media Journal.",
-          "value": "GET /2/vod/media/{media}/journal"
+          "value": "Get Media Journal."
         },
         {
           "name": "Get Journal.",
-          "value": "GET /2/vod/channels/{channel}/journal"
+          "value": "Get Journal."
         }
       ],
-      "default": "GET /2/vod/media/{media}/journal",
+      "default": "Get Media Journal.",
       "noDataExpression": true
     },
     {
@@ -20520,7 +20520,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Journal"
           ],
           "operation": [
-            "GET /2/vod/media/{media}/journal"
+            "Get Media Journal."
           ]
         }
       },
@@ -20539,7 +20539,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Journal"
           ],
           "operation": [
-            "GET /2/vod/media/{media}/journal"
+            "Get Media Journal."
           ]
         }
       },
@@ -20584,7 +20584,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Journal"
           ],
           "operation": [
-            "GET /2/vod/channels/{channel}/journal"
+            "Get Journal."
           ]
         }
       },
@@ -20603,7 +20603,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Journal"
           ],
           "operation": [
-            "GET /2/vod/channels/{channel}/journal"
+            "Get Journal."
           ]
         }
       },
@@ -20651,30 +20651,30 @@ export class InfomaniakVod implements INodeType {
       "options": [
         {
           "name": "List Labels.",
-          "value": "GET /2/vod/channels/{channel}/labels"
+          "value": "List Labels."
         },
         {
           "name": "Bulk Attach Labels.",
-          "value": "POST /2/vod/channels/{channel}/labels"
+          "value": "Bulk Attach Labels."
         },
         {
           "name": "Bulk Delete Labels.",
-          "value": "DELETE /2/vod/channels/{channel}/labels"
+          "value": "Bulk Delete Labels."
         },
         {
           "name": "Show Label Details.",
-          "value": "GET /2/vod/labels/{genericLabel}"
+          "value": "Show Label Details."
         },
         {
           "name": "Update Label.",
-          "value": "PUT /2/vod/labels/{genericLabel}"
+          "value": "Update Label."
         },
         {
           "name": "Delete Label.",
-          "value": "DELETE /2/vod/labels/{genericLabel}"
+          "value": "Delete Label."
         }
       ],
-      "default": "GET /2/vod/channels/{channel}/labels",
+      "default": "List Labels.",
       "noDataExpression": true
     },
     {
@@ -20688,7 +20688,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Label"
           ],
           "operation": [
-            "GET /2/vod/channels/{channel}/labels"
+            "List Labels."
           ]
         }
       },
@@ -20707,7 +20707,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Label"
           ],
           "operation": [
-            "GET /2/vod/channels/{channel}/labels"
+            "List Labels."
           ]
         }
       },
@@ -20752,7 +20752,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Label"
           ],
           "operation": [
-            "POST /2/vod/channels/{channel}/labels"
+            "Bulk Attach Labels."
           ]
         }
       },
@@ -20771,7 +20771,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Label"
           ],
           "operation": [
-            "POST /2/vod/channels/{channel}/labels"
+            "Bulk Attach Labels."
           ]
         }
       },
@@ -20808,7 +20808,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Label"
           ],
           "operation": [
-            "DELETE /2/vod/channels/{channel}/labels"
+            "Bulk Delete Labels."
           ]
         }
       },
@@ -20826,7 +20826,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Label"
           ],
           "operation": [
-            "DELETE /2/vod/channels/{channel}/labels"
+            "Bulk Delete Labels."
           ]
         }
       },
@@ -20843,7 +20843,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Label"
           ],
           "operation": [
-            "GET /2/vod/labels/{genericLabel}"
+            "Show Label Details."
           ]
         }
       },
@@ -20861,7 +20861,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Label"
           ],
           "operation": [
-            "PUT /2/vod/labels/{genericLabel}"
+            "Update Label."
           ]
         }
       },
@@ -20880,7 +20880,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Label"
           ],
           "operation": [
-            "PUT /2/vod/labels/{genericLabel}"
+            "Update Label."
           ]
         }
       },
@@ -20911,7 +20911,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Label"
           ],
           "operation": [
-            "DELETE /2/vod/labels/{genericLabel}"
+            "Delete Label."
           ]
         }
       },
@@ -20932,14 +20932,14 @@ export class InfomaniakVod implements INodeType {
       "options": [
         {
           "name": "List Languages.",
-          "value": "GET /2/vod/lang"
+          "value": "List Languages."
         },
         {
           "name": "Show Language Details.",
-          "value": "GET /2/vod/lang/{lang}"
+          "value": "Show Language Details."
         }
       ],
-      "default": "GET /2/vod/lang",
+      "default": "List Languages.",
       "noDataExpression": true
     },
     {
@@ -20954,7 +20954,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Language"
           ],
           "operation": [
-            "GET /2/vod/lang"
+            "List Languages."
           ]
         }
       },
@@ -20999,7 +20999,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Language"
           ],
           "operation": [
-            "GET /2/vod/lang/{lang}"
+            "Show Language Details."
           ]
         }
       },
@@ -21013,17 +21013,17 @@ export class InfomaniakVod implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "V3 > LinkedSvc"
+            "V3 > Linked Svc"
           ]
         }
       },
       "options": [
         {
           "name": "Sync Linked Services.",
-          "value": "POST /2/vod/channels/{channel}/services"
+          "value": "Sync Linked Services."
         }
       ],
-      "default": "POST /2/vod/channels/{channel}/services",
+      "default": "Sync Linked Services.",
       "noDataExpression": true
     },
     {
@@ -21034,10 +21034,10 @@ export class InfomaniakVod implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "V3 > LinkedSvc"
+            "V3 > Linked Svc"
           ],
           "operation": [
-            "POST /2/vod/channels/{channel}/services"
+            "Sync Linked Services."
           ]
         }
       },
@@ -21053,10 +21053,10 @@ export class InfomaniakVod implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "V3 > LinkedSvc"
+            "V3 > Linked Svc"
           ],
           "operation": [
-            "POST /2/vod/channels/{channel}/services"
+            "Sync Linked Services."
           ]
         }
       },
@@ -21083,30 +21083,30 @@ export class InfomaniakVod implements INodeType {
       "options": [
         {
           "name": "List Logos.",
-          "value": "GET /2/vod/channels/{channel}/logos"
+          "value": "List Logos."
         },
         {
           "name": "Create A New Logo.",
-          "value": "POST /2/vod/channels/{channel}/logos"
+          "value": "Create A New Logo."
         },
         {
           "name": "Bulk Delete Logos.",
-          "value": "DELETE /2/vod/channels/{channel}/logos"
+          "value": "Bulk Delete Logos."
         },
         {
           "name": "Show Logo Details.",
-          "value": "GET /2/vod/logos/{logo}"
+          "value": "Show Logo Details."
         },
         {
           "name": "Update Logo Details.",
-          "value": "PUT /2/vod/logos/{logo}"
+          "value": "Update Logo Details."
         },
         {
           "name": "Delete A Logo.",
-          "value": "DELETE /2/vod/logos/{logo}"
+          "value": "Delete A Logo."
         }
       ],
-      "default": "GET /2/vod/channels/{channel}/logos",
+      "default": "List Logos.",
       "noDataExpression": true
     },
     {
@@ -21120,7 +21120,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Logo"
           ],
           "operation": [
-            "GET /2/vod/channels/{channel}/logos"
+            "List Logos."
           ]
         }
       },
@@ -21139,7 +21139,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Logo"
           ],
           "operation": [
-            "GET /2/vod/channels/{channel}/logos"
+            "List Logos."
           ]
         }
       },
@@ -21184,7 +21184,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Logo"
           ],
           "operation": [
-            "POST /2/vod/channels/{channel}/logos"
+            "Create A New Logo."
           ]
         }
       },
@@ -21202,7 +21202,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Logo"
           ],
           "operation": [
-            "POST /2/vod/channels/{channel}/logos"
+            "Create A New Logo."
           ]
         }
       },
@@ -21220,7 +21220,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Logo"
           ],
           "operation": [
-            "POST /2/vod/channels/{channel}/logos"
+            "Create A New Logo."
           ]
         }
       },
@@ -21287,7 +21287,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Logo"
           ],
           "operation": [
-            "DELETE /2/vod/channels/{channel}/logos"
+            "Bulk Delete Logos."
           ]
         }
       },
@@ -21306,7 +21306,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Logo"
           ],
           "operation": [
-            "DELETE /2/vod/channels/{channel}/logos"
+            "Bulk Delete Logos."
           ]
         }
       },
@@ -21366,7 +21366,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Logo"
           ],
           "operation": [
-            "GET /2/vod/logos/{logo}"
+            "Show Logo Details."
           ]
         }
       },
@@ -21384,7 +21384,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Logo"
           ],
           "operation": [
-            "PUT /2/vod/logos/{logo}"
+            "Update Logo Details."
           ]
         }
       },
@@ -21403,7 +21403,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Logo"
           ],
           "operation": [
-            "PUT /2/vod/logos/{logo}"
+            "Update Logo Details."
           ]
         }
       },
@@ -21470,7 +21470,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Logo"
           ],
           "operation": [
-            "DELETE /2/vod/logos/{logo}"
+            "Delete A Logo."
           ]
         }
       },
@@ -21491,54 +21491,54 @@ export class InfomaniakVod implements INodeType {
       "options": [
         {
           "name": "List Media.",
-          "value": "GET /2/vod/channels/{channel}/media"
+          "value": "List Media."
         },
         {
           "name": "Get Media Statuses Counters.",
-          "value": "GET /2/vod/channels/{channel}/media/status"
+          "value": "Get Media Statuses Counters."
         },
         {
           "name": "Show Media Details.",
-          "value": "GET /2/vod/media/{media}"
+          "value": "Show Media Details."
         },
         {
           "name": "Update Media Details.",
-          "value": "PUT /2/vod/media/{media}"
+          "value": "Update Media Details."
         },
         {
           "name": "Get Metadata From A Media.",
-          "value": "GET /2/vod/media/{media}/metadata"
+          "value": "Get Metadata From A Media."
         },
         {
           "name": "Update Metadata From A Media.",
-          "value": "PUT /2/vod/media/{media}/metadata"
+          "value": "Update Metadata From A Media."
         },
         {
           "name": "Deletes Metadata From A Media.",
-          "value": "DELETE /2/vod/media/{media}/metadata"
+          "value": "Deletes Metadata From A Media."
         },
         {
           "name": "Share Media.",
-          "value": "POST /2/vod/media/{media}/shares"
+          "value": "Share Media."
         },
         {
           "name": "Bulk Delete Media Shares.",
-          "value": "DELETE /2/vod/media/{media}/shares"
+          "value": "Bulk Delete Media Shares."
         },
         {
           "name": "Attach Suggested Media.",
-          "value": "POST /2/vod/media/{media}/suggest"
+          "value": "Attach Suggested Media."
         },
         {
           "name": "Attach Labels To A Media.",
-          "value": "PUT /2/vod/media/{media}/labels"
+          "value": "Attach Labels To A Media."
         },
         {
           "name": "Detach Labels From A Media.",
-          "value": "DELETE /2/vod/media/{media}/labels"
+          "value": "Detach Labels From A Media."
         }
       ],
-      "default": "GET /2/vod/channels/{channel}/media",
+      "default": "List Media.",
       "noDataExpression": true
     },
     {
@@ -21552,7 +21552,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Media"
           ],
           "operation": [
-            "GET /2/vod/channels/{channel}/media"
+            "List Media."
           ]
         }
       },
@@ -21571,7 +21571,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Media"
           ],
           "operation": [
-            "GET /2/vod/channels/{channel}/media"
+            "List Media."
           ]
         }
       },
@@ -21616,7 +21616,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Media"
           ],
           "operation": [
-            "GET /2/vod/channels/{channel}/media/status"
+            "Get Media Statuses Counters."
           ]
         }
       },
@@ -21635,7 +21635,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Media"
           ],
           "operation": [
-            "GET /2/vod/channels/{channel}/media/status"
+            "Get Media Statuses Counters."
           ]
         }
       },
@@ -21680,7 +21680,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Media"
           ],
           "operation": [
-            "GET /2/vod/media/{media}"
+            "Show Media Details."
           ]
         }
       },
@@ -21698,7 +21698,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Media"
           ],
           "operation": [
-            "PUT /2/vod/media/{media}"
+            "Update Media Details."
           ]
         }
       },
@@ -21717,7 +21717,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Media"
           ],
           "operation": [
-            "PUT /2/vod/media/{media}"
+            "Update Media Details."
           ]
         }
       },
@@ -21790,7 +21790,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Media"
           ],
           "operation": [
-            "GET /2/vod/media/{media}/metadata"
+            "Get Metadata From A Media."
           ]
         }
       },
@@ -21809,7 +21809,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Media"
           ],
           "operation": [
-            "GET /2/vod/media/{media}/metadata"
+            "Get Metadata From A Media."
           ]
         }
       },
@@ -21854,7 +21854,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Media"
           ],
           "operation": [
-            "PUT /2/vod/media/{media}/metadata"
+            "Update Metadata From A Media."
           ]
         }
       },
@@ -21873,7 +21873,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Media"
           ],
           "operation": [
-            "PUT /2/vod/media/{media}/metadata"
+            "Update Metadata From A Media."
           ]
         }
       },
@@ -21922,7 +21922,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Media"
           ],
           "operation": [
-            "DELETE /2/vod/media/{media}/metadata"
+            "Deletes Metadata From A Media."
           ]
         }
       },
@@ -21940,7 +21940,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Media"
           ],
           "operation": [
-            "DELETE /2/vod/media/{media}/metadata"
+            "Deletes Metadata From A Media."
           ]
         }
       },
@@ -21957,7 +21957,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Media"
           ],
           "operation": [
-            "POST /2/vod/media/{media}/shares"
+            "Share Media."
           ]
         }
       },
@@ -21976,7 +21976,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Media"
           ],
           "operation": [
-            "POST /2/vod/media/{media}/shares"
+            "Share Media."
           ]
         }
       },
@@ -22036,7 +22036,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Media"
           ],
           "operation": [
-            "DELETE /2/vod/media/{media}/shares"
+            "Bulk Delete Media Shares."
           ]
         }
       },
@@ -22055,7 +22055,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Media"
           ],
           "operation": [
-            "DELETE /2/vod/media/{media}/shares"
+            "Bulk Delete Media Shares."
           ]
         }
       },
@@ -22079,7 +22079,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Media"
           ],
           "operation": [
-            "POST /2/vod/media/{media}/suggest"
+            "Attach Suggested Media."
           ]
         }
       },
@@ -22098,7 +22098,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Media"
           ],
           "operation": [
-            "POST /2/vod/media/{media}/suggest"
+            "Attach Suggested Media."
           ]
         }
       },
@@ -22123,7 +22123,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Media"
           ],
           "operation": [
-            "PUT /2/vod/media/{media}/labels"
+            "Attach Labels To A Media."
           ]
         }
       },
@@ -22141,7 +22141,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Media"
           ],
           "operation": [
-            "PUT /2/vod/media/{media}/labels"
+            "Attach Labels To A Media."
           ]
         }
       },
@@ -22158,7 +22158,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Media"
           ],
           "operation": [
-            "DELETE /2/vod/media/{media}/labels"
+            "Detach Labels From A Media."
           ]
         }
       },
@@ -22176,7 +22176,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Media"
           ],
           "operation": [
-            "DELETE /2/vod/media/{media}/labels"
+            "Detach Labels From A Media."
           ]
         }
       },
@@ -22196,26 +22196,26 @@ export class InfomaniakVod implements INodeType {
       "options": [
         {
           "name": "List Metadata.",
-          "value": "GET /2/vod/channels/{channel}/metadata"
+          "value": "List Metadata."
         },
         {
           "name": "Bulk Attach Metadata.",
-          "value": "POST /2/vod/channels/{channel}/metadata"
+          "value": "Bulk Attach Metadata."
         },
         {
           "name": "Bulk Delete Metadata.",
-          "value": "DELETE /2/vod/channels/{channel}/metadata"
+          "value": "Bulk Delete Metadata."
         },
         {
           "name": "Update Metadata.",
-          "value": "PUT /2/vod/metadata/{metadata}"
+          "value": "Update Metadata."
         },
         {
           "name": "Delete Metadata.",
-          "value": "DELETE /2/vod/metadata/{metadata}"
+          "value": "Delete Metadata."
         }
       ],
-      "default": "GET /2/vod/channels/{channel}/metadata",
+      "default": "List Metadata.",
       "noDataExpression": true
     },
     {
@@ -22229,7 +22229,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Metadata"
           ],
           "operation": [
-            "GET /2/vod/channels/{channel}/metadata"
+            "List Metadata."
           ]
         }
       },
@@ -22247,7 +22247,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Metadata"
           ],
           "operation": [
-            "GET /2/vod/channels/{channel}/metadata"
+            "List Metadata."
           ]
         }
       },
@@ -22292,7 +22292,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Metadata"
           ],
           "operation": [
-            "POST /2/vod/channels/{channel}/metadata"
+            "Bulk Attach Metadata."
           ]
         }
       },
@@ -22311,7 +22311,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Metadata"
           ],
           "operation": [
-            "POST /2/vod/channels/{channel}/metadata"
+            "Bulk Attach Metadata."
           ]
         }
       },
@@ -22348,7 +22348,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Metadata"
           ],
           "operation": [
-            "DELETE /2/vod/channels/{channel}/metadata"
+            "Bulk Delete Metadata."
           ]
         }
       },
@@ -22366,7 +22366,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Metadata"
           ],
           "operation": [
-            "DELETE /2/vod/channels/{channel}/metadata"
+            "Bulk Delete Metadata."
           ]
         }
       },
@@ -22383,7 +22383,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Metadata"
           ],
           "operation": [
-            "PUT /2/vod/metadata/{metadata}"
+            "Update Metadata."
           ]
         }
       },
@@ -22402,7 +22402,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Metadata"
           ],
           "operation": [
-            "PUT /2/vod/metadata/{metadata}"
+            "Update Metadata."
           ]
         }
       },
@@ -22433,7 +22433,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Metadata"
           ],
           "operation": [
-            "DELETE /2/vod/metadata/{metadata}"
+            "Delete Metadata."
           ]
         }
       },
@@ -22454,46 +22454,46 @@ export class InfomaniakVod implements INodeType {
       "options": [
         {
           "name": "List Mixtapes.",
-          "value": "GET /2/vod/channels/{channel}/mixtapes"
+          "value": "List Mixtapes."
         },
         {
           "name": "Create A Mixtape.",
-          "value": "POST /2/vod/channels/{channel}/mixtapes"
+          "value": "Create A Mixtape."
         },
         {
           "name": "Bulk Delete Mixtapes.",
-          "value": "DELETE /2/vod/channels/{channel}/mixtapes"
+          "value": "Bulk Delete Mixtapes."
         },
         {
           "name": "Show Mixtape Details.",
-          "value": "GET /2/vod/mixtapes/{mixtape}"
+          "value": "Show Mixtape Details."
         },
         {
           "name": "Update A Mixtape.",
-          "value": "PUT /2/vod/mixtapes/{mixtape}"
+          "value": "Update A Mixtape."
         },
         {
           "name": "Delete A Mixtape.",
-          "value": "DELETE /2/vod/mixtapes/{mixtape}"
+          "value": "Delete A Mixtape."
         },
         {
           "name": "List Media In Mixtape.",
-          "value": "GET /2/vod/mixtapes/{mixtape}/media"
+          "value": "List Media In Mixtape."
         },
         {
           "name": "Attach Direct Media.",
-          "value": "PUT /2/vod/mixtapes/{mixtape}/media"
+          "value": "Attach Direct Media."
         },
         {
           "name": "Detach Direct Media.",
-          "value": "DELETE /2/vod/mixtapes/{mixtape}/media"
+          "value": "Detach Direct Media."
         },
         {
           "name": "Move A Manually Attached Media In Mixtape.",
-          "value": "POST /2/vod/mixtapes/{mixtape}/media/{media}/move"
+          "value": "Move A Manually Attached Media In Mixtape."
         }
       ],
-      "default": "GET /2/vod/channels/{channel}/mixtapes",
+      "default": "List Mixtapes.",
       "noDataExpression": true
     },
     {
@@ -22507,7 +22507,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Mixtape"
           ],
           "operation": [
-            "GET /2/vod/channels/{channel}/mixtapes"
+            "List Mixtapes."
           ]
         }
       },
@@ -22526,7 +22526,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Mixtape"
           ],
           "operation": [
-            "GET /2/vod/channels/{channel}/mixtapes"
+            "List Mixtapes."
           ]
         }
       },
@@ -22571,7 +22571,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Mixtape"
           ],
           "operation": [
-            "POST /2/vod/channels/{channel}/mixtapes"
+            "Create A Mixtape."
           ]
         }
       },
@@ -22589,7 +22589,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Mixtape"
           ],
           "operation": [
-            "POST /2/vod/channels/{channel}/mixtapes"
+            "Create A Mixtape."
           ]
         }
       },
@@ -22608,7 +22608,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Mixtape"
           ],
           "operation": [
-            "POST /2/vod/channels/{channel}/mixtapes"
+            "Create A Mixtape."
           ]
         }
       },
@@ -22660,7 +22660,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Mixtape"
           ],
           "operation": [
-            "DELETE /2/vod/channels/{channel}/mixtapes"
+            "Bulk Delete Mixtapes."
           ]
         }
       },
@@ -22678,7 +22678,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Mixtape"
           ],
           "operation": [
-            "DELETE /2/vod/channels/{channel}/mixtapes"
+            "Bulk Delete Mixtapes."
           ]
         }
       },
@@ -22695,7 +22695,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Mixtape"
           ],
           "operation": [
-            "GET /2/vod/mixtapes/{mixtape}"
+            "Show Mixtape Details."
           ]
         }
       },
@@ -22713,7 +22713,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Mixtape"
           ],
           "operation": [
-            "PUT /2/vod/mixtapes/{mixtape}"
+            "Update A Mixtape."
           ]
         }
       },
@@ -22732,7 +22732,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Mixtape"
           ],
           "operation": [
-            "PUT /2/vod/mixtapes/{mixtape}"
+            "Update A Mixtape."
           ]
         }
       },
@@ -22791,7 +22791,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Mixtape"
           ],
           "operation": [
-            "DELETE /2/vod/mixtapes/{mixtape}"
+            "Delete A Mixtape."
           ]
         }
       },
@@ -22809,7 +22809,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Mixtape"
           ],
           "operation": [
-            "GET /2/vod/mixtapes/{mixtape}/media"
+            "List Media In Mixtape."
           ]
         }
       },
@@ -22828,7 +22828,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Mixtape"
           ],
           "operation": [
-            "GET /2/vod/mixtapes/{mixtape}/media"
+            "List Media In Mixtape."
           ]
         }
       },
@@ -22873,7 +22873,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Mixtape"
           ],
           "operation": [
-            "PUT /2/vod/mixtapes/{mixtape}/media"
+            "Attach Direct Media."
           ]
         }
       },
@@ -22892,7 +22892,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Mixtape"
           ],
           "operation": [
-            "PUT /2/vod/mixtapes/{mixtape}/media"
+            "Attach Direct Media."
           ]
         }
       },
@@ -22930,7 +22930,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Mixtape"
           ],
           "operation": [
-            "DELETE /2/vod/mixtapes/{mixtape}/media"
+            "Detach Direct Media."
           ]
         }
       },
@@ -22949,7 +22949,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Mixtape"
           ],
           "operation": [
-            "DELETE /2/vod/mixtapes/{mixtape}/media"
+            "Detach Direct Media."
           ]
         }
       },
@@ -22973,7 +22973,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Mixtape"
           ],
           "operation": [
-            "POST /2/vod/mixtapes/{mixtape}/media/{media}/move"
+            "Move A Manually Attached Media In Mixtape."
           ]
         }
       },
@@ -22991,7 +22991,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Mixtape"
           ],
           "operation": [
-            "POST /2/vod/mixtapes/{mixtape}/media/{media}/move"
+            "Move A Manually Attached Media In Mixtape."
           ]
         }
       },
@@ -23010,7 +23010,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Mixtape"
           ],
           "operation": [
-            "POST /2/vod/mixtapes/{mixtape}/media/{media}/move"
+            "Move A Manually Attached Media In Mixtape."
           ]
         }
       },
@@ -23055,7 +23055,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Mixtape"
           ],
           "operation": [
-            "POST /2/vod/mixtapes/{mixtape}/media/{media}/move"
+            "Move A Manually Attached Media In Mixtape."
           ]
         }
       },
@@ -23076,30 +23076,30 @@ export class InfomaniakVod implements INodeType {
       "options": [
         {
           "name": "List Players.",
-          "value": "GET /2/vod/channels/{channel}/players"
+          "value": "List Players."
         },
         {
           "name": "Create Player.",
-          "value": "POST /2/vod/channels/{channel}/players"
+          "value": "Create Player."
         },
         {
           "name": "Bulk Delete Players.",
-          "value": "DELETE /2/vod/channels/{channel}/players"
+          "value": "Bulk Delete Players."
         },
         {
           "name": "Show Player Details.",
-          "value": "GET /2/vod/players/{player}"
+          "value": "Show Player Details."
         },
         {
           "name": "Update Player Details.",
-          "value": "PUT /2/vod/players/{player}"
+          "value": "Update Player Details."
         },
         {
           "name": "Delete Player.",
-          "value": "DELETE /2/vod/players/{player}"
+          "value": "Delete Player."
         }
       ],
-      "default": "GET /2/vod/channels/{channel}/players",
+      "default": "List Players.",
       "noDataExpression": true
     },
     {
@@ -23113,7 +23113,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Player"
           ],
           "operation": [
-            "GET /2/vod/channels/{channel}/players"
+            "List Players."
           ]
         }
       },
@@ -23132,7 +23132,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Player"
           ],
           "operation": [
-            "GET /2/vod/channels/{channel}/players"
+            "List Players."
           ]
         }
       },
@@ -23177,7 +23177,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Player"
           ],
           "operation": [
-            "POST /2/vod/channels/{channel}/players"
+            "Create Player."
           ]
         }
       },
@@ -23195,7 +23195,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Player"
           ],
           "operation": [
-            "POST /2/vod/channels/{channel}/players"
+            "Create Player."
           ]
         }
       },
@@ -23214,7 +23214,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Player"
           ],
           "operation": [
-            "POST /2/vod/channels/{channel}/players"
+            "Create Player."
           ]
         }
       },
@@ -23747,7 +23747,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Player"
           ],
           "operation": [
-            "DELETE /2/vod/channels/{channel}/players"
+            "Bulk Delete Players."
           ]
         }
       },
@@ -23765,7 +23765,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Player"
           ],
           "operation": [
-            "DELETE /2/vod/channels/{channel}/players"
+            "Bulk Delete Players."
           ]
         }
       },
@@ -23782,7 +23782,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Player"
           ],
           "operation": [
-            "GET /2/vod/players/{player}"
+            "Show Player Details."
           ]
         }
       },
@@ -23800,7 +23800,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Player"
           ],
           "operation": [
-            "PUT /2/vod/players/{player}"
+            "Update Player Details."
           ]
         }
       },
@@ -23819,7 +23819,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Player"
           ],
           "operation": [
-            "PUT /2/vod/players/{player}"
+            "Update Player Details."
           ]
         }
       },
@@ -24359,7 +24359,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Player"
           ],
           "operation": [
-            "DELETE /2/vod/players/{player}"
+            "Delete Player."
           ]
         }
       },
@@ -24380,18 +24380,18 @@ export class InfomaniakVod implements INodeType {
       "options": [
         {
           "name": "List Playlists.",
-          "value": "GET /2/vod/channels/{channel}/playlists"
+          "value": "List Playlists."
         },
         {
           "name": "List Media In Playlist.",
-          "value": "GET /2/vod/playlists/{playlist}/media"
+          "value": "List Media In Playlist."
         },
         {
           "name": "Show Playlist Details.",
-          "value": "GET /2/vod/playlists/{playlist}"
+          "value": "Show Playlist Details."
         }
       ],
-      "default": "GET /2/vod/channels/{channel}/playlists",
+      "default": "List Playlists.",
       "noDataExpression": true
     },
     {
@@ -24405,7 +24405,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Playlist"
           ],
           "operation": [
-            "GET /2/vod/channels/{channel}/playlists"
+            "List Playlists."
           ]
         }
       },
@@ -24424,7 +24424,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Playlist"
           ],
           "operation": [
-            "GET /2/vod/channels/{channel}/playlists"
+            "List Playlists."
           ]
         }
       },
@@ -24469,7 +24469,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Playlist"
           ],
           "operation": [
-            "GET /2/vod/playlists/{playlist}/media"
+            "List Media In Playlist."
           ]
         }
       },
@@ -24488,7 +24488,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Playlist"
           ],
           "operation": [
-            "GET /2/vod/playlists/{playlist}/media"
+            "List Media In Playlist."
           ]
         }
       },
@@ -24533,7 +24533,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Playlist"
           ],
           "operation": [
-            "GET /2/vod/playlists/{playlist}"
+            "Show Playlist Details."
           ]
         }
       },
@@ -24554,14 +24554,14 @@ export class InfomaniakVod implements INodeType {
       "options": [
         {
           "name": "Get Vversion",
-          "value": "GET /2/vod/reflect/endpoints/v{version}/{endpoint?}"
+          "value": "Get Vversion"
         },
         {
           "name": "Create Vversion",
-          "value": "POST /2/vod/reflect/endpoints/v{version}/{endpoint}"
+          "value": "Create Vversion"
         }
       ],
-      "default": "GET /2/vod/reflect/endpoints/v{version}/{endpoint?}",
+      "default": "Get Vversion",
       "noDataExpression": true
     },
     {
@@ -24575,7 +24575,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Reflect"
           ],
           "operation": [
-            "GET /2/vod/reflect/endpoints/v{version}/{endpoint?}"
+            "Get Vversion"
           ]
         }
       },
@@ -24592,7 +24592,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Reflect"
           ],
           "operation": [
-            "GET /2/vod/reflect/endpoints/v{version}/{endpoint?}"
+            "Get Vversion"
           ]
         }
       },
@@ -24609,7 +24609,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Reflect"
           ],
           "operation": [
-            "POST /2/vod/reflect/endpoints/v{version}/{endpoint}"
+            "Create Vversion"
           ]
         }
       },
@@ -24626,7 +24626,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Reflect"
           ],
           "operation": [
-            "POST /2/vod/reflect/endpoints/v{version}/{endpoint}"
+            "Create Vversion"
           ]
         }
       },
@@ -24646,50 +24646,50 @@ export class InfomaniakVod implements INodeType {
       "options": [
         {
           "name": "Download Media Source.",
-          "value": "GET /2/vod/res/media/{media}"
+          "value": "Download Media Source."
         },
         {
           "name": "Display Thumbnail.",
-          "value": "GET /2/vod/res/thumbnails/{thumbnail}.{format}"
+          "value": "Display Thumbnail."
         },
         {
           "name": "Display Playlist Image.",
-          "value": "GET /2/vod/res/playlists/{playlist}.{format}"
+          "value": "Display Playlist Image."
         },
         {
           "name": "Display Share Image.",
-          "value": "GET /2/vod/res/shares/{share}.{image}.{format}"
+          "value": "Display Share Image."
         },
         {
           "name": "Render Share Link.",
-          "value": "GET /2/vod/res/shares/{share}.{format?}"
+          "value": "Render Share Link."
         },
         {
           "name": "Display Player Image.",
-          "value": "GET /2/vod/res/players/{player}.{image}.{format}"
+          "value": "Display Player Image."
         },
         {
           "name": "Display A Logo Image.",
-          "value": "GET /2/vod/res/logos/{logo}.{format}"
+          "value": "Display A Logo Image."
         },
         {
           "name": "Render Chapter.",
-          "value": "GET /2/vod/res/media/{media}/chapters.{format}"
+          "value": "Render Chapter."
         },
         {
           "name": "Display Chapter Image.",
-          "value": "GET /2/vod/res/chapters/{chapter}.{format}"
+          "value": "Display Chapter Image."
         },
         {
           "name": "Render Subtitle.",
-          "value": "GET /2/vod/res/subtitles/{subtitle}.{format}"
+          "value": "Render Subtitle."
         },
         {
           "name": "List Suggested Media.",
-          "value": "GET /2/vod/res/suggestions/{target}"
+          "value": "List Suggested Media."
         }
       ],
-      "default": "GET /2/vod/res/media/{media}",
+      "default": "Download Media Source.",
       "noDataExpression": true
     },
     {
@@ -24703,7 +24703,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Resources"
           ],
           "operation": [
-            "GET /2/vod/res/media/{media}"
+            "Download Media Source."
           ]
         }
       },
@@ -24721,7 +24721,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Resources"
           ],
           "operation": [
-            "GET /2/vod/res/thumbnails/{thumbnail}.{format}"
+            "Display Thumbnail."
           ]
         }
       },
@@ -24739,7 +24739,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Resources"
           ],
           "operation": [
-            "GET /2/vod/res/thumbnails/{thumbnail}.{format}"
+            "Display Thumbnail."
           ]
         }
       },
@@ -24756,7 +24756,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Resources"
           ],
           "operation": [
-            "GET /2/vod/res/playlists/{playlist}.{format}"
+            "Display Playlist Image."
           ]
         }
       },
@@ -24774,7 +24774,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Resources"
           ],
           "operation": [
-            "GET /2/vod/res/playlists/{playlist}.{format}"
+            "Display Playlist Image."
           ]
         }
       },
@@ -24791,7 +24791,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Resources"
           ],
           "operation": [
-            "GET /2/vod/res/shares/{share}.{image}.{format}"
+            "Display Share Image."
           ]
         }
       },
@@ -24809,7 +24809,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Resources"
           ],
           "operation": [
-            "GET /2/vod/res/shares/{share}.{image}.{format}"
+            "Display Share Image."
           ]
         }
       },
@@ -24827,7 +24827,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Resources"
           ],
           "operation": [
-            "GET /2/vod/res/shares/{share}.{image}.{format}"
+            "Display Share Image."
           ]
         }
       },
@@ -24844,7 +24844,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Resources"
           ],
           "operation": [
-            "GET /2/vod/res/shares/{share}.{format?}"
+            "Render Share Link."
           ]
         }
       },
@@ -24862,7 +24862,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Resources"
           ],
           "operation": [
-            "GET /2/vod/res/shares/{share}.{format?}"
+            "Render Share Link."
           ]
         }
       },
@@ -24879,7 +24879,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Resources"
           ],
           "operation": [
-            "GET /2/vod/res/players/{player}.{image}.{format}"
+            "Display Player Image."
           ]
         }
       },
@@ -24897,7 +24897,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Resources"
           ],
           "operation": [
-            "GET /2/vod/res/players/{player}.{image}.{format}"
+            "Display Player Image."
           ]
         }
       },
@@ -24915,7 +24915,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Resources"
           ],
           "operation": [
-            "GET /2/vod/res/players/{player}.{image}.{format}"
+            "Display Player Image."
           ]
         }
       },
@@ -24932,7 +24932,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Resources"
           ],
           "operation": [
-            "GET /2/vod/res/logos/{logo}.{format}"
+            "Display A Logo Image."
           ]
         }
       },
@@ -24950,7 +24950,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Resources"
           ],
           "operation": [
-            "GET /2/vod/res/logos/{logo}.{format}"
+            "Display A Logo Image."
           ]
         }
       },
@@ -24967,7 +24967,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Resources"
           ],
           "operation": [
-            "GET /2/vod/res/media/{media}/chapters.{format}"
+            "Render Chapter."
           ]
         }
       },
@@ -24985,7 +24985,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Resources"
           ],
           "operation": [
-            "GET /2/vod/res/media/{media}/chapters.{format}"
+            "Render Chapter."
           ]
         }
       },
@@ -25003,7 +25003,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Resources"
           ],
           "operation": [
-            "GET /2/vod/res/chapters/{chapter}.{format}"
+            "Display Chapter Image."
           ]
         }
       },
@@ -25021,7 +25021,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Resources"
           ],
           "operation": [
-            "GET /2/vod/res/chapters/{chapter}.{format}"
+            "Display Chapter Image."
           ]
         }
       },
@@ -25038,7 +25038,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Resources"
           ],
           "operation": [
-            "GET /2/vod/res/subtitles/{subtitle}.{format}"
+            "Render Subtitle."
           ]
         }
       },
@@ -25056,7 +25056,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Resources"
           ],
           "operation": [
-            "GET /2/vod/res/subtitles/{subtitle}.{format}"
+            "Render Subtitle."
           ]
         }
       },
@@ -25074,7 +25074,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Resources"
           ],
           "operation": [
-            "GET /2/vod/res/suggestions/{target}"
+            "List Suggested Media."
           ]
         }
       },
@@ -25095,30 +25095,30 @@ export class InfomaniakVod implements INodeType {
       "options": [
         {
           "name": "List Channel Shares.",
-          "value": "GET /2/vod/channels/{channel}/shares"
+          "value": "List Channel Shares."
         },
         {
           "name": "Bulk Delete Shares.",
-          "value": "DELETE /2/vod/channels/{channel}/shares"
+          "value": "Bulk Delete Shares."
         },
         {
           "name": "List Media Shares.",
-          "value": "GET /2/vod/media/{media}/shares"
+          "value": "List Media Shares."
         },
         {
           "name": "Show Share Details.",
-          "value": "GET /2/vod/shares/{share}"
+          "value": "Show Share Details."
         },
         {
           "name": "Update Share Details.",
-          "value": "PUT /2/vod/shares/{share}"
+          "value": "Update Share Details."
         },
         {
           "name": "Delete Share.",
-          "value": "DELETE /2/vod/shares/{share}"
+          "value": "Delete Share."
         }
       ],
-      "default": "GET /2/vod/channels/{channel}/shares",
+      "default": "List Channel Shares.",
       "noDataExpression": true
     },
     {
@@ -25132,7 +25132,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Share"
           ],
           "operation": [
-            "GET /2/vod/channels/{channel}/shares"
+            "List Channel Shares."
           ]
         }
       },
@@ -25151,7 +25151,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Share"
           ],
           "operation": [
-            "GET /2/vod/channels/{channel}/shares"
+            "List Channel Shares."
           ]
         }
       },
@@ -25208,7 +25208,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Share"
           ],
           "operation": [
-            "DELETE /2/vod/channels/{channel}/shares"
+            "Bulk Delete Shares."
           ]
         }
       },
@@ -25227,7 +25227,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Share"
           ],
           "operation": [
-            "DELETE /2/vod/channels/{channel}/shares"
+            "Bulk Delete Shares."
           ]
         }
       },
@@ -25251,7 +25251,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Share"
           ],
           "operation": [
-            "GET /2/vod/media/{media}/shares"
+            "List Media Shares."
           ]
         }
       },
@@ -25270,7 +25270,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Share"
           ],
           "operation": [
-            "GET /2/vod/media/{media}/shares"
+            "List Media Shares."
           ]
         }
       },
@@ -25327,7 +25327,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Share"
           ],
           "operation": [
-            "GET /2/vod/shares/{share}"
+            "Show Share Details."
           ]
         }
       },
@@ -25345,7 +25345,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Share"
           ],
           "operation": [
-            "PUT /2/vod/shares/{share}"
+            "Update Share Details."
           ]
         }
       },
@@ -25364,7 +25364,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Share"
           ],
           "operation": [
-            "PUT /2/vod/shares/{share}"
+            "Update Share Details."
           ]
         }
       },
@@ -25424,7 +25424,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Share"
           ],
           "operation": [
-            "DELETE /2/vod/shares/{share}"
+            "Delete Share."
           ]
         }
       },
@@ -25445,86 +25445,86 @@ export class InfomaniakVod implements INodeType {
       "options": [
         {
           "name": "Get Top Media Statistics.",
-          "value": "GET /2/vod/statistics/{channel}/media/top"
+          "value": "Get Top Media Statistics."
         },
         {
           "name": "Get Media Unique Viewers' Statistics.",
-          "value": "GET /2/vod/statistics/{channel}/media/unique_viewers"
+          "value": "Get Media Unique Viewers' Statistics."
         },
         {
           "name": "Get Media Viewers' Statistics.",
-          "value": "GET /2/vod/statistics/{channel}/media/viewers"
+          "value": "Get Media Viewers' Statistics."
         },
         {
           "name": "Get The Consumption.",
-          "value": "GET /2/vod/statistics/{subject}/consumption"
+          "value": "Get The Consumption."
         },
         {
           "name": "Get The View Time.",
-          "value": "GET /2/vod/statistics/{subject}/view_time"
+          "value": "Get The View Time."
         },
         {
           "name": "Get The Viewers.",
-          "value": "GET /2/vod/statistics/{subject}/viewers"
+          "value": "Get The Viewers."
         },
         {
           "name": "Get The Unique Viewers.",
-          "value": "GET /2/vod/statistics/{subject}/unique_viewers"
+          "value": "Get The Unique Viewers."
         },
         {
           "name": "Get The Average View Time.",
-          "value": "GET /2/vod/statistics/{subject}/average_view_time"
+          "value": "Get The Average View Time."
         },
         {
           "name": "Get Encoding Statistics.",
-          "value": "GET /2/vod/statistics/{subject}/histogram/encodings"
+          "value": "Get Encoding Statistics."
         },
         {
           "name": "Get Browsers Statistics.",
-          "value": "GET /2/vod/statistics/{subject}/histogram/viewers"
+          "value": "Get Browsers Statistics."
         },
         {
           "name": "Get Browsers Statistics.",
-          "value": "GET /2/vod/statistics/{subject}/browsers"
+          "value": "Get Browsers Statistics. (2)"
         },
         {
           "name": "Get Cities Statistics.",
-          "value": "GET /2/vod/statistics/{subject}/cities"
+          "value": "Get Cities Statistics."
         },
         {
           "name": "Get Countries Statistics.",
-          "value": "GET /2/vod/statistics/{subject}/countries"
+          "value": "Get Countries Statistics."
         },
         {
           "name": "Get Operating System Statistics.",
-          "value": "GET /2/vod/statistics/{subject}/operating_systems"
+          "value": "Get Operating System Statistics."
         },
         {
           "name": "Get Playbacks Statistics.",
-          "value": "GET /2/vod/statistics/{subject}/playbacks"
+          "value": "Get Playbacks Statistics."
         },
         {
           "name": "Get Players Statistics.",
-          "value": "GET /2/vod/statistics/{subject}/players"
+          "value": "Get Players Statistics."
         },
         {
           "name": "Get Cluster Statistics.",
-          "value": "GET /2/vod/statistics/{subject}/clusters"
+          "value": "Get Cluster Statistics."
         },
         {
           "name": "Get Viewers Per Encoding Statistics.",
-          "value": "GET /2/vod/statistics/{subject}/viewers_per_encoding"
+          "value": "Get Viewers Per Encoding Statistics."
         },
         {
           "name": "Get Consumed Time Per IP Statistics.",
-          "value": "GET /2/vod/statistics/{subject}/consumed_time_per_ip"
+          "value": "Get Consumed Time Per IP Statistics."
         },
         {
           "name": "Get Consumed Time Per Encoding Statistics.",
-          "value": "GET /2/vod/statistics/{subject}/consumed_time_per_encoding"
+          "value": "Get Consumed Time Per Encoding Statistics."
         }
       ],
-      "default": "GET /2/vod/statistics/{channel}/media/top",
+      "default": "Get Top Media Statistics.",
       "noDataExpression": true
     },
     {
@@ -25538,7 +25538,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Statistics"
           ],
           "operation": [
-            "GET /2/vod/statistics/{channel}/media/top"
+            "Get Top Media Statistics."
           ]
         }
       },
@@ -25557,7 +25557,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Statistics"
           ],
           "operation": [
-            "GET /2/vod/statistics/{channel}/media/top"
+            "Get Top Media Statistics."
           ]
         }
       },
@@ -25627,7 +25627,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Statistics"
           ],
           "operation": [
-            "GET /2/vod/statistics/{channel}/media/unique_viewers"
+            "Get Media Unique Viewers' Statistics."
           ]
         }
       },
@@ -25645,7 +25645,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Statistics"
           ],
           "operation": [
-            "GET /2/vod/statistics/{channel}/media/unique_viewers"
+            "Get Media Unique Viewers' Statistics."
           ]
         }
       },
@@ -25663,7 +25663,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Statistics"
           ],
           "operation": [
-            "GET /2/vod/statistics/{channel}/media/unique_viewers"
+            "Get Media Unique Viewers' Statistics."
           ]
         }
       },
@@ -25699,7 +25699,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Statistics"
           ],
           "operation": [
-            "GET /2/vod/statistics/{channel}/media/viewers"
+            "Get Media Viewers' Statistics."
           ]
         }
       },
@@ -25717,7 +25717,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Statistics"
           ],
           "operation": [
-            "GET /2/vod/statistics/{channel}/media/viewers"
+            "Get Media Viewers' Statistics."
           ]
         }
       },
@@ -25735,7 +25735,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Statistics"
           ],
           "operation": [
-            "GET /2/vod/statistics/{channel}/media/viewers"
+            "Get Media Viewers' Statistics."
           ]
         }
       },
@@ -25771,7 +25771,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Statistics"
           ],
           "operation": [
-            "GET /2/vod/statistics/{subject}/consumption"
+            "Get The Consumption."
           ]
         }
       },
@@ -25790,7 +25790,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Statistics"
           ],
           "operation": [
-            "GET /2/vod/statistics/{subject}/consumption"
+            "Get The Consumption."
           ]
         }
       },
@@ -25832,7 +25832,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Statistics"
           ],
           "operation": [
-            "GET /2/vod/statistics/{subject}/view_time"
+            "Get The View Time."
           ]
         }
       },
@@ -25851,7 +25851,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Statistics"
           ],
           "operation": [
-            "GET /2/vod/statistics/{subject}/view_time"
+            "Get The View Time."
           ]
         }
       },
@@ -25887,7 +25887,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Statistics"
           ],
           "operation": [
-            "GET /2/vod/statistics/{subject}/viewers"
+            "Get The Viewers."
           ]
         }
       },
@@ -25906,7 +25906,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Statistics"
           ],
           "operation": [
-            "GET /2/vod/statistics/{subject}/viewers"
+            "Get The Viewers."
           ]
         }
       },
@@ -25942,7 +25942,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Statistics"
           ],
           "operation": [
-            "GET /2/vod/statistics/{subject}/unique_viewers"
+            "Get The Unique Viewers."
           ]
         }
       },
@@ -25961,7 +25961,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Statistics"
           ],
           "operation": [
-            "GET /2/vod/statistics/{subject}/unique_viewers"
+            "Get The Unique Viewers."
           ]
         }
       },
@@ -25997,7 +25997,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Statistics"
           ],
           "operation": [
-            "GET /2/vod/statistics/{subject}/average_view_time"
+            "Get The Average View Time."
           ]
         }
       },
@@ -26016,7 +26016,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Statistics"
           ],
           "operation": [
-            "GET /2/vod/statistics/{subject}/average_view_time"
+            "Get The Average View Time."
           ]
         }
       },
@@ -26052,7 +26052,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Statistics"
           ],
           "operation": [
-            "GET /2/vod/statistics/{subject}/histogram/encodings"
+            "Get Encoding Statistics."
           ]
         }
       },
@@ -26071,68 +26071,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Statistics"
           ],
           "operation": [
-            "GET /2/vod/statistics/{subject}/histogram/encodings"
-          ]
-        }
-      },
-      "options": [
-        {
-          "displayName": "From",
-          "name": "query_from",
-          "type": "string",
-          "default": ""
-        },
-        {
-          "displayName": "Per",
-          "name": "query_per",
-          "type": "string",
-          "default": ""
-        },
-        {
-          "displayName": "To",
-          "name": "query_to",
-          "type": "string",
-          "default": ""
-        },
-        {
-          "displayName": "Top",
-          "name": "query_top",
-          "type": "number",
-          "default": 0
-        }
-      ]
-    },
-    {
-      "displayName": "Subject",
-      "name": "path_subject",
-      "type": "string",
-      "default": "",
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "V3 > Statistics"
-          ],
-          "operation": [
-            "GET /2/vod/statistics/{subject}/histogram/viewers"
-          ]
-        }
-      },
-      "required": true,
-      "description": "The Sequence unique identifier"
-    },
-    {
-      "displayName": "Additional Query Parameters",
-      "name": "queryParameters",
-      "type": "collection",
-      "placeholder": "Add Parameter",
-      "default": {},
-      "displayOptions": {
-        "show": {
-          "resource": [
-            "V3 > Statistics"
-          ],
-          "operation": [
-            "GET /2/vod/statistics/{subject}/histogram/viewers"
+            "Get Encoding Statistics."
           ]
         }
       },
@@ -26174,7 +26113,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Statistics"
           ],
           "operation": [
-            "GET /2/vod/statistics/{subject}/browsers"
+            "Get Browsers Statistics."
           ]
         }
       },
@@ -26193,7 +26132,68 @@ export class InfomaniakVod implements INodeType {
             "V3 > Statistics"
           ],
           "operation": [
-            "GET /2/vod/statistics/{subject}/browsers"
+            "Get Browsers Statistics."
+          ]
+        }
+      },
+      "options": [
+        {
+          "displayName": "From",
+          "name": "query_from",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "displayName": "Per",
+          "name": "query_per",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "displayName": "To",
+          "name": "query_to",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "displayName": "Top",
+          "name": "query_top",
+          "type": "number",
+          "default": 0
+        }
+      ]
+    },
+    {
+      "displayName": "Subject",
+      "name": "path_subject",
+      "type": "string",
+      "default": "",
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "V3 > Statistics"
+          ],
+          "operation": [
+            "Get Browsers Statistics. (2)"
+          ]
+        }
+      },
+      "required": true,
+      "description": "The Sequence unique identifier"
+    },
+    {
+      "displayName": "Additional Query Parameters",
+      "name": "queryParameters",
+      "type": "collection",
+      "placeholder": "Add Parameter",
+      "default": {},
+      "displayOptions": {
+        "show": {
+          "resource": [
+            "V3 > Statistics"
+          ],
+          "operation": [
+            "Get Browsers Statistics. (2)"
           ]
         }
       },
@@ -26247,7 +26247,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Statistics"
           ],
           "operation": [
-            "GET /2/vod/statistics/{subject}/cities"
+            "Get Cities Statistics."
           ]
         }
       },
@@ -26266,7 +26266,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Statistics"
           ],
           "operation": [
-            "GET /2/vod/statistics/{subject}/cities"
+            "Get Cities Statistics."
           ]
         }
       },
@@ -26320,7 +26320,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Statistics"
           ],
           "operation": [
-            "GET /2/vod/statistics/{subject}/countries"
+            "Get Countries Statistics."
           ]
         }
       },
@@ -26339,7 +26339,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Statistics"
           ],
           "operation": [
-            "GET /2/vod/statistics/{subject}/countries"
+            "Get Countries Statistics."
           ]
         }
       },
@@ -26393,7 +26393,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Statistics"
           ],
           "operation": [
-            "GET /2/vod/statistics/{subject}/operating_systems"
+            "Get Operating System Statistics."
           ]
         }
       },
@@ -26412,7 +26412,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Statistics"
           ],
           "operation": [
-            "GET /2/vod/statistics/{subject}/operating_systems"
+            "Get Operating System Statistics."
           ]
         }
       },
@@ -26466,7 +26466,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Statistics"
           ],
           "operation": [
-            "GET /2/vod/statistics/{subject}/playbacks"
+            "Get Playbacks Statistics."
           ]
         }
       },
@@ -26485,7 +26485,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Statistics"
           ],
           "operation": [
-            "GET /2/vod/statistics/{subject}/playbacks"
+            "Get Playbacks Statistics."
           ]
         }
       },
@@ -26539,7 +26539,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Statistics"
           ],
           "operation": [
-            "GET /2/vod/statistics/{subject}/players"
+            "Get Players Statistics."
           ]
         }
       },
@@ -26558,7 +26558,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Statistics"
           ],
           "operation": [
-            "GET /2/vod/statistics/{subject}/players"
+            "Get Players Statistics."
           ]
         }
       },
@@ -26612,7 +26612,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Statistics"
           ],
           "operation": [
-            "GET /2/vod/statistics/{subject}/clusters"
+            "Get Cluster Statistics."
           ]
         }
       },
@@ -26631,7 +26631,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Statistics"
           ],
           "operation": [
-            "GET /2/vod/statistics/{subject}/clusters"
+            "Get Cluster Statistics."
           ]
         }
       },
@@ -26685,7 +26685,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Statistics"
           ],
           "operation": [
-            "GET /2/vod/statistics/{subject}/viewers_per_encoding"
+            "Get Viewers Per Encoding Statistics."
           ]
         }
       },
@@ -26704,7 +26704,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Statistics"
           ],
           "operation": [
-            "GET /2/vod/statistics/{subject}/viewers_per_encoding"
+            "Get Viewers Per Encoding Statistics."
           ]
         }
       },
@@ -26758,7 +26758,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Statistics"
           ],
           "operation": [
-            "GET /2/vod/statistics/{subject}/consumed_time_per_ip"
+            "Get Consumed Time Per IP Statistics."
           ]
         }
       },
@@ -26777,7 +26777,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Statistics"
           ],
           "operation": [
-            "GET /2/vod/statistics/{subject}/consumed_time_per_ip"
+            "Get Consumed Time Per IP Statistics."
           ]
         }
       },
@@ -26831,7 +26831,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Statistics"
           ],
           "operation": [
-            "GET /2/vod/statistics/{subject}/consumed_time_per_encoding"
+            "Get Consumed Time Per Encoding Statistics."
           ]
         }
       },
@@ -26850,7 +26850,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Statistics"
           ],
           "operation": [
-            "GET /2/vod/statistics/{subject}/consumed_time_per_encoding"
+            "Get Consumed Time Per Encoding Statistics."
           ]
         }
       },
@@ -26907,30 +26907,30 @@ export class InfomaniakVod implements INodeType {
       "options": [
         {
           "name": "List Subtitles.",
-          "value": "GET /2/vod/media/{media}/subtitles"
+          "value": "List Subtitles."
         },
         {
           "name": "Create Subtitle.",
-          "value": "POST /2/vod/media/{media}/subtitles"
+          "value": "Create Subtitle."
         },
         {
           "name": "Bulk Delete Subtitles.",
-          "value": "DELETE /2/vod/media/{media}/subtitles"
+          "value": "Bulk Delete Subtitles."
         },
         {
           "name": "Show Subtitle Details.",
-          "value": "GET /2/vod/subtitles/{subtitle}"
+          "value": "Show Subtitle Details."
         },
         {
           "name": "Update Subtitle Details.",
-          "value": "PUT /2/vod/subtitles/{subtitle}"
+          "value": "Update Subtitle Details."
         },
         {
           "name": "Delete A Subtitle.",
-          "value": "DELETE /2/vod/subtitles/{subtitle}"
+          "value": "Delete A Subtitle."
         }
       ],
-      "default": "GET /2/vod/media/{media}/subtitles",
+      "default": "List Subtitles.",
       "noDataExpression": true
     },
     {
@@ -26944,7 +26944,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Subtitle"
           ],
           "operation": [
-            "GET /2/vod/media/{media}/subtitles"
+            "List Subtitles."
           ]
         }
       },
@@ -26963,7 +26963,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Subtitle"
           ],
           "operation": [
-            "GET /2/vod/media/{media}/subtitles"
+            "List Subtitles."
           ]
         }
       },
@@ -27008,7 +27008,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Subtitle"
           ],
           "operation": [
-            "POST /2/vod/media/{media}/subtitles"
+            "Create Subtitle."
           ]
         }
       },
@@ -27025,7 +27025,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Subtitle"
           ],
           "operation": [
-            "POST /2/vod/media/{media}/subtitles"
+            "Create Subtitle."
           ]
         }
       },
@@ -27044,7 +27044,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Subtitle"
           ],
           "operation": [
-            "POST /2/vod/media/{media}/subtitles"
+            "Create Subtitle."
           ]
         }
       },
@@ -27096,7 +27096,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Subtitle"
           ],
           "operation": [
-            "DELETE /2/vod/media/{media}/subtitles"
+            "Bulk Delete Subtitles."
           ]
         }
       },
@@ -27114,7 +27114,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Subtitle"
           ],
           "operation": [
-            "DELETE /2/vod/media/{media}/subtitles"
+            "Bulk Delete Subtitles."
           ]
         }
       },
@@ -27131,7 +27131,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Subtitle"
           ],
           "operation": [
-            "GET /2/vod/subtitles/{subtitle}"
+            "Show Subtitle Details."
           ]
         }
       },
@@ -27149,7 +27149,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Subtitle"
           ],
           "operation": [
-            "PUT /2/vod/subtitles/{subtitle}"
+            "Update Subtitle Details."
           ]
         }
       },
@@ -27168,7 +27168,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Subtitle"
           ],
           "operation": [
-            "PUT /2/vod/subtitles/{subtitle}"
+            "Update Subtitle Details."
           ]
         }
       },
@@ -27214,7 +27214,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Subtitle"
           ],
           "operation": [
-            "DELETE /2/vod/subtitles/{subtitle}"
+            "Delete A Subtitle."
           ]
         }
       },
@@ -27235,14 +27235,14 @@ export class InfomaniakVod implements INodeType {
       "options": [
         {
           "name": "List Thumbnails.",
-          "value": "GET /2/vod/media/{media}/thumbnails"
+          "value": "List Thumbnails."
         },
         {
           "name": "Show Thumbnail Details.",
-          "value": "GET /2/vod/thumbnails/{thumbnail}"
+          "value": "Show Thumbnail Details."
         }
       ],
-      "default": "GET /2/vod/media/{media}/thumbnails",
+      "default": "List Thumbnails.",
       "noDataExpression": true
     },
     {
@@ -27256,7 +27256,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Thumbnail"
           ],
           "operation": [
-            "GET /2/vod/media/{media}/thumbnails"
+            "List Thumbnails."
           ]
         }
       },
@@ -27275,7 +27275,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Thumbnail"
           ],
           "operation": [
-            "GET /2/vod/media/{media}/thumbnails"
+            "List Thumbnails."
           ]
         }
       },
@@ -27320,7 +27320,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Thumbnail"
           ],
           "operation": [
-            "GET /2/vod/thumbnails/{thumbnail}"
+            "Show Thumbnail Details."
           ]
         }
       },
@@ -27341,14 +27341,14 @@ export class InfomaniakVod implements INodeType {
       "options": [
         {
           "name": "Get An Upload Endpooint.",
-          "value": "GET /2/vod/folders/{folder}/upload/endpoint"
+          "value": "Get An Upload Endpooint."
         },
         {
           "name": "Create Upload",
-          "value": "POST /2/vod/folders/{folder}/upload"
+          "value": "Create Upload"
         }
       ],
-      "default": "GET /2/vod/folders/{folder}/upload/endpoint",
+      "default": "Get An Upload Endpooint.",
       "noDataExpression": true
     },
     {
@@ -27362,7 +27362,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Upload"
           ],
           "operation": [
-            "GET /2/vod/folders/{folder}/upload/endpoint"
+            "Get An Upload Endpooint."
           ]
         }
       },
@@ -27380,7 +27380,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Upload"
           ],
           "operation": [
-            "POST /2/vod/folders/{folder}/upload"
+            "Create Upload"
           ]
         }
       },
@@ -27398,7 +27398,7 @@ export class InfomaniakVod implements INodeType {
             "V3 > Upload"
           ],
           "operation": [
-            "POST /2/vod/folders/{folder}/upload"
+            "Create Upload"
           ]
         }
       },
@@ -27493,36 +27493,36 @@ export class InfomaniakVod implements INodeType {
             "V3 > Thumbnail"
           ],
           "operation": [
-            "GET /2/vod/players/{player}/ads",
-            "GET /2/vod/channels/{channel}/alerts",
-            "GET /2/vod/categories",
-            "GET /2/vod/accounts/{account}/channels",
-            "GET /2/vod/media/{media}/chapters",
-            "GET /2/vod/chapters/{chapter}",
-            "GET /2/vod/countries",
-            "GET /2/vod/channels/{channel}/encodings",
-            "GET /2/vod/channels/{channel}/browse",
-            "GET /2/vod/channels/{channel}/browse/trash",
-            "GET /2/vod/channels/{channel}/folders",
-            "GET /2/vod/channels/{channel}/ftpusers",
-            "GET /2/vod/media/{media}/journal",
-            "GET /2/vod/channels/{channel}/journal",
-            "GET /2/vod/channels/{channel}/labels",
-            "GET /2/vod/lang",
-            "GET /2/vod/channels/{channel}/logos",
-            "GET /2/vod/channels/{channel}/media",
-            "GET /2/vod/channels/{channel}/media/status",
-            "GET /2/vod/media/{media}/metadata",
-            "GET /2/vod/channels/{channel}/metadata",
-            "GET /2/vod/channels/{channel}/mixtapes",
-            "GET /2/vod/mixtapes/{mixtape}/media",
-            "GET /2/vod/channels/{channel}/players",
-            "GET /2/vod/channels/{channel}/playlists",
-            "GET /2/vod/playlists/{playlist}/media",
-            "GET /2/vod/channels/{channel}/shares",
-            "GET /2/vod/media/{media}/shares",
-            "GET /2/vod/media/{media}/subtitles",
-            "GET /2/vod/media/{media}/thumbnails"
+            "List Advertisements.",
+            "List Alerts.",
+            "List Categories.",
+            "List Channels.",
+            "List Chapters.",
+            "Show Chapter Details.",
+            "List Countries.",
+            "List Encodings.",
+            "Browse Channel Root.",
+            "Browse Trash.",
+            "List Folders.",
+            "List FTP Users.",
+            "Get Media Journal.",
+            "Get Journal.",
+            "List Labels.",
+            "List Languages.",
+            "List Logos.",
+            "List Media.",
+            "Get Media Statuses Counters.",
+            "Get Metadata From A Media.",
+            "List Metadata.",
+            "List Mixtapes.",
+            "List Media In Mixtape.",
+            "List Players.",
+            "List Playlists.",
+            "List Media In Playlist.",
+            "List Channel Shares.",
+            "List Media Shares.",
+            "List Subtitles.",
+            "List Thumbnails."
           ]
         }
       }
@@ -27571,36 +27571,36 @@ export class InfomaniakVod implements INodeType {
             "V3 > Thumbnail"
           ],
           "operation": [
-            "GET /2/vod/players/{player}/ads",
-            "GET /2/vod/channels/{channel}/alerts",
-            "GET /2/vod/categories",
-            "GET /2/vod/accounts/{account}/channels",
-            "GET /2/vod/media/{media}/chapters",
-            "GET /2/vod/chapters/{chapter}",
-            "GET /2/vod/countries",
-            "GET /2/vod/channels/{channel}/encodings",
-            "GET /2/vod/channels/{channel}/browse",
-            "GET /2/vod/channels/{channel}/browse/trash",
-            "GET /2/vod/channels/{channel}/folders",
-            "GET /2/vod/channels/{channel}/ftpusers",
-            "GET /2/vod/media/{media}/journal",
-            "GET /2/vod/channels/{channel}/journal",
-            "GET /2/vod/channels/{channel}/labels",
-            "GET /2/vod/lang",
-            "GET /2/vod/channels/{channel}/logos",
-            "GET /2/vod/channels/{channel}/media",
-            "GET /2/vod/channels/{channel}/media/status",
-            "GET /2/vod/media/{media}/metadata",
-            "GET /2/vod/channels/{channel}/metadata",
-            "GET /2/vod/channels/{channel}/mixtapes",
-            "GET /2/vod/mixtapes/{mixtape}/media",
-            "GET /2/vod/channels/{channel}/players",
-            "GET /2/vod/channels/{channel}/playlists",
-            "GET /2/vod/playlists/{playlist}/media",
-            "GET /2/vod/channels/{channel}/shares",
-            "GET /2/vod/media/{media}/shares",
-            "GET /2/vod/media/{media}/subtitles",
-            "GET /2/vod/media/{media}/thumbnails"
+            "List Advertisements.",
+            "List Alerts.",
+            "List Categories.",
+            "List Channels.",
+            "List Chapters.",
+            "Show Chapter Details.",
+            "List Countries.",
+            "List Encodings.",
+            "Browse Channel Root.",
+            "Browse Trash.",
+            "List Folders.",
+            "List FTP Users.",
+            "Get Media Journal.",
+            "Get Journal.",
+            "List Labels.",
+            "List Languages.",
+            "List Logos.",
+            "List Media.",
+            "Get Media Statuses Counters.",
+            "Get Metadata From A Media.",
+            "List Metadata.",
+            "List Mixtapes.",
+            "List Media In Mixtape.",
+            "List Players.",
+            "List Playlists.",
+            "List Media In Playlist.",
+            "List Channel Shares.",
+            "List Media Shares.",
+            "List Subtitles.",
+            "List Thumbnails."
           ],
           "returnAll": [
             false

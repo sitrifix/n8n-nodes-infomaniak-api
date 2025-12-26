@@ -16,7 +16,7 @@ type OperationDefinition = {
 
 const operations: Record<string, Record<string, OperationDefinition>> = {
   "Config": {
-    "GET /1/public_clouds/config": {
+    "Get Config": {
       "method": "GET",
       "path": "/1/public_clouds/config",
       "pagination": "none",
@@ -34,7 +34,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Database Service": {
-    "GET /1/public_clouds/dbaas": {
+    "List All Database Services": {
       "method": "GET",
       "path": "/1/public_clouds/dbaas",
       "pagination": "page-per-page",
@@ -50,7 +50,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas": {
+    "List Database Services": {
       "method": "GET",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas",
       "pagination": "page-per-page",
@@ -70,7 +70,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas": {
+    "Create Database Service": {
       "method": "POST",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas",
       "pagination": "none",
@@ -115,7 +115,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}": {
+    "Get Database Service": {
       "method": "GET",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}",
       "pagination": "none",
@@ -139,7 +139,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PATCH /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}": {
+    "Update Database Service": {
       "method": "PATCH",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}",
       "pagination": "none",
@@ -172,7 +172,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}": {
+    "Delete Database Service": {
       "method": "DELETE",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}",
       "pagination": "none",
@@ -201,7 +201,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/reset_password": {
+    "Reset Password": {
       "method": "GET",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/reset_password",
       "pagination": "none",
@@ -227,7 +227,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Database Service > Backups": {
-    "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backups": {
+    "List Backups": {
       "method": "GET",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backups",
       "pagination": "none",
@@ -251,7 +251,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backups/{backup_id}": {
+    "Get Backup": {
       "method": "GET",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backups/{backup_id}",
       "pagination": "none",
@@ -279,7 +279,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backups/{backup_id}": {
+    "Delete Backup": {
       "method": "DELETE",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backups/{backup_id}",
       "pagination": "none",
@@ -309,7 +309,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Database Service > Backups > Scheduled": {
-    "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backup_schedules": {
+    "List Backup Schedules": {
       "method": "GET",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backup_schedules",
       "pagination": "none",
@@ -333,7 +333,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backup_schedules": {
+    "Create Backup Schedule": {
       "method": "POST",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backup_schedules",
       "pagination": "none",
@@ -370,7 +370,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backup_schedules/{backup_schedule_id}": {
+    "Get Backup Schedule": {
       "method": "GET",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backup_schedules/{backup_schedule_id}",
       "pagination": "none",
@@ -398,7 +398,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PATCH /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backup_schedules/{backup_schedule_id}": {
+    "Update Backup Schedule": {
       "method": "PATCH",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backup_schedules/{backup_schedule_id}",
       "pagination": "none",
@@ -439,7 +439,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backup_schedules/{backup_schedule_id}": {
+    "Delete Backup Schedule": {
       "method": "DELETE",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backup_schedules/{backup_schedule_id}",
       "pagination": "none",
@@ -469,7 +469,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Database Service > Configurations": {
-    "GET /1/public_clouds/dbaas/configurations": {
+    "Get Configuration Information": {
       "method": "GET",
       "path": "/1/public_clouds/dbaas/configurations",
       "pagination": "none",
@@ -480,7 +480,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/configurations": {
+    "List Configuration": {
       "method": "GET",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/configurations",
       "pagination": "none",
@@ -504,7 +504,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/configurations": {
+    "Create/Update Configuration": {
       "method": "PUT",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/configurations",
       "pagination": "none",
@@ -701,7 +701,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/configurations": {
+    "Remove Configuration": {
       "method": "DELETE",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/configurations",
       "pagination": "none",
@@ -727,7 +727,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Database Service > Data": {
-    "GET /1/public_clouds/dbaas/regions": {
+    "List Regions": {
       "method": "GET",
       "path": "/1/public_clouds/dbaas/regions",
       "pagination": "none",
@@ -738,7 +738,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/public_clouds/dbaas/packs": {
+    "List Packs": {
       "method": "GET",
       "path": "/1/public_clouds/dbaas/packs",
       "pagination": "none",
@@ -749,7 +749,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/public_clouds/dbaas/packs/filters": {
+    "Pack Filters": {
       "method": "GET",
       "path": "/1/public_clouds/dbaas/packs/filters",
       "pagination": "none",
@@ -760,7 +760,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/public_clouds/dbaas/types": {
+    "List Types": {
       "method": "GET",
       "path": "/1/public_clouds/dbaas/types",
       "pagination": "none",
@@ -773,7 +773,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Database Service > IP Filters": {
-    "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/ip_filters": {
+    "List IP Filters": {
       "method": "GET",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/ip_filters",
       "pagination": "none",
@@ -797,7 +797,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/ip_filters": {
+    "Create/Update IP Filters": {
       "method": "PUT",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/ip_filters",
       "pagination": "none",
@@ -826,7 +826,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/ip_filters": {
+    "Remove IP Filters": {
       "method": "DELETE",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/ip_filters",
       "pagination": "none",
@@ -852,7 +852,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Database Service > Restores": {
-    "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/restores/{restore_id}": {
+    "Get Restore": {
       "method": "GET",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/restores/{restore_id}",
       "pagination": "none",
@@ -880,7 +880,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/restores": {
+    "Create Restore": {
       "method": "POST",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/restores",
       "pagination": "none",
@@ -919,7 +919,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Kubernetes Service": {
-    "GET /1/public_clouds/kaas": {
+    "List All Kubernetes Services": {
       "method": "GET",
       "path": "/1/public_clouds/kaas",
       "pagination": "limit-skip",
@@ -935,7 +935,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas": {
+    "List Kubernetes Services": {
       "method": "GET",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas",
       "pagination": "limit-skip",
@@ -955,7 +955,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas": {
+    "Create Kubernetes Service": {
       "method": "POST",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas",
       "pagination": "none",
@@ -992,7 +992,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}": {
+    "Get Kubernetes Service": {
       "method": "GET",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}",
       "pagination": "none",
@@ -1016,7 +1016,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PATCH /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}": {
+    "Update Kubernetes Service": {
       "method": "PATCH",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}",
       "pagination": "none",
@@ -1049,7 +1049,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}": {
+    "Delete Kubernetes Service": {
       "method": "DELETE",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}",
       "pagination": "none",
@@ -1073,7 +1073,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/apiserver": {
+    "Get The Current State Of A Kaas Apiserver Params": {
       "method": "GET",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/apiserver",
       "pagination": "none",
@@ -1097,7 +1097,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PATCH /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/apiserver": {
+    "Patch Apiserver Params Of A Specific Kaas": {
       "method": "PATCH",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/apiserver",
       "pagination": "none",
@@ -1126,7 +1126,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/kube_config": {
+    "Download Kubernetes Service Configuration": {
       "method": "GET",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/kube_config",
       "pagination": "none",
@@ -1152,7 +1152,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Kubernetes Service > Data": {
-    "GET /1/public_clouds/kaas/packs": {
+    "List Packs": {
       "method": "GET",
       "path": "/1/public_clouds/kaas/packs",
       "pagination": "none",
@@ -1163,7 +1163,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/public_clouds/kaas/versions": {
+    "List Kubernetes Versions": {
       "method": "GET",
       "path": "/1/public_clouds/kaas/versions",
       "pagination": "none",
@@ -1174,7 +1174,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/public_clouds/kaas/regions": {
+    "List Regions": {
       "method": "GET",
       "path": "/1/public_clouds/kaas/regions",
       "pagination": "none",
@@ -1185,7 +1185,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/public_clouds/kaas/availability_zones": {
+    "List Availability Zones": {
       "method": "GET",
       "path": "/1/public_clouds/kaas/availability_zones",
       "pagination": "none",
@@ -1201,7 +1201,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/flavors": {
+    "List Flavors": {
       "method": "GET",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/flavors",
       "pagination": "page-per-page",
@@ -1226,7 +1226,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/flavors/filters": {
+    "List Flavor Filters": {
       "method": "GET",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/flavors/filters",
       "pagination": "none",
@@ -1253,7 +1253,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Kubernetes Service > IP Filtering": {
-    "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/ip_filters": {
+    "List IP Filters": {
       "method": "GET",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/ip_filters",
       "pagination": "none",
@@ -1277,7 +1277,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/ip_filters": {
+    "Create/Update IP Filters": {
       "method": "PUT",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/ip_filters",
       "pagination": "none",
@@ -1306,7 +1306,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/ip_filters": {
+    "Remove IP Filters": {
       "method": "DELETE",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/ip_filters",
       "pagination": "none",
@@ -1332,7 +1332,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Kubernetes Service > Instance Pools": {
-    "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/instance_pools": {
+    "List Instance Pools": {
       "method": "GET",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/instance_pools",
       "pagination": "limit-skip",
@@ -1356,7 +1356,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/instance_pools": {
+    "Create Instance Pool": {
       "method": "POST",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/instance_pools",
       "pagination": "none",
@@ -1409,7 +1409,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/instance_pools/{kaas_worker_pool_id}": {
+    "Get Instance Pool": {
       "method": "GET",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/instance_pools/{kaas_worker_pool_id}",
       "pagination": "none",
@@ -1437,7 +1437,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PATCH /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/instance_pools/{kaas_worker_pool_id}": {
+    "Update Instance Pool": {
       "method": "PATCH",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/instance_pools/{kaas_worker_pool_id}",
       "pagination": "none",
@@ -1482,7 +1482,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/instance_pools/{kaas_worker_pool_id}": {
+    "Delete Instance Pool": {
       "method": "DELETE",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/instance_pools/{kaas_worker_pool_id}",
       "pagination": "none",
@@ -1512,7 +1512,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Product Management": {
-    "GET /1/public_clouds": {
+    "List All Public Clouds": {
       "method": "GET",
       "path": "/1/public_clouds",
       "pagination": "limit-skip",
@@ -1528,7 +1528,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/public_clouds/accesses": {
+    "Accesses": {
       "method": "GET",
       "path": "/1/public_clouds/accesses",
       "pagination": "none",
@@ -1544,7 +1544,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/public_clouds/{public_cloud_id}": {
+    "Get Public Cloud Info": {
       "method": "GET",
       "path": "/1/public_clouds/{public_cloud_id}",
       "pagination": "none",
@@ -1560,7 +1560,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PATCH /1/public_clouds/{public_cloud_id}": {
+    "Update A Public Cloud": {
       "method": "PATCH",
       "path": "/1/public_clouds/{public_cloud_id}",
       "pagination": "none",
@@ -1591,7 +1591,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Projects": {
-    "GET /1/public_clouds/{public_cloud_id}/projects": {
+    "List Projects": {
       "method": "GET",
       "path": "/1/public_clouds/{public_cloud_id}/projects",
       "pagination": "limit-skip",
@@ -1607,7 +1607,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/public_clouds/{public_cloud_id}/projects": {
+    "Create Project": {
       "method": "POST",
       "path": "/1/public_clouds/{public_cloud_id}/projects",
       "pagination": "none",
@@ -1640,7 +1640,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}": {
+    "Get Project Details": {
       "method": "GET",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}",
       "pagination": "none",
@@ -1660,7 +1660,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PATCH /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}": {
+    "Update Project": {
       "method": "PATCH",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}",
       "pagination": "none",
@@ -1685,7 +1685,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}": {
+    "Delete Project": {
       "method": "DELETE",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}",
       "pagination": "none",
@@ -1705,7 +1705,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/public_clouds/{public_cloud_id}/projects/invite": {
+    "Create Project With Invitation": {
       "method": "POST",
       "path": "/1/public_clouds/{public_cloud_id}/projects/invite",
       "pagination": "none",
@@ -1736,7 +1736,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Users": {
-    "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users": {
+    "List Users": {
       "method": "GET",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users",
       "pagination": "limit-skip",
@@ -1756,7 +1756,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users": {
+    "Create User": {
       "method": "POST",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users",
       "pagination": "none",
@@ -1785,7 +1785,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users/{public_cloud_user_id}": {
+    "Get User": {
       "method": "GET",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users/{public_cloud_user_id}",
       "pagination": "none",
@@ -1809,7 +1809,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PATCH /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users/{public_cloud_user_id}": {
+    "Update User": {
       "method": "PATCH",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users/{public_cloud_user_id}",
       "pagination": "none",
@@ -1846,7 +1846,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users/{public_cloud_user_id}": {
+    "Delete User": {
       "method": "DELETE",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users/{public_cloud_user_id}",
       "pagination": "none",
@@ -1870,7 +1870,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users/{public_cloud_user_id}/authentication/{type}": {
+    "Get Authentication File": {
       "method": "GET",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users/{public_cloud_user_id}/authentication/{type}",
       "pagination": "none",
@@ -1898,7 +1898,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users/{public_cloud_user_id}/openrc": {
+    "Get Authentication File (2)": {
       "method": "GET",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users/{public_cloud_user_id}/openrc",
       "pagination": "none",
@@ -1926,7 +1926,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users/invite": {
+    "Create User Invitation": {
       "method": "POST",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users/invite",
       "pagination": "none",
@@ -1955,7 +1955,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users/{public_cloud_user_id}/invite": {
+    "Update User With Invitation": {
       "method": "POST",
       "path": "/1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users/{public_cloud_user_id}/invite",
       "pagination": "none",
@@ -2135,10 +2135,10 @@ export class InfomaniakPublicCloud implements INodeType {
       "options": [
         {
           "name": "Get Config",
-          "value": "GET /1/public_clouds/config"
+          "value": "Get Config"
         }
       ],
-      "default": "GET /1/public_clouds/config",
+      "default": "Get Config",
       "noDataExpression": true
     },
     {
@@ -2152,7 +2152,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Config"
           ],
           "operation": [
-            "GET /1/public_clouds/config"
+            "Get Config"
           ]
         }
       },
@@ -2173,34 +2173,34 @@ export class InfomaniakPublicCloud implements INodeType {
       "options": [
         {
           "name": "List All Database Services",
-          "value": "GET /1/public_clouds/dbaas"
+          "value": "List All Database Services"
         },
         {
           "name": "List Database Services",
-          "value": "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas"
+          "value": "List Database Services"
         },
         {
           "name": "Create Database Service",
-          "value": "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas"
+          "value": "Create Database Service"
         },
         {
           "name": "Get Database Service",
-          "value": "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}"
+          "value": "Get Database Service"
         },
         {
           "name": "Update Database Service",
-          "value": "PATCH /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}"
+          "value": "Update Database Service"
         },
         {
           "name": "Delete Database Service",
-          "value": "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}"
+          "value": "Delete Database Service"
         },
         {
           "name": "Reset Password",
-          "value": "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/reset_password"
+          "value": "Reset Password"
         }
       ],
-      "default": "GET /1/public_clouds/dbaas",
+      "default": "List All Database Services",
       "noDataExpression": true
     },
     {
@@ -2214,7 +2214,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service"
           ],
           "operation": [
-            "GET /1/public_clouds/dbaas"
+            "List All Database Services"
           ]
         }
       },
@@ -2233,7 +2233,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service"
           ],
           "operation": [
-            "GET /1/public_clouds/dbaas"
+            "List All Database Services"
           ]
         }
       },
@@ -2328,7 +2328,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas"
+            "List Database Services"
           ]
         }
       },
@@ -2345,7 +2345,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas"
+            "List Database Services"
           ]
         }
       },
@@ -2363,7 +2363,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas"
+            "List Database Services"
           ]
         }
       },
@@ -2452,7 +2452,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas"
+            "Create Database Service"
           ]
         }
       },
@@ -2469,7 +2469,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas"
+            "Create Database Service"
           ]
         }
       },
@@ -2486,7 +2486,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas"
+            "Create Database Service"
           ]
         }
       },
@@ -2504,7 +2504,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas"
+            "Create Database Service"
           ]
         }
       },
@@ -2528,7 +2528,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas"
+            "Create Database Service"
           ]
         }
       },
@@ -2552,7 +2552,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas"
+            "Create Database Service"
           ]
         }
       },
@@ -2576,7 +2576,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas"
+            "Create Database Service"
           ]
         }
       },
@@ -2601,7 +2601,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas"
+            "Create Database Service"
           ]
         }
       },
@@ -2626,7 +2626,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}"
+            "Get Database Service"
           ]
         }
       },
@@ -2643,7 +2643,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}"
+            "Get Database Service"
           ]
         }
       },
@@ -2660,7 +2660,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}"
+            "Get Database Service"
           ]
         }
       },
@@ -2678,7 +2678,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}"
+            "Get Database Service"
           ]
         }
       },
@@ -2709,7 +2709,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service"
           ],
           "operation": [
-            "PATCH /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}"
+            "Update Database Service"
           ]
         }
       },
@@ -2726,7 +2726,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service"
           ],
           "operation": [
-            "PATCH /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}"
+            "Update Database Service"
           ]
         }
       },
@@ -2743,7 +2743,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service"
           ],
           "operation": [
-            "PATCH /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}"
+            "Update Database Service"
           ]
         }
       },
@@ -2761,7 +2761,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service"
           ],
           "operation": [
-            "PATCH /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}"
+            "Update Database Service"
           ]
         }
       },
@@ -2799,7 +2799,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service"
           ],
           "operation": [
-            "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}"
+            "Delete Database Service"
           ]
         }
       },
@@ -2816,7 +2816,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service"
           ],
           "operation": [
-            "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}"
+            "Delete Database Service"
           ]
         }
       },
@@ -2833,7 +2833,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service"
           ],
           "operation": [
-            "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}"
+            "Delete Database Service"
           ]
         }
       },
@@ -2851,7 +2851,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service"
           ],
           "operation": [
-            "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}"
+            "Delete Database Service"
           ]
         }
       },
@@ -2876,7 +2876,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/reset_password"
+            "Reset Password"
           ]
         }
       },
@@ -2893,7 +2893,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/reset_password"
+            "Reset Password"
           ]
         }
       },
@@ -2910,7 +2910,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/reset_password"
+            "Reset Password"
           ]
         }
       },
@@ -2930,18 +2930,18 @@ export class InfomaniakPublicCloud implements INodeType {
       "options": [
         {
           "name": "List Backups",
-          "value": "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backups"
+          "value": "List Backups"
         },
         {
           "name": "Get Backup",
-          "value": "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backups/{backup_id}"
+          "value": "Get Backup"
         },
         {
           "name": "Delete Backup",
-          "value": "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backups/{backup_id}"
+          "value": "Delete Backup"
         }
       ],
-      "default": "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backups",
+      "default": "List Backups",
       "noDataExpression": true
     },
     {
@@ -2955,7 +2955,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Backups"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backups"
+            "List Backups"
           ]
         }
       },
@@ -2972,7 +2972,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Backups"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backups"
+            "List Backups"
           ]
         }
       },
@@ -2989,7 +2989,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Backups"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backups"
+            "List Backups"
           ]
         }
       },
@@ -3007,7 +3007,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Backups"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backups"
+            "List Backups"
           ]
         }
       },
@@ -3062,7 +3062,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Backups"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backups/{backup_id}"
+            "Get Backup"
           ]
         }
       },
@@ -3079,7 +3079,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Backups"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backups/{backup_id}"
+            "Get Backup"
           ]
         }
       },
@@ -3096,7 +3096,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Backups"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backups/{backup_id}"
+            "Get Backup"
           ]
         }
       },
@@ -3113,7 +3113,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Backups"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backups/{backup_id}"
+            "Get Backup"
           ]
         }
       },
@@ -3130,7 +3130,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Backups"
           ],
           "operation": [
-            "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backups/{backup_id}"
+            "Delete Backup"
           ]
         }
       },
@@ -3147,7 +3147,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Backups"
           ],
           "operation": [
-            "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backups/{backup_id}"
+            "Delete Backup"
           ]
         }
       },
@@ -3164,7 +3164,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Backups"
           ],
           "operation": [
-            "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backups/{backup_id}"
+            "Delete Backup"
           ]
         }
       },
@@ -3181,7 +3181,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Backups"
           ],
           "operation": [
-            "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backups/{backup_id}"
+            "Delete Backup"
           ]
         }
       },
@@ -3201,26 +3201,26 @@ export class InfomaniakPublicCloud implements INodeType {
       "options": [
         {
           "name": "List Backup Schedules",
-          "value": "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backup_schedules"
+          "value": "List Backup Schedules"
         },
         {
           "name": "Create Backup Schedule",
-          "value": "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backup_schedules"
+          "value": "Create Backup Schedule"
         },
         {
           "name": "Get Backup Schedule",
-          "value": "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backup_schedules/{backup_schedule_id}"
+          "value": "Get Backup Schedule"
         },
         {
           "name": "Update Backup Schedule",
-          "value": "PATCH /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backup_schedules/{backup_schedule_id}"
+          "value": "Update Backup Schedule"
         },
         {
           "name": "Delete Backup Schedule",
-          "value": "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backup_schedules/{backup_schedule_id}"
+          "value": "Delete Backup Schedule"
         }
       ],
-      "default": "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backup_schedules",
+      "default": "List Backup Schedules",
       "noDataExpression": true
     },
     {
@@ -3234,7 +3234,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Backups > Scheduled"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backup_schedules"
+            "List Backup Schedules"
           ]
         }
       },
@@ -3251,7 +3251,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Backups > Scheduled"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backup_schedules"
+            "List Backup Schedules"
           ]
         }
       },
@@ -3268,7 +3268,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Backups > Scheduled"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backup_schedules"
+            "List Backup Schedules"
           ]
         }
       },
@@ -3285,7 +3285,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Backups > Scheduled"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backup_schedules"
+            "Create Backup Schedule"
           ]
         }
       },
@@ -3302,7 +3302,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Backups > Scheduled"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backup_schedules"
+            "Create Backup Schedule"
           ]
         }
       },
@@ -3319,7 +3319,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Backups > Scheduled"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backup_schedules"
+            "Create Backup Schedule"
           ]
         }
       },
@@ -3336,7 +3336,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Backups > Scheduled"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backup_schedules"
+            "Create Backup Schedule"
           ]
         }
       },
@@ -3355,7 +3355,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Backups > Scheduled"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backup_schedules"
+            "Create Backup Schedule"
           ]
         }
       },
@@ -3387,7 +3387,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Backups > Scheduled"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backup_schedules/{backup_schedule_id}"
+            "Get Backup Schedule"
           ]
         }
       },
@@ -3404,7 +3404,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Backups > Scheduled"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backup_schedules/{backup_schedule_id}"
+            "Get Backup Schedule"
           ]
         }
       },
@@ -3421,7 +3421,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Backups > Scheduled"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backup_schedules/{backup_schedule_id}"
+            "Get Backup Schedule"
           ]
         }
       },
@@ -3438,7 +3438,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Backups > Scheduled"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backup_schedules/{backup_schedule_id}"
+            "Get Backup Schedule"
           ]
         }
       },
@@ -3455,7 +3455,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Backups > Scheduled"
           ],
           "operation": [
-            "PATCH /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backup_schedules/{backup_schedule_id}"
+            "Update Backup Schedule"
           ]
         }
       },
@@ -3472,7 +3472,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Backups > Scheduled"
           ],
           "operation": [
-            "PATCH /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backup_schedules/{backup_schedule_id}"
+            "Update Backup Schedule"
           ]
         }
       },
@@ -3489,7 +3489,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Backups > Scheduled"
           ],
           "operation": [
-            "PATCH /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backup_schedules/{backup_schedule_id}"
+            "Update Backup Schedule"
           ]
         }
       },
@@ -3506,7 +3506,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Backups > Scheduled"
           ],
           "operation": [
-            "PATCH /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backup_schedules/{backup_schedule_id}"
+            "Update Backup Schedule"
           ]
         }
       },
@@ -3523,7 +3523,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Backups > Scheduled"
           ],
           "operation": [
-            "PATCH /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backup_schedules/{backup_schedule_id}"
+            "Update Backup Schedule"
           ]
         }
       },
@@ -3542,7 +3542,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Backups > Scheduled"
           ],
           "operation": [
-            "PATCH /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backup_schedules/{backup_schedule_id}"
+            "Update Backup Schedule"
           ]
         }
       },
@@ -3574,7 +3574,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Backups > Scheduled"
           ],
           "operation": [
-            "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backup_schedules/{backup_schedule_id}"
+            "Delete Backup Schedule"
           ]
         }
       },
@@ -3591,7 +3591,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Backups > Scheduled"
           ],
           "operation": [
-            "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backup_schedules/{backup_schedule_id}"
+            "Delete Backup Schedule"
           ]
         }
       },
@@ -3608,7 +3608,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Backups > Scheduled"
           ],
           "operation": [
-            "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backup_schedules/{backup_schedule_id}"
+            "Delete Backup Schedule"
           ]
         }
       },
@@ -3625,7 +3625,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Backups > Scheduled"
           ],
           "operation": [
-            "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/backup_schedules/{backup_schedule_id}"
+            "Delete Backup Schedule"
           ]
         }
       },
@@ -3645,22 +3645,22 @@ export class InfomaniakPublicCloud implements INodeType {
       "options": [
         {
           "name": "Get Configuration Information",
-          "value": "GET /1/public_clouds/dbaas/configurations"
+          "value": "Get Configuration Information"
         },
         {
           "name": "List Configuration",
-          "value": "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/configurations"
+          "value": "List Configuration"
         },
         {
           "name": "Create/Update Configuration",
-          "value": "PUT /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/configurations"
+          "value": "Create/Update Configuration"
         },
         {
           "name": "Remove Configuration",
-          "value": "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/configurations"
+          "value": "Remove Configuration"
         }
       ],
-      "default": "GET /1/public_clouds/dbaas/configurations",
+      "default": "Get Configuration Information",
       "noDataExpression": true
     },
     {
@@ -3675,7 +3675,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Configurations"
           ],
           "operation": [
-            "GET /1/public_clouds/dbaas/configurations"
+            "Get Configuration Information"
           ]
         }
       },
@@ -3699,7 +3699,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Configurations"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/configurations"
+            "List Configuration"
           ]
         }
       },
@@ -3716,7 +3716,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Configurations"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/configurations"
+            "List Configuration"
           ]
         }
       },
@@ -3733,7 +3733,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Configurations"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/configurations"
+            "List Configuration"
           ]
         }
       },
@@ -3750,7 +3750,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Configurations"
           ],
           "operation": [
-            "PUT /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/configurations"
+            "Create/Update Configuration"
           ]
         }
       },
@@ -3767,7 +3767,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Configurations"
           ],
           "operation": [
-            "PUT /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/configurations"
+            "Create/Update Configuration"
           ]
         }
       },
@@ -3784,7 +3784,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Configurations"
           ],
           "operation": [
-            "PUT /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/configurations"
+            "Create/Update Configuration"
           ]
         }
       },
@@ -3802,7 +3802,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Configurations"
           ],
           "operation": [
-            "PUT /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/configurations"
+            "Create/Update Configuration"
           ]
         }
       },
@@ -4150,7 +4150,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Configurations"
           ],
           "operation": [
-            "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/configurations"
+            "Remove Configuration"
           ]
         }
       },
@@ -4167,7 +4167,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Configurations"
           ],
           "operation": [
-            "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/configurations"
+            "Remove Configuration"
           ]
         }
       },
@@ -4184,7 +4184,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Configurations"
           ],
           "operation": [
-            "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/configurations"
+            "Remove Configuration"
           ]
         }
       },
@@ -4204,22 +4204,22 @@ export class InfomaniakPublicCloud implements INodeType {
       "options": [
         {
           "name": "List Regions",
-          "value": "GET /1/public_clouds/dbaas/regions"
+          "value": "List Regions"
         },
         {
           "name": "List Packs",
-          "value": "GET /1/public_clouds/dbaas/packs"
+          "value": "List Packs"
         },
         {
           "name": "Pack Filters",
-          "value": "GET /1/public_clouds/dbaas/packs/filters"
+          "value": "Pack Filters"
         },
         {
           "name": "List Types",
-          "value": "GET /1/public_clouds/dbaas/types"
+          "value": "List Types"
         }
       ],
-      "default": "GET /1/public_clouds/dbaas/regions",
+      "default": "List Regions",
       "noDataExpression": true
     },
     {
@@ -4234,7 +4234,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Data"
           ],
           "operation": [
-            "GET /1/public_clouds/dbaas/packs"
+            "List Packs"
           ]
         }
       },
@@ -4271,7 +4271,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Data"
           ],
           "operation": [
-            "GET /1/public_clouds/dbaas/packs/filters"
+            "Pack Filters"
           ]
         }
       },
@@ -4298,18 +4298,18 @@ export class InfomaniakPublicCloud implements INodeType {
       "options": [
         {
           "name": "List IP Filters",
-          "value": "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/ip_filters"
+          "value": "List IP Filters"
         },
         {
           "name": "Create/Update IP Filters",
-          "value": "PUT /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/ip_filters"
+          "value": "Create/Update IP Filters"
         },
         {
           "name": "Remove IP Filters",
-          "value": "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/ip_filters"
+          "value": "Remove IP Filters"
         }
       ],
-      "default": "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/ip_filters",
+      "default": "List IP Filters",
       "noDataExpression": true
     },
     {
@@ -4323,7 +4323,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > IP Filters"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/ip_filters"
+            "List IP Filters"
           ]
         }
       },
@@ -4340,7 +4340,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > IP Filters"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/ip_filters"
+            "List IP Filters"
           ]
         }
       },
@@ -4357,7 +4357,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > IP Filters"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/ip_filters"
+            "List IP Filters"
           ]
         }
       },
@@ -4374,7 +4374,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > IP Filters"
           ],
           "operation": [
-            "PUT /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/ip_filters"
+            "Create/Update IP Filters"
           ]
         }
       },
@@ -4391,7 +4391,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > IP Filters"
           ],
           "operation": [
-            "PUT /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/ip_filters"
+            "Create/Update IP Filters"
           ]
         }
       },
@@ -4408,7 +4408,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > IP Filters"
           ],
           "operation": [
-            "PUT /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/ip_filters"
+            "Create/Update IP Filters"
           ]
         }
       },
@@ -4426,7 +4426,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > IP Filters"
           ],
           "operation": [
-            "PUT /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/ip_filters"
+            "Create/Update IP Filters"
           ]
         }
       },
@@ -4451,7 +4451,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > IP Filters"
           ],
           "operation": [
-            "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/ip_filters"
+            "Remove IP Filters"
           ]
         }
       },
@@ -4468,7 +4468,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > IP Filters"
           ],
           "operation": [
-            "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/ip_filters"
+            "Remove IP Filters"
           ]
         }
       },
@@ -4485,7 +4485,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > IP Filters"
           ],
           "operation": [
-            "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/ip_filters"
+            "Remove IP Filters"
           ]
         }
       },
@@ -4505,14 +4505,14 @@ export class InfomaniakPublicCloud implements INodeType {
       "options": [
         {
           "name": "Get Restore",
-          "value": "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/restores/{restore_id}"
+          "value": "Get Restore"
         },
         {
           "name": "Create Restore",
-          "value": "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/restores"
+          "value": "Create Restore"
         }
       ],
-      "default": "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/restores/{restore_id}",
+      "default": "Get Restore",
       "noDataExpression": true
     },
     {
@@ -4526,7 +4526,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Restores"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/restores/{restore_id}"
+            "Get Restore"
           ]
         }
       },
@@ -4543,7 +4543,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Restores"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/restores/{restore_id}"
+            "Get Restore"
           ]
         }
       },
@@ -4560,7 +4560,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Restores"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/restores/{restore_id}"
+            "Get Restore"
           ]
         }
       },
@@ -4577,7 +4577,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Restores"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/restores/{restore_id}"
+            "Get Restore"
           ]
         }
       },
@@ -4594,7 +4594,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Restores"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/restores"
+            "Create Restore"
           ]
         }
       },
@@ -4611,7 +4611,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Restores"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/restores"
+            "Create Restore"
           ]
         }
       },
@@ -4628,7 +4628,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Restores"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/restores"
+            "Create Restore"
           ]
         }
       },
@@ -4646,7 +4646,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Database Service > Restores"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas/{dbaas_id}/restores"
+            "Create Restore"
           ]
         }
       },
@@ -4687,42 +4687,42 @@ export class InfomaniakPublicCloud implements INodeType {
       "options": [
         {
           "name": "List All Kubernetes Services",
-          "value": "GET /1/public_clouds/kaas"
+          "value": "List All Kubernetes Services"
         },
         {
           "name": "List Kubernetes Services",
-          "value": "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas"
+          "value": "List Kubernetes Services"
         },
         {
           "name": "Create Kubernetes Service",
-          "value": "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas"
+          "value": "Create Kubernetes Service"
         },
         {
           "name": "Get Kubernetes Service",
-          "value": "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}"
+          "value": "Get Kubernetes Service"
         },
         {
           "name": "Update Kubernetes Service",
-          "value": "PATCH /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}"
+          "value": "Update Kubernetes Service"
         },
         {
           "name": "Delete Kubernetes Service",
-          "value": "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}"
+          "value": "Delete Kubernetes Service"
         },
         {
           "name": "Get The Current State Of A Kaas Apiserver Params",
-          "value": "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/apiserver"
+          "value": "Get The Current State Of A Kaas Apiserver Params"
         },
         {
           "name": "Patch Apiserver Params Of A Specific Kaas",
-          "value": "PATCH /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/apiserver"
+          "value": "Patch Apiserver Params Of A Specific Kaas"
         },
         {
           "name": "Download Kubernetes Service Configuration",
-          "value": "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/kube_config"
+          "value": "Download Kubernetes Service Configuration"
         }
       ],
-      "default": "GET /1/public_clouds/kaas",
+      "default": "List All Kubernetes Services",
       "noDataExpression": true
     },
     {
@@ -4736,7 +4736,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service"
           ],
           "operation": [
-            "GET /1/public_clouds/kaas"
+            "List All Kubernetes Services"
           ]
         }
       },
@@ -4755,7 +4755,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service"
           ],
           "operation": [
-            "GET /1/public_clouds/kaas"
+            "List All Kubernetes Services"
           ]
         }
       },
@@ -4864,7 +4864,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas"
+            "List Kubernetes Services"
           ]
         }
       },
@@ -4881,7 +4881,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas"
+            "List Kubernetes Services"
           ]
         }
       },
@@ -4899,7 +4899,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas"
+            "List Kubernetes Services"
           ]
         }
       },
@@ -5002,7 +5002,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas"
+            "Create Kubernetes Service"
           ]
         }
       },
@@ -5019,7 +5019,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas"
+            "Create Kubernetes Service"
           ]
         }
       },
@@ -5036,7 +5036,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas"
+            "Create Kubernetes Service"
           ]
         }
       },
@@ -5064,7 +5064,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas"
+            "Create Kubernetes Service"
           ]
         }
       },
@@ -5096,7 +5096,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas"
+            "Create Kubernetes Service"
           ]
         }
       },
@@ -5114,7 +5114,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas"
+            "Create Kubernetes Service"
           ]
         }
       },
@@ -5142,7 +5142,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}"
+            "Get Kubernetes Service"
           ]
         }
       },
@@ -5159,7 +5159,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}"
+            "Get Kubernetes Service"
           ]
         }
       },
@@ -5176,7 +5176,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}"
+            "Get Kubernetes Service"
           ]
         }
       },
@@ -5194,7 +5194,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}"
+            "Get Kubernetes Service"
           ]
         }
       },
@@ -5219,7 +5219,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service"
           ],
           "operation": [
-            "PATCH /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}"
+            "Update Kubernetes Service"
           ]
         }
       },
@@ -5236,7 +5236,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service"
           ],
           "operation": [
-            "PATCH /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}"
+            "Update Kubernetes Service"
           ]
         }
       },
@@ -5253,7 +5253,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service"
           ],
           "operation": [
-            "PATCH /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}"
+            "Update Kubernetes Service"
           ]
         }
       },
@@ -5271,7 +5271,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service"
           ],
           "operation": [
-            "PATCH /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}"
+            "Update Kubernetes Service"
           ]
         }
       },
@@ -5317,7 +5317,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service"
           ],
           "operation": [
-            "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}"
+            "Delete Kubernetes Service"
           ]
         }
       },
@@ -5334,7 +5334,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service"
           ],
           "operation": [
-            "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}"
+            "Delete Kubernetes Service"
           ]
         }
       },
@@ -5351,7 +5351,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service"
           ],
           "operation": [
-            "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}"
+            "Delete Kubernetes Service"
           ]
         }
       },
@@ -5368,7 +5368,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/apiserver"
+            "Get The Current State Of A Kaas Apiserver Params"
           ]
         }
       },
@@ -5385,7 +5385,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/apiserver"
+            "Get The Current State Of A Kaas Apiserver Params"
           ]
         }
       },
@@ -5402,7 +5402,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/apiserver"
+            "Get The Current State Of A Kaas Apiserver Params"
           ]
         }
       },
@@ -5419,7 +5419,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service"
           ],
           "operation": [
-            "PATCH /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/apiserver"
+            "Patch Apiserver Params Of A Specific Kaas"
           ]
         }
       },
@@ -5436,7 +5436,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service"
           ],
           "operation": [
-            "PATCH /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/apiserver"
+            "Patch Apiserver Params Of A Specific Kaas"
           ]
         }
       },
@@ -5453,7 +5453,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service"
           ],
           "operation": [
-            "PATCH /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/apiserver"
+            "Patch Apiserver Params Of A Specific Kaas"
           ]
         }
       },
@@ -5471,7 +5471,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service"
           ],
           "operation": [
-            "PATCH /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/apiserver"
+            "Patch Apiserver Params Of A Specific Kaas"
           ]
         }
       },
@@ -5495,7 +5495,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/kube_config"
+            "Download Kubernetes Service Configuration"
           ]
         }
       },
@@ -5512,7 +5512,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/kube_config"
+            "Download Kubernetes Service Configuration"
           ]
         }
       },
@@ -5529,7 +5529,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/kube_config"
+            "Download Kubernetes Service Configuration"
           ]
         }
       },
@@ -5549,30 +5549,30 @@ export class InfomaniakPublicCloud implements INodeType {
       "options": [
         {
           "name": "List Packs",
-          "value": "GET /1/public_clouds/kaas/packs"
+          "value": "List Packs"
         },
         {
           "name": "List Kubernetes Versions",
-          "value": "GET /1/public_clouds/kaas/versions"
+          "value": "List Kubernetes Versions"
         },
         {
           "name": "List Regions",
-          "value": "GET /1/public_clouds/kaas/regions"
+          "value": "List Regions"
         },
         {
           "name": "List Availability Zones",
-          "value": "GET /1/public_clouds/kaas/availability_zones"
+          "value": "List Availability Zones"
         },
         {
           "name": "List Flavors",
-          "value": "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/flavors"
+          "value": "List Flavors"
         },
         {
           "name": "List Flavor Filters",
-          "value": "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/flavors/filters"
+          "value": "List Flavor Filters"
         }
       ],
-      "default": "GET /1/public_clouds/kaas/packs",
+      "default": "List Packs",
       "noDataExpression": true
     },
     {
@@ -5586,7 +5586,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service > Data"
           ],
           "operation": [
-            "GET /1/public_clouds/kaas/availability_zones"
+            "List Availability Zones"
           ]
         }
       },
@@ -5613,7 +5613,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service > Data"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/flavors"
+            "List Flavors"
           ]
         }
       },
@@ -5630,7 +5630,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service > Data"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/flavors"
+            "List Flavors"
           ]
         }
       },
@@ -5647,7 +5647,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service > Data"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/flavors"
+            "List Flavors"
           ]
         }
       },
@@ -5675,7 +5675,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service > Data"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/flavors"
+            "List Flavors"
           ]
         }
       },
@@ -5711,7 +5711,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service > Data"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/flavors/filters"
+            "List Flavor Filters"
           ]
         }
       },
@@ -5728,7 +5728,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service > Data"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/flavors/filters"
+            "List Flavor Filters"
           ]
         }
       },
@@ -5745,7 +5745,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service > Data"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/flavors/filters"
+            "List Flavor Filters"
           ]
         }
       },
@@ -5775,18 +5775,18 @@ export class InfomaniakPublicCloud implements INodeType {
       "options": [
         {
           "name": "List IP Filters",
-          "value": "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/ip_filters"
+          "value": "List IP Filters"
         },
         {
           "name": "Create/Update IP Filters",
-          "value": "PUT /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/ip_filters"
+          "value": "Create/Update IP Filters"
         },
         {
           "name": "Remove IP Filters",
-          "value": "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/ip_filters"
+          "value": "Remove IP Filters"
         }
       ],
-      "default": "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/ip_filters",
+      "default": "List IP Filters",
       "noDataExpression": true
     },
     {
@@ -5800,7 +5800,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service > IP Filtering"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/ip_filters"
+            "List IP Filters"
           ]
         }
       },
@@ -5817,7 +5817,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service > IP Filtering"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/ip_filters"
+            "List IP Filters"
           ]
         }
       },
@@ -5834,7 +5834,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service > IP Filtering"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/ip_filters"
+            "List IP Filters"
           ]
         }
       },
@@ -5851,7 +5851,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service > IP Filtering"
           ],
           "operation": [
-            "PUT /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/ip_filters"
+            "Create/Update IP Filters"
           ]
         }
       },
@@ -5868,7 +5868,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service > IP Filtering"
           ],
           "operation": [
-            "PUT /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/ip_filters"
+            "Create/Update IP Filters"
           ]
         }
       },
@@ -5885,7 +5885,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service > IP Filtering"
           ],
           "operation": [
-            "PUT /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/ip_filters"
+            "Create/Update IP Filters"
           ]
         }
       },
@@ -5902,7 +5902,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service > IP Filtering"
           ],
           "operation": [
-            "PUT /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/ip_filters"
+            "Create/Update IP Filters"
           ]
         }
       },
@@ -5920,7 +5920,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service > IP Filtering"
           ],
           "operation": [
-            "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/ip_filters"
+            "Remove IP Filters"
           ]
         }
       },
@@ -5937,7 +5937,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service > IP Filtering"
           ],
           "operation": [
-            "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/ip_filters"
+            "Remove IP Filters"
           ]
         }
       },
@@ -5954,7 +5954,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service > IP Filtering"
           ],
           "operation": [
-            "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/ip_filters"
+            "Remove IP Filters"
           ]
         }
       },
@@ -5974,26 +5974,26 @@ export class InfomaniakPublicCloud implements INodeType {
       "options": [
         {
           "name": "List Instance Pools",
-          "value": "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/instance_pools"
+          "value": "List Instance Pools"
         },
         {
           "name": "Create Instance Pool",
-          "value": "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/instance_pools"
+          "value": "Create Instance Pool"
         },
         {
           "name": "Get Instance Pool",
-          "value": "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/instance_pools/{kaas_worker_pool_id}"
+          "value": "Get Instance Pool"
         },
         {
           "name": "Update Instance Pool",
-          "value": "PATCH /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/instance_pools/{kaas_worker_pool_id}"
+          "value": "Update Instance Pool"
         },
         {
           "name": "Delete Instance Pool",
-          "value": "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/instance_pools/{kaas_worker_pool_id}"
+          "value": "Delete Instance Pool"
         }
       ],
-      "default": "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/instance_pools",
+      "default": "List Instance Pools",
       "noDataExpression": true
     },
     {
@@ -6007,7 +6007,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service > Instance Pools"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/instance_pools"
+            "List Instance Pools"
           ]
         }
       },
@@ -6024,7 +6024,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service > Instance Pools"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/instance_pools"
+            "List Instance Pools"
           ]
         }
       },
@@ -6041,7 +6041,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service > Instance Pools"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/instance_pools"
+            "List Instance Pools"
           ]
         }
       },
@@ -6059,7 +6059,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service > Instance Pools"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/instance_pools"
+            "List Instance Pools"
           ]
         }
       },
@@ -6155,7 +6155,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service > Instance Pools"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/instance_pools"
+            "Create Instance Pool"
           ]
         }
       },
@@ -6172,7 +6172,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service > Instance Pools"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/instance_pools"
+            "Create Instance Pool"
           ]
         }
       },
@@ -6189,7 +6189,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service > Instance Pools"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/instance_pools"
+            "Create Instance Pool"
           ]
         }
       },
@@ -6206,7 +6206,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service > Instance Pools"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/instance_pools"
+            "Create Instance Pool"
           ]
         }
       },
@@ -6230,7 +6230,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service > Instance Pools"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/instance_pools"
+            "Create Instance Pool"
           ]
         }
       },
@@ -6248,7 +6248,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service > Instance Pools"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/instance_pools"
+            "Create Instance Pool"
           ]
         }
       },
@@ -6267,7 +6267,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service > Instance Pools"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/instance_pools"
+            "Create Instance Pool"
           ]
         }
       },
@@ -6339,7 +6339,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service > Instance Pools"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/instance_pools/{kaas_worker_pool_id}"
+            "Get Instance Pool"
           ]
         }
       },
@@ -6356,7 +6356,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service > Instance Pools"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/instance_pools/{kaas_worker_pool_id}"
+            "Get Instance Pool"
           ]
         }
       },
@@ -6373,7 +6373,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service > Instance Pools"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/instance_pools/{kaas_worker_pool_id}"
+            "Get Instance Pool"
           ]
         }
       },
@@ -6390,7 +6390,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service > Instance Pools"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/instance_pools/{kaas_worker_pool_id}"
+            "Get Instance Pool"
           ]
         }
       },
@@ -6407,7 +6407,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service > Instance Pools"
           ],
           "operation": [
-            "PATCH /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/instance_pools/{kaas_worker_pool_id}"
+            "Update Instance Pool"
           ]
         }
       },
@@ -6424,7 +6424,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service > Instance Pools"
           ],
           "operation": [
-            "PATCH /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/instance_pools/{kaas_worker_pool_id}"
+            "Update Instance Pool"
           ]
         }
       },
@@ -6441,7 +6441,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service > Instance Pools"
           ],
           "operation": [
-            "PATCH /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/instance_pools/{kaas_worker_pool_id}"
+            "Update Instance Pool"
           ]
         }
       },
@@ -6458,7 +6458,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service > Instance Pools"
           ],
           "operation": [
-            "PATCH /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/instance_pools/{kaas_worker_pool_id}"
+            "Update Instance Pool"
           ]
         }
       },
@@ -6476,7 +6476,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service > Instance Pools"
           ],
           "operation": [
-            "PATCH /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/instance_pools/{kaas_worker_pool_id}"
+            "Update Instance Pool"
           ]
         }
       },
@@ -6522,7 +6522,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service > Instance Pools"
           ],
           "operation": [
-            "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/instance_pools/{kaas_worker_pool_id}"
+            "Delete Instance Pool"
           ]
         }
       },
@@ -6539,7 +6539,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service > Instance Pools"
           ],
           "operation": [
-            "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/instance_pools/{kaas_worker_pool_id}"
+            "Delete Instance Pool"
           ]
         }
       },
@@ -6556,7 +6556,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service > Instance Pools"
           ],
           "operation": [
-            "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/instance_pools/{kaas_worker_pool_id}"
+            "Delete Instance Pool"
           ]
         }
       },
@@ -6573,7 +6573,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Kubernetes Service > Instance Pools"
           ],
           "operation": [
-            "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/instance_pools/{kaas_worker_pool_id}"
+            "Delete Instance Pool"
           ]
         }
       },
@@ -6593,22 +6593,22 @@ export class InfomaniakPublicCloud implements INodeType {
       "options": [
         {
           "name": "List All Public Clouds",
-          "value": "GET /1/public_clouds"
+          "value": "List All Public Clouds"
         },
         {
           "name": "Accesses",
-          "value": "GET /1/public_clouds/accesses"
+          "value": "Accesses"
         },
         {
           "name": "Get Public Cloud Info",
-          "value": "GET /1/public_clouds/{public_cloud_id}"
+          "value": "Get Public Cloud Info"
         },
         {
           "name": "Update A Public Cloud",
-          "value": "PATCH /1/public_clouds/{public_cloud_id}"
+          "value": "Update A Public Cloud"
         }
       ],
-      "default": "GET /1/public_clouds",
+      "default": "List All Public Clouds",
       "noDataExpression": true
     },
     {
@@ -6622,7 +6622,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Product Management"
           ],
           "operation": [
-            "GET /1/public_clouds"
+            "List All Public Clouds"
           ]
         }
       },
@@ -6641,7 +6641,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Product Management"
           ],
           "operation": [
-            "GET /1/public_clouds"
+            "List All Public Clouds"
           ]
         }
       },
@@ -6744,7 +6744,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Product Management"
           ],
           "operation": [
-            "GET /1/public_clouds/accesses"
+            "Accesses"
           ]
         }
       },
@@ -6762,7 +6762,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Product Management"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}"
+            "Get Public Cloud Info"
           ]
         }
       },
@@ -6781,7 +6781,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Product Management"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}"
+            "Get Public Cloud Info"
           ]
         }
       },
@@ -6806,7 +6806,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Product Management"
           ],
           "operation": [
-            "PATCH /1/public_clouds/{public_cloud_id}"
+            "Update A Public Cloud"
           ]
         }
       },
@@ -6825,7 +6825,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Product Management"
           ],
           "operation": [
-            "PATCH /1/public_clouds/{public_cloud_id}"
+            "Update A Public Cloud"
           ]
         }
       },
@@ -6866,30 +6866,30 @@ export class InfomaniakPublicCloud implements INodeType {
       "options": [
         {
           "name": "List Projects",
-          "value": "GET /1/public_clouds/{public_cloud_id}/projects"
+          "value": "List Projects"
         },
         {
           "name": "Create Project",
-          "value": "POST /1/public_clouds/{public_cloud_id}/projects"
+          "value": "Create Project"
         },
         {
           "name": "Get Project Details",
-          "value": "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}"
+          "value": "Get Project Details"
         },
         {
           "name": "Update Project",
-          "value": "PATCH /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}"
+          "value": "Update Project"
         },
         {
           "name": "Delete Project",
-          "value": "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}"
+          "value": "Delete Project"
         },
         {
           "name": "Create Project With Invitation",
-          "value": "POST /1/public_clouds/{public_cloud_id}/projects/invite"
+          "value": "Create Project With Invitation"
         }
       ],
-      "default": "GET /1/public_clouds/{public_cloud_id}/projects",
+      "default": "List Projects",
       "noDataExpression": true
     },
     {
@@ -6903,7 +6903,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Projects"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects"
+            "List Projects"
           ]
         }
       },
@@ -6922,7 +6922,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Projects"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects"
+            "List Projects"
           ]
         }
       },
@@ -7025,7 +7025,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Projects"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects"
+            "Create Project"
           ]
         }
       },
@@ -7043,7 +7043,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Projects"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects"
+            "Create Project"
           ]
         }
       },
@@ -7061,7 +7061,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Projects"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects"
+            "Create Project"
           ]
         }
       },
@@ -7079,7 +7079,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Projects"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects"
+            "Create Project"
           ]
         }
       },
@@ -7110,7 +7110,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Projects"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}"
+            "Get Project Details"
           ]
         }
       },
@@ -7128,7 +7128,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Projects"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}"
+            "Get Project Details"
           ]
         }
       },
@@ -7147,7 +7147,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Projects"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}"
+            "Get Project Details"
           ]
         }
       },
@@ -7172,7 +7172,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Projects"
           ],
           "operation": [
-            "PATCH /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}"
+            "Update Project"
           ]
         }
       },
@@ -7190,7 +7190,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Projects"
           ],
           "operation": [
-            "PATCH /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}"
+            "Update Project"
           ]
         }
       },
@@ -7208,7 +7208,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Projects"
           ],
           "operation": [
-            "PATCH /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}"
+            "Update Project"
           ]
         }
       },
@@ -7226,7 +7226,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Projects"
           ],
           "operation": [
-            "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}"
+            "Delete Project"
           ]
         }
       },
@@ -7244,7 +7244,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Projects"
           ],
           "operation": [
-            "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}"
+            "Delete Project"
           ]
         }
       },
@@ -7262,7 +7262,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Projects"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects/invite"
+            "Create Project With Invitation"
           ]
         }
       },
@@ -7280,7 +7280,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Projects"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects/invite"
+            "Create Project With Invitation"
           ]
         }
       },
@@ -7298,7 +7298,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Projects"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects/invite"
+            "Create Project With Invitation"
           ]
         }
       },
@@ -7316,7 +7316,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Projects"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects/invite"
+            "Create Project With Invitation"
           ]
         }
       },
@@ -7344,42 +7344,42 @@ export class InfomaniakPublicCloud implements INodeType {
       "options": [
         {
           "name": "List Users",
-          "value": "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users"
+          "value": "List Users"
         },
         {
           "name": "Create User",
-          "value": "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users"
+          "value": "Create User"
         },
         {
           "name": "Get User",
-          "value": "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users/{public_cloud_user_id}"
+          "value": "Get User"
         },
         {
           "name": "Update User",
-          "value": "PATCH /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users/{public_cloud_user_id}"
+          "value": "Update User"
         },
         {
           "name": "Delete User",
-          "value": "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users/{public_cloud_user_id}"
+          "value": "Delete User"
         },
         {
           "name": "Get Authentication File",
-          "value": "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users/{public_cloud_user_id}/authentication/{type}"
+          "value": "Get Authentication File"
         },
         {
           "name": "Get Authentication File",
-          "value": "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users/{public_cloud_user_id}/openrc"
+          "value": "Get Authentication File (2)"
         },
         {
           "name": "Create User Invitation",
-          "value": "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users/invite"
+          "value": "Create User Invitation"
         },
         {
           "name": "Update User With Invitation",
-          "value": "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users/{public_cloud_user_id}/invite"
+          "value": "Update User With Invitation"
         }
       ],
-      "default": "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users",
+      "default": "List Users",
       "noDataExpression": true
     },
     {
@@ -7393,7 +7393,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Users"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users"
+            "List Users"
           ]
         }
       },
@@ -7411,7 +7411,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Users"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users"
+            "List Users"
           ]
         }
       },
@@ -7430,7 +7430,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Users"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users"
+            "List Users"
           ]
         }
       },
@@ -7526,7 +7526,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Users"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users"
+            "Create User"
           ]
         }
       },
@@ -7544,7 +7544,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Users"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users"
+            "Create User"
           ]
         }
       },
@@ -7562,7 +7562,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Users"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users"
+            "Create User"
           ]
         }
       },
@@ -7581,7 +7581,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Users"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users"
+            "Create User"
           ]
         }
       },
@@ -7606,7 +7606,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Users"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users/{public_cloud_user_id}"
+            "Get User"
           ]
         }
       },
@@ -7624,7 +7624,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Users"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users/{public_cloud_user_id}"
+            "Get User"
           ]
         }
       },
@@ -7642,7 +7642,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Users"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users/{public_cloud_user_id}"
+            "Get User"
           ]
         }
       },
@@ -7660,7 +7660,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Users"
           ],
           "operation": [
-            "PATCH /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users/{public_cloud_user_id}"
+            "Update User"
           ]
         }
       },
@@ -7678,7 +7678,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Users"
           ],
           "operation": [
-            "PATCH /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users/{public_cloud_user_id}"
+            "Update User"
           ]
         }
       },
@@ -7696,7 +7696,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Users"
           ],
           "operation": [
-            "PATCH /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users/{public_cloud_user_id}"
+            "Update User"
           ]
         }
       },
@@ -7715,7 +7715,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Users"
           ],
           "operation": [
-            "PATCH /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users/{public_cloud_user_id}"
+            "Update User"
           ]
         }
       },
@@ -7753,7 +7753,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Users"
           ],
           "operation": [
-            "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users/{public_cloud_user_id}"
+            "Delete User"
           ]
         }
       },
@@ -7771,7 +7771,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Users"
           ],
           "operation": [
-            "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users/{public_cloud_user_id}"
+            "Delete User"
           ]
         }
       },
@@ -7789,7 +7789,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Users"
           ],
           "operation": [
-            "DELETE /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users/{public_cloud_user_id}"
+            "Delete User"
           ]
         }
       },
@@ -7807,7 +7807,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Users"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users/{public_cloud_user_id}/authentication/{type}"
+            "Get Authentication File"
           ]
         }
       },
@@ -7825,7 +7825,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Users"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users/{public_cloud_user_id}/authentication/{type}"
+            "Get Authentication File"
           ]
         }
       },
@@ -7843,7 +7843,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Users"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users/{public_cloud_user_id}/authentication/{type}"
+            "Get Authentication File"
           ]
         }
       },
@@ -7861,7 +7861,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Users"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users/{public_cloud_user_id}/authentication/{type}"
+            "Get Authentication File"
           ]
         }
       },
@@ -7879,7 +7879,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Users"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users/{public_cloud_user_id}/authentication/{type}"
+            "Get Authentication File"
           ]
         }
       },
@@ -7913,7 +7913,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Users"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users/{public_cloud_user_id}/openrc"
+            "Get Authentication File (2)"
           ]
         }
       },
@@ -7931,7 +7931,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Users"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users/{public_cloud_user_id}/openrc"
+            "Get Authentication File (2)"
           ]
         }
       },
@@ -7949,7 +7949,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Users"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users/{public_cloud_user_id}/openrc"
+            "Get Authentication File (2)"
           ]
         }
       },
@@ -7967,7 +7967,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Users"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users/{public_cloud_user_id}/openrc"
+            "Get Authentication File (2)"
           ]
         }
       },
@@ -7985,7 +7985,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Users"
           ],
           "operation": [
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users/{public_cloud_user_id}/openrc"
+            "Get Authentication File (2)"
           ]
         }
       },
@@ -8019,7 +8019,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Users"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users/invite"
+            "Create User Invitation"
           ]
         }
       },
@@ -8037,7 +8037,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Users"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users/invite"
+            "Create User Invitation"
           ]
         }
       },
@@ -8055,7 +8055,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Users"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users/invite"
+            "Create User Invitation"
           ]
         }
       },
@@ -8074,7 +8074,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Users"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users/invite"
+            "Create User Invitation"
           ]
         }
       },
@@ -8099,7 +8099,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Users"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users/{public_cloud_user_id}/invite"
+            "Update User With Invitation"
           ]
         }
       },
@@ -8117,7 +8117,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Users"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users/{public_cloud_user_id}/invite"
+            "Update User With Invitation"
           ]
         }
       },
@@ -8135,7 +8135,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Users"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users/{public_cloud_user_id}/invite"
+            "Update User With Invitation"
           ]
         }
       },
@@ -8153,7 +8153,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Users"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users/{public_cloud_user_id}/invite"
+            "Update User With Invitation"
           ]
         }
       },
@@ -8172,7 +8172,7 @@ export class InfomaniakPublicCloud implements INodeType {
             "Users"
           ],
           "operation": [
-            "POST /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users/{public_cloud_user_id}/invite"
+            "Update User With Invitation"
           ]
         }
       },
@@ -8205,15 +8205,15 @@ export class InfomaniakPublicCloud implements INodeType {
             "Users"
           ],
           "operation": [
-            "GET /1/public_clouds/dbaas",
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas",
-            "GET /1/public_clouds/kaas",
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas",
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/flavors",
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/instance_pools",
-            "GET /1/public_clouds",
-            "GET /1/public_clouds/{public_cloud_id}/projects",
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users"
+            "List All Database Services",
+            "List Database Services",
+            "List All Kubernetes Services",
+            "List Kubernetes Services",
+            "List Flavors",
+            "List Instance Pools",
+            "List All Public Clouds",
+            "List Projects",
+            "List Users"
           ]
         }
       }
@@ -8241,15 +8241,15 @@ export class InfomaniakPublicCloud implements INodeType {
             "Users"
           ],
           "operation": [
-            "GET /1/public_clouds/dbaas",
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/dbaas",
-            "GET /1/public_clouds/kaas",
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas",
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/flavors",
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/kaas/{kaas_id}/instance_pools",
-            "GET /1/public_clouds",
-            "GET /1/public_clouds/{public_cloud_id}/projects",
-            "GET /1/public_clouds/{public_cloud_id}/projects/{public_cloud_project_id}/users"
+            "List All Database Services",
+            "List Database Services",
+            "List All Kubernetes Services",
+            "List Kubernetes Services",
+            "List Flavors",
+            "List Instance Pools",
+            "List All Public Clouds",
+            "List Projects",
+            "List Users"
           ],
           "returnAll": [
             false

@@ -15,8 +15,8 @@ type OperationDefinition = {
 };
 
 const operations: Record<string, Record<string, OperationDefinition>> = {
-  "Plan a conference": {
-    "POST /1/kmeet/rooms": {
+  "Plan A Conference": {
+    "Plan A Conference": {
       "method": "POST",
       "path": "/1/kmeet/rooms",
       "pagination": "none",
@@ -65,8 +65,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "bodyFieldName": null
     }
   },
-  "Room settings": {
-    "GET /1/kmeet/rooms/{room_id}/settings": {
+  "Room Settings": {
+    "Get Room Settings": {
       "method": "GET",
       "path": "/1/kmeet/rooms/{room_id}/settings",
       "pagination": "none",
@@ -152,14 +152,14 @@ export class InfomaniakKMeet implements INodeType {
       "options": [
         {
           "name": "Plan A Conference",
-          "value": "Plan a conference"
+          "value": "Plan A Conference"
         },
         {
           "name": "Room Settings",
-          "value": "Room settings"
+          "value": "Room Settings"
         }
       ],
-      "default": "Plan a conference",
+      "default": "Plan A Conference",
       "required": true,
       "noDataExpression": true
     },
@@ -170,17 +170,17 @@ export class InfomaniakKMeet implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Plan a conference"
+            "Plan A Conference"
           ]
         }
       },
       "options": [
         {
           "name": "Plan A Conference",
-          "value": "POST /1/kmeet/rooms"
+          "value": "Plan A Conference"
         }
       ],
-      "default": "POST /1/kmeet/rooms",
+      "default": "Plan A Conference",
       "noDataExpression": true
     },
     {
@@ -191,10 +191,10 @@ export class InfomaniakKMeet implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Plan a conference"
+            "Plan A Conference"
           ],
           "operation": [
-            "POST /1/kmeet/rooms"
+            "Plan A Conference"
           ]
         }
       },
@@ -209,10 +209,10 @@ export class InfomaniakKMeet implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Plan a conference"
+            "Plan A Conference"
           ],
           "operation": [
-            "POST /1/kmeet/rooms"
+            "Plan A Conference"
           ]
         }
       },
@@ -226,10 +226,10 @@ export class InfomaniakKMeet implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Plan a conference"
+            "Plan A Conference"
           ],
           "operation": [
-            "POST /1/kmeet/rooms"
+            "Plan A Conference"
           ]
         }
       },
@@ -244,10 +244,10 @@ export class InfomaniakKMeet implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Plan a conference"
+            "Plan A Conference"
           ],
           "operation": [
-            "POST /1/kmeet/rooms"
+            "Plan A Conference"
           ]
         }
       },
@@ -261,10 +261,10 @@ export class InfomaniakKMeet implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Plan a conference"
+            "Plan A Conference"
           ],
           "operation": [
-            "POST /1/kmeet/rooms"
+            "Plan A Conference"
           ]
         }
       },
@@ -279,10 +279,10 @@ export class InfomaniakKMeet implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Plan a conference"
+            "Plan A Conference"
           ],
           "operation": [
-            "POST /1/kmeet/rooms"
+            "Plan A Conference"
           ]
         }
       },
@@ -296,10 +296,10 @@ export class InfomaniakKMeet implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Plan a conference"
+            "Plan A Conference"
           ],
           "operation": [
-            "POST /1/kmeet/rooms"
+            "Plan A Conference"
           ]
         }
       },
@@ -314,10 +314,10 @@ export class InfomaniakKMeet implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Plan a conference"
+            "Plan A Conference"
           ],
           "operation": [
-            "POST /1/kmeet/rooms"
+            "Plan A Conference"
           ]
         }
       },
@@ -343,17 +343,17 @@ export class InfomaniakKMeet implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Room settings"
+            "Room Settings"
           ]
         }
       },
       "options": [
         {
           "name": "Get Room Settings",
-          "value": "GET /1/kmeet/rooms/{room_id}/settings"
+          "value": "Get Room Settings"
         }
       ],
-      "default": "GET /1/kmeet/rooms/{room_id}/settings",
+      "default": "Get Room Settings",
       "noDataExpression": true
     },
     {
@@ -364,10 +364,10 @@ export class InfomaniakKMeet implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Room settings"
+            "Room Settings"
           ],
           "operation": [
-            "GET /1/kmeet/rooms/{room_id}/settings"
+            "Get Room Settings"
           ]
         }
       },

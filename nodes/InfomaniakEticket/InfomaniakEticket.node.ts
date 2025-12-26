@@ -16,7 +16,7 @@ type OperationDefinition = {
 
 const operations: Record<string, Record<string, OperationDefinition>> = {
   "Address": {
-    "GET /2/etickets/address": {
+    "List Addresses": {
       "method": "GET",
       "path": "/2/etickets/address",
       "pagination": "page-per-page",
@@ -29,7 +29,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Customer": {
-    "GET /2/etickets/customers/{customer_id}/logs": {
+    "List Customer Email Logs": {
       "method": "GET",
       "path": "/2/etickets/customers/{customer_id}/logs",
       "pagination": "none",
@@ -47,7 +47,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Date": {
-    "GET /2/etickets/date": {
+    "List Dates": {
       "method": "GET",
       "path": "/2/etickets/date",
       "pagination": "none",
@@ -60,7 +60,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Reservation": {
-    "GET /2/etickets/reservation/{reservation_id}": {
+    "Get Reservation": {
       "method": "GET",
       "path": "/2/etickets/reservation/{reservation_id}",
       "pagination": "none",
@@ -76,7 +76,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/etickets/reservation/{reservation_uuid}": {
+    "Get Reservation (2)": {
       "method": "GET",
       "path": "/2/etickets/reservation/{reservation_uuid}",
       "pagination": "none",
@@ -94,7 +94,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Survey": {
-    "GET /2/etickets/surveys": {
+    "List Survey": {
       "method": "GET",
       "path": "/2/etickets/surveys",
       "pagination": "none",
@@ -105,7 +105,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/etickets/surveys/answers/tickets": {
+    "List Survey Ticket Answers": {
       "method": "GET",
       "path": "/2/etickets/surveys/answers/tickets",
       "pagination": "none",
@@ -116,7 +116,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PATCH /2/etickets/surveys/answers/tickets": {
+    "Patch Survey Ticket Answers": {
       "method": "PATCH",
       "path": "/2/etickets/surveys/answers/tickets",
       "pagination": "none",
@@ -132,7 +132,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /2/etickets/surveys/answers/passes": {
+    "List Survey Pass Answers": {
       "method": "GET",
       "path": "/2/etickets/surveys/answers/passes",
       "pagination": "none",
@@ -143,7 +143,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PATCH /2/etickets/surveys/answers/passes": {
+    "Patch Survey Ticket Answers (2)": {
       "method": "PATCH",
       "path": "/2/etickets/surveys/answers/passes",
       "pagination": "none",
@@ -161,7 +161,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Ticket": {
-    "PATCH /2/etickets/ticket": {
+    "Edit Ticket": {
       "method": "PATCH",
       "path": "/2/etickets/ticket",
       "pagination": "none",
@@ -288,10 +288,10 @@ export class InfomaniakEticket implements INodeType {
       "options": [
         {
           "name": "List Addresses",
-          "value": "GET /2/etickets/address"
+          "value": "List Addresses"
         }
       ],
-      "default": "GET /2/etickets/address",
+      "default": "List Addresses",
       "noDataExpression": true
     },
     {
@@ -306,7 +306,7 @@ export class InfomaniakEticket implements INodeType {
             "Address"
           ],
           "operation": [
-            "GET /2/etickets/address"
+            "List Addresses"
           ]
         }
       },
@@ -373,10 +373,10 @@ export class InfomaniakEticket implements INodeType {
       "options": [
         {
           "name": "List Customer Email Logs",
-          "value": "GET /2/etickets/customers/{customer_id}/logs"
+          "value": "List Customer Email Logs"
         }
       ],
-      "default": "GET /2/etickets/customers/{customer_id}/logs",
+      "default": "List Customer Email Logs",
       "noDataExpression": true
     },
     {
@@ -390,7 +390,7 @@ export class InfomaniakEticket implements INodeType {
             "Customer"
           ],
           "operation": [
-            "GET /2/etickets/customers/{customer_id}/logs"
+            "List Customer Email Logs"
           ]
         }
       },
@@ -408,7 +408,7 @@ export class InfomaniakEticket implements INodeType {
             "Customer"
           ],
           "operation": [
-            "GET /2/etickets/customers/{customer_id}/logs"
+            "List Customer Email Logs"
           ]
         }
       },
@@ -442,10 +442,10 @@ export class InfomaniakEticket implements INodeType {
       "options": [
         {
           "name": "List Dates",
-          "value": "GET /2/etickets/date"
+          "value": "List Dates"
         }
       ],
-      "default": "GET /2/etickets/date",
+      "default": "List Dates",
       "noDataExpression": true
     },
     {
@@ -460,7 +460,7 @@ export class InfomaniakEticket implements INodeType {
             "Date"
           ],
           "operation": [
-            "GET /2/etickets/date"
+            "List Dates"
           ]
         }
       },
@@ -488,14 +488,14 @@ export class InfomaniakEticket implements INodeType {
       "options": [
         {
           "name": "Get Reservation",
-          "value": "GET /2/etickets/reservation/{reservation_id}"
+          "value": "Get Reservation"
         },
         {
           "name": "Get Reservation",
-          "value": "GET /2/etickets/reservation/{reservation_uuid}"
+          "value": "Get Reservation (2)"
         }
       ],
-      "default": "GET /2/etickets/reservation/{reservation_id}",
+      "default": "Get Reservation",
       "noDataExpression": true
     },
     {
@@ -509,7 +509,7 @@ export class InfomaniakEticket implements INodeType {
             "Reservation"
           ],
           "operation": [
-            "GET /2/etickets/reservation/{reservation_id}"
+            "Get Reservation"
           ]
         }
       },
@@ -527,7 +527,7 @@ export class InfomaniakEticket implements INodeType {
             "Reservation"
           ],
           "operation": [
-            "GET /2/etickets/reservation/{reservation_id}"
+            "Get Reservation"
           ]
         }
       },
@@ -552,7 +552,7 @@ export class InfomaniakEticket implements INodeType {
             "Reservation"
           ],
           "operation": [
-            "GET /2/etickets/reservation/{reservation_uuid}"
+            "Get Reservation (2)"
           ]
         }
       },
@@ -570,7 +570,7 @@ export class InfomaniakEticket implements INodeType {
             "Reservation"
           ],
           "operation": [
-            "GET /2/etickets/reservation/{reservation_uuid}"
+            "Get Reservation (2)"
           ]
         }
       },
@@ -598,26 +598,26 @@ export class InfomaniakEticket implements INodeType {
       "options": [
         {
           "name": "List Survey",
-          "value": "GET /2/etickets/surveys"
+          "value": "List Survey"
         },
         {
           "name": "List Survey Ticket Answers",
-          "value": "GET /2/etickets/surveys/answers/tickets"
+          "value": "List Survey Ticket Answers"
         },
         {
           "name": "Patch Survey Ticket Answers",
-          "value": "PATCH /2/etickets/surveys/answers/tickets"
+          "value": "Patch Survey Ticket Answers"
         },
         {
           "name": "List Survey Pass Answers",
-          "value": "GET /2/etickets/surveys/answers/passes"
+          "value": "List Survey Pass Answers"
         },
         {
           "name": "Patch Survey Ticket Answers",
-          "value": "PATCH /2/etickets/surveys/answers/passes"
+          "value": "Patch Survey Ticket Answers (2)"
         }
       ],
-      "default": "GET /2/etickets/surveys",
+      "default": "List Survey",
       "noDataExpression": true
     },
     {
@@ -632,7 +632,7 @@ export class InfomaniakEticket implements INodeType {
             "Survey"
           ],
           "operation": [
-            "GET /2/etickets/surveys"
+            "List Survey"
           ]
         }
       },
@@ -670,7 +670,7 @@ export class InfomaniakEticket implements INodeType {
             "Survey"
           ],
           "operation": [
-            "GET /2/etickets/surveys/answers/tickets"
+            "List Survey Ticket Answers"
           ]
         }
       },
@@ -708,7 +708,7 @@ export class InfomaniakEticket implements INodeType {
             "Survey"
           ],
           "operation": [
-            "PATCH /2/etickets/surveys/answers/tickets"
+            "Patch Survey Ticket Answers"
           ]
         }
       },
@@ -734,7 +734,7 @@ export class InfomaniakEticket implements INodeType {
             "Survey"
           ],
           "operation": [
-            "PATCH /2/etickets/surveys/answers/tickets"
+            "Patch Survey Ticket Answers"
           ]
         }
       },
@@ -759,7 +759,7 @@ export class InfomaniakEticket implements INodeType {
             "Survey"
           ],
           "operation": [
-            "GET /2/etickets/surveys/answers/passes"
+            "List Survey Pass Answers"
           ]
         }
       },
@@ -797,7 +797,7 @@ export class InfomaniakEticket implements INodeType {
             "Survey"
           ],
           "operation": [
-            "PATCH /2/etickets/surveys/answers/passes"
+            "Patch Survey Ticket Answers (2)"
           ]
         }
       },
@@ -823,7 +823,7 @@ export class InfomaniakEticket implements INodeType {
             "Survey"
           ],
           "operation": [
-            "PATCH /2/etickets/surveys/answers/passes"
+            "Patch Survey Ticket Answers (2)"
           ]
         }
       },
@@ -850,10 +850,10 @@ export class InfomaniakEticket implements INodeType {
       "options": [
         {
           "name": "Edit Ticket",
-          "value": "PATCH /2/etickets/ticket"
+          "value": "Edit Ticket"
         }
       ],
-      "default": "PATCH /2/etickets/ticket",
+      "default": "Edit Ticket",
       "noDataExpression": true
     },
     {
@@ -868,7 +868,7 @@ export class InfomaniakEticket implements INodeType {
             "Ticket"
           ],
           "operation": [
-            "PATCH /2/etickets/ticket"
+            "Edit Ticket"
           ]
         }
       },
@@ -892,7 +892,7 @@ export class InfomaniakEticket implements INodeType {
             "Address"
           ],
           "operation": [
-            "GET /2/etickets/address"
+            "List Addresses"
           ]
         }
       }
@@ -912,7 +912,7 @@ export class InfomaniakEticket implements INodeType {
             "Address"
           ],
           "operation": [
-            "GET /2/etickets/address"
+            "List Addresses"
           ],
           "returnAll": [
             false

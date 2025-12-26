@@ -15,8 +15,8 @@ type OperationDefinition = {
 };
 
 const operations: Record<string, Record<string, OperationDefinition>> = {
-  "Product management": {
-    "GET /1/ai": {
+  "Product Management": {
+    "List All Your AI Tools": {
       "method": "GET",
       "path": "/1/ai",
       "pagination": "none",
@@ -28,8 +28,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "bodyFieldName": null
     }
   },
-  "Product management > Consumptions": {
-    "GET /1/ai/{product_id}/consumptions": {
+  "Product Management > Consumptions": {
+    "List All Consumptions": {
       "method": "GET",
       "path": "/1/ai/{product_id}/consumptions",
       "pagination": "limit-skip",
@@ -47,7 +47,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Results": {
-    "GET /1/ai/{product_id}/results/{batch_id}": {
+    "Get The Result Of An Async Model Batch": {
       "method": "GET",
       "path": "/1/ai/{product_id}/results/{batch_id}",
       "pagination": "none",
@@ -67,7 +67,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/ai/{product_id}/results/{batch_id}/download": {
+    "Download The Output Result Of An Async Model Batch": {
       "method": "GET",
       "path": "/1/ai/{product_id}/results/{batch_id}/download",
       "pagination": "none",
@@ -89,7 +89,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Usage > V1 > Images": {
-    "POST /1/ai/{product_id}/images/generations/photo_maker": {
+    "Customizing Realistic Human Photos": {
       "method": "POST",
       "path": "/1/ai/{product_id}/images/generations/photo_maker",
       "pagination": "none",
@@ -152,7 +152,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Usage > V1 > Models": {
-    "GET /1/ai/models": {
+    "List Models": {
       "method": "GET",
       "path": "/1/ai/models",
       "pagination": "none",
@@ -164,8 +164,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "bodyFieldName": null
     }
   },
-  "Usage > V1 > OpenAI": {
-    "GET /1/ai/{product_id}/openai/models": {
+  "Usage > V1 > Open AI": {
+    "List Models": {
       "method": "GET",
       "path": "/1/ai/{product_id}/openai/models",
       "pagination": "none",
@@ -181,7 +181,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/ai/{product_id}/openai/chat/completions": {
+    "Create Chat Completion": {
       "method": "POST",
       "path": "/1/ai/{product_id}/openai/chat/completions",
       "pagination": "none",
@@ -258,7 +258,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "POST /1/ai/{product_id}/openai/audio/transcriptions": {
+    "Create Transcription": {
       "method": "POST",
       "path": "/1/ai/{product_id}/openai/audio/transcriptions",
       "pagination": "none",
@@ -331,7 +331,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "POST /1/ai/{product_id}/openai/images/generations": {
+    "Create Image": {
       "method": "POST",
       "path": "/1/ai/{product_id}/openai/images/generations",
       "pagination": "none",
@@ -384,7 +384,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "POST /1/ai/{product_id}/openai/v1/embeddings": {
+    "Create Embeddings": {
       "method": "POST",
       "path": "/1/ai/{product_id}/openai/v1/embeddings",
       "pagination": "none",
@@ -422,8 +422,8 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "bodyFieldName": null
     }
   },
-  "Usage > V2 > OpenAI": {
-    "POST /2/ai/{product_id}/openai/v1/chat/completions": {
+  "Usage > V2 > Open AI": {
+    "Create Chat Completion": {
       "method": "POST",
       "path": "/2/ai/{product_id}/openai/v1/chat/completions",
       "pagination": "none",
@@ -520,7 +520,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /2/ai/{product_id}/openai/v1/models": {
+    "List Models": {
       "method": "GET",
       "path": "/2/ai/{product_id}/openai/v1/models",
       "pagination": "none",
@@ -536,7 +536,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /2/ai/{product_id}/openai/v1/embeddings": {
+    "Create Embeddings": {
       "method": "POST",
       "path": "/2/ai/{product_id}/openai/v1/embeddings",
       "pagination": "none",
@@ -639,11 +639,11 @@ export class InfomaniakAitools implements INodeType {
       "options": [
         {
           "name": "Product Management",
-          "value": "Product management"
+          "value": "Product Management"
         },
         {
           "name": "Product Management > Consumptions",
-          "value": "Product management > Consumptions"
+          "value": "Product Management > Consumptions"
         },
         {
           "name": "Results",
@@ -659,14 +659,14 @@ export class InfomaniakAitools implements INodeType {
         },
         {
           "name": "Usage > V1 > Open AI",
-          "value": "Usage > V1 > OpenAI"
+          "value": "Usage > V1 > Open AI"
         },
         {
           "name": "Usage > V2 > Open AI",
-          "value": "Usage > V2 > OpenAI"
+          "value": "Usage > V2 > Open AI"
         }
       ],
-      "default": "Product management",
+      "default": "Product Management",
       "required": true,
       "noDataExpression": true
     },
@@ -677,17 +677,17 @@ export class InfomaniakAitools implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Product management"
+            "Product Management"
           ]
         }
       },
       "options": [
         {
           "name": "List All Your AI Tools",
-          "value": "GET /1/ai"
+          "value": "List All Your AI Tools"
         }
       ],
-      "default": "GET /1/ai",
+      "default": "List All Your AI Tools",
       "noDataExpression": true
     },
     {
@@ -697,17 +697,17 @@ export class InfomaniakAitools implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Product management > Consumptions"
+            "Product Management > Consumptions"
           ]
         }
       },
       "options": [
         {
           "name": "List All Consumptions",
-          "value": "GET /1/ai/{product_id}/consumptions"
+          "value": "List All Consumptions"
         }
       ],
-      "default": "GET /1/ai/{product_id}/consumptions",
+      "default": "List All Consumptions",
       "noDataExpression": true
     },
     {
@@ -718,10 +718,10 @@ export class InfomaniakAitools implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Product management > Consumptions"
+            "Product Management > Consumptions"
           ],
           "operation": [
-            "GET /1/ai/{product_id}/consumptions"
+            "List All Consumptions"
           ]
         }
       },
@@ -737,10 +737,10 @@ export class InfomaniakAitools implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Product management > Consumptions"
+            "Product Management > Consumptions"
           ],
           "operation": [
-            "GET /1/ai/{product_id}/consumptions"
+            "List All Consumptions"
           ]
         }
       },
@@ -833,14 +833,14 @@ export class InfomaniakAitools implements INodeType {
       "options": [
         {
           "name": "Get The Result Of An Async Model Batch",
-          "value": "GET /1/ai/{product_id}/results/{batch_id}"
+          "value": "Get The Result Of An Async Model Batch"
         },
         {
           "name": "Download The Output Result Of An Async Model Batch",
-          "value": "GET /1/ai/{product_id}/results/{batch_id}/download"
+          "value": "Download The Output Result Of An Async Model Batch"
         }
       ],
-      "default": "GET /1/ai/{product_id}/results/{batch_id}",
+      "default": "Get The Result Of An Async Model Batch",
       "noDataExpression": true
     },
     {
@@ -854,7 +854,7 @@ export class InfomaniakAitools implements INodeType {
             "Results"
           ],
           "operation": [
-            "GET /1/ai/{product_id}/results/{batch_id}"
+            "Get The Result Of An Async Model Batch"
           ]
         }
       },
@@ -872,7 +872,7 @@ export class InfomaniakAitools implements INodeType {
             "Results"
           ],
           "operation": [
-            "GET /1/ai/{product_id}/results/{batch_id}"
+            "Get The Result Of An Async Model Batch"
           ]
         }
       },
@@ -889,7 +889,7 @@ export class InfomaniakAitools implements INodeType {
             "Results"
           ],
           "operation": [
-            "GET /1/ai/{product_id}/results/{batch_id}/download"
+            "Download The Output Result Of An Async Model Batch"
           ]
         }
       },
@@ -907,7 +907,7 @@ export class InfomaniakAitools implements INodeType {
             "Results"
           ],
           "operation": [
-            "GET /1/ai/{product_id}/results/{batch_id}/download"
+            "Download The Output Result Of An Async Model Batch"
           ]
         }
       },
@@ -928,10 +928,10 @@ export class InfomaniakAitools implements INodeType {
       "options": [
         {
           "name": "Customizing Realistic Human Photos",
-          "value": "POST /1/ai/{product_id}/images/generations/photo_maker"
+          "value": "Customizing Realistic Human Photos"
         }
       ],
-      "default": "POST /1/ai/{product_id}/images/generations/photo_maker",
+      "default": "Customizing Realistic Human Photos",
       "noDataExpression": true
     },
     {
@@ -945,7 +945,7 @@ export class InfomaniakAitools implements INodeType {
             "Usage > V1 > Images"
           ],
           "operation": [
-            "POST /1/ai/{product_id}/images/generations/photo_maker"
+            "Customizing Realistic Human Photos"
           ]
         }
       },
@@ -963,7 +963,7 @@ export class InfomaniakAitools implements INodeType {
             "Usage > V1 > Images"
           ],
           "operation": [
-            "POST /1/ai/{product_id}/images/generations/photo_maker"
+            "Customizing Realistic Human Photos"
           ]
         }
       },
@@ -981,7 +981,7 @@ export class InfomaniakAitools implements INodeType {
             "Usage > V1 > Images"
           ],
           "operation": [
-            "POST /1/ai/{product_id}/images/generations/photo_maker"
+            "Customizing Realistic Human Photos"
           ]
         }
       },
@@ -1000,7 +1000,7 @@ export class InfomaniakAitools implements INodeType {
             "Usage > V1 > Images"
           ],
           "operation": [
-            "POST /1/ai/{product_id}/images/generations/photo_maker"
+            "Customizing Realistic Human Photos"
           ]
         }
       },
@@ -1159,10 +1159,10 @@ export class InfomaniakAitools implements INodeType {
       "options": [
         {
           "name": "List Models",
-          "value": "GET /1/ai/models"
+          "value": "List Models"
         }
       ],
-      "default": "GET /1/ai/models",
+      "default": "List Models",
       "noDataExpression": true
     },
     {
@@ -1177,7 +1177,7 @@ export class InfomaniakAitools implements INodeType {
             "Usage > V1 > Models"
           ],
           "operation": [
-            "GET /1/ai/models"
+            "List Models"
           ]
         }
       },
@@ -1222,33 +1222,33 @@ export class InfomaniakAitools implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Usage > V1 > OpenAI"
+            "Usage > V1 > Open AI"
           ]
         }
       },
       "options": [
         {
           "name": "List Models",
-          "value": "GET /1/ai/{product_id}/openai/models"
+          "value": "List Models"
         },
         {
           "name": "Create Chat Completion",
-          "value": "POST /1/ai/{product_id}/openai/chat/completions"
+          "value": "Create Chat Completion"
         },
         {
           "name": "Create Transcription",
-          "value": "POST /1/ai/{product_id}/openai/audio/transcriptions"
+          "value": "Create Transcription"
         },
         {
           "name": "Create Image",
-          "value": "POST /1/ai/{product_id}/openai/images/generations"
+          "value": "Create Image"
         },
         {
           "name": "Create Embeddings",
-          "value": "POST /1/ai/{product_id}/openai/v1/embeddings"
+          "value": "Create Embeddings"
         }
       ],
-      "default": "GET /1/ai/{product_id}/openai/models",
+      "default": "List Models",
       "noDataExpression": true
     },
     {
@@ -1259,10 +1259,10 @@ export class InfomaniakAitools implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Usage > V1 > OpenAI"
+            "Usage > V1 > Open AI"
           ],
           "operation": [
-            "GET /1/ai/{product_id}/openai/models"
+            "List Models"
           ]
         }
       },
@@ -1277,10 +1277,10 @@ export class InfomaniakAitools implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Usage > V1 > OpenAI"
+            "Usage > V1 > Open AI"
           ],
           "operation": [
-            "POST /1/ai/{product_id}/openai/chat/completions"
+            "Create Chat Completion"
           ]
         }
       },
@@ -1295,10 +1295,10 @@ export class InfomaniakAitools implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Usage > V1 > OpenAI"
+            "Usage > V1 > Open AI"
           ],
           "operation": [
-            "POST /1/ai/{product_id}/openai/chat/completions"
+            "Create Chat Completion"
           ]
         }
       },
@@ -1312,10 +1312,10 @@ export class InfomaniakAitools implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Usage > V1 > OpenAI"
+            "Usage > V1 > Open AI"
           ],
           "operation": [
-            "POST /1/ai/{product_id}/openai/chat/completions"
+            "Create Chat Completion"
           ]
         }
       },
@@ -1331,10 +1331,10 @@ export class InfomaniakAitools implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Usage > V1 > OpenAI"
+            "Usage > V1 > Open AI"
           ],
           "operation": [
-            "POST /1/ai/{product_id}/openai/chat/completions"
+            "Create Chat Completion"
           ]
         }
       },
@@ -1454,10 +1454,10 @@ export class InfomaniakAitools implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Usage > V1 > OpenAI"
+            "Usage > V1 > Open AI"
           ],
           "operation": [
-            "POST /1/ai/{product_id}/openai/audio/transcriptions"
+            "Create Transcription"
           ]
         }
       },
@@ -1472,10 +1472,10 @@ export class InfomaniakAitools implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Usage > V1 > OpenAI"
+            "Usage > V1 > Open AI"
           ],
           "operation": [
-            "POST /1/ai/{product_id}/openai/audio/transcriptions"
+            "Create Transcription"
           ]
         }
       },
@@ -1490,10 +1490,10 @@ export class InfomaniakAitools implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Usage > V1 > OpenAI"
+            "Usage > V1 > Open AI"
           ],
           "operation": [
-            "POST /1/ai/{product_id}/openai/audio/transcriptions"
+            "Create Transcription"
           ]
         }
       },
@@ -1509,10 +1509,10 @@ export class InfomaniakAitools implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Usage > V1 > OpenAI"
+            "Usage > V1 > Open AI"
           ],
           "operation": [
-            "POST /1/ai/{product_id}/openai/audio/transcriptions"
+            "Create Transcription"
           ]
         }
       },
@@ -2035,10 +2035,10 @@ export class InfomaniakAitools implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Usage > V1 > OpenAI"
+            "Usage > V1 > Open AI"
           ],
           "operation": [
-            "POST /1/ai/{product_id}/openai/images/generations"
+            "Create Image"
           ]
         }
       },
@@ -2053,10 +2053,10 @@ export class InfomaniakAitools implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Usage > V1 > OpenAI"
+            "Usage > V1 > Open AI"
           ],
           "operation": [
-            "POST /1/ai/{product_id}/openai/images/generations"
+            "Create Image"
           ]
         }
       },
@@ -2071,10 +2071,10 @@ export class InfomaniakAitools implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Usage > V1 > OpenAI"
+            "Usage > V1 > Open AI"
           ],
           "operation": [
-            "POST /1/ai/{product_id}/openai/images/generations"
+            "Create Image"
           ]
         }
       },
@@ -2090,10 +2090,10 @@ export class InfomaniakAitools implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Usage > V1 > OpenAI"
+            "Usage > V1 > Open AI"
           ],
           "operation": [
-            "POST /1/ai/{product_id}/openai/images/generations"
+            "Create Image"
           ]
         }
       },
@@ -2232,10 +2232,10 @@ export class InfomaniakAitools implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Usage > V1 > OpenAI"
+            "Usage > V1 > Open AI"
           ],
           "operation": [
-            "POST /1/ai/{product_id}/openai/v1/embeddings"
+            "Create Embeddings"
           ]
         }
       },
@@ -2250,10 +2250,10 @@ export class InfomaniakAitools implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Usage > V1 > OpenAI"
+            "Usage > V1 > Open AI"
           ],
           "operation": [
-            "POST /1/ai/{product_id}/openai/v1/embeddings"
+            "Create Embeddings"
           ]
         }
       },
@@ -2268,10 +2268,10 @@ export class InfomaniakAitools implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Usage > V1 > OpenAI"
+            "Usage > V1 > Open AI"
           ],
           "operation": [
-            "POST /1/ai/{product_id}/openai/v1/embeddings"
+            "Create Embeddings"
           ]
         }
       },
@@ -2287,10 +2287,10 @@ export class InfomaniakAitools implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Usage > V1 > OpenAI"
+            "Usage > V1 > Open AI"
           ],
           "operation": [
-            "POST /1/ai/{product_id}/openai/v1/embeddings"
+            "Create Embeddings"
           ]
         }
       },
@@ -2345,25 +2345,25 @@ export class InfomaniakAitools implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Usage > V2 > OpenAI"
+            "Usage > V2 > Open AI"
           ]
         }
       },
       "options": [
         {
           "name": "Create Chat Completion",
-          "value": "POST /2/ai/{product_id}/openai/v1/chat/completions"
+          "value": "Create Chat Completion"
         },
         {
           "name": "List Models",
-          "value": "GET /2/ai/{product_id}/openai/v1/models"
+          "value": "List Models"
         },
         {
           "name": "Create Embeddings",
-          "value": "POST /2/ai/{product_id}/openai/v1/embeddings"
+          "value": "Create Embeddings"
         }
       ],
-      "default": "POST /2/ai/{product_id}/openai/v1/chat/completions",
+      "default": "Create Chat Completion",
       "noDataExpression": true
     },
     {
@@ -2374,10 +2374,10 @@ export class InfomaniakAitools implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Usage > V2 > OpenAI"
+            "Usage > V2 > Open AI"
           ],
           "operation": [
-            "POST /2/ai/{product_id}/openai/v1/chat/completions"
+            "Create Chat Completion"
           ]
         }
       },
@@ -2392,10 +2392,10 @@ export class InfomaniakAitools implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Usage > V2 > OpenAI"
+            "Usage > V2 > Open AI"
           ],
           "operation": [
-            "POST /2/ai/{product_id}/openai/v1/chat/completions"
+            "Create Chat Completion"
           ]
         }
       },
@@ -2409,10 +2409,10 @@ export class InfomaniakAitools implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Usage > V2 > OpenAI"
+            "Usage > V2 > Open AI"
           ],
           "operation": [
-            "POST /2/ai/{product_id}/openai/v1/chat/completions"
+            "Create Chat Completion"
           ]
         }
       },
@@ -2428,10 +2428,10 @@ export class InfomaniakAitools implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Usage > V2 > OpenAI"
+            "Usage > V2 > Open AI"
           ],
           "operation": [
-            "POST /2/ai/{product_id}/openai/v1/chat/completions"
+            "Create Chat Completion"
           ]
         }
       },
@@ -2572,10 +2572,10 @@ export class InfomaniakAitools implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Usage > V2 > OpenAI"
+            "Usage > V2 > Open AI"
           ],
           "operation": [
-            "GET /2/ai/{product_id}/openai/v1/models"
+            "List Models"
           ]
         }
       },
@@ -2590,10 +2590,10 @@ export class InfomaniakAitools implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Usage > V2 > OpenAI"
+            "Usage > V2 > Open AI"
           ],
           "operation": [
-            "POST /2/ai/{product_id}/openai/v1/embeddings"
+            "Create Embeddings"
           ]
         }
       },
@@ -2608,10 +2608,10 @@ export class InfomaniakAitools implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Usage > V2 > OpenAI"
+            "Usage > V2 > Open AI"
           ],
           "operation": [
-            "POST /2/ai/{product_id}/openai/v1/embeddings"
+            "Create Embeddings"
           ]
         }
       },
@@ -2626,10 +2626,10 @@ export class InfomaniakAitools implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Usage > V2 > OpenAI"
+            "Usage > V2 > Open AI"
           ],
           "operation": [
-            "POST /2/ai/{product_id}/openai/v1/embeddings"
+            "Create Embeddings"
           ]
         }
       },
@@ -2645,10 +2645,10 @@ export class InfomaniakAitools implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Usage > V2 > OpenAI"
+            "Usage > V2 > Open AI"
           ],
           "operation": [
-            "POST /2/ai/{product_id}/openai/v1/embeddings"
+            "Create Embeddings"
           ]
         }
       },
@@ -2677,10 +2677,10 @@ export class InfomaniakAitools implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Product management > Consumptions"
+            "Product Management > Consumptions"
           ],
           "operation": [
-            "GET /1/ai/{product_id}/consumptions"
+            "List All Consumptions"
           ]
         }
       }
@@ -2697,10 +2697,10 @@ export class InfomaniakAitools implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Product management > Consumptions"
+            "Product Management > Consumptions"
           ],
           "operation": [
-            "GET /1/ai/{product_id}/consumptions"
+            "List All Consumptions"
           ],
           "returnAll": [
             false

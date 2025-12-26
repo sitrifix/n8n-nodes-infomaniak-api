@@ -15,8 +15,8 @@ type OperationDefinition = {
 };
 
 const operations: Record<string, Record<string, OperationDefinition>> = {
-  "ApiKey": {
-    "GET /1/newsletters/{domain}/api-key": {
+  "API Key": {
+    "API Key": {
       "method": "GET",
       "path": "/1/newsletters/{domain}/api-key",
       "pagination": "none",
@@ -34,7 +34,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Campaigns": {
-    "GET /1/newsletters/{domain}/campaigns": {
+    "List All Campaigns": {
       "method": "GET",
       "path": "/1/newsletters/{domain}/campaigns",
       "pagination": "limit-skip",
@@ -50,7 +50,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/newsletters/{domain}/campaigns": {
+    "Create Campaign": {
       "method": "POST",
       "path": "/1/newsletters/{domain}/campaigns",
       "pagination": "none",
@@ -119,7 +119,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/newsletters/{domain}/campaigns": {
+    "Delete Campaigns Bulk": {
       "method": "DELETE",
       "path": "/1/newsletters/{domain}/campaigns",
       "pagination": "none",
@@ -140,7 +140,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /1/newsletters/{domain}/campaigns/{campaign}": {
+    "Get Campaign": {
       "method": "GET",
       "path": "/1/newsletters/{domain}/campaigns/{campaign}",
       "pagination": "none",
@@ -165,7 +165,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "PUT /1/newsletters/{domain}/campaigns/{campaign}": {
+    "Edit Campaign": {
       "method": "PUT",
       "path": "/1/newsletters/{domain}/campaigns/{campaign}",
       "pagination": "none",
@@ -238,7 +238,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/newsletters/{domain}/campaigns/{campaign}": {
+    "Delete Campaign": {
       "method": "DELETE",
       "path": "/1/newsletters/{domain}/campaigns/{campaign}",
       "pagination": "none",
@@ -263,7 +263,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /1/newsletters/{domain}/campaigns/{campaign}/tracking": {
+    "Get Tracking": {
       "method": "GET",
       "path": "/1/newsletters/{domain}/campaigns/{campaign}/tracking",
       "pagination": "limit-skip",
@@ -283,7 +283,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/newsletters/{domain}/campaigns/{campaign}/report/links": {
+    "Links Activity": {
       "method": "GET",
       "path": "/1/newsletters/{domain}/campaigns/{campaign}/report/links",
       "pagination": "none",
@@ -303,7 +303,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/newsletters/{domain}/campaigns/{campaign}/report/activity": {
+    "Subscribers Activity": {
       "method": "GET",
       "path": "/1/newsletters/{domain}/campaigns/{campaign}/report/activity",
       "pagination": "page-per-page",
@@ -323,7 +323,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/newsletters/{domain}/campaigns/template/{template_uuid}/test": {
+    "Test Campaign": {
       "method": "POST",
       "path": "/1/newsletters/{domain}/campaigns/template/{template_uuid}/test",
       "pagination": "none",
@@ -348,7 +348,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/newsletters/{domain}/campaigns/{campaign}/duplicate": {
+    "Duplicate Campaign": {
       "method": "POST",
       "path": "/1/newsletters/{domain}/campaigns/{campaign}/duplicate",
       "pagination": "none",
@@ -373,7 +373,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "POST /1/newsletters/{domain}/campaigns/{campaign}/test": {
+    "Test Campaign (2)": {
       "method": "POST",
       "path": "/1/newsletters/{domain}/campaigns/{campaign}/test",
       "pagination": "none",
@@ -398,7 +398,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/newsletters/{domain}/campaigns/{campaign}/cancel": {
+    "Cancel Campaign": {
       "method": "PUT",
       "path": "/1/newsletters/{domain}/campaigns/{campaign}/cancel",
       "pagination": "none",
@@ -423,7 +423,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "PUT /1/newsletters/{domain}/campaigns/{campaign}/schedule": {
+    "Schedule Campaign": {
       "method": "PUT",
       "path": "/1/newsletters/{domain}/campaigns/{campaign}/schedule",
       "pagination": "none",
@@ -450,7 +450,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Credits": {
-    "GET /1/newsletters/{domain}/credits": {
+    "List All Credits": {
       "method": "GET",
       "path": "/1/newsletters/{domain}/credits",
       "pagination": "limit-skip",
@@ -466,7 +466,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/newsletters/{domain}/credits/accounts": {
+    "Account Credits": {
       "method": "GET",
       "path": "/1/newsletters/{domain}/credits/accounts",
       "pagination": "limit-skip",
@@ -482,7 +482,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/newsletters/{domain}/credits/details": {
+    "Credits Details": {
       "method": "GET",
       "path": "/1/newsletters/{domain}/credits/details",
       "pagination": "none",
@@ -498,7 +498,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/newsletters/{domain}/credits/packs": {
+    "List Credits Offers": {
       "method": "GET",
       "path": "/1/newsletters/{domain}/credits/packs",
       "pagination": "none",
@@ -514,7 +514,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/newsletters/{domain}/credits/checkout/{id}": {
+    "Checkout": {
       "method": "GET",
       "path": "/1/newsletters/{domain}/credits/checkout/{id}",
       "pagination": "none",
@@ -536,7 +536,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Domains": {
-    "GET /1/newsletters/{domain}": {
+    "Display Domain": {
       "method": "GET",
       "path": "/1/newsletters/{domain}",
       "pagination": "none",
@@ -552,7 +552,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/newsletters/{domain}": {
+    "Delete Domain": {
       "method": "DELETE",
       "path": "/1/newsletters/{domain}",
       "pagination": "none",
@@ -570,7 +570,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Fields": {
-    "GET /1/newsletters/{domain}/fields": {
+    "List All Fields": {
       "method": "GET",
       "path": "/1/newsletters/{domain}/fields",
       "pagination": "limit-skip",
@@ -586,7 +586,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/newsletters/{domain}/fields": {
+    "Create A Field": {
       "method": "POST",
       "path": "/1/newsletters/{domain}/fields",
       "pagination": "none",
@@ -615,7 +615,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/newsletters/{domain}/fields": {
+    "Delete Fields": {
       "method": "DELETE",
       "path": "/1/newsletters/{domain}/fields",
       "pagination": "none",
@@ -640,7 +640,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "PUT /1/newsletters/{domain}/fields/{field}": {
+    "Update A Field": {
       "method": "PUT",
       "path": "/1/newsletters/{domain}/fields/{field}",
       "pagination": "none",
@@ -665,7 +665,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/newsletters/{domain}/fields/{field}": {
+    "Delete A Field": {
       "method": "DELETE",
       "path": "/1/newsletters/{domain}/fields/{field}",
       "pagination": "none",
@@ -687,7 +687,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Groups": {
-    "GET /1/newsletters/{domain}/groups": {
+    "List All Groups": {
       "method": "GET",
       "path": "/1/newsletters/{domain}/groups",
       "pagination": "limit-skip",
@@ -703,7 +703,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/newsletters/{domain}/groups": {
+    "Create A Group": {
       "method": "POST",
       "path": "/1/newsletters/{domain}/groups",
       "pagination": "none",
@@ -724,7 +724,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/newsletters/{domain}/groups": {
+    "Delete Groups": {
       "method": "DELETE",
       "path": "/1/newsletters/{domain}/groups",
       "pagination": "none",
@@ -749,7 +749,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /1/newsletters/{domain}/groups/{group}": {
+    "Fetch A Group": {
       "method": "GET",
       "path": "/1/newsletters/{domain}/groups/{group}",
       "pagination": "none",
@@ -769,7 +769,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/newsletters/{domain}/groups/{group}": {
+    "Update A Group": {
       "method": "PUT",
       "path": "/1/newsletters/{domain}/groups/{group}",
       "pagination": "none",
@@ -794,7 +794,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/newsletters/{domain}/groups/{group}": {
+    "Delete A Group": {
       "method": "DELETE",
       "path": "/1/newsletters/{domain}/groups/{group}",
       "pagination": "none",
@@ -814,7 +814,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/newsletters/{domain}/groups/{group}/subscribers": {
+    "List Subscribers": {
       "method": "GET",
       "path": "/1/newsletters/{domain}/groups/{group}/subscribers",
       "pagination": "limit-skip",
@@ -834,7 +834,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/newsletters/{domain}/groups/{group}/subscribers/assign": {
+    "Assign Subscribers": {
       "method": "POST",
       "path": "/1/newsletters/{domain}/groups/{group}/subscribers/assign",
       "pagination": "none",
@@ -859,7 +859,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/newsletters/{domain}/groups/{group}/subscribers/unassign": {
+    "Unassign Subscribers": {
       "method": "POST",
       "path": "/1/newsletters/{domain}/groups/{group}/subscribers/unassign",
       "pagination": "none",
@@ -886,7 +886,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Operations": {
-    "DELETE /1/newsletters/{domain}/operations/{operationId}": {
+    "Cancel An Operation": {
       "method": "DELETE",
       "path": "/1/newsletters/{domain}/operations/{operationId}",
       "pagination": "none",
@@ -908,7 +908,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Segments": {
-    "GET /1/newsletters/{domain}/segments": {
+    "List All Segments": {
       "method": "GET",
       "path": "/1/newsletters/{domain}/segments",
       "pagination": "limit-skip",
@@ -924,7 +924,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/newsletters/{domain}/segments": {
+    "Create A Segment": {
       "method": "POST",
       "path": "/1/newsletters/{domain}/segments",
       "pagination": "none",
@@ -949,7 +949,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "DELETE /1/newsletters/{domain}/segments": {
+    "Delete Segments": {
       "method": "DELETE",
       "path": "/1/newsletters/{domain}/segments",
       "pagination": "none",
@@ -974,7 +974,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /1/newsletters/{domain}/segments/{segment}": {
+    "Fetch A Segment": {
       "method": "GET",
       "path": "/1/newsletters/{domain}/segments/{segment}",
       "pagination": "none",
@@ -994,7 +994,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/newsletters/{domain}/segments/{segment}": {
+    "Update A Segment": {
       "method": "PUT",
       "path": "/1/newsletters/{domain}/segments/{segment}",
       "pagination": "none",
@@ -1023,7 +1023,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/newsletters/{domain}/segments/{segment}": {
+    "Delete A Segment": {
       "method": "DELETE",
       "path": "/1/newsletters/{domain}/segments/{segment}",
       "pagination": "none",
@@ -1043,7 +1043,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/newsletters/{domain}/segments/{segment}/subscribers": {
+    "List Subscribers": {
       "method": "GET",
       "path": "/1/newsletters/{domain}/segments/{segment}/subscribers",
       "pagination": "limit-skip",
@@ -1065,7 +1065,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Subscribers": {
-    "GET /1/newsletters/{domain}/subscribers": {
+    "List All Subscribers": {
       "method": "GET",
       "path": "/1/newsletters/{domain}/subscribers",
       "pagination": "limit-skip",
@@ -1081,7 +1081,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/newsletters/{domain}/subscribers": {
+    "Create A Subscriber": {
       "method": "POST",
       "path": "/1/newsletters/{domain}/subscribers",
       "pagination": "none",
@@ -1114,7 +1114,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/newsletters/{domain}/subscribers": {
+    "Delete Subscribers": {
       "method": "DELETE",
       "path": "/1/newsletters/{domain}/subscribers",
       "pagination": "none",
@@ -1143,7 +1143,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /1/newsletters/{domain}/subscribers/count_status": {
+    "Count Subscribers Status": {
       "method": "GET",
       "path": "/1/newsletters/{domain}/subscribers/count_status",
       "pagination": "none",
@@ -1159,7 +1159,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/newsletters/{domain}/subscribers/{subscriber}": {
+    "Fetch A Subscriber": {
       "method": "GET",
       "path": "/1/newsletters/{domain}/subscribers/{subscriber}",
       "pagination": "none",
@@ -1179,7 +1179,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/newsletters/{domain}/subscribers/{subscriber}": {
+    "Update A Subscriber": {
       "method": "PUT",
       "path": "/1/newsletters/{domain}/subscribers/{subscriber}",
       "pagination": "none",
@@ -1212,7 +1212,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/newsletters/{domain}/subscribers/{subscriber}": {
+    "Delete A Subscriber": {
       "method": "DELETE",
       "path": "/1/newsletters/{domain}/subscribers/{subscriber}",
       "pagination": "none",
@@ -1232,7 +1232,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/newsletters/{domain}/subscribers/filter": {
+    "Filter Subscribers": {
       "method": "POST",
       "path": "/1/newsletters/{domain}/subscribers/filter",
       "pagination": "limit-skip",
@@ -1257,7 +1257,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "POST /1/newsletters/{domain}/subscribers/export": {
+    "Export Subscribers": {
       "method": "POST",
       "path": "/1/newsletters/{domain}/subscribers/export",
       "pagination": "none",
@@ -1286,7 +1286,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "POST /1/newsletters/{domain}/subscribers/import": {
+    "Import Subscribers": {
       "method": "POST",
       "path": "/1/newsletters/{domain}/subscribers/import",
       "pagination": "none",
@@ -1331,7 +1331,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "POST /1/newsletters/{domain}/subscribers/import/upload": {
+    "Upload Csv File": {
       "method": "POST",
       "path": "/1/newsletters/{domain}/subscribers/import/upload",
       "pagination": "none",
@@ -1356,7 +1356,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/newsletters/{domain}/subscribers/{subscriber}/forget": {
+    "Forget A Subscriber": {
       "method": "DELETE",
       "path": "/1/newsletters/{domain}/subscribers/{subscriber}/forget",
       "pagination": "none",
@@ -1376,7 +1376,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/newsletters/{domain}/subscribers/unsubscribe": {
+    "Unsubscribe Subscribers": {
       "method": "PUT",
       "path": "/1/newsletters/{domain}/subscribers/unsubscribe",
       "pagination": "none",
@@ -1405,7 +1405,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "PUT /1/newsletters/{domain}/subscribers/assign": {
+    "Assign": {
       "method": "PUT",
       "path": "/1/newsletters/{domain}/subscribers/assign",
       "pagination": "none",
@@ -1438,7 +1438,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "PUT /1/newsletters/{domain}/subscribers/unassign": {
+    "Unassign": {
       "method": "PUT",
       "path": "/1/newsletters/{domain}/subscribers/unassign",
       "pagination": "none",
@@ -1473,7 +1473,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Templates": {
-    "GET /1/newsletters/{domain}/templates": {
+    "List All Templates": {
       "method": "GET",
       "path": "/1/newsletters/{domain}/templates",
       "pagination": "limit-skip",
@@ -1489,7 +1489,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/newsletters/{domain}/templates/{template}/html": {
+    "Show Html": {
       "method": "GET",
       "path": "/1/newsletters/{domain}/templates/{template}/html",
       "pagination": "none",
@@ -1509,7 +1509,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/newsletters/{domain}/campaigns/{campaign}/template/{template}": {
+    "Create Template From Campaign": {
       "method": "POST",
       "path": "/1/newsletters/{domain}/campaigns/{campaign}/template/{template}",
       "pagination": "none",
@@ -1538,7 +1538,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "PUT /1/newsletters/{domain}/templates/{template}/update-thumbnails": {
+    "Update Thumbnail": {
       "method": "PUT",
       "path": "/1/newsletters/{domain}/templates/{template}/update-thumbnails",
       "pagination": "none",
@@ -1565,7 +1565,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
     }
   },
   "Webforms": {
-    "GET /1/newsletters/{domain}/webforms": {
+    "List All Webforms": {
       "method": "GET",
       "path": "/1/newsletters/{domain}/webforms",
       "pagination": "limit-skip",
@@ -1581,7 +1581,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "POST /1/newsletters/{domain}/webforms": {
+    "Create A Webform": {
       "method": "POST",
       "path": "/1/newsletters/{domain}/webforms",
       "pagination": "none",
@@ -1674,7 +1674,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/newsletters/{domain}/webforms": {
+    "Bulk Delete Webform": {
       "method": "DELETE",
       "path": "/1/newsletters/{domain}/webforms",
       "pagination": "none",
@@ -1699,7 +1699,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /1/newsletters/{domain}/webforms/themes": {
+    "List Themes": {
       "method": "GET",
       "path": "/1/newsletters/{domain}/webforms/themes",
       "pagination": "none",
@@ -1715,7 +1715,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/newsletters/{domain}/webforms/{webform}": {
+    "Fetch A Webform": {
       "method": "GET",
       "path": "/1/newsletters/{domain}/webforms/{webform}",
       "pagination": "none",
@@ -1735,7 +1735,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "PUT /1/newsletters/{domain}/webforms/{webform}": {
+    "Update A Webform": {
       "method": "PUT",
       "path": "/1/newsletters/{domain}/webforms/{webform}",
       "pagination": "none",
@@ -1832,7 +1832,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "DELETE /1/newsletters/{domain}/webforms/{webform}": {
+    "Delete A Webform": {
       "method": "DELETE",
       "path": "/1/newsletters/{domain}/webforms/{webform}",
       "pagination": "none",
@@ -1852,7 +1852,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /1/newsletters/{domain}/webforms/{webform}/fields": {
+    "List Webform Fields": {
       "method": "GET",
       "path": "/1/newsletters/{domain}/webforms/{webform}/fields",
       "pagination": "none",
@@ -1942,7 +1942,7 @@ export class InfomaniakNewsletter implements INodeType {
       "options": [
         {
           "name": "API Key",
-          "value": "ApiKey"
+          "value": "API Key"
         },
         {
           "name": "Campaigns",
@@ -1985,7 +1985,7 @@ export class InfomaniakNewsletter implements INodeType {
           "value": "Webforms"
         }
       ],
-      "default": "ApiKey",
+      "default": "API Key",
       "required": true,
       "noDataExpression": true
     },
@@ -1996,17 +1996,17 @@ export class InfomaniakNewsletter implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "ApiKey"
+            "API Key"
           ]
         }
       },
       "options": [
         {
           "name": "API Key",
-          "value": "GET /1/newsletters/{domain}/api-key"
+          "value": "API Key"
         }
       ],
-      "default": "GET /1/newsletters/{domain}/api-key",
+      "default": "API Key",
       "noDataExpression": true
     },
     {
@@ -2017,10 +2017,10 @@ export class InfomaniakNewsletter implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "ApiKey"
+            "API Key"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/api-key"
+            "API Key"
           ]
         }
       },
@@ -2041,62 +2041,62 @@ export class InfomaniakNewsletter implements INodeType {
       "options": [
         {
           "name": "List All Campaigns",
-          "value": "GET /1/newsletters/{domain}/campaigns"
+          "value": "List All Campaigns"
         },
         {
           "name": "Create Campaign",
-          "value": "POST /1/newsletters/{domain}/campaigns"
+          "value": "Create Campaign"
         },
         {
           "name": "Delete Campaigns Bulk",
-          "value": "DELETE /1/newsletters/{domain}/campaigns"
+          "value": "Delete Campaigns Bulk"
         },
         {
           "name": "Get Campaign",
-          "value": "GET /1/newsletters/{domain}/campaigns/{campaign}"
+          "value": "Get Campaign"
         },
         {
           "name": "Edit Campaign",
-          "value": "PUT /1/newsletters/{domain}/campaigns/{campaign}"
+          "value": "Edit Campaign"
         },
         {
           "name": "Delete Campaign",
-          "value": "DELETE /1/newsletters/{domain}/campaigns/{campaign}"
+          "value": "Delete Campaign"
         },
         {
           "name": "Get Tracking",
-          "value": "GET /1/newsletters/{domain}/campaigns/{campaign}/tracking"
+          "value": "Get Tracking"
         },
         {
           "name": "Links Activity",
-          "value": "GET /1/newsletters/{domain}/campaigns/{campaign}/report/links"
+          "value": "Links Activity"
         },
         {
           "name": "Subscribers Activity",
-          "value": "GET /1/newsletters/{domain}/campaigns/{campaign}/report/activity"
+          "value": "Subscribers Activity"
         },
         {
           "name": "Test Campaign",
-          "value": "POST /1/newsletters/{domain}/campaigns/template/{template_uuid}/test"
+          "value": "Test Campaign"
         },
         {
           "name": "Duplicate Campaign",
-          "value": "POST /1/newsletters/{domain}/campaigns/{campaign}/duplicate"
+          "value": "Duplicate Campaign"
         },
         {
           "name": "Test Campaign",
-          "value": "POST /1/newsletters/{domain}/campaigns/{campaign}/test"
+          "value": "Test Campaign (2)"
         },
         {
           "name": "Cancel Campaign",
-          "value": "PUT /1/newsletters/{domain}/campaigns/{campaign}/cancel"
+          "value": "Cancel Campaign"
         },
         {
           "name": "Schedule Campaign",
-          "value": "PUT /1/newsletters/{domain}/campaigns/{campaign}/schedule"
+          "value": "Schedule Campaign"
         }
       ],
-      "default": "GET /1/newsletters/{domain}/campaigns",
+      "default": "List All Campaigns",
       "noDataExpression": true
     },
     {
@@ -2110,7 +2110,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Campaigns"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/campaigns"
+            "List All Campaigns"
           ]
         }
       },
@@ -2129,7 +2129,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Campaigns"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/campaigns"
+            "List All Campaigns"
           ]
         }
       },
@@ -2250,7 +2250,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Campaigns"
           ],
           "operation": [
-            "POST /1/newsletters/{domain}/campaigns"
+            "Create Campaign"
           ]
         }
       },
@@ -2268,7 +2268,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Campaigns"
           ],
           "operation": [
-            "POST /1/newsletters/{domain}/campaigns"
+            "Create Campaign"
           ]
         }
       },
@@ -2285,7 +2285,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Campaigns"
           ],
           "operation": [
-            "POST /1/newsletters/{domain}/campaigns"
+            "Create Campaign"
           ]
         }
       },
@@ -2302,7 +2302,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Campaigns"
           ],
           "operation": [
-            "POST /1/newsletters/{domain}/campaigns"
+            "Create Campaign"
           ]
         }
       },
@@ -2341,7 +2341,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Campaigns"
           ],
           "operation": [
-            "POST /1/newsletters/{domain}/campaigns"
+            "Create Campaign"
           ]
         }
       },
@@ -2359,7 +2359,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Campaigns"
           ],
           "operation": [
-            "POST /1/newsletters/{domain}/campaigns"
+            "Create Campaign"
           ]
         }
       },
@@ -2431,7 +2431,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Campaigns"
           ],
           "operation": [
-            "DELETE /1/newsletters/{domain}/campaigns"
+            "Delete Campaigns Bulk"
           ]
         }
       },
@@ -2449,7 +2449,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Campaigns"
           ],
           "operation": [
-            "DELETE /1/newsletters/{domain}/campaigns"
+            "Delete Campaigns Bulk"
           ]
         }
       },
@@ -2474,7 +2474,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Campaigns"
           ],
           "operation": [
-            "DELETE /1/newsletters/{domain}/campaigns"
+            "Delete Campaigns Bulk"
           ]
         }
       },
@@ -2498,7 +2498,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Campaigns"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/campaigns/{campaign}"
+            "Get Campaign"
           ]
         }
       },
@@ -2516,7 +2516,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Campaigns"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/campaigns/{campaign}"
+            "Get Campaign"
           ]
         }
       },
@@ -2535,7 +2535,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Campaigns"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/campaigns/{campaign}"
+            "Get Campaign"
           ]
         }
       },
@@ -2561,7 +2561,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Campaigns"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/campaigns/{campaign}"
+            "Get Campaign"
           ]
         }
       },
@@ -2585,7 +2585,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Campaigns"
           ],
           "operation": [
-            "PUT /1/newsletters/{domain}/campaigns/{campaign}"
+            "Edit Campaign"
           ]
         }
       },
@@ -2603,7 +2603,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Campaigns"
           ],
           "operation": [
-            "PUT /1/newsletters/{domain}/campaigns/{campaign}"
+            "Edit Campaign"
           ]
         }
       },
@@ -2622,7 +2622,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Campaigns"
           ],
           "operation": [
-            "PUT /1/newsletters/{domain}/campaigns/{campaign}"
+            "Edit Campaign"
           ]
         }
       },
@@ -2740,7 +2740,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Campaigns"
           ],
           "operation": [
-            "DELETE /1/newsletters/{domain}/campaigns/{campaign}"
+            "Delete Campaign"
           ]
         }
       },
@@ -2757,7 +2757,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Campaigns"
           ],
           "operation": [
-            "DELETE /1/newsletters/{domain}/campaigns/{campaign}"
+            "Delete Campaign"
           ]
         }
       },
@@ -2775,7 +2775,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Campaigns"
           ],
           "operation": [
-            "DELETE /1/newsletters/{domain}/campaigns/{campaign}"
+            "Delete Campaign"
           ]
         }
       },
@@ -2799,7 +2799,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Campaigns"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/campaigns/{campaign}/tracking"
+            "Get Tracking"
           ]
         }
       },
@@ -2817,7 +2817,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Campaigns"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/campaigns/{campaign}/tracking"
+            "Get Tracking"
           ]
         }
       },
@@ -2836,7 +2836,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Campaigns"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/campaigns/{campaign}/tracking"
+            "Get Tracking"
           ]
         }
       },
@@ -2932,7 +2932,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Campaigns"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/campaigns/{campaign}/report/links"
+            "Links Activity"
           ]
         }
       },
@@ -2950,7 +2950,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Campaigns"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/campaigns/{campaign}/report/links"
+            "Links Activity"
           ]
         }
       },
@@ -2968,7 +2968,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Campaigns"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/campaigns/{campaign}/report/activity"
+            "Subscribers Activity"
           ]
         }
       },
@@ -2986,7 +2986,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Campaigns"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/campaigns/{campaign}/report/activity"
+            "Subscribers Activity"
           ]
         }
       },
@@ -3005,7 +3005,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Campaigns"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/campaigns/{campaign}/report/activity"
+            "Subscribers Activity"
           ]
         }
       },
@@ -3093,7 +3093,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Campaigns"
           ],
           "operation": [
-            "POST /1/newsletters/{domain}/campaigns/template/{template_uuid}/test"
+            "Test Campaign"
           ]
         }
       },
@@ -3111,7 +3111,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Campaigns"
           ],
           "operation": [
-            "POST /1/newsletters/{domain}/campaigns/template/{template_uuid}/test"
+            "Test Campaign"
           ]
         }
       },
@@ -3129,7 +3129,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Campaigns"
           ],
           "operation": [
-            "POST /1/newsletters/{domain}/campaigns/template/{template_uuid}/test"
+            "Test Campaign"
           ]
         }
       },
@@ -3146,7 +3146,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Campaigns"
           ],
           "operation": [
-            "POST /1/newsletters/{domain}/campaigns/{campaign}/duplicate"
+            "Duplicate Campaign"
           ]
         }
       },
@@ -3164,7 +3164,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Campaigns"
           ],
           "operation": [
-            "POST /1/newsletters/{domain}/campaigns/{campaign}/duplicate"
+            "Duplicate Campaign"
           ]
         }
       },
@@ -3183,7 +3183,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Campaigns"
           ],
           "operation": [
-            "POST /1/newsletters/{domain}/campaigns/{campaign}/duplicate"
+            "Duplicate Campaign"
           ]
         }
       },
@@ -3207,7 +3207,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Campaigns"
           ],
           "operation": [
-            "POST /1/newsletters/{domain}/campaigns/{campaign}/test"
+            "Test Campaign (2)"
           ]
         }
       },
@@ -3225,7 +3225,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Campaigns"
           ],
           "operation": [
-            "POST /1/newsletters/{domain}/campaigns/{campaign}/test"
+            "Test Campaign (2)"
           ]
         }
       },
@@ -3243,7 +3243,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Campaigns"
           ],
           "operation": [
-            "POST /1/newsletters/{domain}/campaigns/{campaign}/test"
+            "Test Campaign (2)"
           ]
         }
       },
@@ -3261,7 +3261,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Campaigns"
           ],
           "operation": [
-            "PUT /1/newsletters/{domain}/campaigns/{campaign}/cancel"
+            "Cancel Campaign"
           ]
         }
       },
@@ -3279,7 +3279,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Campaigns"
           ],
           "operation": [
-            "PUT /1/newsletters/{domain}/campaigns/{campaign}/cancel"
+            "Cancel Campaign"
           ]
         }
       },
@@ -3298,7 +3298,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Campaigns"
           ],
           "operation": [
-            "PUT /1/newsletters/{domain}/campaigns/{campaign}/cancel"
+            "Cancel Campaign"
           ]
         }
       },
@@ -3322,7 +3322,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Campaigns"
           ],
           "operation": [
-            "PUT /1/newsletters/{domain}/campaigns/{campaign}/schedule"
+            "Schedule Campaign"
           ]
         }
       },
@@ -3340,7 +3340,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Campaigns"
           ],
           "operation": [
-            "PUT /1/newsletters/{domain}/campaigns/{campaign}/schedule"
+            "Schedule Campaign"
           ]
         }
       },
@@ -3359,7 +3359,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Campaigns"
           ],
           "operation": [
-            "PUT /1/newsletters/{domain}/campaigns/{campaign}/schedule"
+            "Schedule Campaign"
           ]
         }
       },
@@ -3387,26 +3387,26 @@ export class InfomaniakNewsletter implements INodeType {
       "options": [
         {
           "name": "List All Credits",
-          "value": "GET /1/newsletters/{domain}/credits"
+          "value": "List All Credits"
         },
         {
           "name": "Account Credits",
-          "value": "GET /1/newsletters/{domain}/credits/accounts"
+          "value": "Account Credits"
         },
         {
           "name": "Credits Details",
-          "value": "GET /1/newsletters/{domain}/credits/details"
+          "value": "Credits Details"
         },
         {
           "name": "List Credits Offers",
-          "value": "GET /1/newsletters/{domain}/credits/packs"
+          "value": "List Credits Offers"
         },
         {
           "name": "Checkout",
-          "value": "GET /1/newsletters/{domain}/credits/checkout/{id}"
+          "value": "Checkout"
         }
       ],
-      "default": "GET /1/newsletters/{domain}/credits",
+      "default": "List All Credits",
       "noDataExpression": true
     },
     {
@@ -3420,7 +3420,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Credits"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/credits"
+            "List All Credits"
           ]
         }
       },
@@ -3439,7 +3439,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Credits"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/credits"
+            "List All Credits"
           ]
         }
       },
@@ -3542,7 +3542,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Credits"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/credits/accounts"
+            "Account Credits"
           ]
         }
       },
@@ -3561,7 +3561,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Credits"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/credits/accounts"
+            "Account Credits"
           ]
         }
       },
@@ -3664,7 +3664,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Credits"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/credits/details"
+            "Credits Details"
           ]
         }
       },
@@ -3682,7 +3682,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Credits"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/credits/packs"
+            "List Credits Offers"
           ]
         }
       },
@@ -3700,7 +3700,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Credits"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/credits/checkout/{id}"
+            "Checkout"
           ]
         }
       },
@@ -3718,7 +3718,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Credits"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/credits/checkout/{id}"
+            "Checkout"
           ]
         }
       },
@@ -3739,14 +3739,14 @@ export class InfomaniakNewsletter implements INodeType {
       "options": [
         {
           "name": "Display Domain",
-          "value": "GET /1/newsletters/{domain}"
+          "value": "Display Domain"
         },
         {
           "name": "Delete Domain",
-          "value": "DELETE /1/newsletters/{domain}"
+          "value": "Delete Domain"
         }
       ],
-      "default": "GET /1/newsletters/{domain}",
+      "default": "Display Domain",
       "noDataExpression": true
     },
     {
@@ -3760,7 +3760,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Domains"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}"
+            "Display Domain"
           ]
         }
       },
@@ -3779,7 +3779,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Domains"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}"
+            "Display Domain"
           ]
         }
       },
@@ -3810,7 +3810,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Domains"
           ],
           "operation": [
-            "DELETE /1/newsletters/{domain}"
+            "Delete Domain"
           ]
         }
       },
@@ -3831,26 +3831,26 @@ export class InfomaniakNewsletter implements INodeType {
       "options": [
         {
           "name": "List All Fields",
-          "value": "GET /1/newsletters/{domain}/fields"
+          "value": "List All Fields"
         },
         {
           "name": "Create A Field",
-          "value": "POST /1/newsletters/{domain}/fields"
+          "value": "Create A Field"
         },
         {
           "name": "Delete Fields",
-          "value": "DELETE /1/newsletters/{domain}/fields"
+          "value": "Delete Fields"
         },
         {
           "name": "Update A Field",
-          "value": "PUT /1/newsletters/{domain}/fields/{field}"
+          "value": "Update A Field"
         },
         {
           "name": "Delete A Field",
-          "value": "DELETE /1/newsletters/{domain}/fields/{field}"
+          "value": "Delete A Field"
         }
       ],
-      "default": "GET /1/newsletters/{domain}/fields",
+      "default": "List All Fields",
       "noDataExpression": true
     },
     {
@@ -3864,7 +3864,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Fields"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/fields"
+            "List All Fields"
           ]
         }
       },
@@ -3883,7 +3883,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Fields"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/fields"
+            "List All Fields"
           ]
         }
       },
@@ -3979,7 +3979,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Fields"
           ],
           "operation": [
-            "POST /1/newsletters/{domain}/fields"
+            "Create A Field"
           ]
         }
       },
@@ -3997,7 +3997,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Fields"
           ],
           "operation": [
-            "POST /1/newsletters/{domain}/fields"
+            "Create A Field"
           ]
         }
       },
@@ -4015,7 +4015,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Fields"
           ],
           "operation": [
-            "POST /1/newsletters/{domain}/fields"
+            "Create A Field"
           ]
         }
       },
@@ -4063,7 +4063,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Fields"
           ],
           "operation": [
-            "POST /1/newsletters/{domain}/fields"
+            "Create A Field"
           ]
         }
       },
@@ -4087,7 +4087,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Fields"
           ],
           "operation": [
-            "DELETE /1/newsletters/{domain}/fields"
+            "Delete Fields"
           ]
         }
       },
@@ -4105,7 +4105,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Fields"
           ],
           "operation": [
-            "DELETE /1/newsletters/{domain}/fields"
+            "Delete Fields"
           ]
         }
       },
@@ -4123,7 +4123,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Fields"
           ],
           "operation": [
-            "DELETE /1/newsletters/{domain}/fields"
+            "Delete Fields"
           ]
         }
       },
@@ -4147,7 +4147,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Fields"
           ],
           "operation": [
-            "PUT /1/newsletters/{domain}/fields/{field}"
+            "Update A Field"
           ]
         }
       },
@@ -4165,7 +4165,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Fields"
           ],
           "operation": [
-            "PUT /1/newsletters/{domain}/fields/{field}"
+            "Update A Field"
           ]
         }
       },
@@ -4183,7 +4183,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Fields"
           ],
           "operation": [
-            "PUT /1/newsletters/{domain}/fields/{field}"
+            "Update A Field"
           ]
         }
       },
@@ -4201,7 +4201,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Fields"
           ],
           "operation": [
-            "DELETE /1/newsletters/{domain}/fields/{field}"
+            "Delete A Field"
           ]
         }
       },
@@ -4219,7 +4219,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Fields"
           ],
           "operation": [
-            "DELETE /1/newsletters/{domain}/fields/{field}"
+            "Delete A Field"
           ]
         }
       },
@@ -4240,42 +4240,42 @@ export class InfomaniakNewsletter implements INodeType {
       "options": [
         {
           "name": "List All Groups",
-          "value": "GET /1/newsletters/{domain}/groups"
+          "value": "List All Groups"
         },
         {
           "name": "Create A Group",
-          "value": "POST /1/newsletters/{domain}/groups"
+          "value": "Create A Group"
         },
         {
           "name": "Delete Groups",
-          "value": "DELETE /1/newsletters/{domain}/groups"
+          "value": "Delete Groups"
         },
         {
           "name": "Fetch A Group",
-          "value": "GET /1/newsletters/{domain}/groups/{group}"
+          "value": "Fetch A Group"
         },
         {
           "name": "Update A Group",
-          "value": "PUT /1/newsletters/{domain}/groups/{group}"
+          "value": "Update A Group"
         },
         {
           "name": "Delete A Group",
-          "value": "DELETE /1/newsletters/{domain}/groups/{group}"
+          "value": "Delete A Group"
         },
         {
           "name": "List Subscribers",
-          "value": "GET /1/newsletters/{domain}/groups/{group}/subscribers"
+          "value": "List Subscribers"
         },
         {
           "name": "Assign Subscribers",
-          "value": "POST /1/newsletters/{domain}/groups/{group}/subscribers/assign"
+          "value": "Assign Subscribers"
         },
         {
           "name": "Unassign Subscribers",
-          "value": "POST /1/newsletters/{domain}/groups/{group}/subscribers/unassign"
+          "value": "Unassign Subscribers"
         }
       ],
-      "default": "GET /1/newsletters/{domain}/groups",
+      "default": "List All Groups",
       "noDataExpression": true
     },
     {
@@ -4289,7 +4289,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Groups"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/groups"
+            "List All Groups"
           ]
         }
       },
@@ -4308,7 +4308,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Groups"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/groups"
+            "List All Groups"
           ]
         }
       },
@@ -4411,7 +4411,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Groups"
           ],
           "operation": [
-            "POST /1/newsletters/{domain}/groups"
+            "Create A Group"
           ]
         }
       },
@@ -4429,7 +4429,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Groups"
           ],
           "operation": [
-            "POST /1/newsletters/{domain}/groups"
+            "Create A Group"
           ]
         }
       },
@@ -4447,7 +4447,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Groups"
           ],
           "operation": [
-            "DELETE /1/newsletters/{domain}/groups"
+            "Delete Groups"
           ]
         }
       },
@@ -4465,7 +4465,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Groups"
           ],
           "operation": [
-            "DELETE /1/newsletters/{domain}/groups"
+            "Delete Groups"
           ]
         }
       },
@@ -4483,7 +4483,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Groups"
           ],
           "operation": [
-            "DELETE /1/newsletters/{domain}/groups"
+            "Delete Groups"
           ]
         }
       },
@@ -4507,7 +4507,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Groups"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/groups/{group}"
+            "Fetch A Group"
           ]
         }
       },
@@ -4525,7 +4525,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Groups"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/groups/{group}"
+            "Fetch A Group"
           ]
         }
       },
@@ -4544,7 +4544,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Groups"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/groups/{group}"
+            "Fetch A Group"
           ]
         }
       },
@@ -4569,7 +4569,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Groups"
           ],
           "operation": [
-            "PUT /1/newsletters/{domain}/groups/{group}"
+            "Update A Group"
           ]
         }
       },
@@ -4587,7 +4587,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Groups"
           ],
           "operation": [
-            "PUT /1/newsletters/{domain}/groups/{group}"
+            "Update A Group"
           ]
         }
       },
@@ -4605,7 +4605,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Groups"
           ],
           "operation": [
-            "PUT /1/newsletters/{domain}/groups/{group}"
+            "Update A Group"
           ]
         }
       },
@@ -4623,7 +4623,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Groups"
           ],
           "operation": [
-            "DELETE /1/newsletters/{domain}/groups/{group}"
+            "Delete A Group"
           ]
         }
       },
@@ -4641,7 +4641,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Groups"
           ],
           "operation": [
-            "DELETE /1/newsletters/{domain}/groups/{group}"
+            "Delete A Group"
           ]
         }
       },
@@ -4659,7 +4659,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Groups"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/groups/{group}/subscribers"
+            "List Subscribers"
           ]
         }
       },
@@ -4677,7 +4677,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Groups"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/groups/{group}/subscribers"
+            "List Subscribers"
           ]
         }
       },
@@ -4696,7 +4696,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Groups"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/groups/{group}/subscribers"
+            "List Subscribers"
           ]
         }
       },
@@ -4805,7 +4805,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Groups"
           ],
           "operation": [
-            "POST /1/newsletters/{domain}/groups/{group}/subscribers/assign"
+            "Assign Subscribers"
           ]
         }
       },
@@ -4823,7 +4823,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Groups"
           ],
           "operation": [
-            "POST /1/newsletters/{domain}/groups/{group}/subscribers/assign"
+            "Assign Subscribers"
           ]
         }
       },
@@ -4841,7 +4841,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Groups"
           ],
           "operation": [
-            "POST /1/newsletters/{domain}/groups/{group}/subscribers/assign"
+            "Assign Subscribers"
           ]
         }
       },
@@ -4858,7 +4858,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Groups"
           ],
           "operation": [
-            "POST /1/newsletters/{domain}/groups/{group}/subscribers/unassign"
+            "Unassign Subscribers"
           ]
         }
       },
@@ -4876,7 +4876,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Groups"
           ],
           "operation": [
-            "POST /1/newsletters/{domain}/groups/{group}/subscribers/unassign"
+            "Unassign Subscribers"
           ]
         }
       },
@@ -4894,7 +4894,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Groups"
           ],
           "operation": [
-            "POST /1/newsletters/{domain}/groups/{group}/subscribers/unassign"
+            "Unassign Subscribers"
           ]
         }
       },
@@ -4914,10 +4914,10 @@ export class InfomaniakNewsletter implements INodeType {
       "options": [
         {
           "name": "Cancel An Operation",
-          "value": "DELETE /1/newsletters/{domain}/operations/{operationId}"
+          "value": "Cancel An Operation"
         }
       ],
-      "default": "DELETE /1/newsletters/{domain}/operations/{operationId}",
+      "default": "Cancel An Operation",
       "noDataExpression": true
     },
     {
@@ -4931,7 +4931,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Operations"
           ],
           "operation": [
-            "DELETE /1/newsletters/{domain}/operations/{operationId}"
+            "Cancel An Operation"
           ]
         }
       },
@@ -4949,7 +4949,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Operations"
           ],
           "operation": [
-            "DELETE /1/newsletters/{domain}/operations/{operationId}"
+            "Cancel An Operation"
           ]
         }
       },
@@ -4970,34 +4970,34 @@ export class InfomaniakNewsletter implements INodeType {
       "options": [
         {
           "name": "List All Segments",
-          "value": "GET /1/newsletters/{domain}/segments"
+          "value": "List All Segments"
         },
         {
           "name": "Create A Segment",
-          "value": "POST /1/newsletters/{domain}/segments"
+          "value": "Create A Segment"
         },
         {
           "name": "Delete Segments",
-          "value": "DELETE /1/newsletters/{domain}/segments"
+          "value": "Delete Segments"
         },
         {
           "name": "Fetch A Segment",
-          "value": "GET /1/newsletters/{domain}/segments/{segment}"
+          "value": "Fetch A Segment"
         },
         {
           "name": "Update A Segment",
-          "value": "PUT /1/newsletters/{domain}/segments/{segment}"
+          "value": "Update A Segment"
         },
         {
           "name": "Delete A Segment",
-          "value": "DELETE /1/newsletters/{domain}/segments/{segment}"
+          "value": "Delete A Segment"
         },
         {
           "name": "List Subscribers",
-          "value": "GET /1/newsletters/{domain}/segments/{segment}/subscribers"
+          "value": "List Subscribers"
         }
       ],
-      "default": "GET /1/newsletters/{domain}/segments",
+      "default": "List All Segments",
       "noDataExpression": true
     },
     {
@@ -5011,7 +5011,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Segments"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/segments"
+            "List All Segments"
           ]
         }
       },
@@ -5030,7 +5030,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Segments"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/segments"
+            "List All Segments"
           ]
         }
       },
@@ -5139,7 +5139,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Segments"
           ],
           "operation": [
-            "POST /1/newsletters/{domain}/segments"
+            "Create A Segment"
           ]
         }
       },
@@ -5157,7 +5157,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Segments"
           ],
           "operation": [
-            "POST /1/newsletters/{domain}/segments"
+            "Create A Segment"
           ]
         }
       },
@@ -5174,7 +5174,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Segments"
           ],
           "operation": [
-            "POST /1/newsletters/{domain}/segments"
+            "Create A Segment"
           ]
         }
       },
@@ -5192,7 +5192,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Segments"
           ],
           "operation": [
-            "DELETE /1/newsletters/{domain}/segments"
+            "Delete Segments"
           ]
         }
       },
@@ -5211,7 +5211,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Segments"
           ],
           "operation": [
-            "DELETE /1/newsletters/{domain}/segments"
+            "Delete Segments"
           ]
         }
       },
@@ -5235,7 +5235,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Segments"
           ],
           "operation": [
-            "DELETE /1/newsletters/{domain}/segments"
+            "Delete Segments"
           ]
         }
       },
@@ -5253,7 +5253,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Segments"
           ],
           "operation": [
-            "DELETE /1/newsletters/{domain}/segments"
+            "Delete Segments"
           ]
         }
       },
@@ -5277,7 +5277,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Segments"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/segments/{segment}"
+            "Fetch A Segment"
           ]
         }
       },
@@ -5295,7 +5295,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Segments"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/segments/{segment}"
+            "Fetch A Segment"
           ]
         }
       },
@@ -5314,7 +5314,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Segments"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/segments/{segment}"
+            "Fetch A Segment"
           ]
         }
       },
@@ -5351,7 +5351,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Segments"
           ],
           "operation": [
-            "PUT /1/newsletters/{domain}/segments/{segment}"
+            "Update A Segment"
           ]
         }
       },
@@ -5369,7 +5369,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Segments"
           ],
           "operation": [
-            "PUT /1/newsletters/{domain}/segments/{segment}"
+            "Update A Segment"
           ]
         }
       },
@@ -5388,7 +5388,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Segments"
           ],
           "operation": [
-            "PUT /1/newsletters/{domain}/segments/{segment}"
+            "Update A Segment"
           ]
         }
       },
@@ -5419,7 +5419,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Segments"
           ],
           "operation": [
-            "DELETE /1/newsletters/{domain}/segments/{segment}"
+            "Delete A Segment"
           ]
         }
       },
@@ -5437,7 +5437,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Segments"
           ],
           "operation": [
-            "DELETE /1/newsletters/{domain}/segments/{segment}"
+            "Delete A Segment"
           ]
         }
       },
@@ -5455,7 +5455,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Segments"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/segments/{segment}/subscribers"
+            "List Subscribers"
           ]
         }
       },
@@ -5473,7 +5473,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Segments"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/segments/{segment}/subscribers"
+            "List Subscribers"
           ]
         }
       },
@@ -5492,7 +5492,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Segments"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/segments/{segment}/subscribers"
+            "List Subscribers"
           ]
         }
       },
@@ -5610,66 +5610,66 @@ export class InfomaniakNewsletter implements INodeType {
       "options": [
         {
           "name": "List All Subscribers",
-          "value": "GET /1/newsletters/{domain}/subscribers"
+          "value": "List All Subscribers"
         },
         {
           "name": "Create A Subscriber",
-          "value": "POST /1/newsletters/{domain}/subscribers"
+          "value": "Create A Subscriber"
         },
         {
           "name": "Delete Subscribers",
-          "value": "DELETE /1/newsletters/{domain}/subscribers"
+          "value": "Delete Subscribers"
         },
         {
           "name": "Count Subscribers Status",
-          "value": "GET /1/newsletters/{domain}/subscribers/count_status"
+          "value": "Count Subscribers Status"
         },
         {
           "name": "Fetch A Subscriber",
-          "value": "GET /1/newsletters/{domain}/subscribers/{subscriber}"
+          "value": "Fetch A Subscriber"
         },
         {
           "name": "Update A Subscriber",
-          "value": "PUT /1/newsletters/{domain}/subscribers/{subscriber}"
+          "value": "Update A Subscriber"
         },
         {
           "name": "Delete A Subscriber",
-          "value": "DELETE /1/newsletters/{domain}/subscribers/{subscriber}"
+          "value": "Delete A Subscriber"
         },
         {
           "name": "Filter Subscribers",
-          "value": "POST /1/newsletters/{domain}/subscribers/filter"
+          "value": "Filter Subscribers"
         },
         {
           "name": "Export Subscribers",
-          "value": "POST /1/newsletters/{domain}/subscribers/export"
+          "value": "Export Subscribers"
         },
         {
           "name": "Import Subscribers",
-          "value": "POST /1/newsletters/{domain}/subscribers/import"
+          "value": "Import Subscribers"
         },
         {
           "name": "Upload Csv File",
-          "value": "POST /1/newsletters/{domain}/subscribers/import/upload"
+          "value": "Upload Csv File"
         },
         {
           "name": "Forget A Subscriber",
-          "value": "DELETE /1/newsletters/{domain}/subscribers/{subscriber}/forget"
+          "value": "Forget A Subscriber"
         },
         {
           "name": "Unsubscribe Subscribers",
-          "value": "PUT /1/newsletters/{domain}/subscribers/unsubscribe"
+          "value": "Unsubscribe Subscribers"
         },
         {
           "name": "Assign",
-          "value": "PUT /1/newsletters/{domain}/subscribers/assign"
+          "value": "Assign"
         },
         {
           "name": "Unassign",
-          "value": "PUT /1/newsletters/{domain}/subscribers/unassign"
+          "value": "Unassign"
         }
       ],
-      "default": "GET /1/newsletters/{domain}/subscribers",
+      "default": "List All Subscribers",
       "noDataExpression": true
     },
     {
@@ -5683,7 +5683,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Subscribers"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/subscribers"
+            "List All Subscribers"
           ]
         }
       },
@@ -5702,7 +5702,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Subscribers"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/subscribers"
+            "List All Subscribers"
           ]
         }
       },
@@ -5805,7 +5805,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Subscribers"
           ],
           "operation": [
-            "POST /1/newsletters/{domain}/subscribers"
+            "Create A Subscriber"
           ]
         }
       },
@@ -5823,7 +5823,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Subscribers"
           ],
           "operation": [
-            "POST /1/newsletters/{domain}/subscribers"
+            "Create A Subscriber"
           ]
         }
       },
@@ -5842,7 +5842,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Subscribers"
           ],
           "operation": [
-            "POST /1/newsletters/{domain}/subscribers"
+            "Create A Subscriber"
           ]
         }
       },
@@ -5881,7 +5881,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Subscribers"
           ],
           "operation": [
-            "DELETE /1/newsletters/{domain}/subscribers"
+            "Delete Subscribers"
           ]
         }
       },
@@ -5899,7 +5899,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Subscribers"
           ],
           "operation": [
-            "DELETE /1/newsletters/{domain}/subscribers"
+            "Delete Subscribers"
           ]
         }
       },
@@ -5917,7 +5917,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Subscribers"
           ],
           "operation": [
-            "DELETE /1/newsletters/{domain}/subscribers"
+            "Delete Subscribers"
           ]
         }
       },
@@ -5948,7 +5948,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Subscribers"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/subscribers/count_status"
+            "Count Subscribers Status"
           ]
         }
       },
@@ -5966,7 +5966,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Subscribers"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/subscribers/{subscriber}"
+            "Fetch A Subscriber"
           ]
         }
       },
@@ -5984,7 +5984,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Subscribers"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/subscribers/{subscriber}"
+            "Fetch A Subscriber"
           ]
         }
       },
@@ -6003,7 +6003,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Subscribers"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/subscribers/{subscriber}"
+            "Fetch A Subscriber"
           ]
         }
       },
@@ -6028,7 +6028,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Subscribers"
           ],
           "operation": [
-            "PUT /1/newsletters/{domain}/subscribers/{subscriber}"
+            "Update A Subscriber"
           ]
         }
       },
@@ -6046,7 +6046,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Subscribers"
           ],
           "operation": [
-            "PUT /1/newsletters/{domain}/subscribers/{subscriber}"
+            "Update A Subscriber"
           ]
         }
       },
@@ -6065,7 +6065,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Subscribers"
           ],
           "operation": [
-            "PUT /1/newsletters/{domain}/subscribers/{subscriber}"
+            "Update A Subscriber"
           ]
         }
       },
@@ -6091,7 +6091,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Subscribers"
           ],
           "operation": [
-            "PUT /1/newsletters/{domain}/subscribers/{subscriber}"
+            "Update A Subscriber"
           ]
         }
       },
@@ -6140,7 +6140,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Subscribers"
           ],
           "operation": [
-            "DELETE /1/newsletters/{domain}/subscribers/{subscriber}"
+            "Delete A Subscriber"
           ]
         }
       },
@@ -6158,7 +6158,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Subscribers"
           ],
           "operation": [
-            "DELETE /1/newsletters/{domain}/subscribers/{subscriber}"
+            "Delete A Subscriber"
           ]
         }
       },
@@ -6176,7 +6176,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Subscribers"
           ],
           "operation": [
-            "POST /1/newsletters/{domain}/subscribers/filter"
+            "Filter Subscribers"
           ]
         }
       },
@@ -6195,7 +6195,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Subscribers"
           ],
           "operation": [
-            "POST /1/newsletters/{domain}/subscribers/filter"
+            "Filter Subscribers"
           ]
         }
       },
@@ -6305,7 +6305,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Subscribers"
           ],
           "operation": [
-            "POST /1/newsletters/{domain}/subscribers/filter"
+            "Filter Subscribers"
           ]
         }
       },
@@ -6335,7 +6335,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Subscribers"
           ],
           "operation": [
-            "POST /1/newsletters/{domain}/subscribers/export"
+            "Export Subscribers"
           ]
         }
       },
@@ -6353,7 +6353,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Subscribers"
           ],
           "operation": [
-            "POST /1/newsletters/{domain}/subscribers/export"
+            "Export Subscribers"
           ]
         }
       },
@@ -6371,7 +6371,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Subscribers"
           ],
           "operation": [
-            "POST /1/newsletters/{domain}/subscribers/export"
+            "Export Subscribers"
           ]
         }
       },
@@ -6402,7 +6402,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Subscribers"
           ],
           "operation": [
-            "POST /1/newsletters/{domain}/subscribers/import"
+            "Import Subscribers"
           ]
         }
       },
@@ -6419,7 +6419,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Subscribers"
           ],
           "operation": [
-            "POST /1/newsletters/{domain}/subscribers/import"
+            "Import Subscribers"
           ]
         }
       },
@@ -6438,7 +6438,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Subscribers"
           ],
           "operation": [
-            "POST /1/newsletters/{domain}/subscribers/import"
+            "Import Subscribers"
           ]
         }
       },
@@ -6493,7 +6493,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Subscribers"
           ],
           "operation": [
-            "POST /1/newsletters/{domain}/subscribers/import/upload"
+            "Upload Csv File"
           ]
         }
       },
@@ -6511,7 +6511,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Subscribers"
           ],
           "operation": [
-            "POST /1/newsletters/{domain}/subscribers/import/upload"
+            "Upload Csv File"
           ]
         }
       },
@@ -6541,7 +6541,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Subscribers"
           ],
           "operation": [
-            "DELETE /1/newsletters/{domain}/subscribers/{subscriber}/forget"
+            "Forget A Subscriber"
           ]
         }
       },
@@ -6559,7 +6559,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Subscribers"
           ],
           "operation": [
-            "DELETE /1/newsletters/{domain}/subscribers/{subscriber}/forget"
+            "Forget A Subscriber"
           ]
         }
       },
@@ -6577,7 +6577,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Subscribers"
           ],
           "operation": [
-            "PUT /1/newsletters/{domain}/subscribers/unsubscribe"
+            "Unsubscribe Subscribers"
           ]
         }
       },
@@ -6595,7 +6595,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Subscribers"
           ],
           "operation": [
-            "PUT /1/newsletters/{domain}/subscribers/unsubscribe"
+            "Unsubscribe Subscribers"
           ]
         }
       },
@@ -6613,7 +6613,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Subscribers"
           ],
           "operation": [
-            "PUT /1/newsletters/{domain}/subscribers/unsubscribe"
+            "Unsubscribe Subscribers"
           ]
         }
       },
@@ -6644,7 +6644,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Subscribers"
           ],
           "operation": [
-            "PUT /1/newsletters/{domain}/subscribers/assign"
+            "Assign"
           ]
         }
       },
@@ -6662,7 +6662,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Subscribers"
           ],
           "operation": [
-            "PUT /1/newsletters/{domain}/subscribers/assign"
+            "Assign"
           ]
         }
       },
@@ -6680,7 +6680,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Subscribers"
           ],
           "operation": [
-            "PUT /1/newsletters/{domain}/subscribers/assign"
+            "Assign"
           ]
         }
       },
@@ -6718,7 +6718,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Subscribers"
           ],
           "operation": [
-            "PUT /1/newsletters/{domain}/subscribers/unassign"
+            "Unassign"
           ]
         }
       },
@@ -6736,7 +6736,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Subscribers"
           ],
           "operation": [
-            "PUT /1/newsletters/{domain}/subscribers/unassign"
+            "Unassign"
           ]
         }
       },
@@ -6753,7 +6753,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Subscribers"
           ],
           "operation": [
-            "PUT /1/newsletters/{domain}/subscribers/unassign"
+            "Unassign"
           ]
         }
       },
@@ -6771,7 +6771,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Subscribers"
           ],
           "operation": [
-            "PUT /1/newsletters/{domain}/subscribers/unassign"
+            "Unassign"
           ]
         }
       },
@@ -6805,22 +6805,22 @@ export class InfomaniakNewsletter implements INodeType {
       "options": [
         {
           "name": "List All Templates",
-          "value": "GET /1/newsletters/{domain}/templates"
+          "value": "List All Templates"
         },
         {
           "name": "Show Html",
-          "value": "GET /1/newsletters/{domain}/templates/{template}/html"
+          "value": "Show Html"
         },
         {
           "name": "Create Template From Campaign",
-          "value": "POST /1/newsletters/{domain}/campaigns/{campaign}/template/{template}"
+          "value": "Create Template From Campaign"
         },
         {
           "name": "Update Thumbnail",
-          "value": "PUT /1/newsletters/{domain}/templates/{template}/update-thumbnails"
+          "value": "Update Thumbnail"
         }
       ],
-      "default": "GET /1/newsletters/{domain}/templates",
+      "default": "List All Templates",
       "noDataExpression": true
     },
     {
@@ -6834,7 +6834,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Templates"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/templates"
+            "List All Templates"
           ]
         }
       },
@@ -6853,7 +6853,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Templates"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/templates"
+            "List All Templates"
           ]
         }
       },
@@ -6912,7 +6912,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Templates"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/templates/{template}/html"
+            "Show Html"
           ]
         }
       },
@@ -6930,7 +6930,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Templates"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/templates/{template}/html"
+            "Show Html"
           ]
         }
       },
@@ -6948,7 +6948,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Templates"
           ],
           "operation": [
-            "POST /1/newsletters/{domain}/campaigns/{campaign}/template/{template}"
+            "Create Template From Campaign"
           ]
         }
       },
@@ -6966,7 +6966,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Templates"
           ],
           "operation": [
-            "POST /1/newsletters/{domain}/campaigns/{campaign}/template/{template}"
+            "Create Template From Campaign"
           ]
         }
       },
@@ -6984,7 +6984,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Templates"
           ],
           "operation": [
-            "POST /1/newsletters/{domain}/campaigns/{campaign}/template/{template}"
+            "Create Template From Campaign"
           ]
         }
       },
@@ -7003,7 +7003,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Templates"
           ],
           "operation": [
-            "POST /1/newsletters/{domain}/campaigns/{campaign}/template/{template}"
+            "Create Template From Campaign"
           ]
         }
       },
@@ -7027,7 +7027,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Templates"
           ],
           "operation": [
-            "PUT /1/newsletters/{domain}/templates/{template}/update-thumbnails"
+            "Update Thumbnail"
           ]
         }
       },
@@ -7045,7 +7045,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Templates"
           ],
           "operation": [
-            "PUT /1/newsletters/{domain}/templates/{template}/update-thumbnails"
+            "Update Thumbnail"
           ]
         }
       },
@@ -7064,7 +7064,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Templates"
           ],
           "operation": [
-            "PUT /1/newsletters/{domain}/templates/{template}/update-thumbnails"
+            "Update Thumbnail"
           ]
         }
       },
@@ -7091,38 +7091,38 @@ export class InfomaniakNewsletter implements INodeType {
       "options": [
         {
           "name": "List All Webforms",
-          "value": "GET /1/newsletters/{domain}/webforms"
+          "value": "List All Webforms"
         },
         {
           "name": "Create A Webform",
-          "value": "POST /1/newsletters/{domain}/webforms"
+          "value": "Create A Webform"
         },
         {
           "name": "Bulk Delete Webform",
-          "value": "DELETE /1/newsletters/{domain}/webforms"
+          "value": "Bulk Delete Webform"
         },
         {
           "name": "List Themes",
-          "value": "GET /1/newsletters/{domain}/webforms/themes"
+          "value": "List Themes"
         },
         {
           "name": "Fetch A Webform",
-          "value": "GET /1/newsletters/{domain}/webforms/{webform}"
+          "value": "Fetch A Webform"
         },
         {
           "name": "Update A Webform",
-          "value": "PUT /1/newsletters/{domain}/webforms/{webform}"
+          "value": "Update A Webform"
         },
         {
           "name": "Delete A Webform",
-          "value": "DELETE /1/newsletters/{domain}/webforms/{webform}"
+          "value": "Delete A Webform"
         },
         {
           "name": "List Webform Fields",
-          "value": "GET /1/newsletters/{domain}/webforms/{webform}/fields"
+          "value": "List Webform Fields"
         }
       ],
-      "default": "GET /1/newsletters/{domain}/webforms",
+      "default": "List All Webforms",
       "noDataExpression": true
     },
     {
@@ -7136,7 +7136,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Webforms"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/webforms"
+            "List All Webforms"
           ]
         }
       },
@@ -7155,7 +7155,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Webforms"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/webforms"
+            "List All Webforms"
           ]
         }
       },
@@ -7258,7 +7258,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Webforms"
           ],
           "operation": [
-            "POST /1/newsletters/{domain}/webforms"
+            "Create A Webform"
           ]
         }
       },
@@ -7277,7 +7277,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Webforms"
           ],
           "operation": [
-            "POST /1/newsletters/{domain}/webforms"
+            "Create A Webform"
           ]
         }
       },
@@ -7410,7 +7410,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Webforms"
           ],
           "operation": [
-            "DELETE /1/newsletters/{domain}/webforms"
+            "Bulk Delete Webform"
           ]
         }
       },
@@ -7428,7 +7428,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Webforms"
           ],
           "operation": [
-            "DELETE /1/newsletters/{domain}/webforms"
+            "Bulk Delete Webform"
           ]
         }
       },
@@ -7446,7 +7446,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Webforms"
           ],
           "operation": [
-            "DELETE /1/newsletters/{domain}/webforms"
+            "Bulk Delete Webform"
           ]
         }
       },
@@ -7470,7 +7470,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Webforms"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/webforms/themes"
+            "List Themes"
           ]
         }
       },
@@ -7487,7 +7487,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Webforms"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/webforms/{webform}"
+            "Fetch A Webform"
           ]
         }
       },
@@ -7505,7 +7505,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Webforms"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/webforms/{webform}"
+            "Fetch A Webform"
           ]
         }
       },
@@ -7524,7 +7524,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Webforms"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/webforms/{webform}"
+            "Fetch A Webform"
           ]
         }
       },
@@ -7549,7 +7549,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Webforms"
           ],
           "operation": [
-            "PUT /1/newsletters/{domain}/webforms/{webform}"
+            "Update A Webform"
           ]
         }
       },
@@ -7567,7 +7567,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Webforms"
           ],
           "operation": [
-            "PUT /1/newsletters/{domain}/webforms/{webform}"
+            "Update A Webform"
           ]
         }
       },
@@ -7586,7 +7586,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Webforms"
           ],
           "operation": [
-            "PUT /1/newsletters/{domain}/webforms/{webform}"
+            "Update A Webform"
           ]
         }
       },
@@ -7612,7 +7612,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Webforms"
           ],
           "operation": [
-            "PUT /1/newsletters/{domain}/webforms/{webform}"
+            "Update A Webform"
           ]
         }
       },
@@ -7745,7 +7745,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Webforms"
           ],
           "operation": [
-            "DELETE /1/newsletters/{domain}/webforms/{webform}"
+            "Delete A Webform"
           ]
         }
       },
@@ -7763,7 +7763,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Webforms"
           ],
           "operation": [
-            "DELETE /1/newsletters/{domain}/webforms/{webform}"
+            "Delete A Webform"
           ]
         }
       },
@@ -7781,7 +7781,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Webforms"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/webforms/{webform}/fields"
+            "List Webform Fields"
           ]
         }
       },
@@ -7799,7 +7799,7 @@ export class InfomaniakNewsletter implements INodeType {
             "Webforms"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/webforms/{webform}/fields"
+            "List Webform Fields"
           ]
         }
       },
@@ -7829,19 +7829,19 @@ export class InfomaniakNewsletter implements INodeType {
             "Webforms"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/campaigns",
-            "GET /1/newsletters/{domain}/campaigns/{campaign}/tracking",
-            "GET /1/newsletters/{domain}/campaigns/{campaign}/report/activity",
-            "GET /1/newsletters/{domain}/credits",
-            "GET /1/newsletters/{domain}/credits/accounts",
-            "GET /1/newsletters/{domain}/fields",
-            "GET /1/newsletters/{domain}/groups",
-            "GET /1/newsletters/{domain}/groups/{group}/subscribers",
-            "GET /1/newsletters/{domain}/segments",
-            "GET /1/newsletters/{domain}/segments/{segment}/subscribers",
-            "GET /1/newsletters/{domain}/subscribers",
-            "GET /1/newsletters/{domain}/templates",
-            "GET /1/newsletters/{domain}/webforms"
+            "List All Campaigns",
+            "Get Tracking",
+            "Subscribers Activity",
+            "List All Credits",
+            "Account Credits",
+            "List All Fields",
+            "List All Groups",
+            "List Subscribers",
+            "List All Segments",
+            "List Subscribers",
+            "List All Subscribers",
+            "List All Templates",
+            "List All Webforms"
           ]
         }
       }
@@ -7873,19 +7873,19 @@ export class InfomaniakNewsletter implements INodeType {
             "Webforms"
           ],
           "operation": [
-            "GET /1/newsletters/{domain}/campaigns",
-            "GET /1/newsletters/{domain}/campaigns/{campaign}/tracking",
-            "GET /1/newsletters/{domain}/campaigns/{campaign}/report/activity",
-            "GET /1/newsletters/{domain}/credits",
-            "GET /1/newsletters/{domain}/credits/accounts",
-            "GET /1/newsletters/{domain}/fields",
-            "GET /1/newsletters/{domain}/groups",
-            "GET /1/newsletters/{domain}/groups/{group}/subscribers",
-            "GET /1/newsletters/{domain}/segments",
-            "GET /1/newsletters/{domain}/segments/{segment}/subscribers",
-            "GET /1/newsletters/{domain}/subscribers",
-            "GET /1/newsletters/{domain}/templates",
-            "GET /1/newsletters/{domain}/webforms"
+            "List All Campaigns",
+            "Get Tracking",
+            "Subscribers Activity",
+            "List All Credits",
+            "Account Credits",
+            "List All Fields",
+            "List All Groups",
+            "List Subscribers",
+            "List All Segments",
+            "List Subscribers",
+            "List All Subscribers",
+            "List All Templates",
+            "List All Webforms"
           ],
           "returnAll": [
             false

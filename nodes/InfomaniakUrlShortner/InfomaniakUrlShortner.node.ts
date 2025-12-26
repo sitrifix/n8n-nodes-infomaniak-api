@@ -15,8 +15,8 @@ type OperationDefinition = {
 };
 
 const operations: Record<string, Record<string, OperationDefinition>> = {
-  "Short url": {
-    "GET /1/url-shortener": {
+  "Short URL": {
+    "List Short Urls": {
       "method": "GET",
       "path": "/1/url-shortener",
       "pagination": "none",
@@ -44,7 +44,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "POST /1/url-shortener": {
+    "Create A Short URL": {
       "method": "POST",
       "path": "/1/url-shortener",
       "pagination": "none",
@@ -64,7 +64,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "GET /2/url-shortener": {
+    "List Short Urls (2)": {
       "method": "GET",
       "path": "/2/url-shortener",
       "pagination": "none",
@@ -92,7 +92,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "POST /2/url-shortener": {
+    "Create A Short URL (2)": {
       "method": "POST",
       "path": "/2/url-shortener",
       "pagination": "none",
@@ -112,7 +112,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": "bodyParameters",
       "bodyFieldName": null
     },
-    "PUT /1/url-shortener/{short_url_code}": {
+    "Update A Short URL": {
       "method": "PUT",
       "path": "/1/url-shortener/{short_url_code}",
       "pagination": "none",
@@ -128,7 +128,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": "body"
     },
-    "GET /1/url-shortener/quota": {
+    "Get Short URL Quota": {
       "method": "GET",
       "path": "/1/url-shortener/quota",
       "pagination": "none",
@@ -139,7 +139,7 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
       "optionalBodyCollectionName": null,
       "bodyFieldName": null
     },
-    "GET /2/url-shortener/quota": {
+    "Get Short URL Quota (2)": {
       "method": "GET",
       "path": "/2/url-shortener/quota",
       "pagination": "none",
@@ -220,10 +220,10 @@ export class InfomaniakUrlShortner implements INodeType {
       "options": [
         {
           "name": "Short URL",
-          "value": "Short url"
+          "value": "Short URL"
         }
       ],
-      "default": "Short url",
+      "default": "Short URL",
       "required": true,
       "noDataExpression": true
     },
@@ -234,41 +234,41 @@ export class InfomaniakUrlShortner implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Short url"
+            "Short URL"
           ]
         }
       },
       "options": [
         {
           "name": "List Short Urls",
-          "value": "GET /1/url-shortener"
+          "value": "List Short Urls"
         },
         {
           "name": "Create A Short URL",
-          "value": "POST /1/url-shortener"
+          "value": "Create A Short URL"
         },
         {
           "name": "List Short Urls",
-          "value": "GET /2/url-shortener"
+          "value": "List Short Urls (2)"
         },
         {
           "name": "Create A Short URL",
-          "value": "POST /2/url-shortener"
+          "value": "Create A Short URL (2)"
         },
         {
           "name": "Update A Short URL",
-          "value": "PUT /1/url-shortener/{short_url_code}"
+          "value": "Update A Short URL"
         },
         {
           "name": "Get Short URL Quota",
-          "value": "GET /1/url-shortener/quota"
+          "value": "Get Short URL Quota"
         },
         {
           "name": "Get Short URL Quota",
-          "value": "GET /2/url-shortener/quota"
+          "value": "Get Short URL Quota (2)"
         }
       ],
-      "default": "GET /1/url-shortener",
+      "default": "List Short Urls",
       "noDataExpression": true
     },
     {
@@ -280,10 +280,10 @@ export class InfomaniakUrlShortner implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Short url"
+            "Short URL"
           ],
           "operation": [
-            "GET /1/url-shortener"
+            "List Short Urls"
           ]
         }
       },
@@ -350,10 +350,10 @@ export class InfomaniakUrlShortner implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Short url"
+            "Short URL"
           ],
           "operation": [
-            "POST /1/url-shortener"
+            "Create A Short URL"
           ]
         }
       },
@@ -368,10 +368,10 @@ export class InfomaniakUrlShortner implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Short url"
+            "Short URL"
           ],
           "operation": [
-            "POST /1/url-shortener"
+            "Create A Short URL"
           ]
         }
       },
@@ -393,10 +393,10 @@ export class InfomaniakUrlShortner implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Short url"
+            "Short URL"
           ],
           "operation": [
-            "GET /2/url-shortener"
+            "List Short Urls (2)"
           ]
         }
       },
@@ -463,10 +463,10 @@ export class InfomaniakUrlShortner implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Short url"
+            "Short URL"
           ],
           "operation": [
-            "POST /2/url-shortener"
+            "Create A Short URL (2)"
           ]
         }
       },
@@ -481,10 +481,10 @@ export class InfomaniakUrlShortner implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Short url"
+            "Short URL"
           ],
           "operation": [
-            "POST /2/url-shortener"
+            "Create A Short URL (2)"
           ]
         }
       },
@@ -505,10 +505,10 @@ export class InfomaniakUrlShortner implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Short url"
+            "Short URL"
           ],
           "operation": [
-            "PUT /1/url-shortener/{short_url_code}"
+            "Update A Short URL"
           ]
         }
       },
@@ -524,10 +524,10 @@ export class InfomaniakUrlShortner implements INodeType {
       "displayOptions": {
         "show": {
           "resource": [
-            "Short url"
+            "Short URL"
           ],
           "operation": [
-            "PUT /1/url-shortener/{short_url_code}"
+            "Update A Short URL"
           ]
         }
       }

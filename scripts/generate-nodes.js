@@ -207,7 +207,10 @@ const buildNode = (fileName, spec) => {
 	const operationsByTag = extractOperations(spec);
 	const resources = Object.keys(operationsByTag).sort();
 
-	const resourceOptions = resources.map((tag) => ({ name: toResourceLabel(tag), value: tag }));
+	const resourceOptions = resources.map((tag) => {
+		const label = toResourceLabel(tag);
+		return { name: label, value: label };
+	});
 
 	const properties = [];
 	properties.push({
@@ -235,25 +238,33 @@ const buildNode = (fileName, spec) => {
 
 	for (const resource of resources) {
 		const ops = operationsByTag[resource];
-		const operationOptions = ops.map((op) => ({
-			name: op.summary,
-			value: `${op.method} ${op.path}`,
-		}));
+		const resourceValue = toResourceLabel(resource);
+		const operationValues = new Set();
+		const operationsWithValues = ops.map((op) => {
+			let value = op.summary;
+			let counter = 2;
+			while (operationValues.has(value)) {
+				value = `${op.summary} (${counter})`;
+				counter += 1;
+			}
+			operationValues.add(value);
+			return { op, value };
+		});
+		const operationOptions = operationsWithValues.map(({ op, value }) => ({ name: op.summary, value }));
 		properties.push({
 			displayName: 'Operation',
 			name: 'operation',
 			type: 'options',
-			displayOptions: { show: { resource: [resource] } },
+			displayOptions: { show: { resource: [resourceValue] } },
 			options: operationOptions,
 			default: operationOptions[0]?.value || '',
 			noDataExpression: true,
 		});
 
-		operationsMap[resource] = {};
+		operationsMap[resourceValue] = {};
 
-		for (const op of ops) {
-			const operationValue = `${op.method} ${op.path}`;
-			const displayOptions = { show: { resource: [resource], operation: [operationValue] } };
+		for (const { op, value: operationValue } of operationsWithValues) {
+			const displayOptions = { show: { resource: [resourceValue], operation: [operationValue] } };
 
 			const pathParams = op.params.filter((param) => param.in === 'path');
 			const queryParams = op.params.filter((param) => param.in === 'query');
@@ -397,10 +408,10 @@ const buildNode = (fileName, spec) => {
 						? 'page-per-page'
 						: 'none';
 			if (pagination !== 'none' && op.method === 'GET') {
-				paginatedOperations.push({ resource, operationValue });
+				paginatedOperations.push({ resource: resourceValue, operationValue });
 			}
 
-			operationsMap[resource][operationValue] = {
+			operationsMap[resourceValue][operationValue] = {
 				method: op.method,
 				path: op.path,
 				pagination,
