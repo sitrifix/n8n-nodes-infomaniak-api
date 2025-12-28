@@ -1,69 +1,69 @@
 # n8n-nodes-infomaniak
 
-Pack de nœuds communautaires n8n pour l’API Infomaniak. Un nœud par produit, avec UI Resource/Operation et champs dédiés, généré depuis les spécifications OpenAPI locales (dossier `api/`).
+Community n8n node pack for the Infomaniak API. One node per product, with Resource/Operation UI and dedicated fields, generated from local OpenAPI specifications (in the `api/` folder).
 
-## Fonctionnalités
+## Features
 
-- Couverture complète : Mail, kDrive, kChat, Streaming, Newsletter, etc.
-- Un nœud par produit : “Infomaniak Mail”, “Infomaniak kDrive”, etc.
-- UI propre (Resource/Operation + champs dédiés).
-- OAuth2 + API Key.
-- Pagination automatique (limit/skip ou page/per_page), gestion des erreurs et du rate limiting (retry/backoff).
+- Complete coverage: Mail, kDrive, kChat, Streaming, Newsletter, etc.
+- One node per product: "Infomaniak Mail", "Infomaniak kDrive", etc.
+- Clean UI (Resource/Operation + dedicated fields).
+- OAuth2 + API Key authentication.
+- Automatic pagination (limit/skip or page/per_page), error handling and rate limiting (retry/backoff).
 
-## Pré-requis
+## Prerequisites
 
 - n8n v1+.
-- Compte Infomaniak + accès API.
-- Crédentials OAuth2 ou clé API.
+- Infomaniak account + API access.
+- OAuth2 credentials or API key.
 
-## Installation locale
+## Local Installation
 
 ```bash
 npm install
 npm run build
 ```
 
-Ensuite, installez le package dans votre instance n8n (mode custom/community node) :
+Then, install the package in your n8n instance (custom/community node mode):
 
 ```bash
-npm install /chemin/vers/n8n-nodes-infomaniak
+npm install /path/to/n8n-nodes-infomaniak
 ```
 
-## Configuration des credentials
+## Credentials Configuration
 
 ### OAuth2
 
-- Authorization URL : `https://login.infomaniak.com/authorize`
-- Token URL : `https://login.infomaniak.com/token`
-- Scopes recommandés : `mail domain web` (ajoutez les scopes requis par l’endpoint)
+- Authorization URL: `https://login.infomaniak.com/authorize`
+- Token URL: `https://login.infomaniak.com/token`
+- Recommended scopes: `mail domain web` (add the scopes required by the endpoint)
 
 ### API Key
 
-Utilise l’en-tête `Authorization: Bearer <API_KEY>`.
+Uses the `Authorization: Bearer <API_KEY>` header.
 
-## Utilisation
+## Usage
 
-1. Ajouter le nœud du produit (ex. “Infomaniak Mail”).
-2. Choisir **Resource** puis **Operation**.
-3. Renseigner les champs requis (path/query/body) directement dans l’UI.
+1. Add the product node (e.g., "Infomaniak Mail").
+2. Select **Resource** then **Operation**.
+3. Fill in the required fields (path/query/body) directly in the UI.
 
 ## Pagination
 
-- `Return All Pages` active la pagination automatique si l’endpoint expose `limit/skip` ou `page/per_page`.
-- Sinon, utilisez `Limit` et les paramètres de pagination dans `Query Parameters`.
+- `Return All Pages` enables automatic pagination if the endpoint exposes `limit/skip` or `page/per_page`.
+- Otherwise, use `Limit` and pagination parameters in `Query Parameters`.
 
-## Exemples
+## Examples
 
 - `examples/workflows/list-domains.json`
 - `examples/workflows/create-mailbox.json`
 
-## Notes d’implémentation
+## Implementation Notes
 
-- Retry automatique sur `429/503/504` (backoff progressif + respect du `Retry-After`).
-- Timeouts HTTP à 30s.
-- Les specs OpenAPI sont copiées dans `dist/api` lors du build.
-- La génération des nœuds est automatisée via `scripts/generate-nodes.js`.
+- Automatic retry on `429/503/504` (progressive backoff + respect for `Retry-After`).
+- HTTP timeouts set to 30s.
+- OpenAPI specs are copied to `dist/api` during build.
+- Node generation is automated via `scripts/generate-nodes.js`.
 
-## Licence
+## License
 
-MIT. Voir `LICENSE`.
+MIT. See `LICENSE`.

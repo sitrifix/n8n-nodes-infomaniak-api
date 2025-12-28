@@ -95,7 +95,7 @@ const ICON_MAP = {
 	'swiss backups': 'swiss-backup.svg',
 	'url shortner': 'url-short.svg',
 	'mail': 'mail.svg',
-	'aitools': 'ai-tools.svg',
+	'ai tools': 'ai-tools.svg',
 	'streaming radio': 'radio.svg',
 	'streaming video': 'video.svg',
 	'vod': 'vod.svg',
