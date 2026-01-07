@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-infomaniak-api",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "n8n community node for the Infomaniak API",
   "license": "MIT",
   "homepage": "https://github.com/Sitrifix/n8n-nodes-infomaniak-api#readme",
