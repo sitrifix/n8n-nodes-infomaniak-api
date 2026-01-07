@@ -61,7 +61,7 @@
       "dist/nodes/InfomaniakNewsletter/InfomaniakNewsletter.node.js",
       "dist/nodes/InfomaniakAitools/InfomaniakAitools.node.js",
       "dist/nodes/InfomaniakCoreRessource/InfomaniakCoreRessource.node.js",
-      "dist/nodes/InfomaniakDomainezones/InfomaniakDomainezones.node.js",
+      "dist/nodes/InfomaniakDomainZones/InfomaniakDomainZones.node.js",
       "dist/nodes/InfomaniakKchat/InfomaniakKchat.node.js",
       "dist/nodes/InfomaniakKdrive/InfomaniakKdrive.node.js",
       "dist/nodes/InfomaniakMail/InfomaniakMail.node.js",

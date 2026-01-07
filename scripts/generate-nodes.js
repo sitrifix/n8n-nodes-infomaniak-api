@@ -25,7 +25,8 @@ const normalizeLabel = (value) => {
 		.replace(/\bId\b/g, 'ID')
 		.replace(/\bUrl\b/g, 'URL')
 		.replace(/\bApi\b/g, 'API')
-		.replace(/\bIp\b/g, 'IP');
+		.replace(/\bIp\b/g, 'IP')
+		.replace(/\bAi\b/g, 'AI');
 };
 
 const normalizeWords = (value) =>
@@ -100,7 +101,7 @@ const ICON_MAP = {
 	'streaming radio': 'radio.svg',
 	'streaming video': 'video.svg',
 	'vod': 'vod.svg',
-	'domaine zones': 'k.svg',
+	'domain zones': 'k.svg',
 };
 
 const resolveSchemaRef = (spec, schema) => {
