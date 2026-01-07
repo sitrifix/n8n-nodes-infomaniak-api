@@ -16,7 +16,13 @@ Community n8n node pack for the Infomaniak API. One node per product, with Resou
 - Infomaniak account + API access.
 - OAuth2 credentials or API key.
 
-## Local Installation
+## Installation
+
+The package is available via npm at https://www.npmjs.com/package/n8n-nodes-infomaniak-api
+
+To add it to n8n, simply search for `n8n-nodes-infomaniak-api` in the community nodes section of n8n.
+
+### Local Installation (for development)
 
 ```bash
 npm install
