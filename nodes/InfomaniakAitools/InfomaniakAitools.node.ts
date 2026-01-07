@@ -318,16 +318,16 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
 
 export class InfomaniakAitools implements INodeType {
 	description: INodeTypeDescription = {
-  "displayName": "Infomaniak AI Tools",
+  "displayName": "Infomaniak Aitools",
   "name": "infomaniakAitools",
   "icon": "file:../../icons/ai-tools.svg",
   "group": [
     "output"
   ],
   "version": 1,
-  "description": "Interact with Infomaniak AI Tools API",
+  "description": "Interact with Infomaniak Aitools API",
   "defaults": {
-    "name": "Infomaniak AI Tools"
+    "name": "Infomaniak Aitools"
   },
   "inputs": [
     "main"

@@ -2802,16 +2802,16 @@ const operations: Record<string, Record<string, OperationDefinition>> = {
 
 export class InfomaniakStreamingVideo implements INodeType {
 	description: INodeTypeDescription = {
-  "displayName": "Infomaniak Streaming Vidéo",
+  "displayName": "Infomaniak Streaming Video",
   "name": "infomaniakStreamingVideo",
   "icon": "file:../../icons/video.svg",
   "group": [
     "output"
   ],
   "version": 1,
-  "description": "Interact with Infomaniak Streaming Vidéo API",
+  "description": "Interact with Infomaniak Streaming Video API",
   "defaults": {
-    "name": "Infomaniak Streaming Vidéo"
+    "name": "Infomaniak Streaming Video"
   },
   "inputs": [
     "main"
